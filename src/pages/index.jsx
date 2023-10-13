@@ -1,13 +1,14 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import Layout from "@/layout/Layout";
-import HeroSection from "@/components/LandingPage/HeroSection";
-import CausesSection from "@/components/LandingPage/CausesSection";
-import StatisticsSection from "@/components/LandingPage/StatisticsSection";
-import PopularItemsSection from "@/components/LandingPage/PopularItemsSection";
 import BlogsSection from "@/components/LandingPage/BlogsSection/BlogsSection";
+import CausesSection from "@/components/LandingPage/CausesSection";
+import HeroSection from "@/components/LandingPage/HeroSection";
 import OurPartnersSection from "@/components/LandingPage/OurPartnersSection";
+import PopularItemsSection from "@/components/LandingPage/PopularItemsSection";
+import StatisticsSection from "@/components/LandingPage/StatisticsSection";
+
+import Layout from "@/layout/Layout";
 
 export default function HomePage(props) {
   const { t } = useTranslation();
