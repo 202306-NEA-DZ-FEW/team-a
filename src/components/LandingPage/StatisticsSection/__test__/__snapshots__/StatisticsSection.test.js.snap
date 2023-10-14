@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="md:min-h-screen"
+>
+  <div
+    className="min-h-[80%] bg-primary flex flex-col items-center "
+    id="background"
+  >
+    <img
+      alt="background"
+      className="opacity-10"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={40}
+    />
+  </div>
+  <div
+    className="max-w-6xl mx-auto undefined"
+  >
+    <div
+      className="flex flex-col mx-8 justify-center items-start text-center p-6 md:flex-row bg-white  rounded-3xl shadow-xl transform -translate-y-40"
+    >
+      <div
+        className="p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 50c-21.6 0-39 17.35-39 39 0 21.6 17.4 39 39 39s39-17.4 39-39c0-21.65-17.4-39-39-39zm-48 89c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-144 90c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-240 89.4c-21.65 0-39 17.4-39 39s17.35 39 39 39c21.6 0 39-17.4 39-39s-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zM64 409c-21.65 0-39 17.4-39 39s17.35 39 39 39 39-17.4 39-39-17.35-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39z"
+          />
+        </svg>
+        <h2
+          className="text-3xl font-bold"
+        >
+          30k
+        </h2>
+        <p>
+          In the course of 3 years, charities in algeria managed to provide   up to 1200 meal per day in ramadan.
+        </p>
+      </div>
+      <div
+        className="p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 50c-21.6 0-39 17.35-39 39 0 21.6 17.4 39 39 39s39-17.4 39-39c0-21.65-17.4-39-39-39zm-48 89c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-144 90c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-240 89.4c-21.65 0-39 17.4-39 39s17.35 39 39 39c21.6 0 39-17.4 39-39s-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zM64 409c-21.65 0-39 17.4-39 39s17.35 39 39 39 39-17.4 39-39-17.35-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39z"
+          />
+        </svg>
+        <h2
+          className="text-3xl font-bold"
+        >
+          Comfort
+        </h2>
+        <p>
+          we seek helping people in need to find affordable furnitures &   appliances because everyone deserves to have a home, not just a   house.
+        </p>
+      </div>
+      <div
+        className="p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 13h16v2h-16zM2 9h2v3h-2zM5 5h2v7h-2zM8 8h2v4h-2zM11 2h2v10h-2z"
+          />
+        </svg>
+        <h2
+          className="text-3xl font-bold"
+        >
+          Health
+        </h2>
+        <p>
+           Let's share believes that every human being deserves a warm   meal whenever it's difficult.
+        </p>
+      </div>
+      <div
+        className="p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 12a2 2 0 0 0-.703.133l-2.398-1.963c.059-.214.101-.436.101-.67C17 8.114 15.886 7 14.5 7S12 8.114 12 9.5c0 .396.1.765.262 1.097l-2.909 3.438A2.06 2.06 0 0 0 9 14c-.179 0-.348.03-.512.074l-2.563-2.563C5.97 11.348 6 11.179 6 11c0-1.108-.892-2-2-2s-2 .892-2 2 .892 2 2 2c.179 0 .348-.03.512-.074l2.563 2.563A1.906 1.906 0 0 0 7 16c0 1.108.892 2 2 2s2-.892 2-2c0-.237-.048-.46-.123-.671l2.913-3.442c.227.066.462.113.71.113a2.48 2.48 0 0 0 1.133-.281l2.399 1.963A2.077 2.077 0 0 0 18 14c0 1.108.892 2 2 2s2-.892 2-2-.892-2-2-2z"
+          />
+        </svg>
+        <h2
+          className="text-3xl font-bold"
+        >
+          Fact
+        </h2>
+        <p>
+          The acute malnutrition rate among children aged 0 to 5   years worldwide was 10.7%.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;
