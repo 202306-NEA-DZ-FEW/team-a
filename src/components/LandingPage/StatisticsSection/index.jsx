@@ -1,8 +1,9 @@
 import Image from "next/image";
 import background from "public/images/stats.svg";
 import { BiStats } from "react-icons/bi";
-import { GiBallPyramid } from "react-icons/gi";
 import { ImStatsBars } from "react-icons/im";
+import { MdOutlineQueryStats } from "react-icons/md";
+import { TfiStatsUp } from "react-icons/tfi";
 
 import Container from "@/components/container";
 
@@ -20,23 +21,20 @@ function StatisticsSection() {
       <Container id='stats'>
         <div className='flex flex-col mx-8 justify-center items-start text-center p-6 md:flex-row bg-white  rounded-3xl shadow-xl transform -translate-y-40'>
           <InfoCard
-            icon={<GiBallPyramid className='text-6xl text-error' />}
+            icon={<TfiStatsUp className='text-6xl text-error' />}
             title='30k'
             description='In the course of 3 years, charities in algeria managed to provide
-              up to 1200 meal per day in ramadan.'
+              up to 1200 meal per day in ramadan; an average of 30.000 meals served in one month.'
           />
           <InfoCard
-            icon={<GiBallPyramid className='text-6xl text-error' />}
-            title='Comfort'
-            description='we seek helping people in need to find affordable furnitures &
-              appliances because everyone deserves to have a home, not just a
-              house.'
+            icon={<MdOutlineQueryStats className='text-6xl text-error' />}
+            title='200'
+            description='50 to 200 orphans per state had been equipped with essential school supplies this school year, ensuring they have the tools they need to thrive in their education.'
           />
           <InfoCard
             icon={<ImStatsBars className='text-6xl text-error' />}
-            title='Health'
-            description=" Let's share believes that every human being deserves a warm
-              meal whenever it's difficult."
+            title='25k'
+            description='Over 25.000 refugees had been hosted in Algeria for the last 5 years, which many needed clothing, as well as a shelter.'
           />
           <InfoCard
             icon={<BiStats className='text-6xl text-error' />}

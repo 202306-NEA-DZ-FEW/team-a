@@ -47,12 +47,14 @@ exports[`renders correctly 1`] = `
               "color": undefined,
             }
           }
-          viewBox="0 0 512 512"
+          version="1.1"
+          viewBox="0 0 17 17"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <g />
           <path
-            d="M256 50c-21.6 0-39 17.35-39 39 0 21.6 17.4 39 39 39s39-17.4 39-39c0-21.65-17.4-39-39-39zm-48 89c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-144 90c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-240 89.4c-21.65 0-39 17.4-39 39s17.35 39 39 39c21.6 0 39-17.4 39-39s-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zM64 409c-21.65 0-39 17.4-39 39s17.35 39 39 39 39-17.4 39-39-17.35-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39z"
+            d="M17 16v1h-17v-1h17zM5.203 7.976l4.204 3.026 5.593-6.251v2.284h1v-4.035h-4.036v1h2.366l-5.070 5.665-4.129-2.974-4.372 3.956 0.671 0.741 3.773-3.412z"
           />
         </svg>
         <h2
@@ -61,7 +63,7 @@ exports[`renders correctly 1`] = `
           30k
         </h2>
         <p>
-          In the course of 3 years, charities in algeria managed to provide   up to 1200 meal per day in ramadan.
+          In the course of 3 years, charities in algeria managed to provide up to 1200 meal per day in ramadan; an average of 30.000 meals served in one month.
         </p>
       </div>
       <div
@@ -78,21 +80,25 @@ exports[`renders correctly 1`] = `
               "color": undefined,
             }
           }
-          viewBox="0 0 512 512"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M256 50c-21.6 0-39 17.35-39 39 0 21.6 17.4 39 39 39s39-17.4 39-39c0-21.65-17.4-39-39-39zm-48 89c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-144 90c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-240 89.4c-21.65 0-39 17.4-39 39s17.35 39 39 39c21.6 0 39-17.4 39-39s-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zM64 409c-21.65 0-39 17.4-39 39s17.35 39 39 39 39-17.4 39-39-17.35-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39z"
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19.88 18.47c.44-.7.7-1.51.7-2.39 0-2.49-2.01-4.5-4.5-4.5s-4.5 2.01-4.5 4.5 2.01 4.5 4.49 4.5c.88 0 1.7-.26 2.39-.7L21.58 23 23 21.58l-3.12-3.11zm-3.8.11a2.5 2.5 0 010-5 2.5 2.5 0 010 5zm-.36-8.5c-.74.02-1.45.18-2.1.45l-.55-.83-3.8 6.18-3.01-3.52-3.63 5.81L1 17l5-8 3 3.5L13 6l2.72 4.08zm2.59.5c-.64-.28-1.33-.45-2.05-.49L21.38 2 23 3.18l-4.69 7.4z"
           />
         </svg>
         <h2
           className="text-3xl font-bold"
         >
-          Comfort
+          200
         </h2>
         <p>
-          we seek helping people in need to find affordable furnitures &   appliances because everyone deserves to have a home, not just a   house.
+          50 to 200 orphans per state had been equipped with essential school supplies this school year, ensuring they have the tools they need to thrive in their education.
         </p>
       </div>
       <div
@@ -121,10 +127,10 @@ exports[`renders correctly 1`] = `
         <h2
           className="text-3xl font-bold"
         >
-          Health
+          25k
         </h2>
         <p>
-           Let's share believes that every human being deserves a warm   meal whenever it's difficult.
+          Over 25.000 refugees had been hosted in Algeria for the last 5 years, which many needed clothing, as well as a shelter.
         </p>
       </div>
       <div
@@ -155,7 +161,7 @@ exports[`renders correctly 1`] = `
           Fact
         </h2>
         <p>
-          The acute malnutrition rate among children aged 0 to 5   years worldwide was 10.7%.
+          The acute malnutrition rate among children aged 0 to 5 years worldwide was 10.7%.
         </p>
       </div>
     </div>
