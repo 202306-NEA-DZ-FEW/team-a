@@ -1,17 +1,17 @@
 import Link from "next/link";
-import Container from "../container";
-import Logo from "./Logo";
+import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-import LanguageFilter from "./LanguageFilter";
+import { TbLanguage } from "react-icons/tb";
+import { HiOutlineUserCircle } from "react-icons/hi2";
 function Navbar() {
   return (
     <>
       {/* Navbar Starts Here */}
       <div className='navbar bg-white'>
-        <div className='navbar-start'>
+        <div className='navbar-start ml-7'>
           {/* Navbar Logo */}
           <Link href={"/"}>
-            <Logo />
+            <p className='font-bold'>Unify.</p>
           </Link>
         </div>
         <div className='navbar-center hidden lg:block'>
@@ -31,33 +31,35 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className='navbar-end'>
+        <div className='navbar-end mr-7'>
           {/* Avatar */}
           <div className='dropdown dropdown-end'>
             <button
               type='button'
               tabIndex={0}
-              className='btn btn-ghost btn-circle avatar hidden md:hidden lg:block'
+              className='btn btn-ghost btn-circle avatar hidden md:hidden lg:block hover:bg-white transform scale-100 hover:scale-110 transition-transform duration-200 ease-in-out'
             >
-              <div className='w-10'>
-                <img src='https://avatar.iran.liara.run/public/88' />
-              </div>
+              <HiOutlineUserCircle className='h-6 w-6' />
             </button>
             <ul
               tabIndex={0}
-              className='mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52'
+              className='z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 mt-4'
             >
               <li>
-                <a className='justify-between'>
+                <Link href={""} className='justify-center'>
                   Profile
-                  <span className='badge'>New</span>
-                </a>
+                </Link>
               </li>
-              <li>
-                <a>Settings</a>
+              <li className='divide-y divide-gray-200'>
+                <Link className='justify-center' href={""}>
+                  Settings
+                </Link>
               </li>
+              <span className='divider p-0 m-0'></span>
               <li>
-                <a>Logout</a>
+                <Link className='justify-center' href={""}>
+                  Logout
+                </Link>
               </li>
             </ul>
           </div>
@@ -65,27 +67,31 @@ function Navbar() {
             <button
               type='button'
               tabIndex={0}
-              className='btn btn-ghost btn-circle avatar hidden md:hidden lg:block'
+              className='btn btn-ghost btn-circle avatar hidden md:hidden lg:block hover:bg-white transform scale-100 hover:scale-110 transition-transform duration-200 ease-in-out'
             >
-              <LanguageFilter />
+              <TbLanguage className='w-6 h-6' />
             </button>
             <ul
               tabIndex={0}
-              className='mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52'
+              className='z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 mt-4'
             >
               <li>
-                <Link href='/' locale='en'>
-                  <span className='fi fi-gb'></span> English
+                <Link className='justify-center pt-2 pb-2' href='/' locale='en'>
+                  <span className='fi fi-gb rounded'></span> English
                 </Link>
               </li>
               <li>
-                <Link href='/' locale='fr'>
-                  <span className='fi fi-fr'></span> Français
+                <Link
+                  className=' justify-center pt-2 pb-2'
+                  href='/'
+                  locale='fr'
+                >
+                  <span className='fi fi-fr rounded'></span> Français
                 </Link>
               </li>
               <li>
-                <Link href='/' locale='ar'>
-                  <span className='fi fi-sa'></span> العربية
+                <Link className='justify-center pt-2 pb-2' href='/' locale='ar'>
+                  <span className='fi fi-sa rounded'></span> العربية
                 </Link>
               </li>
             </ul>
@@ -110,7 +116,7 @@ function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'
+              className='menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box'
             >
               <li>
                 <Link href={""} className='flex justify-between'>
