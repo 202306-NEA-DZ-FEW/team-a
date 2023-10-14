@@ -11,8 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        futura: "futura",
-        futuraBlack: "futura-black",
+        poppins: ["var(--font-poppins)"],
       },
     },
   },
