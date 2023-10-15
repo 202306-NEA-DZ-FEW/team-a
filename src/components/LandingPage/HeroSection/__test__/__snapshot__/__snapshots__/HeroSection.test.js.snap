@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="max-w-6xl mx-auto undefined"
+>
+  <div
+    className="flex flex-col justify-center items-center md:flex-row-reverse gap-4  min-h-screen"
+  >
+    <div
+      className="md:w-1/2 p-6 m-2"
+      id="illustration"
+    >
+      <img
+        alt="hero illustration"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={40}
+      />
+    </div>
+    <div
+      className="flex flex-col justify-center items-center  p-2 md:w-1/2 gap-2"
+      id="text"
+    >
+      <h1
+        className="text-5xl font-futuraBlack"
+      >
+        let's share
+      </h1>
+      <p
+        className="text-start p-8"
+      >
+        Welcome to Let's Share! Where everything you may not need is someone else's necessity. From clothing to furniture, we are here to be the link between you and people in need. Together, we can make a significant difference in the lives of those who require a helping hand. Join us in spreading warmth, kindness, and hope. Let's create a community bound by the spirit of giving and compassion, one item at a time.
+      </p>
+      <button
+        className="text-base btn btn-primary py-2 px-4 text-white font-bold hover:bg-green-900"
+      >
+        Donate now
+      </button>
+    </div>
+  </div>
+</div>
+`;
