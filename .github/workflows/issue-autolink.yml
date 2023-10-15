@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: tkt-actions/add-issue-links@v1.6.0
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          repo-token: "${{ secrets.ISSUE_TOKEN }}"
           resolve: "true"
