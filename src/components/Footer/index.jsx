@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useTranslation } from "next-i18next";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsShareFill } from "react-icons/bs";
@@ -7,7 +6,6 @@ import { FaInstagram } from "react-icons/fa";
 import { TbLanguage } from "react-icons/tb";
 
 function Footer() {
-  const { t } = useTranslation();
   return (
     <div className='bg-neutral py-10 px-6 text-white fixed bottom-0 w-full'>
       <div className='grid grid-cols-1 justify-items-center md:grid-cols-5 gap-4'>
@@ -16,7 +14,6 @@ function Footer() {
             <div className='text-2xl text-white font-bold'>Unify.</div>
           </Link>
         </div>
-
         <div className='col-span-1 '>
           <ul className='flex flex-col items-center md:items-start gap-4'>
             <Link href='/about'>
@@ -30,7 +27,6 @@ function Footer() {
             </Link>
           </ul>
         </div>
-
         <div className='col-span-1'>
           <ul className='flex flex-col items-center gap-4'>
             <li className=''>Contact Us</li>
@@ -50,7 +46,6 @@ function Footer() {
             </div>
           </ul>
         </div>
-
         <div className='col-span-1'>
           <ul className='flex flex-col items-center md:items-start'>
             <li className=''>Adress</li>
@@ -58,7 +53,6 @@ function Footer() {
             <li className=''>City, Country</li>
           </ul>
         </div>
-
         <div className='col-span-1'>
           <div className='dropdown dropdown-top dropdown-end'>
             <label
