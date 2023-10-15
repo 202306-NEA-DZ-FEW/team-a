@@ -161,7 +161,7 @@ exports[`renders correctly 1`] = `
           Fact
         </h2>
         <p>
-          The acute malnutrition rate among children aged 0 to 5   years worldwide was 10.7%.
+          The acute malnutrition rate among children aged 0 to 5 years worldwide was 10.7%.
         </p>
       </div>
     </div>

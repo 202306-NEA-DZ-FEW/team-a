@@ -39,8 +39,7 @@ function StatisticsSection() {
           <InfoCard
             icon={<BiStats className='text-6xl text-error' />}
             title='Fact'
-            description='The acute malnutrition rate among children aged 0 to 5
-              years worldwide was 10.7%.'
+            description='The acute malnutrition rate among children aged 0 to 5 years worldwide was 10.7%.'
           />
         </div>
       </Container>
