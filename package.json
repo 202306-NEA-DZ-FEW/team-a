@@ -25,6 +25,8 @@
     "eslint-plugin-jest": "^26.6.0",
     "firebase": "^10.4.0",
     "flag-icons": "^6.11.1",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.6.4",
     "formik": "^2.4.5",
     "framer-motion": "^10.16.4",
     "i18next": "^21.9.0",
