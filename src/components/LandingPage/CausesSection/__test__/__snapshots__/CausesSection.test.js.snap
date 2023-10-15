@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="max-w-6xl mx-auto min-h-screen flex flex-col justify-center"
+>
+  <h1
+    className="text-4xl text-center font-bold font-nunito"
+  >
+    Causes
+  </h1>
+  <div
+    className="flex flex-col justify-center items-start text-center p-6 md:flex-row"
+  >
+    <div
+      className="p-4 flex flex-col flex-1 items-center gap-4"
+    >
+      <svg
+        className="text-6xl text-error"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M414.39 97.61A224 224 0 1097.61 414.39 224 224 0 10414.39 97.61zM192.13 260.18a64 64 0 1159.69 59.69 64.07 64.07 0 01-59.69-59.69zm240-66.64l-96.37 5.84a4.06 4.06 0 01-3.44-1.59 96 96 0 00-18.07-18.07 4.06 4.06 0 01-1.59-3.44l5.84-96.37a4 4 0 015.42-3.51A193 193 0 01435.6 188.12a4 4 0 01-3.51 5.42zM193.54 79.91l5.84 96.37a4.06 4.06 0 01-1.59 3.44 96 96 0 00-18.07 18.07 4.06 4.06 0 01-3.44 1.59l-96.37-5.84a4 4 0 01-3.51-5.42A193 193 0 01188.12 76.4a4 4 0 015.42 3.51zM79.91 318.46l96.37-5.84a4.06 4.06 0 013.44 1.59 96 96 0 0018.07 18.07 4.06 4.06 0 011.59 3.44l-5.84 96.37a4 4 0 01-5.42 3.51A193 193 0 0176.4 323.88a4 4 0 013.51-5.42zm238.55 113.63l-5.84-96.37a4.06 4.06 0 011.59-3.44 96 96 0 0018.07-18.07 4.06 4.06 0 013.44-1.59l96.37 5.84a4 4 0 013.51 5.42A193 193 0 01323.88 435.6a4 4 0 01-5.42-3.51z"
+        />
+      </svg>
+      <h2
+        className="text-3xl font-bold"
+      >
+        Warmth
+      </h2>
+      <p>
+         we believe that refugees & homeless deserve having access to clean warm clothes in the cold winter & comfy clothes in the summer.
+      </p>
+    </div>
+    <div
+      className="p-4 flex flex-col flex-1 items-center gap-4"
+    >
+      <svg
+        className="text-6xl text-error"
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+        />
+        <path
+          d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"
+        />
+        <path
+          d="m18 15-2-2"
+        />
+        <path
+          d="m15 18-2-2"
+        />
+      </svg>
+      <h2
+        className="text-3xl font-bold"
+      >
+        Comfort
+      </h2>
+      <p>
+        we seek helping people in need to find affordable furnitures & appliances because everyone deserves to have a home, not just a house.
+      </p>
+    </div>
+    <div
+      className="p-4 flex flex-col flex-1 items-center gap-4"
+    >
+      <svg
+        className="text-6xl text-error"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 576 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M288 256c53 0 96-42.1 96-94 0-40-57.1-120.7-83.2-155.6-6.4-8.5-19.2-8.5-25.6 0C249.1 41.3 192 122 192 162c0 51.9 43 94 96 94zm277.3 72.1c-11.8-10.7-30.2-10-42.6 0L430.3 402c-11.3 9.1-25.4 14-40 14H272c-8.8 0-16-7.2-16-16s7.2-16 16-16h78.3c15.9 0 30.7-10.9 33.3-26.6 3.3-20-12.1-37.4-31.6-37.4H192c-27 0-53.1 9.3-74.1 26.3L71.4 384H16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h356.8c14.5 0 28.6-4.9 40-14L564 377c15.2-12.1 16.4-35.3 1.3-48.9z"
+        />
+      </svg>
+      <h2
+        className="text-3xl font-bold"
+      >
+        Health
+      </h2>
+      <p>
+         Let's share believes that every human being deserves a warm meal whenever it's difficult.
+      </p>
+    </div>
+  </div>
+</div>
+`;
