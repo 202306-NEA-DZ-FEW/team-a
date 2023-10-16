@@ -5,9 +5,7 @@ import { Fragment } from "react";
 import { HiOutlineX, HiOutlineMenuAlt3 } from "react-icons/hi";
 import {} from "react-icons/hi";
 
-function MobileMenu() {
-  const user = {}; // This is to test out if the user is Signed-In or Signed-Out
-
+function MobileMenu({ user }) {
   return (
     <>
       {user ? (
@@ -76,6 +74,34 @@ function MobileMenu() {
                   >
                     Blogs
                   </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <div className='flex justify-around'>
+                    <Link
+                      href='#'
+                      locale='en'
+                      className='block px-4 py-2 text-md my-2'
+                    >
+                      <span className='fi fi-gb text-md rounded mr-1'></span>{" "}
+                      English
+                    </Link>
+                    <Link
+                      href='#'
+                      locale='en'
+                      className='block px-4 py-2 text-md my-2'
+                    >
+                      <span className='fi fi-fr text-md rounded mr-1'></span>{" "}
+                      French
+                    </Link>
+                    <Link
+                      href='#'
+                      locale='en'
+                      className='block px-4 py-2 text-md my-2'
+                    >
+                      <span className='fi fi-sa rounded text-md mr-1'></span>{" "}
+                      Arabic
+                    </Link>
+                  </div>
                 </Menu.Item>
                 <Menu.Item>
                   <Link
@@ -151,6 +177,32 @@ function MobileMenu() {
                     Blogs
                   </Link>
                 </Menu.Item>
+                <div className='flex justify-around'>
+                  <Link
+                    href='#'
+                    locale='en'
+                    className='block px-4 py-2 text-md my-2'
+                  >
+                    <span className='fi fi-gb text-md rounded mr-1'></span>{" "}
+                    English
+                  </Link>
+                  <Link
+                    href='#'
+                    locale='en'
+                    className='block px-4 py-2 text-md my-2'
+                  >
+                    <span className='fi fi-fr text-md rounded mr-1'></span>{" "}
+                    French
+                  </Link>
+                  <Link
+                    href='#'
+                    locale='en'
+                    className='block px-4 py-2 text-md my-2'
+                  >
+                    <span className='fi fi-sa rounded text-md mr-1'></span>{" "}
+                    Arabic
+                  </Link>
+                </div>
                 <Menu.Item>
                   <Link
                     href='/auth/sign-in'

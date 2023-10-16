@@ -3,9 +3,7 @@ import { Fragment } from "react";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import Link from "next/link";
 
-function UserMenu() {
-  //This is a variable to test whether the User is Signed-In or Signed-out
-  const user = {};
+function UserMenu({ user }) {
   //This is for classnames
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
