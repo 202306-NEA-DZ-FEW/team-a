@@ -7,7 +7,7 @@ import { TbLanguage } from "react-icons/tb";
 
 function Footer() {
   return (
-    <div className='bg-neutral py-10 px-6 text-white fixed bottom-0 w-full'>
+    <div className='bg-neutral py-10 px-6 text-white w-full'>
       <div className='grid grid-cols-1 justify-items-center md:grid-cols-5 gap-4'>
         <div className='col-span-1'>
           <Link href='/'>
@@ -63,7 +63,7 @@ function Footer() {
             </label>
             <ul
               tabIndex={0}
-              className='dropdown-content z-[1] menu text-black shadow bg-base-100 rounded-md w-32'
+              className='dropdown-content z-[1] menu text-black shadow bg-white rounded-md w-36'
             >
               <li>
                 <Link href='/' locale='en' className='block px-4 py-2 '>

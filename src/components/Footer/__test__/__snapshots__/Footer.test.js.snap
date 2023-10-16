@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="bg-neutral py-10 px-6 text-white fixed bottom-0 w-full"
+  className="bg-neutral py-10 px-6 text-white w-full"
 >
   <div
     className="grid grid-cols-1 justify-items-center md:grid-cols-5 gap-4"
@@ -265,7 +265,7 @@ exports[`renders correctly 1`] = `
           </svg>
         </label>
         <ul
-          className="dropdown-content z-[1] menu text-black shadow bg-base-100 rounded-md w-32"
+          className="dropdown-content z-[1] menu text-black shadow bg-white rounded-md w-36"
           tabIndex={0}
         >
           <li>
