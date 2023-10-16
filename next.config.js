@@ -7,4 +7,7 @@ module.exports = {
     dirs: ["src"],
   },
   reactStrictMode: true,
+  images: {
+    domains: ["images.unsplash.com"],
+  },
 };
