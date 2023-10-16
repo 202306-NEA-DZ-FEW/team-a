@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useState } from "react";
 import LanguageFilterMenu from "./LanguageFilterMenu";
 import UserMenu from "./UserMenu";
 import MobileMenu from "./MobileMenu";
