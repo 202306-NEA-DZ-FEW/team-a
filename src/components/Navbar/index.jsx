@@ -4,6 +4,7 @@ import UserMenu from "./UserMenu";
 import MobileMenu from "./MobileMenu";
 
 function Navbar() {
+  const user = { id: 1, name: "Farouk the Legend", imageUrl: "url" };
   return (
     <>
       {/* Navbar Starts Here */}
@@ -52,9 +53,9 @@ function Navbar() {
           {/* Language Filter */}
           <LanguageFilterMenu />
           {/* Avatar/Sign-in Button */}
-          <UserMenu />
+          <UserMenu user={user} />
           {/* This is Related to Mobile View Navbar Menu */}
-          <MobileMenu />
+          <MobileMenu user={user} />
         </div>
       </div>
       {/* Navbar Ends Here */}
