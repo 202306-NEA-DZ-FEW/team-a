@@ -63,7 +63,7 @@ exports[`renders correctly 1`] = `
           30k
         </h2>
         <p>
-          In the course of 3 years, charities in algeria managed to provide   up to 1200 meal per day in ramadan; an average of 30.000 meals served in one month.
+          In the course of 3 years, charities in algeria managed to provide up to 1200 meal per day in ramadan; an average of 30.000 meals served in one month.
         </p>
       </div>
       <div
@@ -161,7 +161,7 @@ exports[`renders correctly 1`] = `
           Fact
         </h2>
         <p>
-          The acute malnutrition rate among children aged 0 to 5   years worldwide was 10.7%.
+          The acute malnutrition rate among children aged 0 to 5 years worldwide was 10.7%.
         </p>
       </div>
     </div>
