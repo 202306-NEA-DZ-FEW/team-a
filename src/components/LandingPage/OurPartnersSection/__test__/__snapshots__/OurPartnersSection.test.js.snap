@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rend correctement 1`] = `
+<div
+  className="max-w-6xl mx-auto min-h-screen flex flex-col justify-center items-center gap-8  "
+>
+  <h1
+    className="text-3xl font-poppins font-bold "
+  >
+    Our Partners 
+  </h1>
+  <div
+    className="flex justify-center items-center flex-wrap gap-6 ms:flex-col"
+  >
+    <img
+      alt="recoded"
+      className=" object-cover rounded-xl "
+      data-nimg="1"
+      decoding="async"
+      height={100}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={200}
+    />
+    <img
+      alt="flatironschool"
+      className=" object-cover rounded-xl"
+      data-nimg="1"
+      decoding="async"
+      height={100}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={200}
+    />
+    <img
+      alt="microsoft"
+      className=" object-cover rounded-xl"
+      data-nimg="1"
+      decoding="async"
+      height={100}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={200}
+    />
+    <img
+      alt="mepi"
+      className=" object-cover rounded-xl"
+      data-nimg="1"
+      decoding="async"
+      height={100}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={200}
+    />
+  </div>
+</div>
+`;
