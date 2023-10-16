@@ -87,7 +87,7 @@ function MobileMenu({ user }) {
                     </Link>
                     <Link
                       href='#'
-                      locale='en'
+                      locale='fr'
                       className='block px-4 py-2 text-md my-2'
                     >
                       <span className='fi fi-fr text-md rounded mr-1'></span>{" "}
@@ -95,7 +95,7 @@ function MobileMenu({ user }) {
                     </Link>
                     <Link
                       href='#'
-                      locale='en'
+                      locale='ar'
                       className='block px-4 py-2 text-md my-2'
                     >
                       <span className='fi fi-sa rounded text-md mr-1'></span>{" "}
