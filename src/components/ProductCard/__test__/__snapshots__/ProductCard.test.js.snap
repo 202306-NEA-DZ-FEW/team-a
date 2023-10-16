@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="card w-52 bg-white shadow-xl"
+>
+  <img
+    alt="Shoes"
+    className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
+    data-nimg="1"
+    decoding="async"
+    height={400}
+    onError={[Function]}
+    onLoad={[Function]}
+    src=""
+    style={
+      Object {
+        "color": "transparent",
+      }
+    }
+    width={400}
+  />
+  <div
+    className="p-3 flex flex-col gap-1"
+  >
+    <div
+      className="flex items-center"
+    >
+      <svg
+        className="text-2xl text-error"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+        />
+      </svg>
+      <span
+        className="text-md font-light"
+      />
+    </div>
+    <h2
+      className="text-lg font-bold "
+    />
+    <p
+      className="text-sm font-light"
+    />
+  </div>
+</div>
+`;
