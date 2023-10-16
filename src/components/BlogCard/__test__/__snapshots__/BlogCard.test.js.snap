@@ -1,7 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
-  BlogCard
+<div
+  className="card bg-white rounded-xl shadow-lg w-64"
+>
+  <div
+    className="relative"
+  >
+    <img
+      alt="Blog Image"
+      className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
+      data-nimg="1"
+      decoding="async"
+      height={400}
+      onError={[Function]}
+      onLoad={[Function]}
+      src=""
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={400}
+    />
+    <span
+      className="absolute left-1 bottom-1 text-white bg-primary px-2 py-1"
+    />
+  </div>
+  <div
+    className="p-3 gap-1 flex flex-col"
+  >
+    <h2
+      className="text-lg font-bold mb-2"
+    />
+    <p
+      className="text-sm font-light mb-4"
+    />
+    <div
+      className="flex justify-end"
+    >
+      <a
+        className="text-secondary/[.8] hover:text-secondary font-bold"
+        href="/blogs"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        Read More
+      </a>
+    </div>
+  </div>
 </div>
 `;

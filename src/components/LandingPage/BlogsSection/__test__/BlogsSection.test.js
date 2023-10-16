@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import BlogCard from "..";
+import BlogsSection from "../BlogsSection";
 
 it("renders correctly", () => {
-  const tree = renderer.create(<BlogCard />).toJSON();
+  const tree = renderer.create(<BlogsSection />).toJSON();
   expect(tree).toMatchSnapshot();
 });
