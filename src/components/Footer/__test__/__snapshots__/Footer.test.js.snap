@@ -16,11 +16,11 @@ exports[`renders correctly 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        <div
+        <h2
           className="text-2xl text-white font-bold"
         >
           Unify.
-        </div>
+        </h2>
       </a>
     </div>
     <div
@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            About Us
+            common:footer:about
           </li>
         </a>
         <a
@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            Blogs
+            common:footer:blogs
           </li>
         </a>
         <a
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            Listed Items
+            common:footer:listedItems
           </li>
         </a>
       </ul>
@@ -76,7 +76,7 @@ exports[`renders correctly 1`] = `
         <li
           className=""
         >
-          Contact Us
+          common:footer:contactUs
         </li>
         <div
           className="flex gap-3 text-3xl mt-2 "
@@ -201,17 +201,17 @@ exports[`renders correctly 1`] = `
         <li
           className=""
         >
-          Adress
+          common:footer:address
         </li>
         <li
           className=""
         >
-          Street 01,17
+          common:footer:street
         </li>
         <li
           className=""
         >
-          City, Country
+          common:footer:city
         </li>
       </ul>
     </div>

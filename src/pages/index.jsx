@@ -17,13 +17,10 @@ export default function HomePage(props) {
     <Layout initialLocale={initialLocale}>
       {/* <p className='text-3xl font-futuraBlack'>{t("test")}</p> */}
       <HeroSection t={t} />
-      <hr />
       <CausesSection />
       <StatisticsSection />
       <PopularItemsSection />
-      <hr />
       <BlogsSection />
-      <hr />
       <OurPartnersSection />
     </Layout>
   );

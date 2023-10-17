@@ -1,4 +1,42 @@
 {
-  "heroSectionText": "hello from zero to hero",
-  "heroSectionButtonText": "get started"
+  "hero": {
+    "title": "Let's share.",
+    "description": "Welcome to Unify! Where everything you may not need is someone else's necessity. From clothing to furniture, we are here to be the link between you and people in need. Together, we can make a significant difference in the lives of those who require a helping hand. Join us in spreading warmth, kindness, and hope. Let's create a community bound by the spirit of giving and compassion, one item at a time."
+  },
+  "causes": {
+    "title": "Causes",
+    "warmth": {
+      "title": "Warmth",
+      "description": "we believe that refugees & homeless deserve having access to clean warm clothes in the cold winter & comfy clothes in the summer."
+    },
+    "comfort": {
+      "title": "Comfort",
+      "description": "we seek helping people in need to find affordable furnitures & appliances because everyone deserves to have a home, not just a house."
+    },
+    "health": {
+      "title": "Health",
+      "description": "Let's share believes that every human being deserves a warm meal whenever it's difficult."
+    }
+  },
+  "statistics": {
+    "meals": {
+      "title": "30k",
+      "description": "In the course of 3 years, charities in algeria managed to provide up to 1200 meal per day in ramadan; an average of 30.000 meals served in one month."
+    },
+    "orphans": {
+      "title": "200",
+      "description": "50 to 200 orphans per state had been equipped with essential school supplies this school year, ensuring they have the tools they need to thrive in their education."
+    },
+    "refugees": {
+      "title": "25k",
+      "description": "Over 25.000 refugees had been hosted in Algeria for the last 5 years, which many needed clothing, as well as a shelter."
+    },
+    "fact": {
+      "title": "Fact",
+      "description": "The acute malnutrition rate among children aged 0 to 5 years worldwide was 10.7%."
+    }
+  },
+  "items": "Popular items",
+  "blogs": "Blogs",
+  "partners": "Our Partners"
 }

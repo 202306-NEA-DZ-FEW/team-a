@@ -1,3 +1,31 @@
 {
-  "test": "لنتشارك."
+  "navbar": {
+    "logo": "Unify.",
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "products": "المنتجات",
+    "blogs": "المدونات",
+    "dashboard": "لوحة التحكم"
+  },
+  "footer": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "products": "المنتجات",
+    "listedItems": "العناصر المُدرجة",
+    "blogs": "المدونات",
+    "contactUs": "اتصل بنا",
+    "address": "العنوان",
+    "street": "شارع 01, 17",
+    "city": "المدينة, الدولة"
+  },
+  "buttons": {
+    "signIn": "تسجيل الدخول",
+    "signUp": "التسجيل",
+    "signOut": "تسجيل الخروج",
+    "donate": "تبرع الآن",
+    "readMore": "اقرأ المزيد",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "addItem": "إضافة عنصر"
+  }
 }

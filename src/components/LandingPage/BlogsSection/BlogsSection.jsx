@@ -1,7 +1,9 @@
 import BlogCard from "@/components/BlogCard";
 import Container from "@/components/container";
+import { useTranslation } from "next-i18next";
 
 function BlogsSection() {
+  const { t } = useTranslation();
   const blogs = [
     {
       id: 1,
@@ -41,9 +43,9 @@ function BlogsSection() {
     },
   ];
   return (
-    <Container className='min-h-screen flex flex-col justify-center'>
-      <h1 className='text-3xl font-poppins font-bold text-center mb-8'>
-        Blogs
+    <Container className='lg:min-h-screen my-20 lg:my-0 flex flex-col justify-center'>
+      <h1 className='text-3xl md:text-5xl font-bold text-center mb-12'>
+        {t("landingPage:blogs")}
       </h1>
       <div className='flex justify-center items-center flex-wrap gap-8'>
         {blogs.map((blog) => (
