@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 function BlogCard({ title, imageUrl, date, description }) {
+  const { t } = useTranslation();
   return (
     <div className='card bg-white rounded-xl shadow-lg w-64'>
       <div className='relative'>
@@ -25,7 +27,7 @@ function BlogCard({ title, imageUrl, date, description }) {
             href='/blogs'
             className='text-secondary/[.8] hover:text-secondary font-bold'
           >
-            Read More
+            {t("common:buttons:readMore")}
           </Link>
         </div>
       </div>

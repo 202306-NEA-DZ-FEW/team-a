@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
       <button
         className="btn btn-primary self-start"
       >
-        Donate now
+        common:buttons:donate
       </button>
     </div>
   </div>

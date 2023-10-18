@@ -65,7 +65,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Read More
+            common:buttons:readMore
           </a>
         </div>
       </div>
@@ -123,7 +123,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Read More
+            common:buttons:readMore
           </a>
         </div>
       </div>
@@ -181,7 +181,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Read More
+            common:buttons:readMore
           </a>
         </div>
       </div>
@@ -239,7 +239,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Read More
+            common:buttons:readMore
           </a>
         </div>
       </div>

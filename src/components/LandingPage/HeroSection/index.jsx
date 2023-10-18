@@ -22,7 +22,9 @@ function HeroSection() {
           <p className='text-start font-light text-md md:text-lg'>
             {t("landingPage:hero:description")}
           </p>
-          <button className='btn btn-primary self-start'>Donate now</button>
+          <button className='btn btn-primary self-start'>
+            {t("common:buttons:donate")}
+          </button>
         </div>
       </div>
     </Container>
