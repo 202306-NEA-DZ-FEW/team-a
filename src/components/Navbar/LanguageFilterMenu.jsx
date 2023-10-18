@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 import { TbLanguage } from "react-icons/tb";
 
-function LanguageFilterMenu() {
+function LanguageFilterMenu({ currentPath }) {
   //This is for classnames
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -31,7 +31,7 @@ function LanguageFilterMenu() {
               <Menu.Item>
                 {({ active }) => (
                   <Link
-                    href='/'
+                    href={currentPath}
                     locale='en'
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
@@ -45,7 +45,7 @@ function LanguageFilterMenu() {
               <Menu.Item>
                 {({ active }) => (
                   <Link
-                    href='/'
+                    href={currentPath}
                     locale='fr'
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
@@ -59,7 +59,7 @@ function LanguageFilterMenu() {
               <Menu.Item>
                 {({ active }) => (
                   <Link
-                    href='/'
+                    href={currentPath}
                     locale='ar'
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",

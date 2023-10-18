@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Navbar snapshot test 1`] = `
 <div
   className="navbar bg-white"
 >
@@ -22,6 +22,7 @@ exports[`renders correctly 1`] = `
   </div>
   <div
     className="navbar-center hidden lg:block"
+    dir="ltr"
   >
     <ul
       className="menu menu-horizontal gap-2 px-1 mx-1 text-black"

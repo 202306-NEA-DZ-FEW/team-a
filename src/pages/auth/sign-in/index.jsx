@@ -3,12 +3,15 @@ import Container from "@/components/container";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-function SignInPage({ t }) {
+function SignInPage({ t, _nextI18Next }) {
+  const { initialLocale } = _nextI18Next;
   return (
     <Container>
-      {t("signIn")}
-      <SignInForm />
-      {/* Ilustration here */}
+      <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
+        {t("signIn")}
+        <SignInForm />
+        {/* Ilustration here */}
+      </main>
     </Container>
   );
 }

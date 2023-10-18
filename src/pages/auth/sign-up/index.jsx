@@ -3,11 +3,14 @@ import Container from "@/components/container";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-function SignUpPage({ t }) {
+function SignUpPage({ t, _nextI18Next }) {
+  const { initialLocale } = _nextI18Next;
   return (
     <Container>
-      {t("signUp")}
-      <SIgnUpFrom />
+      <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
+        {t("signUp")}
+        <SIgnUpFrom />
+      </main>
     </Container>
   );
 }

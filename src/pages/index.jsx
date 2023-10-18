@@ -11,7 +11,7 @@ export default function HomePage(props) {
   const { initialLocale } = props._nextI18Next;
 
   return (
-    <>
+    <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
       {/* <p className='text-3xl font-futuraBlack'>{t("test")}</p> */}
       <HeroSection />
       <CausesSection />
@@ -19,7 +19,7 @@ export default function HomePage(props) {
       <PopularItemsSection />
       <BlogsSection />
       <OurPartnersSection />
-    </>
+    </main>
   );
 }
 
