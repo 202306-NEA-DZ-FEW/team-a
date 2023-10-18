@@ -7,7 +7,7 @@ exports[`rend correctement 1`] = `
   <h1
     className="text-3xl font-poppins font-bold "
   >
-    landingPage:partners
+    partners
   </h1>
   <div
     className="flex justify-center items-center flex-wrap gap-6 ms:flex-col"

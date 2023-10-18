@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        common:buttons:readMore
+        buttons.readMore
       </a>
     </div>
   </div>

@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
   <h1
     className="text-3xl md:text-5xl font-bold text-center mb-14"
   >
-    landingPage:items
+    items
   </h1>
   <div
     className="flex justify-center items-center flex-wrap gap-4"

@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
   <h1
     className="text-3xl md:text-5xl font-bold text-center"
   >
-    landingPage:causes:title
+    causes.title
   </h1>
   <div
     className="flex flex-col justify-center items-start gap-4 text-center p-6 md:flex-row"
@@ -37,12 +37,12 @@ exports[`renders correctly 1`] = `
       <h2
         className="text-2xl md:text-3xl font-bold"
       >
-        landingPage:causes:warmth:title
+        causes.warmth.title
       </h2>
       <p
         className="text-md font-light"
       >
-        landingPage:causes:warmth:description
+        causes.warmth.description
       </p>
     </div>
     <div
@@ -81,12 +81,12 @@ exports[`renders correctly 1`] = `
       <h2
         className="text-2xl md:text-3xl font-bold"
       >
-        landingPage:causes:comfort:title
+        causes.comfort.title
       </h2>
       <p
         className="text-md font-light"
       >
-        landingPage:causes:comfort:description
+        causes.comfort.description
       </p>
     </div>
     <div
@@ -114,12 +114,12 @@ exports[`renders correctly 1`] = `
       <h2
         className="text-2xl md:text-3xl font-bold"
       >
-        landingPage:causes:health:title
+        causes.health.title
       </h2>
       <p
         className="text-md font-light"
       >
-        landingPage:causes:health:description
+        causes.health.description
       </p>
     </div>
   </div>
