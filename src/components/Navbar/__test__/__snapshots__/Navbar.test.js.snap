@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
       <p
         className="font-bold text-2xl text-black"
       >
-        Unify.
+        common:navbar:logo
       </p>
     </a>
   </div>
@@ -24,50 +24,50 @@ exports[`renders correctly 1`] = `
     className="navbar-center hidden lg:block"
   >
     <ul
-      className="menu menu-horizontal px-1 mx-1 text-black"
+      className="menu menu-horizontal gap-2 px-1 mx-1 text-black"
     >
       <li>
         <a
-          className="hover:bg-cyan-800 hover:text-white"
+          className="hover:bg-primary hover:text-white"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          Home
+          common:navbar:home
         </a>
       </li>
       <li>
         <a
-          className="hover:bg-cyan-800 hover:text-white"
+          className="hover:bg-primary hover:text-white"
           href="/about"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          About Us
+          common:navbar:about
         </a>
       </li>
       <li>
         <a
-          className="hover:bg-cyan-800 hover:text-white"
+          className="hover:bg-primary hover:text-white"
           href="/products"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          Products
+          common:navbar:products
         </a>
       </li>
       <li>
         <a
-          className="hover:bg-cyan-800 hover:text-white"
+          className="hover:bg-primary hover:text-white"
           href="/blogs"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          Blogs
+          common:navbar:blogs
         </a>
       </li>
     </ul>

@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="md:min-h-screen"
+  className="lg:min-h-screen my-20 lg:my-0"
 >
   <div
-    className="min-h-[80%] bg-primary flex flex-col items-center "
+    className="bg-primary flex flex-col items-center "
     id="background"
   >
     <img
@@ -28,13 +28,13 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <div
-    className="max-w-6xl mx-auto undefined"
+    className="max-w-6xl mx-auto px-8 xl:px-0 undefined"
   >
     <div
-      className="flex flex-col mx-8 justify-center items-start text-center p-6 md:flex-row bg-white  rounded-3xl shadow-xl transform -translate-y-40"
+      className="flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-white  rounded-3xl shadow-xl transform md:-translate-y-40 -translate-y-24"
     >
       <div
-        className="p-4 flex flex-col flex-1 items-center gap-4"
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
       >
         <svg
           className="text-6xl text-error"
@@ -58,16 +58,18 @@ exports[`renders correctly 1`] = `
           />
         </svg>
         <h2
-          className="text-3xl font-bold"
+          className="text-2xl md:text-3xl font-bold"
         >
-          30k
+          landingPage:statistics:meals:title
         </h2>
-        <p>
-          In the course of 3 years, charities in algeria managed to provide up to 1200 meal per day in ramadan; an average of 30.000 meals served in one month.
+        <p
+          className="text-md font-light"
+        >
+          landingPage:statistics:meals:description
         </p>
       </div>
       <div
-        className="p-4 flex flex-col flex-1 items-center gap-4"
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
       >
         <svg
           className="text-6xl text-error"
@@ -93,16 +95,18 @@ exports[`renders correctly 1`] = `
           />
         </svg>
         <h2
-          className="text-3xl font-bold"
+          className="text-2xl md:text-3xl font-bold"
         >
-          200
+          landingPage:statistics:orphans:title
         </h2>
-        <p>
-          50 to 200 orphans per state had been equipped with essential school supplies this school year, ensuring they have the tools they need to thrive in their education.
+        <p
+          className="text-md font-light"
+        >
+          landingPage:statistics:orphans:description
         </p>
       </div>
       <div
-        className="p-4 flex flex-col flex-1 items-center gap-4"
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
       >
         <svg
           className="text-6xl text-error"
@@ -125,16 +129,18 @@ exports[`renders correctly 1`] = `
           />
         </svg>
         <h2
-          className="text-3xl font-bold"
+          className="text-2xl md:text-3xl font-bold"
         >
-          25k
+          landingPage:statistics:refugees:title
         </h2>
-        <p>
-          Over 25.000 refugees had been hosted in Algeria for the last 5 years, which many needed clothing, as well as a shelter.
+        <p
+          className="text-md font-light"
+        >
+          landingPage:statistics:refugees:description
         </p>
       </div>
       <div
-        className="p-4 flex flex-col flex-1 items-center gap-4"
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
       >
         <svg
           className="text-6xl text-error"
@@ -156,12 +162,14 @@ exports[`renders correctly 1`] = `
           />
         </svg>
         <h2
-          className="text-3xl font-bold"
+          className="text-2xl md:text-3xl font-bold"
         >
-          Fact
+          landingPage:statistics:fact:title
         </h2>
-        <p>
-          The acute malnutrition rate among children aged 0 to 5 years worldwide was 10.7%.
+        <p
+          className="text-md font-light"
+        >
+          landingPage:statistics:fact:description
         </p>
       </div>
     </div>

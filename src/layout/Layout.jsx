@@ -6,11 +6,13 @@ export default function Layout({ children, initialLocale }) {
   // Put Header or Footer around the children element
   // Example
   return (
-    <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
+    <>
       <Navbar />
-      {children}
+      <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
+        {children}
+        <NextTopLoader color='#6658F8' showSpinner={false} />
+      </main>
       <Footer />
-      <NextTopLoader color='#6658F8' showSpinner={false} />
-    </main>
+    </>
   );
 }

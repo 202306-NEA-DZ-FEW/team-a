@@ -2,9 +2,12 @@ import Link from "next/link";
 import LanguageFilterMenu from "./LanguageFilterMenu";
 import UserMenu from "./UserMenu";
 import MobileMenu from "./MobileMenu";
+import { useTranslation } from "next-i18next";
 
 function Navbar() {
-  const user = { id: 1, name: "Farouk the Legend", imageUrl: "url" };
+  const user = {};
+  const { t } = useTranslation();
+  // {t("landingPage:heroSectionText")}
   return (
     <>
       {/* Navbar Starts Here */}
@@ -12,39 +15,41 @@ function Navbar() {
         <div className='navbar-start ml-7'>
           {/* Navbar Logo */}
           <Link href={"/"}>
-            <p className='font-bold text-2xl text-black'>Unify.</p>
+            <p className='font-bold text-2xl text-black'>
+              {t("common:navbar:logo")}
+            </p>
           </Link>
         </div>
         <div className='navbar-center hidden lg:block'>
           {/* Navbar Navigation Links */}
-          <ul className='menu menu-horizontal px-1 mx-1 text-black'>
+          <ul className='menu menu-horizontal gap-2 px-1 mx-1 text-black'>
             <li>
-              <Link className='hover:bg-cyan-800 hover:text-white' href={"/"}>
-                Home
+              <Link className='hover:bg-primary hover:text-white' href={"/"}>
+                {t("common:navbar:home")}
               </Link>
             </li>
             <li>
               <Link
-                className='hover:bg-cyan-800 hover:text-white'
+                className='hover:bg-primary hover:text-white'
                 href={"/about"}
               >
-                About Us
+                {t("common:navbar:about")}
               </Link>
             </li>
             <li>
               <Link
-                className='hover:bg-cyan-800 hover:text-white'
+                className='hover:bg-primary hover:text-white'
                 href={"/products"}
               >
-                Products
+                {t("common:navbar:products")}
               </Link>
             </li>
             <li>
               <Link
-                className='hover:bg-cyan-800 hover:text-white'
+                className='hover:bg-primary hover:text-white'
                 href={"/blogs"}
               >
-                Blogs
+                {t("common:navbar:blogs")}
               </Link>
             </li>
           </ul>
@@ -53,9 +58,9 @@ function Navbar() {
           {/* Language Filter */}
           <LanguageFilterMenu />
           {/* Avatar/Sign-in Button */}
-          <UserMenu user={user} />
+          <UserMenu user={user} t={t} />
           {/* This is Related to Mobile View Navbar Menu */}
-          <MobileMenu user={user} />
+          <MobileMenu user={user} t={t} />
         </div>
       </div>
       {/* Navbar Ends Here */}

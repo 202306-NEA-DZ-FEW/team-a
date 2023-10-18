@@ -2,7 +2,7 @@
 
 exports[`InfoCard Component renders correctly and match snapshot 1`] = `
 <div
-  className="p-4 flex flex-col flex-1 items-center gap-4"
+  className="lg:p-4 flex flex-col flex-1 items-center gap-4"
 >
   <svg
     fill="currentColor"
@@ -23,11 +23,13 @@ exports[`InfoCard Component renders correctly and match snapshot 1`] = `
     />
   </svg>
   <h2
-    className="text-3xl font-bold"
+    className="text-2xl md:text-3xl font-bold"
   >
     Test Title
   </h2>
-  <p>
+  <p
+    className="text-md font-light"
+  >
     Test Description
   </p>
 </div>
@@ -35,7 +37,7 @@ exports[`InfoCard Component renders correctly and match snapshot 1`] = `
 
 exports[`InfoCard Component renders correctly with props 1`] = `
 <div
-  className="p-4 flex flex-col flex-1 items-center gap-4"
+  className="lg:p-4 flex flex-col flex-1 items-center gap-4"
 >
   <svg
     fill="currentColor"
@@ -56,11 +58,13 @@ exports[`InfoCard Component renders correctly with props 1`] = `
     />
   </svg>
   <h2
-    className="text-3xl font-bold"
+    className="text-2xl md:text-3xl font-bold"
   >
     Test Title
   </h2>
-  <p>
+  <p
+    className="text-md font-light"
+  >
     Test Description
   </p>
 </div>

@@ -31,7 +31,7 @@ function LanguageFilterMenu() {
               <Menu.Item>
                 {({ active }) => (
                   <Link
-                    href='#'
+                    href='/'
                     locale='en'
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",

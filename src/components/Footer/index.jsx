@@ -4,32 +4,36 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsShareFill } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { TbLanguage } from "react-icons/tb";
+import { useTranslation } from "next-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div className='bg-neutral py-10 px-6 text-white w-full'>
       <div className='grid grid-cols-1 justify-items-center md:grid-cols-5 gap-4'>
         <div className='col-span-1'>
           <Link href='/'>
-            <div className='text-2xl text-white font-bold'>Unify.</div>
+            <h2 className='text-2xl text-white font-bold'>Unify.</h2>
           </Link>
         </div>
         <div className='col-span-1 '>
           <ul className='flex flex-col items-center md:items-start gap-4'>
             <Link href='/about'>
-              <li className='hover:underline'>About Us</li>
+              <li className='hover:underline'>{t("common:footer:about")}</li>
             </Link>
             <Link href='/blogs'>
-              <li className='hover:underline'>Blogs</li>
+              <li className='hover:underline'>{t("common:footer:blogs")}</li>
             </Link>
             <Link href='/products'>
-              <li className='hover:underline'>Listed Items</li>
+              <li className='hover:underline'>
+                {t("common:footer:listedItems")}
+              </li>
             </Link>
           </ul>
         </div>
         <div className='col-span-1'>
           <ul className='flex flex-col items-center gap-4'>
-            <li className=''>Contact Us</li>
+            <li className=''>{t("common:footer:contactUs")}</li>
             <div className='flex gap-3 text-3xl mt-2 '>
               <Link href='https://www.facebook.com' target='_blank'>
                 <AiFillFacebook className='opacity-70 hover:opacity-100' />
@@ -48,9 +52,9 @@ function Footer() {
         </div>
         <div className='col-span-1'>
           <ul className='flex flex-col items-center md:items-start'>
-            <li className=''>Adress</li>
-            <li className=''>Street 01,17</li>
-            <li className=''>City, Country</li>
+            <li className=''>{t("common:footer:address")}</li>
+            <li className=''>{t("common:footer:street")}</li>
+            <li className=''>{t("common:footer:city")}</li>
           </ul>
         </div>
         <div className='col-span-1'>

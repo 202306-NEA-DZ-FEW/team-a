@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Partageons ensemble.",
+    "description": "Bienvenue chez Unify! Là où tout ce dont vous pourriez ne pas avoir besoin est la nécessité de quelqu'un d'autre. Des vêtements aux meubles, nous sommes là pour faire le lien entre vous et les personnes dans le besoin. Ensemble, nous pouvons faire une différence significative dans la vie de ceux qui ont besoin d'un coup de main. Rejoignez-nous pour répandre la chaleur, la gentillesse et l'espoir. Créons une communauté unie par l'esprit du don et de la compassion, un article à la fois."
+  },
+  "causes": {
+    "title": "Causes",
+    "warmth": {
+      "title": "Chaleur",
+      "description": "Nous croyons que les réfugiés et les sans-abri méritent d'avoir accès à des vêtements chauds et propres en hiver et à des vêtements confortables en été."
+    },
+    "comfort": {
+      "title": "Confort",
+      "description": "Nous cherchons à aider les personnes dans le besoin à trouver des meubles et des appareils abordables car tout le monde mérite d'avoir un chez-soi, pas seulement une maison."
+    },
+    "health": {
+      "title": "Santé",
+      "description": "Unify croit que chaque être humain mérite un repas chaud chaque fois que c'est difficile."
+    }
+  },
+  "statistics": {
+    "meals": {
+      "title": "30K",
+      "description": "Au cours de 3 ans, les associations en Algérie ont réussi à fournir jusqu'à 1 200 repas par jour pendant le Ramadan ; en moyenne, 30 000 repas servis en un mois."
+    },
+    "orphans": {
+      "title": "200",
+      "description": "De 50 à 200 orphelins par État ont été équipés de fournitures scolaires essentielles cette année scolaire, veillant à ce qu'ils aient les outils dont ils ont besoin pour réussir dans leur éducation."
+    },
+    "refugees": {
+      "title": "25K",
+      "description": "Plus de 25 000 réfugiés ont été accueillis en Algérie au cours des 5 dernières années, dont beaucoup avaient besoin de vêtements ainsi qu'un abri."
+    },
+    "fact": {
+      "title": "Fait",
+      "description": "Le taux de malnutrition aiguë chez les enfants de 0 à 5 ans dans le monde était de 10,7 %."
+    }
+  },
+  "items": "Articles populaires",
+  "blogs": "Blogs",
+  "partners": "Nos partenaires"
+}

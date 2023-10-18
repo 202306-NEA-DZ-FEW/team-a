@@ -2,18 +2,18 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="max-w-6xl mx-auto min-h-screen flex flex-col justify-center"
+  className="max-w-6xl mx-auto px-8 xl:px-0 flex flex-col justify-center lg:min-h-screen my-20 lg:my-0"
 >
   <h1
-    className="text-4xl text-center font-bold font-nunito"
+    className="text-3xl md:text-5xl font-bold text-center"
   >
-    Causes
+    landingPage:causes:title
   </h1>
   <div
-    className="flex flex-col justify-center items-start text-center p-6 md:flex-row"
+    className="flex flex-col justify-center items-start gap-4 text-center p-6 md:flex-row"
   >
     <div
-      className="p-4 flex flex-col flex-1 items-center gap-4"
+      className="lg:p-4 flex flex-col flex-1 items-center gap-4"
     >
       <svg
         className="text-6xl text-error"
@@ -35,16 +35,18 @@ exports[`renders correctly 1`] = `
         />
       </svg>
       <h2
-        className="text-3xl font-bold"
+        className="text-2xl md:text-3xl font-bold"
       >
-        Warmth
+        landingPage:causes:warmth:title
       </h2>
-      <p>
-         we believe that refugees & homeless deserve having access to clean warm clothes in the cold winter & comfy clothes in the summer.
+      <p
+        className="text-md font-light"
+      >
+        landingPage:causes:warmth:description
       </p>
     </div>
     <div
-      className="p-4 flex flex-col flex-1 items-center gap-4"
+      className="lg:p-4 flex flex-col flex-1 items-center gap-4"
     >
       <svg
         className="text-6xl text-error"
@@ -77,16 +79,18 @@ exports[`renders correctly 1`] = `
         />
       </svg>
       <h2
-        className="text-3xl font-bold"
+        className="text-2xl md:text-3xl font-bold"
       >
-        Comfort
+        landingPage:causes:comfort:title
       </h2>
-      <p>
-        we seek helping people in need to find affordable furnitures & appliances because everyone deserves to have a home, not just a house.
+      <p
+        className="text-md font-light"
+      >
+        landingPage:causes:comfort:description
       </p>
     </div>
     <div
-      className="p-4 flex flex-col flex-1 items-center gap-4"
+      className="lg:p-4 flex flex-col flex-1 items-center gap-4"
     >
       <svg
         className="text-6xl text-error"
@@ -108,12 +112,14 @@ exports[`renders correctly 1`] = `
         />
       </svg>
       <h2
-        className="text-3xl font-bold"
+        className="text-2xl md:text-3xl font-bold"
       >
-        Health
+        landingPage:causes:health:title
       </h2>
-      <p>
-         Let's share believes that every human being deserves a warm meal whenever it's difficult.
+      <p
+        className="text-md font-light"
+      >
+        landingPage:causes:health:description
       </p>
     </div>
   </div>

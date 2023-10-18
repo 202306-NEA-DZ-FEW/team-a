@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import Link from "next/link";
 
-function UserMenu({ user }) {
+function UserMenu({ user, t }) {
   //This is for classnames
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -39,7 +39,7 @@ function UserMenu({ user }) {
                         "block rounded-lg px-4 py-2 text-sm"
                       )}
                     >
-                      Dashboard
+                      {t("common:navbar:dashboard")}
                     </Link>
                   )}
                 </Menu.Item>
@@ -48,10 +48,10 @@ function UserMenu({ user }) {
                     <button
                       className={classNames(
                         active ? "bg-gray-100 text-slate-700" : "text-white",
-                        "w-3/6 bg-error text-sm btn btn-sm mb-1 mt-2 hover:bg-error hover:text-black rounded-md"
+                        "btn btn-error btn-sm hover:text-white"
                       )}
                     >
-                      Sign Out
+                      {t("common:buttons:signOut")}
                     </button>
                   )}
                 </Menu.Item>
@@ -62,8 +62,8 @@ function UserMenu({ user }) {
       ) : (
         //Code for When the User is Signed-out
         <Link href={"/auth/sign-in"}>
-          <button className='btn bg-error btn-xs w-full h-full px-3 py-2 text-white rounded-md hover:bg-error hover:text-black hidden lg:block'>
-            Sign In
+          <button className='btn btn-primary btn-sm hidden lg:block'>
+            {t("common:buttons:signIn")}
           </button>
         </Link>
       )}
