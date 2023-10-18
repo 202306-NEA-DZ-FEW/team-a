@@ -7,6 +7,7 @@ import "@/styles/globals.css";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "@/layout";
+import { AuthContextProvider } from "@/context/AuthProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,12 +17,14 @@ const poppins = Poppins({
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <ToastContainer />
-      <main className={`${poppins.variable} font-poppins`}>
-        <Component {...pageProps} />
-      </main>
-    </Layout>
+    <AuthContextProvider>
+      <Layout>
+        <ToastContainer />
+        <main className={`${poppins.variable} font-poppins`}>
+          <Component {...pageProps} />
+        </main>
+      </Layout>
+    </AuthContextProvider>
   );
 }
 
