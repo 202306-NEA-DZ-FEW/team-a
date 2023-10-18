@@ -1,6 +1,7 @@
 import { appWithTranslation } from "next-i18next";
 import { ToastContainer } from "react-toastify";
 import { Poppins } from "next/font/google";
+import nextI18NextConfig from "../../next-i18next.config";
 
 import "@/styles/globals.css";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
@@ -24,4 +25,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18NextConfig);
