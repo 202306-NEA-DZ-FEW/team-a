@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            common:footer:about
+            footer.about
           </li>
         </a>
         <a
@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            common:footer:blogs
+            footer.blogs
           </li>
         </a>
         <a
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            common:footer:listedItems
+            footer.listedItems
           </li>
         </a>
       </ul>
@@ -76,7 +76,7 @@ exports[`renders correctly 1`] = `
         <li
           className=""
         >
-          common:footer:contactUs
+          footer.contactUs
         </li>
         <div
           className="flex gap-3 text-3xl mt-2 "
@@ -201,17 +201,17 @@ exports[`renders correctly 1`] = `
         <li
           className=""
         >
-          common:footer:address
+          footer.address
         </li>
         <li
           className=""
         >
-          common:footer:street
+          footer.street
         </li>
         <li
           className=""
         >
-          common:footer:city
+          footer.city
         </li>
       </ul>
     </div>

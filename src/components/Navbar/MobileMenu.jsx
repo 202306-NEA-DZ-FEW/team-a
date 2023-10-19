@@ -5,7 +5,7 @@ import { Fragment } from "react";
 import { HiOutlineX, HiOutlineMenuAlt3 } from "react-icons/hi";
 import {} from "react-icons/hi";
 
-function MobileMenu({ user, t }) {
+function MobileMenu({ user, t, currentPath }) {
   return (
     <>
       <Menu as='div' className='text-left block lg:hidden'>
@@ -78,7 +78,7 @@ function MobileMenu({ user, t }) {
               <Menu.Item>
                 <div className='flex justify-around'>
                   <Link
-                    href='#'
+                    href={currentPath}
                     locale='en'
                     className='block px-4 py-2 text-md my-2'
                   >
@@ -86,7 +86,7 @@ function MobileMenu({ user, t }) {
                     English
                   </Link>
                   <Link
-                    href='#'
+                    href={currentPath}
                     locale='fr'
                     className='block px-4 py-2 text-md my-2'
                   >
@@ -94,7 +94,7 @@ function MobileMenu({ user, t }) {
                     French
                   </Link>
                   <Link
-                    href='#'
+                    href={currentPath}
                     locale='ar'
                     className='block px-4 py-2 text-md my-2'
                   >

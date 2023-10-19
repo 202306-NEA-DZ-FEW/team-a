@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Navbar snapshot test 1`] = `
 <div
   className="navbar bg-white"
 >
@@ -16,12 +16,13 @@ exports[`renders correctly 1`] = `
       <p
         className="font-bold text-2xl text-black"
       >
-        common:navbar:logo
+        navbar.logo
       </p>
     </a>
   </div>
   <div
     className="navbar-center hidden lg:block"
+    dir="ltr"
   >
     <ul
       className="menu menu-horizontal gap-2 px-1 mx-1 text-black"
@@ -34,7 +35,7 @@ exports[`renders correctly 1`] = `
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          common:navbar:home
+          navbar.home
         </a>
       </li>
       <li>
@@ -45,7 +46,7 @@ exports[`renders correctly 1`] = `
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          common:navbar:about
+          navbar.about
         </a>
       </li>
       <li>
@@ -56,7 +57,7 @@ exports[`renders correctly 1`] = `
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          common:navbar:products
+          navbar.products
         </a>
       </li>
       <li>
@@ -67,7 +68,7 @@ exports[`renders correctly 1`] = `
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          common:navbar:blogs
+          navbar.blogs
         </a>
       </li>
     </ul>

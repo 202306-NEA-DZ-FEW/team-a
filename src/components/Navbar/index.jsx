@@ -3,11 +3,21 @@ import LanguageFilterMenu from "./LanguageFilterMenu";
 import UserMenu from "./UserMenu";
 import MobileMenu from "./MobileMenu";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   const user = {};
-  const { t } = useTranslation();
-  // {t("landingPage:heroSectionText")}
+  const { i18n, t } = useTranslation();
+  const router = useRouter();
+  const [currentPath, setCurrentPath] = useState("/");
+
+  useEffect(() => {
+    // Get the current path
+    const currentPath = router.asPath;
+    setCurrentPath(currentPath);
+  }, [router]);
+
   return (
     <>
       {/* Navbar Starts Here */}
@@ -20,7 +30,10 @@ function Navbar() {
             </p>
           </Link>
         </div>
-        <div className='navbar-center hidden lg:block'>
+        <div
+          dir={i18n?.language == "ar" ? "rtl" : "ltr"}
+          className='navbar-center hidden lg:block'
+        >
           {/* Navbar Navigation Links */}
           <ul className='menu menu-horizontal gap-2 px-1 mx-1 text-black'>
             <li>
@@ -56,11 +69,11 @@ function Navbar() {
         </div>
         <div className='navbar-end mr-7'>
           {/* Language Filter */}
-          <LanguageFilterMenu />
+          <LanguageFilterMenu currentPath={currentPath} />
           {/* Avatar/Sign-in Button */}
           <UserMenu user={user} t={t} />
           {/* This is Related to Mobile View Navbar Menu */}
-          <MobileMenu user={user} t={t} />
+          <MobileMenu user={user} t={t} currentPath={currentPath} />
         </div>
       </div>
       {/* Navbar Ends Here */}
