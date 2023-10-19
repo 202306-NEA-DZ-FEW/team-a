@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="pb-4"
+>
+  <div
+    className="label"
+  >
+    <label
+      className="label-text"
+    />
+    <label
+      className="label-text-alt "
+    />
+  </div>
+  <input
+    className="input bg-white input-primary w-full"
+  />
+</div>
+`;
