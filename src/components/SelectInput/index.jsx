@@ -1,16 +1,14 @@
-function Input({
+function SelectInput({
+  data,
   name,
-  placeholder,
   label,
-  type,
   handleChange,
-  value,
-  handleBlur,
   touched,
   error,
+  value,
 }) {
   return (
-    <div className='pb-4'>
+    <div>
       <div className='label'>
         <label htmlFor={name} className='label-text'>
           {label}
@@ -21,18 +19,20 @@ function Input({
           {touched && error ? error : ""}
         </label>
       </div>
-      <input
-        className='input bg-white input-primary w-full'
+      <select
         id={name}
-        type={type}
-        name={name}
-        placeholder={placeholder}
+        className='select select-primary bg-white w-full'
         onChange={handleChange}
-        value={value}
-        onBlur={handleBlur}
-      />
+        defaultValue={value}
+      >
+        {data.map(({ name }) => (
+          <option key={name} value={name}>
+            {name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }
 
-export default Input;
+export default SelectInput;
