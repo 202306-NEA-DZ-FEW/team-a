@@ -1,4 +1,4 @@
-import SIgnUpFrom from "@/components/SIgnUpFrom";
+import SignUpFrom from "@/components/SignUpFrom";
 import Container from "@/components/container";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -9,18 +9,18 @@ function SignUpPage({ t, _nextI18Next }) {
     <Container>
       <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
         {t("signUp")}
-        <SIgnUpFrom />
+        <SignUpFrom t={t} />
       </main>
     </Container>
   );
 }
 
-export default withTranslation("signUp")(SignUpPage);
+export default withTranslation(["common", "signUp", "states"])(SignUpPage);
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "signUp"])),
+      ...(await serverSideTranslations(locale, ["common", "signUp", "states"])),
       // Will be passed to the page component as props
     },
   };

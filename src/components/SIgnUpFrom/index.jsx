@@ -1,11 +1,14 @@
+import getAllStates from "@/lib/getAllStates";
 import Input from "../Input";
 
-function SIgnUpFrom() {
+function SignUpFrom({ t }) {
+  // console.log(getAllStates(t));
   return (
     <div>
-      <Input />
+      {/* <Input /> */}
+      inputs
     </div>
   );
 }
 
-export default SIgnUpFrom;
+export default SignUpFrom;

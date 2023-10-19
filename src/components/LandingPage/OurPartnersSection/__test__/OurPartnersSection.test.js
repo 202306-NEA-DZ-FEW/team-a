@@ -1,4 +1,5 @@
 import renderer from "react-test-renderer";
+
 import OurPartnersSection from "..";
 
 it("rend correctement", () => {
