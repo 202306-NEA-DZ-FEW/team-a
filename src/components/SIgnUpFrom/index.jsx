@@ -2,7 +2,7 @@ import getAllStates from "@/lib/getAllStates";
 import Input from "../Input";
 
 function SignUpFrom({ t }) {
-  console.log(getAllStates(t));
+  // console.log(getAllStates(t));
   return (
     <div>
       {/* <Input /> */}
