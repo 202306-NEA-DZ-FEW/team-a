@@ -15,14 +15,10 @@ exports[`renders correctly 1`] = `
   <select
     className="select select-primary bg-white w-full"
   >
-    <option
-      value="foo"
-    >
+    <option>
       foo
     </option>
-    <option
-      value="bar"
-    >
+    <option>
       bar
     </option>
   </select>
