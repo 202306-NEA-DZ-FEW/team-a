@@ -1,8 +1,7 @@
 import renderer from "react-test-renderer";
-
-import UserProfile from "..";
+import UserListItems from "..";
 
 it("renders correctly", () => {
-  const tree = renderer.create(<UserProfile />).toJSON();
+  const tree = renderer.create(<UserListItems />).toJSON();
   expect(tree).toMatchSnapshot();
 });
