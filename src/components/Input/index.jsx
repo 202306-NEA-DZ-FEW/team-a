@@ -10,7 +10,7 @@ function Input({
   error,
 }) {
   return (
-    <div className='pb-4'>
+    <div>
       <div className='label'>
         <label htmlFor={name} className='label-text'>
           {label}
