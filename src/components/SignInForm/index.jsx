@@ -1,30 +1,26 @@
 import { useFormik } from "formik";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import login from "public/images/team_1.svg";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-import { BsShareFill } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import * as Yup from "yup";
 
 import Checkbox from "../Checkbox";
 import Input from "../Input";
 
-function SignInForm() {
-  const router = useRouter();
+function SignInForm({ t }) {
+  /*   const router = useRouter(); */
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
       save: false,
     },
-
     validationSchema: Yup.object({
       email: Yup.string()
-        .email("Invalid email address")
-        .required("Email is required"),
-      password: Yup.string().required("Password is required"),
+        .email(t("signIn:emailValid"))
+        .required(t("signIn:emailRequired")),
+      password: Yup.string().required(t("signIn:passwordRequired")),
       save: Yup.boolean().oneOf([true]),
     }),
     onSubmit: (values) => {
@@ -37,57 +33,63 @@ function SignInForm() {
   });
 
   return (
-    <section>
-      <div className='flex flex-col justify- text-start p-4 w-full md:w-1/3'>
-        <h1 className='text-3xl pb-2 font-bold  text-center'>Log In</h1>
-        <form className='' onSubmit={formik.handleSubmit}>
-          <div className=' flex flex-col text-gray-700'>
-            <Input
-              className='border-primary ring-primary rounded-xl p-2'
-              type='email'
-              name='email'
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              placeholder='Enter email'
-              label='Email'
-            />
-            <Input
-              className='border-primary ring-primary rounded-xl p-2'
-              type='password'
-              name='password'
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              placeholder='Enter password'
-              label='Password'
-            />
-            <Checkbox
-              name='save'
-              label='keep me logged in'
-              handleChange={formik.handleChange}
-              value={formik.values.terms}
-              handleBlur={formik.handleBlur}
-              error={formik.errors.terms}
-              touched={formik.touched.terms}
-            />
-            <button
-              className='btn btn-primary'
-              type='submit'
-              disabled={formik.isSubmitting}
-            >
-              {formik.isSubmitting ? "Loading" : "Log in"}
-            </button>
-          </div>
-        </form>
-        <div className='flex flex-col text-start'>
-          <p>
-            Don&apos;t have an account? <Link href='/create'>Sign up</Link>
-          </p>
-          <p>
-            <Link href='/password'>Forgot password?</Link>
-          </p>
-        </div>
+    <section className='flex flex-col flex-1 px-4 gap-4'>
+      <h1 className='text-3xl font-black text-center'>{t("signIn:signIn")}</h1>
+      <form className='flex flex-col gap-2' onSubmit={formik.handleSubmit}>
+        <Input
+          name='email'
+          type='email'
+          placeholder={t("signIn:emailPlaceholder")}
+          label={t("signIn:emailLabel")}
+          handleChange={formik.handleChange}
+          value={formik.values.email}
+          handleBlur={formik.handleBlur}
+          error={formik.errors.email}
+          touched={formik.touched.email}
+        />
+        <Input
+          name='password'
+          type='password'
+          placeholder={t("signIn:PasswordPlaceholder")}
+          label={t("signIn:passwordLabel")}
+          handleChange={formik.handleChange}
+          value={formik.values.password}
+          handleBlur={formik.handleBlur}
+          error={formik.errors.password}
+          touched={formik.touched.password}
+        />
+        <Checkbox
+          name='save'
+          label={t("signIn:savedlogin")}
+          handleChange={formik.handleChange}
+          value={formik.values.terms}
+          handleBlur={formik.handleBlur}
+          error={formik.errors.terms}
+          touched={formik.touched.terms}
+        />
+        <button
+          className='btn btn-primary w-full text-white'
+          type='submit'
+          disabled={formik.isSubmitting}
+        >
+          {formik.isSubmitting ? t("signIn:loading") : t("signIn:signIn")}
+        </button>
+      </form>
+      <div className='text-start'>
+        <p>
+          {t("signIn:noAccount")}
+          <Link className='link mx-2' href='/create'>
+            {t("signIn:signUp")}
+          </Link>
+        </p>
+        <p>
+          <Link className='link' href='/password'>
+            {t("signIn:passwordForgotten")}
+          </Link>
+        </p>
+      </div>
+      <div className=''>
+        <p className='text-center font-black'>{t("signIn:signUpMethod")}</p>
         <div className='flex gap-3 text-3xl mt-2 text-primary justify-center items-center'>
           <Link href='https://www.facebook.com' target='_blank'>
             <AiFillFacebook className='opacity-70 hover:opacity-100' />
@@ -98,15 +100,7 @@ function SignInForm() {
           <Link href='https://www.linkedin.com' target='_blank'>
             <AiFillLinkedin className='opacity-70 hover:opacity-100' />
           </Link>
-          <Link href='https://www.google.com' target='_blank'>
-            <BsShareFill className='opacity-70 hover:opacity-100' />
-          </Link>
         </div>
-      </div>
-      <div className='w-2/3'>
-        <figure className='hidden md:flex'>
-          <Image src={login} alt='login' height={500} />
-        </figure>
       </div>
     </section>
   );
