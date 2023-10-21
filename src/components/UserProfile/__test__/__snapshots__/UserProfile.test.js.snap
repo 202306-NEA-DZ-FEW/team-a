@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="flex flex-col md:flex-row gap-4 justify-center items-start"
 >
   <section
-    className="flex  flex-row gap-2 items-center justify-center md:flex-col"
+    className="flex flex-row gap-2 items-center justify-center w-full md:w-1/4 md:flex-col"
   >
     <img
       alt="mepi"
@@ -26,15 +26,15 @@ exports[`renders correctly 1`] = `
       width={150}
     />
     <div
-      className=" text-center"
+      className="md:text-center text:start w-full"
     >
       <h3
-        className="font-bold text-lg"
+        className="font-bold text-xl"
       >
         Sorour
       </h3>
       <p
-        className="text-sm text-gray-600"
+        className="text-md text-gray-600"
       >
         Location
       </p>
@@ -45,30 +45,32 @@ exports[`renders correctly 1`] = `
     dir="ltr"
   >
     <div
-      className="flex flex-col md:flex-row gap-2 p-6 md:gap-6 "
+      className="flex flex-col md:flex-row gap-2 p-6 md:gap-6 flex-1"
     >
       <div
         className="flex flex-col gap-2"
       >
         <p>
-          <span>
-            userinfo.Name
-            : 
-          </span>
           <span
             className="font-bold"
           >
+            userinfo.Name
+            :
+             
+          </span>
+          <span>
             Sorour
           </span>
         </p>
         <p>
-          <span>
-            userinfo.Location
-            : 
-          </span>
           <span
             className="font-bold"
           >
+            userinfo.Location
+            :
+             
+          </span>
+          <span>
             algeria batna
           </span>
         </p>
@@ -77,24 +79,26 @@ exports[`renders correctly 1`] = `
         className="flex flex-col gap-2"
       >
         <p>
-          <span>
-            userinfo.Email
-            : 
-          </span>
           <span
             className="font-bold"
           >
+            userinfo.Email
+            :
+             
+          </span>
+          <span>
             sorourrh@gmail.com
           </span>
         </p>
         <p>
-          <span>
-            userinfo.Phonenumber
-            : 
-          </span>
           <span
             className="font-bold"
           >
+            userinfo.Phonenumber
+            :
+             
+          </span>
+          <span>
             0699999646
           </span>
         </p>
@@ -102,39 +106,44 @@ exports[`renders correctly 1`] = `
       <p
         className="self-start"
       >
-        <span>
-          userinfo.language
-          : 
-        </span>
         <span
           className="font-bold"
         >
+          userinfo.language
+          :
+           
+        </span>
+        <span>
           en
         </span>
       </p>
     </div>
-    <button
-      className="btn btn-ghost"
+    <div
+      className="self-start md:self-stretch md:bg-gray-300 md:rounded-tr-xl md:rounded-br-xl"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 16 16"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        className="btn btn-ghost h-full"
       >
-        <path
-          d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
-        />
-      </svg>
-    </button>
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+          />
+        </svg>
+      </button>
+    </div>
   </section>
 </div>
 `;
