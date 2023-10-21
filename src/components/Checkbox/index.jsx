@@ -1,3 +1,5 @@
+import { useTranslation } from "next-i18next";
+
 function Checkbox({
   name,
   label,
@@ -7,8 +9,9 @@ function Checkbox({
   error,
   touched,
 }) {
+  const { i18n } = useTranslation();
   return (
-    <div className='pb-4'>
+    <div>
       <div className='flex items-center gap-2'>
         <input
           type='checkbox'
@@ -17,7 +20,9 @@ function Checkbox({
           value={value}
           onChange={handleChange}
           onBlur={handleBlur}
-          className='checkbox checkbox-primary'
+          className={`checkbox checkbox-primary ${
+            i18n?.language == "ar" ? "scale-x-[-1]" : ""
+          }`}
         />
         <label htmlFor={name} className='label label-text'>
           {label}

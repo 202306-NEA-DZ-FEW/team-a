@@ -1,3 +1,16 @@
 {
-  "signIn": "Se connecter"
+  "signIn": "Se connecter",
+  "emailLabel": "Email",
+  "emailPlaceholder": "Entrez votre email",
+  "emailRequired": "Email requis",
+  "emailValid": "Adresse email invalide",
+  "passwordLabel": "Mot de passe",
+  "PasswordPlaceholder": "Entrez votre mot de passe",
+  "passwordRequired": "Mot de passe requis",
+  "savedlogin": "Rester connecté",
+  "Loading": "Chargement",
+  "noAccount": "Vous n’avez pas de compte ?",
+  "signUp": "Inscrivez-vous",
+  "passwordForgotten": "Mot de passe oublié?",
+  "signUpMethod": "S'inscrire avec"
 }
