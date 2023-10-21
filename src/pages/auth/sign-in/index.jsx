@@ -11,12 +11,12 @@ function SignInPage({ t, _nextI18Next }) {
   return (
     <Container>
       <main
-        className='md:flex md:justify-between md:items-center my-20'
+        className='md:flex md:justify-between md:items-center my-20 md:min-h-screen md:my-0'
         dir={initialLocale === "ar" ? "rtl" : "ltr"}
       >
         <SignInForm t={t} />
-        <figure className='hidden md:flex'>
-          <Image src={login} alt='login' height={500} />
+        <figure className='hidden md:flex md:w-[60%]'>
+          <Image src={login} alt='login' className='object-cover' />
         </figure>
       </main>
     </Container>

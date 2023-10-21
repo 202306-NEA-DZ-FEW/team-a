@@ -1,6 +1,5 @@
 import { useFormik } from "formik";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import * as Yup from "yup";
@@ -21,7 +20,6 @@ function SignInForm({ t }) {
         .email(t("signIn:emailValid"))
         .required(t("signIn:emailRequired")),
       password: Yup.string().required(t("signIn:passwordRequired")),
-      save: Yup.boolean().oneOf([true]),
     }),
     onSubmit: (values) => {
       // Handle form submission here
@@ -33,7 +31,7 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex flex-col flex-1 px-4 gap-4'>
+    <section className='flex flex-col w-full flex-1 px-4 gap-4'>
       <h1 className='text-3xl font-black text-center'>{t("signIn:signIn")}</h1>
       <form className='flex flex-col gap-2' onSubmit={formik.handleSubmit}>
         <Input
