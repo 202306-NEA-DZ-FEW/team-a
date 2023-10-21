@@ -1,3 +1,12 @@
 {
-  "dashboard": "dashboard"
+  "dashboard": "dashboard",
+
+  "userinfo":{
+    "Name": "Name",
+    "Location": "Location",
+    "Email": "Email",
+    "Phonenumber": "Phone number",
+    "language": "Language"
+},
+"myItems": "My Items"
 }
