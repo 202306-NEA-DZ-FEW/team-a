@@ -14,7 +14,7 @@ exports[`Navbar snapshot test 1`] = `
       onTouchStart={[Function]}
     >
       <p
-        className="font-bold text-2xl text-black"
+        className="font-bold text-2xl"
       >
         navbar.logo
       </p>

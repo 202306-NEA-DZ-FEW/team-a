@@ -1,18 +1,24 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import { Poppins } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["200", "300", "500", "700", "900"],
+});
+
 export default function Layout({ children, initialLocale }) {
-  // Put Header or Footer around the children element
-  // Example
   return (
-    <>
+    <main className={`${poppins.variable} font-poppins`}>
       <Navbar />
-      <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
+      <div dir={initialLocale === "ar" ? "rtl" : "ltr"}>
         {children}
         <NextTopLoader color='#6658F8' showSpinner={false} />
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }
