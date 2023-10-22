@@ -61,7 +61,13 @@ function UserProfile() {
             <span>en</span>
           </p>
         </div>
-        <div className='self-start md:self-stretch md:bg-gray-300 md:rounded-tr-xl md:rounded-br-xl'>
+        <div
+          className={`self-start md:self-stretch md:bg-gray-300 ${
+            i18n?.language == "ar"
+              ? "md:rounded-tl-xl md:rounded-bl-xl"
+              : "md:rounded-tr-xl md:rounded-br-xl"
+          }`}
+        >
           <button className='btn btn-ghost h-full'>
             <BsFillPencilFill />
           </button>
