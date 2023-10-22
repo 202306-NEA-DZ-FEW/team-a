@@ -1,4 +1,5 @@
 import renderer from "react-test-renderer";
+
 import UserListItems from "..";
 
 it("renders correctly", () => {
