@@ -1,3 +1,11 @@
 {
-  "dashboard": "Tableau de bord"
+  "dashboard": "Tableau de bord",
+  "userinfo": {
+    "Name": "Nom",
+    "Location": "Emplacement",
+    "Email": "Email",
+    "Phonenumber": "Numéro de téléphone",
+    "language": "Langue"
+  },
+  "myItems": "Mes articles"
 }

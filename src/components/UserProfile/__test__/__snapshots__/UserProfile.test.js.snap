@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex flex-col md:flex-row gap-4 justify-center items-start"
+>
+  <section
+    className="flex flex-row gap-2 items-center justify-center w-full md:w-1/4 md:flex-col"
+  >
+    <img
+      alt="mepi"
+      className="object-cover md:w-32 w-28 rounded-full "
+      data-nimg="1"
+      decoding="async"
+      height={150}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={150}
+    />
+    <div
+      className="md:text-center text:start w-full"
+    >
+      <h3
+        className="font-bold text-xl"
+      >
+        Sorour
+      </h3>
+      <p
+        className="text-md text-gray-600"
+      >
+        Location
+      </p>
+    </div>
+  </section>
+  <section
+    className="flex md:justify-between md:items-center md:flex-row mt-6 gap-2 bg-gray-200 md:gap-6 w-full rounded-xl"
+    dir="ltr"
+  >
+    <div
+      className="flex flex-col md:flex-row gap-2 p-6 md:gap-6 flex-1"
+    >
+      <div
+        className="flex flex-col gap-2"
+      >
+        <p>
+          <span
+            className="font-bold"
+          >
+            userinfo.Name
+            :
+             
+          </span>
+          <span>
+            Sorour
+          </span>
+        </p>
+        <p>
+          <span
+            className="font-bold"
+          >
+            userinfo.Location
+            :
+             
+          </span>
+          <span>
+            algeria batna
+          </span>
+        </p>
+      </div>
+      <div
+        className="flex flex-col gap-2"
+      >
+        <p>
+          <span
+            className="font-bold"
+          >
+            userinfo.Email
+            :
+             
+          </span>
+          <span>
+            sorourrh@gmail.com
+          </span>
+        </p>
+        <p>
+          <span
+            className="font-bold"
+          >
+            userinfo.Phonenumber
+            :
+             
+          </span>
+          <span>
+            0699999646
+          </span>
+        </p>
+      </div>
+      <p
+        className="self-start"
+      >
+        <span
+          className="font-bold"
+        >
+          userinfo.language
+          :
+           
+        </span>
+        <span>
+          en
+        </span>
+      </p>
+    </div>
+    <div
+      className="self-start md:self-stretch md:bg-gray-300 md:rounded-tr-xl md:rounded-br-xl"
+    >
+      <button
+        className="btn btn-ghost h-full"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+          />
+        </svg>
+      </button>
+    </div>
+  </section>
+</div>
+`;

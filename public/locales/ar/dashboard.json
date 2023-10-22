@@ -1,3 +1,11 @@
 {
-  "dashboard": "لوحة التحكم"
+  "dashboard": "لوحة التحكم",
+  "userinfo": {
+    "Name": "الاسم",
+    "Location": "الموقع",
+    "Email": "البريد الإلكتروني",
+    "Phonenumber": "رقم الهاتف",
+    "language": "لغة"
+  },
+  "myItems": "منتجاتي"
 }
