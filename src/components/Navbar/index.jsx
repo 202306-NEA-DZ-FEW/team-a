@@ -3,12 +3,14 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
+import { useAuth } from "@/context/AuthProvider";
+
 import LanguageFilterMenu from "./LanguageFilterMenu";
 import MobileMenu from "./MobileMenu";
 import UserMenu from "./UserMenu";
 
 function Navbar() {
-  const user = {};
+  const { user, logOut } = useAuth();
   const { i18n, t } = useTranslation();
   const router = useRouter();
   const [currentPath, setCurrentPath] = useState("/");
@@ -64,7 +66,7 @@ function Navbar() {
           {/* Language Filter */}
           <LanguageFilterMenu currentPath={currentPath} />
           {/* Avatar/Sign-in Button */}
-          <UserMenu user={user} t={t} />
+          <UserMenu user={user} logOut={logOut} t={t} />
           {/* This is Related to Mobile View Navbar Menu */}
           <MobileMenu user={user} t={t} currentPath={currentPath} />
         </div>

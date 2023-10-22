@@ -7,6 +7,15 @@ jest.mock("next/router", () => ({
   useRouter: jest.fn(),
 }));
 
+jest.mock("@/lib/firebase", () => {
+  return {
+    app: {}, // Mock app object
+    db: {}, // Mock db object
+    storage: {}, // Mock storage object
+    auth: {}, // Mock auth object
+  };
+});
+
 test("Navbar snapshot test", () => {
   // Mock useRouter with the asPath property
   useRouter.mockImplementation(() => ({

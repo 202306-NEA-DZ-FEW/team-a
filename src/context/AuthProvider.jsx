@@ -1,61 +1,117 @@
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
-  signInWithEmailAndPassword,
 } from "firebase/auth";
+import { collection, doc, serverTimestamp, setDoc } from "firebase/firestore";
 import Image from "next/image";
 import Spinner from "public/images/spinner.svg";
-import profilePlaceholder from "public/images/profile.svg";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
+import { toast } from "react-toastify";
 
-import { auth } from "@/lib/firebase";
+import { auth, db } from "@/lib/firebase";
 
 const AuthContext = createContext({});
 
 export const useAuth = () => useContext(AuthContext);
 
 export function AuthContextProvider({ children }) {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState();
+  const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState();
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser({
-          email: user.email,
-          uid: user.uid,
-          photoURL: user.photoURL || profilePlaceholder,
-        });
-      } else {
-        setUser(null);
-      }
-      setLoading(false);
-    });
-    return () => unsubscribe();
+    const listener = onAuthStateChanged(
+      auth,
+      async (user) => {
+        try {
+          setUser(user);
+        } catch (e) {
+          setError(e);
+        }
+      },
+      setError
+    );
+    return () => {
+      listener();
+    };
   }, []);
 
-  const signUp = (email, password, userInfo) => {
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(async (res) => {
-        // set userInfo to database here
-      })
-      .catch((error) => {
-        console.log(error.code);
+  //Sign up with Credentials
+  const signUp = useCallback(async (email, password, userInfo) => {
+    setLoading(true);
+    setError(undefined);
+    try {
+      const user = await createUserWithEmailAndPassword(auth, email, password);
+      // Reference to the "users" collection
+      const usersCollectionRef = collection(db, "users");
+      // Add a new document with the user's UID as the document ID
+      await setDoc(doc(usersCollectionRef, user.user.uid), {
+        uid: user.user.uid,
+        photoURL: user.user.photoURL,
+        ...userInfo,
+        role: "user",
+        date: serverTimestamp(),
       });
-  };
+      setUser({
+        uid: user.user.uid,
+        photoURL: user.user.photoURL,
+        ...userInfo,
+        role: "user",
+        date: serverTimestamp(),
+      });
+      toast.success(`Hi ${userInfo.name}, Thank you for joing in us! 😍`, {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 1500,
+      });
+      const router = require("next/router").default;
+      // redirect user to their profile page
+      router.push({
+        pathname: "/dashboard",
+        query: { user: user.user.uid },
+      });
+    } catch (err) {
+      setError(err);
+      if (err.code === "auth/email-already-in-use")
+        toast.error("this email is already in use", {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 1500,
+        });
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
-  const signIn = (email, password) => {
-    signInWithEmailAndPassword(auth, email, password).then(() => {
-      // check user
-    });
-  };
+  //Sign in with Credentials
+  const signIn = () => {};
+
+  // Sign out
+  const logOut = useCallback(async () => {
+    setLoading(true);
+    setError(undefined);
+    try {
+      await auth.signOut();
+      setUser(null);
+    } catch (err) {
+      setError(err);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
   return (
     <AuthContext.Provider
       value={{
+        error,
         user,
         signUp,
         signIn,
+        logOut,
       }}
     >
       {loading ? (

@@ -1,16 +1,17 @@
 import { useFormik } from "formik";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import * as Yup from "yup";
+
+import { useAuth } from "@/context/AuthProvider";
 
 import Input from "../Input";
 import SelectInput from "../SelectInput";
 
 function SignUpForm({ states, t }) {
+  const { signUp } = useAuth();
   const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-  const router = useRouter();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -38,12 +39,12 @@ function SignUpForm({ states, t }) {
       location: Yup.string().required(t("signUp:locationRequired")),
     }),
     onSubmit: async (values) => {
-      /*   console.log(values) */
-
-      // Handle form submission here
-      router.push({
-        pathname: "/dashboard",
-      });
+      const email = values.email;
+      const password = values.password;
+      const userInfo = { ...values };
+      delete userInfo.password;
+      delete userInfo.confirmPassword;
+      await signUp(email, password, userInfo);
     },
   });
 
