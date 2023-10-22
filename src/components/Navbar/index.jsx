@@ -1,10 +1,11 @@
 import Link from "next/link";
-import LanguageFilterMenu from "./LanguageFilterMenu";
-import UserMenu from "./UserMenu";
-import MobileMenu from "./MobileMenu";
-import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
+
+import LanguageFilterMenu from "./LanguageFilterMenu";
+import MobileMenu from "./MobileMenu";
+import UserMenu from "./UserMenu";
 
 function Navbar() {
   const user = {};
@@ -24,10 +25,8 @@ function Navbar() {
       <div className='navbar bg-white'>
         <div className='navbar-start ml-7'>
           {/* Navbar Logo */}
-          <Link href={"/"}>
-            <p className='font-bold text-2xl text-black'>
-              {t("common:navbar:logo")}
-            </p>
+          <Link href='/'>
+            <p className='font-bold text-2xl'>{t("common:navbar:logo")}</p>
           </Link>
         </div>
         <div
@@ -37,31 +36,25 @@ function Navbar() {
           {/* Navbar Navigation Links */}
           <ul className='menu menu-horizontal gap-2 px-1 mx-1 text-black'>
             <li>
-              <Link className='hover:bg-primary hover:text-white' href={"/"}>
+              <Link className='hover:bg-primary hover:text-white' href='/'>
                 {t("common:navbar:home")}
               </Link>
             </li>
             <li>
-              <Link
-                className='hover:bg-primary hover:text-white'
-                href={"/about"}
-              >
+              <Link className='hover:bg-primary hover:text-white' href='/about'>
                 {t("common:navbar:about")}
               </Link>
             </li>
             <li>
               <Link
                 className='hover:bg-primary hover:text-white'
-                href={"/products"}
+                href='/products'
               >
                 {t("common:navbar:products")}
               </Link>
             </li>
             <li>
-              <Link
-                className='hover:bg-primary hover:text-white'
-                href={"/blogs"}
-              >
+              <Link className='hover:bg-primary hover:text-white' href='/blogs'>
                 {t("common:navbar:blogs")}
               </Link>
             </li>

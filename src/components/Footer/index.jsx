@@ -1,10 +1,10 @@
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsShareFill } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { TbLanguage } from "react-icons/tb";
-import { useTranslation } from "next-i18next";
 
 function Footer() {
   const { t } = useTranslation();
@@ -13,7 +13,7 @@ function Footer() {
       <div className='grid grid-cols-1 justify-items-center md:grid-cols-5 gap-4'>
         <div className='col-span-1'>
           <Link href='/'>
-            <h2 className='text-2xl text-white font-bold'>Unify.</h2>
+            <h2 className='font-bold text-2xl text-white'>Unify.</h2>
           </Link>
         </div>
         <div className='col-span-1 '>
