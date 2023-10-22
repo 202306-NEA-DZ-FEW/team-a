@@ -1,3 +1,26 @@
 {
-  "signUp": "Sign up"
+  "signUp": "Sign up",
+  "nameLabel": "Name",
+  "namePlaceholder": "Enter your full name",
+  "nameRequired": "Name is required",
+  "nameLength": "Name must be less than 20 characters",
+  "emailLabel": "Email",
+  "emailPlaceholder": "Enter your email",
+  "emailRequired": "Email is required",
+  "emailValid": "Invalid email address",
+  "passwordLabel": "Password",
+  "PasswordPlaceholder": "Enter your password",
+  "passwordRequired": "Password is required",
+  "passwordLength": "Password must be 8 characters or more",
+  "passwordStrength": "Password must contain one number, and one upper case letter",
+  "confirmPasswordLabel": "Confirm password",
+  "confirmPasswordPlaceholder": "Re-enter your password",
+  "confirmPasswordRequired": "Confirm password is required",
+  "confirmPasswordMatch": "Passwords didn't match, please try again",
+  "phoneLabel": "Phone",
+  "phonePlaceholder": "Enter your phone number",
+  "phoneRequired": "Phone number is required",
+  "locationLabel": "Province",
+  "locationRequired": "Location is required",
+  "signUpMethod": "Sign up with"
 }

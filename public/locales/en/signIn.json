@@ -1,3 +1,16 @@
 {
-  "signIn": "Sign in"
+  "signIn": "Sign in",
+  "emailLabel": "Email",
+  "emailPlaceholder": "Enter your email",
+  "emailRequired": "Email is required",
+  "emailValid": "Invalid email address",
+  "passwordLabel": "Password",
+  "PasswordPlaceholder": "Enter your password",
+  "passwordRequired": "Password is required",
+  "savedlogin": "keep me logged in",
+  "Loading": "Loading",
+  "noAccount": "Don't have an account?",
+  "signUp": "Sign up",
+  "passwordForgotten": "Forgot password?",
+  "signUpMethod": "Sign up with"
 }
