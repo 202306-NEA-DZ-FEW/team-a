@@ -7,36 +7,75 @@ exports[`renders correctly 1`] = `
   <section
     className="flex flex-row gap-2 items-center justify-center w-full md:w-1/4 md:flex-col"
   >
-    <img
-      alt="mepi"
-      className="object-cover md:w-32 w-28 rounded-full "
-      data-nimg="1"
-      decoding="async"
-      height={150}
-      loading="lazy"
-      onError={[Function]}
-      onLoad={[Function]}
-      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
-      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style={
-        Object {
-          "color": "transparent",
+    <figure
+      className="relative group"
+    >
+      <img
+        alt="User Profile"
+        className="object-cover md:w-32 w-28 rounded-full"
+        data-nimg="1"
+        decoding="async"
+        height={150}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
         }
-      }
-      width={150}
-    />
+        width={150}
+      />
+      <div
+        className="absolute hidden text-center bg-white rounded-full h-full md:w-32 w-28 top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+        type="file"
+      >
+        <input
+          accept="image/*"
+          className="absolute hidden text-xs"
+          id="fileInput"
+          onChange={[Function]}
+          type="file"
+        />
+        <label
+          className="text-4xl cursor-pointer"
+          htmlFor="fileInput"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+            />
+          </svg>
+        </label>
+      </div>
+    </figure>
     <div
       className="md:text-center text:start w-full"
     >
       <h3
         className="font-bold text-xl"
       >
-        Sorour
+        John
       </h3>
       <p
         className="text-md text-gray-600"
       >
-        Location
+        states:1- Adrad
       </p>
     </div>
   </section>
@@ -59,7 +98,7 @@ exports[`renders correctly 1`] = `
              
           </span>
           <span>
-            Sorour
+            John
           </span>
         </p>
         <p>
@@ -71,7 +110,7 @@ exports[`renders correctly 1`] = `
              
           </span>
           <span>
-            algeria batna
+            states:1- Adrad
           </span>
         </p>
       </div>
@@ -87,7 +126,7 @@ exports[`renders correctly 1`] = `
              
           </span>
           <span>
-            sorourrh@gmail.com
+            jhm@gmail.com
           </span>
         </p>
         <p>
@@ -99,7 +138,7 @@ exports[`renders correctly 1`] = `
              
           </span>
           <span>
-            0699999646
+            123
           </span>
         </p>
       </div>

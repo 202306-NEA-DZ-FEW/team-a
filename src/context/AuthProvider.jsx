@@ -12,7 +12,7 @@ import {
   serverTimestamp,
   setDoc,
 } from "firebase/firestore";
-import React, {
+import {
   createContext,
   useCallback,
   useContext,

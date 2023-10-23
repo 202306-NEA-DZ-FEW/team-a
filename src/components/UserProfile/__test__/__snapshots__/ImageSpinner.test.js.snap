@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <img
+    alt="loading"
+    className="opacity-60 w-1/2 h-1/2 object-contain"
+    data-nimg="1"
+    decoding="async"
+    fetchpriority="high"
+    height={32}
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+    style={
+      Object {
+        "color": "transparent",
+      }
+    }
+    width={32}
+  />
+</div>
+`;
