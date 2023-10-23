@@ -12,12 +12,13 @@ const poppins = Poppins({
 
 export default function Layout({ children, initialLocale }) {
   return (
-    <main className={`${poppins.variable} font-poppins`}>
+    <main
+      className={`${poppins.variable} font-poppins`}
+      dir={initialLocale === "ar" ? "rtl" : "ltr"}
+    >
       <Navbar />
-      <div dir={initialLocale === "ar" ? "rtl" : "ltr"}>
-        {children}
-        <NextTopLoader color='#6658F8' showSpinner={false} />
-      </div>
+      {children}
+      <NextTopLoader color='#6658F8' showSpinner={false} />
       <Footer />
     </main>
   );

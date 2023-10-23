@@ -1,16 +1,18 @@
 import { useFormik } from "formik";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-import { FaInstagram } from "react-icons/fa";
+import { AiFillFacebook } from "react-icons/ai";
+import { FaGithubSquare } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import * as Yup from "yup";
+
+import { useAuth } from "@/context/AuthProvider";
 
 import Input from "../Input";
 import SelectInput from "../SelectInput";
 
 function SignUpForm({ states, t }) {
+  const { signUp, signInWithFacebook, signInWithGoogle, signInWithGithub } =
+    useAuth();
   const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-  const router = useRouter();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -38,12 +40,12 @@ function SignUpForm({ states, t }) {
       location: Yup.string().required(t("signUp:locationRequired")),
     }),
     onSubmit: async (values) => {
-      /*   console.log(values) */
-
-      // Handle form submission here
-      router.push({
-        pathname: "/dashboard",
-      });
+      const email = values.email;
+      const password = values.password;
+      const userInfo = { ...values };
+      delete userInfo.password;
+      delete userInfo.confirmPassword;
+      await signUp(email, password, userInfo);
     },
   });
 
@@ -126,15 +128,18 @@ function SignUpForm({ states, t }) {
         </button>
         <p className='text-center'>{t("signUp:signUpMethod")}</p>
         <div className='flex gap-3 justify-center items-center text-3xl text-primary'>
-          <Link href='https://www.facebook.com' target='_blank'>
-            <AiFillFacebook className='opacity-70 hover:opacity-100' />
-          </Link>
-          <Link href='https://www.instagram.com' target='_blank'>
-            <FaInstagram className='opacity-70 hover:opacity-100' />
-          </Link>
-          <Link href='https://www.linkedin.com' target='_blank'>
-            <AiFillLinkedin className='opacity-70 hover:opacity-100' />
-          </Link>
+          <button
+            className='btn btn-square btn-sm'
+            onClick={signInWithFacebook}
+          >
+            <AiFillFacebook className='text-3xl text-blue-600' />
+          </button>
+          <button onClick={signInWithGoogle} className='btn btn-square btn-sm'>
+            <FcGoogle className='text-3xl text-primary' />
+          </button>
+          <button onClick={signInWithGithub} className='btn btn-square btn-sm'>
+            <FaGithubSquare className='text-3xl text-gray-700' />
+          </button>
         </div>
       </form>
     </section>

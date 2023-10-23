@@ -1,9 +1,9 @@
-import { Transition, Menu } from "@headlessui/react";
+import { Menu, Transition } from "@headlessui/react";
+import Link from "next/link";
 import { Fragment } from "react";
 import { HiOutlineUserCircle } from "react-icons/hi";
-import Link from "next/link";
 
-function UserMenu({ user, t }) {
+function UserMenu({ user, logOut, t }) {
   //This is for classnames
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -46,6 +46,7 @@ function UserMenu({ user, t }) {
                 <Menu.Item>
                   {({ active }) => (
                     <button
+                      onClick={logOut}
                       className={classNames(
                         active ? "bg-gray-100 text-slate-700" : "text-white",
                         "btn btn-error btn-sm hover:text-white"
@@ -61,7 +62,7 @@ function UserMenu({ user, t }) {
         </Menu>
       ) : (
         //Code for When the User is Signed-out
-        <Link href={"/auth/sign-in"}>
+        <Link href='/auth/sign-in'>
           <button className='btn btn-primary btn-sm hidden lg:block'>
             {t("common:buttons:signIn")}
           </button>
