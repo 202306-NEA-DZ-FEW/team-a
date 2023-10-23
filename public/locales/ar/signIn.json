@@ -12,5 +12,7 @@
   "noAccount": "ليس لديك حساب؟",
   "signUp": "أنشئ حساباً",
   "passwordForgotten": "هل نسيت كلمة المرور؟",
-  "signUpMethod": "التسجيل باستعمال"
+  "signUpMethod": "التسجيل باستعمال",
+  "sendMeResetLink": "أرسل لي رابط إعادة التعيين",
+  "EnterYourEmail": "أدخل بريدك الإلكتروني"
 }

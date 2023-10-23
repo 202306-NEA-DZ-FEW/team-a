@@ -1,6 +1,8 @@
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
 import {
@@ -38,6 +40,7 @@ export function AuthContextProvider({ children }) {
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState();
 
+  // listen for user state changes
   useEffect(() => {
     const listener = onAuthStateChanged(
       auth,
@@ -72,13 +75,7 @@ export function AuthContextProvider({ children }) {
         role: "user",
         date: serverTimestamp(),
       });
-      setUser({
-        uid: user.user.uid,
-        photoURL: user.user.photoURL,
-        ...userInfo,
-        role: "user",
-        date: serverTimestamp(),
-      });
+      setUser(user);
       toast.success(`Hi ${userInfo.name}, Thank you for joing in us! 😍`, {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 1500,
@@ -127,15 +124,7 @@ export function AuthContextProvider({ children }) {
           position: toast.POSITION.TOP_CENTER,
           autoClose: 1500,
         });
-        setUser({
-          uid: user.user.uid,
-          photoURL: user.user.photoURL,
-          name: user.user.displayName,
-          phone: user.user.phoneNumber,
-          email: user.user.email,
-          role: "user",
-          date: serverTimestamp(),
-        });
+        setUser(user);
         // redirect user to their profile page
         router.push({
           pathname: "/dashboard",
@@ -153,15 +142,7 @@ export function AuthContextProvider({ children }) {
           role: "user",
           date: serverTimestamp(),
         });
-        setUser({
-          uid: user.user.uid,
-          photoURL: user.user.photoURL,
-          name: user.user.displayName,
-          phone: user.user.phoneNumber,
-          email: user.user.email,
-          role: "user",
-          date: serverTimestamp(),
-        });
+        setUser(user);
         toast.success(
           `Hi ${user.user.displayName}, Thank you for joing in us! 😍`,
           {
@@ -207,15 +188,7 @@ export function AuthContextProvider({ children }) {
           position: toast.POSITION.TOP_CENTER,
           autoClose: 1500,
         });
-        setUser({
-          uid: user.user.uid,
-          photoURL: user.user.photoURL,
-          name: user.user.displayName,
-          phone: user.user.phoneNumber,
-          email: user.user.email,
-          role: "user",
-          date: serverTimestamp(),
-        });
+        setUser(user);
         // redirect user to their profile page
         router.push({
           pathname: "/dashboard",
@@ -233,15 +206,7 @@ export function AuthContextProvider({ children }) {
           role: "user",
           date: serverTimestamp(),
         });
-        setUser({
-          uid: user.user.uid,
-          photoURL: user.user.photoURL,
-          name: user.user.displayName,
-          phone: user.user.phoneNumber,
-          email: user.user.email,
-          role: "user",
-          date: serverTimestamp(),
-        });
+        setUser(user);
         toast.success(
           `Hi ${user.user.displayName}, Thank you for joing in us! 😍`,
           {
@@ -287,15 +252,7 @@ export function AuthContextProvider({ children }) {
           position: toast.POSITION.TOP_CENTER,
           autoClose: 1500,
         });
-        setUser({
-          uid: user.user.uid,
-          photoURL: user.user.photoURL,
-          name: user.user.displayName,
-          phone: user.user.phoneNumber,
-          email: user.user.email,
-          role: "user",
-          date: serverTimestamp(),
-        });
+        setUser(user);
 
         // redirect user to their profile page
         router.push({
@@ -314,15 +271,7 @@ export function AuthContextProvider({ children }) {
           role: "user",
           date: serverTimestamp(),
         });
-        setUser({
-          uid: user.user.uid,
-          photoURL: user.user.photoURL,
-          name: user.user.displayName,
-          phone: user.user.phoneNumber,
-          email: user.user.email,
-          role: "user",
-          date: serverTimestamp(),
-        });
+        setUser(user);
         toast.success(
           `Hi ${user.user.displayName}, Thank you for joing in us! 😍`,
           {
@@ -348,7 +297,43 @@ export function AuthContextProvider({ children }) {
   }, []);
 
   //Sign in with Credentials
-  const signIn = () => {};
+  const signIn = useCallback(async (email, password) => {
+    setLoading(true);
+    setError(undefined);
+    try {
+      const user = await signInWithEmailAndPassword(auth, email, password);
+      setUser(user);
+      toast.success(
+        `Hi ${user.displayName ?? user.user.email}, Welcome back! 😍`,
+        {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 1500,
+        }
+      );
+      return user;
+    } catch (err) {
+      setError(err);
+      if (err.code === "auth/invalid-login-credentials") {
+        toast.error("Wrong password or email! 😥", {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 1500,
+        });
+      }
+      if (err.code === "auth/too-many-requests") {
+        toast.error("you have tried many times please try again later! 😥", {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 1500,
+        });
+      } else {
+        toast.error(err.code, {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 1500,
+        });
+      }
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
   // Sign out
   const logOut = useCallback(async () => {
@@ -359,6 +344,27 @@ export function AuthContextProvider({ children }) {
       setUser(null);
     } catch (err) {
       setError(err);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  // send reset password to email
+  const resetPassword = useCallback(async (email) => {
+    setLoading(true);
+    setError(undefined);
+    try {
+      await sendPasswordResetEmail(auth, email);
+      toast.success(`Reset password link sent to ${email} ✅`, {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 1500,
+      });
+    } catch (err) {
+      setError(err);
+      toast.error(err.code, {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 1500,
+      });
     } finally {
       setLoading(false);
     }
@@ -375,6 +381,7 @@ export function AuthContextProvider({ children }) {
         signInWithFacebook,
         signInWithGoogle,
         signInWithGithub,
+        resetPassword,
       }}
     >
       {loading ? (
