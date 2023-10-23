@@ -16,7 +16,7 @@ function SignInPage({ t, _nextI18Next }) {
       >
         <SignInForm t={t} />
         <figure className='hidden md:flex md:w-[60%]'>
-          <Image src={login} alt='login' className='object-cover' />
+          <Image src={login} alt='login' className='object-cover' priority />
         </figure>
       </main>
     </Container>

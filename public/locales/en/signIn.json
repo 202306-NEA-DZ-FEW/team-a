@@ -12,5 +12,7 @@
   "noAccount": "Don't have an account?",
   "signUp": "Sign up",
   "passwordForgotten": "Forgot password?",
-  "signUpMethod": "Sign up with"
+  "signUpMethod": "Sign up with",
+  "sendMeResetLink": "Send me reset link",
+  "EnterYourEmail": "Enter your email"
 }

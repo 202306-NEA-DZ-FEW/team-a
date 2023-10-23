@@ -12,5 +12,7 @@
   "noAccount": "Vous n’avez pas de compte ?",
   "signUp": "Inscrivez-vous",
   "passwordForgotten": "Mot de passe oublié?",
-  "signUpMethod": "S'inscrire avec"
+  "signUpMethod": "S'inscrire avec",
+  "sendMeResetLink": "Envoyez-moi le lien de réinitialisation",
+  "EnterYourEmail": "Entrez votre adresse e-mail"
 }
