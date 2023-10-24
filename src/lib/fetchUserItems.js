@@ -11,7 +11,7 @@ export default async function fetchUserItems(uid) {
     const userItems = [];
 
     querySnapshot.forEach((doc) => {
-      userItems.push({ ...doc.data(), id: doc.id });
+      userItems.push({ ...JSON.parse(JSON.stringify(doc.data())), id: doc.id });
     });
     return userItems;
   } catch (error) {

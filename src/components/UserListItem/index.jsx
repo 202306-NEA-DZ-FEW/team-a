@@ -2,7 +2,9 @@ import Image from "next/image";
 import { BsFillPencilFill } from "react-icons/bs";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-function UserListItem({ item, onDelete }) {
+import EditItemForm from "./EditItemForm";
+
+function UserListItem({ item, onDelete, onEdit }) {
   return (
     <div className='flex w-full flex-row gap-2 items-center justify-between rounded-full bg-gray-200 py-1 px-2 '>
       <Image
@@ -17,7 +19,7 @@ function UserListItem({ item, onDelete }) {
       </div>
       <div className='btn-group px-2'>
         <button
-          onClick={() => document.getElementById("my_modal_2").showModal()}
+          onClick={() => document.getElementById(item.id).showModal()}
           className='btn btn-square btn-ghost btn-sm'
         >
           <BsFillPencilFill className='text-xl' />
@@ -29,6 +31,7 @@ function UserListItem({ item, onDelete }) {
           />
         </button>
       </div>
+      <EditItemForm item={item} onEdit={onEdit} />
     </div>
   );
 }

@@ -21,6 +21,17 @@ function UserListItems({ userItems, userData }) {
       prevUserItems.filter((item) => item.id !== itemId)
     );
   };
+  const handleEdit = async (newItem) => {
+    setItems((prevUserItems) =>
+      prevUserItems.map((item) => {
+        if (item.id === newItem.id) {
+          return newItem;
+        } else {
+          return item;
+        }
+      })
+    );
+  };
 
   return (
     <div className='flex flex-col w-full gap-4'>
@@ -44,7 +55,12 @@ function UserListItems({ userItems, userData }) {
           </div>
         )}
         {items.map((item) => (
-          <UserListItem key={item.id} item={item} onDelete={handleDelete} />
+          <UserListItem
+            key={item.id}
+            item={item}
+            onDelete={handleDelete}
+            onEdit={handleEdit}
+          />
         ))}
       </div>
     </div>
