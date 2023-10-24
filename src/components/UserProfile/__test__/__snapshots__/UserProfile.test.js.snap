@@ -93,7 +93,7 @@ exports[`renders correctly 1`] = `
           <span
             className="font-bold"
           >
-            userinfo.Name
+            userinfo.name
             :
              
           </span>
@@ -105,7 +105,7 @@ exports[`renders correctly 1`] = `
           <span
             className="font-bold"
           >
-            userinfo.Location
+            userinfo.location
             :
              
           </span>
@@ -121,7 +121,7 @@ exports[`renders correctly 1`] = `
           <span
             className="font-bold"
           >
-            userinfo.Email
+            userinfo.email
             :
              
           </span>
@@ -133,7 +133,7 @@ exports[`renders correctly 1`] = `
           <span
             className="font-bold"
           >
-            userinfo.Phonenumber
+            userinfo.phoneNumber
             :
              
           </span>
@@ -162,6 +162,7 @@ exports[`renders correctly 1`] = `
     >
       <button
         className="btn btn-ghost h-full"
+        onClick={[Function]}
       >
         <svg
           fill="currentColor"
@@ -182,6 +183,433 @@ exports[`renders correctly 1`] = `
           />
         </svg>
       </button>
+      <dialog
+        className="modal"
+        id="my_modal_1"
+      >
+        <div
+          className="modal-box"
+        >
+          <form
+            className="flex flex-col gap-4"
+            onSubmit={[Function]}
+          >
+            <h1
+              className="text-3xl font-black text-center"
+            >
+              Update your personal profile
+            </h1>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="name"
+                >
+                  userUpadteForm.nameLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <input
+                className="input bg-white input-primary w-full"
+                id="name"
+                name="name"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="userUpadteForm.namePlaceholder"
+                type="text"
+                value="John"
+              />
+            </div>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="email"
+                >
+                  userUpadteForm.emailLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <input
+                className="input bg-white input-primary w-full"
+                id="email"
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="userUpadteForm.emailPlaceholder"
+                type="email"
+                value="jhm@gmail.com"
+              />
+            </div>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="phone"
+                >
+                  userUpadteForm.phoneLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <input
+                className="input bg-white input-primary w-full"
+                id="phone"
+                name="phone"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="userUpadteForm.phonePlaceholder"
+                type="text"
+                value="123"
+              />
+            </div>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="location"
+                >
+                  userUpadteForm.locationLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <select
+                className="select select-primary bg-white w-full"
+                defaultValue="1- Adrad"
+                id="location"
+                onChange={[Function]}
+              >
+                <option
+                  value="adrar"
+                >
+                  adrar
+                </option>
+                <option
+                  value="chlef"
+                >
+                  chlef
+                </option>
+                <option
+                  value="laghouat"
+                >
+                  laghouat
+                </option>
+                <option
+                  value="oumElBouaghi"
+                >
+                  oumElBouaghi
+                </option>
+                <option
+                  value="batna"
+                >
+                  batna
+                </option>
+                <option
+                  value="bejaia"
+                >
+                  bejaia
+                </option>
+                <option
+                  value="biskra"
+                >
+                  biskra
+                </option>
+                <option
+                  value="bechar"
+                >
+                  bechar
+                </option>
+                <option
+                  value="blida"
+                >
+                  blida
+                </option>
+                <option
+                  value="bouira"
+                >
+                  bouira
+                </option>
+                <option
+                  value="tamanrasset"
+                >
+                  tamanrasset
+                </option>
+                <option
+                  value="tebessa"
+                >
+                  tebessa
+                </option>
+                <option
+                  value="tlemcen"
+                >
+                  tlemcen
+                </option>
+                <option
+                  value="tiaret"
+                >
+                  tiaret
+                </option>
+                <option
+                  value="tiziOuzou"
+                >
+                  tiziOuzou
+                </option>
+                <option
+                  value="algiers"
+                >
+                  algiers
+                </option>
+                <option
+                  value="djelfa"
+                >
+                  djelfa
+                </option>
+                <option
+                  value="jijel"
+                >
+                  jijel
+                </option>
+                <option
+                  value="setif"
+                >
+                  setif
+                </option>
+                <option
+                  value="saida"
+                >
+                  saida
+                </option>
+                <option
+                  value="skikda"
+                >
+                  skikda
+                </option>
+                <option
+                  value="sidiBelAbbes"
+                >
+                  sidiBelAbbes
+                </option>
+                <option
+                  value="annaba"
+                >
+                  annaba
+                </option>
+                <option
+                  value="guelma"
+                >
+                  guelma
+                </option>
+                <option
+                  value="constantine"
+                >
+                  constantine
+                </option>
+                <option
+                  value="medea"
+                >
+                  medea
+                </option>
+                <option
+                  value="mostaganem"
+                >
+                  mostaganem
+                </option>
+                <option
+                  value="mSila"
+                >
+                  mSila
+                </option>
+                <option
+                  value="mascara"
+                >
+                  mascara
+                </option>
+                <option
+                  value="ouargla"
+                >
+                  ouargla
+                </option>
+                <option
+                  value="oran"
+                >
+                  oran
+                </option>
+                <option
+                  value="elBayadh"
+                >
+                  elBayadh
+                </option>
+                <option
+                  value="illizi"
+                >
+                  illizi
+                </option>
+                <option
+                  value="bordjBouArreridj"
+                >
+                  bordjBouArreridj
+                </option>
+                <option
+                  value="boumerdes"
+                >
+                  boumerdes
+                </option>
+                <option
+                  value="elTarf"
+                >
+                  elTarf
+                </option>
+                <option
+                  value="tindouf"
+                >
+                  tindouf
+                </option>
+                <option
+                  value="tissemsilt"
+                >
+                  tissemsilt
+                </option>
+                <option
+                  value="elOued"
+                >
+                  elOued
+                </option>
+                <option
+                  value="khenchela"
+                >
+                  khenchela
+                </option>
+                <option
+                  value="soukAhras"
+                >
+                  soukAhras
+                </option>
+                <option
+                  value="tipaza"
+                >
+                  tipaza
+                </option>
+                <option
+                  value="mila"
+                >
+                  mila
+                </option>
+                <option
+                  value="ainDefla"
+                >
+                  ainDefla
+                </option>
+                <option
+                  value="naama"
+                >
+                  naama
+                </option>
+                <option
+                  value="ainTemouchent"
+                >
+                  ainTemouchent
+                </option>
+                <option
+                  value="ghardaia"
+                >
+                  ghardaia
+                </option>
+                <option
+                  value="relizane"
+                >
+                  relizane
+                </option>
+                <option
+                  value="timimoun"
+                >
+                  timimoun
+                </option>
+                <option
+                  value="bordjBadjiMokhtar"
+                >
+                  bordjBadjiMokhtar
+                </option>
+                <option
+                  value="ouledDjellal"
+                >
+                  ouledDjellal
+                </option>
+                <option
+                  value="beniAbbes"
+                >
+                  beniAbbes
+                </option>
+                <option
+                  value="ainSalah"
+                >
+                  ainSalah
+                </option>
+                <option
+                  value="ainGuezzam"
+                >
+                  ainGuezzam
+                </option>
+                <option
+                  value="touggourt"
+                >
+                  touggourt
+                </option>
+                <option
+                  value="djanet"
+                >
+                  djanet
+                </option>
+                <option
+                  value="elMGhair"
+                >
+                  elMGhair
+                </option>
+                <option
+                  value="elMenia"
+                >
+                  elMenia
+                </option>
+              </select>
+            </div>
+            <div
+              className="modal-action"
+            >
+              <button
+                className="btn btn-primary"
+                type="submit"
+              >
+                userUpadteForm.submit
+              </button>
+              <div
+                method="dialog"
+              >
+                <button
+                  className="btn"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  userUpadteForm.cancel
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </dialog>
     </div>
   </section>
 </div>

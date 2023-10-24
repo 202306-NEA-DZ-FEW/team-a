@@ -7,20 +7,26 @@ import { BsFillPencilFill, BsImageFill } from "react-icons/bs";
 import useImageUpload from "@/lib/useImageUpload";
 
 import ImageSpinner from "./ImageSpinner";
+import UserProfileEditForm from "./UserProfileEditForm";
 
 function UserProfile({ userData }) {
+  const [profileData, setProfileData] = useState(userData);
   const { i18n, t } = useTranslation();
   const loaction =
     userData.location === "1- Adrar"
       ? t("states:adrar")
-      : t(`states:${userData.location}`);
+      : t(`states:${profileData.location}`);
   const [selectedImage, setSelectedImage] = useState(null);
   const { loading, updateImage } = useImageUpload();
 
   const handleImageChange = async (e) => {
     const imageFile = e.target.files[0];
-    const downloadURL = await updateImage(userData, imageFile);
+    const downloadURL = await updateImage(profileData, imageFile);
     setSelectedImage(downloadURL);
+  };
+
+  const handleUpdateProfile = (newUserData) => {
+    setProfileData(newUserData);
   };
 
   return (
@@ -34,7 +40,7 @@ function UserProfile({ userData }) {
             className='object-cover md:w-32 w-28 rounded-full'
             height={150}
             width={150}
-            src={selectedImage || userData.photoURL || profile}
+            src={selectedImage || profileData.photoURL || profile}
             alt='User Profile'
           />
           <div
@@ -54,7 +60,7 @@ function UserProfile({ userData }) {
           </div>
         </figure>
         <div className='md:text-center text:start w-full'>
-          <h3 className='font-bold text-xl'>{userData.name}</h3>
+          <h3 className='font-bold text-xl'>{profileData.name}</h3>
           <p className='text-md text-gray-600'>{loaction}</p>
         </div>
       </section>
@@ -67,13 +73,13 @@ function UserProfile({ userData }) {
           <div className='flex flex-col gap-2'>
             <p>
               <span className='font-bold'>
-                {t("dashboard:userinfo:Name")}:{" "}
+                {t("dashboard:userinfo:name")}:{" "}
               </span>
-              <span>{userData.name}</span>
+              <span>{profileData.name}</span>
             </p>
             <p>
               <span className='font-bold'>
-                {t("dashboard:userinfo:Location")}:{" "}
+                {t("dashboard:userinfo:location")}:{" "}
               </span>
               <span>{loaction}</span>
             </p>
@@ -81,15 +87,15 @@ function UserProfile({ userData }) {
           <div className='flex flex-col gap-2'>
             <p>
               <span className='font-bold'>
-                {t("dashboard:userinfo:Email")}:{" "}
+                {t("dashboard:userinfo:email")}:{" "}
               </span>
-              <span>{userData.email}</span>
+              <span>{profileData.email}</span>
             </p>
             <p>
               <span className='font-bold'>
-                {t("dashboard:userinfo:Phonenumber")}:{" "}
+                {t("dashboard:userinfo:phoneNumber")}:{" "}
               </span>
-              <span>{userData.phone ? userData.phone : "-"}</span>
+              <span>{profileData.phone ? profileData.phone : "-"}</span>
             </p>
           </div>
           <p className='self-start'>
@@ -106,9 +112,16 @@ function UserProfile({ userData }) {
               : "md:rounded-tr-xl md:rounded-br-xl"
           }`}
         >
-          <button className='btn btn-ghost h-full'>
+          <button
+            onClick={() => document.getElementById("my_modal_1").showModal()}
+            className='btn btn-ghost h-full'
+          >
             <BsFillPencilFill />
           </button>
+          <UserProfileEditForm
+            userData={profileData}
+            onUpdate={handleUpdateProfile}
+          />
         </div>
       </section>
     </div>
