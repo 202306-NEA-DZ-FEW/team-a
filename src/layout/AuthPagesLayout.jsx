@@ -1,21 +1,19 @@
 import { onAuthStateChanged } from "firebase/auth";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 import { auth } from "@/lib/firebase";
 
 import Loader from "@/components/Loader";
 
-import { useAuth } from "@/context/AuthProvider";
-
-function PublicRouteLayout({ children }) {
+function AuthPagesLayout({ children }) {
   const [error, setError] = useState();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [user, setUser] = useState();
-  const { logOut } = useAuth();
+  const router = useRouter();
 
   // listen for user state changes
   useEffect(() => {
-    setLoading(true);
     const listener = onAuthStateChanged(
       auth,
       async (user) => {
@@ -25,6 +23,9 @@ function PublicRouteLayout({ children }) {
           setError(e);
         } finally {
           setLoading(false);
+          if (user) {
+            router.push("/");
+          }
         }
       },
       setError
@@ -32,25 +33,16 @@ function PublicRouteLayout({ children }) {
     return () => {
       listener();
     };
-  }, []);
+  }, [router]);
 
   if (loading) {
     return <Loader />;
   }
-  if (user && !loading) {
-    return (
-      <div className='min-h-screen flex flex-col gap-20 justify-center items-center'>
-        <h1 className='text-4xl font- text-center'>
-          You&apos;re already logged in
-        </h1>
-        <button onClick={logOut} className='btn btn-error'>
-          Log out
-        </button>
-      </div>
-    );
+  if (user) {
+    return <div className='min-h-screen'></div>;
   }
 
-  if (!user) {
+  if (!user && !loading) {
     return <div className='min-h-screen'>{children}</div>;
   }
 
@@ -59,4 +51,4 @@ function PublicRouteLayout({ children }) {
   }
 }
 
-export default PublicRouteLayout;
+export default AuthPagesLayout;

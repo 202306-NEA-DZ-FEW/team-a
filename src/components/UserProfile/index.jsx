@@ -53,7 +53,7 @@ function UserProfile({ userData }) {
               onChange={handleImageChange}
               accept='image/*'
               className='absolute hidden text-xs'
-            ></input>
+            />
             <label htmlFor='fileInput' className='text-4xl cursor-pointer'>
               <BsImageFill />
             </label>

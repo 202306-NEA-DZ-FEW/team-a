@@ -6,12 +6,12 @@ import login from "public/images/team_1.svg";
 import Container from "@/components/container";
 import SignInForm from "@/components/SignInForm";
 
-import PublicRouteLayout from "@/layout/PublicRouteLayout";
+import AuthPagesLayout from "@/layout/AuthPagesLayout";
 
 function SignInPage({ t, _nextI18Next }) {
   const { initialLocale } = _nextI18Next;
   return (
-    <PublicRouteLayout>
+    <AuthPagesLayout>
       <Container>
         <main
           className='md:flex md:justify-between md:items-center my-20 md:min-h-screen md:my-0'
@@ -23,7 +23,7 @@ function SignInPage({ t, _nextI18Next }) {
           </figure>
         </main>
       </Container>
-    </PublicRouteLayout>
+    </AuthPagesLayout>
   );
 }
 

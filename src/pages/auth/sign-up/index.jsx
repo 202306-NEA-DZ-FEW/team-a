@@ -6,19 +6,19 @@ import getAllStates from "@/lib/getAllStates";
 import Container from "@/components/container";
 import SignUpForm from "@/components/SignUpForm";
 
-import PublicRouteLayout from "@/layout/PublicRouteLayout";
+import AuthPagesLayout from "@/layout/AuthPagesLayout";
 
 function SignUpPage({ _nextI18Next, t }) {
   const states = getAllStates(t);
   const { initialLocale } = _nextI18Next;
   return (
-    <PublicRouteLayout>
+    <AuthPagesLayout>
       <Container className='my-10'>
         <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
           <SignUpForm states={states} t={t} />
         </main>
       </Container>
-    </PublicRouteLayout>
+    </AuthPagesLayout>
   );
 }
 

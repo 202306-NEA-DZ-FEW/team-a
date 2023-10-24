@@ -1,27 +1,26 @@
-import { doc, getDoc } from "firebase/firestore";
-import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { db } from "@/lib/firebase";
+import fetchUserInfo from "@/lib/fetchUserInfo";
+import fetchUserItems from "@/lib/fetchUserItems";
 
 import Container from "@/components/container";
 import UserListItems from "@/components/UserListItems";
 import UserProfile from "@/components/UserProfile";
 
-import ProtectedLayout from "@/layout/ProtectedLayout";
+import DashboardLayout from "@/layout/DashboardLayout";
 
-function Dashboard({ userData }) {
+function Dashboard({ userInfo, userItems }) {
   return (
-    <ProtectedLayout>
+    <DashboardLayout>
       <Container className='flex flex-col justify-center gap-8 my-8 md:my-20 xl:my-0 xl:min-h-screen'>
-        <UserProfile userData={userData} />
-        <UserListItems />
+        <UserProfile userData={userInfo} />
+        <UserListItems userItems={userItems} userData={userInfo} />
       </Container>
-    </ProtectedLayout>
+    </DashboardLayout>
   );
 }
 
-export default withTranslation("dashboard")(Dashboard);
+export default Dashboard;
 
 export async function getServerSideProps({ locale, query }) {
   const { user } = query;
@@ -33,13 +32,11 @@ export async function getServerSideProps({ locale, query }) {
       },
     };
   }
-
-  const userRef = doc(db, "users", user);
   try {
-    const userDoc = await getDoc(userRef);
+    const userItems = await fetchUserItems(user);
+    const userInfo = await fetchUserInfo(user);
 
-    if (userDoc.exists()) {
-      const userData = JSON.parse(JSON.stringify(userDoc.data()));
+    if (userInfo) {
       return {
         props: {
           ...(await serverSideTranslations(locale, [
@@ -47,13 +44,14 @@ export async function getServerSideProps({ locale, query }) {
             "dashboard",
             "states",
           ])),
-          userData,
+          userInfo,
+          userItems,
         },
       };
     } else {
       return {
         redirect: {
-          destination: "/signin",
+          destination: "/",
           permanent: false,
         },
       };

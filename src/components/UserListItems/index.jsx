@@ -1,24 +1,50 @@
+import Image from "next/image";
 import { useTranslation } from "next-i18next";
-import mepi from "public/images/mepi1.png";
+import Spinner from "public/images/spinner.svg";
+import { useState } from "react";
+
+import addCollection from "@/lib/addCollection";
+import createItemsData from "@/lib/items";
+import useDeleteDoc from "@/lib/useDeleteDoc";
 
 import UserListItem from "../UserListItem";
 
-function UserListItems() {
+function UserListItems({ userItems, userData }) {
+  const itemsData = createItemsData(userData.uid);
+  const [items, setItems] = useState(userItems);
   const { t } = useTranslation();
-  const items = [
-    { id: 1, title: "Produdddddddddd1", image: mepi },
-    { id: 2, title: "Product 2", image: mepi },
-    { id: 3, title: "Product 3", image: mepi },
-    { id: 4, title: "Product 4", image: mepi },
-  ];
+  const { deleteItem, loading } = useDeleteDoc();
+
+  const handleDelete = async (itemId) => {
+    await deleteItem(itemId);
+    setItems((prevUserItems) =>
+      prevUserItems.filter((item) => item.id !== itemId)
+    );
+  };
+
   return (
     <div className='flex flex-col w-full gap-4'>
       <h2 className='text-3xl font-bold text-center'>
         {t("dashboard:myItems")}{" "}
       </h2>
+      <button onClick={() => addCollection(itemsData)} className='btn'>
+        Generate testing data
+      </button>
       <div className='flex justify-center items-center flex-wrap gap-4 '>
+        {loading && (
+          <div className='absolute w-full h-full flex items-center justify-center'>
+            <Image
+              src={Spinner}
+              alt='loading'
+              height={100}
+              width={100}
+              className='w-20 h-20'
+              priority
+            />
+          </div>
+        )}
         {items.map((item) => (
-          <UserListItem key={item.id} item={item} />
+          <UserListItem key={item.id} item={item} onDelete={handleDelete} />
         ))}
       </div>
     </div>

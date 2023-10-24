@@ -10,6 +10,12 @@ exports[`renders correctly 1`] = `
     myItems
      
   </h2>
+  <button
+    className="btn"
+    onClick={[Function]}
+  >
+    Generate testing data
+  </button>
   <div
     className="flex justify-center items-center flex-wrap gap-4 "
   >
@@ -17,22 +23,22 @@ exports[`renders correctly 1`] = `
       className="flex w-full flex-row gap-2 items-center justify-between rounded-full bg-gray-200 py-1 px-2 "
     >
       <img
-        alt="Produdddddddddd1"
-        className="object-cover rounded-full"
+        alt="Product One"
+        className="object-cover rounded-full w-20 h-20"
         data-nimg="1"
         decoding="async"
-        height={60}
+        height={500}
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=128&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=64&q=75 1x, /_next/image?url=%2Fimg.jpg&w=128&q=75 2x"
+        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75 2x"
         style={
           Object {
             "color": "transparent",
           }
         }
-        width={60}
+        width={500}
       />
       <div
         className="flex-1"
@@ -40,7 +46,7 @@ exports[`renders correctly 1`] = `
         <h3
           className="text-left text-md md:text-lg"
         >
-          Produdddddddddd1
+          Product One
         </h3>
       </div>
       <div
@@ -48,6 +54,7 @@ exports[`renders correctly 1`] = `
       >
         <button
           className="btn btn-square btn-ghost btn-sm"
+          onClick={[Function]}
         >
           <svg
             className="text-xl"
@@ -76,6 +83,7 @@ exports[`renders correctly 1`] = `
             className="text-xl text-error"
             fill="currentColor"
             height="1em"
+            onClick={[Function]}
             stroke="currentColor"
             strokeWidth="0"
             style={
@@ -98,22 +106,22 @@ exports[`renders correctly 1`] = `
       className="flex w-full flex-row gap-2 items-center justify-between rounded-full bg-gray-200 py-1 px-2 "
     >
       <img
-        alt="Product 2"
-        className="object-cover rounded-full"
+        alt="Product Two"
+        className="object-cover rounded-full w-20 h-20"
         data-nimg="1"
         decoding="async"
-        height={60}
+        height={500}
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=128&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=64&q=75 1x, /_next/image?url=%2Fimg.jpg&w=128&q=75 2x"
+        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75 2x"
         style={
           Object {
             "color": "transparent",
           }
         }
-        width={60}
+        width={500}
       />
       <div
         className="flex-1"
@@ -121,7 +129,7 @@ exports[`renders correctly 1`] = `
         <h3
           className="text-left text-md md:text-lg"
         >
-          Product 2
+          Product Two
         </h3>
       </div>
       <div
@@ -129,6 +137,7 @@ exports[`renders correctly 1`] = `
       >
         <button
           className="btn btn-square btn-ghost btn-sm"
+          onClick={[Function]}
         >
           <svg
             className="text-xl"
@@ -157,168 +166,7 @@ exports[`renders correctly 1`] = `
             className="text-xl text-error"
             fill="currentColor"
             height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 4V2H17V4H22V6H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V6H2V4H7ZM6 6V20H18V6H6ZM9 9H11V17H9V9ZM13 9H15V17H13V9Z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div
-      className="flex w-full flex-row gap-2 items-center justify-between rounded-full bg-gray-200 py-1 px-2 "
-    >
-      <img
-        alt="Product 3"
-        className="object-cover rounded-full"
-        data-nimg="1"
-        decoding="async"
-        height={60}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=128&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=64&q=75 1x, /_next/image?url=%2Fimg.jpg&w=128&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={60}
-      />
-      <div
-        className="flex-1"
-      >
-        <h3
-          className="text-left text-md md:text-lg"
-        >
-          Product 3
-        </h3>
-      </div>
-      <div
-        className="btn-group px-2"
-      >
-        <button
-          className="btn btn-square btn-ghost btn-sm"
-        >
-          <svg
-            className="text-xl"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 16 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
-            />
-          </svg>
-        </button>
-        <button
-          className="btn btn-square btn-ghost btn-sm"
-        >
-          <svg
-            className="text-xl text-error"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 4V2H17V4H22V6H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V6H2V4H7ZM6 6V20H18V6H6ZM9 9H11V17H9V9ZM13 9H15V17H13V9Z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div
-      className="flex w-full flex-row gap-2 items-center justify-between rounded-full bg-gray-200 py-1 px-2 "
-    >
-      <img
-        alt="Product 4"
-        className="object-cover rounded-full"
-        data-nimg="1"
-        decoding="async"
-        height={60}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=128&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=64&q=75 1x, /_next/image?url=%2Fimg.jpg&w=128&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={60}
-      />
-      <div
-        className="flex-1"
-      >
-        <h3
-          className="text-left text-md md:text-lg"
-        >
-          Product 4
-        </h3>
-      </div>
-      <div
-        className="btn-group px-2"
-      >
-        <button
-          className="btn btn-square btn-ghost btn-sm"
-        >
-          <svg
-            className="text-xl"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 16 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
-            />
-          </svg>
-        </button>
-        <button
-          className="btn btn-square btn-ghost btn-sm"
-        >
-          <svg
-            className="text-xl text-error"
-            fill="currentColor"
-            height="1em"
+            onClick={[Function]}
             stroke="currentColor"
             strokeWidth="0"
             style={
