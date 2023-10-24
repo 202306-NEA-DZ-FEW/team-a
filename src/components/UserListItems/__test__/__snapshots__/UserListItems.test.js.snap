@@ -10,12 +10,6 @@ exports[`renders correctly 1`] = `
     myItems
      
   </h2>
-  <button
-    className="btn"
-    onClick={[Function]}
-  >
-    Generate testing data
-  </button>
   <div
     className="flex justify-center items-center flex-wrap gap-4 "
   >

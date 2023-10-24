@@ -3,14 +3,11 @@ import { useTranslation } from "next-i18next";
 import Spinner from "public/images/spinner.svg";
 import { useState } from "react";
 
-import addCollection from "@/lib/addCollection";
-import createItemsData from "@/lib/items";
 import useDeleteDoc from "@/lib/useDeleteDoc";
 
 import UserListItem from "../UserListItem";
 
-function UserListItems({ userItems, userData }) {
-  const itemsData = createItemsData(userData.uid);
+function UserListItems({ userItems }) {
   const [items, setItems] = useState(userItems);
   const { t } = useTranslation();
   const { deleteItem, loading } = useDeleteDoc();
@@ -38,9 +35,6 @@ function UserListItems({ userItems, userData }) {
       <h2 className='text-3xl font-bold text-center'>
         {t("dashboard:myItems")}{" "}
       </h2>
-      <button onClick={() => addCollection(itemsData)} className='btn'>
-        Generate testing data
-      </button>
       <div className='flex justify-center items-center flex-wrap gap-4 '>
         {loading && (
           <div className='absolute w-full h-full flex items-center justify-center'>
