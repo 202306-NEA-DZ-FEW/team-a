@@ -1,8 +1,8 @@
-import React from "react";
-import { Transition, Menu } from "@headlessui/react";
+import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
+import React from "react";
 import { Fragment } from "react";
-import { HiOutlineX, HiOutlineMenuAlt3 } from "react-icons/hi";
+import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import {} from "react-icons/hi";
 
 function MobileMenu({ user, t, currentPath }) {
@@ -36,7 +36,7 @@ function MobileMenu({ user, t, currentPath }) {
               {user && (
                 <Menu.Item>
                   <Link
-                    href='/dashboard'
+                    href={`/dashboard?user=${user.uid}`}
                     className='block px-4 py-2 mb-2 text-center text-lg'
                   >
                     {t("common:navbar:dashboard")}
