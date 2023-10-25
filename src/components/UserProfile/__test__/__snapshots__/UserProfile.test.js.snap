@@ -7,36 +7,75 @@ exports[`renders correctly 1`] = `
   <section
     className="flex flex-row gap-2 items-center justify-center w-full md:w-1/4 md:flex-col"
   >
-    <img
-      alt="mepi"
-      className="object-cover md:w-32 w-28 rounded-full "
-      data-nimg="1"
-      decoding="async"
-      height={150}
-      loading="lazy"
-      onError={[Function]}
-      onLoad={[Function]}
-      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
-      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style={
-        Object {
-          "color": "transparent",
+    <figure
+      className="relative group"
+    >
+      <img
+        alt="User Profile"
+        className="object-cover md:w-32 w-28 rounded-full"
+        data-nimg="1"
+        decoding="async"
+        height={150}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
         }
-      }
-      width={150}
-    />
+        width={150}
+      />
+      <div
+        className="absolute hidden text-center bg-white rounded-full h-full md:w-32 w-28 top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+        type="file"
+      >
+        <input
+          accept="image/*"
+          className="absolute hidden text-xs"
+          id="fileInput"
+          onChange={[Function]}
+          type="file"
+        />
+        <label
+          className="text-4xl cursor-pointer"
+          htmlFor="fileInput"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+            />
+          </svg>
+        </label>
+      </div>
+    </figure>
     <div
       className="md:text-center text:start w-full"
     >
       <h3
         className="font-bold text-xl"
       >
-        Sorour
+        John
       </h3>
       <p
         className="text-md text-gray-600"
       >
-        Location
+        states:1- Adrad
       </p>
     </div>
   </section>
@@ -54,24 +93,24 @@ exports[`renders correctly 1`] = `
           <span
             className="font-bold"
           >
-            userinfo.Name
+            userinfo.name
             :
              
           </span>
           <span>
-            Sorour
+            John
           </span>
         </p>
         <p>
           <span
             className="font-bold"
           >
-            userinfo.Location
+            userinfo.location
             :
              
           </span>
           <span>
-            algeria batna
+            states:1- Adrad
           </span>
         </p>
       </div>
@@ -82,24 +121,24 @@ exports[`renders correctly 1`] = `
           <span
             className="font-bold"
           >
-            userinfo.Email
+            userinfo.email
             :
              
           </span>
           <span>
-            sorourrh@gmail.com
+            jhm@gmail.com
           </span>
         </p>
         <p>
           <span
             className="font-bold"
           >
-            userinfo.Phonenumber
+            userinfo.phoneNumber
             :
              
           </span>
           <span>
-            0699999646
+            123
           </span>
         </p>
       </div>
@@ -123,6 +162,7 @@ exports[`renders correctly 1`] = `
     >
       <button
         className="btn btn-ghost h-full"
+        onClick={[Function]}
       >
         <svg
           fill="currentColor"
@@ -143,6 +183,433 @@ exports[`renders correctly 1`] = `
           />
         </svg>
       </button>
+      <dialog
+        className="modal"
+        id="my_modal_1"
+      >
+        <div
+          className="modal-box"
+        >
+          <form
+            className="flex flex-col gap-4"
+            onSubmit={[Function]}
+          >
+            <h1
+              className="text-3xl font-black text-center"
+            >
+              Update your personal profile
+            </h1>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="name"
+                >
+                  userUpadteForm.nameLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <input
+                className="input bg-white input-primary w-full"
+                id="name"
+                name="name"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="userUpadteForm.namePlaceholder"
+                type="text"
+                value="John"
+              />
+            </div>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="email"
+                >
+                  userUpadteForm.emailLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <input
+                className="input bg-white input-primary w-full"
+                id="email"
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="userUpadteForm.emailPlaceholder"
+                type="email"
+                value="jhm@gmail.com"
+              />
+            </div>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="phone"
+                >
+                  userUpadteForm.phoneLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <input
+                className="input bg-white input-primary w-full"
+                id="phone"
+                name="phone"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="userUpadteForm.phonePlaceholder"
+                type="text"
+                value="123"
+              />
+            </div>
+            <div>
+              <div
+                className="label"
+              >
+                <label
+                  className="label-text"
+                  htmlFor="location"
+                >
+                  userUpadteForm.locationLabel
+                </label>
+                <label
+                  className="label-text-alt "
+                />
+              </div>
+              <select
+                className="select select-primary bg-white w-full"
+                defaultValue="1- Adrad"
+                id="location"
+                onChange={[Function]}
+              >
+                <option
+                  value="adrar"
+                >
+                  adrar
+                </option>
+                <option
+                  value="chlef"
+                >
+                  chlef
+                </option>
+                <option
+                  value="laghouat"
+                >
+                  laghouat
+                </option>
+                <option
+                  value="oumElBouaghi"
+                >
+                  oumElBouaghi
+                </option>
+                <option
+                  value="batna"
+                >
+                  batna
+                </option>
+                <option
+                  value="bejaia"
+                >
+                  bejaia
+                </option>
+                <option
+                  value="biskra"
+                >
+                  biskra
+                </option>
+                <option
+                  value="bechar"
+                >
+                  bechar
+                </option>
+                <option
+                  value="blida"
+                >
+                  blida
+                </option>
+                <option
+                  value="bouira"
+                >
+                  bouira
+                </option>
+                <option
+                  value="tamanrasset"
+                >
+                  tamanrasset
+                </option>
+                <option
+                  value="tebessa"
+                >
+                  tebessa
+                </option>
+                <option
+                  value="tlemcen"
+                >
+                  tlemcen
+                </option>
+                <option
+                  value="tiaret"
+                >
+                  tiaret
+                </option>
+                <option
+                  value="tiziOuzou"
+                >
+                  tiziOuzou
+                </option>
+                <option
+                  value="algiers"
+                >
+                  algiers
+                </option>
+                <option
+                  value="djelfa"
+                >
+                  djelfa
+                </option>
+                <option
+                  value="jijel"
+                >
+                  jijel
+                </option>
+                <option
+                  value="setif"
+                >
+                  setif
+                </option>
+                <option
+                  value="saida"
+                >
+                  saida
+                </option>
+                <option
+                  value="skikda"
+                >
+                  skikda
+                </option>
+                <option
+                  value="sidiBelAbbes"
+                >
+                  sidiBelAbbes
+                </option>
+                <option
+                  value="annaba"
+                >
+                  annaba
+                </option>
+                <option
+                  value="guelma"
+                >
+                  guelma
+                </option>
+                <option
+                  value="constantine"
+                >
+                  constantine
+                </option>
+                <option
+                  value="medea"
+                >
+                  medea
+                </option>
+                <option
+                  value="mostaganem"
+                >
+                  mostaganem
+                </option>
+                <option
+                  value="mSila"
+                >
+                  mSila
+                </option>
+                <option
+                  value="mascara"
+                >
+                  mascara
+                </option>
+                <option
+                  value="ouargla"
+                >
+                  ouargla
+                </option>
+                <option
+                  value="oran"
+                >
+                  oran
+                </option>
+                <option
+                  value="elBayadh"
+                >
+                  elBayadh
+                </option>
+                <option
+                  value="illizi"
+                >
+                  illizi
+                </option>
+                <option
+                  value="bordjBouArreridj"
+                >
+                  bordjBouArreridj
+                </option>
+                <option
+                  value="boumerdes"
+                >
+                  boumerdes
+                </option>
+                <option
+                  value="elTarf"
+                >
+                  elTarf
+                </option>
+                <option
+                  value="tindouf"
+                >
+                  tindouf
+                </option>
+                <option
+                  value="tissemsilt"
+                >
+                  tissemsilt
+                </option>
+                <option
+                  value="elOued"
+                >
+                  elOued
+                </option>
+                <option
+                  value="khenchela"
+                >
+                  khenchela
+                </option>
+                <option
+                  value="soukAhras"
+                >
+                  soukAhras
+                </option>
+                <option
+                  value="tipaza"
+                >
+                  tipaza
+                </option>
+                <option
+                  value="mila"
+                >
+                  mila
+                </option>
+                <option
+                  value="ainDefla"
+                >
+                  ainDefla
+                </option>
+                <option
+                  value="naama"
+                >
+                  naama
+                </option>
+                <option
+                  value="ainTemouchent"
+                >
+                  ainTemouchent
+                </option>
+                <option
+                  value="ghardaia"
+                >
+                  ghardaia
+                </option>
+                <option
+                  value="relizane"
+                >
+                  relizane
+                </option>
+                <option
+                  value="timimoun"
+                >
+                  timimoun
+                </option>
+                <option
+                  value="bordjBadjiMokhtar"
+                >
+                  bordjBadjiMokhtar
+                </option>
+                <option
+                  value="ouledDjellal"
+                >
+                  ouledDjellal
+                </option>
+                <option
+                  value="beniAbbes"
+                >
+                  beniAbbes
+                </option>
+                <option
+                  value="ainSalah"
+                >
+                  ainSalah
+                </option>
+                <option
+                  value="ainGuezzam"
+                >
+                  ainGuezzam
+                </option>
+                <option
+                  value="touggourt"
+                >
+                  touggourt
+                </option>
+                <option
+                  value="djanet"
+                >
+                  djanet
+                </option>
+                <option
+                  value="elMGhair"
+                >
+                  elMGhair
+                </option>
+                <option
+                  value="elMenia"
+                >
+                  elMenia
+                </option>
+              </select>
+            </div>
+            <div
+              className="modal-action"
+            >
+              <button
+                className="btn btn-primary"
+                type="submit"
+              >
+                userUpadteForm.submit
+              </button>
+              <div
+                method="dialog"
+              >
+                <button
+                  className="btn"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  userUpadteForm.cancel
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </dialog>
     </div>
   </section>
 </div>

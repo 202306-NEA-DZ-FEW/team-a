@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer";
 
-import UserProfile from "..";
+import UserProfileEditForm from "../UserProfileEditForm";
 
 jest.mock("@/lib/firebase", () => {
   return {
@@ -18,6 +18,10 @@ it("renders correctly", () => {
     phone: "123",
     location: "1- Adrad",
   };
-  const tree = renderer.create(<UserProfile userData={mockUser} />).toJSON();
+
+  const mockOnUpdate = jest.fn();
+  const tree = renderer
+    .create(<UserProfileEditForm userData={mockUser} onUpdate={mockOnUpdate} />)
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });

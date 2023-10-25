@@ -1,11 +1,28 @@
 {
   "dashboard": "Tableau de bord",
   "userinfo": {
-    "Name": "Nom",
-    "Location": "Emplacement",
-    "Email": "Email",
-    "Phonenumber": "Numéro de téléphone",
+    "name": "Nom",
+    "location": "Emplacement",
+    "email": "Email",
+    "phonenumber": "Numéro de téléphone",
     "language": "Langue"
+  },
+  "userUpadteForm": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your full name",
+    "nameRequired": "Name is required",
+    "nameLength": "Name must be less than 20 characters",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "emailRequired": "Email is required",
+    "emailValid": "Invalid email address",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter your phone number",
+    "phoneRequired": "Phone number is required",
+    "locationLabel": "Province",
+    "locationRequired": "Location is required"
   },
   "myItems": "Mes articles"
 }

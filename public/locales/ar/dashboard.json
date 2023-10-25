@@ -1,11 +1,28 @@
 {
   "dashboard": "لوحة التحكم",
   "userinfo": {
-    "Name": "الاسم",
-    "Location": "الموقع",
-    "Email": "البريد الإلكتروني",
-    "Phonenumber": "رقم الهاتف",
+    "name": "الاسم",
+    "location": "الموقع",
+    "email": "البريد الإلكتروني",
+    "phonenumber": "رقم الهاتف",
     "language": "لغة"
+  },
+  "userUpadteForm": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your full name",
+    "nameRequired": "Name is required",
+    "nameLength": "Name must be less than 20 characters",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "emailRequired": "Email is required",
+    "emailValid": "Invalid email address",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter your phone number",
+    "phoneRequired": "Phone number is required",
+    "locationLabel": "Province",
+    "locationRequired": "Location is required"
   },
   "myItems": "منتجاتي"
 }

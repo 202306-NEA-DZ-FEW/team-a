@@ -12,9 +12,7 @@ import {
   serverTimestamp,
   setDoc,
 } from "firebase/firestore";
-import Image from "next/image";
-import Spinner from "public/images/spinner.svg";
-import React, {
+import {
   createContext,
   useCallback,
   useContext,
@@ -30,6 +28,8 @@ import {
   githubProvider,
   googleProvider,
 } from "@/lib/firebase";
+
+import Loader from "@/components/Loader";
 
 const AuthContext = createContext({});
 
@@ -298,6 +298,7 @@ export function AuthContextProvider({ children }) {
 
   //Sign in with Credentials
   const signIn = useCallback(async (email, password) => {
+    const router = require("next/router").default;
     setLoading(true);
     setError(undefined);
     try {
@@ -310,7 +311,11 @@ export function AuthContextProvider({ children }) {
           autoClose: 1500,
         }
       );
-      return user;
+      // redirect user to their profile page
+      router.push({
+        pathname: "/dashboard",
+        query: { user: user.user.uid },
+      });
     } catch (err) {
       setError(err);
       if (err.code === "auth/invalid-login-credentials") {
@@ -384,13 +389,7 @@ export function AuthContextProvider({ children }) {
         resetPassword,
       }}
     >
-      {loading ? (
-        <div className='flex justify-center items-center h-screen'>
-          <Image src={Spinner} alt='loading' height={100} width={100} />
-        </div>
-      ) : (
-        children
-      )}
+      {loading ? <Loader /> : children}
     </AuthContext.Provider>
   );
 }

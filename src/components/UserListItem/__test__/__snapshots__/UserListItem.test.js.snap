@@ -5,32 +5,38 @@ exports[`renders correctly 1`] = `
   className="flex w-full flex-row gap-2 items-center justify-between rounded-full bg-gray-200 py-1 px-2 "
 >
   <img
-    className="object-cover rounded-full"
+    alt="Product One"
+    className="object-cover rounded-full w-20 h-20"
     data-nimg="1"
     decoding="async"
-    height={60}
+    height={500}
+    loading="lazy"
     onError={[Function]}
     onLoad={[Function]}
-    src=""
+    src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75"
+    srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75 2x"
     style={
       Object {
         "color": "transparent",
       }
     }
-    width={60}
+    width={500}
   />
   <div
     className="flex-1"
   >
     <h3
       className="text-left text-md md:text-lg"
-    />
+    >
+      Product One
+    </h3>
   </div>
   <div
     className="btn-group px-2"
   >
     <button
       className="btn btn-square btn-ghost btn-sm"
+      onClick={[Function]}
     >
       <svg
         className="text-xl"
@@ -59,6 +65,7 @@ exports[`renders correctly 1`] = `
         className="text-xl text-error"
         fill="currentColor"
         height="1em"
+        onClick={[Function]}
         stroke="currentColor"
         strokeWidth="0"
         style={
@@ -76,5 +83,893 @@ exports[`renders correctly 1`] = `
       </svg>
     </button>
   </div>
+  <dialog
+    className="modal"
+    id={1}
+  >
+    <div
+      className="modal-box"
+    >
+      <form
+        className="flex flex-col gap-4"
+        onSubmit={[Function]}
+      >
+        <h1
+          className="text-3xl font-black text-center"
+        >
+          Update your personal profile
+        </h1>
+        <div
+          className="flex justify-evenly gap-4 items-center"
+        >
+          <figure
+            className="relative group"
+          >
+            <img
+              alt="Product One"
+              className="w-32 h-20 object-cover rounded-lg"
+              data-nimg="1"
+              decoding="async"
+              height={100}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75 2x"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={100}
+            />
+            <div
+              className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+              type="file"
+            >
+              <input
+                accept="image/*"
+                className="absolute hidden text-xs"
+                id={1}
+                onChange={[Function]}
+                type="file"
+              />
+              <label
+                className="text-4xl cursor-pointer"
+                htmlFor={1}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+                  />
+                </svg>
+              </label>
+            </div>
+          </figure>
+          <figure
+            className="relative group"
+          >
+            <img
+              alt="Product One"
+              className="w-32 h-20 object-cover rounded-lg"
+              data-nimg="1"
+              decoding="async"
+              height={100}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%253D%253D&w=256&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 2x"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={100}
+            />
+            <div
+              className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+              type="file"
+            >
+              <input
+                accept="image/*"
+                className="absolute hidden text-xs"
+                id={2}
+                onChange={[Function]}
+                type="file"
+              />
+              <label
+                className="text-4xl cursor-pointer"
+                htmlFor={2}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+                  />
+                </svg>
+              </label>
+            </div>
+          </figure>
+          <figure
+            className="relative group"
+          >
+            <img
+              alt="Product One"
+              className="w-32 h-20 object-cover rounded-lg"
+              data-nimg="1"
+              decoding="async"
+              height={100}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1467043237213-65f2da53396f%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1467043237213-65f2da53396f%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1467043237213-65f2da53396f%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75 2x"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={100}
+            />
+            <div
+              className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+              type="file"
+            >
+              <input
+                accept="image/*"
+                className="absolute hidden text-xs"
+                id={3}
+                onChange={[Function]}
+                type="file"
+              />
+              <label
+                className="text-4xl cursor-pointer"
+                htmlFor={3}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+                  />
+                </svg>
+              </label>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="title"
+            >
+              Title
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <input
+            className="input bg-white input-primary w-full"
+            id="title"
+            name="title"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Add a title"
+            type="text"
+            value="Product One"
+          />
+        </div>
+        <div>
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="description"
+            >
+              Description
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <input
+            className="input bg-white input-primary w-full"
+            id="description"
+            name="description"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Describe your items..."
+            type="text"
+            value="Lorem ipsum description for Product One"
+          />
+        </div>
+        <div>
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="category"
+            >
+              Category
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <select
+            className="select select-primary bg-white w-full"
+            id="category"
+            onChange={[Function]}
+          >
+            <option
+              value="adrar"
+            >
+              adrar
+            </option>
+            <option
+              value="chlef"
+            >
+              chlef
+            </option>
+            <option
+              value="laghouat"
+            >
+              laghouat
+            </option>
+            <option
+              value="oumElBouaghi"
+            >
+              oumElBouaghi
+            </option>
+            <option
+              value="batna"
+            >
+              batna
+            </option>
+            <option
+              value="bejaia"
+            >
+              bejaia
+            </option>
+            <option
+              value="biskra"
+            >
+              biskra
+            </option>
+            <option
+              value="bechar"
+            >
+              bechar
+            </option>
+            <option
+              value="blida"
+            >
+              blida
+            </option>
+            <option
+              value="bouira"
+            >
+              bouira
+            </option>
+            <option
+              value="tamanrasset"
+            >
+              tamanrasset
+            </option>
+            <option
+              value="tebessa"
+            >
+              tebessa
+            </option>
+            <option
+              value="tlemcen"
+            >
+              tlemcen
+            </option>
+            <option
+              value="tiaret"
+            >
+              tiaret
+            </option>
+            <option
+              value="tiziOuzou"
+            >
+              tiziOuzou
+            </option>
+            <option
+              value="algiers"
+            >
+              algiers
+            </option>
+            <option
+              value="djelfa"
+            >
+              djelfa
+            </option>
+            <option
+              value="jijel"
+            >
+              jijel
+            </option>
+            <option
+              value="setif"
+            >
+              setif
+            </option>
+            <option
+              value="saida"
+            >
+              saida
+            </option>
+            <option
+              value="skikda"
+            >
+              skikda
+            </option>
+            <option
+              value="sidiBelAbbes"
+            >
+              sidiBelAbbes
+            </option>
+            <option
+              value="annaba"
+            >
+              annaba
+            </option>
+            <option
+              value="guelma"
+            >
+              guelma
+            </option>
+            <option
+              value="constantine"
+            >
+              constantine
+            </option>
+            <option
+              value="medea"
+            >
+              medea
+            </option>
+            <option
+              value="mostaganem"
+            >
+              mostaganem
+            </option>
+            <option
+              value="mSila"
+            >
+              mSila
+            </option>
+            <option
+              value="mascara"
+            >
+              mascara
+            </option>
+            <option
+              value="ouargla"
+            >
+              ouargla
+            </option>
+            <option
+              value="oran"
+            >
+              oran
+            </option>
+            <option
+              value="elBayadh"
+            >
+              elBayadh
+            </option>
+            <option
+              value="illizi"
+            >
+              illizi
+            </option>
+            <option
+              value="bordjBouArreridj"
+            >
+              bordjBouArreridj
+            </option>
+            <option
+              value="boumerdes"
+            >
+              boumerdes
+            </option>
+            <option
+              value="elTarf"
+            >
+              elTarf
+            </option>
+            <option
+              value="tindouf"
+            >
+              tindouf
+            </option>
+            <option
+              value="tissemsilt"
+            >
+              tissemsilt
+            </option>
+            <option
+              value="elOued"
+            >
+              elOued
+            </option>
+            <option
+              value="khenchela"
+            >
+              khenchela
+            </option>
+            <option
+              value="soukAhras"
+            >
+              soukAhras
+            </option>
+            <option
+              value="tipaza"
+            >
+              tipaza
+            </option>
+            <option
+              value="mila"
+            >
+              mila
+            </option>
+            <option
+              value="ainDefla"
+            >
+              ainDefla
+            </option>
+            <option
+              value="naama"
+            >
+              naama
+            </option>
+            <option
+              value="ainTemouchent"
+            >
+              ainTemouchent
+            </option>
+            <option
+              value="ghardaia"
+            >
+              ghardaia
+            </option>
+            <option
+              value="relizane"
+            >
+              relizane
+            </option>
+            <option
+              value="timimoun"
+            >
+              timimoun
+            </option>
+            <option
+              value="bordjBadjiMokhtar"
+            >
+              bordjBadjiMokhtar
+            </option>
+            <option
+              value="ouledDjellal"
+            >
+              ouledDjellal
+            </option>
+            <option
+              value="beniAbbes"
+            >
+              beniAbbes
+            </option>
+            <option
+              value="ainSalah"
+            >
+              ainSalah
+            </option>
+            <option
+              value="ainGuezzam"
+            >
+              ainGuezzam
+            </option>
+            <option
+              value="touggourt"
+            >
+              touggourt
+            </option>
+            <option
+              value="djanet"
+            >
+              djanet
+            </option>
+            <option
+              value="elMGhair"
+            >
+              elMGhair
+            </option>
+            <option
+              value="elMenia"
+            >
+              elMenia
+            </option>
+          </select>
+        </div>
+        <div>
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="location"
+            >
+              Location
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <select
+            className="select select-primary bg-white w-full"
+            defaultValue="djelfa"
+            id="location"
+            onChange={[Function]}
+          >
+            <option
+              value="adrar"
+            >
+              adrar
+            </option>
+            <option
+              value="chlef"
+            >
+              chlef
+            </option>
+            <option
+              value="laghouat"
+            >
+              laghouat
+            </option>
+            <option
+              value="oumElBouaghi"
+            >
+              oumElBouaghi
+            </option>
+            <option
+              value="batna"
+            >
+              batna
+            </option>
+            <option
+              value="bejaia"
+            >
+              bejaia
+            </option>
+            <option
+              value="biskra"
+            >
+              biskra
+            </option>
+            <option
+              value="bechar"
+            >
+              bechar
+            </option>
+            <option
+              value="blida"
+            >
+              blida
+            </option>
+            <option
+              value="bouira"
+            >
+              bouira
+            </option>
+            <option
+              value="tamanrasset"
+            >
+              tamanrasset
+            </option>
+            <option
+              value="tebessa"
+            >
+              tebessa
+            </option>
+            <option
+              value="tlemcen"
+            >
+              tlemcen
+            </option>
+            <option
+              value="tiaret"
+            >
+              tiaret
+            </option>
+            <option
+              value="tiziOuzou"
+            >
+              tiziOuzou
+            </option>
+            <option
+              value="algiers"
+            >
+              algiers
+            </option>
+            <option
+              value="djelfa"
+            >
+              djelfa
+            </option>
+            <option
+              value="jijel"
+            >
+              jijel
+            </option>
+            <option
+              value="setif"
+            >
+              setif
+            </option>
+            <option
+              value="saida"
+            >
+              saida
+            </option>
+            <option
+              value="skikda"
+            >
+              skikda
+            </option>
+            <option
+              value="sidiBelAbbes"
+            >
+              sidiBelAbbes
+            </option>
+            <option
+              value="annaba"
+            >
+              annaba
+            </option>
+            <option
+              value="guelma"
+            >
+              guelma
+            </option>
+            <option
+              value="constantine"
+            >
+              constantine
+            </option>
+            <option
+              value="medea"
+            >
+              medea
+            </option>
+            <option
+              value="mostaganem"
+            >
+              mostaganem
+            </option>
+            <option
+              value="mSila"
+            >
+              mSila
+            </option>
+            <option
+              value="mascara"
+            >
+              mascara
+            </option>
+            <option
+              value="ouargla"
+            >
+              ouargla
+            </option>
+            <option
+              value="oran"
+            >
+              oran
+            </option>
+            <option
+              value="elBayadh"
+            >
+              elBayadh
+            </option>
+            <option
+              value="illizi"
+            >
+              illizi
+            </option>
+            <option
+              value="bordjBouArreridj"
+            >
+              bordjBouArreridj
+            </option>
+            <option
+              value="boumerdes"
+            >
+              boumerdes
+            </option>
+            <option
+              value="elTarf"
+            >
+              elTarf
+            </option>
+            <option
+              value="tindouf"
+            >
+              tindouf
+            </option>
+            <option
+              value="tissemsilt"
+            >
+              tissemsilt
+            </option>
+            <option
+              value="elOued"
+            >
+              elOued
+            </option>
+            <option
+              value="khenchela"
+            >
+              khenchela
+            </option>
+            <option
+              value="soukAhras"
+            >
+              soukAhras
+            </option>
+            <option
+              value="tipaza"
+            >
+              tipaza
+            </option>
+            <option
+              value="mila"
+            >
+              mila
+            </option>
+            <option
+              value="ainDefla"
+            >
+              ainDefla
+            </option>
+            <option
+              value="naama"
+            >
+              naama
+            </option>
+            <option
+              value="ainTemouchent"
+            >
+              ainTemouchent
+            </option>
+            <option
+              value="ghardaia"
+            >
+              ghardaia
+            </option>
+            <option
+              value="relizane"
+            >
+              relizane
+            </option>
+            <option
+              value="timimoun"
+            >
+              timimoun
+            </option>
+            <option
+              value="bordjBadjiMokhtar"
+            >
+              bordjBadjiMokhtar
+            </option>
+            <option
+              value="ouledDjellal"
+            >
+              ouledDjellal
+            </option>
+            <option
+              value="beniAbbes"
+            >
+              beniAbbes
+            </option>
+            <option
+              value="ainSalah"
+            >
+              ainSalah
+            </option>
+            <option
+              value="ainGuezzam"
+            >
+              ainGuezzam
+            </option>
+            <option
+              value="touggourt"
+            >
+              touggourt
+            </option>
+            <option
+              value="djanet"
+            >
+              djanet
+            </option>
+            <option
+              value="elMGhair"
+            >
+              elMGhair
+            </option>
+            <option
+              value="elMenia"
+            >
+              elMenia
+            </option>
+          </select>
+        </div>
+        <div
+          className="modal-action"
+        >
+          <button
+            className="btn btn-primary"
+            type="submit"
+          >
+            userUpadteForm.submit
+          </button>
+          <div
+            method="dialog"
+          >
+            <button
+              className="btn"
+              onClick={[Function]}
+              type="button"
+            >
+              userUpadteForm.cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </dialog>
 </div>
 `;

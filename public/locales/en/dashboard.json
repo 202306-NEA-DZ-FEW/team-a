@@ -2,11 +2,33 @@
   "dashboard": "dashboard",
 
   "userinfo": {
-    "Name": "Name",
-    "Location": "Location",
-    "Email": "Email",
-    "Phonenumber": "Phone number",
+    "name": "Name",
+    "location": "Location",
+    "email": "Email",
+    "phoneNumber": "Phone number",
+    "phonePlaceholder": "Enter your phone number",
+    "locationRequired": "Location is required",
+    "submit": "Submit",
+    "Cancel": "Cancel",
+    "profileInfo": "Edit profile information",
     "language": "Language"
+  },
+  "userUpadteForm": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your full name",
+    "nameRequired": "Name is required",
+    "nameLength": "Name must be less than 20 characters",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "emailRequired": "Email is required",
+    "emailValid": "Invalid email address",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter your phone number",
+    "phoneRequired": "Phone number is required",
+    "locationLabel": "Province",
+    "locationRequired": "Location is required"
   },
   "myItems": "My Items"
 }
