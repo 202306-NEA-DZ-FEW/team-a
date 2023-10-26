@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="md:max-w-lg mx-auto"
+  className="relative md:max-w-lg mx-auto"
 >
   <form
     className="flex flex-col gap-4"
@@ -153,6 +153,52 @@ exports[`renders correctly 1`] = `
       onChange={[Function]}
       type="file"
     />
+    <div
+      className="form-control"
+    >
+      <label
+        className="label"
+      >
+        <labe
+          className="label-text"
+        >
+          <span
+            className="text-error"
+          >
+            *
+          </span>
+           What this item for?
+        </labe>
+        <span
+          classNclassName="label-text-alt "
+        />
+      </label>
+      <div
+        className="flex flex-col md:flex-row gap-2 md:justify-between md:items-center"
+      >
+        <button
+          className="bg-black px-3 py-2 flex-1 text-sm font-light rounded-lg text-white"
+          onClick={[Function]}
+          type="button"
+        >
+          For Exchange
+        </button>
+        <button
+          className="bg-black px-3 py-2 flex-1 text-sm font-light rounded-lg text-white"
+          onClick={[Function]}
+          type="button"
+        >
+          Looking For
+        </button>
+        <button
+          className="bg-black px-3 py-2 flex-1 text-sm font-light rounded-lg text-white"
+          onClick={[Function]}
+          type="button"
+        >
+          Donation
+        </button>
+      </div>
+    </div>
     <div
       className="flex flex-col md:flex-row gap-2 justify-center mt-2"
     >

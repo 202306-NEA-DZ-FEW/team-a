@@ -12,6 +12,7 @@ import * as Yup from "yup";
 
 import useUploadImages from "@/lib/useUploadImages";
 
+import ListingTypeButton from "./ListingTypeButton";
 import Input from "../Input";
 import SelectInput from "../SelectInput";
 import TextArea from "../TextArea";
@@ -23,6 +24,11 @@ function AddItem({ categories, states }) {
   const { uploadImages } = useUploadImages();
   const { t, i18n } = useTranslation();
   const router = useRouter();
+  const listingTypes = ["For Exchange", "Looking For", "Donation"];
+
+  const handleSelect = (selectedType) => {
+    formik.setFieldValue("listingType", selectedType);
+  };
 
   const formik = useFormik({
     initialValues: {
@@ -30,6 +36,7 @@ function AddItem({ categories, states }) {
       category: categories[0].name,
       location: states[0].name,
       description: "",
+      listingType: "",
     },
     validationSchema: Yup.object().shape({
       title: Yup.string().required(t("addItem:titleRequired")),
@@ -38,6 +45,7 @@ function AddItem({ categories, states }) {
       description: Yup.string()
         .max(150, "description too long")
         .required(t("addItem:descriptionRequired")),
+      listingType: Yup.string().required(t("addItem:titleRequired")),
     }),
     onSubmit: async (values, { resetForm }) => {
       const id = uuidv4();
@@ -72,9 +80,8 @@ function AddItem({ categories, states }) {
       }
     },
   });
-
   return (
-    <section className='md:max-w-lg mx-auto'>
+    <section className='relative md:max-w-lg mx-auto'>
       <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
         <h1 className='text-3xl font-black text-center'>
           {t("addItem:addItem")}
@@ -150,6 +157,34 @@ function AddItem({ categories, states }) {
           id='file-upload'
           multiple
         />
+        <div className='form-control'>
+          <label className='label'>
+            <labe className='label-text'>
+              <span className='text-error'>*</span> What this item for?
+            </labe>
+            <span
+              classNclassName={`label-text-alt ${
+                formik.touched.listingType && formik.errors.listingType
+                  ? "text-error"
+                  : ""
+              }`}
+            >
+              {formik.touched.listingType && formik.errors.listingType
+                ? formik.errors.listingType
+                : ""}
+            </span>
+          </label>
+          <div className='flex flex-col md:flex-row gap-2 md:justify-between md:items-center'>
+            {listingTypes.map((type) => (
+              <ListingTypeButton
+                key={type}
+                text={type}
+                selected={formik.values.listingType}
+                onSelect={handleSelect}
+              />
+            ))}
+          </div>
+        </div>
         <div className='flex flex-col md:flex-row gap-2 justify-center mt-2'>
           <button
             type='submit'
