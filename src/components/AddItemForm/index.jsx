@@ -1,10 +1,4 @@
-import {
-  addDoc,
-  collection,
-  getDocs,
-  serverTimestamp,
-} from "firebase/firestore";
-import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
+import { collection, doc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useFormik } from "formik";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,40 +6,24 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import Spinner from "public/images/spinner.svg";
 import { useState } from "react";
-import { useEffect } from "react";
 import { toast } from "react-toastify";
-import { v4 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import * as Yup from "yup";
+
+import useUploadImages from "@/lib/useUploadImages";
 
 import Input from "../Input";
 import SelectInput from "../SelectInput";
 import TextArea from "../TextArea";
-import { db, storage } from "../../lib/firebase";
-
-const colRef = collection(db, "items");
-
-getDocs(colRef)
-  .then((snapshot) => {
-    let items = [];
-    snapshot.docs.forEach((doc) => {
-      items.push({ ...doc.data(), id: doc.id });
-    });
-    console.log(items);
-  })
-  .catch((err) => {
-    toast.error(err.code, {
-      position: toast.POSITION.BOTTOM_LEFT,
-      autoClose: 1500,
-    });
-  });
+import { db } from "../../lib/firebase";
 
 function AddItem({ categories, states }) {
-  const [imageUpload, setImageUpload] = useState([]);
+  const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [imageList, setImageList] = useState([]);
-  const imageListRef = ref(storage, "/items/${folder}");
+  const { uploadImages } = useUploadImages();
   const { t, i18n } = useTranslation();
   const router = useRouter();
+
   const formik = useFormik({
     initialValues: {
       title: "",
@@ -58,50 +36,42 @@ function AddItem({ categories, states }) {
       category: Yup.string().required(t("addItem:categoryRequired")),
       location: Yup.string().required(t("addItem:locationRequired")),
       description: Yup.string()
-        .max(5, "description too long")
+        .max(150, "description too long")
         .required(t("addItem:descriptionRequired")),
     }),
-    onSubmit: async (values) => {
-      setLoading(true);
-      try {
-        await uploadImages(values.title);
-        const images = await getDownloadURL();
-        const valuesWithImages = {
-          ...values,
-          images: images,
-          date: serverTimestamp(),
-        };
-        await addDoc(colRef, valuesWithImages);
-        console.log(valuesWithImages);
-      } catch (err) {
-        alert(err.message);
-      } finally {
-        setLoading(false);
+    onSubmit: async (values, { resetForm }) => {
+      const id = uuidv4();
+      const imageRef = `items/${id}/${values.title}`;
+      if (images.length < 1) {
+        alert("you need at least one image");
+        return;
+      } else {
+        setLoading(true);
+        try {
+          const colRef = collection(db, "items");
+          const imagesUrl = await uploadImages(imageRef, images);
+          const valuesWithImages = {
+            ...values,
+            id,
+            images: imagesUrl,
+            createdAt: serverTimestamp(),
+          };
+          await setDoc(doc(colRef, id), valuesWithImages);
+          toast.success("Item created ✅", {
+            position: toast.POSITION.TOP_CENTER,
+            autoClose: 1500,
+          });
+          router.push(`/products/${id}`);
+        } catch (err) {
+          alert(err.message);
+        } finally {
+          setLoading(false);
+          resetForm();
+          setImages([]);
+        }
       }
     },
   });
-  const uploadImages = async (folder) => {
-    if (imageUpload.length === 0) return;
-
-    try {
-      for (const image of imageUpload) {
-        const imageRef = ref(storage, `items/${folder}/${image.name + v4()}`);
-        await uploadBytes(imageRef, image);
-      }
-      alert("All images uploaded");
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-  /* useEffect(() => {
-    listAll(imageListRef).then((response) =>{
-      response.items.forEach((item) => {
-        getDownloadURL(item).then((url) =>{
-          setImageList((prev) =>[...prev, url] )
-        })
-      })
-    })
-  }, []) */
 
   return (
     <section className='md:max-w-lg mx-auto'>
@@ -150,23 +120,23 @@ function AddItem({ categories, states }) {
           touched={formik.touched.location}
           error={formik.errors.location}
         />
-        <div>
-          <TextArea
-            name='description'
-            type='text'
-            placeholder={t("addItem:descriptionPlaceHolder")}
-            label={t("addItem:descriptionLabel")}
-            handleChange={formik.handleChange}
-            value={formik.values.description}
-            handleBlur={formik.handleBlur}
-            error={formik.errors.description}
-            touched={formik.touched.description}
-          />
-          <div className='label'>
-            <label htmlFor='file-upload' className='label-text'>
-              {t("addItem:imageLabel")}
-            </label>
-          </div>
+        <TextArea
+          name='description'
+          type='text'
+          placeholder={t("addItem:descriptionPlaceHolder")}
+          label={t("addItem:descriptionLabel")}
+          handleChange={formik.handleChange}
+          value={formik.values.description}
+          handleBlur={formik.handleBlur}
+          error={formik.errors.description}
+          touched={formik.touched.description}
+          textLength={formik.values.description.length}
+          maxLength={150}
+        />
+        <div className='label'>
+          <label htmlFor='file-upload' className='label-text'>
+            {t("addItem:imageLabel")}
+          </label>
         </div>
         <input
           dir={i18n?.language == "ar" ? "ltr" : ""}
@@ -174,33 +144,24 @@ function AddItem({ categories, states }) {
           type='file'
           label={t("addItem:imageLabel")}
           onChange={(e) => {
-            setImageUpload(Array.from(e.target.files));
+            setImages(Array.from(e.target.files));
           }}
           className='file-input'
           id='file-upload'
           multiple
         />
-        {/*  <button className='btn btn-primary' onClick={uploadImage}>hit it</button> */}
-        <div className='flex flex-col md:flex-row gap-2 justify-center'>
+        <div className='flex flex-col md:flex-row gap-2 justify-center mt-2'>
           <button
             type='submit'
-            className='btn btn-primary w-full md:w-1/3 md:self-center text-white mt-2'
+            className='btn btn-primary flex-1 md:self-center text-white'
           >
             {t("addItem:addItem")}
           </button>
-          <Link
-            href='/products'
-            className='btn btn-primary w-full md:w-1/3 md:self-center text-white mt-2'
-          >
+          <Link href='/products' className='btn flex-1 md:self-center'>
             {t("addItem:cancel")}
           </Link>
         </div>
       </form>
-      {/* <div>
-      {imageList.map((url) => {
-        return <Image key={} src={url} alt="img"/>
-      })}
-      </div> */}
     </section>
   );
 }

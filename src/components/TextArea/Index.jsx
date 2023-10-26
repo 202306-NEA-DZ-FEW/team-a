@@ -8,9 +8,11 @@ function TextArea({
   handleBlur,
   touched,
   error,
+  textLength,
+  maxLength,
 }) {
   return (
-    <div>
+    <div className='form-control'>
       <div className='label'>
         <label htmlFor={name} className='label-text'>
           {label}
@@ -31,6 +33,16 @@ function TextArea({
         value={value}
         onBlur={handleBlur}
       />
+      <label className='label'>
+        <span className='label-text-alt'></span>
+        <span
+          className={`label-text-alt ${
+            textLength === maxLength ? "text-error" : ""
+          }`}
+        >
+          {textLength}/{maxLength}
+        </span>
+      </label>
     </div>
   );
 }
