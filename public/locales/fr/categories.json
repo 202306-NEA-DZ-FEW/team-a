@@ -1,0 +1,19 @@
+{
+  "books": "Livres",
+  "clothes": "Vêtements",
+  "foodAndNonPerishables": "Aliments et Produits non périssables (produits de conserve)",
+  "toysAndGames": "Jouets",
+  "householdItems": "Articles ménagers",
+  "schoolAndEducationalSupplies": "Fournitures scolairs et Matériel éducatif",
+  "hygieneProducts": "Produits d'hygiène personnelle",
+  "medicalSupplies": "Dispositifs médicaux",
+  "petSupplies": "Fournitures pour animaux de compagnie",
+  "electronics": "Électronique",
+  "accessories": "Accessoires",
+  "shoes": "Chaussures",
+  "babyItems": "Articles pour bébés",
+  "sportsEquipment": "Équipement de sport",
+  "craftSupplies": "Fournitures d'artisanat",
+  "blanketsAndBedding": "Couvertures et Literie",
+  "decorAndArtwork": "Décoration et Œuvres d'art"
+}
