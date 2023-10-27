@@ -41,7 +41,7 @@ function ProductsPage({ t, items, categories, queryParams }) {
             title={item.title}
             description={item.description}
             location={item.location}
-            imageUrl={item.imageUrl[2]}
+            imageUrl={item.imageUrl}
           />
         ))}
       </div>
@@ -52,19 +52,9 @@ function ProductsPage({ t, items, categories, queryParams }) {
 export default withTranslation("ProductsPage")(ProductsPage);
 
 export async function getServerSideProps({ locale, query }) {
-  const search = query.search || "";
-  const category = query.category || "";
-  const location = query.location || "";
-  const listingType = query.listingType || "";
-  const queryParams = {
-    ...(search ? { search } : {}),
-    ...(location ? { location } : {}),
-    ...(category ? { category } : {}),
-    ...(listingType ? { listingType } : {}),
-  };
+  const queryParams = query;
   const items = await fetchCollection("items", queryParams);
   const categories = await fetchCollection("categories");
-
   return {
     props: {
       ...(await serverSideTranslations(locale, [

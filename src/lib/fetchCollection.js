@@ -1,9 +1,8 @@
 import { collection, getDocs } from "firebase/firestore";
 
-import { db } from "@/lib/firebase";
-
+import { db } from "./firebase";
 // Function to fetch data from Firestore
-export async function fetchCollection(collectionName, queryParams = null) {
+export async function fetchCollection(collectionName, queryParams = {}) {
   const collectionRef = collection(db, collectionName);
 
   try {
@@ -14,26 +13,35 @@ export async function fetchCollection(collectionName, queryParams = null) {
       data.push({ id: doc.id, ...JSON.parse(JSON.stringify(doc.data())) });
     });
 
-    const filtredData = data
-      .filter((d) =>
-        queryParams.search
-          ? d.title.toLowerCase().includes(queryParams.search.toLowerCase())
-          : true
-      )
-      .filter((d) =>
-        queryParams.category ? d.category === queryParams.category : true
-      )
-      .filter((d) =>
-        queryParams.location ? d.location === queryParams.location : true
-      )
-      .filter((d) =>
-        queryParams.listingType
-          ? d.listingType === queryParams.listingType
-          : true
-      );
+    let filteredData = data;
 
-    return filtredData;
+    if (queryParams.search && queryParams.search.trim() !== "") {
+      filteredData = filteredData.filter((d) =>
+        d.title.toLowerCase().includes(queryParams.search.toLowerCase())
+      );
+    }
+
+    if (queryParams.category) {
+      filteredData = filteredData.filter(
+        (d) => d.category === queryParams.category
+      );
+    }
+
+    if (queryParams.location) {
+      filteredData = filteredData.filter(
+        (d) => d.location === queryParams.location
+      );
+    }
+
+    if (queryParams.listingType) {
+      filteredData = filteredData.filter(
+        (d) => d.listingType === queryParams.listingType
+      );
+    }
+
+    return filteredData;
   } catch (error) {
-    throw new Error(error);
+    // Instead of returning an error object, you can log the error and return an empty array.
+    return [];
   }
 }
