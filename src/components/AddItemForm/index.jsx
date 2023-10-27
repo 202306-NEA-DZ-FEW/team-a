@@ -18,7 +18,7 @@ import ProtectedLayout from "@/layout/DashboardLayout";
 import ListingTypeButton from "./ListingTypeButton";
 import Input from "../Input";
 import SelectInput from "../SelectInput";
-import TextArea from "../TextArea";
+import TextArea from "../TextArea/Index";
 import { db } from "../../lib/firebase";
 
 function AddItem({ categories, states }) {
