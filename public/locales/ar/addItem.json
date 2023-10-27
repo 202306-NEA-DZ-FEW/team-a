@@ -1,0 +1,22 @@
+{
+  "addItem": "إضافة منتج",
+  "titleLabel": "العنوان",
+  "titlePlaceholder": "إضافة العنوان",
+  "titleRequired": "العنوان مطلوب",
+  "categoryLabel": "الفئة",
+  "categoryRequired": "الفئة مطلوبة",
+  "descriptionLabel": "الوصف",
+  "descriptionLength": "يجب أن يكون الوصف أطول",
+  "descriptionPlaceHolder": "أضِف وصفًا",
+  "descriptionRequired": "الوصف مطلوب",
+  "cancel": "إلغاء",
+  "imageLabel": "إضافة صورة",
+  "imageRequired": "يجب عليك تقديم صورة",
+  "locationLabel": "الولاية",
+  "locationRequired": "الولاية مطلوبة",
+  "itemTag": "تفضيل التبرع",
+  "itemTagRequired": "تفضيل التبرع مطلوب",
+  "donationButton": "للتبرع",
+  "exchangeButton": "للتبادل",
+  "requestButton": "للطلب"
+}

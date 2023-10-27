@@ -34,7 +34,7 @@ function UserMenu({ user, logOut, t }) {
                 <Menu.Item className='mb-1'>
                   {({ active }) => (
                     <Link
-                      href={`/dashboard?user=${user.uid}`}
+                      href={`/dashboard?user=${user?.uid}`}
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block rounded-lg px-4 py-2 text-sm"
