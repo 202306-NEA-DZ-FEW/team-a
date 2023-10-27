@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MdLocationOn } from "react-icons/md";
 
-function ProductCard({ title, location, description, imageUrl }) {
+function ProductCard({ title, location, description, imageUrl, data }) {
   return (
     <div className='card w-52 bg-white shadow-xl'>
       <Image
