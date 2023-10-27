@@ -8,12 +8,18 @@ import ProductCard from "@/components/ProductCard";
 import CategoryCard from "@/components/ProductFiltering/Category";
 import LocationFilter from "@/components/ProductFiltering/LocationFilter";
 
-function ProductsPage({ t, items }) {
+function ProductsPage({ t, items, categories }) {
   return (
     <main className='mb-10'>
       {/* This is Categories Section */}
       <div className='grid lg:grid-cols-5 md:grid-cols-5 grid-cols-2 gap-4 mx-5 my-10 justify-center'>
-        <CategoryCard />
+        {categories.map((category) => (
+          <CategoryCard
+            key={category.id}
+            title={category.title}
+            imageUrl={category.imageUrl}
+          />
+        ))}
       </div>
       {/* This is for Searchbar & Product Filtering */}
       <div className='flex flex-col md:flex-row gap-4 justify-between items-center px-10 mt-16'>
@@ -57,6 +63,7 @@ export default withTranslation("ProductsPage")(ProductsPage);
 
 export async function getServerSideProps({ locale }) {
   const items = await fetchFirestoreData("items");
+  const categories = await fetchFirestoreData("categories");
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -65,6 +72,7 @@ export async function getServerSideProps({ locale }) {
         "ProductsPage",
       ])),
       items,
+      categories,
     },
   };
 }
