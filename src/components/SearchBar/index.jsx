@@ -6,28 +6,31 @@ import { useDebounce } from "use-debounce";
 function SearchBar({ queryParams }) {
   const router = useRouter();
   const [text, setText] = useState("");
-  const [query] = useDebounce(text, 500);
+  let [query] = useDebounce(text, 600);
 
   useEffect(() => {
-    // Update the query state when text changes
-    if (!query) {
-      router.push(`/products`);
+    // Update the query state when text or queryParams change
+    const newQueryParams = { ...queryParams };
+    if (query) {
+      newQueryParams.search = query;
     } else {
+      delete newQueryParams.search;
+    }
+
+    const currentURL = router.query.search || "";
+
+    // Only update the URL if it's different from the current URL
+    if (query !== currentURL) {
       router.push({
         pathname: `/products`,
-        query: { ...queryParams, search: query },
+        query: newQueryParams,
       });
     }
-    // eslint-disable-next-line
-  }, [query]);
+  }, [query, queryParams, router]);
 
   useEffect(() => {
     // Update the text input when queryParams change
-    if (queryParams.search) {
-      setText(queryParams.search);
-    } else {
-      setText("");
-    }
+    setText(queryParams.search || "");
   }, [queryParams.search]);
 
   return (

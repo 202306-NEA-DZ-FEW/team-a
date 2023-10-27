@@ -11,6 +11,7 @@ function CategoryCard({ imageUrl, title }) {
             layout='fill'
             objectFit='cover'
             className='rounded'
+            priority
           />
           <h2 className='opacity-0 group-hover:opacity-70 bg-black bg-opacity-75 text-white text-center absolute bottom-0 left-0 right-0 p-2 rounded'>
             {title}
