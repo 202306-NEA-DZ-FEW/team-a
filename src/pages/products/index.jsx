@@ -1,14 +1,14 @@
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { RiSearch2Line } from "react-icons/ri";
 
-import { fetchFirestoreData } from "@/lib/fetchFireStoreItems";
+import { fetchCollection } from "@/lib/fetchCollection";
 
 import ProductCard from "@/components/ProductCard";
 import CategoryCard from "@/components/ProductFiltering/Category";
 import LocationFilter from "@/components/ProductFiltering/LocationFilter";
+import SearchBar from "@/components/SearchBar";
 
-function ProductsPage({ t, items, categories }) {
+function ProductsPage({ t, items, categories, queryParams }) {
   return (
     <main className='mb-10'>
       {/* This is Categories Section */}
@@ -23,17 +23,7 @@ function ProductsPage({ t, items, categories }) {
       </div>
       {/* This is for Searchbar & Product Filtering */}
       <div className='flex flex-col md:flex-row gap-4 justify-between items-center px-10 mt-16'>
-        <div className='form-control md:flex-1 w-full'>
-          <div className='md:max-w-xs relative w-full'>
-            <RiSearch2Line className='absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500' />
-
-            <input
-              type='text'
-              placeholder='Search Product'
-              className='input-sm text-center rounded-xl input-bordered w-full md:max-w-xs'
-            />
-          </div>
-        </div>
+        <SearchBar queryParams={queryParams} />
         <LocationFilter t={t} />
         <button className='btn w-full md:w-40 bg-red-500 text-white hover:bg-green-900 btn-sm px-4 rounded-xl'>
           Add Item
@@ -51,7 +41,7 @@ function ProductsPage({ t, items, categories }) {
             title={item.title}
             description={item.description}
             location={item.location}
-            imageUrl={item.imageUrl[1]}
+            imageUrl={item.imageUrl[2]}
           />
         ))}
       </div>
@@ -61,9 +51,20 @@ function ProductsPage({ t, items, categories }) {
 
 export default withTranslation("ProductsPage")(ProductsPage);
 
-export async function getServerSideProps({ locale }) {
-  const items = await fetchFirestoreData("items");
-  const categories = await fetchFirestoreData("categories");
+export async function getServerSideProps({ locale, query }) {
+  const search = query.search || "";
+  const category = query.category || "";
+  const location = query.location || "";
+  const listingType = query.listingType || "";
+  const queryParams = {
+    ...(search ? { search } : {}),
+    ...(location ? { location } : {}),
+    ...(category ? { category } : {}),
+    ...(listingType ? { listingType } : {}),
+  };
+  const items = await fetchCollection("items", queryParams);
+  const categories = await fetchCollection("categories");
+
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -73,6 +74,7 @@ export async function getServerSideProps({ locale }) {
       ])),
       items,
       categories,
+      queryParams,
     },
   };
 }
