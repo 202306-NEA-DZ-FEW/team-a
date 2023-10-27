@@ -11,7 +11,12 @@
   "descriptionPlaceHolder": "Ajouter une description",
   "cancel": "Annuler",
   "imageLabel": "Ajouter une image",
-  "imageRequired" : "Vous devez fournir une image",
+  "imageRequired": "Vous devez fournir une image",
   "locationLabel": "Wilaya",
-  "locationRequired": "La Wilaya est requise"
+  "locationRequired": "La Wilaya est requise",
+  "itemTag": "Préférence de Don",
+  "itemTagRequired": "La préférence de don est requise",
+  "donationButton": "Don",
+  "exchangeButton": "Échange",
+  "requestButton": "Demande"
 }

@@ -28,7 +28,11 @@ function AddItem({ categories, states }) {
   const { user } = useAuth();
   const { t, i18n } = useTranslation();
   const router = useRouter();
-  const listingTypes = ["For Exchange", "Looking For", "Donation"];
+  const listingTypes = [
+    t("addItem:exchangeButton"),
+    t("addItem:requestButton"),
+    t("addItem:donationButton"),
+  ];
 
   const handleSelect = (selectedType) => {
     formik.setFieldValue("listingType", selectedType);
@@ -49,7 +53,7 @@ function AddItem({ categories, states }) {
       description: Yup.string()
         .max(150, "description too long")
         .required(t("addItem:descriptionRequired")),
-      listingType: Yup.string().required(t("addItem:titleRequired")),
+      listingType: Yup.string().required(t("addItem:itemTagRequired")),
     }),
     onSubmit: async (values, { resetForm }) => {
       const id = uuidv4();
@@ -175,7 +179,7 @@ function AddItem({ categories, states }) {
           <div className='form-control'>
             <div className='label'>
               <span className='label-text'>
-                <span className='text-error'>*</span> What this item for?
+                <span className='text-error'>*</span> {t("addItem:itemTag")}
               </span>
               <span
                 className={`label-text-alt ${

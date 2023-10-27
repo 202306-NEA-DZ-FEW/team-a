@@ -11,7 +11,12 @@
   "descriptionPlaceHolder": "Add a description",
   "cancel": "Cancel",
   "imageLabel": "Image",
-  "imageRequired" : "You need to provide an image",
+  "imageRequired": "You need to provide an image",
   "locationLabel": "Province",
-  "locationRequired": "Location is required"
+  "locationRequired": "Location is required",
+  "itemTag": "Donation preference",
+  "itemTagRequired": "Donation preference is required",
+  "donationButton": "Donate",
+  "exchangeButton": "Exchange",
+  "requestButton": "Request"
 }
