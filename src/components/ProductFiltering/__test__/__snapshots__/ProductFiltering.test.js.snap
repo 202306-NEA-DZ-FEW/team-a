@@ -18,6 +18,7 @@ exports[`Navbar snapshot test 1`] = `
         className="rounded"
         data-nimg="fill"
         decoding="async"
+        fetchpriority="high"
         onError={[Function]}
         onLoad={[Function]}
         src=""
