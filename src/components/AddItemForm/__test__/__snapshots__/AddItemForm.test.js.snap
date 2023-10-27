@@ -118,20 +118,21 @@ exports[`renders correctly 1`] = `
         type="text"
         value=""
       />
-      <label
+      <div
         className="label"
       >
-        <span
-          className="label-text-alt"
+        <label
+          className="label-text"
+          htmlFor="description"
         />
-        <span
+        <label
           className="label-text-alt "
         >
           0
           /
           150
-        </span>
-      </label>
+        </label>
+      </div>
     </div>
     <div
       className="label"
@@ -170,7 +171,7 @@ exports[`renders correctly 1`] = `
            What this item for?
         </labe>
         <span
-          classNclassName="label-text-alt "
+          className="label-text-alt "
         />
       </label>
       <div

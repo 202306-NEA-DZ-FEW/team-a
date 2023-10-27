@@ -163,7 +163,7 @@ function AddItem({ categories, states }) {
               <span className='text-error'>*</span> What this item for?
             </labe>
             <span
-              classNclassName={`label-text-alt ${
+              className={`label-text-alt ${
                 formik.touched.listingType && formik.errors.listingType
                   ? "text-error"
                   : ""

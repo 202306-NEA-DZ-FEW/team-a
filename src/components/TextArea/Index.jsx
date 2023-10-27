@@ -33,16 +33,16 @@ function TextArea({
         value={value}
         onBlur={handleBlur}
       />
-      <label className='label'>
-        <span className='label-text-alt'></span>
-        <span
+      <div className='label'>
+        <label htmlFor={name} className='label-text'></label>
+        <label
           className={`label-text-alt ${
-            textLength === maxLength ? "text-error" : ""
+            textLength >= maxLength ? "text-error" : ""
           }`}
         >
           {textLength}/{maxLength}
-        </span>
-      </label>
+        </label>
+      </div>
     </div>
   );
 }
