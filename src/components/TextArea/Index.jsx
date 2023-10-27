@@ -24,7 +24,7 @@ function TextArea({
         </label>
       </div>
       <textarea
-        className='textarea textarea-primary textarea-bordered h-24 w-full'
+        className='textarea textarea-primary textarea-bordered h-24 w-full bg-white'
         id={name}
         type={type}
         name={name}
