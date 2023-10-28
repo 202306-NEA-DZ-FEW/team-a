@@ -1,6 +1,11 @@
+import { useRouter } from "next/router";
 import renderer from "react-test-renderer";
 
 import AddItemForm from "..";
+
+jest.mock("next/router", () => ({
+  useRouter: jest.fn(),
+}));
 
 jest.mock("@/lib/firebase", () => {
   return {
@@ -15,6 +20,9 @@ it("renders correctly", () => {
   const mockCategories = [{ name: "name", stateKey: "stateKey" }];
   const mockStates = [{ name: "name", stateKey: "stateKey" }];
   const mockT = jest.fn();
+  useRouter.mockImplementation(() => ({
+    asPath: "/example-path",
+  }));
   const tree = renderer
     .create(
       <AddItemForm
