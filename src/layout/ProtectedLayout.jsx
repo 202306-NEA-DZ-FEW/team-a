@@ -6,6 +6,8 @@ import { auth } from "@/lib/firebase";
 
 import Loader from "@/components/Loader";
 
+import NotFoundPage from "@/pages/404";
+
 function ProtectedLayout({ children }) {
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
@@ -48,7 +50,11 @@ function ProtectedLayout({ children }) {
   }
 
   if (error) {
-    return <div className='min-h-screen'>{error.message}</div>;
+    return (
+      <div className='min-h-screen'>
+        <NotFoundPage />
+      </div>
+    );
   }
 }
 

@@ -12,7 +12,7 @@ import * as Yup from "yup";
 import useUploadImages from "@/lib/useUploadImages";
 
 import { useAuth } from "@/context/AuthProvider";
-import ProtectedLayout from "@/layout/DashboardLayout";
+import ProtectedLayout from "@/layout/ProtectedLayout";
 
 import ListingTypeButton from "./ListingTypeButton";
 import Input from "../Input";
