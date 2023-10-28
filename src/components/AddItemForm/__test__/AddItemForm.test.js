@@ -1,3 +1,4 @@
+import { withTranslation } from "next-i18next";
 import renderer from "react-test-renderer";
 
 import AddItemForm from "..";
@@ -14,8 +15,18 @@ jest.mock("@/lib/firebase", () => {
 it("renders correctly", () => {
   const mockCategories = [{ name: "name", stateKey: "stateKey" }];
   const mockStates = [{ name: "name", stateKey: "stateKey" }];
+  const mockT = jest.fn();
   const tree = renderer
-    .create(<AddItemForm categories={mockCategories} states={mockStates} />)
+    .create(
+      withTranslation(
+        <AddItemForm
+          categories={mockCategories}
+          states={mockStates}
+          initialLocale='en'
+          t={mockT}
+        />
+      )
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

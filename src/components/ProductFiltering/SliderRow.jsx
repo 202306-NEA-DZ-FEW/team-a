@@ -29,9 +29,9 @@ function SliderRow({ title, categories, rowID, queryParams }) {
           id={"slider" + rowID}
           className='w-full py-10 flex gap-8 px-8 overflow-x-scroll scroll-smooth no-scrollbar'
         >
-          {categories.map((category) => (
+          {categories.map((category, i) => (
             <CategoryCard
-              key={category.dataKey}
+              key={category.dataKey + i}
               queryParams={queryParams}
               link={category.dataKey}
               title={category.name}

@@ -3,7 +3,6 @@ import { useFormik } from "formik";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 import Spinner from "public/images/spinner.svg";
 import { useState } from "react";
 import { toast } from "react-toastify";
@@ -21,12 +20,11 @@ import SelectInput from "../SelectInput";
 import TextArea from "../TextArea";
 import { db } from "../../lib/firebase";
 
-function AddItemForm({ categories, states }) {
+function AddItemForm({ t, initialLocale, categories, states }) {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
   const { uploadImages } = useUploadImages();
   const { user } = useAuth();
-  const { t, i18n } = useTranslation();
   const router = useRouter();
   const listingTypes = [
     t("addItem:exchangeButton"),
@@ -165,7 +163,7 @@ function AddItemForm({ categories, states }) {
             </span>
           </div>
           <input
-            dir={i18n?.language == "ar" ? "ltr" : ""}
+            dir={initialLocale == "ar" ? "ltr" : ""}
             name='image'
             type='file'
             label={t("addItem:imageLabel")}

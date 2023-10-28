@@ -14,7 +14,12 @@ function CreateProductPage({ t, _nextI18Next }) {
   return (
     <Container className='my-20'>
       <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
-        <AddItemForm states={states} categories={categories} t={t} />
+        <AddItemForm
+          t={t}
+          initialLocale={initialLocale}
+          states={states}
+          categories={categories}
+        />
       </main>
     </Container>
   );
