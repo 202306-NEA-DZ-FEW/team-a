@@ -18,7 +18,7 @@ export default function CarouselItem({
           {description ? description : ""}
         </p>
         <Link
-          className='btn btn-sm'
+          className='btn btn-sm bg-white text-black hover:bg-slate-50'
           scroll={false}
           href={{
             pathname: "/products",

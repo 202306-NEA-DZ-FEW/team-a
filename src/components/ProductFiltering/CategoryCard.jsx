@@ -21,6 +21,7 @@ function CategoryCard({ imageUrl, title, link, queryParams }) {
             alt={title}
             className='object-cover hover:scale-125 transition-all duration-700'
             fill
+            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
             priority
           />
           <h3 className='text-white text-center absolute bottom-[10%] px-2 py-1 w-[90%] text-md card-bordered rounded-xl bg-black bg-opacity-30'>

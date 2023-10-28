@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
       my description
     </p>
     <a
-      className="btn btn-sm"
+      className="btn btn-sm bg-white text-black hover:bg-slate-50"
       href="/products?category=myKey"
       onClick={[Function]}
       onMouseEnter={[Function]}
