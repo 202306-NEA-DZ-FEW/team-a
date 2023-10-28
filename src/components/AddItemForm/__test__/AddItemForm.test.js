@@ -1,4 +1,3 @@
-import { withTranslation } from "next-i18next";
 import renderer from "react-test-renderer";
 
 import AddItemForm from "..";
@@ -18,14 +17,12 @@ it("renders correctly", () => {
   const mockT = jest.fn();
   const tree = renderer
     .create(
-      withTranslation(
-        <AddItemForm
-          categories={mockCategories}
-          states={mockStates}
-          initialLocale='en'
-          t={mockT}
-        />
-      )
+      <AddItemForm
+        categories={mockCategories}
+        states={mockStates}
+        initialLocale='en'
+        t={mockT}
+      />
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

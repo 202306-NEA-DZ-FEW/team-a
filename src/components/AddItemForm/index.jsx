@@ -192,9 +192,9 @@ function AddItemForm({ t, initialLocale, categories, states }) {
               </span>
             </div>
             <div className='flex flex-col md:flex-row gap-2 md:justify-between md:items-center'>
-              {listingTypes.map((type) => (
+              {listingTypes.map((type, i) => (
                 <ListingTypeButton
-                  key={type}
+                  key={i}
                   text={type}
                   selected={formik.values.listingType}
                   onSelect={handleSelect}
