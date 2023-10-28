@@ -1,30 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 function MemberCard({ name, github, linkedin, imageUrl }) {
-  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div
-      className='relative h-52 w-52 rounded-md overflow-hidden hover:scale-105 hover:filter-none transition duration-300'
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <Image src={imageUrl} alt={name} layout='fill' objectFit='cover' />
-      <div
-        className={`absolute inset-0 bg-primary bg-opacity-40 backdrop-blur-2xl flex flex-col justify-center items-center p-4 ${
-          isHovered ? "visible" : "invisible"
-        }`}
-      >
-        <h3 className='text-white text-center font-bold text-lg mb-2'>
-          {name}
-        </h3>
-        <div className='flex gap-2 space-x-2'>
+    <div className='card rounded-3xl group'>
+      <figure className='relative h-64 w-52 rounded-3xl'>
+        <Image
+          src={imageUrl}
+          alt={name}
+          fill
+          priority
+          className='group-hover:scale-110 saturate-0 group-hover:saturate-100 object-cover w-full h-full duration-500'
+        />
+      </figure>
+      <div className='absolute bottom-[5%] flex flex-col gap-1 px-2'>
+        <h3 className='text-white font-bold'>{name}</h3>
+        <div className='flex gap-2'>
           <Link
             href={github}
             target='_blank'
             rel='noopener noreferrer'
-            className='text-white'
+            className='text-white border border-white rounded-full text-sm px-2 h-6 hover:bg-black hover:bg-opacity-30  '
           >
             GitHub
           </Link>
@@ -32,7 +28,7 @@ function MemberCard({ name, github, linkedin, imageUrl }) {
             href={linkedin}
             target='_blank'
             rel='noopener noreferrer'
-            className='text-white'
+            className='text-white border border-white rounded-full text-sm px-2 h-6 hover:bg-black hover:bg-opacity-30 '
           >
             LinkedIn
           </Link>

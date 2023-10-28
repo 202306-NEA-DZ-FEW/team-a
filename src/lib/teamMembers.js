@@ -18,7 +18,7 @@ export default function teamMembers(t) {
     {
       name: t("about:bouchra"),
       github: "https://github.com/Bushra369",
-      linkedin: "https://www.linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/bushra-djalti-0b1b52287/",
       imageUrl: img2,
     },
     {

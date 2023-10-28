@@ -14,12 +14,12 @@ function AboutPage({ t, _nextI18Next }) {
     <>
       <AboutPageCover t={t} />
       <Container className='my-20'>
-        <h1 className='text-3xl font-black text-center m-4'>
+        <h1 className='text-3xl font-black text-center my-10'>
           {t("about:teamLabel")}
         </h1>
         <section
           dir={initialLocale === "ar" ? "rtl" : "ltr"}
-          className='flex flex-col md:flex-row gap-8 items-center justify-center w-full'
+          className='flex flex-wrap gap-4 items-center justify-center w-full'
         >
           {team.map((member) => (
             <MemberCard
