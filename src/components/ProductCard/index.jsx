@@ -10,6 +10,7 @@ function ProductCard({ title, location, description, imageUrl }) {
         height={400}
         width={400}
         className='h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl'
+        priority
       />
       <div className='p-3 flex flex-col gap-1'>
         <div className='flex items-center'>

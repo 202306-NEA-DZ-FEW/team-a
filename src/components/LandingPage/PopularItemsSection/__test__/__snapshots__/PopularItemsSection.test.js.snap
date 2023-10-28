@@ -20,8 +20,8 @@ exports[`renders correctly 1`] = `
         className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height={400}
-        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560060141-7b9018741ced%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1479%26q%3D80&w=828&q=75"
@@ -88,8 +88,8 @@ exports[`renders correctly 1`] = `
         className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height={400}
-        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540574163026-643ea20ade25%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
@@ -156,8 +156,8 @@ exports[`renders correctly 1`] = `
         className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height={400}
-        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545127398-14699f92334b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1335%26q%3D80&w=828&q=75"
@@ -224,8 +224,8 @@ exports[`renders correctly 1`] = `
         className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height={400}
-        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521369909029-2afed882baee%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
@@ -292,8 +292,8 @@ exports[`renders correctly 1`] = `
         className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height={400}
-        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1410%26q%3D80&w=828&q=75"
