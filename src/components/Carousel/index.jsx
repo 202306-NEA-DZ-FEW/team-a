@@ -16,9 +16,9 @@ export default function Carousel({ items, queryParams }) {
   return (
     <div className='group'>
       <div id='slide' className='max-w-fit'>
-        {items.map((item) => (
+        {items.map((item, i) => (
           <CarouselItem
-            key={item.dataKey}
+            key={item.dataKey + i}
             {...item}
             queryParams={queryParams}
           />
