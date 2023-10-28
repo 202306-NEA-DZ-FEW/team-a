@@ -29,12 +29,12 @@ function UserMenu({ user, logOut, t }) {
             leaveFrom='transform opacity-100 scale-100'
             leaveTo='transform opacity-0 scale-95'
           >
-            <Menu.Items className='absolute right-0 z-10 mt-6 lg:mr-4 w-screen md:w-screen lg:w-56 origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+            <Menu.Items className='absolute right-0 z-40 mt-6 lg:mr-4 w-screen md:w-screen lg:w-56 origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
               <div className='py-2 text-center mx-4'>
                 <Menu.Item className='mb-1'>
                   {({ active }) => (
                     <Link
-                      href={`/dashboard?user=${user.uid}`}
+                      href={`/dashboard?user=${user?.uid}`}
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block rounded-lg px-4 py-2 text-sm"

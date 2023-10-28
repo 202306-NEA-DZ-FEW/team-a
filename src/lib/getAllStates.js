@@ -59,8 +59,8 @@ export default function getAllStates(t) {
     "elMGhair",
     "elMenia",
   ];
-  const stateList = stateKeys.map((stateKey) => {
-    return { name: t(`states:${stateKey}`), stateKey };
+  const stateList = stateKeys.map((dataKey) => {
+    return { name: t(`states:${dataKey}`), dataKey };
   });
   return stateList;
 }
