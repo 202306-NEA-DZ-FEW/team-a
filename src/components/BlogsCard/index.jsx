@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
@@ -8,34 +7,40 @@ export default function BlogsCard({ index, blog }) {
   return (
     <>
       <div
-        className={`flex flex-col gap-6 justify-center items-center bg-gray-200 p-6 px-4 ${
+        className={`flex flex-col gap-10 justify-center items-center  ${
           index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
         } `}
         dir={i18n?.language === "ar" ? "rtl" : "ltr"}
       >
-        <div className='relative'>
-          <Image
-            src={blog.img}
-            alt={blog.title}
-            width={300}
-            height={100}
-            className='object-cover rounded-2xl'
-          />
-          <span
-            className={`absolute bottom-0 left-0 bg-primary text-white p-2 text-sm lg:hidden`}
-          >
+        <div className='relative lg:flex-1'>
+          <figure className='relative w-80 h-60 lg:w-[100%] lg:h-80'>
+            <Image
+              src={blog.imageUrl}
+              alt={blog.title}
+              fill
+              className='object-cover w-full h-full rounded-2xl'
+            />
+          </figure>
+
+          <span className='absolute bottom-0 left-0 bg-primary text-white p-2 text-sm lg:hidden'>
             {blog.date}
           </span>
         </div>
-        <div className='flex flex-col gap-2 px-10 lg:w-2/4 md:w-2/4'>
-          <h2 className='font-bold'>{blog.title}</h2>
+        <div className='flex flex-col lg:flex-1 gap-4'>
+          <div>
+            <h2 className='font-bold text-2xl'>{blog.title}</h2>
+            <span className='my-1 text-sm text-gray-600 font-light hidden lg:block'>
+              {blog.date}
+            </span>
+          </div>
+
           <p>
             {blog.description.slice(0, 210)}
             {blog.description.length > 210 ? " ..." : ""}
           </p>
           <Link href={`/blog/${blog.id}`}>
             <div>
-              <button className='btn btn-primary'>
+              <button className='btn bg-black text-white btn-sm'>
                 {t("common:buttons:readMore")}
               </button>
             </div>
