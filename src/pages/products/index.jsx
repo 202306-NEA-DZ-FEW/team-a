@@ -1,13 +1,15 @@
+import Link from "next/link";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { fetchCollection } from "@/lib/fetchCollection";
 import getAllCategories from "@/lib/getAllCategories";
 
+import Carousel from "@/components/Carousel";
 import ProductCard from "@/components/ProductCard";
-import CategoryCard from "@/components/ProductFiltering/Category";
 import ClearFilterButton from "@/components/ProductFiltering/ClearFilterButton";
 import LocationFilter from "@/components/ProductFiltering/LocationFilter";
+import SliderRow from "@/components/ProductFiltering/SliderRow";
 import SearchBar from "@/components/SearchBar";
 
 function ProductsPage({ t, items, queryParams }) {
@@ -15,29 +17,27 @@ function ProductsPage({ t, items, queryParams }) {
   return (
     <main className='mb-10'>
       {/* This is Categories Section */}
-      <div className='grid lg:grid-cols-5 md:grid-cols-5 grid-cols-2 gap-4 mx-5 my-10 justify-center'>
-        {categories.map((category) => (
-          <CategoryCard
-            queryParams={queryParams}
-            link={category.dataKey}
-            key={category.dataKey}
-            title={category.name}
-            imageUrl={category.imageURL}
-          />
-        ))}
+      <div className='relative md:h-[75vh] h-[80vh] overflow-x-hidden w-full'>
+        <Carousel items={categories} queryParams={queryParams} />
       </div>
+      <SliderRow categories={categories} title='All categories' />
       {/* This is for Searchbar & Product Filtering */}
       <div className='flex flex-col md:flex-row gap-4 justify-between items-center px-10 mt-16'>
         <SearchBar queryParams={queryParams} />
         <LocationFilter t={t} queryParams={queryParams} />
-        <button className='btn w-full md:w-40 bg-red-500 text-white hover:bg-green-900 btn-sm px-4 rounded-xl'>
+        <Link
+          href='/products/create'
+          className='btn w-full md:w-40 bg-red-500 text-white hover:bg-green-900 btn-sm px-4 rounded-xl'
+        >
           Add Item
-        </button>
+        </Link>
         <ClearFilterButton />
       </div>
-
       {/* Section for Product Cards */}
-      <h1 className='text-2xl w-full font-semibold text-center my-16'>
+      <h1
+        className='text-2xl w-full font-semibold text-center my-16'
+        id='products'
+      >
         Products List
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-10 place-items-center gap-y-4'>
