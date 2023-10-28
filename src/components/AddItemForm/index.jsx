@@ -21,7 +21,7 @@ import SelectInput from "../SelectInput";
 import TextArea from "../TextArea";
 import { db } from "../../lib/firebase";
 
-function AddItem({ categories, states }) {
+function AddItemForm({ categories, states }) {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
   const { uploadImages } = useUploadImages();
@@ -221,4 +221,4 @@ function AddItem({ categories, states }) {
   );
 }
 
-export default AddItem;
+export default AddItemForm;

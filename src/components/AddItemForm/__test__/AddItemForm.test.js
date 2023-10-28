@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer";
 
-import UserListItem from "..";
+import AddItemForm from "..";
 
 jest.mock("@/lib/firebase", () => {
   return {
@@ -15,7 +15,7 @@ it("renders correctly", () => {
   const mockCategories = [{ name: "name", stateKey: "stateKey" }];
   const mockStates = [{ name: "name", stateKey: "stateKey" }];
   const tree = renderer
-    .create(<UserListItem categories={mockCategories} states={mockStates} />)
+    .create(<AddItemForm categories={mockCategories} states={mockStates} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

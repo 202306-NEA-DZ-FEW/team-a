@@ -4,7 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import getAllCategories from "@/lib/getAllCategories";
 import getAllStates from "@/lib/getAllStates";
 
-import AddItem from "@/components/AddItemForm";
+import AddItemForm from "@/components/AddItemForm";
 import Container from "@/components/container";
 
 function CreateProductPage({ t, _nextI18Next }) {
@@ -14,7 +14,7 @@ function CreateProductPage({ t, _nextI18Next }) {
   return (
     <Container className='my-20'>
       <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
-        <AddItem states={states} categories={categories} t={t} />
+        <AddItemForm states={states} categories={categories} t={t} />
       </main>
     </Container>
   );
