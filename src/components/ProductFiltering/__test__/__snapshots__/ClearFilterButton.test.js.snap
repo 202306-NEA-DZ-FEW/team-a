@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<button
+  className="btn w-full md:w-40 bg-black text-white btn-sm px-4 rounded-xl"
+  onClick={[Function]}
+>
+  Clear filter
+</button>
+`;

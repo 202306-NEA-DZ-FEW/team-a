@@ -25,8 +25,8 @@ function SelectInput({
         onChange={handleChange}
         defaultValue={value}
       >
-        {data.map(({ name, stateKey }, index) => (
-          <option key={index} value={stateKey}>
+        {data.map(({ name, dataKey }, index) => (
+          <option key={index} value={dataKey}>
             {name}
           </option>
         ))}
