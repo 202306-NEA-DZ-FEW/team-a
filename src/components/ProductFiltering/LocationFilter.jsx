@@ -6,7 +6,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 import getAllStates from "@/lib/getAllStates";
 
-function LocationFilter({ t }) {
+function LocationFilter({ t, queryParams }) {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -38,12 +38,13 @@ function LocationFilter({ t }) {
         >
           <Menu.Items className='absolute max-h-52 overflow-y-scroll bg-white z-10 rounded-lg top-10 w-full md:w-52'>
             <div className='py-1'>
-              {states.map(({ name, stateKey }) => (
+              {states.map(({ name, dataKey }) => (
                 <Link
-                  key={stateKey}
+                  scroll={false}
+                  key={dataKey}
                   href={{
                     pathname: "/products",
-                    query: { location: stateKey },
+                    query: { ...queryParams, location: dataKey },
                   }}
                 >
                   <Menu.Item>

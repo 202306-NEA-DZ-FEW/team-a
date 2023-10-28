@@ -1,24 +1,32 @@
 import Image from "next/image";
+import Link from "next/link";
 
-function CategoryCard({ imageUrl, title }) {
+function CategoryCard({ imageUrl, title, link, queryParams }) {
   return (
-    <main>
+    <Link
+      scroll={false}
+      key={link}
+      href={{
+        pathname: "/products",
+        query: { ...queryParams, category: link },
+      }}
+    >
       <div className='card card-compact border-none w-full relative'>
-        <figure style={{ height: "100px", width: "200px" }} className='group'>
+        <figure className='group'>
           <Image
             src={imageUrl}
             alt={title}
-            layout='fill'
-            objectFit='cover'
-            className='rounded'
+            className='object-cover h-28 w-60 rounded group-hover:scale-125 group-transition-all duration-700'
+            width={300}
+            height={300}
             priority
           />
-          <h2 className='opacity-0 group-hover:opacity-70 bg-black bg-opacity-75 text-white text-center absolute bottom-0 left-0 right-0 p-2 rounded'>
+          <h3 className='bg-black bg-opacity-75 text-sm font-light text-white text-center absolute bottom-0 left-0 right-0 p-2 rounded'>
             {title}
-          </h2>
+          </h3>
         </figure>
       </div>
-    </main>
+    </Link>
   );
 }
 

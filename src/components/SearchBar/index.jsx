@@ -21,10 +21,14 @@ function SearchBar({ queryParams }) {
 
     // Only update the URL if it's different from the current URL
     if (query !== currentURL) {
-      router.push({
-        pathname: `/products`,
-        query: newQueryParams,
-      });
+      router.push(
+        {
+          pathname: `/products`,
+          query: newQueryParams,
+        },
+        undefined,
+        { scroll: false }
+      );
     }
   }, [query, queryParams, router]);
 
