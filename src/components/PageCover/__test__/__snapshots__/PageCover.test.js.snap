@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="hero min-h-screen"
+  style={
+    Object {
+      "backgroundImage": "url(undefined)",
+    }
+  }
+>
+  <div
+    className="hero-overlay bg-opacity-50"
+  />
+  <div
+    className="hero-content text-center text-neutral-content"
+  >
+    <div
+      className="max-w-md"
+    >
+      <h1
+        className="mb-5 text-5xl font-bold"
+      />
+      <p
+        className="mb-5"
+      >
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
