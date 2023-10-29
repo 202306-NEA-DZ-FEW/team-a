@@ -5,7 +5,7 @@ export const blogs = [
     title: "The Spirit of Giving: Eid al-Fitr Donations",
     description:
       "Eid al-Fitr, also known as the 'Festival of Breaking the Fast,' is a significant holiday celebrated by Muslims worldwide. It marks the end of Ramadan, a month of fasting, prayer, and self-reflection. Beyond the festive feasts and joyous gatherings, Eid al-Fitr holds a deep spiritual significance, particularly when it comes to the act of giving and charity.",
-    date: serverTimestamp(),
+    createdAt: serverTimestamp(),
     imageUrl:
       "https://images.unsplash.com/photo-1656635098050-cd59fc6a2a52?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: [
@@ -34,6 +34,7 @@ export const blogs = [
           "The act of giving during Eid al-Fitr isn't just about fulfilling a religious obligation; it's about embodying the core values of compassion, empathy, and community solidarity. It fosters a sense of unity, reminding us that we are all responsible for one another's well-being.",
       },
     ],
+    uid: "u7GMNKFttNPMIhBXYRxxYof86ER2",
   },
 
   {
@@ -41,7 +42,7 @@ export const blogs = [
     title: "Donations in Ramadan: A Time for Giving and Compassion",
     description:
       "Ramadan is a month of fasting, prayer, and reflection for Muslims around the world. It's also a time of heightened generosity and giving back to the community.",
-    date: serverTimestamp(),
+    createdAt: serverTimestamp(),
     imageUrl:
       "https://images.unsplash.com/photo-1577452159342-6b18c30fee37?auto=format&fit=crop&q=80&w=1444&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: [
@@ -76,13 +77,14 @@ export const blogs = [
           "Donations in Ramadan play a crucial role in sustaining vital services for the less privileged. From providing meals for the hungry to supporting educational initiatives, healthcare services, and humanitarian aid, these contributions have a tangible and positive impact on communities in need. They serve as a lifeline for countless individuals and families.",
       },
     ],
+    uid: "u7GMNKFttNPMIhBXYRxxYof86ER2",
   },
   {
     id: 3,
     title: "Donations in Gaza: Supporting Those in Need",
     description:
       "The people of Gaza have faced numerous challenges, and your support can make a significant difference in their lives. Donations to Gaza help provide essential aid, relief, and hope to those who are in need.",
-    date: serverTimestamp(),
+    createdAt: serverTimestamp(),
     imageUrl:
       "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: [
@@ -111,13 +113,14 @@ export const blogs = [
           "By offering your support and donations to Gaza, you contribute to building a better future for the people of this region. Your generosity can help create positive change, restore hope, and improve the quality of life for those in need.",
       },
     ],
+    uid: "u7GMNKFttNPMIhBXYRxxYof86ER2",
   },
   {
     id: 4,
     title: "Donations in Isolated Areas: Bringing Hope to the Underserved",
     description:
       "Isolated and remote areas often face unique challenges, from limited access to essential services to economic hardships. Donations to isolated areas can make a significant difference in the lives of those who are underserved and in need of support.",
-    date: serverTimestamp(),
+    createdAt: serverTimestamp(),
     imageUrl:
       "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: [
@@ -146,13 +149,14 @@ export const blogs = [
           "By offering your support and donations to isolated areas, you empower underserved communities to build a better future. Your contributions can help break the cycle of poverty, improve access to education and healthcare, and promote self-sufficiency.",
       },
     ],
+    uid: "u7GMNKFttNPMIhBXYRxxYof86ER2",
   },
   {
     id: 5,
     title: "Donations in Eid al-Adha: The Festival of Sacrifice and Charity",
     description:
       "Eid al-Adha, also known as the 'Festival of Sacrifice,' is one of the most significant Islamic holidays celebrated by Muslims around the world. It commemorates the willingness of Prophet Ibrahim (Abraham) to sacrifice his son as an act of obedience to God. Beyond the symbolic rituals and feasting, Eid al-Adha emphasizes the values of sacrifice and charity.",
-    date: serverTimestamp(),
+    createdAt: serverTimestamp(),
     imageUrl:
       "https://images.unsplash.com/photo-1514845505178-849cebf1a91d?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: [
@@ -187,5 +191,6 @@ export const blogs = [
           "Eid al-Adha fosters a sense of community and solidarity. The act of giving and sharing during this holiday strengthens the bonds of brotherhood and sisterhood within the Muslim community. It reminds us that we are all responsible for one another's well-being, and through acts of charity, we can make a positive impact on society.",
       },
     ],
+    uid: "u7GMNKFttNPMIhBXYRxxYof86ER2",
   },
 ];

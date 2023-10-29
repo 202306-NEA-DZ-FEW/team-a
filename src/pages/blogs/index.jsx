@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import fetchFirebaseCollection from "@/lib/fetchFirebaseCollection";
+import { fetchCollection } from "@/lib/fetchCollection";
 
 import BlogsCard from "@/components/BlogsCard";
 import Container from "@/components/container";
@@ -22,7 +22,7 @@ function BlogsPage({ blogs }) {
 export default withTranslation("blogs")(BlogsPage);
 
 export async function getStaticProps({ locale }) {
-  const blogs = await fetchFirebaseCollection("blogs");
+  const blogs = await fetchCollection("blogs");
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common", "blogs"])),
