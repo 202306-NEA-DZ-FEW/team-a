@@ -139,9 +139,7 @@ exports[`renders correctly 1`] = `
         id="location"
         onChange={[Function]}
       >
-        <option
-          value="1"
-        >
+        <option>
           adrar
         </option>
       </select>

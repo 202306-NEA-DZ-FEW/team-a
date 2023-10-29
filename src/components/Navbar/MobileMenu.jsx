@@ -31,7 +31,7 @@ function MobileMenu({ user, t, currentPath }) {
           leaveFrom='transform opacity-100 scale-100'
           leaveTo='transform opacity-0 scale-95'
         >
-          <Menu.Items className='absolute right-0 z-10 lg:mr-4 w-screen md:w-screen divide-y divide-black lg:w-56 origin-top-right rounded-md bg-white focus:outline-none py-2'>
+          <Menu.Items className='absolute right-0 z-40 lg:mr-4 w-screen md:w-screen divide-y divide-black lg:w-56 origin-top-right rounded-md bg-white focus:outline-none py-2'>
             <div className='py-1'>
               {user && (
                 <Menu.Item>

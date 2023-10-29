@@ -9,6 +9,7 @@ exports[`renders correctly 1`] = `
     className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
     data-nimg="1"
     decoding="async"
+    fetchpriority="high"
     height={400}
     onError={[Function]}
     onLoad={[Function]}

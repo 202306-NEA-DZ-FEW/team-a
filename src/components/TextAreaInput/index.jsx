@@ -1,4 +1,4 @@
-function TextArea({
+export default function TextAreaInput({
   name,
   placeholder,
   label,
@@ -46,5 +46,3 @@ function TextArea({
     </div>
   );
 }
-
-export default TextArea;

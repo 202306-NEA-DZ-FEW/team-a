@@ -1,6 +1,11 @@
+import { useRouter } from "next/router";
 import renderer from "react-test-renderer";
 
-import UserListItem from "..";
+import AddItemForm from "..";
+
+jest.mock("next/router", () => ({
+  useRouter: jest.fn(),
+}));
 
 jest.mock("@/lib/firebase", () => {
   return {
@@ -11,11 +16,24 @@ jest.mock("@/lib/firebase", () => {
   };
 });
 
-it("renders correctly", () => {
-  const mockCategories = [{ name: "name", stateKey: "stateKey" }];
-  const mockStates = [{ name: "name", stateKey: "stateKey" }];
+test("AddItemForm snapshot test", () => {
+  useRouter.mockImplementation(() => ({
+    push: "/",
+  }));
+  const mockCategories = [
+    { id: 0, name: "name", dataKey: "dataKey", imageURL: "image" },
+  ];
+  const mockStates = [{ name: "name", dataKey: "dataKey" }];
+  const mockT = jest.fn();
   const tree = renderer
-    .create(<UserListItem categories={mockCategories} states={mockStates} />)
+    .create(
+      <AddItemForm
+        categories={mockCategories}
+        states={mockStates}
+        initialLocale='en'
+        t={mockT}
+      />
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

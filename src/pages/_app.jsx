@@ -2,6 +2,7 @@ import { appWithTranslation } from "next-i18next";
 import { ToastContainer } from "react-toastify";
 
 import "@/styles/globals.css";
+import "@/styles/carousel.css";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "react-toastify/dist/ReactToastify.css";
 
