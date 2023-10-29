@@ -3,14 +3,15 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { fetchCollection } from "@/lib/fetchCollection";
 import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
+import { fetchItemsByCategory } from "@/lib/fetchItemsByCategory";
 import fetchUserInfo from "@/lib/fetchUserInfo";
 
 import Container from "@/components/container";
 
-function ProductDetails({ product, userInfo }) {
+function ProductDetails({ product, userInfo, relatedProducts }) {
   return (
     <Container>
-      <div className='flex flex-col gap-4'>
+      <main className='flex flex-col gap-4'>
         <h1 className='text-start font-black'>{product.title}</h1>
         <span>{product.date}</span>
         <span>{product.location}</span>
@@ -32,7 +33,12 @@ function ProductDetails({ product, userInfo }) {
           <h1>{userInfo.email}</h1>
           <h1>{userInfo.phone}</h1>
         </div>
-      </div>
+        <div>
+          {relatedProducts.map((product) => (
+            <p key={product.id}>{product.title}</p>
+          ))}
+        </div>
+      </main>
     </Container>
   );
 }
@@ -52,12 +58,14 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, locale }) {
   const { productId } = params;
   const product = await fetchFirebaseDoc("items", productId);
+  const relatedProducts = await fetchItemsByCategory("items", product.category);
   const userInfo = await fetchUserInfo(product.uid);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
       product,
       userInfo,
+      relatedProducts,
     },
     revalidate: 10,
   };
