@@ -47,7 +47,7 @@ function ProductsPage({ t, items, queryParams }) {
             key={item.id}
             title={item.title}
             description={item.description}
-            location={item.location}
+            location={t(`states:${item.location}`)}
             imageUrl={item.images[0]}
           />
         ))}
