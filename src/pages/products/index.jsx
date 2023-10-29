@@ -43,6 +43,7 @@ function ProductsPage({ t, items, queryParams }) {
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-10 place-items-center gap-y-4'>
         {items.map((item) => (
           <ProductCard
+            id={item.id}
             key={item.id}
             title={item.title}
             description={item.description}

@@ -12,346 +12,381 @@ exports[`renders correctly 1`] = `
   <div
     className="flex justify-center items-center flex-wrap gap-4"
   >
-    <div
-      className="card w-52 bg-white shadow-xl"
+    <a
+      href="/product/1"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      <img
-        alt="Shoes"
-        className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
-        data-nimg="1"
-        decoding="async"
-        fetchpriority="high"
-        height={400}
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560060141-7b9018741ced%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1479%26q%3D80&w=828&q=75"
-        srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560060141-7b9018741ced%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1479%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560060141-7b9018741ced%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1479%26q%3D80&w=828&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={400}
-      />
       <div
-        className="p-3 flex flex-col gap-1"
+        className="card w-52 bg-white shadow-xl"
       >
-        <div
-          className="flex items-center"
-        >
-          <svg
-            className="text-2xl text-error"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
+        <img
+          alt="Shoes"
+          className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height={400}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560060141-7b9018741ced%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1479%26q%3D80&w=828&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560060141-7b9018741ced%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1479%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560060141-7b9018741ced%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1479%26q%3D80&w=828&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
             }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          }
+          width={400}
+        />
+        <div
+          className="p-3 flex flex-col gap-1"
+        >
+          <div
+            className="flex items-center"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-            />
-          </svg>
-          <span
-            className="text-md font-light"
+            <svg
+              className="text-2xl text-error"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+              />
+            </svg>
+            <span
+              className="text-md font-light"
+            >
+              djelfa
+            </span>
+          </div>
+          <h2
+            className="text-lg font-bold "
           >
-            djelfa
-          </span>
+            sweater
+          </h2>
+          <p
+            className="text-sm font-light"
+          >
+            lorem ipsum dolor sit amet, consectetur adipiscing...
+          </p>
         </div>
-        <h2
-          className="text-lg font-bold "
-        >
-          sweater
-        </h2>
-        <p
-          className="text-sm font-light"
-        >
-          lorem ipsum dolor sit amet, consectetur adipiscing...
-        </p>
       </div>
-    </div>
-    <div
-      className="card w-52 bg-white shadow-xl"
+    </a>
+    <a
+      href="/product/2"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      <img
-        alt="Shoes"
-        className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
-        data-nimg="1"
-        decoding="async"
-        fetchpriority="high"
-        height={400}
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540574163026-643ea20ade25%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
-        srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540574163026-643ea20ade25%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540574163026-643ea20ade25%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={400}
-      />
       <div
-        className="p-3 flex flex-col gap-1"
+        className="card w-52 bg-white shadow-xl"
       >
-        <div
-          className="flex items-center"
-        >
-          <svg
-            className="text-2xl text-error"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
+        <img
+          alt="Shoes"
+          className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height={400}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540574163026-643ea20ade25%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540574163026-643ea20ade25%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540574163026-643ea20ade25%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
             }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          }
+          width={400}
+        />
+        <div
+          className="p-3 flex flex-col gap-1"
+        >
+          <div
+            className="flex items-center"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-            />
-          </svg>
-          <span
-            className="text-md font-light"
+            <svg
+              className="text-2xl text-error"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+              />
+            </svg>
+            <span
+              className="text-md font-light"
+            >
+              medea
+            </span>
+          </div>
+          <h2
+            className="text-lg font-bold "
           >
-            medea
-          </span>
+            sofa
+          </h2>
+          <p
+            className="text-sm font-light"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing...
+          </p>
         </div>
-        <h2
-          className="text-lg font-bold "
-        >
-          sofa
-        </h2>
-        <p
-          className="text-sm font-light"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing...
-        </p>
       </div>
-    </div>
-    <div
-      className="card w-52 bg-white shadow-xl"
+    </a>
+    <a
+      href="/product/3"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      <img
-        alt="Shoes"
-        className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
-        data-nimg="1"
-        decoding="async"
-        fetchpriority="high"
-        height={400}
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545127398-14699f92334b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1335%26q%3D80&w=828&q=75"
-        srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545127398-14699f92334b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1335%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545127398-14699f92334b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1335%26q%3D80&w=828&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={400}
-      />
       <div
-        className="p-3 flex flex-col gap-1"
+        className="card w-52 bg-white shadow-xl"
       >
-        <div
-          className="flex items-center"
-        >
-          <svg
-            className="text-2xl text-error"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
+        <img
+          alt="Shoes"
+          className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height={400}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545127398-14699f92334b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1335%26q%3D80&w=828&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545127398-14699f92334b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1335%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545127398-14699f92334b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1335%26q%3D80&w=828&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
             }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          }
+          width={400}
+        />
+        <div
+          className="p-3 flex flex-col gap-1"
+        >
+          <div
+            className="flex items-center"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-            />
-          </svg>
-          <span
-            className="text-md font-light"
+            <svg
+              className="text-2xl text-error"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+              />
+            </svg>
+            <span
+              className="text-md font-light"
+            >
+              sba
+            </span>
+          </div>
+          <h2
+            className="text-lg font-bold "
           >
-            sba
-          </span>
+            headsets
+          </h2>
+          <p
+            className="text-sm font-light"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing...
+          </p>
         </div>
-        <h2
-          className="text-lg font-bold "
-        >
-          headsets
-        </h2>
-        <p
-          className="text-sm font-light"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing...
-        </p>
       </div>
-    </div>
-    <div
-      className="card w-52 bg-white shadow-xl"
+    </a>
+    <a
+      href="/product/4"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      <img
-        alt="Shoes"
-        className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
-        data-nimg="1"
-        decoding="async"
-        fetchpriority="high"
-        height={400}
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521369909029-2afed882baee%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
-        srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521369909029-2afed882baee%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521369909029-2afed882baee%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={400}
-      />
       <div
-        className="p-3 flex flex-col gap-1"
+        className="card w-52 bg-white shadow-xl"
       >
-        <div
-          className="flex items-center"
-        >
-          <svg
-            className="text-2xl text-error"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
+        <img
+          alt="Shoes"
+          className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height={400}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521369909029-2afed882baee%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521369909029-2afed882baee%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521369909029-2afed882baee%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
             }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          }
+          width={400}
+        />
+        <div
+          className="p-3 flex flex-col gap-1"
+        >
+          <div
+            className="flex items-center"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-            />
-          </svg>
-          <span
-            className="text-md font-light"
+            <svg
+              className="text-2xl text-error"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+              />
+            </svg>
+            <span
+              className="text-md font-light"
+            >
+              algiers
+            </span>
+          </div>
+          <h2
+            className="text-lg font-bold "
           >
-            algiers
-          </span>
+            hat
+          </h2>
+          <p
+            className="text-sm font-light"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing...
+          </p>
         </div>
-        <h2
-          className="text-lg font-bold "
-        >
-          hat
-        </h2>
-        <p
-          className="text-sm font-light"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing...
-        </p>
       </div>
-    </div>
-    <div
-      className="card w-52 bg-white shadow-xl"
+    </a>
+    <a
+      href="/product/5"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      <img
-        alt="Shoes"
-        className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
-        data-nimg="1"
-        decoding="async"
-        fetchpriority="high"
-        height={400}
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1410%26q%3D80&w=828&q=75"
-        srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1410%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1410%26q%3D80&w=828&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={400}
-      />
       <div
-        className="p-3 flex flex-col gap-1"
+        className="card w-52 bg-white shadow-xl"
       >
-        <div
-          className="flex items-center"
-        >
-          <svg
-            className="text-2xl text-error"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
+        <img
+          alt="Shoes"
+          className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height={400}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1410%26q%3D80&w=828&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1410%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1410%26q%3D80&w=828&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
             }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          }
+          width={400}
+        />
+        <div
+          className="p-3 flex flex-col gap-1"
+        >
+          <div
+            className="flex items-center"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-            />
-          </svg>
-          <span
-            className="text-md font-light"
+            <svg
+              className="text-2xl text-error"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+              />
+            </svg>
+            <span
+              className="text-md font-light"
+            >
+              batna
+            </span>
+          </div>
+          <h2
+            className="text-lg font-bold "
           >
-            batna
-          </span>
+            poncho
+          </h2>
+          <p
+            className="text-sm font-light"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing...
+          </p>
         </div>
-        <h2
-          className="text-lg font-bold "
-        >
-          poncho
-        </h2>
-        <p
-          className="text-sm font-light"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing...
-        </p>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 `;
