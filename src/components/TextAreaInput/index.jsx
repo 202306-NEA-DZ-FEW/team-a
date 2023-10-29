@@ -1,4 +1,4 @@
-export default function TextArea({
+export default function TextAreaInput({
   name,
   placeholder,
   label,

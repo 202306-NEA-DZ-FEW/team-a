@@ -17,7 +17,7 @@ import ProtectedLayout from "@/layout/ProtectedLayout";
 import ListingTypeButton from "./ListingTypeButton";
 import Input from "../Input";
 import SelectInput from "../SelectInput";
-import TextArea from "../TextArea";
+import TextAreaInput from "../TextAreaInput";
 import { db } from "../../lib/firebase";
 
 function AddItemForm({ t, initialLocale, categories, states }) {
@@ -144,7 +144,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             touched={formik.touched.location}
             error={formik.errors.location}
           />
-          <TextArea
+          <TextAreaInput
             name='description'
             type='text'
             placeholder={t("addItem:descriptionPlaceHolder")}
