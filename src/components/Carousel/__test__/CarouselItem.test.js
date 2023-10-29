@@ -12,7 +12,7 @@ it("renders correctly", () => {
   const tree = renderer
     .create(
       <CarouselItem
-        key={1}
+        key={0}
         name={name}
         dataKey={dataKey}
         imageURL={imageURL}

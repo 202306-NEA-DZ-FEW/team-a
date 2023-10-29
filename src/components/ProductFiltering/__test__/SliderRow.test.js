@@ -5,7 +5,13 @@ import SliderRow from "../SliderRow";
 
 it("renders correctly", () => {
   const mockItems = [
-    { name: "name", description: "description", imageURL: image },
+    {
+      id: 0,
+      name: "name",
+      description: "description",
+      dataKey: "dataKey",
+      imageURL: image,
+    },
   ];
   const queryParams = {};
   const title = "title";
