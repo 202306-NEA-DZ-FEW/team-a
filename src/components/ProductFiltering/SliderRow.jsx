@@ -31,7 +31,7 @@ function SliderRow({ title, categories, rowID, queryParams }) {
         >
           {categories.map((category) => (
             <CategoryCard
-              key={category.dataKey}
+              key={category.id}
               queryParams={queryParams}
               link={category.dataKey}
               title={category.name}

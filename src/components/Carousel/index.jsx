@@ -17,11 +17,7 @@ export default function Carousel({ items, queryParams }) {
     <div className='group'>
       <div id='slide' className='max-w-fit'>
         {items.map((item) => (
-          <CarouselItem
-            key={item.dataKey}
-            {...item}
-            queryParams={queryParams}
-          />
+          <CarouselItem key={item.id} {...item} queryParams={queryParams} />
         ))}
       </div>
       <div className='absolute px-8 z-50 lg:bottom-12 bottom-[10%] justify-between w-full flex gap-4 lg:justify-center'>

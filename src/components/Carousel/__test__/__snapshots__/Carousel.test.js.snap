@@ -31,7 +31,7 @@ exports[`renders correctly 1`] = `
         </p>
         <a
           className="btn btn-sm bg-white text-black hover:bg-slate-50"
-          href="/products?category="
+          href="/products?category=dataKey"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}

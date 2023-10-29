@@ -10,6 +10,7 @@ test("Navbar snapshot test", () => {
   const tree = renderer
     .create(
       <CategoryCard
+        key={0}
         imageUrl={image}
         title={title}
         link={link}

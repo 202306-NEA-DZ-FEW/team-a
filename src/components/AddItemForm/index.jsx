@@ -3,7 +3,6 @@ import { useFormik } from "formik";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 import Spinner from "public/images/spinner.svg";
 import { useState } from "react";
 import { toast } from "react-toastify";
@@ -13,20 +12,19 @@ import * as Yup from "yup";
 import useUploadImages from "@/lib/useUploadImages";
 
 import { useAuth } from "@/context/AuthProvider";
-import ProtectedLayout from "@/layout/DashboardLayout";
+import ProtectedLayout from "@/layout/ProtectedLayout";
 
 import ListingTypeButton from "./ListingTypeButton";
 import Input from "../Input";
 import SelectInput from "../SelectInput";
-import TextArea from "../TextArea/Index";
+import TextAreaInput from "../TextAreaInput";
 import { db } from "../../lib/firebase";
 
-function AddItem({ categories, states }) {
+function AddItemForm({ t, initialLocale, categories, states }) {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
   const { uploadImages } = useUploadImages();
   const { user } = useAuth();
-  const { t, i18n } = useTranslation();
   const router = useRouter();
   const listingTypes = [
     t("addItem:exchangeButton"),
@@ -146,7 +144,7 @@ function AddItem({ categories, states }) {
             touched={formik.touched.location}
             error={formik.errors.location}
           />
-          <TextArea
+          <TextAreaInput
             name='description'
             type='text'
             placeholder={t("addItem:descriptionPlaceHolder")}
@@ -165,7 +163,7 @@ function AddItem({ categories, states }) {
             </span>
           </div>
           <input
-            dir={i18n?.language == "ar" ? "ltr" : ""}
+            dir={initialLocale == "ar" ? "ltr" : ""}
             name='image'
             type='file'
             label={t("addItem:imageLabel")}
@@ -194,9 +192,9 @@ function AddItem({ categories, states }) {
               </span>
             </div>
             <div className='flex flex-col md:flex-row gap-2 md:justify-between md:items-center'>
-              {listingTypes.map((type) => (
+              {listingTypes.map((type, i) => (
                 <ListingTypeButton
-                  key={type}
+                  key={i}
                   text={type}
                   selected={formik.values.listingType}
                   onSelect={handleSelect}
@@ -221,4 +219,4 @@ function AddItem({ categories, states }) {
   );
 }
 
-export default AddItem;
+export default AddItemForm;
