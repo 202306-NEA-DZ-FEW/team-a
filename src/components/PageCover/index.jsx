@@ -1,4 +1,4 @@
-function PageCover({ t, title, description, imageURL }) {
+function PageCover({ t, title, description, imageURL, date }) {
   return (
     <div
       className='hero min-h-screen'
@@ -10,6 +10,7 @@ function PageCover({ t, title, description, imageURL }) {
       <div className='hero-content text-center text-neutral-content'>
         <div className='max-w-md'>
           <h1 className='mb-5 text-5xl font-bold'>{t ? t(title) : title}</h1>
+          <p className='mb-5'>{t ? t(date) : date} </p>
           <p className='mb-5'>{t ? t(description) : description} </p>
         </div>
       </div>
