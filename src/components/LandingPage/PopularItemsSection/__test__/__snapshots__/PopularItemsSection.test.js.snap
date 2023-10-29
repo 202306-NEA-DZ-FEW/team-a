@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
     className="flex justify-center items-center flex-wrap gap-4"
   >
     <a
-      href="/product/1"
+      href="/products/1"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -88,7 +88,7 @@ exports[`renders correctly 1`] = `
       </div>
     </a>
     <a
-      href="/product/2"
+      href="/products/2"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -163,7 +163,7 @@ exports[`renders correctly 1`] = `
       </div>
     </a>
     <a
-      href="/product/3"
+      href="/products/3"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -238,7 +238,7 @@ exports[`renders correctly 1`] = `
       </div>
     </a>
     <a
-      href="/product/4"
+      href="/products/4"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -313,7 +313,7 @@ exports[`renders correctly 1`] = `
       </div>
     </a>
     <a
-      href="/product/5"
+      href="/products/5"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}

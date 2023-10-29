@@ -1,16 +1,16 @@
+import Image from "next/image";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import fetchFirebaseCollection from "@/lib/fetchFirebaseCollection";
+import { fetchCollection } from "@/lib/fetchCollection";
 import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
 
 import Container from "@/components/container";
 
-function ProductDetails({ productId }) {
+function ProductDetails({ product }) {
   return (
     <Container>
       <div>
-        {productId}
-        {/*  <h1>{product.title}</h1>
+        <h1>{product.title}</h1>
         <span>{product.date}</span>
         <span>{product.location}</span>
         <p>{product.description}</p>
@@ -22,7 +22,7 @@ function ProductDetails({ productId }) {
               <Image src={image} alt={image} height={400} width={400} />
             </figure>
           ))}
-        </div> */}
+        </div>
       </div>
     </Container>
   );
@@ -31,7 +31,7 @@ function ProductDetails({ productId }) {
 export default ProductDetails;
 
 export async function getStaticPaths() {
-  const products = await fetchFirebaseCollection("items");
+  const products = await fetchCollection("items");
 
   const paths = products.map((product) => ({
     params: { productId: product.id.toString() },
@@ -42,12 +42,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, locale }) {
   const { productId } = params;
-  const product = fetchFirebaseDoc("items", productId);
+  const product = await fetchFirebaseDoc("items", productId);
 
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
-      productId,
+      product,
     },
     revalidate: 10,
   };

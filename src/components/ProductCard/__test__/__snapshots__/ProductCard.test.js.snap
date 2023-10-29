@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <a
-  href="/product/undefined"
+  href="/products/undefined"
   onClick={[Function]}
   onMouseEnter={[Function]}
   onTouchStart={[Function]}
