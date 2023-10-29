@@ -16,13 +16,15 @@ jest.mock("@/lib/firebase", () => {
   };
 });
 
-it("renders correctly", () => {
-  const mockCategories = [{ name: "name", stateKey: "stateKey" }];
-  const mockStates = [{ name: "name", stateKey: "stateKey" }];
-  const mockT = jest.fn();
+test("AddItemForm snapshot test", () => {
   useRouter.mockImplementation(() => ({
-    asPath: "/example-path",
+    push: "/",
   }));
+  const mockCategories = [
+    { id: 0, name: "name", dataKey: "dataKey", imageURL: "image" },
+  ];
+  const mockStates = [{ name: "name", dataKey: "dataKey" }];
+  const mockT = jest.fn();
   const tree = renderer
     .create(
       <AddItemForm
