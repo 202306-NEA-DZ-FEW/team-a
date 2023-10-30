@@ -2,8 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
+import formatDate from "@/lib/formatDate";
+
 export default function BlogsCard({ index, blog }) {
   const { i18n, t } = useTranslation();
+  const date = formatDate(blog.createdAt);
   return (
     <>
       <div
@@ -23,14 +26,14 @@ export default function BlogsCard({ index, blog }) {
           </figure>
 
           <span className='absolute bottom-0 left-0 bg-primary text-white p-2 text-sm lg:hidden'>
-            {blog.date}
+            {date}
           </span>
         </div>
         <div className='flex flex-col lg:flex-1 gap-4'>
           <div>
             <h2 className='font-bold text-2xl'>{blog.title}</h2>
             <span className='my-1 text-sm text-gray-600 font-light hidden lg:block'>
-              {blog.date}
+              {date}
             </span>
           </div>
 
@@ -38,7 +41,7 @@ export default function BlogsCard({ index, blog }) {
             {blog.description.slice(0, 210)}
             {blog.description.length > 210 ? " ..." : ""}
           </p>
-          <Link href={`/blog/${blog.id}`}>
+          <Link href={`/blogs/${blog.id}`}>
             <div>
               <button className='btn bg-black text-white btn-sm'>
                 {t("common:buttons:readMore")}
