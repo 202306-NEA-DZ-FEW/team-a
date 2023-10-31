@@ -4,7 +4,11 @@ import { MdLocationOn } from "react-icons/md";
 
 function ProductCard({ id, title, location, description, imageUrl }) {
   return (
-    <Link href={`/products/${id}`}>
+    <Link
+      href={{
+        pathname: `/products/${id}`,
+      }}
+    >
       <div className='card w-52 bg-white shadow-xl'>
         <Image
           src={imageUrl}

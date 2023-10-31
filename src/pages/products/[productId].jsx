@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { fetchCollection } from "@/lib/fetchCollection";
@@ -7,52 +7,44 @@ import { fetchItemsByCategory } from "@/lib/fetchItemsByCategory";
 import fetchUserInfo from "@/lib/fetchUserInfo";
 
 import Container from "@/components/container";
+import SingleProductCard from "@/components/SingleProductPage";
 
-function ProductDetails({ product, userInfo, relatedProducts }) {
+function ProductDetails({ t, product, userInfo, relatedProducts }) {
   return (
     <Container>
-      <main className='flex flex-col gap-4'>
-        <h1 className='text-start font-black'>{product.title}</h1>
-        <span>{product.date}</span>
-        <span>{product.location}</span>
-        <p>{product.description}</p>
-        <div className=''>
-          <h3 className=''>{product.listingType}</h3>
-          <h3 className=''>{product.category}</h3>
-        </div>
-        <div>
-          {product.images.map((image) => (
-            <figure key={image}>
-              <Image src={image} alt={image} height={400} width={400} />
-            </figure>
-          ))}
-        </div>
-        <div>
-          <h1>{userInfo.name}</h1>
-          <h1>{userInfo.location}</h1>
-          <h1>{userInfo.email}</h1>
-          <h1>{userInfo.phone}</h1>
-        </div>
-        <div>
-          {relatedProducts.map((product) => (
-            <p key={product.id}>{product.title}</p>
-          ))}
-        </div>
-      </main>
+      <SingleProductCard
+        title={product.title}
+        description={product.description}
+        location={t(`states:${product.location}`)}
+        listingType={t(`addItem:${product.listingType}`)}
+        category={t(`categories:${product.category}`)}
+        ceatedAt='10/10/2023'
+        images={product.images}
+        username={userInfo.name}
+        email={userInfo.email}
+        phone={userInfo.phone}
+      />
     </Container>
   );
 }
+export default withTranslation("ProductDetails")(ProductDetails);
 
-export default ProductDetails;
-
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
   const products = await fetchCollection("items");
+  const paths = [];
 
-  const paths = products.map((product) => ({
-    params: { productId: product.id.toString() },
-  }));
-
-  return { paths, fallback: false };
+  products.forEach((product) => {
+    locales.forEach((locale) => {
+      paths.push({
+        params: { productId: product.id.toString() },
+        locale: locale,
+      });
+    });
+  });
+  return {
+    paths,
+    fallback: false,
+  };
 }
 
 export async function getStaticProps({ params, locale }) {
@@ -62,7 +54,12 @@ export async function getStaticProps({ params, locale }) {
   const userInfo = await fetchUserInfo(product.uid);
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "states",
+        "categories",
+        "addItem",
+      ])),
       product,
       userInfo,
       relatedProducts,
