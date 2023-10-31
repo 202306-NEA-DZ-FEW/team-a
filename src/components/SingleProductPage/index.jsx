@@ -28,8 +28,8 @@ function SingleProductCard({
   };
 
   return (
-    <div className='card lg:card-side shadow-2xl m-8 overflow-hidden'>
-      <figure className='w-full  md:h-[500px] md:w-1/2 relative'>
+    <div className='card md:card-side shadow-2xl m-8 overflow-hidden'>
+      <figure className='w-full relative'>
         <Image
           height={300}
           width={300}
@@ -39,12 +39,9 @@ function SingleProductCard({
           className='w-full h-full object-cover'
           alt=''
         />
-        <div className='absolute top-[100px] left-[10px]  flex flex-col gap-2 justify-center'>
+        <div className='absolute bottom-[5%] px-4 h-fit flex flex-row gap-4 items-end justify-center'>
           {images.map((src) => (
-            <figure
-              key={src}
-              className='gap-4 overflow-hidden w-[80px] h-[80px]'
-            >
+            <figure key={src} className='gap-4 overflow-hidden w-1/5'>
               <Image
                 src={src}
                 alt='img'
@@ -52,7 +49,9 @@ function SingleProductCard({
                 width={500}
                 priority
                 onClick={() => onClick(src)}
-                className='hover:cursor-pointer h-full w-full my-2'
+                className={`${
+                  selectedImage === src ? "border-4 border-neutral" : ""
+                } hover:cursor-pointer h-full w-full rounded-xl object-cover`}
               />
             </figure>
           ))}
@@ -60,7 +59,7 @@ function SingleProductCard({
       </figure>
       <div
         id='CardContent'
-        className='card-body bg-black text-gray-100 md:w-1/2'
+        className='card-body bg-gray-950 text-gray-100 w-full'
       >
         <h1 className='card-title text-3xl'>{title}</h1>
         <span className='text-gray-400 text-sm font-light'>{location}</span>
@@ -77,17 +76,17 @@ function SingleProductCard({
           <p className='flex items-center gap-2 text-gray-400 font-semibold'>
             <IoMdContact />
             Name & Surname:
-            <span className='font-normal'>{username}</span>
+            <span className='font-normal text-gray-200'>{username}</span>
           </p>
           <p className='flex items-center gap-2 text-gray-400 font-semibold'>
             <LuPhone />
             Phone:
-            <span className='font-normal'>{phone}</span>
+            <span className='font-normal text-gray-200'>{phone}</span>
           </p>
           <p className='flex items-center gap-2 text-gray-400 font-semibold'>
             <MdAlternateEmail />
             Email:
-            <span className='font-normal'>{email}</span>
+            <span className='font-normal text-gray-200'>{email}</span>
           </p>
         </div>
       </div>
