@@ -7,24 +7,29 @@ import { fetchItemsByCategory } from "@/lib/fetchItemsByCategory";
 import fetchUserInfo from "@/lib/fetchUserInfo";
 
 import Container from "@/components/container";
-import SingleProductCard from "@/components/SingleProductPage";
+import SingleProductCard from "@/components/SingleProductCard";
 
 function ProductDetails({ t, product, userInfo, relatedProducts }) {
   return (
-    <Container>
-      <SingleProductCard
-        title={product.title}
-        description={product.description}
-        location={t(`states:${product.location}`)}
-        listingType={t(`addItem:${product.listingType}`)}
-        category={t(`categories:${product.category}`)}
-        ceatedAt='10/10/2023'
-        images={product.images}
-        username={userInfo.name}
-        email={userInfo.email}
-        phone={userInfo.phone}
-      />
-    </Container>
+    <>
+      <section className='lg:flex lg:min-h-screen lg:justify-center lg:items-center'>
+        <SingleProductCard
+          title={product.title}
+          description={product.description}
+          location={t(`states:${product.location}`)}
+          listingType={t(`addItem:${product.listingType}`)}
+          category={t(`categories:${product.category}`)}
+          ceatedAt='10/10/2023'
+          images={product.images}
+          username={userInfo.name}
+          email={userInfo.email}
+          phone={userInfo.phone}
+        />
+      </section>
+      <Container>
+        <span>related products</span>
+      </Container>
+    </>
   );
 }
 export default withTranslation("ProductDetails")(ProductDetails);
