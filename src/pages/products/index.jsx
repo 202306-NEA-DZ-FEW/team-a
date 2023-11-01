@@ -42,14 +42,20 @@ function ProductsPage({ t, items, queryParams }) {
       </h1>
       <div className='flex flex-wrap gap-4 items-center justify-center w-full'>
         {items.map((item) => (
-          <ProductCard
+          <Link
             key={item.id}
-            title={item.title}
-            listingType={item.listingType}
-            category={item.category}
-            location={item.location}
-            imageUrl={item.imageUrl}
-          />
+            href={{
+              pathname: `/products/${item.id}`,
+            }}
+          >
+            <ProductCard
+              title={item.title}
+              listingType={item.listingType}
+              category={item.category}
+              location={item.location}
+              imageUrl={item.imageUrl}
+            />
+          </Link>
         ))}
       </div>
     </main>

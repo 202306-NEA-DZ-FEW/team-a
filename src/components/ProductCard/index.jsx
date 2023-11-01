@@ -14,7 +14,7 @@ function ProductCard({ title, location, listingType, imageUrl, category }) {
         />
       </figure>
       <div className='absolute bottom-[5%] flex flex-col px-3'>
-        <h3 className='text-white text-lg mb-1 font-bold'>{title}</h3>
+        <h3 className='text-white text-lg font-bold'>{title}</h3>
         <span className='text-sm text-white pl-1 font-light mb-1'>
           {category}
         </span>
