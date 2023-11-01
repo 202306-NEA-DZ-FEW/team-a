@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function CarouselItem({
+  t,
   name,
   dataKey,
   imageURL,
@@ -25,7 +26,7 @@ export default function CarouselItem({
             query: { ...queryParams, category: dataKey },
           }}
         >
-          See more
+          {t("productsPage:seeMore")}
         </Link>
       </div>
     </div>

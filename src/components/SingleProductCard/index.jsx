@@ -47,7 +47,7 @@ function SingleProductCard({
       <div className='lg:hidden'>
         <MobileCarousel images={images} />
       </div>
-      <figure className='w-full h-[520px] relative hidden lg:block flex-1'>
+      <figure className='w-[600px] h-[520px] relative hidden lg:block flex-1'>
         <Image
           width={500}
           height={500}

@@ -9,6 +9,7 @@ it("renders correctly", () => {
   const imageURL = image;
   const description = "my description";
   const queryParams = {};
+  const mockT = jest.fn();
   const tree = renderer
     .create(
       <CarouselItem
@@ -18,6 +19,7 @@ it("renders correctly", () => {
         imageURL={imageURL}
         description={description}
         queryParams={queryParams}
+        t={mockT}
       />
     )
     .toJSON();

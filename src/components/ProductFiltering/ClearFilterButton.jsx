@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
 
-function ClearFilterButton() {
+function ClearFilterButton({ t }) {
   const router = useRouter();
   return (
     <button
@@ -10,7 +10,7 @@ function ClearFilterButton() {
       }}
       className='btn w-full md:w-40 bg-black text-white btn-sm px-4 rounded-xl'
     >
-      Clear filter
+      {t("productsPage:clearFilter")}
     </button>
   );
 }

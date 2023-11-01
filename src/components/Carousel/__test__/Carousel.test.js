@@ -14,8 +14,9 @@ it("renders correctly", () => {
     },
   ];
   const queryParams = {};
+  const mockT = jest.fn();
   const tree = renderer
-    .create(<Carousel items={mockItems} queryParams={queryParams} />)
+    .create(<Carousel items={mockItems} queryParams={queryParams} t={mockT} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

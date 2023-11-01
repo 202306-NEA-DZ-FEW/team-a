@@ -5,18 +5,22 @@ import { fetchCollection } from "@/lib/fetchCollection";
 import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
 import { fetchItemsByCategory } from "@/lib/fetchItemsByCategory";
 import fetchUserInfo from "@/lib/fetchUserInfo";
+import { getLocationName } from "@/lib/helpers";
 
 import Container from "@/components/container";
+import ProductCard from "@/components/ProductCard";
 import SingleProductCard from "@/components/SingleProductCard";
 
 function ProductDetails({ t, product, userInfo, relatedProducts }) {
+  const translatedLocation = t(`states:${product.location}`);
+  const loctionName = getLocationName(translatedLocation);
   return (
     <>
       <section className='lg:flex lg:min-h-screen lg:justify-center lg:items-center'>
         <SingleProductCard
           title={product.title}
           description={product.description}
-          location={t(`states:${product.location}`)}
+          location={loctionName}
           listingType={t(`addItem:${product.listingType}`)}
           category={t(`categories:${product.category}`)}
           ceatedAt='10/10/2023'
@@ -26,8 +30,18 @@ function ProductDetails({ t, product, userInfo, relatedProducts }) {
           phone={userInfo.phone}
         />
       </section>
-      <Container>
-        <span>related products</span>
+      <h1 className='font-bold text-3xl m-4 text-center'>Related Products</h1>
+      <Container className='flex justify-center items-center gap-4 m-4'>
+        {relatedProducts.map((product) => (
+          <ProductCard
+            key={product.title}
+            title={product.title}
+            listingType={t(`addItem:${product.listingType}`)}
+            category={t(`category:${product.category}`)}
+            location={t(`states:${product.location}`)}
+            imageUrl={product.images[0]}
+          />
+        ))}
       </Container>
     </>
   );

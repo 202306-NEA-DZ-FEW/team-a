@@ -28,9 +28,7 @@ exports[`renders correctly 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
-    >
-      See more
-    </a>
+    />
   </div>
 </div>
 `;
