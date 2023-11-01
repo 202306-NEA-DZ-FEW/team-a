@@ -49,20 +49,20 @@ exports[`renders correctly 1`] = `
         className="absolute bottom-[5%] flex flex-col px-3"
       >
         <h3
-          className="text-white text-md font-bold"
+          className="text-white text-lg mb-1 font-bold"
         >
           sweater
         </h3>
-        <h5
-          className="text-sm text-white mb-1"
+        <span
+          className="text-sm text-white pl-1 font-light mb-1"
         >
           clothes
-        </h5>
+        </span>
         <div
           className="flex items-center gap-1 p-0 w-full"
         >
           <span
-            className="badge badge-md flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
           >
             djelfa
             <span>
@@ -94,7 +94,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="badge badge-md text-white border-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25"
           />
         </div>
       </div>
@@ -136,20 +136,20 @@ exports[`renders correctly 1`] = `
         className="absolute bottom-[5%] flex flex-col px-3"
       >
         <h3
-          className="text-white text-md font-bold"
+          className="text-white text-lg mb-1 font-bold"
         >
           sofa
         </h3>
-        <h5
-          className="text-sm text-white mb-1"
+        <span
+          className="text-sm text-white pl-1 font-light mb-1"
         >
           furniture
-        </h5>
+        </span>
         <div
           className="flex items-center gap-1 p-0 w-full"
         >
           <span
-            className="badge badge-md flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
           >
             medea
             <span>
@@ -181,7 +181,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="badge badge-md text-white border-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25"
           />
         </div>
       </div>
@@ -223,20 +223,20 @@ exports[`renders correctly 1`] = `
         className="absolute bottom-[5%] flex flex-col px-3"
       >
         <h3
-          className="text-white text-md font-bold"
+          className="text-white text-lg mb-1 font-bold"
         >
           headsets
         </h3>
-        <h5
-          className="text-sm text-white mb-1"
+        <span
+          className="text-sm text-white pl-1 font-light mb-1"
         >
           electronics
-        </h5>
+        </span>
         <div
           className="flex items-center gap-1 p-0 w-full"
         >
           <span
-            className="badge badge-md flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
           >
             sba
             <span>
@@ -268,7 +268,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="badge badge-md text-white border-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25"
           />
         </div>
       </div>
@@ -310,20 +310,20 @@ exports[`renders correctly 1`] = `
         className="absolute bottom-[5%] flex flex-col px-3"
       >
         <h3
-          className="text-white text-md font-bold"
+          className="text-white text-lg mb-1 font-bold"
         >
           hat
         </h3>
-        <h5
-          className="text-sm text-white mb-1"
+        <span
+          className="text-sm text-white pl-1 font-light mb-1"
         >
           clothes
-        </h5>
+        </span>
         <div
           className="flex items-center gap-1 p-0 w-full"
         >
           <span
-            className="badge badge-md flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
           >
             algiers
             <span>
@@ -355,7 +355,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="badge badge-md text-white border-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25"
           />
         </div>
       </div>
@@ -397,20 +397,20 @@ exports[`renders correctly 1`] = `
         className="absolute bottom-[5%] flex flex-col px-3"
       >
         <h3
-          className="text-white text-md font-bold"
+          className="text-white text-lg mb-1 font-bold"
         >
           poncho
         </h3>
-        <h5
-          className="text-sm text-white mb-1"
+        <span
+          className="text-sm text-white pl-1 font-light mb-1"
         >
           clothes
-        </h5>
+        </span>
         <div
           className="flex items-center gap-1 p-0 w-full"
         >
           <span
-            className="badge badge-md flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
           >
             batna
             <span>
@@ -442,7 +442,7 @@ exports[`renders correctly 1`] = `
             </span>
           </span>
           <span
-            className="badge badge-md text-white border-white border-opacity-30 bg-black bg-opacity-25"
+            className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25"
           />
         </div>
       </div>
