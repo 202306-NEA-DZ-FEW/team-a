@@ -40,16 +40,22 @@ function ProductsPage({ t, items, queryParams }) {
       >
         Products List
       </h1>
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-10 place-items-center gap-y-4'>
+      <div className='flex flex-wrap gap-4 items-center justify-center w-full'>
         {items.map((item) => (
-          <ProductCard
-            id={item.id}
+ <Link
             key={item.id}
-            title={item.title}
-            description={item.description}
-            location={t(`states:${item.location}`)}
-            imageUrl={item.images[0]}
-          />
+            href={{
+              pathname: `/products/${item.id}`,
+            }}
+          >
+            <ProductCard
+              title={item.title}
+              listingType={item.listingType}
+              category={item.category}
+              location={item.location}
+              imageUrl={item.imageUrl}
+            />
+          </Link>
         ))}
       </div>
     </main>

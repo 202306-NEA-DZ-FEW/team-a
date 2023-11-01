@@ -30,6 +30,7 @@
     "formik": "^2.4.5",
     "framer-motion": "^10.16.4",
     "i18next": "^21.9.0",
+    "moment": "^2.29.4",
     "next": "^13.5.4",
     "next-i18next": "^11.2.2",
     "nextjs-toploader": "^1.4.2",

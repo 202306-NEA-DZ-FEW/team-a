@@ -2,7 +2,8 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-import { db } from "./firebase";
+import { deleteFilesInFolder } from "./deleteFilesInFolder";
+import { db, storage } from "./firebase";
 
 function useDeleteDoc() {
   const [loading, setLoading] = useState(false);
@@ -10,8 +11,13 @@ function useDeleteDoc() {
   const deleteItem = async (itemId) => {
     setLoading(true);
     try {
+      //delete the firestore doc
       const itemDocRef = doc(db, "items", itemId);
       await deleteDoc(itemDocRef);
+
+      //delete associated images in Storage
+      await deleteFilesInFolder(storage, `items/${itemId}/`);
+
       toast.success("Item deleted ✅", {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 1500,

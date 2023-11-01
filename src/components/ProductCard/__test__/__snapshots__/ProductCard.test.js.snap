@@ -1,72 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<a
-  href="/products/undefined"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
-  onTouchStart={[Function]}
+<div
+  className="card rounded-3xl group"
 >
-  <div
-    className="card w-52 bg-white shadow-xl"
+  <figure
+    className="relative h-64 w-52 rounded-3xl"
   >
     <img
-      alt="Shoes"
-      className="h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl"
-      data-nimg="1"
+      className="group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover w-full h-full duration-500"
+      data-nimg="fill"
       decoding="async"
       fetchpriority="high"
-      height={400}
       onError={[Function]}
       onLoad={[Function]}
       src=""
       style={
         Object {
+          "bottom": 0,
           "color": "transparent",
+          "height": "100%",
+          "left": 0,
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "100%",
         }
       }
-      width={400}
+    />
+  </figure>
+  <div
+    className="absolute bottom-[5%] flex flex-col px-3"
+  >
+    <h3
+      className="text-white text-lg font-bold"
+    />
+    <span
+      className="text-sm text-white pl-1 font-light mb-1"
     />
     <div
-      className="p-3 flex flex-col gap-1"
+      className="flex items-center gap-1 p-0 w-full"
     >
-      <div
-        className="flex items-center"
+      <span
+        className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
       >
-        <svg
-          className="text-2xl text-error"
-          fill="currentColor"
-          height="1em"
-          stroke="currentColor"
-          strokeWidth="0"
-          style={
-            Object {
-              "color": undefined,
+        <span>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
             }
-          }
-          viewBox="0 0 24 24"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-          />
-        </svg>
-        <span
-          className="text-md font-light"
-        />
-      </div>
-      <h2
-        className="text-lg font-bold "
-      />
-      <p
-        className="text-sm font-light"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M13.02 19.93v2.02c2.01-.2 3.84-1 5.32-2.21l-1.42-1.43a7.941 7.941 0 01-3.9 1.62zM4.03 12c0-4.05 3.03-7.41 6.95-7.93V2.05C5.95 2.58 2.03 6.84 2.03 12c0 5.16 3.92 9.42 8.95 9.95v-2.02c-3.92-.52-6.95-3.88-6.95-7.93zM19.95 11h2.02c-.2-2.01-1-3.84-2.21-5.32l-1.43 1.43c.86 1.1 1.44 2.43 1.62 3.89zM18.34 4.26a9.981 9.981 0 00-5.32-2.21v2.02c1.46.18 2.79.76 3.9 1.62l1.42-1.43zM18.33 16.9l1.43 1.42A9.949 9.949 0 0021.97 13h-2.02a7.941 7.941 0 01-1.62 3.9z"
+            />
+            <path
+              d="M16 11.1C16 8.61 14.1 7 12 7s-4 1.61-4 4.1c0 1.66 1.33 3.63 4 5.9 2.67-2.27 4-4.24 4-5.9zm-4 .9a1.071 1.071 0 010-2.14A1.071 1.071 0 0112 12z"
+            />
+          </svg>
+        </span>
+      </span>
+      <span
+        className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25"
       />
     </div>
   </div>
-</a>
+</div>
 `;

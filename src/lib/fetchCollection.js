@@ -10,7 +10,7 @@ export async function fetchCollection(collectionName, queryParams = {}) {
 
     const data = [];
     querySnapshot.forEach((doc) => {
-      data.push({ id: doc.id, ...JSON.parse(JSON.stringify(doc.data())) });
+      data.push({ ...JSON.parse(JSON.stringify(doc.data())), id: doc.id });
     });
 
     let filteredData = data;

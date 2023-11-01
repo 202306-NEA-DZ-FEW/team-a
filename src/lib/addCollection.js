@@ -3,8 +3,8 @@ import { toast } from "react-toastify";
 
 import { db } from "./firebase";
 
-export default function addCollection(collectionItems) {
-  const itemsCollectionRef = collection(db, "items");
+export default function addCollection(collectionItems, collectionName) {
+  const itemsCollectionRef = collection(db, collectionName);
   collectionItems.forEach(async (item) => {
     const newItemRef = doc(itemsCollectionRef);
     try {
