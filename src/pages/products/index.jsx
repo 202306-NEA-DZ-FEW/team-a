@@ -47,7 +47,8 @@ function ProductsPage({ t, items, queryParams }) {
             title={item.title}
             description={item.description}
             location={item.location}
-            imageUrl={item.images[0]}
+            listingType={item.listingType}
+            imageUrl={item.imageUrl}
           />
         ))}
       </div>

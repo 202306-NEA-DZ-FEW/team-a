@@ -1,24 +1,32 @@
 import Image from "next/image";
-import { MdLocationOn } from "react-icons/md";
+import { MdShareLocation } from "react-icons/md";
 
-function ProductCard({ title, location, description, imageUrl }) {
+function ProductCard({ title, location, listingType, imageUrl, category }) {
   return (
-    <div className='card w-52 bg-white shadow-xl'>
-      <Image
-        src={imageUrl}
-        alt='Shoes'
-        height={400}
-        width={400}
-        className='h-44 p-1 object-cover rounded-tr-2xl rounded-tl-2xl'
-        priority
-      />
-      <div className='p-3 flex flex-col gap-1'>
-        <div className='flex items-center'>
-          <MdLocationOn className='text-2xl text-error' />
-          <span className='text-md font-light'>{location}</span>
+    <div className='card rounded-3xl group'>
+      <figure className='relative h-64 w-52 rounded-3xl'>
+        <Image
+          src={imageUrl}
+          alt={title}
+          fill
+          priority
+          className='group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover w-full h-full duration-500'
+        />
+      </figure>
+      <div className='absolute bottom-[5%] flex flex-col px-3'>
+        <h3 className='text-white text-md font-bold'>{title}</h3>
+        <h5 className='text-sm text-white mb-1'>{category}</h5>
+        <div className='flex items-center gap-1 p-0 w-full'>
+          <span className='badge badge-md flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25'>
+            {location}
+            <span>
+              <MdShareLocation />
+            </span>
+          </span>
+          <span className='badge badge-md text-white border-white border-opacity-30 bg-black bg-opacity-25'>
+            {listingType}
+          </span>
         </div>
-        <h2 className='text-lg font-bold '>{title}</h2>
-        <p className='text-sm font-light'>{description}</p>
       </div>
     </div>
   );
