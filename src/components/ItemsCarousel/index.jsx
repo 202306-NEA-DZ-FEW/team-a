@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import ProductCard from "../ProductCard";
 
-const NextArrow = (props) => {
+const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <button
@@ -18,7 +18,7 @@ const NextArrow = (props) => {
     </button>
   );
 };
-const PrevArrow = (props) => {
+const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <button
