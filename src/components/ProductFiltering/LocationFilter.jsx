@@ -22,7 +22,7 @@ function LocationFilter({ t, queryParams }) {
         <Menu.Button className='flex items-center gap-2 w-full justify-between bg-white px-3 py-2 text-sm font-semibold btn-sm rounded-xl text-gray-900 hover:bg-gray-50 btn-primary'>
           <div className='flex gap-2 items-center'>
             <HiOutlineLocationMarker className='w-5 h-5' />
-            <span>Location</span>
+            <span>{t("productsPage:location")}</span>
           </div>
           <IoMdArrowDropdown />
         </Menu.Button>

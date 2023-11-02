@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
         />
       </figure>
       <div
-        className="absolute bottom-[5%] flex flex-col px-3"
+        className="absolute bottom-[5%] flex flex-col px-3 w-52"
       >
         <h3
           className="text-white text-lg font-bold"
@@ -133,7 +133,7 @@ exports[`renders correctly 1`] = `
         />
       </figure>
       <div
-        className="absolute bottom-[5%] flex flex-col px-3"
+        className="absolute bottom-[5%] flex flex-col px-3 w-52"
       >
         <h3
           className="text-white text-lg font-bold"
@@ -220,7 +220,7 @@ exports[`renders correctly 1`] = `
         />
       </figure>
       <div
-        className="absolute bottom-[5%] flex flex-col px-3"
+        className="absolute bottom-[5%] flex flex-col px-3 w-52"
       >
         <h3
           className="text-white text-lg font-bold"
@@ -307,7 +307,7 @@ exports[`renders correctly 1`] = `
         />
       </figure>
       <div
-        className="absolute bottom-[5%] flex flex-col px-3"
+        className="absolute bottom-[5%] flex flex-col px-3 w-52"
       >
         <h3
           className="text-white text-lg font-bold"
@@ -325,7 +325,7 @@ exports[`renders correctly 1`] = `
           <span
             className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
           >
-            algiers
+            algier...
             <span>
               <svg
                 fill="currentColor"
@@ -394,7 +394,7 @@ exports[`renders correctly 1`] = `
         />
       </figure>
       <div
-        className="absolute bottom-[5%] flex flex-col px-3"
+        className="absolute bottom-[5%] flex flex-col px-3 w-52"
       >
         <h3
           className="text-white text-lg font-bold"

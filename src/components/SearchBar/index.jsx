@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { RiSearch2Line } from "react-icons/ri";
 import { useDebounce } from "use-debounce";
 
-function SearchBar({ queryParams }) {
+function SearchBar({ t, queryParams }) {
   const router = useRouter();
   const [text, setText] = useState("");
   let [query] = useDebounce(text, 600);
@@ -45,7 +45,7 @@ function SearchBar({ queryParams }) {
           value={text}
           onChange={(e) => setText(e.target.value)}
           type='text'
-          placeholder='Search Product'
+          placeholder={t("productsPage:searchPlaceHolder")}
           className='input-sm text-center rounded-xl input-bordered w-full md:max-w-xs'
         />
       </div>

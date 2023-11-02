@@ -56,6 +56,7 @@ function EditItemForm({ item, onEdit }) {
           id: item.id,
           uid: item.uid,
           updated: serverTimestamp(),
+          createdAt: item.createdAt,
           images: selectedImages,
         });
         toast.success("Profile updated successfully ✅", {

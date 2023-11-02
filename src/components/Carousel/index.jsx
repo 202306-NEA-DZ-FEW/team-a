@@ -2,7 +2,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import CarouselItem from "./CarouselItem";
 
-export default function Carousel({ items, queryParams }) {
+export default function Carousel({ t, items, queryParams }) {
   const nextItem = () => {
     let lists = document.querySelectorAll(".item");
     document.getElementById("slide").appendChild(lists[0]);
@@ -17,7 +17,12 @@ export default function Carousel({ items, queryParams }) {
     <div className='group'>
       <div id='slide' className='max-w-fit'>
         {items.map((item) => (
-          <CarouselItem key={item.id} {...item} queryParams={queryParams} />
+          <CarouselItem
+            key={item.id}
+            {...item}
+            t={t}
+            queryParams={queryParams}
+          />
         ))}
       </div>
       <div className='absolute px-8 z-50 lg:bottom-12 bottom-[10%] justify-between w-full flex gap-4 lg:justify-center'>
