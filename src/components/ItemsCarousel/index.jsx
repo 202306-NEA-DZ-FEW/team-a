@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PiCaretLeftLight, PiCaretRightLight } from "react-icons/pi";
 import Slider from "react-slick";
 
@@ -10,7 +11,7 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className='btn btn-circle bg-white bg-opacity-25 text-2xl z-30 absolute left-2 top-1/2'
+      className='btn btn-circle bg-white bg-opacity-25 text-2xl z-30 absolute lg:left-4 left-2 top-1/2'
       onClick={onClick}
     >
       <PiCaretLeftLight />
@@ -21,7 +22,7 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className='btn btn-circle bg-white bg-opacity-25 text-2xl z-30 absolute right-2 top-1/2'
+      className='btn btn-circle bg-white bg-opacity-25 text-2xl z-30 absolute lg:right-4 right-2 top-1/2'
       onClick={onClick}
     >
       <PiCaretRightLight />
@@ -36,7 +37,7 @@ function ItemsCarousel({ t, items }) {
     slidesToShow: 4,
     slidesToScroll: 1,
     draggable: true,
-    /*  variableWidth: true, */
+    variableWidth: true,
     centerPadding: "0px",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -55,12 +56,29 @@ function ItemsCarousel({ t, items }) {
           initialSlide: 0,
         },
       },
+      {
+        breakpoint: 920,
+        settings: {
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          variableWidth: true,
+          initialSlide: 0,
+        },
+      },
     ],
   };
   return (
     <Slider {...settings} className='w-full whitespace-pre-wrap '>
       {items.map((item) => (
-        <div key={item.id} className='mx-3'>
+        <Link
+          key={item.id}
+          href={{
+            pathname: `/products/${item.id}`,
+          }}
+          className='mx-3'
+        >
           <ProductCard
             title={item.title}
             listingType={t(`addItem:${item.listingType}`)}
@@ -68,7 +86,7 @@ function ItemsCarousel({ t, items }) {
             location={t(`states:${item.location}`)}
             imageUrl={item.images[0]}
           />
-        </div>
+        </Link>
       ))}
     </Slider>
   );

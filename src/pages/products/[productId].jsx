@@ -8,7 +8,6 @@ import fetchUserInfo from "@/lib/fetchUserInfo";
 import { getLocationName } from "@/lib/helpers";
 
 import Container from "@/components/container";
-import ProductCard from "@/components/ProductCard";
 import ProductDetailsCard from "@/components/ProductDetailsCard";
 
 import ItemsCarousel from "../../components/ItemsCarousel";
