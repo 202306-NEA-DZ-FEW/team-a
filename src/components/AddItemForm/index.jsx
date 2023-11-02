@@ -26,12 +26,10 @@ function AddItemForm({ t, initialLocale, categories, states }) {
   const { uploadImages } = useUploadImages();
   const { user } = useAuth();
   const router = useRouter();
-  const listingTypes = [
-    t("addItem:exchangeButton"),
+  const listingTypes = ["exchangeButton", "requestButton", "donationButton"];
+  /*  t("addItem:exchangeButton"),
     t("addItem:requestButton"),
-    t("addItem:donationButton"),
-  ];
-
+    t("addItem:donationButton"), */
   const handleSelect = (selectedType) => {
     formik.setFieldValue("listingType", selectedType);
   };
@@ -86,7 +84,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
           position: toast.POSITION.TOP_CENTER,
           autoClose: 1500,
         });
-        router.push(`/products/${id}`);
+        router.push("/products");
       } catch (err) {
         alert(err.message);
       } finally {
@@ -192,10 +190,11 @@ function AddItemForm({ t, initialLocale, categories, states }) {
               </span>
             </div>
             <div className='flex flex-col md:flex-row gap-2 md:justify-between md:items-center'>
-              {listingTypes.map((type, i) => (
+              {listingTypes.map((listingKey, i) => (
                 <ListingTypeButton
                   key={i}
-                  text={type}
+                  text={t(`addItem:${listingKey}`)}
+                  value={listingKey}
                   selected={formik.values.listingType}
                   onSelect={handleSelect}
                 />

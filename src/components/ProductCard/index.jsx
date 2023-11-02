@@ -6,7 +6,7 @@ import { getLocationName, truncateString } from "@/lib/helpers";
 function ProductCard({ title, location, listingType, imageUrl, category }) {
   const locationName = getLocationName(location);
   const truncatedCategory = truncateString(category, 15);
-  const truncateState = truncateString(locationName, 8);
+  const truncateState = truncateString(locationName, 6);
   return (
     <div className='card rounded-3xl group'>
       <figure className='relative h-64 w-52 rounded-3xl'>
@@ -18,7 +18,7 @@ function ProductCard({ title, location, listingType, imageUrl, category }) {
           className='group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover w-full h-full duration-500'
         />
       </figure>
-      <div className='absolute bottom-[5%] flex flex-col px-3'>
+      <div className='absolute bottom-[5%] flex flex-col px-3 w-52'>
         <h3 className='text-white text-lg font-bold'>{title}</h3>
         <span className='text-sm text-white pl-1 font-light mb-1'>
           {truncatedCategory}

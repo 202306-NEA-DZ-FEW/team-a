@@ -50,7 +50,7 @@ function ProductsPage({ t, items, queryParams }) {
           >
             <ProductCard
               title={item.title}
-              listingType={item.listingType}
+              listingType={t(`addItem:${item.listingType}`)}
               category={t(`categories:${item.category}`)}
               location={t(`states:${item.location}`)}
               imageUrl={item.images[0]}
@@ -74,6 +74,7 @@ export async function getServerSideProps({ locale, query }) {
         "states",
         "productsPage",
         "categories",
+        "addItem",
       ])),
       items,
       queryParams,

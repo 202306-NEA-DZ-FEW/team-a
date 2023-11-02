@@ -2,27 +2,28 @@ import Image from "next/image";
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdContact } from "react-icons/io";
+import { IoCalendarOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
-import { MdAlternateEmail } from "react-icons/md";
+import { MdAlternateEmail, MdShareLocation } from "react-icons/md";
+
+import formatDate from "@/lib/formatDate";
 
 import MobileCarousel from "./MobileCarousel";
 
-function SingleProductCard({
+function ProductDetailsCard({
   title,
   description,
   location,
   listingType,
   category,
   images,
-  ceatedAt,
+  createdAt,
   username,
   email,
   phone,
 }) {
   const [selectedImage, setSelectedImage] = useState(images[0]);
-  /*  const handleChange = (newImageUrl) => {
-    setSelectedImage(newImageUrl);
-  }; */
+  const date = formatDate(createdAt);
   const onClick = (src) => {
     // find image by it's src
     const image = images.find((image) => image === src);
@@ -33,15 +34,27 @@ function SingleProductCard({
     switch (listingType) {
       case "Donate":
         return "text-green-500";
+      case "للتبرع":
+        return "text-green-500";
+      case "Don":
+        return "text-green-500";
       case "Exchange":
+        return "text-blue-500";
+      case "للتبادل":
+        return "text-blue-500";
+      case "Échange":
         return "text-blue-500";
       case "Request":
         return "text-red-500";
-
+      case "للطلب":
+        return "text-red-500";
+      case "Demande":
+        return "text-red-500";
       default:
         return "";
     }
   };
+
   return (
     <div className='flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-white'>
       <div className='lg:hidden'>
@@ -78,9 +91,15 @@ function SingleProductCard({
       </figure>
       <div id='CardContent' className='card-body text-gray-950 flex-1'>
         <h1 className='card-title text-3xl'>{title}</h1>
-        <span className='flex gap-1 text-gray-400 text-sm font-light'>
-          <CiLocationOn className='text-xl' /> {location}
-        </span>
+        <div className='flex gap-2 items-center'>
+          <span className='flex gap-1 text-gray-400 text-sm font-light items-center'>
+            <MdShareLocation className='text-xl' /> {location}
+          </span>
+          <span className='flex gap-1 text-gray-400 text-sm font-light items-center'>
+            <IoCalendarOutline className='text-lg' />
+            <span>{date}</span>
+          </span>
+        </div>
         <div className='flex gap-2 items-center'>
           <span className='badge badge-outline text-primary/80 '>
             {category}
@@ -120,4 +139,4 @@ function SingleProductCard({
   );
 }
 
-export default SingleProductCard;
+export default ProductDetailsCard;

@@ -9,7 +9,9 @@ import { getLocationName } from "@/lib/helpers";
 
 import Container from "@/components/container";
 import ProductCard from "@/components/ProductCard";
-import SingleProductCard from "@/components/SingleProductCard";
+import ProductDetailsCard from "@/components/ProductDetailsCard";
+
+import ItemsCarousel from "../../components/ItemsCarousel";
 
 function ProductDetails({ t, product, userInfo, relatedProducts }) {
   const translatedLocation = t(`states:${product.location}`);
@@ -17,13 +19,13 @@ function ProductDetails({ t, product, userInfo, relatedProducts }) {
   return (
     <>
       <section className='lg:flex lg:min-h-screen lg:justify-center lg:items-center'>
-        <SingleProductCard
+        <ProductDetailsCard
           title={product.title}
           description={product.description}
           location={loctionName}
           listingType={t(`addItem:${product.listingType}`)}
           category={t(`categories:${product.category}`)}
-          ceatedAt='10/10/2023'
+          createdAt={product.createdAt}
           images={product.images}
           username={userInfo.name}
           email={userInfo.email}
@@ -32,16 +34,7 @@ function ProductDetails({ t, product, userInfo, relatedProducts }) {
       </section>
       <h1 className='font-bold text-3xl m-4 text-center'>Related Products</h1>
       <Container className='flex justify-center items-center gap-4 m-4'>
-        {relatedProducts.map((product) => (
-          <ProductCard
-            key={product.title}
-            title={product.title}
-            listingType={t(`addItem:${product.listingType}`)}
-            category={t(`category:${product.category}`)}
-            location={t(`states:${product.location}`)}
-            imageUrl={product.images[0]}
-          />
-        ))}
+        <ItemsCarousel t={t} items={relatedProducts} />
       </Container>
     </>
   );
