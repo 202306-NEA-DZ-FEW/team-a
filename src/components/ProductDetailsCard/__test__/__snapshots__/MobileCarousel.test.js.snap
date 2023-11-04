@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="slick-slider slick-initialized"
+>
+  <div
+    className="slick-list"
+  >
+    <div
+      className="slick-track"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "WebkitTransform": "translate3d(0px, 0px, 0px)",
+          "WebkitTransition": "",
+          "msTransform": "translateX(0px)",
+          "opacity": 1,
+          "transform": "translate3d(0px, 0px, 0px)",
+          "transition": "",
+        }
+      }
+    >
+      <div
+        aria-hidden={false}
+        className="slick-slide slick-active slick-center slick-current"
+        data-index={0}
+        onClick={[Function]}
+        style={
+          Object {
+            "outline": "none",
+            "width": 0,
+          }
+        }
+        tabIndex="-1"
+      >
+        <div>
+          <figure
+            className="w-full h-[400px] relative"
+            style={
+              Object {
+                "display": "inline-block",
+                "width": "100%",
+              }
+            }
+            tabIndex={-1}
+          >
+            <img
+              alt="product"
+              className="object-cover w-full h-full"
+              data-nimg="fill"
+              decoding="async"
+              fetchpriority="high"
+              onError={[Function]}
+              onLoad={[Function]}
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcSet="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style={
+                Object {
+                  "bottom": 0,
+                  "color": "transparent",
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
+                }
+              }
+            />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

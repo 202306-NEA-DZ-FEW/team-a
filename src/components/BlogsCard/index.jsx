@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
-import formatDate from "@/lib/formatDate";
+import { formatDate } from "@/lib/helpers";
 
 export default function BlogsCard({ index, blog }) {
   const { i18n, t } = useTranslation();

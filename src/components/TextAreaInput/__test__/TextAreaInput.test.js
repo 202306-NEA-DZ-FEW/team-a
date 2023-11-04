@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import HeroSection from "../..";
+import TextAreaInput from "..";
 
 it("renders correctly", () => {
-  const tree = renderer.create(<HeroSection />).toJSON();
+  const tree = renderer.create(<TextAreaInput />).toJSON();
   expect(tree).toMatchSnapshot();
 });

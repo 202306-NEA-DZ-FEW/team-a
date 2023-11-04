@@ -1,12 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
-import { CiLocationOn } from "react-icons/ci";
 import { IoMdContact } from "react-icons/io";
 import { IoCalendarOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
 import { MdAlternateEmail, MdShareLocation } from "react-icons/md";
 
-import formatDate from "@/lib/formatDate";
+import { formatDate } from "@/lib/helpers";
 
 import MobileCarousel from "./MobileCarousel";
 

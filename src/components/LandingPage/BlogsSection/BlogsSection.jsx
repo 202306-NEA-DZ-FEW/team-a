@@ -1,6 +1,7 @@
+import { useTranslation } from "next-i18next";
+
 import BlogCard from "@/components/BlogCard";
 import Container from "@/components/container";
-import { useTranslation } from "next-i18next";
 
 function BlogsSection() {
   const { t } = useTranslation();
