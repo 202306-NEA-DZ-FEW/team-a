@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import getAllStates from "@/lib/getAllStates";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 import SignUpForm from "@/components/SignUpForm";
 
 import AuthPagesLayout from "@/layout/AuthPagesLayout";

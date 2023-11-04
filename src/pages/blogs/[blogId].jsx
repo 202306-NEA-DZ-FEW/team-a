@@ -7,7 +7,7 @@ import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
 import fetchUserInfo from "@/lib/fetchUserInfo";
 import { formatDate } from "@/lib/helpers";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 import PageCover from "@/components/PageCover";
 
 function BlogDetails({ blog, user }) {

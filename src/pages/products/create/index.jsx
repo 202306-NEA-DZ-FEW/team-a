@@ -5,7 +5,7 @@ import getAllCategories from "@/lib/getAllCategories";
 import getAllStates from "@/lib/getAllStates";
 
 import AddItemForm from "@/components/AddItemForm";
-import Container from "@/components/Container";
+import Container from "@/components/container";
 
 function CreateProductPage({ t, _nextI18Next }) {
   const categories = getAllCategories(t);

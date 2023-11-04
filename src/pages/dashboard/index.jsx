@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import fetchUserInfo from "@/lib/fetchUserInfo";
 import fetchUserItems from "@/lib/fetchUserItems";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 import UserListItems from "@/components/UserListItems";
 import UserProfile from "@/components/UserProfile";
 

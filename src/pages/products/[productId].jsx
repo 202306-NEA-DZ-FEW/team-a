@@ -7,7 +7,7 @@ import { fetchItemsByCategory } from "@/lib/fetchItemsByCategory";
 import fetchUserInfo from "@/lib/fetchUserInfo";
 import { getLocationName } from "@/lib/helpers";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 import ProductDetailsCard from "@/components/ProductDetailsCard";
 
 import ItemsCarousel from "../../components/ItemsCarousel";

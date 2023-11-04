@@ -5,7 +5,7 @@ import mepi from "public/images/mepi1.png";
 import microsoft from "public/images/microsoft4.png";
 import recoded from "public/images/recoded3.png";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 
 function OurPartnersSection() {
   const { t } = useTranslation();

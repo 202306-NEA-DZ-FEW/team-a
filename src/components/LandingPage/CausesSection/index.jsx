@@ -3,7 +3,7 @@ import { FaHandHoldingWater } from "react-icons/fa";
 import { IoHelpBuoy } from "react-icons/io5";
 import { LuHeartHandshake } from "react-icons/lu";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 
 import InfoCard from "../InfoCard";
 

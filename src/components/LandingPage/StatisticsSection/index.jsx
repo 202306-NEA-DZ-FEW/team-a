@@ -6,7 +6,7 @@ import { ImStatsBars } from "react-icons/im";
 import { MdOutlineQueryStats } from "react-icons/md";
 import { TfiStatsUp } from "react-icons/tfi";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 
 import InfoCard from "../InfoCard";
 

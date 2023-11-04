@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 
-import Container from "@/components/Container";
+import Container from "@/components/container";
 import ProductCard from "@/components/ProductCard";
 
 function PopularItemsSection() {
