@@ -5,7 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { fetchCollection } from "@/lib/fetchCollection";
 
 import BlogsCard from "@/components/BlogsCard";
-import Container from "@/components/container";
+import Container from "@/components/Container";
 
 function BlogsPage({ blogs }) {
   const { t } = useTranslation();

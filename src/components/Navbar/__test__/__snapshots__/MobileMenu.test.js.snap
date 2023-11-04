@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders correctly 1`] = `
+<div
+  className="text-left block lg:hidden"
+  data-headlessui-state=""
+>
+  <div>
+    <button
+      aria-expanded={false}
+      aria-haspopup="menu"
+      className="w-full justify-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 btn-circle btn-ghost"
+      data-headlessui-state=""
+      id="headlessui-menu-button-:r0:"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="w-6 h-6"
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="2"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 6h16M4 12h16m-7 6h7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

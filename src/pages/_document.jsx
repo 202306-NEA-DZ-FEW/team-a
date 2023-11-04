@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html data-theme='fantasy' lang='en'>
       <Head />
-      <body className='bg-base-200'>
+      <body className='bg-base-100'>
         <Main />
         <NextScript />
       </body>

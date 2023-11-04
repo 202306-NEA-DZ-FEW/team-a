@@ -1,10 +1,11 @@
-import Container from "@/components/container";
 import Image from "next/image";
-import recoded from "public/images/recoded3.png";
+import { useTranslation } from "next-i18next";
+import flatironschool from "public/images/flatironschool2.png";
 import mepi from "public/images/mepi1.png";
 import microsoft from "public/images/microsoft4.png";
-import flatironschool from "public/images/flatironschool2.png";
-import { useTranslation } from "next-i18next";
+import recoded from "public/images/recoded3.png";
+
+import Container from "@/components/Container";
 
 function OurPartnersSection() {
   const { t } = useTranslation();

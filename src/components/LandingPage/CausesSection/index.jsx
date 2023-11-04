@@ -1,8 +1,9 @@
+import { useTranslation } from "next-i18next";
 import { FaHandHoldingWater } from "react-icons/fa";
 import { IoHelpBuoy } from "react-icons/io5";
 import { LuHeartHandshake } from "react-icons/lu";
-import { useTranslation } from "next-i18next";
-import Container from "@/components/container";
+
+import Container from "@/components/Container";
 
 import InfoCard from "../InfoCard";
 

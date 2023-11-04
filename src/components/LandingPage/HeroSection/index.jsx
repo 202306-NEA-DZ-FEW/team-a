@@ -1,8 +1,8 @@
 import Image from "next/image";
-import illustration from "public/images/hero.svg";
 import { useTranslation } from "next-i18next";
+import illustration from "public/images/hero.svg";
 
-import Container from "@/components/container";
+import Container from "@/components/Container";
 
 function HeroSection() {
   const { t } = useTranslation();

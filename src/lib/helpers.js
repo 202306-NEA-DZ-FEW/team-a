@@ -1,3 +1,5 @@
+import moment from "moment/moment";
+
 export const getLocationName = (translatedLocation) => {
   const locationName = translatedLocation
     .replace(/^[\d٠١٢٣٤٥٦٧٨٩-]+/, "")
@@ -12,3 +14,10 @@ export const truncateString = (inputString, maxLength) => {
   }
   return inputString;
 };
+
+export function formatDate(dateObj) {
+  const date = new Date(
+    dateObj?.seconds * 1000 + dateObj?.nanoseconds / 1000000
+  );
+  return moment(date).format("DD MMMM YYYY");
+}

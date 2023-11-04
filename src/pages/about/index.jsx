@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import teamMembers from "@/lib/teamMembers";
 
-import Container from "@/components/container";
+import Container from "@/components/Container";
 import MemberCard from "@/components/MemberCard";
 import PageCover from "@/components/PageCover";
 

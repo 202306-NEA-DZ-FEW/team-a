@@ -3,7 +3,7 @@ import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import login from "public/images/team_1.svg";
 
-import Container from "@/components/container";
+import Container from "@/components/Container";
 import SignInForm from "@/components/SignInForm";
 
 import AuthPagesLayout from "@/layout/AuthPagesLayout";

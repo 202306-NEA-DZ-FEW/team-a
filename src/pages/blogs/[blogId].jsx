@@ -5,9 +5,9 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { fetchCollection } from "@/lib/fetchCollection";
 import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
 import fetchUserInfo from "@/lib/fetchUserInfo";
-import formatDate from "@/lib/formatDate";
+import { formatDate } from "@/lib/helpers";
 
-import Container from "@/components/container";
+import Container from "@/components/Container";
 import PageCover from "@/components/PageCover";
 
 function BlogDetails({ blog, user }) {

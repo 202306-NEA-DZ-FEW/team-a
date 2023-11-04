@@ -1,12 +1,12 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import background from "public/images/stats.svg";
 import { BiStats } from "react-icons/bi";
 import { ImStatsBars } from "react-icons/im";
 import { MdOutlineQueryStats } from "react-icons/md";
 import { TfiStatsUp } from "react-icons/tfi";
-import { useTranslation } from "next-i18next";
 
-import Container from "@/components/container";
+import Container from "@/components/Container";
 
 import InfoCard from "../InfoCard";
 
