@@ -14,7 +14,6 @@ function ProductCard({ title, location, listingType, imageUrl, category }) {
         <Image
           src={imageUrl}
           alt={title}
-          // fill
           width={200}
           height={200}
           priority

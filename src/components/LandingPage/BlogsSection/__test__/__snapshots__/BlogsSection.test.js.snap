@@ -27,8 +27,8 @@ exports[`renders correctly 1`] = `
           height={400}
           onError={[Function]}
           onLoad={[Function]}
-          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1593113598332-cd288d649433%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
-          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1593113598332-cd288d649433%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1593113598332-cd288d649433%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75 2x"
+          src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 2x"
           style={
             Object {
               "color": "transparent",
@@ -39,7 +39,7 @@ exports[`renders correctly 1`] = `
         <span
           className="absolute left-1 bottom-1 text-white bg-primary px-2 py-1"
         >
-          2 July
+          Invalid date
         </span>
       </div>
       <div
@@ -47,194 +47,22 @@ exports[`renders correctly 1`] = `
       >
         <h2
           className="text-lg font-bold mb-2"
+          title="Hello"
         >
-          ramadan
+          Hello
         </h2>
         <p
           className="text-sm font-light mb-4"
+          title="Hello"
         >
-          Short description of the blog inorder to test things out better than lorem.
+          Hello
         </p>
         <div
           className="flex justify-end"
         >
           <a
             className="text-secondary/[.8] hover:text-secondary font-bold"
-            href="/blogs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            buttons.readMore
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-      className="card bg-white rounded-xl shadow-lg w-64"
-    >
-      <div
-        className="relative"
-      >
-        <img
-          alt="Blog Image"
-          className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
-          data-nimg="1"
-          decoding="async"
-          fetchpriority="high"
-          height={400}
-          onError={[Function]}
-          onLoad={[Function]}
-          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1597762117709-859f744b84c3%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
-          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1597762117709-859f744b84c3%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1597762117709-859f744b84c3%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75 2x"
-          style={
-            Object {
-              "color": "transparent",
-            }
-          }
-          width={400}
-        />
-        <span
-          className="absolute left-1 bottom-1 text-white bg-primary px-2 py-1"
-        >
-          20 Aug
-        </span>
-      </div>
-      <div
-        className="p-3 gap-1 flex flex-col"
-      >
-        <h2
-          className="text-lg font-bold mb-2"
-        >
-          eid
-        </h2>
-        <p
-          className="text-sm font-light mb-4"
-        >
-          Short description of the blog inorder to test things out better than lorem.
-        </p>
-        <div
-          className="flex justify-end"
-        >
-          <a
-            className="text-secondary/[.8] hover:text-secondary font-bold"
-            href="/blogs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            buttons.readMore
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-      className="card bg-white rounded-xl shadow-lg w-64"
-    >
-      <div
-        className="relative"
-      >
-        <img
-          alt="Blog Image"
-          className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
-          data-nimg="1"
-          decoding="async"
-          fetchpriority="high"
-          height={400}
-          onError={[Function]}
-          onLoad={[Function]}
-          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1636202339022-7d67f7447e3a%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1471%26q%3D80&w=828&q=75"
-          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1636202339022-7d67f7447e3a%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1471%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1636202339022-7d67f7447e3a%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1471%26q%3D80&w=828&q=75 2x"
-          style={
-            Object {
-              "color": "transparent",
-            }
-          }
-          width={400}
-        />
-        <span
-          className="absolute left-1 bottom-1 text-white bg-primary px-2 py-1"
-        >
-          15 Sep
-        </span>
-      </div>
-      <div
-        className="p-3 gap-1 flex flex-col"
-      >
-        <h2
-          className="text-lg font-bold mb-2"
-        >
-          school
-        </h2>
-        <p
-          className="text-sm font-light mb-4"
-        >
-          Short description of the blog inorder to test things out better than lorem.
-        </p>
-        <div
-          className="flex justify-end"
-        >
-          <a
-            className="text-secondary/[.8] hover:text-secondary font-bold"
-            href="/blogs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            buttons.readMore
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-      className="card bg-white rounded-xl shadow-lg w-64"
-    >
-      <div
-        className="relative"
-      >
-        <img
-          alt="Blog Image"
-          className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
-          data-nimg="1"
-          decoding="async"
-          fetchpriority="high"
-          height={400}
-          onError={[Function]}
-          onLoad={[Function]}
-          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1477738224882-4eba549a81ea%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
-          srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1477738224882-4eba549a81ea%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1477738224882-4eba549a81ea%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75 2x"
-          style={
-            Object {
-              "color": "transparent",
-            }
-          }
-          width={400}
-        />
-        <span
-          className="absolute left-1 bottom-1 text-white bg-primary px-2 py-1"
-        >
-          16 Oct
-        </span>
-      </div>
-      <div
-        className="p-3 gap-1 flex flex-col"
-      >
-        <h2
-          className="text-lg font-bold mb-2"
-        >
-          mawlid
-        </h2>
-        <p
-          className="text-sm font-light mb-4"
-        >
-          Short description of the blog inorder to test things out better than lorem.
-        </p>
-        <div
-          className="flex justify-end"
-        >
-          <a
-            className="text-secondary/[.8] hover:text-secondary font-bold"
-            href="/blogs"
+            href="/blogs/1"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}

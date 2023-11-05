@@ -2,8 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
-function BlogCard({ title, imageUrl, date, description }) {
+import { formatDate, truncateString } from "@/lib/helpers";
+
+function BlogCard({ id, title, imageUrl, createdAt, description }) {
   const { t } = useTranslation();
+  const date = formatDate(createdAt, "MMM YYYY");
+  const truncatedDescription = truncateString(description, 60);
+  const truncatedTitle = truncateString(title, 20);
   return (
     <div className='card bg-white rounded-xl shadow-lg w-64'>
       <div className='relative'>
@@ -21,11 +26,15 @@ function BlogCard({ title, imageUrl, date, description }) {
       </div>
 
       <div className='p-3 gap-1 flex flex-col'>
-        <h2 className='text-lg font-bold mb-2'>{title}</h2>
-        <p className='text-sm font-light mb-4'>{description}</p>
+        <h2 className='text-lg font-bold mb-2' title={title}>
+          {truncatedTitle}
+        </h2>
+        <p className='text-sm font-light mb-4' title={description}>
+          {truncatedDescription}
+        </p>
         <div className='flex justify-end'>
           <Link
-            href='/blogs'
+            href={`/blogs/${id}`}
             className='text-secondary/[.8] hover:text-secondary font-bold'
           >
             {t("common:buttons:readMore")}
