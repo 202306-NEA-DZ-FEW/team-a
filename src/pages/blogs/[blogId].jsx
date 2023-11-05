@@ -65,11 +65,18 @@ function BlogDetails({ blog, user }) {
 
 export default BlogDetails;
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
   const blogs = await fetchCollection("blogs");
-  const paths = blogs.map((blog) => ({
-    params: { blogId: blog.id.toString() },
-  }));
+  const paths = [];
+
+  blogs.forEach((blog) => {
+    locales.forEach((locale) => {
+      paths.push({
+        params: { blogId: blog.id.toString() },
+        locale: locale,
+      });
+    });
+  });
 
   return { paths, fallback: false };
 }
