@@ -12,7 +12,7 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="User Profile"
-        className="object-cover md:w-32 w-28 rounded-full"
+        className="object-cover md:w-32 md:h-32 w-28 h-82 rounded-full"
         data-nimg="1"
         decoding="async"
         height={150}

@@ -37,7 +37,7 @@ function UserProfile({ userData }) {
             <ImageSpinner classes='absolute bg-white rounded-full h-full md:w-32 w-28 top-0 bg-opacity-30 flex items-center justify-center ' />
           )}
           <Image
-            className='object-cover md:w-32 w-28 rounded-full'
+            className='object-cover md:w-32 md:h-32 w-28 h-82 rounded-full'
             height={150}
             width={150}
             src={selectedImage || profileData.photoURL || profile}
