@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMdContact } from "react-icons/io";
 import { IoCalendarOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
@@ -54,6 +54,10 @@ function ProductDetailsCard({
     }
   };
 
+  useEffect(() => {
+    setSelectedImage(images[0]);
+  }, [images]);
+
   return (
     <div className='flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-white'>
       <div className='lg:hidden'>
@@ -63,8 +67,9 @@ function ProductDetailsCard({
         <Image
           width={500}
           height={500}
-          priority
           id='productImg'
+          placeholder='blur'
+          blurDataURL='public/images/blur.jpg'
           src={selectedImage}
           className='w-full h-full object-cover lg:rounded-tl-3xl lg:lg:rounded-bl-3xl'
           alt=''
@@ -78,7 +83,8 @@ function ProductDetailsCard({
                 alt='img'
                 height={100}
                 width={100}
-                priority
+                placeholder='blur'
+                blurDataURL='public/images/blur.jpg'
                 onClick={() => onClick(src)}
                 className={`${
                   selectedImage === src ? "ring-4" : "opacity-50"
