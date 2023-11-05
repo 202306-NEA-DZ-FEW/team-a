@@ -19,28 +19,36 @@ function OurPartnersSection() {
           src={recoded}
           alt='recoded'
           width={200}
-          height={100}
+          height={200}
+          priority
+          placeholder='blur'
           className=' object-cover rounded-xl '
         />
         <Image
           src={flatironschool}
           alt='flatironschool'
           width={200}
-          height={100}
+          height={200}
+          priority
+          placeholder='blur'
           className=' object-cover rounded-xl'
         />
         <Image
           src={microsoft}
           alt='microsoft'
           width={200}
-          height={100}
+          height={200}
+          priority
+          placeholder='blur'
           className=' object-cover rounded-xl'
         />
         <Image
           src={mepi}
           alt='mepi'
           width={200}
-          height={100}
+          height={200}
+          priority
+          placeholder='blur'
           className=' object-cover rounded-xl'
         />
       </div>

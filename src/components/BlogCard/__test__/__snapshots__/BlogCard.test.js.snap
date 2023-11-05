@@ -12,6 +12,7 @@ exports[`renders correctly 1`] = `
       className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
       data-nimg="1"
       decoding="async"
+      fetchpriority="high"
       height={400}
       onError={[Function]}
       onLoad={[Function]}

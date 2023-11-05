@@ -23,8 +23,8 @@ exports[`renders correctly 1`] = `
           className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height={400}
-          loading="lazy"
           onError={[Function]}
           onLoad={[Function]}
           src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1593113598332-cd288d649433%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
@@ -81,8 +81,8 @@ exports[`renders correctly 1`] = `
           className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height={400}
-          loading="lazy"
           onError={[Function]}
           onLoad={[Function]}
           src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1597762117709-859f744b84c3%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"
@@ -139,8 +139,8 @@ exports[`renders correctly 1`] = `
           className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height={400}
-          loading="lazy"
           onError={[Function]}
           onLoad={[Function]}
           src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1636202339022-7d67f7447e3a%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1471%26q%3D80&w=828&q=75"
@@ -197,8 +197,8 @@ exports[`renders correctly 1`] = `
           className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height={400}
-          loading="lazy"
           onError={[Function]}
           onLoad={[Function]}
           src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1477738224882-4eba549a81ea%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=828&q=75"

@@ -9,9 +9,9 @@ function HeroSection() {
   return (
     <Container>
       <div className='flex flex-col justify-between items-center lg:flex-row-reverse gap-10 lg:gap-4 lg:min-h-screen my-20 lg:my-0'>
-        <div id='illustration' className='w-96 md:px-0 px-8'>
-          <Image src={illustration} alt='hero illustration' />
-        </div>
+        <figure id='illustration' className='w-96 md:px-0 px-8'>
+          <Image src={illustration} alt='hero illustration' priority />
+        </figure>
         <div
           id='text'
           className='flex flex-col justify-start lg:w-1/2 lg:gap-8 gap-4'

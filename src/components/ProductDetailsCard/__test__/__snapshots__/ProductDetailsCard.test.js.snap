@@ -99,9 +99,9 @@ exports[`renders correctly 1`] = `
                   fetchpriority="high"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
                   style={
                     Object {
                       "bottom": 0,
@@ -151,9 +151,9 @@ exports[`renders correctly 1`] = `
                   fetchpriority="high"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
                   style={
                     Object {
                       "bottom": 0,
@@ -204,9 +204,9 @@ exports[`renders correctly 1`] = `
                   fetchpriority="high"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
                   style={
                     Object {
                       "bottom": 0,
@@ -257,9 +257,9 @@ exports[`renders correctly 1`] = `
                   fetchpriority="high"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
                   style={
                     Object {
                       "bottom": 0,
@@ -309,9 +309,9 @@ exports[`renders correctly 1`] = `
                   fetchpriority="high"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
                   style={
                     Object {
                       "bottom": 0,
@@ -361,9 +361,9 @@ exports[`renders correctly 1`] = `
                   fetchpriority="high"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
                   style={
                     Object {
                       "bottom": 0,

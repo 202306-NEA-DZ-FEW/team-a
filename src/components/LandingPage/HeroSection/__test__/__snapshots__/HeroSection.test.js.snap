@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
   <div
     className="flex flex-col justify-between items-center lg:flex-row-reverse gap-10 lg:gap-4 lg:min-h-screen my-20 lg:my-0"
   >
-    <div
+    <figure
       className="w-96 md:px-0 px-8"
       id="illustration"
     >
@@ -15,8 +15,8 @@ exports[`renders correctly 1`] = `
         alt="hero illustration"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height={40}
-        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
@@ -28,7 +28,7 @@ exports[`renders correctly 1`] = `
         }
         width={40}
       />
-    </div>
+    </figure>
     <div
       className="flex flex-col justify-start lg:w-1/2 lg:gap-8 gap-4"
       id="text"

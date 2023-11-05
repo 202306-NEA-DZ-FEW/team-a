@@ -13,6 +13,7 @@ function BlogCard({ title, imageUrl, date, description }) {
           alt='Blog Image'
           height={400}
           width={400}
+          priority
         />
         <span className='absolute left-1 bottom-1 text-white bg-primary px-2 py-1'>
           {date}

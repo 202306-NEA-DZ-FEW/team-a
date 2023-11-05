@@ -1,24 +1,48 @@
+import dynamic from "next/dynamic";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import BlogsSection from "@/components/LandingPage/BlogsSection/BlogsSection";
+import BlogsSectionPlaceholder from "@/components/LandingPage/BlogsSection/BlogsSectionPlaceholder";
 import CausesSection from "@/components/LandingPage/CausesSection";
-import HeroSection from "@/components/LandingPage/HeroSection";
-import OurPartnersSection from "@/components/LandingPage/OurPartnersSection";
-import PopularItemsSection from "@/components/LandingPage/PopularItemsSection";
+import HeroSectionPlaceholder from "@/components/LandingPage/HeroSection/HeroSectionPlaceholder";
+import PopularItemsSectionPlaceholder from "@/components/LandingPage/PopularItemsSection/PopularItemsSectionPlaceholder";
 import StatisticsSection from "@/components/LandingPage/StatisticsSection";
+
+const DynamicHeroSection = dynamic(
+  () => import("@/components/LandingPage/HeroSection"),
+  {
+    loading: () => <HeroSectionPlaceholder />,
+  }
+);
+const DynamicPopularItemsSection = dynamic(
+  () => import("@/components/LandingPage/PopularItemsSection"),
+  {
+    loading: () => <PopularItemsSectionPlaceholder />,
+  }
+);
+const DynamicBlogsSection = dynamic(
+  () => import("@/components/LandingPage/BlogsSection/BlogsSection"),
+  {
+    loading: () => <BlogsSectionPlaceholder />,
+  }
+);
+const DynamicOurPartnersSection = dynamic(
+  () => import("@/components/LandingPage/OurPartnersSection"),
+  {
+    loading: () => <BlogsSectionPlaceholder />,
+  }
+);
 
 export default function HomePage(props) {
   const { initialLocale } = props._nextI18Next;
 
   return (
     <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
-      {/* <p className='text-3xl font-futuraBlack'>{t("test")}</p> */}
-      <HeroSection />
+      <DynamicHeroSection />
       <CausesSection />
       <StatisticsSection />
-      <PopularItemsSection />
-      <BlogsSection />
-      <OurPartnersSection />
+      <DynamicPopularItemsSection />
+      <DynamicBlogsSection />
+      <DynamicOurPartnersSection />
     </main>
   );
 }
@@ -27,7 +51,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common", "landingPage"])),
-      // Will be passed to the page component as props
     },
   };
 }
