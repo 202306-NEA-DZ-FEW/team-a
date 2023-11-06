@@ -12,10 +12,12 @@ exports[`renders correctly 1`] = `
       className="w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1"
       data-nimg="1"
       decoding="async"
+      fetchpriority="high"
       height={400}
       onError={[Function]}
       onLoad={[Function]}
-      src=""
+      src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75"
+      srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 2x"
       style={
         Object {
           "color": "transparent",
@@ -25,23 +27,31 @@ exports[`renders correctly 1`] = `
     />
     <span
       className="absolute left-1 bottom-1 text-white bg-primary px-2 py-1"
-    />
+    >
+      2023-10-28
+    </span>
   </div>
   <div
     className="p-3 gap-1 flex flex-col"
   >
     <h2
       className="text-lg font-bold mb-2"
-    />
+      title="title"
+    >
+      Mocked Truncate String
+    </h2>
     <p
       className="text-sm font-light mb-4"
-    />
+      title="description"
+    >
+      Mocked Truncate String
+    </p>
     <div
       className="flex justify-end"
     >
       <a
         className="text-secondary/[.8] hover:text-secondary font-bold"
-        href="/blogs"
+        href="/blogs/1"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}

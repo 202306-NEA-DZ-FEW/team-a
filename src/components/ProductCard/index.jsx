@@ -7,14 +7,18 @@ function ProductCard({ title, location, listingType, imageUrl, category }) {
   const locationName = getLocationName(location);
   const truncatedCategory = truncateString(category, 15);
   const truncateState = truncateString(locationName, 6);
+
   return (
     <div className='card rounded-3xl group'>
       <figure className='relative h-64 w-52 rounded-3xl'>
         <Image
           src={imageUrl}
           alt={title}
-          fill
-          priority
+          width={200}
+          height={200}
+          placeholder='blur'
+          blurDataURL='public/images/blur.jpg'
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           className='group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover w-full h-full duration-500'
         />
       </figure>

@@ -96,14 +96,18 @@ exports[`renders correctly 1`] = `
                   className="object-cover w-full h-full"
                   data-nimg="fill"
                   decoding="async"
-                  fetchpriority="high"
+                  loading="lazy"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
                       "bottom": 0,
                       "color": "transparent",
                       "height": "100%",
@@ -148,14 +152,18 @@ exports[`renders correctly 1`] = `
                   className="object-cover w-full h-full"
                   data-nimg="fill"
                   decoding="async"
-                  fetchpriority="high"
+                  loading="lazy"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
                       "bottom": 0,
                       "color": "transparent",
                       "height": "100%",
@@ -201,14 +209,18 @@ exports[`renders correctly 1`] = `
                   className="object-cover w-full h-full"
                   data-nimg="fill"
                   decoding="async"
-                  fetchpriority="high"
+                  loading="lazy"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
                       "bottom": 0,
                       "color": "transparent",
                       "height": "100%",
@@ -254,14 +266,18 @@ exports[`renders correctly 1`] = `
                   className="object-cover w-full h-full"
                   data-nimg="fill"
                   decoding="async"
-                  fetchpriority="high"
+                  loading="lazy"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
                       "bottom": 0,
                       "color": "transparent",
                       "height": "100%",
@@ -306,14 +322,18 @@ exports[`renders correctly 1`] = `
                   className="object-cover w-full h-full"
                   data-nimg="fill"
                   decoding="async"
-                  fetchpriority="high"
+                  loading="lazy"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
                       "bottom": 0,
                       "color": "transparent",
                       "height": "100%",
@@ -358,14 +378,18 @@ exports[`renders correctly 1`] = `
                   className="object-cover w-full h-full"
                   data-nimg="fill"
                   decoding="async"
-                  fetchpriority="high"
+                  loading="lazy"
                   onError={[Function]}
                   onLoad={[Function]}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
                       "bottom": 0,
                       "color": "transparent",
                       "height": "100%",
@@ -447,15 +471,19 @@ exports[`renders correctly 1`] = `
       className="w-full h-full object-cover lg:rounded-tl-3xl lg:lg:rounded-bl-3xl"
       data-nimg="1"
       decoding="async"
-      fetchpriority="high"
       height={500}
       id="productImg"
+      loading="lazy"
       onError={[Function]}
       onLoad={[Function]}
       src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75"
       srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 2x"
       style={
         Object {
+          "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+          "backgroundPosition": "50% 50%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
           "color": "transparent",
         }
       }
@@ -472,8 +500,8 @@ exports[`renders correctly 1`] = `
           className="ring-4 hover:cursor-pointer h-full w-full rounded-xl object-cover"
           data-nimg="1"
           decoding="async"
-          fetchpriority="high"
           height={100}
+          loading="lazy"
           onClick={[Function]}
           onError={[Function]}
           onLoad={[Function]}
@@ -481,6 +509,10 @@ exports[`renders correctly 1`] = `
           srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 2x"
           style={
             Object {
+              "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
               "color": "transparent",
             }
           }
@@ -495,8 +527,8 @@ exports[`renders correctly 1`] = `
           className="opacity-50 hover:cursor-pointer h-full w-full rounded-xl object-cover"
           data-nimg="1"
           decoding="async"
-          fetchpriority="high"
           height={100}
+          loading="lazy"
           onClick={[Function]}
           onError={[Function]}
           onLoad={[Function]}
@@ -504,6 +536,10 @@ exports[`renders correctly 1`] = `
           srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 2x"
           style={
             Object {
+              "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
               "color": "transparent",
             }
           }
