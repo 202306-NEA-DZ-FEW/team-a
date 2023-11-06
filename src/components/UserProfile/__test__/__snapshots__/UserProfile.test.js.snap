@@ -201,7 +201,7 @@ exports[`renders correctly 1`] = `
             </h1>
             <div>
               <div
-                className="label"
+                className="label ml-2"
               >
                 <label
                   className="label-text"
@@ -214,7 +214,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full"
+                className="input bg-white input-primary w-full rounded-full border-opacity-25"
                 id="name"
                 name="name"
                 onBlur={[Function]}
@@ -226,7 +226,7 @@ exports[`renders correctly 1`] = `
             </div>
             <div>
               <div
-                className="label"
+                className="label ml-2"
               >
                 <label
                   className="label-text"
@@ -239,7 +239,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full"
+                className="input bg-white input-primary w-full rounded-full border-opacity-25"
                 id="email"
                 name="email"
                 onBlur={[Function]}
@@ -251,7 +251,7 @@ exports[`renders correctly 1`] = `
             </div>
             <div>
               <div
-                className="label"
+                className="label ml-2"
               >
                 <label
                   className="label-text"
@@ -264,7 +264,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full"
+                className="input bg-white input-primary w-full rounded-full border-opacity-25"
                 id="phone"
                 name="phone"
                 onBlur={[Function]}

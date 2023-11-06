@@ -1,5 +1,6 @@
 {
-  "signIn": "Se connecter",
+  "signIn": "Connexion à votre compte",
+  "signInButton": "Connexion",
   "emailLabel": "Email",
   "emailPlaceholder": "Entrez votre email",
   "emailRequired": "Email requis",
@@ -12,7 +13,11 @@
   "noAccount": "Vous n’avez pas de compte ?",
   "signUp": "Inscrivez-vous",
   "passwordForgotten": "Mot de passe oublié?",
-  "signUpMethod": "S'inscrire avec",
+  "signUpMethod": "Connexion via les réseaux sociaux",
   "sendMeResetLink": "Envoyez-moi le lien de réinitialisation",
-  "EnterYourEmail": "Entrez votre adresse e-mail"
+  "EnterYourEmail": "Entrez votre adresse e-mail",
+"loginDescription": "Rejoignez notre communauté de bonté et de compassion. Inscrivez-vous aujourd'hui pour commencer à partager, prendre soin et avoir un impact significatif dans la vie de ceux dans le besoin. Ensemble, nous pouvons créer un monde de chaleur, d'unité et d'espoir, un élément à la fois.",
+"loginTitle":"Nouveau ici ?",
+"divider":"OU"
+
 }

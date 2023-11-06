@@ -36,7 +36,10 @@ function ResetForm({ t }) {
             error={resetPassForm.errors.resetEmail}
             touched={resetPassForm.touched.resetEmail}
           />
-          <button type='submit' className='btn btn-sm btn-info my-4'>
+          <button
+            type='submit'
+            className='btn btn-md btn-info w-full self-center my-8 rounded-full'
+          >
             {t("signIn:sendMeResetLink")}
           </button>
         </form>

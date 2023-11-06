@@ -28,14 +28,14 @@ function Checkbox({
           {label}
         </label>
       </div>
-      <label className='label'>
+      {/* <label className='label'>
         <span className='label-text-alt'></span>
         <span
           className={`label-text-alt ${touched && error ? "text-error" : ""}`}
         >
           {touched && error ? error : ""}
         </span>
-      </label>
+      </label> */}
     </div>
   );
 }

@@ -288,7 +288,7 @@ exports[`renders correctly 1`] = `
             </div>
             <div>
               <div
-                className="label"
+                className="label ml-2"
               >
                 <label
                   className="label-text"
@@ -301,7 +301,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full"
+                className="input bg-white input-primary w-full rounded-full border-opacity-25"
                 id="title"
                 name="title"
                 onBlur={[Function]}
@@ -313,7 +313,7 @@ exports[`renders correctly 1`] = `
             </div>
             <div>
               <div
-                className="label"
+                className="label ml-2"
               >
                 <label
                   className="label-text"
@@ -326,7 +326,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full"
+                className="input bg-white input-primary w-full rounded-full border-opacity-25"
                 id="description"
                 name="description"
                 onBlur={[Function]}
@@ -1259,7 +1259,7 @@ exports[`renders correctly 1`] = `
             </div>
             <div>
               <div
-                className="label"
+                className="label ml-2"
               >
                 <label
                   className="label-text"
@@ -1272,7 +1272,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full"
+                className="input bg-white input-primary w-full rounded-full border-opacity-25"
                 id="title"
                 name="title"
                 onBlur={[Function]}
@@ -1284,7 +1284,7 @@ exports[`renders correctly 1`] = `
             </div>
             <div>
               <div
-                className="label"
+                className="label ml-2"
               >
                 <label
                   className="label-text"
@@ -1297,7 +1297,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full"
+                className="input bg-white input-primary w-full rounded-full border-opacity-25"
                 id="description"
                 name="description"
                 onBlur={[Function]}

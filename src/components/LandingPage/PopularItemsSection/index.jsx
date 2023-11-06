@@ -26,7 +26,7 @@ function PopularItemsSection({ items }) {
               listingType={t(`addItem:${item.listingType}`)}
               category={t(`categories:${item.category}`)}
               location={t(`states:${item.location}`)}
-              imageUrl={item.images[0]}
+              imageUrl={item.imageUrl}
             />
           </Link>
         ))}
