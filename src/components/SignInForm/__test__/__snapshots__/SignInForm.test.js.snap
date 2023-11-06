@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="flex flex-col w-full flex-1 md:px-28 px-10"
+  className="flex flex-col w-full px-20 lg:px-14"
 >
   <h1
     className="text-3xl font-bold text-center md:mt-0 mt-10"
   />
   <form
-    className="flex flex-col gap-2 md:my-4"
+    className="flex flex-col gap-2"
     onSubmit={[Function]}
   >
     <div>
@@ -80,56 +80,6 @@ exports[`renders correctly 1`] = `
         className="btn btn-link btn-sm p-0 block capitalize md:mb-0 mb-4"
         onClick={[Function]}
       />
-      <dialog
-        className="modal"
-        id="my_modal_3"
-      >
-        <div
-          className="modal-box"
-        >
-          <h3
-            className="font-bold text-lg"
-          />
-          <form
-            onSubmit={[Function]}
-          >
-            <div>
-              <div
-                className="label ml-2"
-              >
-                <label
-                  className="label-text"
-                  htmlFor="resetEmail"
-                />
-                <label
-                  className="label-text-alt "
-                />
-              </div>
-              <input
-                className="input bg-white input-primary w-full rounded-full border-opacity-25"
-                id="resetEmail"
-                name="resetEmail"
-                onBlur={[Function]}
-                onChange={[Function]}
-                type="email"
-                value=""
-              />
-            </div>
-            <button
-              className="btn btn-md btn-info w-full self-center my-8 rounded-full"
-              type="submit"
-            />
-          </form>
-        </div>
-        <form
-          className="modal-backdrop"
-          method="dialog"
-        >
-          <button>
-            close
-          </button>
-        </form>
-      </dialog>
     </div>
     <button
       className="btn btn-primary w-full self-center rounded-3xl text-white md:mb-0 mb-8"
@@ -254,5 +204,55 @@ exports[`renders correctly 1`] = `
       onTouchStart={[Function]}
     />
   </div>
+  <dialog
+    className="modal"
+    id="my_modal_3"
+  >
+    <div
+      className="modal-box"
+    >
+      <h3
+        className="font-bold text-lg"
+      />
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <div
+            className="label ml-2"
+          >
+            <label
+              className="label-text"
+              htmlFor="resetEmail"
+            />
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <input
+            className="input bg-white input-primary w-full rounded-full border-opacity-25"
+            id="resetEmail"
+            name="resetEmail"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="email"
+            value=""
+          />
+        </div>
+        <button
+          className="btn btn-md btn-info w-full self-center my-8 rounded-full"
+          type="submit"
+        />
+      </form>
+    </div>
+    <form
+      className="modal-backdrop"
+      method="dialog"
+    >
+      <button>
+        close
+      </button>
+    </form>
+  </dialog>
 </section>
 `;

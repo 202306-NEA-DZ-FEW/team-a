@@ -34,15 +34,12 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex flex-col w-full flex-1 md:px-28 px-10'>
+    <section className='flex flex-col w-full px-20 lg:px-14'>
       <h1 className='text-3xl font-bold text-center md:mt-0 mt-10'>
         {t("signIn:signIn")}
       </h1>
       {/* Form Section */}
-      <form
-        className='flex flex-col gap-2 md:my-4'
-        onSubmit={formik.handleSubmit}
-      >
+      <form className='flex flex-col gap-2' onSubmit={formik.handleSubmit}>
         <Input
           name='email'
           type='email'
@@ -82,8 +79,6 @@ function SignInForm({ t }) {
           >
             {t("signIn:passwordForgotten")}
           </button>
-          {/* Password Reset Modal */}
-          <ResetForm t={t} />
         </div>
         {/* Login Button */}
         <button
@@ -127,6 +122,8 @@ function SignInForm({ t }) {
           {t("signIn:signUp")}
         </Link>
       </div>
+      {/* Password Reset Modal */}
+      <ResetForm t={t} />
     </section>
   );
 }

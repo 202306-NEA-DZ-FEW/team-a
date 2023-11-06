@@ -11,22 +11,20 @@ function SignInPage({ t, _nextI18Next }) {
   return (
     <AuthPagesLayout>
       <main
-        className='md:flex md:justify-between md:items-center min-h-screen '
+        className='flex justify-between md:items-center min-h-screen'
         dir={initialLocale === "ar" ? "rtl" : "ltr"}
       >
         <SignInForm t={t} />
-        <div className='gap-4 lg:flex flex-col md:w-[50%] md:min-h-screen items-center justify-center hidden'>
-          <figure className='w-full min-h-screen relative'>
-            <Image
-              src='/images/sign_in.svg'
-              priority
-              alt='test'
-              width={1080}
-              height={1080}
-              className='object-cover'
-            />
-          </figure>
-        </div>
+        <figure className='hidden lg:block md:w-[40%] xl:w-[50%] h-screen relative flex-shrink-0'>
+          <Image
+            src='/images/sign_in.svg'
+            priority
+            alt='test'
+            width={1080}
+            height={1080}
+            className='object-cover w-full h-full'
+          />
+        </figure>
       </main>
     </AuthPagesLayout>
   );
