@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BiLogOut } from "react-icons/bi";
@@ -10,13 +9,7 @@ function MobileMenu({ user, t, currentPath, logOut }) {
     setopen(false);
   };
   return (
-    <motion.nav
-      initial={{ y: 0 }}
-      animate={{ y: 0 }}
-      exit={{ y: 1 }}
-      transition={{ delay: 2, ease: [0.22, 1, 0.36, 1] }}
-      className='lg:hidden no-scrollbar navbar-end z-50 no-scrollbar'
-    >
+    <nav className='lg:hidden no-scrollbar navbar-end z-50 no-scrollbar'>
       <button
         onClick={() => setopen(!open)}
         className='z-50 justify-center px-3 py-2 text-sm font-semibold btn-circle btn-ghost'
@@ -32,7 +25,7 @@ function MobileMenu({ user, t, currentPath, logOut }) {
       <div
         className={`${
           open ? "flex" : "hidden"
-        } flex-col z-40 fixed p-20 justify-center w-screen h-screen bg-neutral top-0 left-0`}
+        } flex-col z-40 fixed justify-center w-screen h-screen bg-neutral top-0 left-0`}
       >
         <div className='w-full flex justify-center gap-4 items-center mt-10 '>
           <Link
@@ -63,7 +56,7 @@ function MobileMenu({ user, t, currentPath, logOut }) {
         {user && (
           <Link
             onClick={handleClick}
-            className='p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
+            className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
             href='/'
           >
             {t("common:navbar:dashboard")}
@@ -71,28 +64,28 @@ function MobileMenu({ user, t, currentPath, logOut }) {
         )}
         <Link
           onClick={handleClick}
-          className='p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
+          className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/'
         >
           {t("common:navbar:home")}
         </Link>
         <Link
           onClick={handleClick}
-          className='p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
+          className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/about'
         >
           {t("common:navbar:about")}
         </Link>
         <Link
           onClick={handleClick}
-          className='p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
+          className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/products'
         >
           {t("common:navbar:products")}
         </Link>
         <Link
           onClick={handleClick}
-          className='p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
+          className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/blogs'
         >
           {t("common:navbar:blogs")}
@@ -101,7 +94,7 @@ function MobileMenu({ user, t, currentPath, logOut }) {
           <Link
             href='/auth/sign-in'
             onClick={handleClick}
-            className='btn mt-10 btn-active rounded-3xl hover:px-4 transition-all duration-500 normal-case font-normal tracking-wider'
+            className='btn mt-10 btn-active rounded-3xl normal-case font-normal tracking-wider w-[80%] self-center'
           >
             Login
           </Link>
@@ -109,14 +102,14 @@ function MobileMenu({ user, t, currentPath, logOut }) {
         {user && (
           <button
             onClick={logOut}
-            className='btn text-white text-xl normal-case font-light btn-ghost'
+            className='btn text-white text-xl normal-case font-light btn-ghost tracking-wider w-[80%] self-center'
           >
             <BiLogOut size={30} />
             Logout
           </button>
         )}
       </div>
-    </motion.nav>
+    </nav>
   );
 }
 

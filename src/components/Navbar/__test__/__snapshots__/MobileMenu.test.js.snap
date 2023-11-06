@@ -3,11 +3,6 @@
 exports[`it renders correctly 1`] = `
 <nav
   className="lg:hidden no-scrollbar navbar-end z-50 no-scrollbar"
-  style={
-    Object {
-      "transform": "none",
-    }
-  }
 >
   <button
     className="z-50 justify-center px-3 py-2 text-sm font-semibold btn-circle btn-ghost"
@@ -37,7 +32,7 @@ exports[`it renders correctly 1`] = `
     </svg>
   </button>
   <div
-    className="hidden flex-col z-40 fixed p-20 justify-center w-screen h-screen bg-neutral top-0 left-0"
+    className="hidden flex-col z-40 fixed justify-center w-screen h-screen bg-neutral top-0 left-0"
   >
     <div
       className="w-full flex justify-center gap-4 items-center mt-10 "
@@ -77,42 +72,42 @@ exports[`it renders correctly 1`] = `
       </a>
     </div>
     <a
-      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     />
     <a
-      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     />
     <a
-      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
       href="/about"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     />
     <a
-      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
       href="/products"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     />
     <a
-      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
       href="/blogs"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     />
     <button
-      className="btn text-white text-xl normal-case font-light btn-ghost"
+      className="btn text-white text-xl normal-case font-light btn-ghost tracking-wider w-[80%] self-center"
     >
       <svg
         fill="currentColor"
