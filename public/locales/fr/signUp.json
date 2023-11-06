@@ -1,6 +1,6 @@
 {
   "signUp": "Inscrivez votre compte",
-  "signUpButton":"Inscrivez-vous",
+  "signUpButton": "Inscrivez-vous",
   "nameLabel": "Nom",
   "namePlaceholder": "Entrer votre nom complet",
   "nameRequired": "Le nom est requis",
@@ -24,6 +24,5 @@
   "locationLabel": "Wilaya",
   "locationRequired": "L'emplacement est requis",
   "signUpMethod": "Inscrivez-vous en utilisant les réseaux sociaux",
-  "divider":"OU"
-
+  "divider": "OU"
 }
