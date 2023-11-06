@@ -9,6 +9,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["200", "300", "500", "700", "900"],
   fallback: ["Poppins", "sans-serif"],
+  preload: true,
 });
 
 export default function Layout({ children, initialLocale }) {
