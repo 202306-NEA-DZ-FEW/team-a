@@ -10,9 +10,9 @@ function LanguageFilterMenu({ currentPath }) {
   }
   return (
     <>
-      <Menu as='div' className='text-left hidden lg:block mr-1'>
+      <Menu as='div' className='text-left hidden lg:block'>
         <div>
-          <Menu.Button className='w-full justify-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 btn-circle btn-ghost'>
+          <Menu.Button className='btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost'>
             <TbLanguage className='w-6 h-6' />
           </Menu.Button>
         </div>

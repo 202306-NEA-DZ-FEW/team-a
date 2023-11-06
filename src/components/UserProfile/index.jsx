@@ -6,11 +6,14 @@ import { BsFillPencilFill, BsImageFill } from "react-icons/bs";
 
 import useImageUpload from "@/lib/useImageUpload";
 
+import { useAuth } from "@/context/AuthProvider";
+
 import ImageSpinner from "./ImageSpinner";
 import UserProfileEditForm from "./UserProfileEditForm";
 
 function UserProfile({ userData }) {
   const [profileData, setProfileData] = useState(userData);
+  const { setUser } = useAuth();
   const { i18n, t } = useTranslation();
   const loaction =
     userData.location === "1- Adrar"
@@ -23,6 +26,7 @@ function UserProfile({ userData }) {
     const imageFile = e.target.files[0];
     const downloadURL = await updateImage(profileData, imageFile);
     setSelectedImage(downloadURL);
+    setUser({ ...userData, photoURL: downloadURL });
   };
 
   const handleUpdateProfile = (newUserData) => {

@@ -1,45 +1,142 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it renders correctly 1`] = `
-<div
-  className="text-left block lg:hidden"
-  data-headlessui-state=""
+<nav
+  className="lg:hidden no-scrollbar navbar-end z-50 no-scrollbar"
+  style={
+    Object {
+      "transform": "none",
+    }
+  }
 >
-  <div>
-    <button
-      aria-expanded={false}
-      aria-haspopup="menu"
-      className="w-full justify-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 btn-circle btn-ghost"
-      data-headlessui-state=""
-      id="headlessui-menu-button-:r0:"
+  <button
+    className="z-50 justify-center px-3 py-2 text-sm font-semibold btn-circle btn-ghost"
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className=" w-6 h-6"
+      fill="none"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="2"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4 6h16M4 12h16m-7 6h7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </button>
+  <div
+    className="hidden flex-col z-40 fixed p-20 justify-center w-screen h-screen bg-neutral top-0 left-0"
+  >
+    <div
+      className="w-full flex justify-center gap-4 items-center mt-10 "
+    >
+      <a
+        className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <span
+          className="fi fi-gb rounded text-4xl"
+        />
+      </a>
+      <a
+        className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <span
+          className="fi fi-fr rounded text-4xl"
+        />
+      </a>
+      <a
+        className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <span
+          className="fi fi-dz rounded text-4xl"
+        />
+      </a>
+    </div>
+    <a
+      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      href="/"
       onClick={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      type="button"
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    />
+    <a
+      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    />
+    <a
+      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    />
+    <a
+      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      href="/products"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    />
+    <a
+      className="p-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+      href="/blogs"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    />
+    <button
+      className="btn text-white text-xl normal-case font-light btn-ghost"
     >
       <svg
-        aria-hidden="true"
-        className="w-6 h-6"
-        fill="none"
-        height="1em"
+        fill="currentColor"
+        height={30}
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth="0"
         style={
           Object {
             "color": undefined,
           }
         }
         viewBox="0 0 24 24"
-        width="1em"
+        width={30}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M4 6h16M4 12h16m-7 6h7"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          d="M16 13v-2H7V8l-5 4 5 4v-3z"
+        />
+        <path
+          d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"
         />
       </svg>
+      Logout
     </button>
   </div>
-</div>
+</nav>
 `;
