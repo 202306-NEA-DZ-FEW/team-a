@@ -257,7 +257,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <select
-          className="select select-primary bg-white w-full"
+          className="select select-primary bg-white w-full border-opacity-25 rounded-3xl"
           id="category"
           onChange={[Function]}
         >
@@ -568,7 +568,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <select
-          className="select select-primary bg-white w-full"
+          className="select select-primary bg-white w-full border-opacity-25 rounded-3xl"
           defaultValue="djelfa"
           id="location"
           onChange={[Function]}

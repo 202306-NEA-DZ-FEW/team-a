@@ -21,7 +21,7 @@ function SelectInput({
       </div>
       <select
         id={name}
-        className='select select-primary bg-white w-full'
+        className='select select-primary bg-white w-full border-opacity-25 rounded-3xl'
         onChange={handleChange}
         defaultValue={value}
       >
