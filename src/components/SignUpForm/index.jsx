@@ -51,7 +51,7 @@ function SignUpForm({ states, t }) {
   return (
     <section className='md:max-w-lg mx-auto'>
       <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
-        <h1 className='text-4xl font-light text-center capitalize mb-4'>
+        <h1 className='text-3xl font-bold text-center capitalize mb-4'>
           {t("signUp:signUp")}
         </h1>
         <Input
