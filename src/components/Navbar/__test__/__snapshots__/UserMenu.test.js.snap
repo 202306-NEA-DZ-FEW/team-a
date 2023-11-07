@@ -2,50 +2,45 @@
 
 exports[`it renders correctly 1`] = `
 <div
-  className="dropdown dropdown-end flex cursor-pointer"
-  id="menu"
+  className="relative hidden lg:block"
+  data-headlessui-state=""
 >
-  <div
-    className="avatar"
-    tabIndex={0}
+  <button
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
+    data-headlessui-state=""
+    id="headlessui-menu-button-:r0:"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    type="button"
   >
     <div
-      className="w-8 rounded-full ring ring-primary hover:ring-offset-1 transition-all duration-500 ring-offset-base-100 ring-offset-2"
+      className="avatar"
     >
-      <img
-        alt="user"
-        data-nimg="1"
-        decoding="async"
-        height={100}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
+      <div
+        className="w-8 rounded-full ring ring-primary hover:ring-offset-1 transition-all duration-500 ring-offset-base-100 ring-offset-2"
+      >
+        <img
+          alt="user"
+          data-nimg="1"
+          decoding="async"
+          height={100}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
           }
-        }
-        width={100}
-      />
+          width={100}
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="mt-12 z-[1] p-2 shadow-xl menu menu-sm dropdown-content bg-white rounded-box w-52"
-    tabIndex={0}
-  >
-    <a
-      className="btn btn-sm btn-ghost normal-case font-light w-full"
-      href="/dashboard?user="
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
-    />
-    <button
-      className="btn btn-sm btn-ghost normal-case font-light w-full"
-      onClick={[MockFunction]}
-    />
-  </div>
+  </button>
 </div>
 `;
