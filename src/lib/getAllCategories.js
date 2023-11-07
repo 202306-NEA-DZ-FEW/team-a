@@ -3,6 +3,7 @@ export default function getAllCategories(t) {
     "babyItems",
     "blanketsAndBedding",
     "books",
+    "clothes",
     "accessories",
     "craftSupplies",
     "decorAndArtwork",
@@ -21,6 +22,8 @@ export default function getAllCategories(t) {
   const categoryImages = {
     babyItems:
       "https://images.unsplash.com/photo-1567822781105-a80d1b601697?auto=format&fit=crop&q=80&w=1888&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    clothes:
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     blanketsAndBedding:
       "https://images.unsplash.com/photo-1674475761156-9c6c149b4d02?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     books:

@@ -1,19 +1,19 @@
 {
+  "accessories": "Accessories",
+  "babyItems": "Baby Items",
+  "blanketsAndBedding": "Blankets and Bedding",
   "books": "Books",
   "clothes": "Clothes",
+  "craftSupplies": "Craft Supplies",
+  "decorAndArtwork": "Decor & Artwork",
+  "electronics": "Electronics",
   "foodAndNonPerishables": "Food and canned goods",
-  "toysAndGames": "Toys",
   "householdItems": "Household Items",
-  "schoolAndEducationalSupplies": "Educational Supplies and Materials",
   "hygieneProducts": "Personal Hygiene Products",
   "medicalSupplies": "Medical Devices",
   "petSupplies": "Pet Supplies",
-  "electronics": "Electronics",
-  "accessories": "Accessories",
+  "schoolAndEducationalSupplies": "Educational Supplies and Materials",
   "shoes": "Shoes",
-  "babyItems": "Baby Items",
   "sportsEquipment": "Sports Equipment",
-  "craftSupplies": "Craft Supplies",
-  "blanketsAndBedding": "Blankets and Bedding",
-  "decorAndArtwork": "Decor & Artwork"
+  "toysAndGames": "Toys"
 }
