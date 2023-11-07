@@ -1,19 +1,19 @@
 {
+  "accessories": "إكسسوارات",
+  "babyItems": "لوازم الأطفال",
+  "blanketsAndBedding": "أفرشة و أغطية",
   "books": "كتب",
   "clothes": "ملابس",
+  "craftSupplies": "مستلزمات الأشغال اليدوية",
+  "decorAndArtwork": "ديكور و أشغال فنية",
+  "electronics": "أجهزة إلكترونية",
   "foodAndNonPerishables": "الطعام والمنتجات المعلبة",
-  "toysAndGames": "ألعاب",
   "householdItems": "أدوات منزلية",
-  "schoolAndEducationalSupplies": "لوازم مدرسية ومواد تعليمية",
   "hygieneProducts": "منتجات النظافة الشخصية",
   "medicalSupplies": "مستلزمات طبية و شبه طبية",
   "petSupplies": "مستلزمات الحيوانات الأليفة",
-  "electronics": "أجهزة إلكترونية",
-  "accessories": "إكسسوارات",
+  "schoolAndEducationalSupplies": "لوازم مدرسية ومواد تعليمية",
   "shoes": "أحذية",
-  "babyItems": "لوازم الأطفال",
   "sportsEquipment": "معدات الرياضة",
-  "craftSupplies": "مستلزمات الأشغال اليدوية",
-  "blanketsAndBedding": "أفرشة و أغطية",
-  "decorAndArtwork": "ديكور و أشغال فنية"
+  "toysAndGames": "ألعاب"
 }
