@@ -15,13 +15,13 @@ function SignInPage({ t, _nextI18Next }) {
         dir={initialLocale === "ar" ? "rtl" : "ltr"}
       >
         <SignInForm t={t} />
-        <figure className='hidden lg:block md:w-[40%] xl:w-[50%] h-screen relative flex-shrink-0'>
+        <figure className='hidden lg:block md:w-[50%] xl:w-[50%] relative flex-shrink-0'>
           <Image
-            src='/images/sign_in.svg'
+            src='/images/signIn.svg'
             priority
             alt='test'
-            width={1080}
-            height={1080}
+            width={2000}
+            height={2000}
             className='object-cover w-full h-full'
           />
         </figure>

@@ -23,6 +23,6 @@
   "phoneRequired": "Phone number is required",
   "locationLabel": "Province",
   "locationRequired": "Location is required",
-  "signUpMethod": "Sign up using social networks",
+  "signUpMethod": "Sign up using",
   "divider": "OR"
 }

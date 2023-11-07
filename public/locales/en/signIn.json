@@ -13,10 +13,8 @@
   "noAccount": "Don't have an account?",
   "signUp": "Sign up",
   "passwordForgotten": "Forgot password?",
-  "signUpMethod": "Login using social networks",
-  "sendMeResetLink": "Send me reset link",
+  "signUpMethod": "Login using",
+  "sendMeResetLink": "Send a password reset link",
   "EnterYourEmail": "Enter your email",
-  "loginDescription": "Join our community of kindness and compassion. Sign up today to start sharing, caring, and making a meaningful impact in the lives of those in need. Together, we can create a world of warmth, unity, and hope, one item at a time",
-  "loginTitle": "New Here?",
   "divider": "OR"
 }

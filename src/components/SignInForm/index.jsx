@@ -34,7 +34,7 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex flex-col w-full px-20 lg:px-14'>
+    <section className='flex flex-col w-full px-14 lg:px-16'>
       <h1 className='text-3xl font-bold text-center md:mt-0 mt-10'>
         {t("signIn:signIn")}
       </h1>
@@ -92,9 +92,7 @@ function SignInForm({ t }) {
       <span className='mt-4 mb-0 divider'>{t("signIn:divider")}</span>
       {/* Social Medias Section */}
       <div>
-        <p className='text-center font-light my-4'>
-          {t("signIn:signUpMethod")}
-        </p>
+        <p className='text-center my-4'>{t("signIn:signUpMethod")}</p>
         <div className='flex gap-4 justify-center items-center md:mb-0 mb-10'>
           <button
             className='btn btn-circle btn-sm bg-white'
