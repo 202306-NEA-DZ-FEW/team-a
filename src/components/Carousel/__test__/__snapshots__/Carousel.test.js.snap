@@ -40,7 +40,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="absolute px-8 z-50 lg:bottom-12 bottom-[10%] justify-between w-full flex gap-4 lg:justify-center"
+    className="absolute px-8 z-30 lg:bottom-12 bottom-[10%] justify-between w-full flex gap-4 lg:justify-center"
   >
     <button
       className="btn btn-circle bg-white hover:bg-slate-50 border-none items-center justify-center lg:hidden lg:group-hover:flex"

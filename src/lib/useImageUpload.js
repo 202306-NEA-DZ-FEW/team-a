@@ -1,9 +1,10 @@
+import { updateProfile } from "firebase/auth";
 import { doc, updateDoc } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-import { db, storage } from "./firebase";
+import { auth, db, storage } from "./firebase";
 
 function useImageUpload() {
   const [loading, setLoading] = useState(false);
@@ -17,6 +18,11 @@ function useImageUpload() {
       try {
         await uploadBytes(storageRef, imageFile);
         const downloadURL = await getDownloadURL(storageRef);
+
+        await updateProfile(auth.currentUser, {
+          photoURL: downloadURL,
+        });
+
         const userRef = doc(db, "users", userData.uid);
         await updateDoc(userRef, {
           photoURL: downloadURL,
