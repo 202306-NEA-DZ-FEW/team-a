@@ -1,90 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navbar snapshot test 1`] = `
-<div
-  className="navbar bg-white"
+<header
+  className="no-scrollbar backdrop-blur-sm bg-white bg-opacity-40 fixed top-0 left-0 navbar gap-24 justify-between 2xl:px-32 xl:px-28 px-10 z-50"
 >
   <div
-    className="navbar-start ml-7"
+    className="lg:block navbar-start max-w-fit"
   >
     <a
+      className="font-bold btn btn-ghost normal-case text-2xl"
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     >
-      <p
-        className="font-bold text-2xl"
-      >
-        navbar.logo
-      </p>
+      navbar.logo
     </a>
   </div>
-  <div
-    className="navbar-center hidden lg:block"
-    dir="ltr"
-  >
-    <ul
-      className="menu menu-horizontal gap-2 px-1 mx-1 text-black"
-    >
-      <li>
-        <a
-          className="hover:bg-primary hover:text-white"
-          href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-        >
-          navbar.home
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:bg-primary hover:text-white"
-          href="/about"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-        >
-          navbar.about
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:bg-primary hover:text-white"
-          href="/products"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-        >
-          navbar.products
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:bg-primary hover:text-white"
-          href="/blogs"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-        >
-          navbar.blogs
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="navbar-end mr-7"
+  <nav
+    className="hidden w-full flex-1 lg:flex lg:navbar-end gap-4 lg:items-center"
   >
     <div
-      className="text-left hidden lg:block mr-1"
+      className="w-1/6 h-[2.2px] bg-black"
+    />
+    <div
+      className="lg:flex gap-4"
+      dir="ltr"
+    >
+      <a
+        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.home
+      </a>
+      <a
+        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        href="/about"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.about
+      </a>
+      <a
+        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        href="/products"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.products
+      </a>
+      <a
+        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        href="/blogs"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.blogs
+      </a>
+    </div>
+    <div
+      className="text-left hidden lg:block"
       data-headlessui-state=""
     >
       <div>
         <button
           aria-expanded={false}
           aria-haspopup="menu"
-          className="w-full justify-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 btn-circle btn-ghost"
+          className="btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
           data-headlessui-state=""
           id="headlessui-menu-button-:r0:"
           onClick={[Function]}
@@ -133,59 +121,123 @@ exports[`Navbar snapshot test 1`] = `
         </button>
       </div>
     </div>
-    <a
-      href="/auth/sign-in"
+  </nav>
+  <nav
+    className="lg:hidden no-scrollbar navbar-end z-50 no-scrollbar"
+  >
+    <button
+      className="z-50 justify-center px-3 py-2 text-sm font-semibold btn-circle btn-ghost"
       onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
     >
-      <button
-        className="btn btn-primary btn-sm hidden lg:block"
+      <svg
+        aria-hidden="true"
+        className=" w-6 h-6"
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="2"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        buttons.signIn
-      </button>
-    </a>
+        <path
+          d="M4 6h16M4 12h16m-7 6h7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
     <div
-      className="text-left block lg:hidden"
-      data-headlessui-state=""
+      className="hidden flex-col z-40 fixed justify-center w-screen h-screen bg-neutral top-0 left-0"
     >
-      <div>
-        <button
-          aria-expanded={false}
-          aria-haspopup="menu"
-          className="w-full justify-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 btn-circle btn-ghost"
-          data-headlessui-state=""
-          id="headlessui-menu-button-:r1:"
+      <div
+        className="w-full flex justify-center gap-4 items-center mt-10 "
+      >
+        <a
+          className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+          href="/"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <svg
-            aria-hidden="true"
-            className="w-6 h-6"
-            fill="none"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="2"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 6h16M4 12h16m-7 6h7"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
+          <span
+            className="fi fi-gb rounded text-4xl"
+          />
+        </a>
+        <a
+          className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span
+            className="fi fi-fr rounded text-4xl"
+          />
+        </a>
+        <a
+          className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span
+            className="fi fi-dz rounded text-4xl"
+          />
+        </a>
       </div>
+      <a
+        className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.home
+      </a>
+      <a
+        className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+        href="/about"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.about
+      </a>
+      <a
+        className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+        href="/products"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.products
+      </a>
+      <a
+        className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
+        href="/blogs"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        navbar.blogs
+      </a>
+      <a
+        className="btn mt-10 btn-active rounded-3xl normal-case font-normal tracking-wider w-[80%] self-center"
+        href="/auth/sign-in"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        Login
+      </a>
     </div>
-  </div>
-</div>
+  </nav>
+</header>
 `;

@@ -10,7 +10,7 @@ import MobileMenu from "./MobileMenu";
 import UserMenu from "./UserMenu";
 
 function Navbar() {
-  const { user, logOut } = useAuth();
+  const { user, logOut, loading } = useAuth();
   const { i18n, t } = useTranslation();
   const router = useRouter();
   const [currentPath, setCurrentPath] = useState("/");
@@ -19,59 +19,76 @@ function Navbar() {
     // Get the current path
     const currentPath = router.asPath;
     setCurrentPath(currentPath);
-  }, [router]);
+  }, [router, user]);
 
   return (
     <>
       {/* Navbar Starts Here */}
-      <div className='navbar bg-white'>
-        <div className='navbar-start ml-7'>
+      <header className='no-scrollbar backdrop-blur-sm bg-white bg-opacity-40 fixed top-0 left-0 navbar gap-24 justify-between 2xl:px-32 xl:px-28 px-10 z-50'>
+        <div className='lg:block navbar-start max-w-fit'>
           {/* Navbar Logo */}
-          <Link href='/'>
-            <p className='font-bold text-2xl'>{t("common:navbar:logo")}</p>
+          <Link
+            href='/'
+            className='font-bold btn btn-ghost normal-case text-2xl'
+          >
+            {t("common:navbar:logo")}
           </Link>
         </div>
-        <div
-          dir={i18n?.language == "ar" ? "rtl" : "ltr"}
-          className='navbar-center hidden lg:block'
-        >
+        <nav className='hidden w-full flex-1 lg:flex lg:navbar-end gap-4 lg:items-center'>
+          <div className='w-1/6 h-[2.2px] bg-black' />
           {/* Navbar Navigation Links */}
-          <ul className='menu menu-horizontal gap-2 px-1 mx-1 text-black'>
-            <li>
-              <Link className='hover:bg-primary hover:text-white' href='/'>
-                {t("common:navbar:home")}
-              </Link>
-            </li>
-            <li>
-              <Link className='hover:bg-primary hover:text-white' href='/about'>
-                {t("common:navbar:about")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                className='hover:bg-primary hover:text-white'
-                href='/products'
-              >
-                {t("common:navbar:products")}
-              </Link>
-            </li>
-            <li>
-              <Link className='hover:bg-primary hover:text-white' href='/blogs'>
-                {t("common:navbar:blogs")}
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className='navbar-end mr-7'>
-          {/* Language Filter */}
+          <div
+            dir={i18n?.language == "ar" ? "rtl" : "ltr"}
+            className='lg:flex gap-4'
+          >
+            <Link
+              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              href='/'
+            >
+              {t("common:navbar:home")}
+            </Link>
+
+            <Link
+              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              href='/about'
+            >
+              {t("common:navbar:about")}
+            </Link>
+
+            <Link
+              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              href='/products'
+            >
+              {t("common:navbar:products")}
+            </Link>
+
+            <Link
+              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              href='/blogs'
+            >
+              {t("common:navbar:blogs")}
+            </Link>
+          </div>
+          {user == null
+            ? null
+            : user && <UserMenu logOut={logOut} user={user} t={t} />}
+          {!loading && user === null ? (
+            <Link
+              href='/auth/sign-in'
+              className='btn btn-active btn-sm rounded-full hover:px-4 transition-all duration-500 normal-case font-normal tracking-wider'
+            >
+              {t("common:buttons:signIn")}
+            </Link>
+          ) : null}
           <LanguageFilterMenu currentPath={currentPath} />
-          {/* Avatar/Sign-in Button */}
-          <UserMenu user={user} logOut={logOut} t={t} />
-          {/* This is Related to Mobile View Navbar Menu */}
-          <MobileMenu user={user} t={t} currentPath={currentPath} />
-        </div>
-      </div>
-      {/* Navbar Ends Here */}
+        </nav>
+        <MobileMenu
+          user={user}
+          t={t}
+          currentPath={currentPath}
+          logOut={logOut}
+        />
+      </header>
     </>
   );
 }
