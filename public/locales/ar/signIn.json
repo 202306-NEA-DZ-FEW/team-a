@@ -1,5 +1,6 @@
 {
-  "signIn": "تسجيل الدخول",
+  "signIn": "تسجيل الدخول إلى حسابك",
+  "signInButton": "تسجيل الدخول",
   "emailLabel": "البريد الإلكتروني",
   "emailPlaceholder": "أدخل بريدك الإلكتروني",
   "emailRequired": "البريد الإلكتروني مطلوب",
@@ -14,5 +15,6 @@
   "passwordForgotten": "هل نسيت كلمة المرور؟",
   "signUpMethod": "التسجيل باستعمال",
   "sendMeResetLink": "أرسل لي رابط إعادة التعيين",
-  "EnterYourEmail": "أدخل بريدك الإلكتروني"
+  "EnterYourEmail": "أرسل رابط إعادة تعيين كلمة المرور",
+  "divider": "أو"
 }

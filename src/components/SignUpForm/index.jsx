@@ -1,6 +1,5 @@
 import { useFormik } from "formik";
-import { AiFillFacebook } from "react-icons/ai";
-import { FaGithubSquare } from "react-icons/fa";
+import { BsFacebook, BsGithub } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import * as Yup from "yup";
 
@@ -52,7 +51,7 @@ function SignUpForm({ states, t }) {
   return (
     <section className='md:max-w-lg mx-auto'>
       <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
-        <h1 className='text-3xl font-black text-center'>
+        <h1 className='text-3xl font-bold text-center capitalize mb-4'>
           {t("signUp:signUp")}
         </h1>
         <Input
@@ -122,26 +121,33 @@ function SignUpForm({ states, t }) {
         />
         <button
           type='submit'
-          className='btn btn-primary w-full md:w-1/2 md:self-center text-white mt-2'
+          className='btn btn-primary w-full rounded-3xl md:self-center text-white mt-8'
         >
-          {t("signUp:signUp")}
+          {t("signUp:signUpButton")}
         </button>
-        <p className='text-center'>{t("signUp:signUpMethod")}</p>
-        <div className='flex gap-3 justify-center items-center text-3xl text-primary'>
-          <button
-            className='btn btn-square btn-sm'
-            onClick={signInWithFacebook}
-          >
-            <AiFillFacebook className='text-3xl text-blue-600' />
-          </button>
-          <button onClick={signInWithGoogle} className='btn btn-square btn-sm'>
-            <FcGoogle className='text-3xl text-primary' />
-          </button>
-          <button onClick={signInWithGithub} className='btn btn-square btn-sm'>
-            <FaGithubSquare className='text-3xl text-gray-700' />
-          </button>
-        </div>
       </form>
+      <span className='mt-8 divider'>{t("signUp:divider")}</span>
+      <p className='text-center mb-4'>{t("signUp:signUpMethod")}</p>
+      <div className='flex gap-4 justify-center items-center text-3xl text-primary'>
+        <button
+          className='btn btn-circle btn-sm bg-white'
+          onClick={signInWithFacebook}
+        >
+          <BsFacebook className='text-3xl text-blue-600' />
+        </button>
+        <button
+          onClick={signInWithGoogle}
+          className='btn btn-circle btn-sm bg-white'
+        >
+          <FcGoogle className='text-3xl text-primary' />
+        </button>
+        <button
+          onClick={signInWithGithub}
+          className='btn btn-circle btn-sm bg-white'
+        >
+          <BsGithub className='text-3xl text-gray-700' />
+        </button>
+      </div>
     </section>
   );
 }

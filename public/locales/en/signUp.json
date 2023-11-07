@@ -1,5 +1,6 @@
 {
-  "signUp": "Sign up",
+  "signUp": "Sign-up an account",
+  "signUpButton": "Sign Up",
   "nameLabel": "Name",
   "namePlaceholder": "Enter your full name",
   "nameRequired": "Name is required",
@@ -22,5 +23,6 @@
   "phoneRequired": "Phone number is required",
   "locationLabel": "Province",
   "locationRequired": "Location is required",
-  "signUpMethod": "Sign up with"
+  "signUpMethod": "Sign up using",
+  "divider": "OR"
 }

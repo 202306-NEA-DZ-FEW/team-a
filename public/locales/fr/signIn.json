@@ -1,5 +1,6 @@
 {
-  "signIn": "Se connecter",
+  "signIn": "Connexion à votre compte",
+  "signInButton": "Connexion",
   "emailLabel": "Email",
   "emailPlaceholder": "Entrez votre email",
   "emailRequired": "Email requis",
@@ -12,7 +13,8 @@
   "noAccount": "Vous n’avez pas de compte ?",
   "signUp": "Inscrivez-vous",
   "passwordForgotten": "Mot de passe oublié?",
-  "signUpMethod": "S'inscrire avec",
-  "sendMeResetLink": "Envoyez-moi le lien de réinitialisation",
-  "EnterYourEmail": "Entrez votre adresse e-mail"
+  "signUpMethod": "Connexion via",
+  "sendMeResetLink": "Envoyer un lien de réinitialisation",
+  "EnterYourEmail": "Entrez votre adresse e-mail",
+  "divider": "OU"
 }

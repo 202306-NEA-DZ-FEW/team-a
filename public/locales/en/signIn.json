@@ -1,5 +1,6 @@
 {
-  "signIn": "Sign in",
+  "signIn": "Login to Your Account",
+  "signInButton": "Login",
   "emailLabel": "Email",
   "emailPlaceholder": "Enter your email",
   "emailRequired": "Email is required",
@@ -12,7 +13,8 @@
   "noAccount": "Don't have an account?",
   "signUp": "Sign up",
   "passwordForgotten": "Forgot password?",
-  "signUpMethod": "Sign up with",
-  "sendMeResetLink": "Send me reset link",
-  "EnterYourEmail": "Enter your email"
+  "signUpMethod": "Login using",
+  "sendMeResetLink": "Send a password reset link",
+  "EnterYourEmail": "Enter your email",
+  "divider": "OR"
 }

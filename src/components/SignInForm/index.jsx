@@ -1,7 +1,6 @@
 import { useFormik } from "formik";
 import Link from "next/link";
-import { AiFillFacebook } from "react-icons/ai";
-import { FaGithubSquare } from "react-icons/fa";
+import { BsFacebook, BsGithub } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import * as Yup from "yup";
 
@@ -35,8 +34,11 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex flex-col w-full flex-1 px-4 gap-4'>
-      <h1 className='text-3xl font-black text-center'>{t("signIn:signIn")}</h1>
+    <section className='flex flex-col w-full px-14 lg:px-16'>
+      <h1 className='text-3xl font-bold text-center md:mt-0 mt-10'>
+        {t("signIn:signIn")}
+      </h1>
+      {/* Form Section */}
       <form className='flex flex-col gap-2' onSubmit={formik.handleSubmit}>
         <Input
           name='email'
@@ -60,54 +62,66 @@ function SignInForm({ t }) {
           error={formik.errors.password}
           touched={formik.touched.password}
         />
-        <Checkbox
-          name='save'
-          label={t("signIn:savedlogin")}
-          handleChange={formik.handleChange}
-          value={formik.values.terms}
-          handleBlur={formik.handleBlur}
-          error={formik.errors.terms}
-          touched={formik.touched.terms}
-        />
+        {/* Checkbox & Password Forgotten Section */}
+        <div className='flex flex-col md:flex-row justify-around gap-4 md:gap-8 items-center my-2'>
+          <Checkbox
+            name='save'
+            label={t("signIn:savedlogin")}
+            handleChange={formik.handleChange}
+            value={formik.values.terms}
+            handleBlur={formik.handleBlur}
+            error={formik.errors.terms}
+            touched={formik.touched.terms}
+          />
+          <button
+            onClick={() => document.getElementById("my_modal_3").showModal()}
+            className='btn btn-link btn-sm p-0 block capitalize md:mb-0 mb-4'
+          >
+            {t("signIn:passwordForgotten")}
+          </button>
+        </div>
+        {/* Login Button */}
         <button
-          className='btn btn-primary w-full text-white'
+          className='btn btn-primary w-full self-center rounded-3xl text-white md:mb-0 mb-8'
           type='submit'
           disabled={formik.isSubmitting}
         >
-          {formik.isSubmitting ? t("signIn:loading") : t("signIn:signIn")}
+          {formik.isSubmitting ? t("signIn:loading") : t("signIn:signInButton")}
         </button>
       </form>
-      <div className='text-start'>
-        {t("signIn:noAccount")}
-        <Link className='btn btn-link' href='/auth/sign-up'>
-          {t("signIn:signUp")}
-        </Link>
-        <button
-          onClick={() => document.getElementById("my_modal_3").showModal()}
-          className='btn btn-link btn-sm p-0 block'
-        >
-          {t("signIn:passwordForgotten")}
-        </button>
-        {/* reset password modal */}
-        <ResetForm t={t} />
-      </div>
-      <div className=''>
-        <p className='text-center font-black'>{t("signIn:signUpMethod")}</p>
-        <div className='flex gap-3 justify-center items-center text-3xl text-primary'>
+      <span className='mt-4 mb-0 divider'>{t("signIn:divider")}</span>
+      {/* Social Medias Section */}
+      <div>
+        <p className='text-center my-4'>{t("signIn:signUpMethod")}</p>
+        <div className='flex gap-4 justify-center items-center md:mb-0 mb-10'>
           <button
-            className='btn btn-square btn-sm'
+            className='btn btn-circle btn-sm bg-white'
             onClick={signInWithFacebook}
           >
-            <AiFillFacebook className='text-3xl text-blue-600' />
+            <BsFacebook className='text-3xl text-blue-600' />
           </button>
-          <button onClick={signInWithGoogle} className='btn btn-square btn-sm'>
-            <FcGoogle className='text-3xl text-primary' />
+          <button
+            onClick={signInWithGoogle}
+            className='btn btn-circle btn-sm bg-white'
+          >
+            <FcGoogle className='text-3xl' />
           </button>
-          <button onClick={signInWithGithub} className='btn btn-square btn-sm'>
-            <FaGithubSquare className='text-3xl text-gray-700' />
+          <button
+            onClick={signInWithGithub}
+            className='btn btn-circle btn-sm bg-white'
+          >
+            <BsGithub className='text-3xl text-gray-700' />
           </button>
         </div>
       </div>
+      <div className='mt-4 flex flex-col md:flex-row justify-center items-center gap-2'>
+        <p className='text-base'>{t("signIn:noAccount")}</p>
+        <Link href='/auth/sign-up' className='btn btn-link'>
+          {t("signIn:signUp")}
+        </Link>
+      </div>
+      {/* Password Reset Modal */}
+      <ResetForm t={t} />
     </section>
   );
 }

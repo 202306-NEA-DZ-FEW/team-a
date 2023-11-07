@@ -1,5 +1,6 @@
 {
-  "signUp": "أنشئ حساباً",
+  "signUp": "سجل حسابك",
+  "signUpButton": "أنشئ حساباً",
   "nameLabel": "الاسم",
   "namePlaceholder": "أدخل اسمك الكامل",
   "nameRequired": "الاسم مطلوب",
@@ -22,5 +23,6 @@
   "phoneRequired": "رقم الهاتف مطلوب",
   "locationLabel": "الولاية",
   "locationRequired": "الموقع مطلوب",
-  "signUpMethod": "التسجيل باستعمال"
+  "signUpMethod": "سجّل باستعمال",
+  "divider": "أو"
 }

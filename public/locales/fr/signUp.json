@@ -1,5 +1,6 @@
 {
-  "signUp": "S'inscrire",
+  "signUp": "Inscrivez votre compte",
+  "signUpButton": "Inscrivez-vous",
   "nameLabel": "Nom",
   "namePlaceholder": "Entrer votre nom complet",
   "nameRequired": "Le nom est requis",
@@ -22,5 +23,6 @@
   "phoneRequired": "Le numéro de téléphone est requis",
   "locationLabel": "Wilaya",
   "locationRequired": "L'emplacement est requis",
-  "signUpMethod": "S'inscrire avec"
+  "signUpMethod": "S'inscrire avec",
+  "divider": "OU"
 }
