@@ -53,7 +53,7 @@ function ProductsPage({ t, items, queryParams }) {
               listingType={t(`addItem:${item.listingType}`)}
               category={t(`categories:${item.category}`)}
               location={t(`states:${item.location}`)}
-              imageUrl={item.imageUrl}
+              imageUrl={item.images[0]}
             />
           </Link>
         ))}
