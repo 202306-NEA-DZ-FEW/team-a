@@ -209,7 +209,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
               {t("addItem:addItem")}
             </button>
             <Link href='/products' className='btn flex-1 md:self-center'>
-              {t("addItem:cancel")}
+              {t("common:cancel")}
             </Link>
           </div>
         </form>

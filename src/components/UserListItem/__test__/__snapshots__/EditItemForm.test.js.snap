@@ -882,7 +882,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             type="button"
           >
-            userUpadteForm.cancel
+            cancel
           </button>
         </div>
       </div>

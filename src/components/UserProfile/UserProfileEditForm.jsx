@@ -118,7 +118,7 @@ function UserProfileEditForm({ userData, onUpdate }) {
                 className='btn'
                 onClick={() => document.getElementById("my_modal_1").close()}
               >
-                {t("dashboard:userUpadteForm:cancel")}
+                {t("common:cancel")}
               </button>
             </div>
           </div>

@@ -9,20 +9,19 @@
   },
   "userUpadteForm": {
     "submit": "Soumettre",
-    "cancel": "Annuler",
     "nameLabel": "Nom",
-    "namePlaceholder": "Entrez votre nom complet",
+    "namePlaceholder": "Entrer votre nom complet",
     "nameRequired": "Le nom est requis",
-    "nameLength": "Le nom doit comporter moins de 20 caractères",
+    "nameLength": "Le nom doit comporter moins de 30 caractères",
     "emailLabel": "Email",
-    "emailPlaceholder": "Entrez votre email",
+    "emailPlaceholder": "Entrer votre email",
     "emailRequired": "L'email est requis",
     "emailValid": "Adresse e-mail invalide",
     "phoneLabel": "Téléphone",
-    "phonePlaceholder": "Entrez votre numéro de téléphone",
+    "phonePlaceholder": "Entrer votre numéro de téléphone",
     "phoneRequired": "Le numéro de téléphone est requis",
     "locationLabel": "Province",
-    "locationRequired": "L'emplacement est requis"
+    "locationRequired": "La Wilaya est requise"
   },
   "myItems": "Mes articles"
 }

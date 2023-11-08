@@ -178,7 +178,7 @@ function EditItemForm({ item, onEdit }) {
                 className='btn'
                 onClick={() => document.getElementById(item.id).close()}
               >
-                {t("dashboard:userUpadteForm:cancel")}
+                {t("common:cancel")}
               </button>
             </div>
           </div>

@@ -1,6 +1,5 @@
 {
   "dashboard": "dashboard",
-
   "userinfo": {
     "name": "Name",
     "location": "Location",
@@ -15,7 +14,6 @@
   },
   "userUpadteForm": {
     "submit": "Submit",
-    "cancel": "Cancel",
     "nameLabel": "Name",
     "namePlaceholder": "Enter your full name",
     "nameRequired": "Name is required",
