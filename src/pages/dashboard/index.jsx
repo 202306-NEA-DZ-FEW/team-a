@@ -12,7 +12,7 @@ import ProtectedLayout from "@/layout/ProtectedLayout";
 function Dashboard({ userInfo, userItems }) {
   return (
     <ProtectedLayout>
-      <Container className='flex flex-col justify-center gap-8 my-8 md:my-20 xl:my-0 xl:min-h-screen'>
+      <Container className='flex flex-col justify-center gap-8 py-20 xl:my-0 xl:min-h-screen'>
         <UserProfile userData={userInfo} />
         <UserListItems userItems={userItems} userData={userInfo} />
       </Container>
@@ -43,6 +43,8 @@ export async function getServerSideProps({ locale, query }) {
             "common",
             "dashboard",
             "states",
+            "categories",
+            "addItem",
           ])),
           userInfo,
           userItems,

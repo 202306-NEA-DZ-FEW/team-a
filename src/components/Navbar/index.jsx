@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <>
       {/* Navbar Starts Here */}
-      <header className='no-scrollbar backdrop-blur-sm bg-white bg-opacity-40 fixed top-0 left-0 navbar gap-24 justify-between 2xl:px-32 xl:px-28 px-10 z-50'>
+      <header className='no-scrollbar backdrop-blur-sm bg-white bg-opacity-40 sticky top-0 left-0 navbar gap-24 justify-between 2xl:px-32 xl:px-28 px-10 z-50'>
         <div className='lg:block navbar-start max-w-fit'>
           {/* Navbar Logo */}
           <Link

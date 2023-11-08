@@ -2,18 +2,18 @@
 
 exports[`renders correctly 1`] = `
 <dialog
-  className="modal"
+  className="modal bg-black bg-opacity-40"
   id="my_modal_1"
 >
   <div
-    className="modal-box"
+    className="modal-box bg-white transition-all duration-500 ease-in-out"
   >
     <form
       className="flex flex-col gap-4"
       onSubmit={[Function]}
     >
       <h1
-        className="text-3xl font-black text-center"
+        className="text-xl font-bold text-center"
       >
         Update your personal profile
       </h1>
@@ -408,7 +408,7 @@ exports[`renders correctly 1`] = `
         className="modal-action"
       >
         <button
-          className="btn btn-primary"
+          className="btn rounded-full normal-case tracking-wider btn-active"
           type="submit"
         >
           userUpadteForm.submit
@@ -417,7 +417,7 @@ exports[`renders correctly 1`] = `
           method="dialog"
         >
           <button
-            className="btn"
+            className="btn btn-outline rounded-full normal-case tracking-wider font-light"
             onClick={[Function]}
             type="button"
           >
