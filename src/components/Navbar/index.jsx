@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import profile from "public/images/profile.svg";
 import { useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthProvider";
@@ -14,12 +15,17 @@ function Navbar() {
   const { i18n, t } = useTranslation();
   const router = useRouter();
   const [currentPath, setCurrentPath] = useState("/");
+  const [userProfile, setUserProfile] = useState(profile);
+
+  useEffect(() => {
+    setUserProfile(user?.photoURL || profile);
+  }, [user]);
 
   useEffect(() => {
     // Get the current path
     const currentPath = router.asPath;
     setCurrentPath(currentPath);
-  }, [router, user]);
+  }, [router]);
 
   return (
     <>
@@ -71,7 +77,14 @@ function Navbar() {
           </div>
           {user == null
             ? null
-            : user && <UserMenu logOut={logOut} user={user} t={t} />}
+            : user && (
+                <UserMenu
+                  logOut={logOut}
+                  user={user}
+                  userProfile={userProfile}
+                  t={t}
+                />
+              )}
           {!loading && user === null ? (
             <Link
               href='/auth/sign-in'
