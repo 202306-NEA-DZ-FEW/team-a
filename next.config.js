@@ -13,6 +13,7 @@ module.exports = {
       "firebasestorage.googleapis.com",
       "plus.unsplash.com",
       "lh3.googleusercontent.com",
+      "img.freepik.com",
     ],
   },
 };
