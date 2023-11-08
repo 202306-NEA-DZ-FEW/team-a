@@ -3,7 +3,9 @@ import { useTranslation } from "next-i18next";
 import profile from "public/images/profile.svg";
 import { useState } from "react";
 import { BsFillPencilFill, BsImageFill } from "react-icons/bs";
+import { MdOutlineShareLocation } from "react-icons/md";
 
+import { getLocationName } from "@/lib/helpers";
 import useImageUpload from "@/lib/useImageUpload";
 
 import { useAuth } from "@/context/AuthProvider";
@@ -15,10 +17,8 @@ function UserProfile({ userData }) {
   const [profileData, setProfileData] = useState(userData);
   const { setUser } = useAuth();
   const { i18n, t } = useTranslation();
-  const loaction =
-    userData.location === "1- Adrar"
-      ? t("states:adrar")
-      : t(`states:${profileData.location}`);
+  const loaction = t(`states:${profileData.location}`);
+  const locationName = getLocationName(loaction);
   const [selectedImage, setSelectedImage] = useState(null);
   const { loading, updateImage } = useImageUpload();
 
@@ -71,7 +71,15 @@ function UserProfile({ userData }) {
         </div>
         <div className='md:text-center text:start w-full'>
           <h3 className='font-bold text-xl'>{profileData.name}</h3>
-          <p className='text-md text-gray-600'>{loaction}</p>
+          <p
+            className='text-md flex items-center justify-center gap-1 text-gray-600'
+            dir={i18n?.language == "ar" ? "rtl" : "ltr"}
+          >
+            <span>
+              <MdOutlineShareLocation />
+            </span>
+            {locationName}
+          </p>
         </div>
       </section>
       {/* user info............................... */}
@@ -91,7 +99,7 @@ function UserProfile({ userData }) {
               <span className='font-bold'>
                 {t("dashboard:userinfo:location")}:{" "}
               </span>
-              <span>{loaction}</span>
+              <span>{locationName}</span>
             </p>
           </div>
           <div className='flex flex-col gap-2'>

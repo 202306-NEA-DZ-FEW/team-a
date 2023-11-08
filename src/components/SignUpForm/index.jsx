@@ -19,7 +19,7 @@ function SignUpForm({ states, t }) {
       password: "",
       confirmPassword: "",
       phone: "",
-      location: states[0].name,
+      location: "",
     },
     validationSchema: Yup.object({
       name: Yup.string()
