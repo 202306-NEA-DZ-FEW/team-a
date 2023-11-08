@@ -31,7 +31,7 @@ function Navbar() {
             href='/'
             className='font-bold btn btn-ghost normal-case text-2xl'
           >
-            {t("common:navbar:logo")}
+            {t("common:buttons:logo")}
           </Link>
         </div>
         <nav className='hidden w-full flex-1 lg:flex lg:navbar-end gap-4 lg:items-center'>
@@ -45,28 +45,28 @@ function Navbar() {
               className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
               href='/'
             >
-              {t("common:navbar:home")}
+              {t("common:buttons:home")}
             </Link>
 
             <Link
               className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
               href='/about'
             >
-              {t("common:navbar:about")}
+              {t("common:buttons:about")}
             </Link>
 
             <Link
               className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
               href='/products'
             >
-              {t("common:navbar:products")}
+              {t("common:buttons:products")}
             </Link>
 
             <Link
               className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
               href='/blogs'
             >
-              {t("common:navbar:blogs")}
+              {t("common:buttons:blogs")}
             </Link>
           </div>
           {user == null

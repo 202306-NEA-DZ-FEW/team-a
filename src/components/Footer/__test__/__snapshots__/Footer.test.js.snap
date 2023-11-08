@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
         <h2
           className="font-bold text-2xl text-white"
         >
-          Unify.
+          buttons.logo
         </h2>
       </a>
     </div>
@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            footer.about
+            buttons.about
           </li>
         </a>
         <a
@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
           <li
             className="hover:underline"
           >
-            footer.blogs
+            buttons.blogs
           </li>
         </a>
         <a

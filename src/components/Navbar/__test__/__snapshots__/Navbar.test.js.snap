@@ -14,7 +14,7 @@ exports[`Navbar snapshot test 1`] = `
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     >
-      navbar.logo
+      buttons.logo
     </a>
   </div>
   <nav
@@ -34,7 +34,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.home
+        buttons.home
       </a>
       <a
         className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
@@ -43,7 +43,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.about
+        buttons.about
       </a>
       <a
         className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
@@ -52,7 +52,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.products
+        buttons.products
       </a>
       <a
         className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
@@ -61,7 +61,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.blogs
+        buttons.blogs
       </a>
     </div>
     <div
