@@ -8,21 +8,21 @@
     "language": "Langue"
   },
   "userUpadteForm": {
-    "submit": "Submit",
-    "cancel": "Cancel",
-    "nameLabel": "Name",
-    "namePlaceholder": "Enter your full name",
-    "nameRequired": "Name is required",
-    "nameLength": "Name must be less than 20 characters",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Entrez votre nom complet",
+    "nameRequired": "Le nom est requis",
+    "nameLength": "Le nom doit comporter moins de 20 caractères",
     "emailLabel": "Email",
-    "emailPlaceholder": "Enter your email",
-    "emailRequired": "Email is required",
-    "emailValid": "Invalid email address",
-    "phoneLabel": "Phone",
-    "phonePlaceholder": "Enter your phone number",
-    "phoneRequired": "Phone number is required",
+    "emailPlaceholder": "Entrez votre email",
+    "emailRequired": "L'email est requis",
+    "emailValid": "Adresse e-mail invalide",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "Entrez votre numéro de téléphone",
+    "phoneRequired": "Le numéro de téléphone est requis",
     "locationLabel": "Province",
-    "locationRequired": "Location is required"
+    "locationRequired": "L'emplacement est requis"
   },
   "myItems": "Mes articles"
 }
