@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsFillPencilFill } from "react-icons/bs";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
@@ -16,9 +17,12 @@ function UserListItem({ item, onDelete, onEdit }) {
         className='object-cover rounded-xl w-20 h-20'
       />
       <div className='flex-1'>
-        <h3 className='text-left text-md md:text-2xl tracking-wider font-light'>
+        <Link
+          href={`/products/${item.id}`}
+          className='text-left text-md md:text-2xl tracking-wider hover:font-medium hover:underline font-light'
+        >
           {item.title}
-        </h3>
+        </Link>
       </div>
       <div>
         <button
