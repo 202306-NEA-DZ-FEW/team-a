@@ -70,7 +70,7 @@ function EditItemForm({ item, onEdit }) {
           autoClose: 1500,
         });
       } finally {
-        document.getElementById(item.id).close();
+        document.getElementById(`my_modal_${item.id}`).close();
       }
     },
   });
@@ -89,7 +89,10 @@ function EditItemForm({ item, onEdit }) {
   };
 
   return (
-    <dialog id={item.id} className='modal bg-black bg-opacity-40'>
+    <dialog
+      id={`my_modal_${item.id}`}
+      className='modal cursor-default bg-black bg-opacity-40'
+    >
       <div
         dir={i18n.language == "ar" ? "rtl" : "ltr"}
         className='md:w-[85%] w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-white rounded-2xl p-8'
@@ -177,7 +180,9 @@ function EditItemForm({ item, onEdit }) {
             touched={formik.touched.location}
             error={formik.errors.location}
           />
-          <div className='modal-action'>
+          <div
+            className={`${i18n.language == "ar" ? "gap-2" : ""} modal-action`}
+          >
             <button
               type='submit'
               className='btn rounded-full normal-case tracking-wider btn-active'
@@ -188,7 +193,9 @@ function EditItemForm({ item, onEdit }) {
               <button
                 type='button'
                 className='btn btn-outline rounded-full normal-case tracking-wider font-light'
-                onClick={() => document.getElementById(item.id).close()}
+                onClick={() =>
+                  document.getElementById(`my_modal_${item.id}`).close()
+                }
               >
                 {t("dashboard:userUpadteForm:cancel")}
               </button>

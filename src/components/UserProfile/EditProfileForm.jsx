@@ -10,8 +10,8 @@ import getAllStates from "@/lib/getAllStates";
 import Input from "../Input";
 import SelectInput from "../SelectInput";
 
-function UserProfileEditForm({ userData, onUpdate }) {
-  const { t } = useTranslation();
+function EditProfileForm({ userData, onUpdate }) {
+  const { t, i18n } = useTranslation();
   const states = getAllStates(t);
 
   const formik = useFormik({
@@ -108,7 +108,9 @@ function UserProfileEditForm({ userData, onUpdate }) {
             touched={formik.touched.location}
             error={formik.errors.location}
           />
-          <div className='modal-action'>
+          <div
+            className={`${i18n.language == "ar" ? "gap-2" : ""} modal-action`}
+          >
             <button
               type='submit'
               className='btn rounded-full normal-case tracking-wider btn-active'
@@ -131,4 +133,4 @@ function UserProfileEditForm({ userData, onUpdate }) {
   );
 }
 
-export default UserProfileEditForm;
+export default EditProfileForm;

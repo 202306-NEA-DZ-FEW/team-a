@@ -10,8 +10,8 @@ import useImageUpload from "@/lib/useImageUpload";
 
 import { useAuth } from "@/context/AuthProvider";
 
+import EditProfileForm from "./EditProfileForm";
 import ImageSpinner from "./ImageSpinner";
-import UserProfileEditForm from "./UserProfileEditForm";
 
 function UserProfile({ userData }) {
   const [profileData, setProfileData] = useState(userData);
@@ -142,7 +142,7 @@ function UserProfile({ userData }) {
           >
             <BsFillPencilFill className='text-gray-400 text-xl md:mx-2 transition-all duration-500 ease-in-out group-hover:text-gray-800' />
           </button>
-          <UserProfileEditForm
+          <EditProfileForm
             userData={profileData}
             onUpdate={handleUpdateProfile}
           />

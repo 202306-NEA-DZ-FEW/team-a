@@ -2,8 +2,8 @@
 
 exports[`renders correctly 1`] = `
 <dialog
-  className="modal bg-black bg-opacity-40"
-  id={1}
+  className="modal cursor-default bg-black bg-opacity-40"
+  id="my_modal_1"
 >
   <div
     className="md:w-[85%] w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-white rounded-2xl p-8"
@@ -679,7 +679,7 @@ exports[`renders correctly 1`] = `
         </select>
       </div>
       <div
-        className="modal-action"
+        className=" modal-action"
       >
         <button
           className="btn rounded-full normal-case tracking-wider btn-active"

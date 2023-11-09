@@ -405,7 +405,7 @@ exports[`renders correctly 1`] = `
         </select>
       </div>
       <div
-        className="modal-action"
+        className=" modal-action"
       >
         <button
           className="btn rounded-full normal-case tracking-wider btn-active"

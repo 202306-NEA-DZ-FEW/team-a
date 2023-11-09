@@ -22,7 +22,9 @@ function UserListItem({ item, onDelete, onEdit }) {
       </div>
       <div>
         <button
-          onClick={() => document.getElementById(item.id).showModal()}
+          onClick={() =>
+            document.getElementById(`my_modal_${item.id}`).showModal()
+          }
           className='btn group btn-square btn-ghost btn-sm'
         >
           <BsFillPencilFill className='text-gray-400 text-xl transition-all duration-500 ease-in-out group-hover:text-gray-800' />
