@@ -31,13 +31,13 @@ function UserListItems({ userItems }) {
   };
 
   return (
-    <div className='flex flex-col w-full gap-4'>
+    <div className='flex flex-col w-full gap-4 flex-1'>
       <h2 className='text-3xl font-bold text-center'>
         {t("dashboard:myItems")}{" "}
       </h2>
       <div className='flex justify-center items-center flex-wrap gap-4 '>
         {loading && (
-          <div className='absolute w-full h-full flex items-center justify-center'>
+          <div className='absolute z-30 w-full h-full flex items-center justify-center'>
             <Image
               src={Spinner}
               alt='loading'
@@ -48,15 +48,22 @@ function UserListItems({ userItems }) {
             />
           </div>
         )}
-        {items.map((item) => (
-          <UserListItem
-            key={item.id}
-            item={item}
-            onDelete={handleDelete}
-            onEdit={handleEdit}
-          />
-        ))}
+        <div className='flex relative flex-col flex-1 gap-2 items-center justify-center'>
+          {items.map((item) => (
+            <UserListItem
+              key={item.id}
+              item={item}
+              onDelete={handleDelete}
+              onEdit={handleEdit}
+            />
+          ))}
+        </div>
       </div>
+      {!items.length && (
+        <p className='text-xl flex-1 flex items-center justify-center font-light tracking-wide'>
+          You don&apos;t have listed items...
+        </p>
+      )}
     </div>
   );
 }
