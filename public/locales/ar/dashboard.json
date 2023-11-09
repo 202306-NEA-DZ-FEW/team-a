@@ -4,25 +4,38 @@
     "name": "الاسم",
     "location": "الموقع",
     "email": "البريد الإلكتروني",
-    "phonenumber": "رقم الهاتف",
-    "language": "لغة"
+    "phoneNumber": "رقم الهاتف",
+    "profileInfo": "تعديل معلومات الملف الشخصي",
+    "locationRequired": "الولاية مطلوبة",
+    "language": "اللغة",
+    "phonePlaceholder": "أدخل رقم هاتفك"
   },
-  "userUpadteForm": {
-    "submit": "Submit",
-    "cancel": "Cancel",
-    "nameLabel": "Name",
-    "namePlaceholder": "Enter your full name",
-    "nameRequired": "Name is required",
-    "nameLength": "Name must be less than 20 characters",
-    "emailLabel": "Email",
-    "emailPlaceholder": "Enter your email",
-    "emailRequired": "Email is required",
-    "emailValid": "Invalid email address",
-    "phoneLabel": "Phone",
-    "phonePlaceholder": "Enter your phone number",
-    "phoneRequired": "Phone number is required",
-    "locationLabel": "Province",
-    "locationRequired": "Location is required"
+  "UserProfileEditForm": {
+    "nameLabel": "الاسم",
+    "namePlaceholder": "أدخل اسمك الكامل",
+    "nameRequired": "الاسم مطلوب",
+    "nameLength": "يجب أن يكون الاسم أقل من 20 حرفًا",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailValid": "عنوان البريد الإلكتروني غير صحيح",
+    "phoneLabel": "الهاتف",
+    "phonePlaceholder": "أدخل رقم هاتفك",
+    "phoneRequired": "رقم الهاتف مطلوب",
+    "locationLabel": "الولاية",
+    "locationRequired": "الولاية مطلوبة"
   },
-  "myItems": "منتجاتي"
+  "myItems": "منتجاتي",
+  "EditItemForm": {
+    "header": "تعديل العنصر",
+    "titleLabel": "العنوان",
+    "titlePlaceholder": "يرجى إضافة العنوان",
+    "titleRequired": "العنوان مطلوب",
+    "categoryLabel": "الفئة",
+    "descriptionLabel": "الوصف",
+    "descriptionLength": "يجب أن يكون الوصف أطول",
+    "descriptionPlaceHolder": "أضِف وصفًا",
+    "descriptionRequired": "الوصف مطلوب",
+    "locationLabel": "الولاية"
+  }
 }

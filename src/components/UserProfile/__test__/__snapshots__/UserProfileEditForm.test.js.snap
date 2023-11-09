@@ -411,7 +411,7 @@ exports[`renders correctly 1`] = `
           className="btn btn-primary"
           type="submit"
         >
-          userUpadteForm.submit
+          buttons.submit
         </button>
         <div
           method="dialog"
@@ -421,7 +421,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             type="button"
           >
-            cancel
+            buttons.cancel
           </button>
         </div>
       </div>

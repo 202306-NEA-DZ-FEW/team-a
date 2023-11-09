@@ -5,15 +5,12 @@
     "location": "Location",
     "email": "Email",
     "phoneNumber": "Phone number",
-    "phonePlaceholder": "Enter your phone number",
+    "profileInfo": "Edit profile Info",
     "locationRequired": "Location is required",
-    "submit": "Submit",
-    "Cancel": "Cancel",
-    "profileInfo": "Edit profile information",
-    "language": "Language"
+    "language": "Language",
+    "phonePlaceholder": "Enter your phone number"
   },
   "userUpadteForm": {
-    "submit": "Submit",
     "nameLabel": "Name",
     "namePlaceholder": "Enter your full name",
     "nameRequired": "Name is required",
@@ -28,5 +25,17 @@
     "locationLabel": "Province",
     "locationRequired": "Location is required"
   },
-  "myItems": "My Items"
+  "myItems": "My Items",
+  "EditItemForm": {
+    "header": "Edit Item",
+    "titleLabel": "Title",
+    "titlePlaceholder": "Please add a title",
+    "titleRequired": "Title is required",
+    "categoryLabel": "Category",
+    "descriptionLabel": "Description",
+    "descriptionLength": "Description must be longer",
+    "descriptionPlaceHolder": "Add a description",
+    "descriptionRequired": "Description is required",
+    "locationLabel": "Location"
+  }
 }

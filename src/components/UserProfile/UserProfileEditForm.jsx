@@ -110,7 +110,7 @@ function UserProfileEditForm({ userData, onUpdate }) {
           />
           <div className='modal-action'>
             <button type='submit' className='btn btn-primary'>
-              {t("dashboard:userUpadteForm:submit")}
+              {t("common:buttons:submit")}
             </button>
             <div method='dialog'>
               <button
@@ -118,7 +118,7 @@ function UserProfileEditForm({ userData, onUpdate }) {
                 className='btn'
                 onClick={() => document.getElementById("my_modal_1").close()}
               >
-                {t("common:cancel")}
+                {t("common:buttons:cancel")}
               </button>
             </div>
           </div>
