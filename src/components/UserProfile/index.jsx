@@ -34,8 +34,8 @@ function UserProfile({ userData }) {
   };
 
   return (
-    <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
-      <section className='flex rounded-2xl drop-shadow-md flex-row gap-4 md:gap-1 items-center justify-center w-full md:w-1/4 md:flex-col'>
+    <div className='flex flex-col md:flex-row gap-8 justify-center md:items-start items-center'>
+      <section className='flex rounded-2xl drop-shadow-md flex-row gap-4 md:gap-1 items-center justify-center w-full md:w-fit md:flex-col'>
         <div className='avatar m-[6px]'>
           <div className='w-20 rounded-full relative ring ring-primary ring-offset-base-100 ring-offset-2 group'>
             {loading && (
@@ -72,7 +72,7 @@ function UserProfile({ userData }) {
         <div className='md:text-center text:start w-full'>
           <h3 className='font-bold text-xl'>{profileData.name}</h3>
           <p
-            className='text-md flex items-center justify-center gap-1 text-gray-600'
+            className='text-md flex items-center md:justify-center gap-1 text-gray-600'
             dir={i18n?.language == "ar" ? "rtl" : "ltr"}
           >
             <span>
@@ -120,7 +120,7 @@ function UserProfile({ userData }) {
             <span className='font-bold'>
               {t("dashboard:userinfo:language")}:{" "}
             </span>
-            <span>{i18n.language}</span>
+            <span>{t(`dashboard:userProfile:currentLanguage`)}</span>
           </p>
         </div>
         <div

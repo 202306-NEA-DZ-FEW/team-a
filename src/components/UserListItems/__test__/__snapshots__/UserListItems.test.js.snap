@@ -4,12 +4,46 @@ exports[`renders correctly 1`] = `
 <div
   className="flex flex-col w-full gap-4 flex-1"
 >
-  <h2
-    className="text-3xl font-bold text-center"
+  <div
+    className="flex w-full justify-between"
   >
-    myItems
-     
-  </h2>
+    <h2
+      className="text-3xl font-bold text-center"
+    >
+      myItems
+       
+    </h2>
+    <a
+      className="btn btn-sm btn-circle text-primary-focus btn-active transition-all duration-500 ease-in-out hover:drop-shadow-md"
+      href="/products/create"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      <svg
+        className="text-xl"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+        />
+        <path
+          d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z"
+        />
+      </svg>
+    </a>
+  </div>
   <div
     className="flex justify-center items-center flex-wrap gap-4 "
   >
