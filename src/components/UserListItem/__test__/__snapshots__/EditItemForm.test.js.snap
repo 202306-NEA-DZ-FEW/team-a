@@ -2,18 +2,19 @@
 
 exports[`renders correctly 1`] = `
 <dialog
-  className="modal"
-  id={1}
+  className="modal cursor-default bg-black bg-opacity-40"
+  id="my_modal_1"
 >
   <div
-    className="modal-box"
+    className="md:w-[85%] w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-white rounded-2xl p-8"
+    dir="ltr"
   >
     <form
-      className="flex flex-col gap-4"
+      className="flex w-full flex-col gap-4"
       onSubmit={[Function]}
     >
       <h1
-        className="text-3xl font-black text-center"
+        className="text-xl font-bold text-center"
       >
         Update your personal profile
       </h1>
@@ -200,7 +201,7 @@ exports[`renders correctly 1`] = `
             className="label-text"
             htmlFor="title"
           >
-            Title
+            titleLabel
           </label>
           <label
             className="label-text-alt "
@@ -212,35 +213,52 @@ exports[`renders correctly 1`] = `
           name="title"
           onBlur={[Function]}
           onChange={[Function]}
-          placeholder="Add a title"
+          placeholder="titlePlaceholder"
           type="text"
           value="Product Two"
         />
       </div>
-      <div>
+      <div
+        className="form-control"
+      >
         <div
-          className="label ml-2"
+          className="label"
         >
           <label
             className="label-text"
             htmlFor="description"
           >
-            Description
+            descriptionLabel
           </label>
           <label
             className="label-text-alt "
           />
         </div>
-        <input
-          className="input bg-white input-primary w-full rounded-full border-opacity-25"
+        <textarea
+          className="textarea textarea-primary textarea-bordered h-24 w-full bg-white"
           id="description"
           name="description"
           onBlur={[Function]}
           onChange={[Function]}
-          placeholder="Describe your items..."
+          placeholder="descriptionPlaceHolder"
           type="text"
           value="Lorem ipsum description for Product Two"
         />
+        <div
+          className="label"
+        >
+          <label
+            className="label-text"
+            htmlFor="description"
+          />
+          <label
+            className="label-text-alt "
+          >
+            39
+            /
+            150
+          </label>
+        </div>
       </div>
       <div>
         <div
@@ -250,7 +268,7 @@ exports[`renders correctly 1`] = `
             className="label-text"
             htmlFor="category"
           >
-            Category
+            categoryLabel
           </label>
           <label
             className="label-text-alt "
@@ -262,294 +280,89 @@ exports[`renders correctly 1`] = `
           onChange={[Function]}
         >
           <option
-            value="adrar"
+            value="babyItems"
           >
-            adrar
+            babyItems
           </option>
           <option
-            value="chlef"
+            value="blanketsAndBedding"
           >
-            chlef
+            blanketsAndBedding
           </option>
           <option
-            value="laghouat"
+            value="books"
           >
-            laghouat
+            books
           </option>
           <option
-            value="oumElBouaghi"
+            value="clothes"
           >
-            oumElBouaghi
+            clothes
           </option>
           <option
-            value="batna"
+            value="accessories"
           >
-            batna
+            accessories
           </option>
           <option
-            value="bejaia"
+            value="craftSupplies"
           >
-            bejaia
+            craftSupplies
           </option>
           <option
-            value="biskra"
+            value="decorAndArtwork"
           >
-            biskra
+            decorAndArtwork
           </option>
           <option
-            value="bechar"
+            value="electronics"
           >
-            bechar
+            electronics
           </option>
           <option
-            value="blida"
+            value="foodAndNonPerishables"
           >
-            blida
+            foodAndNonPerishables
           </option>
           <option
-            value="bouira"
+            value="householdItems"
           >
-            bouira
+            householdItems
           </option>
           <option
-            value="tamanrasset"
+            value="hygieneProducts"
           >
-            tamanrasset
+            hygieneProducts
           </option>
           <option
-            value="tebessa"
+            value="medicalSupplies"
           >
-            tebessa
+            medicalSupplies
           </option>
           <option
-            value="tlemcen"
+            value="petSupplies"
           >
-            tlemcen
+            petSupplies
           </option>
           <option
-            value="tiaret"
+            value="schoolAndEducationalSupplies"
           >
-            tiaret
+            schoolAndEducationalSupplies
           </option>
           <option
-            value="tiziOuzou"
+            value="shoes"
           >
-            tiziOuzou
+            shoes
           </option>
           <option
-            value="algiers"
+            value="sportsEquipment"
           >
-            algiers
+            sportsEquipment
           </option>
           <option
-            value="djelfa"
+            value="toysAndGames"
           >
-            djelfa
-          </option>
-          <option
-            value="jijel"
-          >
-            jijel
-          </option>
-          <option
-            value="setif"
-          >
-            setif
-          </option>
-          <option
-            value="saida"
-          >
-            saida
-          </option>
-          <option
-            value="skikda"
-          >
-            skikda
-          </option>
-          <option
-            value="sidiBelAbbes"
-          >
-            sidiBelAbbes
-          </option>
-          <option
-            value="annaba"
-          >
-            annaba
-          </option>
-          <option
-            value="guelma"
-          >
-            guelma
-          </option>
-          <option
-            value="constantine"
-          >
-            constantine
-          </option>
-          <option
-            value="medea"
-          >
-            medea
-          </option>
-          <option
-            value="mostaganem"
-          >
-            mostaganem
-          </option>
-          <option
-            value="mSila"
-          >
-            mSila
-          </option>
-          <option
-            value="mascara"
-          >
-            mascara
-          </option>
-          <option
-            value="ouargla"
-          >
-            ouargla
-          </option>
-          <option
-            value="oran"
-          >
-            oran
-          </option>
-          <option
-            value="elBayadh"
-          >
-            elBayadh
-          </option>
-          <option
-            value="illizi"
-          >
-            illizi
-          </option>
-          <option
-            value="bordjBouArreridj"
-          >
-            bordjBouArreridj
-          </option>
-          <option
-            value="boumerdes"
-          >
-            boumerdes
-          </option>
-          <option
-            value="elTarf"
-          >
-            elTarf
-          </option>
-          <option
-            value="tindouf"
-          >
-            tindouf
-          </option>
-          <option
-            value="tissemsilt"
-          >
-            tissemsilt
-          </option>
-          <option
-            value="elOued"
-          >
-            elOued
-          </option>
-          <option
-            value="khenchela"
-          >
-            khenchela
-          </option>
-          <option
-            value="soukAhras"
-          >
-            soukAhras
-          </option>
-          <option
-            value="tipaza"
-          >
-            tipaza
-          </option>
-          <option
-            value="mila"
-          >
-            mila
-          </option>
-          <option
-            value="ainDefla"
-          >
-            ainDefla
-          </option>
-          <option
-            value="naama"
-          >
-            naama
-          </option>
-          <option
-            value="ainTemouchent"
-          >
-            ainTemouchent
-          </option>
-          <option
-            value="ghardaia"
-          >
-            ghardaia
-          </option>
-          <option
-            value="relizane"
-          >
-            relizane
-          </option>
-          <option
-            value="timimoun"
-          >
-            timimoun
-          </option>
-          <option
-            value="bordjBadjiMokhtar"
-          >
-            bordjBadjiMokhtar
-          </option>
-          <option
-            value="ouledDjellal"
-          >
-            ouledDjellal
-          </option>
-          <option
-            value="beniAbbes"
-          >
-            beniAbbes
-          </option>
-          <option
-            value="ainSalah"
-          >
-            ainSalah
-          </option>
-          <option
-            value="ainGuezzam"
-          >
-            ainGuezzam
-          </option>
-          <option
-            value="touggourt"
-          >
-            touggourt
-          </option>
-          <option
-            value="djanet"
-          >
-            djanet
-          </option>
-          <option
-            value="elMGhair"
-          >
-            elMGhair
-          </option>
-          <option
-            value="elMenia"
-          >
-            elMenia
+            toysAndGames
           </option>
         </select>
       </div>
@@ -561,7 +374,7 @@ exports[`renders correctly 1`] = `
             className="label-text"
             htmlFor="location"
           >
-            Location
+            locationLabel
           </label>
           <label
             className="label-text-alt "
@@ -866,10 +679,10 @@ exports[`renders correctly 1`] = `
         </select>
       </div>
       <div
-        className="modal-action"
+        className=" modal-action"
       >
         <button
-          className="btn btn-primary"
+          className="btn rounded-full normal-case tracking-wider btn-active"
           type="submit"
         >
           userUpadteForm.submit
@@ -878,7 +691,7 @@ exports[`renders correctly 1`] = `
           method="dialog"
         >
           <button
-            className="btn"
+            className="btn btn-outline rounded-full normal-case tracking-wider font-light"
             onClick={[Function]}
             type="button"
           >
