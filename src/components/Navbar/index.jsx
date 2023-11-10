@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import profile from "public/images/profile.svg";
 import { useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthProvider";
@@ -14,17 +15,22 @@ function Navbar() {
   const { i18n, t } = useTranslation();
   const router = useRouter();
   const [currentPath, setCurrentPath] = useState("/");
+  const [userProfile, setUserProfile] = useState(profile);
+
+  useEffect(() => {
+    setUserProfile(user?.photoURL || profile);
+  }, [user]);
 
   useEffect(() => {
     // Get the current path
     const currentPath = router.asPath;
     setCurrentPath(currentPath);
-  }, [router, user]);
+  }, [router]);
 
   return (
     <>
       {/* Navbar Starts Here */}
-      <header className='no-scrollbar backdrop-blur-sm bg-white bg-opacity-40 fixed top-0 left-0 navbar gap-24 justify-between 2xl:px-32 xl:px-28 px-10 z-50'>
+      <header className='no-scrollbar backdrop-blur-sm bg-white bg-opacity-40 sticky top-0 left-0 navbar gap-24 justify-between 2xl:px-32 xl:px-28 px-10 z-50'>
         <div className='lg:block navbar-start max-w-fit'>
           {/* Navbar Logo */}
           <Link
@@ -71,7 +77,14 @@ function Navbar() {
           </div>
           {user == null
             ? null
-            : user && <UserMenu logOut={logOut} user={user} t={t} />}
+            : user && (
+                <UserMenu
+                  logOut={logOut}
+                  user={user}
+                  userProfile={userProfile}
+                  t={t}
+                />
+              )}
           {!loading && user === null ? (
             <Link
               href='/auth/sign-in'

@@ -2,6 +2,7 @@
   "dashboard": "dashboard",
   "userinfo": {
     "name": "Name",
+    "currentLanguage": "English",
     "location": "Location",
     "email": "Email",
     "phoneNumber": "Phone number",

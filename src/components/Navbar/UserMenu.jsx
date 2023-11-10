@@ -1,11 +1,10 @@
 import { Menu, Transition } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
-import profile from "public/images/profile.svg";
 import { Fragment } from "react";
 import { BiLogOut } from "react-icons/bi";
 
-function UserMenu({ user, logOut, t }) {
+function UserMenu({ user, logOut, t, userProfile }) {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -15,12 +14,7 @@ function UserMenu({ user, logOut, t }) {
       <Menu.Button className='btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost'>
         <div className='avatar'>
           <div className='w-8 rounded-full ring ring-primary hover:ring-offset-1 transition-all duration-500 ring-offset-base-100 ring-offset-2'>
-            <Image
-              width={100}
-              height={100}
-              alt='user'
-              src={user.photoURL ? user.photoURL : profile}
-            />
+            <Image width={100} height={100} alt='user' src={userProfile} />
           </div>
         </div>
       </Menu.Button>

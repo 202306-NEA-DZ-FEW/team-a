@@ -10,8 +10,8 @@ import getAllStates from "@/lib/getAllStates";
 import Input from "../Input";
 import SelectInput from "../SelectInput";
 
-function UserProfileEditForm({ userData, onUpdate }) {
-  const { t } = useTranslation();
+function EditProfileForm({ userData, onUpdate }) {
+  const { t, i18n } = useTranslation();
   const states = getAllStates(t);
 
   const formik = useFormik({
@@ -60,10 +60,10 @@ function UserProfileEditForm({ userData, onUpdate }) {
   });
 
   return (
-    <dialog id='my_modal_1' className='modal'>
-      <div className='modal-box'>
+    <dialog id='my_modal_1' className='modal bg-black bg-opacity-40'>
+      <div className='modal-box bg-white transition-all duration-500 ease-in-out'>
         <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
-          <h1 className='text-3xl font-black text-center'>
+          <h1 className='text-xl font-bold text-center'>
             Update your personal profile
           </h1>
           <Input
@@ -108,17 +108,22 @@ function UserProfileEditForm({ userData, onUpdate }) {
             touched={formik.touched.location}
             error={formik.errors.location}
           />
-          <div className='modal-action'>
-            <button type='submit' className='btn btn-primary'>
-              {t("common:buttons:submit")}
+          <div
+            className={`${i18n.language == "ar" ? "gap-2" : ""} modal-action`}
+          >
+            <button
+              type='submit'
+              className='btn rounded-full normal-case tracking-wider btn-active'
+            >
+              {t("dashboard:userUpadteForm:submit")}
             </button>
             <div method='dialog'>
               <button
                 type='button'
-                className='btn'
+                className='btn btn-outline rounded-full normal-case tracking-wider font-light'
                 onClick={() => document.getElementById("my_modal_1").close()}
               >
-                {t("common:buttons:cancel")}
+                {t("dashboard:userUpadteForm:cancel")}
               </button>
             </div>
           </div>
@@ -128,4 +133,4 @@ function UserProfileEditForm({ userData, onUpdate }) {
   );
 }
 
-export default UserProfileEditForm;
+export default EditProfileForm;

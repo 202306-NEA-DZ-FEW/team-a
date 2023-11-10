@@ -1,41 +1,42 @@
 {
-  "dashboard": "لوحة التحكم",
+  "dashboard": "لوحة القيادة",
   "userinfo": {
     "name": "الاسم",
+    "currentLanguage": "العربية",
     "location": "الموقع",
     "email": "البريد الإلكتروني",
     "phoneNumber": "رقم الهاتف",
-    "profileInfo": "تعديل معلومات الملف الشخصي",
-    "locationRequired": "الولاية مطلوبة",
+    "profileInfo": "تحرير معلومات الملف الشخصي",
+    "locationRequired": "الموقع مطلوب",
     "language": "اللغة",
     "phonePlaceholder": "أدخل رقم هاتفك"
   },
-  "UserProfileEditForm": {
+  "userUpadteForm": {
     "nameLabel": "الاسم",
     "namePlaceholder": "أدخل اسمك الكامل",
     "nameRequired": "الاسم مطلوب",
-    "nameLength": "يجب أن يكون الاسم أقل من 20 حرفًا",
+    "nameLength": "يجب أن يحتوي الاسم على أقل من 20 حرفًا",
     "emailLabel": "البريد الإلكتروني",
     "emailPlaceholder": "أدخل بريدك الإلكتروني",
     "emailRequired": "البريد الإلكتروني مطلوب",
-    "emailValid": "عنوان البريد الإلكتروني غير صحيح",
+    "emailValid": "عنوان البريد الإلكتروني غير صالح",
     "phoneLabel": "الهاتف",
     "phonePlaceholder": "أدخل رقم هاتفك",
     "phoneRequired": "رقم الهاتف مطلوب",
-    "locationLabel": "الولاية",
-    "locationRequired": "الولاية مطلوبة"
+    "locationLabel": "المقاطعة",
+    "locationRequired": "الموقع مطلوب"
   },
-  "myItems": "منتجاتي",
+  "myItems": "عناصري",
   "EditItemForm": {
-    "header": "تعديل العنصر",
+    "header": "تحرير العنصر",
     "titleLabel": "العنوان",
-    "titlePlaceholder": "يرجى إضافة العنوان",
+    "titlePlaceholder": "يرجى إضافة عنوان",
     "titleRequired": "العنوان مطلوب",
     "categoryLabel": "الفئة",
     "descriptionLabel": "الوصف",
     "descriptionLength": "يجب أن يكون الوصف أطول",
-    "descriptionPlaceHolder": "أضِف وصفًا",
+    "descriptionPlaceHolder": "أضف وصفا",
     "descriptionRequired": "الوصف مطلوب",
-    "locationLabel": "الولاية"
+    "locationLabel": "الموقع"
   }
 }
