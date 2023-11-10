@@ -232,7 +232,7 @@ exports[`renders correctly 1`] = `
             <h1
               className="text-xl font-bold text-center"
             >
-              Update your personal profile
+              userUpadteForm.updateProfile
             </h1>
             <div>
               <div

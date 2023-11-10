@@ -2,20 +2,18 @@
   "dashboard": "dashboard",
   "userinfo": {
     "name": "Name",
+    "email": "Email",
+    "language": "Language",
     "currentLanguage": "English",
     "location": "Location",
-    "email": "Email",
-    "phoneNumber": "Phone number",
-    "profileInfo": "Edit profile Info",
-    "locationRequired": "Location is required",
-    "language": "Language",
-    "phonePlaceholder": "Enter your phone number"
+    "phoneNumber": "Phone number"
   },
   "userUpadteForm": {
+    "updateProfile": "Edit profile",
     "nameLabel": "Name",
     "namePlaceholder": "Enter your full name",
     "nameRequired": "Name is required",
-    "nameLength": "Name must be less than 20 characters",
+    "nameLength": "Name must be less than 30 characters",
     "emailLabel": "Email",
     "emailPlaceholder": "Enter your email",
     "emailRequired": "Email is required",
@@ -23,20 +21,20 @@
     "phoneLabel": "Phone",
     "phonePlaceholder": "Enter your phone number",
     "phoneRequired": "Phone number is required",
-    "locationLabel": "Province",
-    "locationRequired": "Location is required"
+    "locationLabel": "Wilaya",
+    "locationRequired": "Wilaya is required"
   },
   "myItems": "My Items",
-  "EditItemForm": {
-    "header": "Edit Item",
+  "editItemForm": {
+    "updateItem": "Edit Item",
     "titleLabel": "Title",
     "titlePlaceholder": "Please add a title",
     "titleRequired": "Title is required",
-    "categoryLabel": "Category",
     "descriptionLabel": "Description",
     "descriptionLength": "Description must be longer",
     "descriptionPlaceHolder": "Add a description",
     "descriptionRequired": "Description is required",
-    "locationLabel": "Location"
+    "categoryLabel": "Category",
+    "locationLabel": "Wilaya"
   }
 }

@@ -100,7 +100,7 @@ exports[`renders correctly 1`] = `
         <h1
           className="text-xl font-bold text-center"
         >
-          Update your personal profile
+          editItemForm.updateItem
         </h1>
         <div
           className="flex justify-evenly gap-4 items-center"

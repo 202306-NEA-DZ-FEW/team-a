@@ -2,20 +2,18 @@
   "dashboard": "tableau de bord",
   "userinfo": {
     "name": "Nom",
+    "email": "Email",
+    "language": "Langue",
     "currentLanguage": "Français",
     "location": "Wilaya",
-    "email": "Email",
-    "phoneNumber": "Numéro de téléphone",
-    "profileInfo": "Modifier les informations du profil",
-    "locationRequired": "La wilaya est requis",
-    "language": "Langue",
-    "phonePlaceholder": "Entrez votre numéro de téléphone"
+    "phoneNumber": "Numéro de téléphone"
   },
   "userUpadteForm": {
+    "updateProfile": "Modifier le profil ",
     "nameLabel": "Nom",
     "namePlaceholder": "Entrez votre nom complet",
     "nameRequired": "Le nom est requis",
-    "nameLength": "Le nom doit contenir moins de 20 caractères",
+    "nameLength": "Le nom doit contenir moins de 30 caractères",
     "emailLabel": "Email",
     "emailPlaceholder": "Entrez votre email",
     "emailRequired": "L'email est requis",
@@ -27,16 +25,16 @@
     "locationRequired": "La wilaya est requisz"
   },
   "myItems": "Mes articles",
-  "EditItemForm": {
-    "header": "Modifier l'article",
+  "editItemForm": {
+    "updateItem": "Modifier l'article",
     "titleLabel": "Titre",
     "titlePlaceholder": "Veuillez ajouter un titre",
     "titleRequired": "Le titre est requis",
-    "categoryLabel": "Catégorie",
     "descriptionLabel": "Description",
     "descriptionLength": "La description doit être plus longue",
     "descriptionPlaceHolder": "Ajouter une description",
     "descriptionRequired": "La description est requise",
+    "categoryLabel": "Catégorie",
     "locationLabel": "Wilaya"
   }
 }

@@ -102,7 +102,7 @@ function EditItemForm({ item, onEdit }) {
           className='flex w-full flex-col gap-4'
         >
           <h1 className='text-xl font-bold text-center'>
-            Update your personal profile
+            {t("dashboard:editItemForm:updateItem")}
           </h1>
           <div className='flex justify-evenly gap-4 items-center'>
             {item.images.map((image, index) => (

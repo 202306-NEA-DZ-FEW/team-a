@@ -64,7 +64,7 @@ function EditProfileForm({ userData, onUpdate }) {
       <div className='modal-box bg-white transition-all duration-500 ease-in-out'>
         <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
           <h1 className='text-xl font-bold text-center'>
-            Update your personal profile
+            {t("dashboard:userUpadteForm:updateProfile")}
           </h1>
           <Input
             name='name'
