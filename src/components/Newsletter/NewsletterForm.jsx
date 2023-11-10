@@ -29,7 +29,7 @@ function NewsletterForm() {
             placeholder='Enter your email'
             handleChange={formik.handleChange}
             value={formik.values.email}
-            handleBlur={formik.handleBlur}
+            handleBlur={(e) => formik.dirty && formik.handleBlur(e)}
             error={formik.errors.email}
             touched={formik.touched.email}
           />
