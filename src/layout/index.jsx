@@ -3,6 +3,7 @@ import NextTopLoader from "nextjs-toploader";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Newsletter from "@/components/Newsletter";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function Layout({ children, initialLocale }) {
       <Navbar />
       {children}
       <NextTopLoader color='#6658F8' showSpinner={false} />
+      <Newsletter />
       <Footer />
     </main>
   );
