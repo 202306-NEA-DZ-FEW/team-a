@@ -5,8 +5,9 @@ import * as Yup from "yup";
 
 import Input from "../Input";
 
-function NewsletterForm() {
+function NewsletterForm({ onValidated }) {
   const { t } = useTranslation();
+  const router = useRouter();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -14,8 +15,15 @@ function NewsletterForm() {
     validationSchema: Yup.object({
       email: Yup.string().email("invalid email").required("email is required"),
     }),
-    onSubmit: async (values) => {
-      console.log("thank you", values);
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        await onValidated({ EMAIL: values.email });
+        console.log("This user is now subscribed!", values);
+        router.push("/");
+        resetForm();
+      } catch (error) {
+        console.error("Error subscribing:", error);
+      }
     },
   });
   return (
