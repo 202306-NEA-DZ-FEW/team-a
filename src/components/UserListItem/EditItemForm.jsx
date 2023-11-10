@@ -187,7 +187,7 @@ function EditItemForm({ item, onEdit }) {
               type='submit'
               className='btn rounded-full normal-case tracking-wider btn-active'
             >
-              {t("dashboard:userUpadteForm:submit")}
+              {t("common:buttons:submit")}
             </button>
             <div method='dialog'>
               <button
@@ -197,7 +197,7 @@ function EditItemForm({ item, onEdit }) {
                   document.getElementById(`my_modal_${item.id}`).close()
                 }
               >
-                {t("common:cancel")}
+                {t("common:buttons:cancel")}
               </button>
             </div>
           </div>

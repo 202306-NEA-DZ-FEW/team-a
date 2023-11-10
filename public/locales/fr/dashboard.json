@@ -3,11 +3,11 @@
   "userinfo": {
     "name": "Nom",
     "currentLanguage": "Français",
-    "location": "Emplacement",
+    "location": "Wilaya",
     "email": "Email",
     "phoneNumber": "Numéro de téléphone",
     "profileInfo": "Modifier les informations du profil",
-    "locationRequired": "L'emplacement est requis",
+    "locationRequired": "La wilaya est requis",
     "language": "Langue",
     "phonePlaceholder": "Entrez votre numéro de téléphone"
   },
@@ -23,8 +23,8 @@
     "phoneLabel": "Téléphone",
     "phonePlaceholder": "Entrez votre numéro de téléphone",
     "phoneRequired": "Le numéro de téléphone est requis",
-    "locationLabel": "Province",
-    "locationRequired": "L'emplacement est requis"
+    "locationLabel": "Wilaya",
+    "locationRequired": "La wilaya est requisz"
   },
   "myItems": "Mes articles",
   "EditItemForm": {
@@ -37,6 +37,6 @@
     "descriptionLength": "La description doit être plus longue",
     "descriptionPlaceHolder": "Ajouter une description",
     "descriptionRequired": "La description est requise",
-    "locationLabel": "Emplacement"
+    "locationLabel": "Wilaya"
   }
 }

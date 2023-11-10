@@ -769,7 +769,7 @@ exports[`renders correctly 1`] = `
             className="btn rounded-full normal-case tracking-wider btn-active"
             type="submit"
           >
-            userUpadteForm.submit
+            buttons.submit
           </button>
           <div
             method="dialog"
@@ -779,7 +779,7 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
               type="button"
             >
-              cancel
+              buttons.cancel
             </button>
           </div>
         </div>

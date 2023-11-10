@@ -120,7 +120,7 @@ function UserProfile({ userData }) {
             <span className='font-bold'>
               {t("dashboard:userinfo:language")}:{" "}
             </span>
-            <span>{t(`dashboard:userProfile:currentLanguage`)}</span>
+            <span>{t(`dashboard:userinfo:currentLanguage`)}</span>
           </p>
         </div>
         <div
