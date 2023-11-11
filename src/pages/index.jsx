@@ -8,6 +8,7 @@ import CausesSection from "@/components/LandingPage/CausesSection";
 import HeroSectionPlaceholder from "@/components/LandingPage/HeroSection/HeroSectionPlaceholder";
 import PopularItemsSectionPlaceholder from "@/components/LandingPage/PopularItemsSection/PopularItemsSectionPlaceholder";
 import StatisticsSection from "@/components/LandingPage/StatisticsSection";
+import Newsletter from "@/components/Newsletter";
 
 const DynamicHeroSection = dynamic(
   () => import("@/components/LandingPage/HeroSection"),
@@ -45,6 +46,7 @@ export default function HomePage({ items, blogs, _nextI18Next }) {
       <DynamicPopularItemsSection items={items} />
       <DynamicBlogsSection blogs={blogs} />
       <DynamicOurPartnersSection />
+      <Newsletter />
     </main>
   );
 }
