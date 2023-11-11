@@ -34,11 +34,12 @@ function NewsletterForm({ onValidated }) {
         backgroundSize: "cover",
       }}
     >
-      <h2 className='text-4xl tracking-tight font-extrabold text-white'>
+      <h2 className='text-3xl md:text-4xl tracking-wider font-extrabold text-white'>
         Join our newsletter
       </h2>
       <p className='my-4 max-w-2xl font-light text-xl text-gray-200'>
-        Be the first to know about our latest blog posts, and insider updates.
+        Be the first to know about our latest blog posts, and insider updates.{" "}
+        <br />
         Join us today.
       </p>
       <form
@@ -60,7 +61,7 @@ function NewsletterForm({ onValidated }) {
           <div className='label' />
         </div>
         <button
-          className='btn btn-neutral self-center rounded-3xl'
+          className='btn btn-neutral w-full md:w-1/12 self-center rounded-3xl'
           type='submit'
           disabled={formik.isSubmitting}
         >
