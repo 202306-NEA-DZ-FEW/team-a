@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="bg-accent py-20 px-6 w-full"
+  style={
+    Object {
+      "backgroundImage": "url(/img.jpg)",
+      "backgroundSize": "cover",
+    }
+  }
+>
+  <h2
+    className="text-4xl tracking-tight font-extrabold text-white"
+  >
+    Join our newsletter
+  </h2>
+  <p
+    className="my-4 max-w-2xl font-light text-xl text-gray-200"
+  >
+    Be the first to know about our latest blog posts, and insider updates. Join us today.
+  </p>
+  <form
+    className="flex flex-col md:flex-row gap-4"
+    onSubmit={[Function]}
+  >
+    <div>
+      <div>
+        <div
+          className="label ml-2"
+        >
+          <label
+            className="label-text"
+            htmlFor="email"
+          />
+          <label
+            className="label-text-alt "
+          />
+        </div>
+        <input
+          className="input bg-white input-primary w-full rounded-full border-opacity-25"
+          id="email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Enter your email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="label"
+      />
+    </div>
+    <button
+      className="btn btn-neutral self-center rounded-3xl"
+      disabled={false}
+      type="submit"
+    >
+      Subscribe
+    </button>
+  </form>
+</div>
+`;
