@@ -19,7 +19,7 @@ function NewsletterForm({ onValidated }) {
     onSubmit: async (values, { resetForm }) => {
       try {
         await onValidated({ EMAIL: values.email });
-        router.push("/");
+        router.push({ pathname: "/success", query: values }, { scroll: false });
         resetForm();
       } catch (error) {
         console.error("Error subscribing:", error);
