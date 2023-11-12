@@ -1,8 +1,9 @@
 {
-  "newsletterTitle": "اشترك في خدمة الرسائل الاخبارية",
-  "newsletterDescription": "كن أول من يعلم عن آخر مقالات مدونتنا والتحديثات الداخلية.\n انضم إلينا اليوم.",
+  "newsletterTitle": "انضم إلى نشرتنا",
+  "newsletterDescription": "كن أول من تصله مدوناتنا وتحديثاتنا.",
+  "newsletterJoin": "اشترك اليوم.",
   "subscribe": "اشترك",
-  "successTitle": "شكرًا للاشتراك",
-  "successDescription": "سوف تتلقى تحديثاتنا وأحدث مقالاتنا على",
-  "signUpInvitation": "هل ترغب في الانضمام إلى عائلتنا في يونيفاي؟"
+  "successTitle": "شكرًا على اشتراككم",
+  "successDescription": "سوف تتلقى تحديثاتنا وأحدث مدوناتنا على",
+  "signUpInvitation": "هل ترغب في الانضمام إلى عائلة Unify؟"
 }

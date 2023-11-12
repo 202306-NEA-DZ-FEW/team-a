@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import background from "public/images/newsletter.png";
+import bg from "public/images/bg.png";
 import * as Yup from "yup";
 
 import Input from "../Input";
@@ -9,6 +9,7 @@ import Input from "../Input";
 function NewsletterForm({ onValidated }) {
   const { t } = useTranslation();
   const router = useRouter();
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -30,27 +31,27 @@ function NewsletterForm({ onValidated }) {
     <div
       className='bg-accent py-20 px-6 w-full'
       style={{
-        backgroundImage: `url(${background.src})`,
+        backgroundImage: `url(${bg.src})`,
         backgroundSize: "cover",
       }}
     >
       <h2 className='text-3xl md:text-4xl tracking-wider font-extrabold text-white'>
-        Join our newsletter
+        {t("newsletter:newsletterTitle")}
       </h2>
       <p className='my-4 max-w-2xl font-light text-xl text-gray-200'>
-        Be the first to know about our latest blog posts, and insider updates.{" "}
+        {t("newsletter:newsletterDescription")}
         <br />
-        Join us today.
+        {t("newsletter:newsletterJoin")}
       </p>
       <form
         onSubmit={formik.handleSubmit}
-        className='flex flex-col md:flex-row gap-4'
+        className='flex flex-col md:flex-row gap-2'
       >
         <div>
           <Input
             name='email'
             type='email'
-            placeholder='Enter your email'
+            placeholder={t("signIn:emailPlaceholder")}
             handleChange={formik.handleChange}
             value={formik.values.email}
             handleBlur={(e) => formik.dirty && formik.handleBlur(e)}
@@ -61,11 +62,11 @@ function NewsletterForm({ onValidated }) {
           <div className='label' />
         </div>
         <button
-          className='btn btn-neutral w-full md:w-1/12 self-center rounded-3xl'
+          className='btn btn-neutral w-full md:w-fit self-center rounded-3xl'
           type='submit'
           disabled={formik.isSubmitting}
         >
-          {formik.isSubmitting ? "loading" : "Subscribe"}
+          {t("newsletter:subscribe")}
         </button>
       </form>
     </div>

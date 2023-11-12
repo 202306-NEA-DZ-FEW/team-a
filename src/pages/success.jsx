@@ -2,6 +2,7 @@ import { motion as m } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import box from "public/images/newsletterBox.svg";
 import { useEffect, useState } from "react";
@@ -9,6 +10,7 @@ import Confetti from "react-confetti";
 
 export default function Success() {
   const [pieces, setPieces] = useState(200);
+  const { i18n, t } = useTranslation();
   const router = useRouter();
   const stopConfetti = () => {
     setTimeout(() => {
@@ -26,24 +28,27 @@ export default function Success() {
       exit={{ opacity: 0 }}
       className='flex justify-center items-center m-9'
     >
-      <div className='bg-white shadow-xl rounded-lg p-2 md:px-20 md:py-10 text-gray-700 flex flex-col justify-center items-center'>
+      <div
+        className='bg-white shadow-xl rounded-lg p-2 md:px-20 md:py-10 text-gray-700 flex flex-col justify-center items-center'
+        dir={i18n?.language === "ar" ? "rtl" : "ltr"}
+      >
         <Image
           src={box}
           alt='newsletterImage'
           className='w-[270px] h-[270px]'
         />
         <h1 className='text-xl font-bold md:text-2xl pb-4 '>
-          ✨Thank you for subscribing ✨
+          ✨{t("newsletter:successTitle")}✨
         </h1>
         <p className='text-lg text-center text-gray-500'>
-          You will receive our updates and latest blogs on {router.query.email}.
+          {t("newsletter:successDescription")} {router.query.email}.
         </p>
         <div className='flex flex-col md:flex-row justify-center items-center gap-2 pt-2'>
           <span className='text-gray-600'>
-            You want to join our Unify family?
+            {t("newsletter:signUpInvitation")}
           </span>{" "}
           <Link href='/auth/sign-up' className='btn btn-primary'>
-            Sign up
+            {t("signUp:signUpButton")}
           </Link>
         </div>
       </div>
@@ -54,7 +59,11 @@ export default function Success() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "newsletter",
+        "signUp",
+      ])),
     },
     revalidate: 30,
   };

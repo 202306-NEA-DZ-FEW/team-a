@@ -13,18 +13,17 @@ exports[`renders correctly 1`] = `
   <h2
     className="text-3xl md:text-4xl tracking-wider font-extrabold text-white"
   >
-    Join our newsletter
+    newsletterTitle
   </h2>
   <p
     className="my-4 max-w-2xl font-light text-xl text-gray-200"
   >
-    Be the first to know about our latest blog posts, and insider updates.
-     
+    newsletterDescription
     <br />
-    Join us today.
+    newsletterJoin
   </p>
   <form
-    className="flex flex-col md:flex-row gap-4"
+    className="flex flex-col md:flex-row gap-2"
     onSubmit={[Function]}
   >
     <div>
@@ -46,7 +45,7 @@ exports[`renders correctly 1`] = `
           name="email"
           onBlur={[Function]}
           onChange={[Function]}
-          placeholder="Enter your email"
+          placeholder="emailPlaceholder"
           type="email"
           value=""
         />
@@ -56,11 +55,11 @@ exports[`renders correctly 1`] = `
       />
     </div>
     <button
-      className="btn btn-neutral w-full md:w-1/12 self-center rounded-3xl"
+      className="btn btn-neutral w-full md:w-fit self-center rounded-3xl"
       disabled={false}
       type="submit"
     >
-      Subscribe
+      subscribe
     </button>
   </form>
 </div>
