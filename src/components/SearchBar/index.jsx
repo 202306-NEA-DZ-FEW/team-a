@@ -13,6 +13,7 @@ function SearchBar({ t, queryParams }) {
     const newQueryParams = { ...queryParams };
     if (query) {
       newQueryParams.search = query;
+      delete newQueryParams.page;
     } else {
       delete newQueryParams.search;
     }

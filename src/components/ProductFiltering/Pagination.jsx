@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 function Pagination({ page, pageSize, totalItems, queryParams, totalPages }) {
   const router = useRouter();
@@ -34,18 +35,18 @@ function Pagination({ page, pageSize, totalItems, queryParams, totalPages }) {
           disabled={!hasPrev}
           onClick={() => handleChangePage("prev")}
         >
-          Previous
+          <BiLeftArrow /> Previous
         </button>
         <button
           className='btn btn-sm normal-case font-normal tracking-wide'
           disabled={!hasNext}
           onClick={() => handleChangePage("next")}
         >
-          Next
+          Next <BiRightArrow />
         </button>
       </div>
       <div>
-        <p className='font-light text-sm tracking-wide'>
+        <p className='font-normal opacity-50 text-sm tracking-wide'>
           page: {page} of {totalPages}
         </p>
       </div>

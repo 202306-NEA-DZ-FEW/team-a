@@ -55,23 +55,21 @@ export async function fetchCollectionWithQuery(
     q = query(q, startAfter(startAfterDoc));
   }
 
-  if (!queryParams.search) {
-    q = query(q, limit(pageSize));
-  }
+  q = query(q, limit(pageSize));
 
   try {
     const querySnapshot = await getDocs(q);
     let totalItems = 0;
 
     //get all items count
-    totalItems = (await getDocs(collectionRef)).size;
-
-    //get only filtred items count
     if (Object.entries(queryParams).length !== 0 && !queryParams.page) {
       totalItems = (await getDocs(q)).size;
+    } else {
+      totalItems = (await getDocs(collectionRef)).size;
     }
 
     const totalPages = Math.ceil(totalItems / pageSize);
+
     console.log({ totalPages, totalItems });
     const items = [];
 
