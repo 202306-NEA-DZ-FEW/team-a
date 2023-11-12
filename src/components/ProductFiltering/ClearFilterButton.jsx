@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
+import { MdFilterListOff } from "react-icons/md";
 
 function ClearFilterButton({ t }) {
   const router = useRouter();
@@ -8,8 +9,9 @@ function ClearFilterButton({ t }) {
       onClick={() => {
         router.push("/products", undefined, { scroll: false });
       }}
-      className='btn w-full md:w-40 bg-black text-white btn-sm px-4 rounded-xl'
+      className='btn btn-sm rounded-full btn-neutral normal-case font-light tracking-wider'
     >
+      <MdFilterListOff />
       {t("productsPage:clearFilter")}
     </button>
   );

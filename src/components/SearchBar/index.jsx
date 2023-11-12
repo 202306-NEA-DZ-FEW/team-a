@@ -38,17 +38,15 @@ function SearchBar({ t, queryParams }) {
   }, [queryParams.search]);
 
   return (
-    <div className='form-control md:flex-1 w-full'>
-      <div className='md:max-w-xs relative w-full'>
-        <RiSearch2Line className='absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500' />
-        <input
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          type='text'
-          placeholder={t("productsPage:searchPlaceHolder")}
-          className='input-sm text-center rounded-xl input-bordered w-full md:max-w-xs'
-        />
-      </div>
+    <div className='relative rounded-full border'>
+      <RiSearch2Line className='absolute right-3 translate-y-1/2 transform text-gray-500' />
+      <input
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        type='text'
+        placeholder={t("productsPage:searchPlaceHolder")}
+        className='border-none input-sm rounded-full input-bordered input bg-gray-50 outline-none font-light normal-case w-full'
+      />
     </div>
   );
 }
