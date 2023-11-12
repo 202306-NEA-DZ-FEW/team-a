@@ -1,7 +1,7 @@
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { fetchCollection } from "@/lib/fetchCollectionWithQuery";
+import { fetchCollection } from "@/lib/fetchCollection";
 import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
 import { fetchItemsByCategory } from "@/lib/fetchItemsByCategory";
 import fetchUserInfo from "@/lib/fetchUserInfo";
