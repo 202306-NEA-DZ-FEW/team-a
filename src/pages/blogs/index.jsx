@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { fetchCollection } from "@/lib/fetchCollection";
+import { fetchCollection } from "@/lib/fetchCollectionWithQuery";
 
 import BlogsCard from "@/components/BlogsCard";
 import Container from "@/components/container";

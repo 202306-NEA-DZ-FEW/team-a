@@ -2,7 +2,7 @@ import Image from "next/image";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { IoCalendarOutline } from "react-icons/io5";
 
-import { fetchCollection } from "@/lib/fetchCollection";
+import { fetchCollection } from "@/lib/fetchCollectionWithQuery";
 import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
 import fetchUserInfo from "@/lib/fetchUserInfo";
 import { formatDate } from "@/lib/helpers";

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex items-center justify-between"
+>
+  <div
+    className="flex gap-4"
+  >
+    <button
+      className="btn btn-sm normal-case font-normal tracking-wide"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Previous
+    </button>
+    <button
+      className="btn btn-sm normal-case font-normal tracking-wide"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </div>
+  <div>
+    <p
+      className="font-light text-sm tracking-wide"
+    >
+      page: 
+      1
+       of 
+      3
+    </p>
+  </div>
+</div>
+`;

@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { fetchCollection } from "@/lib/fetchCollection";
+import { fetchCollection } from "@/lib/fetchCollectionWithQuery";
 
 import BlogsSectionPlaceholder from "@/components/LandingPage/BlogsSection/BlogsSectionPlaceholder";
 import CausesSection from "@/components/LandingPage/CausesSection";
