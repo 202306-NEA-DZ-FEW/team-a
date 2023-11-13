@@ -5,17 +5,17 @@
   },
   "causes": {
     "title": "Nedenler",
-    "warmth": {
-      "title": "Sıcaklık",
-      "description": "Mültecilere ve evsizlere, soğuk kış aylarında temiz ve sıcak giysilere ve yazın rahat giysilere erişim hakları olduğuna inanıyoruz."
+    "education": {
+      "title": "Eğitim",
+      "description": "Eğitim aracılığıyla zihinleri güçlendirmeye inanıyoruz. Bilgiye eşit erişimi sağlamak için duruyoruz, tüm için daha parlak bir gelecek için çalışıyoruz."
     },
-    "comfort": {
-      "title": "Konfor",
-      "description": "Ihtiyaç sahiplerine uygun fiyatlı mobilya ve beyaz eşya bulmalarında yardımcı oluyoruz, çünkü herkesin sadece bir evi değil, bir evi olmayı hak ettiğine inanıyoruz."
+    "solidarity": {
+      "title": "Dayanışma",
+      "description": "Daha az ayrıcalıklı bireylere destek sağlayarak, topluluk duygusunu geliştirmeyi, dayanışma ve birlik içinde durmayı amaçlıyoruz."
     },
     "health": {
       "title": "Sağlık",
-      "description": "Unify, her insanın zor zamanlarda sıcak bir yemek hak ettiğine inanıyor."
+      "description": "Biz, sağlıklı bir toplumu teşvik etmeye inanıyoruz. Temel sağlık desteği sağlamak için duruyoruz, herkesin iyi olmasını sağlamak için çabalarken daha sağlıklı bir toplum için çaba harcıyoruz."
     }
   },
   "statistics": {
