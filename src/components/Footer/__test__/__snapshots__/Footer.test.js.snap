@@ -305,7 +305,21 @@ exports[`renders correctly 1`] = `
               onTouchStart={[Function]}
             >
               <span
-                className="fi fi-sa "
+                className="fi fi-tr "
+              />
+               Türkçe
+            </a>
+          </li>
+          <li>
+            <a
+              className="block px-4 py-2 "
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              <span
+                className="fi fi-dz "
               />
                العربية
             </a>

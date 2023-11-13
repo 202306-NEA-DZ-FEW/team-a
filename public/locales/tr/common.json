@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "dashboard": "Kontrol Paneli"
+  },
+  "footer": {
+    "address": "Adres",
+    "city": "Şehir, Cezayir",
+    "contactUs": "İletişim",
+    "listedItems": "Listelenmiş Öğeler",
+    "street": "01. Cadde, 17"
+  },
+  "buttons": {
+    "about": "Hakkımızda",
+    "addItem": "Öğe Ekle",
+    "blogs": "Bloglar",
+    "cancel": "İptal",
+    "submit": "Gönder",
+    "confirm": "Onayla",
+    "donate": "Şimdi Bağış Yap",
+    "home": "Ana Sayfa",
+    "logo": "Birleştir.",
+    "products": "Ürünler",
+    "readMore": "Daha Fazla Oku",
+    "signIn": "Giriş Yap",
+    "signOut": "Çıkış Yap",
+    "signUp": "Kaydol"
+  }
+}

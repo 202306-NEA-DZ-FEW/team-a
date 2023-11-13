@@ -82,8 +82,13 @@ function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href='/' locale='tr' className='block px-4 py-2 '>
+                  <span className='fi fi-tr '></span> Türkçe
+                </Link>
+              </li>
+              <li>
                 <Link href='/' locale='ar' className='block px-4 py-2 '>
-                  <span className='fi fi-sa '></span> العربية
+                  <span className='fi fi-dz '></span> العربية
                 </Link>
               </li>
             </ul>
