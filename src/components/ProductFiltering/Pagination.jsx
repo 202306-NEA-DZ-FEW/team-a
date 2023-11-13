@@ -28,7 +28,7 @@ function Pagination({ page, pageSize, totalItems, queryParams, totalPages }) {
   };
 
   return (
-    <div className='flex items-center justify-between'>
+    <div className='flex items-center justify-center md:justify-between flex-wrap gap-4'>
       <div className='flex gap-4'>
         <button
           className='btn btn-sm normal-case font-normal tracking-wide'

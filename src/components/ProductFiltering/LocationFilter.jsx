@@ -37,7 +37,7 @@ function LocationFilter({ t, queryParams }) {
           leaveFrom='transform opacity-100 scale-100'
           leaveTo='transform opacity-0 scale-95'
         >
-          <Menu.Items className='absolute max-h-52 overflow-y-scroll bg-white z-10 rounded-lg top-10 w-full'>
+          <Menu.Items className='absolute max-h-52 no-scrollbar overflow-y-scroll bg-white z-10 rounded-lg top-10 w-full ring-1 ring-black ring-opacity-5 drop-shadow-xl'>
             <div className='py-1'>
               {states.map(({ name, dataKey }) => (
                 <Link

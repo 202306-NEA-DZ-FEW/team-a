@@ -33,7 +33,7 @@ function ProductsPage({
       <div className='relative md:h-[75vh] h-[80vh] overflow-x-hidden w-full'>
         <Carousel t={t} items={categories} queryParams={queryParams} />
       </div>
-      <div className='flex flex-col lg:flex-row px-8 gap-8 mt-8 items-start'>
+      <div className='flex flex-col lg:flex-row px-8 gap-8 mt-10 items-start min-h-[80vh]'>
         <div className='lg:w-[30%] h-full w-full bg-white drop-shadow-lg p-4 rounded-xl flex gap-6 flex-col'>
           <h3 className='flex gap-2 items-center text-2xl tracking-wide lg:mb-8'>
             <MdFilterList /> Filters
@@ -65,7 +65,7 @@ function ProductsPage({
             </Link>
           </div>
           <div className='bg-white drop-shadow-lg rounded-xl p-4 flex flex-col gap-4'>
-            <div className='flex flex-wrap gap-4 items-center justify-start w-full'>
+            <div className='flex flex-wrap gap-4 items-center justify-center md:justify-start w-full'>
               {items.map((item) => (
                 <Link
                   key={item.id}
