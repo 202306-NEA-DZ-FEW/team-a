@@ -23,6 +23,6 @@
   "phoneRequired": "Telefon numarası zorunludur",
   "locationLabel": "İl",
   "locationRequired": "Konum zorunludur",
-  "signUpMethod": ""Şu yöntemle kaydolun",
+  "signUpMethod": "Şu yöntemle kaydolun",
   "divider": "VEYA"
 }
