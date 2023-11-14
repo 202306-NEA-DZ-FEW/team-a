@@ -3,7 +3,6 @@
 exports[`renders correctly 1`] = `
 <button
   className="btn btn-sm rounded-full btn-neutral normal-case font-light tracking-wider"
-  onClick={[Function]}
 >
   <svg
     fill="currentColor"
