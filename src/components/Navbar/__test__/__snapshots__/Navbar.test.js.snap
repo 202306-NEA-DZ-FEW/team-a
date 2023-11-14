@@ -188,6 +188,17 @@ exports[`Navbar snapshot test 1`] = `
           onTouchStart={[Function]}
         >
           <span
+            className="fi fi-tr rounded text-4xl"
+          />
+        </a>
+        <a
+          className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span
             className="fi fi-dz rounded text-4xl"
           />
         </a>
@@ -199,7 +210,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.home
+        buttons.home
       </a>
       <a
         className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
@@ -208,7 +219,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.about
+        buttons.about
       </a>
       <a
         className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
@@ -217,7 +228,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.products
+        buttons.products
       </a>
       <a
         className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
@@ -226,7 +237,7 @@ exports[`Navbar snapshot test 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        navbar.blogs
+        buttons.blogs
       </a>
       <a
         className="btn mt-10 btn-active rounded-3xl normal-case font-normal tracking-wider w-[80%] self-center"

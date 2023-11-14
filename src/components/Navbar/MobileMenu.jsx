@@ -47,6 +47,14 @@ function MobileMenu({ user, t, currentPath, logOut }) {
           <Link
             onClick={handleClick}
             href={currentPath}
+            locale='tr'
+            className='font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white'
+          >
+            <span className='fi fi-tr rounded text-4xl'></span>
+          </Link>
+          <Link
+            onClick={handleClick}
+            href={currentPath}
             locale='ar'
             className='font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white'
           >
@@ -67,28 +75,28 @@ function MobileMenu({ user, t, currentPath, logOut }) {
           className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/'
         >
-          {t("common:navbar:home")}
+          {t("common:buttons:home")}
         </Link>
         <Link
           onClick={handleClick}
           className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/about'
         >
-          {t("common:navbar:about")}
+          {t("common:buttons:about")}
         </Link>
         <Link
           onClick={handleClick}
           className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/products'
         >
-          {t("common:navbar:products")}
+          {t("common:buttons:products")}
         </Link>
         <Link
           onClick={handleClick}
           className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
           href='/blogs'
         >
-          {t("common:navbar:blogs")}
+          {t("common:buttons:blogs")}
         </Link>
         {!user && (
           <Link

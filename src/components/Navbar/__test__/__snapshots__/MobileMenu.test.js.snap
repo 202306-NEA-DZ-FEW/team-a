@@ -67,6 +67,17 @@ exports[`it renders correctly 1`] = `
         onTouchStart={[Function]}
       >
         <span
+          className="fi fi-tr rounded text-4xl"
+        />
+      </a>
+      <a
+        className="font-light p-2 transition-all duration-500 hover:-translate-y-1 text-xl text-white"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <span
           className="fi fi-dz rounded text-4xl"
         />
       </a>
