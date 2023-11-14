@@ -27,7 +27,6 @@ exports[`renders correctly 1`] = `
     className="border-none input-sm rounded-full input-bordered input bg-gray-50 outline-none font-light normal-case w-full"
     onChange={[Function]}
     type="text"
-    value=""
   />
 </div>
 `;
