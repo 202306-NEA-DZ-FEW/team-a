@@ -1,28 +1,25 @@
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment } from "react";
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { TbSitemap } from "react-icons/tb";
 
-import getAllStates from "@/lib/getAllStates";
-
-function LocationFilter({ t, queryParams }) {
+function ListingTypeFilter({ t, queryParams }) {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
-  //This is to test the LocationFilter
-  const states = getAllStates(t);
+  const listingTypes = ["exchangeButton", "requestButton", "donationButton"];
 
   return (
     <>
       <Menu as='div' className='relative w-full flex justify-center text-left'>
         <Menu.Button className='flex items-center gap-2 w-full justify-between border bg-white input-sm rounded-full tracking-wider'>
           <div className='flex gap-2 items-center'>
-            <HiOutlineLocationMarker className='w-5 h-5' />
+            <TbSitemap className='w-5 h-5' />
             <span>
-              {queryParams.location
-                ? t(`states:${queryParams.location}`)
-                : t("productsPage:location")}
+              {queryParams.listingType
+                ? t(`addItem:${queryParams.listingType}`)
+                : "Listing type"}
             </span>
           </div>
           <IoMdArrowDropdown />
@@ -37,15 +34,15 @@ function LocationFilter({ t, queryParams }) {
           leaveFrom='transform opacity-100 scale-100'
           leaveTo='transform opacity-0 scale-95'
         >
-          <Menu.Items className='absolute max-h-52 no-scrollbar overflow-y-scroll bg-white z-10 rounded-lg top-10 w-full ring-1 ring-black ring-opacity-5 drop-shadow-xl'>
+          <Menu.Items className='absolute max-h-52 overflow-y-scroll no-scrollbar bg-white z-10 rounded-lg top-10 w-full ring-1 ring-black ring-opacity-5 drop-shadow-xl'>
             <div className='py-1'>
-              {states.map(({ name, dataKey }) => (
+              {listingTypes.map((type) => (
                 <Link
                   scroll={false}
-                  key={dataKey}
+                  key={type}
                   href={{
                     pathname: "/products",
-                    query: { ...queryParams, location: dataKey },
+                    query: { ...queryParams, listingType: type },
                   }}
                 >
                   <Menu.Item>
@@ -58,7 +55,7 @@ function LocationFilter({ t, queryParams }) {
                           "block px-4 py-2 tracking-wider my-2"
                         )}
                       >
-                        {name}
+                        {t(`addItem:${type}`)}
                       </p>
                     )}
                   </Menu.Item>
@@ -72,4 +69,4 @@ function LocationFilter({ t, queryParams }) {
   );
 }
 
-export default LocationFilter;
+export default ListingTypeFilter;

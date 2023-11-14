@@ -74,6 +74,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
         const imagesUrl = await uploadImages(imageRef, images);
         const valuesWithImages = {
           ...values,
+          title: values.title.toLowerCase(),
           id,
           uid: user.uid,
           images: imagesUrl,

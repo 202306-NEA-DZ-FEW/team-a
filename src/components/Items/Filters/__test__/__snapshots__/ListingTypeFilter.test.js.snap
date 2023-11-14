@@ -20,11 +20,12 @@ exports[`renders correctly 1`] = `
       className="flex gap-2 items-center"
     >
       <svg
-        aria-hidden="true"
         className="w-5 h-5"
         fill="none"
         height="1em"
         stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         strokeWidth="2"
         style={
           Object {
@@ -36,17 +37,29 @@ exports[`renders correctly 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          d="M0 0h24v24H0z"
+          fill="none"
+          stroke="none"
         />
         <path
-          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+        />
+        <path
+          d="M15 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+        />
+        <path
+          d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+        />
+        <path
+          d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1"
+        />
+        <path
+          d="M12 9l0 3"
         />
       </svg>
-      <span />
+      <span>
+        Listing type
+      </span>
     </div>
     <svg
       fill="currentColor"

@@ -1,28 +1,27 @@
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment } from "react";
-import { HiOutlineLocationMarker } from "react-icons/hi";
+import { BiCategory } from "react-icons/bi";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-import getAllStates from "@/lib/getAllStates";
+import getAllCategories from "@/lib/getAllCategories";
 
-function LocationFilter({ t, queryParams }) {
+function CategoryFilter({ t, queryParams }) {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
-  //This is to test the LocationFilter
-  const states = getAllStates(t);
+  const categories = getAllCategories(t);
 
   return (
     <>
       <Menu as='div' className='relative w-full flex justify-center text-left'>
         <Menu.Button className='flex items-center gap-2 w-full justify-between border bg-white input-sm rounded-full tracking-wider'>
           <div className='flex gap-2 items-center'>
-            <HiOutlineLocationMarker className='w-5 h-5' />
+            <BiCategory className='w-5 h-5' />
             <span>
-              {queryParams.location
-                ? t(`states:${queryParams.location}`)
-                : t("productsPage:location")}
+              {queryParams.category
+                ? t(`categories:${queryParams.category}`)
+                : t("productsPage:all")}
             </span>
           </div>
           <IoMdArrowDropdown />
@@ -37,15 +36,15 @@ function LocationFilter({ t, queryParams }) {
           leaveFrom='transform opacity-100 scale-100'
           leaveTo='transform opacity-0 scale-95'
         >
-          <Menu.Items className='absolute max-h-52 no-scrollbar overflow-y-scroll bg-white z-10 rounded-lg top-10 w-full ring-1 ring-black ring-opacity-5 drop-shadow-xl'>
+          <Menu.Items className='absolute max-h-52 overflow-y-scroll no-scrollbar bg-white z-10 rounded-lg top-10 w-full ring-1 ring-black ring-opacity-5 drop-shadow-xl'>
             <div className='py-1'>
-              {states.map(({ name, dataKey }) => (
+              {categories.map(({ name, dataKey }) => (
                 <Link
                   scroll={false}
                   key={dataKey}
                   href={{
                     pathname: "/products",
-                    query: { ...queryParams, location: dataKey },
+                    query: { ...queryParams, category: dataKey },
                   }}
                 >
                   <Menu.Item>
@@ -72,4 +71,4 @@ function LocationFilter({ t, queryParams }) {
   );
 }
 
-export default LocationFilter;
+export default CategoryFilter;
