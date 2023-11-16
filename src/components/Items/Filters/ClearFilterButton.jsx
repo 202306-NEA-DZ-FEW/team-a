@@ -8,7 +8,7 @@ function ClearFilterButton({ t, handleClearFilters }) {
       className='btn btn-sm rounded-full btn-neutral normal-case font-light tracking-wider'
     >
       <MdFilterListOff />
-      {t("productsPage:clearFilter")}
+      {t("itemsPage:clearFilter")}
     </button>
   );
 }

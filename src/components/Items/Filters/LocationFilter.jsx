@@ -22,7 +22,7 @@ function LocationFilter({ t, queryParams }) {
             <span>
               {queryParams.location
                 ? t(`states:${queryParams.location}`)
-                : t("productsPage:location")}
+                : t("itemsPage:location")}
             </span>
           </div>
           <IoMdArrowDropdown />
@@ -44,7 +44,7 @@ function LocationFilter({ t, queryParams }) {
                   scroll={false}
                   key={dataKey}
                   href={{
-                    pathname: "/products",
+                    pathname: "/items",
                     query: { ...queryParams, location: dataKey },
                   }}
                 >

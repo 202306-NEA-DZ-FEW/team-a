@@ -21,7 +21,7 @@ function SearchBar({ t, queryParams, searchText, setSearchText }) {
       if (query !== currentURL) {
         router.push(
           {
-            pathname: "/products",
+            pathname: "/items",
             query: newQueryParams,
           },
           undefined,
@@ -32,7 +32,7 @@ function SearchBar({ t, queryParams, searchText, setSearchText }) {
       delete newQueryParams.search;
       router.push(
         {
-          pathName: "/products",
+          pathName: "/items",
           query: { ...newQueryParams },
         },
         undefined,
@@ -48,7 +48,7 @@ function SearchBar({ t, queryParams, searchText, setSearchText }) {
         value={searchText}
         onChange={handleSearch}
         type='text'
-        placeholder={t("productsPage:searchPlaceHolder")}
+        placeholder={t("itemsPage:searchPlaceHolder")}
         className='border-none input-sm rounded-full input-bordered input bg-gray-50 outline-none font-light normal-case w-full'
       />
     </div>

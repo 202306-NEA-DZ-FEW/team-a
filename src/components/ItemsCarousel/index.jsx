@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ProductCard from "../ProductCard";
+import ItemCard from "../ItemCard";
 
 const PrevArrow = (props) => {
   const { onClick } = props;
@@ -75,11 +75,11 @@ function ItemsCarousel({ t, items }) {
         <Link
           key={item.id}
           href={{
-            pathname: `/products/${item.id}`,
+            pathname: `/items/${item.id}`,
           }}
           className='mx-3'
         >
-          <ProductCard
+          <ItemCard
             title={item.title}
             listingType={t(`addItem:${item.listingType}`)}
             category={t(`categories:${item.category}`)}

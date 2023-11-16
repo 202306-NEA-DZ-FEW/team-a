@@ -47,12 +47,12 @@ exports[`Navbar snapshot test 1`] = `
       </a>
       <a
         className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
-        href="/products"
+        href="/items"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        buttons.products
+        buttons.items
       </a>
       <a
         className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
@@ -223,12 +223,12 @@ exports[`Navbar snapshot test 1`] = `
       </a>
       <a
         className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
-        href="/products"
+        href="/items"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        buttons.products
+        buttons.items
       </a>
       <a
         className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"

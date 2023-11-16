@@ -63,9 +63,9 @@ function Navbar() {
 
             <Link
               className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
-              href='/products'
+              href='/items'
             >
-              {t("common:buttons:products")}
+              {t("common:buttons:items")}
             </Link>
 
             <Link

@@ -21,7 +21,7 @@ function CategoryFilter({ t, queryParams }) {
             <span>
               {queryParams.category
                 ? t(`categories:${queryParams.category}`)
-                : t("productsPage:all")}
+                : t("itemsPage:all")}
             </span>
           </div>
           <IoMdArrowDropdown />
@@ -43,7 +43,7 @@ function CategoryFilter({ t, queryParams }) {
                   scroll={false}
                   key={dataKey}
                   href={{
-                    pathname: "/products",
+                    pathname: "/items",
                     query: { ...queryParams, category: dataKey },
                   }}
                 >

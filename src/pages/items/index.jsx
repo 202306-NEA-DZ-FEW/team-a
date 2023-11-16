@@ -7,7 +7,7 @@ import getAllCategories from "@/lib/getAllCategories";
 import Carousel from "@/components/Carousel";
 import Items from "@/components/Items";
 
-function ProductsPage({
+function ItemsPage({
   t,
   items,
   queryParams,
@@ -35,7 +35,7 @@ function ProductsPage({
   );
 }
 
-export default withTranslation("ProductsPage")(ProductsPage);
+export default withTranslation("itemsPage")(ItemsPage);
 
 export async function getServerSideProps({ locale, query }) {
   const queryParams = query;
@@ -52,7 +52,7 @@ export async function getServerSideProps({ locale, query }) {
       ...(await serverSideTranslations(locale, [
         "common",
         "states",
-        "productsPage",
+        "itemsPage",
         "categories",
         "addItem",
       ])),

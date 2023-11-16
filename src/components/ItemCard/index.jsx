@@ -3,7 +3,7 @@ import { MdShareLocation } from "react-icons/md";
 
 import { getLocationName, truncateString } from "@/lib/helpers";
 
-function ProductCard({ title, location, listingType, imageUrl, category }) {
+function ItemCard({ title, location, listingType, imageUrl, category }) {
   const locationName = getLocationName(location);
   const truncatedCategory = truncateString(category, 15);
   const truncateState = truncateString(locationName, 6);
@@ -43,4 +43,4 @@ function ProductCard({ title, location, listingType, imageUrl, category }) {
   );
 }
 
-export default ProductCard;
+export default ItemCard;

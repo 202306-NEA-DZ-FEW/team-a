@@ -18,11 +18,14 @@
     "confirm": "Onayla",
     "donate": "Şimdi Bağış Yap",
     "home": "Ana Sayfa",
-    "logo": "Birleştir.",
-    "products": "Ürünler",
+    "logo": "Unify.",
+    "items": "Ürünler",
     "readMore": "Daha Fazla Oku",
     "signIn": "Giriş Yap",
     "signOut": "Çıkış Yap",
-    "signUp": "Kaydol"
+    "signUp": "Kaydol",
+    "noItemsfound": "Öğe bulunamadı...",
+    "prevButton": "Önceki",
+    "nextButton": "Sonraki"
   }
 }

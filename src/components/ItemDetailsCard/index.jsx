@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 import { IoMdContact } from "react-icons/io";
 import { IoCalendarOutline } from "react-icons/io5";
@@ -9,7 +10,7 @@ import { formatDate } from "@/lib/helpers";
 
 import MobileCarousel from "./MobileCarousel";
 
-function ProductDetailsCard({
+function ItemDetailsCard({
   title,
   description,
   location,
@@ -21,6 +22,7 @@ function ProductDetailsCard({
   email,
   phone,
 }) {
+  const { i18n, t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const date = formatDate(createdAt);
   const onClick = (src) => {
@@ -119,23 +121,26 @@ function ProductDetailsCard({
         </div>
         <p className='text-lg font-light mt-8'>{description}</p>
         <p></p>
-        <div className='user-details flex flex-col mt-10'>
+        <div
+          className='user-details flex flex-col mt-10'
+          dir={i18n?.language == "ar" ? "rtl" : "ltr"}
+        >
           <h2 className='text-xl font-semibold mb-4 border-b-4 border-b-primary self-start'>
-            Contact Credentials
+            {t("itemsPage:contactCredentials")}
           </h2>
           <p className='flex items-center gap-2 text-primary font-semibold'>
             <IoMdContact />
-            Name & Surname:
+            {t("signUp:nameLabel")}
             <span className='font-normal text-gray-950'>{username}</span>
           </p>
           <p className='flex items-center gap-2 text-primary font-semibold'>
             <LuPhone />
-            Phone:
+            {t("signUp:phoneLabel")}
             <span className='font-normal text-gray-950'>{phone}</span>
           </p>
           <p className='flex items-center gap-2 text-primary font-semibold'>
             <MdAlternateEmail />
-            Email:
+            {t("signUp:emailLabel")}
             <span className='font-normal text-gray-950'>{email}</span>
           </p>
         </div>
@@ -144,4 +149,4 @@ function ProductDetailsCard({
   );
 }
 
-export default ProductDetailsCard;
+export default ItemDetailsCard;

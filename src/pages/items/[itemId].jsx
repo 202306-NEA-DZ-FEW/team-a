@@ -8,46 +8,48 @@ import fetchUserInfo from "@/lib/fetchUserInfo";
 import { getLocationName } from "@/lib/helpers";
 
 import Container from "@/components/container";
-import ProductDetailsCard from "@/components/ProductDetailsCard";
+import ItemDetailsCard from "@/components/ItemDetailsCard";
 
 import ItemsCarousel from "../../components/ItemsCarousel";
 
-function ProductDetails({ t, product, userInfo, relatedProducts }) {
-  const translatedLocation = t(`states:${product.location}`);
+function ItemDetails({ t, item, userInfo, relatedItems }) {
+  const translatedLocation = t(`states:${item.location}`);
   const loctionName = getLocationName(translatedLocation);
   return (
     <>
       <section className='lg:flex lg:min-h-screen lg:justify-center lg:items-center'>
-        <ProductDetailsCard
-          title={product.title}
-          description={product.description}
+        <ItemDetailsCard
+          title={item.title}
+          description={item.description}
           location={loctionName}
-          listingType={t(`addItem:${product.listingType}`)}
-          category={t(`categories:${product.category}`)}
-          createdAt={product.createdAt}
-          images={product.images}
+          listingType={t(`addItem:${item.listingType}`)}
+          category={t(`categories:${item.category}`)}
+          createdAt={item.createdAt}
+          images={item.images}
           username={userInfo.name}
           email={userInfo.email}
           phone={userInfo.phone}
         />
       </section>
-      <h1 className='font-bold text-3xl m-4 text-center'>Related Products</h1>
+      <h1 className='font-bold text-3xl m-4 text-center'>
+        {t("itemsPage:relatedItems")}
+      </h1>
       <Container className='flex justify-center items-center gap-4 m-4'>
-        <ItemsCarousel t={t} items={relatedProducts} />
+        <ItemsCarousel t={t} items={relatedItems} />
       </Container>
     </>
   );
 }
-export default withTranslation("ProductDetails")(ProductDetails);
+export default withTranslation("common")(ItemDetails);
 
 export async function getStaticPaths({ locales }) {
-  const products = await fetchCollection("items");
+  const items = await fetchCollection("items");
   const paths = [];
 
-  products.forEach((product) => {
+  items.forEach((item) => {
     locales.forEach((locale) => {
       paths.push({
-        params: { productId: product.id.toString() },
+        params: { itemId: item.id.toString() },
         locale: locale,
       });
     });
@@ -59,21 +61,23 @@ export async function getStaticPaths({ locales }) {
 }
 
 export async function getStaticProps({ params, locale }) {
-  const { productId } = params;
-  const product = await fetchFirebaseDoc("items", productId);
-  const relatedProducts = await fetchItemsByCategory("items", product.category);
-  const userInfo = await fetchUserInfo(product.uid);
+  const { itemId } = params;
+  const item = await fetchFirebaseDoc("items", itemId);
+  const relatedItems = await fetchItemsByCategory("items", item.category);
+  const userInfo = await fetchUserInfo(item.uid);
   return {
     props: {
       ...(await serverSideTranslations(locale, [
-        "common",
-        "states",
-        "categories",
         "addItem",
+        "common",
+        "categories",
+        "itemsPage",
+        "states",
+        "signUp",
       ])),
-      product,
+      item,
       userInfo,
-      relatedProducts,
+      relatedItems,
     },
     revalidate: 10,
   };

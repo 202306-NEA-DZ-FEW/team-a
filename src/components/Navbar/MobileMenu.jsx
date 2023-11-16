@@ -87,9 +87,9 @@ function MobileMenu({ user, t, currentPath, logOut }) {
         <Link
           onClick={handleClick}
           className='py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider'
-          href='/products'
+          href='/items'
         >
-          {t("common:buttons:products")}
+          {t("common:buttons:items")}
         </Link>
         <Link
           onClick={handleClick}

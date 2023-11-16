@@ -19,10 +19,13 @@
     "donate": "Donate now",
     "home": "Home",
     "logo": "Unify.",
-    "products": "Items",
+    "items": "Items",
     "readMore": "Read more",
     "signIn": "Sign in",
     "signOut": "Sign out",
-    "signUp": "Sign up"
+    "signUp": "Sign up",
+    "noItemsfound": "No Items Found...",
+    "prevButton": "Previous",
+    "nextButton": "Next"
   }
 }

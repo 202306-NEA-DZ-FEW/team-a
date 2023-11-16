@@ -105,7 +105,7 @@ exports[`it renders correctly 1`] = `
     />
     <a
       className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-white tracking-wider"
-      href="/products"
+      href="/items"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}

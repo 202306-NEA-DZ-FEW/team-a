@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
 import Container from "@/components/container";
-import ProductCard from "@/components/ProductCard";
+import ItemCard from "@/components/ItemCard";
 
 function PopularItemsSection({ items }) {
   const { t } = useTranslation();
@@ -17,10 +17,10 @@ function PopularItemsSection({ items }) {
           <Link
             key={item.id}
             href={{
-              pathname: `/products/${item.id}`,
+              pathname: `/items/${item.id}`,
             }}
           >
-            <ProductCard
+            <ItemCard
               key={item.id}
               title={item.title}
               listingType={t(`addItem:${item.listingType}`)}
@@ -30,7 +30,7 @@ function PopularItemsSection({ items }) {
             />
           </Link>
         ))}
-        {!items.length && <p>Coming soon...</p>}
+        {!items.length && <p>{t("common:buttons:noItemsFound")}</p>}
       </div>
     </Container>
   );

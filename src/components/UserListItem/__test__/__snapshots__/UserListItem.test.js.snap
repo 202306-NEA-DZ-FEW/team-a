@@ -27,7 +27,7 @@ exports[`renders correctly 1`] = `
   >
     <a
       className="text-left text-md md:text-2xl tracking-wider hover:font-medium hover:underline font-light"
-      href="/products/1"
+      href="/items/1"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}

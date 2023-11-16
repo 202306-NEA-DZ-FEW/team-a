@@ -555,7 +555,7 @@ exports[`renders correctly 1`] = `
     <h1
       className="card-title text-3xl"
     >
-      Product Details title
+      Item Details title
     </h1>
     <div
       className="flex gap-2 items-center"
@@ -590,7 +590,7 @@ exports[`renders correctly 1`] = `
           />
         </svg>
          
-        Product Details location
+        Item Details location
       </span>
       <span
         className="flex gap-1 text-gray-400 text-sm font-light items-center"
@@ -690,27 +690,28 @@ exports[`renders correctly 1`] = `
       <span
         className="badge badge-outline text-primary/80 "
       >
-        Product Details category
+        Item Details category
       </span>
       <span
         className="badge badge-outline "
       >
-        Product Details listing
+        Item Details listing
       </span>
     </div>
     <p
       className="text-lg font-light mt-8"
     >
-      Product Details description
+      Item Details description
     </p>
     <p />
     <div
       className="user-details flex flex-col mt-10"
+      dir="ltr"
     >
       <h2
         className="text-xl font-semibold mb-4 border-b-4 border-b-primary self-start"
       >
-        Contact Credentials
+        contactCredentials
       </h2>
       <p
         className="flex items-center gap-2 text-primary font-semibold"
@@ -733,11 +734,11 @@ exports[`renders correctly 1`] = `
             d="M256 48C141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208S370.4 48 256 48zm0 62.4c34.3 0 62.4 28.1 62.4 62.4s-28.1 62.4-62.4 62.4-62.4-28.1-62.4-62.4 28.1-62.4 62.4-62.4zm0 300.4c-52 0-97.8-27-124.8-66.6 1-41.6 83.2-64.5 124.8-64.5s123.8 22.9 124.8 64.5c-27 39.5-72.8 66.6-124.8 66.6z"
           />
         </svg>
-        Name & Surname:
+        nameLabel
         <span
           className="font-normal text-gray-950"
         >
-          productDetails username
+          itemDetails username
         </span>
       </p>
       <p
@@ -763,7 +764,7 @@ exports[`renders correctly 1`] = `
             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
           />
         </svg>
-        Phone:
+        phoneLabel
         <span
           className="font-normal text-gray-950"
         >
@@ -795,11 +796,11 @@ exports[`renders correctly 1`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
           />
         </svg>
-        Email:
+        emailLabel
         <span
           className="font-normal text-gray-950"
         >
-          productDetails email
+          itemDetails email
         </span>
       </p>
     </div>

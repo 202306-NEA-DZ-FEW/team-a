@@ -42,7 +42,7 @@ function UserListItems({ userItems }) {
           {t("dashboard:myItems")}{" "}
         </h2>
         <Link
-          href='/products/create'
+          href='/items/create'
           className='btn btn-sm btn-circle text-primary-focus btn-active transition-all duration-500 ease-in-out hover:drop-shadow-md'
         >
           <AiOutlinePlus className='text-xl' />

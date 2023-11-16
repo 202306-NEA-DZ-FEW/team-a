@@ -54,7 +54,7 @@ exports[`renders correctly 1`] = `
           </li>
         </a>
         <a
-          href="/products"
+          href="/items"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}

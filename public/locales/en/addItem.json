@@ -13,8 +13,8 @@
   "imageRequired": "You need to provide an image",
   "locationLabel": "Province",
   "locationRequired": "Location is required",
-  "itemTag": "Donation preference",
-  "itemTagRequired": "Donation preference is required",
+  "listingType": "Listing type",
+  "itemTagRequired": "Item type is required",
   "donationButton": "Donate",
   "exchangeButton": "Exchange",
   "requestButton": "Request"

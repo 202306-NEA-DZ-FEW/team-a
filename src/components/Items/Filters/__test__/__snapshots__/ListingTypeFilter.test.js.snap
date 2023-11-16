@@ -57,9 +57,7 @@ exports[`renders correctly 1`] = `
           d="M12 9l0 3"
         />
       </svg>
-      <span>
-        Listing type
-      </span>
+      <span />
     </div>
     <svg
       fill="currentColor"

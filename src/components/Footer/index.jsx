@@ -26,7 +26,7 @@ function Footer() {
             <Link href='/blogs'>
               <li className='hover:underline'>{t("common:buttons:blogs")}</li>
             </Link>
-            <Link href='/products'>
+            <Link href='/items'>
               <li className='hover:underline'>
                 {t("common:footer:listedItems")}
               </li>

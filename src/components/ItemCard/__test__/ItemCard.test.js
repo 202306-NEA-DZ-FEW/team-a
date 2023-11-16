@@ -1,12 +1,12 @@
 import image from "public/images/mepi1.png";
 import renderer from "react-test-renderer";
 
-import ProductCard from "..";
+import ItemCard from "..";
 
 it("renders correctly", () => {
   const tree = renderer
     .create(
-      <ProductCard
+      <ItemCard
         title='title'
         location='location'
         listingType='listingType'

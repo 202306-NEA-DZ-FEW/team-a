@@ -10,7 +10,7 @@ import ClearFilterButton from "./Filters/ClearFilterButton";
 import ListingTypeFilter from "./Filters/ListingTypeFilter";
 import LocationFilter from "./Filters/LocationFilter";
 import Pagination from "./Filters/Pagination";
-import ProductCard from "../ProductCard";
+import ItemCard from "../ItemCard";
 import SearchBar from "../SearchBar";
 
 function Items({
@@ -34,7 +34,7 @@ function Items({
   const handleClearFilters = async () => {
     router.push(
       {
-        pathname: "/products",
+        pathname: "/items",
         query: undefined,
       },
       undefined,
@@ -45,7 +45,7 @@ function Items({
     <div className='flex flex-col lg:flex-row px-8 gap-8 mt-10 items-start min-h-[80vh]'>
       <div className='lg:w-[30%] h-full w-full bg-white drop-shadow-lg p-4 rounded-xl flex gap-6 flex-col'>
         <h3 className='flex gap-2 items-center text-2xl tracking-wide lg:mb-8'>
-          <MdFilterList /> Filters
+          <MdFilterList /> {t("itemsPage:filters")}
         </h3>
         <LocationFilter t={t} queryParams={queryParams} />
         <CategoryFilter t={t} queryParams={queryParams} />
@@ -60,7 +60,7 @@ function Items({
             id='products'
           >
             <BsBoxSeam />
-            {t("productsPage:productsList")}
+            {t("itemsPage:itemsList")}
             <span className='opacity-70'> | {totalItems}</span>
           </h1>
           <SearchBar
@@ -71,7 +71,7 @@ function Items({
           />
           <Link
             placeholder='dasda'
-            href='/products/create'
+            href='/items/create'
             className='btn btn-sm rounded-full normal-case font-normal'
           >
             <IoAddCircleOutline size={20} />
@@ -84,10 +84,10 @@ function Items({
               <Link
                 key={item.id}
                 href={{
-                  pathname: `/products/${item.id}`,
+                  pathname: `/items/${item.id}`,
                 }}
               >
-                <ProductCard
+                <ItemCard
                   title={item.title}
                   listingType={t(`addItem:${item.listingType}`)}
                   category={t(`categories:${item.category}`)}
@@ -96,7 +96,7 @@ function Items({
                 />
               </Link>
             ))}
-            {!items.length && <p>No items found...</p>}
+            {!items.length && <p>{t("common:buttons:noItemsfound")}</p>}
           </div>
           <Pagination
             totalItems={totalItems}

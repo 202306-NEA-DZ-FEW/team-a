@@ -13,8 +13,8 @@
   "imageRequired": "Bir resim sağlamanız gerekiyor",
   "locationLabel": "İl",
   "locationRequired": "Konum gereklidir",
-  "itemTag": "Bağış tercihi",
   "itemTagRequired": "Bağış tercihi gereklidir",
+  "listingType": "Ürün tipi",
   "donationButton": "Bağış Yap",
   "exchangeButton": "Değiş tokuş",
   "requestButton": "Talep Et"
