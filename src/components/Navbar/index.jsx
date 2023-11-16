@@ -78,7 +78,7 @@ function Navbar() {
           {!loading && user === null ? (
             <Link
               href='/auth/sign-in'
-              className='btn btn-active btn-sm rounded-full hover:px-4 transition-all duration-500 normal-case font-normal tracking-wider'
+              className='btn btn-primary btn-sm rounded-full hover:px-4 transition-all duration-500 normal-case font-normal tracking-wider'
             >
               {t("common:buttons:signIn")}
             </Link>
