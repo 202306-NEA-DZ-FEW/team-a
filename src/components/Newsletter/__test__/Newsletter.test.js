@@ -7,7 +7,7 @@ it("renders correctly", () => {
   const tree = renderer
     .create(
       <Newsletter>
-        <MailchimpSubscribe url='' />
+        <MailchimpSubscribe url='/' />
       </Newsletter>
     )
     .toJSON();

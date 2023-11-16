@@ -1,15 +1,27 @@
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { Fragment } from "react";
+import { useRouter } from "next/router";
+import { Fragment, useEffect, useState } from "react";
 import { TbLanguage } from "react-icons/tb";
 
-function LanguageFilterMenu({ currentPath }) {
+function LanguageMenu({ bottom }) {
+  const [currentPath, setCurrentPath] = useState("/");
+  const router = useRouter();
+  useEffect(() => {
+    // Get the current path
+    const currentPath = router.asPath;
+    setCurrentPath(currentPath);
+  }, [router]);
+
   //This is for classnames
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
   return (
-    <Menu as='div' className='text-left hidden lg:block'>
+    <Menu
+      as='div'
+      className={`relative text-left ${bottom ? "block" : "hidden"} lg:block`}
+    >
       <div>
         <Menu.Button className='btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost'>
           <TbLanguage className='w-6 h-6' />
@@ -25,7 +37,11 @@ function LanguageFilterMenu({ currentPath }) {
         leaveFrom='transform opacity-100 scale-100'
         leaveTo='transform opacity-0 scale-95'
       >
-        <Menu.Items className='absolute right-0 z-40 mt-6 lg:mr-4 w-screen md:w-screen lg:w-56 rounded-3xl p-2 bg-white shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none font-light tracking-wider'>
+        <Menu.Items
+          className={`absolute ${
+            bottom ? "bottom-12" : "top-12"
+          } z-40 right-0 translate-x-10 w-56 rounded-3xl p-2 bg-white shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none font-light tracking-wider`}
+        >
           <Menu.Item>
             {({ active }) => (
               <Link
@@ -88,4 +104,4 @@ function LanguageFilterMenu({ currentPath }) {
   );
 }
 
-export default LanguageFilterMenu;
+export default LanguageMenu;

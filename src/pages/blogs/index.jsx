@@ -10,7 +10,7 @@ import Container from "@/components/container";
 function BlogsPage({ blogs }) {
   const { t } = useTranslation();
   return (
-    <Container className='flex flex-col gap-10 min-h-screen justify-center py-16'>
+    <Container className='flex flex-col gap-10 min-h-screen justify-center py-24'>
       <h1 className='text-4xl font-bold text-center'>{t("blogs:allBlogs")} </h1>
       {blogs.map((blog, index) => (
         <BlogsCard key={blog.id} blog={blog} index={index} />

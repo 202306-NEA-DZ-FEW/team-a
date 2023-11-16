@@ -219,112 +219,61 @@ exports[`renders correctly 1`] = `
       className="col-span-1"
     >
       <div
-        className="dropdown dropdown-top dropdown-end"
+        className="relative text-left block lg:block"
+        data-headlessui-state=""
       >
-        <label
-          className="btn hover:bg-transparent  bg-neutral text-white"
-          tabIndex={0}
-        >
-          <svg
-            className="text-xl"
-            fill="none"
-            height="1em"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+        <div>
+          <button
+            aria-expanded={false}
+            aria-haspopup="menu"
+            className="btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
+            data-headlessui-state=""
+            id="headlessui-menu-button-:r0:"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <path
-              d="M0 0h24v24H0z"
+            <svg
+              className="w-6 h-6"
               fill="none"
-              stroke="none"
-            />
-            <path
-              d="M4 5h7"
-            />
-            <path
-              d="M9 3v2c0 4.418 -2.239 8 -5 8"
-            />
-            <path
-              d="M5 9c0 2.144 2.952 3.908 6.7 4"
-            />
-            <path
-              d="M12 20l4 -9l4 9"
-            />
-            <path
-              d="M19.1 18h-6.2"
-            />
-          </svg>
-        </label>
-        <ul
-          className="dropdown-content z-[1] menu text-black shadow bg-white rounded-md w-36"
-          tabIndex={0}
-        >
-          <li>
-            <a
-              className="block px-4 py-2 "
-              href="/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
+              height="1em"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                className="fi fi-gb"
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+                stroke="none"
               />
-               English
-            </a>
-          </li>
-          <li>
-            <a
-              className="block px-4 py-2"
-              href="/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              <span
-                className="fi fi-fr"
+              <path
+                d="M4 5h7"
               />
-               Français
-            </a>
-          </li>
-          <li>
-            <a
-              className="block px-4 py-2 "
-              href="/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              <span
-                className="fi fi-tr "
+              <path
+                d="M9 3v2c0 4.418 -2.239 8 -5 8"
               />
-               Türkçe
-            </a>
-          </li>
-          <li>
-            <a
-              className="block px-4 py-2 "
-              href="/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              <span
-                className="fi fi-dz "
+              <path
+                d="M5 9c0 2.144 2.952 3.908 6.7 4"
               />
-               العربية
-            </a>
-          </li>
-        </ul>
+              <path
+                d="M12 20l4 -9l4 9"
+              />
+              <path
+                d="M19.1 18h-6.2"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>

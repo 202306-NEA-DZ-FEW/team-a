@@ -11,7 +11,7 @@ function SignInPage({ t, _nextI18Next }) {
   return (
     <AuthPagesLayout>
       <main
-        className='flex justify-between md:items-center min-h-screen'
+        className='flex justify-between py-16 lg:py-0 items-center min-h-screen'
         dir={initialLocale === "ar" ? "rtl" : "ltr"}
       >
         <SignInForm t={t} />

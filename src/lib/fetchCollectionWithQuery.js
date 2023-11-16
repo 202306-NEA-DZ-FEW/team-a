@@ -70,7 +70,6 @@ export async function fetchCollectionWithQuery(
 
     const totalPages = Math.ceil(totalItems / pageSize);
 
-    console.log({ totalPages, totalItems });
     const items = [];
 
     querySnapshot.forEach((doc) => {
@@ -79,7 +78,6 @@ export async function fetchCollectionWithQuery(
 
     return { items, totalPages, totalItems };
   } catch (e) {
-    console.log(e);
     return [];
   }
 }

@@ -13,10 +13,11 @@ function SignUpPage({ _nextI18Next, t }) {
   const { initialLocale } = _nextI18Next;
   return (
     <AuthPagesLayout>
-      <Container className='my-10'>
-        <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
-          <SignUpForm states={states} t={t} />
-        </main>
+      <Container
+        className='flex py-24 min-h-screen items-center justify-center'
+        dir={initialLocale === "ar" ? "rtl" : "ltr"}
+      >
+        <SignUpForm states={states} t={t} />
       </Container>
     </AuthPagesLayout>
   );

@@ -3,7 +3,6 @@
   display: inline-block;
   transition: 0.8s;
   background-size: cover;
-  border-radius: 20px;
 }
 .item:nth-child(1),
 .item:nth-child(2) {
@@ -19,13 +18,13 @@
   left: 50%;
 }
 .item:nth-child(4) {
-  left: calc(50% + 220px);
+  left: calc(50% + 240px);
 }
 .item:nth-child(5) {
-  left: calc(50% + 440px);
+  left: calc(50% + 480px);
 }
 .item:nth-child(n + 6) {
-  left: calc(50% + 660px);
+  left: calc(50% + 700px);
   opacity: 0;
 }
 .item:nth-child(2) .content {

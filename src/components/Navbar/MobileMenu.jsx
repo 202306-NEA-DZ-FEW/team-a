@@ -1,10 +1,19 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import { BiLogOut } from "react-icons/bi";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
-function MobileMenu({ user, t, currentPath, logOut }) {
+function MobileMenu({ user, t, logOut }) {
   const [open, setopen] = useState(false);
+  const [currentPath, setCurrentPath] = useState("/");
+  const router = useRouter();
+  useEffect(() => {
+    // Get the current path
+    const currentPath = router.asPath;
+    setCurrentPath(currentPath);
+  }, [router]);
+
   const handleClick = () => {
     setopen(false);
   };
