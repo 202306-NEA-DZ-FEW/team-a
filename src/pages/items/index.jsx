@@ -6,6 +6,7 @@ import getAllCategories from "@/lib/getAllCategories";
 
 import Carousel from "@/components/Carousel";
 import Items from "@/components/Items";
+import Wheel from "@/components/Wheel";
 
 function ItemsPage({
   t,
@@ -19,8 +20,11 @@ function ItemsPage({
   const categories = getAllCategories(t);
   return (
     <main className='pb-10'>
-      <div className='relative md:h-[75vh] h-[80vh] overflow-x-hidden w-full'>
+      <div className='relative h-screen overflow-x-hidden w-full'>
         <Carousel t={t} items={categories} queryParams={queryParams} />
+        <div className='absolute lg:bottom-10 lg:left-[5%] bottom-1 left-[50%] overflow-hidden z-50  flex items-center justify-center'>
+          <Wheel />
+        </div>
       </div>
       <Items
         t={t}

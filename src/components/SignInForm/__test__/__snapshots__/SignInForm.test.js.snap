@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="flex flex-col w-full px-14 lg:px-16"
+  className="flex gap-4 flex-col w-full md:max-w-xl px-4 mx-auto"
 >
   <h1
-    className="text-3xl font-bold text-center md:mt-0 mt-10"
+    className="text-3xl font-bold text-center"
   />
   <form
     className="flex flex-col gap-2"

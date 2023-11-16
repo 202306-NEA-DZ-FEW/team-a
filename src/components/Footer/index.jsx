@@ -1,13 +1,24 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import { useEffect, useState } from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsShareFill } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
-import { TbLanguage } from "react-icons/tb";
+
+import LanguageMenu from "../LanguageMenu";
 
 function Footer() {
   const { t } = useTranslation();
+  const router = useRouter();
+  const [currentPath, setCurrentPath] = useState("/");
+  useEffect(() => {
+    // Get the current path
+    const currentPath = router.asPath;
+    setCurrentPath(currentPath);
+  }, [router]);
+
   return (
     <div className='bg-neutral py-10 px-6 text-white w-full'>
       <div className='grid grid-cols-1 justify-items-center md:grid-cols-5 gap-4'>
@@ -60,39 +71,7 @@ function Footer() {
           </ul>
         </div>
         <div className='col-span-1'>
-          <div className='dropdown dropdown-top dropdown-end'>
-            <label
-              tabIndex={0}
-              className='btn hover:bg-transparent  bg-neutral text-white'
-            >
-              <TbLanguage className='text-xl' />
-            </label>
-            <ul
-              tabIndex={0}
-              className='dropdown-content z-[1] menu text-black shadow bg-white rounded-md w-36'
-            >
-              <li>
-                <Link href='/' locale='en' className='block px-4 py-2 '>
-                  <span className='fi fi-gb'></span> English
-                </Link>
-              </li>
-              <li>
-                <Link href='/' locale='fr' className='block px-4 py-2'>
-                  <span className='fi fi-fr'></span> Français
-                </Link>
-              </li>
-              <li>
-                <Link href='/' locale='tr' className='block px-4 py-2 '>
-                  <span className='fi fi-tr '></span> Türkçe
-                </Link>
-              </li>
-              <li>
-                <Link href='/' locale='ar' className='block px-4 py-2 '>
-                  <span className='fi fi-dz '></span> العربية
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <LanguageMenu currentPath={currentPath} bottom={true} />
         </div>
       </div>
     </div>

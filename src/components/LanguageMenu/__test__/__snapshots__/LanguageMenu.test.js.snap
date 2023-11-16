@@ -2,7 +2,7 @@
 
 exports[`it renders correctly 1`] = `
 <div
-  className="text-left hidden lg:block"
+  className="relative text-left hidden lg:block"
   data-headlessui-state=""
 >
   <div>

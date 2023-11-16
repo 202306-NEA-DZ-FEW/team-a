@@ -34,10 +34,8 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex flex-col w-full px-14 lg:px-16'>
-      <h1 className='text-3xl font-bold text-center md:mt-0 mt-10'>
-        {t("signIn:signIn")}
-      </h1>
+    <section className='flex gap-4 flex-col w-full md:max-w-xl px-4 mx-auto'>
+      <h1 className='text-3xl font-bold text-center'>{t("signIn:signIn")}</h1>
       {/* Form Section */}
       <form className='flex flex-col gap-2' onSubmit={formik.handleSubmit}>
         <Input
