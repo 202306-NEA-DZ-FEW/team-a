@@ -1,28 +1,40 @@
 {
-  "dashboard": "Tableau de bord",
+  "dashboard": "tableau de bord",
   "userinfo": {
     "name": "Nom",
-    "location": "Emplacement",
     "email": "Email",
-    "phonenumber": "Numéro de téléphone",
-    "language": "Langue"
+    "language": "Langue",
+    "currentLanguage": "Français",
+    "location": "Wilaya",
+    "phoneNumber": "Numéro de téléphone"
   },
   "userUpadteForm": {
-    "submit": "Submit",
-    "cancel": "Cancel",
-    "nameLabel": "Name",
-    "namePlaceholder": "Enter your full name",
-    "nameRequired": "Name is required",
-    "nameLength": "Name must be less than 20 characters",
+    "updateProfile": "Modifier le profil ",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Entrez votre nom complet",
+    "nameRequired": "Le nom est requis",
+    "nameLength": "Le nom doit contenir moins de 30 caractères",
     "emailLabel": "Email",
-    "emailPlaceholder": "Enter your email",
-    "emailRequired": "Email is required",
-    "emailValid": "Invalid email address",
-    "phoneLabel": "Phone",
-    "phonePlaceholder": "Enter your phone number",
-    "phoneRequired": "Phone number is required",
-    "locationLabel": "Province",
-    "locationRequired": "Location is required"
+    "emailPlaceholder": "Entrez votre email",
+    "emailRequired": "L'email est requis",
+    "emailValid": "Adresse email invalide",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "Entrez votre numéro de téléphone",
+    "phoneRequired": "Le numéro de téléphone est requis",
+    "locationLabel": "Wilaya",
+    "locationRequired": "La wilaya est requisz"
   },
-  "myItems": "Mes articles"
+  "myItems": "Mes articles",
+  "editItemForm": {
+    "updateItem": "Modifier l'article",
+    "titleLabel": "Titre",
+    "titlePlaceholder": "Veuillez ajouter un titre",
+    "titleRequired": "Le titre est requis",
+    "descriptionLabel": "Description",
+    "descriptionLength": "La description doit être plus longue",
+    "descriptionPlaceHolder": "Ajouter une description",
+    "descriptionRequired": "La description est requise",
+    "categoryLabel": "Catégorie",
+    "locationLabel": "Wilaya"
+  }
 }

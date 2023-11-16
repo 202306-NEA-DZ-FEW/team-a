@@ -14,7 +14,7 @@ function BlogsSection({ blogs }) {
         {blogs.map((blog) => (
           <BlogCard key={blog.id} {...blog} />
         ))}
-        {!blogs.length && <p>Coming soon...</p>}
+        {!blogs.length && <p>{t("common:buttons:noItemsfound")}</p>}
       </div>
     </Container>
   );

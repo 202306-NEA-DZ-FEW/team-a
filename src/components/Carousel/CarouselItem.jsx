@@ -22,11 +22,11 @@ export default function CarouselItem({
           className='btn btn-sm bg-white text-black hover:bg-slate-50'
           scroll={false}
           href={{
-            pathname: "/products",
+            pathname: "/items",
             query: { ...queryParams, category: dataKey },
           }}
         >
-          {t("productsPage:seeMore")}
+          {t("itemsPage:seeMore")}
         </Link>
       </div>
     </div>

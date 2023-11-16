@@ -18,7 +18,7 @@ function UserListItem({ item, onDelete, onEdit }) {
       />
       <div className='flex-1'>
         <Link
-          href={`/products/${item.id}`}
+          href={`/items/${item.id}`}
           className='text-left text-md md:text-2xl tracking-wider hover:font-medium hover:underline font-light'
         >
           {item.title}

@@ -1,5 +1,5 @@
 {
-  "addItem": "Ajouter un produit",
+  "addItem": "Ajouter un article",
   "titleLabel": "Titre",
   "titlePlaceholder": "Ajouter un titre",
   "titleRequired": "Le titre est requis",
@@ -9,13 +9,12 @@
   "descriptionLength": "La description doit être plus longue",
   "descriptionRequired": "La description est requise",
   "descriptionPlaceHolder": "Ajouter une description",
-  "cancel": "Annuler",
   "imageLabel": "Ajouter une image",
   "imageRequired": "Vous devez fournir une image",
   "locationLabel": "Wilaya",
   "locationRequired": "La Wilaya est requise",
-  "itemTag": "Préférence de Don",
-  "itemTagRequired": "La préférence de don est requise",
+  "listingType": "Type d'article",
+  "itemTagRequired": "Le type d'article est requise",
   "donationButton": "Don",
   "exchangeButton": "Échange",
   "requestButton": "Demande"

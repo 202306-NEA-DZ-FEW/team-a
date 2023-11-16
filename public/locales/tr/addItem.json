@@ -1,0 +1,21 @@
+{
+  "addItem": "Öğe Ekle",
+  "titleLabel": "Başlık",
+  "titlePlaceholder": "Başlık Ekle",
+  "titleRequired": "Başlık gereklidir",
+  "categoryLabel": "Kategori",
+  "categoryRequired": "Kategori gereklidir",
+  "descriptionLabel": "Açıklama",
+  "descriptionLength": "Açıklama daha uzun olmalıdır",
+  "descriptionRequired": "Açıklama gereklidir",
+  "descriptionPlaceHolder": "Bir açıklama ekleyin",
+  "imageLabel": "Resim",
+  "imageRequired": "Bir resim sağlamanız gerekiyor",
+  "locationLabel": "İl",
+  "locationRequired": "Konum gereklidir",
+  "itemTagRequired": "Bağış tercihi gereklidir",
+  "listingType": "Ürün tipi",
+  "donationButton": "Bağış Yap",
+  "exchangeButton": "Değiş tokuş",
+  "requestButton": "Talep Et"
+}

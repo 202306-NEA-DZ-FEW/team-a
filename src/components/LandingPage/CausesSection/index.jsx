@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { FaHandHoldingWater } from "react-icons/fa";
-import { IoHelpBuoy } from "react-icons/io5";
 import { LuHeartHandshake } from "react-icons/lu";
+import { RiGraduationCapFill } from "react-icons/ri";
 
 import Container from "@/components/container";
 
@@ -16,15 +16,15 @@ function CausesSection() {
       </h1>
       <div className='flex flex-col justify-center items-start gap-4 text-center p-6 md:flex-row'>
         <InfoCard
-          icon={<IoHelpBuoy className='text-6xl text-error' />}
-          title={t("landingPage:causes:warmth:title")}
-          description={t("landingPage:causes:warmth:description")}
+          icon={<RiGraduationCapFill className='text-6xl text-error' />}
+          title={t("landingPage:causes:education:title")}
+          description={t("landingPage:causes:education:description")}
         />
 
         <InfoCard
           icon={<LuHeartHandshake className='text-6xl text-error' />}
-          title={t("landingPage:causes:comfort:title")}
-          description={t("landingPage:causes:comfort:description")}
+          title={t("landingPage:causes:solidarity:title")}
+          description={t("landingPage:causes:solidarity:description")}
         />
         <InfoCard
           icon={<FaHandHoldingWater className='text-6xl text-error' />}

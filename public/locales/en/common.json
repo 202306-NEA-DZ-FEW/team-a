@@ -1,31 +1,31 @@
 {
   "navbar": {
-    "logo": "Unify.",
-    "home": "Home",
-    "about": "About us",
-    "products": "Products",
-    "blogs": "Blogs",
     "dashboard": "Dashboard"
   },
   "footer": {
-    "home": "Home",
-    "about": "About us",
-    "products": "Products",
-    "listedItems": "Listed items",
-    "blogs": "Blogs",
-    "contactUs": "Contact us",
     "address": "Adress",
-    "street": "Street 01,17",
-    "city": "City, Country"
+    "city": "City, Algeria",
+    "contactUs": "Contact us",
+    "listedItems": "Listed items",
+    "street": "Street 01,17"
   },
   "buttons": {
-    "signIn": "Sign in",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "donate": "Donate now",
-    "readMore": "Read more",
-    "confirm": "Confirm",
+    "about": "About us",
+    "addItem": "Add item",
+    "blogs": "Blogs",
     "cancel": "Cancel",
-    "addItem": "Add item"
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "donate": "Donate now",
+    "home": "Home",
+    "logo": "Unify.",
+    "items": "Items",
+    "readMore": "Read more",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signUp": "Sign up",
+    "noItemsfound": "No Items Found...",
+    "prevButton": "Previous",
+    "nextButton": "Next"
   }
 }

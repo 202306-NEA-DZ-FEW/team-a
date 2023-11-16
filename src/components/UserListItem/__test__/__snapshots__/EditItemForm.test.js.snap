@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
       <h1
         className="text-xl font-bold text-center"
       >
-        Update your personal profile
+        editItemForm.updateItem
       </h1>
       <div
         className="flex justify-evenly gap-4 items-center"
@@ -685,7 +685,7 @@ exports[`renders correctly 1`] = `
           className="btn rounded-full normal-case tracking-wider btn-active"
           type="submit"
         >
-          userUpadteForm.submit
+          buttons.submit
         </button>
         <div
           method="dialog"
@@ -695,7 +695,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             type="button"
           >
-            userUpadteForm.cancel
+            buttons.cancel
           </button>
         </div>
       </div>

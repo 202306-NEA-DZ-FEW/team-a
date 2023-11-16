@@ -1,0 +1,40 @@
+{
+  "dashboard": "anasayfa",
+  "userinfo": {
+    "name": "Ad",
+    "email": "E-posta",
+    "language": "Dil",
+    "currentLanguage": "Türkçe",
+    "location": "Konum",
+    "phoneNumber": "Telefon numarası"
+  },
+  "userUpadteForm": {
+    "updateProfile": "Profili Düzenle",
+    "nameLabel": "Ad",
+    "namePlaceholder": "Tam adınızı girin",
+    "nameRequired": "Ad gereklidir",
+    "nameLength": "Ad 30 karakterden az olmalıdır",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "E-postanızı girin",
+    "emailRequired": "E-posta gereklidir",
+    "emailValid": "Geçersiz e-posta adresi",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "Telefon numaranızı girin",
+    "phoneRequired": "Telefon numarası gereklidir",
+    "locationLabel": "İl",
+    "locationRequired": "İl gereklidir"
+  },
+  "myItems": "Benim Ürünlerim",
+  "editItemForm": {
+    "updateItem": "Ürünü Düzenle",
+    "titleLabel": "Başlık",
+    "titlePlaceholder": "Lütfen bir başlık ekleyin",
+    "titleRequired": "Başlık gereklidir",
+    "descriptionLabel": "Açıklama",
+    "descriptionLength": "Açıklama daha uzun olmalıdır",
+    "descriptionPlaceHolder": "Açıklama ekleyin",
+    "descriptionRequired": "Açıklama gereklidir",
+    "categoryLabel": "Kategori",
+    "locationLabel": "İl"
+  }
+}

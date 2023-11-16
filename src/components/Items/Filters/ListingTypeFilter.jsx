@@ -19,7 +19,7 @@ function ListingTypeFilter({ t, queryParams }) {
             <span>
               {queryParams.listingType
                 ? t(`addItem:${queryParams.listingType}`)
-                : "Listing type"}
+                : t("addItem:listingType")}
             </span>
           </div>
           <IoMdArrowDropdown />
@@ -41,7 +41,7 @@ function ListingTypeFilter({ t, queryParams }) {
                   scroll={false}
                   key={type}
                   href={{
-                    pathname: "/products",
+                    pathname: "/items",
                     query: { ...queryParams, listingType: type },
                   }}
                 >

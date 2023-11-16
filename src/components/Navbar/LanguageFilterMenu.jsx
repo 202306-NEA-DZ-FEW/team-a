@@ -58,13 +58,27 @@ function LanguageFilterMenu({ currentPath }) {
             {({ active }) => (
               <Link
                 href={currentPath}
+                locale='tr'
+                className={classNames(
+                  active ? "bg-gray-200 text-gray-900" : "text-gray-700",
+                  "block px-4 py-2 text-sm mb-2 rounded-md"
+                )}
+              >
+                <span className='fi fi-tr rounded mr-2'></span> Türkçe
+              </Link>
+            )}
+          </Menu.Item>
+          <Menu.Item>
+            {({ active }) => (
+              <Link
+                href={currentPath}
                 locale='ar'
                 className={classNames(
                   active ? "bg-gray-200 text-gray-900" : "text-gray-700",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
               >
-                <span className='fi fi-sa rounded mr-2'></span> العربية
+                <span className='fi fi-dz rounded mr-2'></span> العربية
               </Link>
             )}
           </Menu.Item>

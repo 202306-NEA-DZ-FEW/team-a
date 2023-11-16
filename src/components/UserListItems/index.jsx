@@ -11,7 +11,7 @@ import UserListItem from "../UserListItem";
 
 function UserListItems({ userItems }) {
   const [items, setItems] = useState(userItems);
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
   const { deleteItem, loading } = useDeleteDoc();
 
   const handleDelete = async (itemId) => {
@@ -33,13 +33,16 @@ function UserListItems({ userItems }) {
   };
 
   return (
-    <div className='flex flex-col w-full gap-4 flex-1'>
+    <div
+      className='flex flex-col w-full gap-4 flex-1'
+      dir={i18n?.language == "ar" ? "rtl" : "ltr"}
+    >
       <div className='flex w-full justify-between'>
         <h2 className='text-3xl font-bold text-center'>
           {t("dashboard:myItems")}{" "}
         </h2>
         <Link
-          href='/products/create'
+          href='/items/create'
           className='btn btn-sm btn-circle text-primary-focus btn-active transition-all duration-500 ease-in-out hover:drop-shadow-md'
         >
           <AiOutlinePlus className='text-xl' />

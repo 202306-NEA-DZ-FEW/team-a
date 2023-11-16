@@ -64,7 +64,7 @@ function EditProfileForm({ userData, onUpdate }) {
       <div className='modal-box bg-white transition-all duration-500 ease-in-out'>
         <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
           <h1 className='text-xl font-bold text-center'>
-            Update your personal profile
+            {t("dashboard:userUpadteForm:updateProfile")}
           </h1>
           <Input
             name='name'
@@ -115,7 +115,7 @@ function EditProfileForm({ userData, onUpdate }) {
               type='submit'
               className='btn rounded-full normal-case tracking-wider btn-active'
             >
-              {t("dashboard:userUpadteForm:submit")}
+              {t("common:buttons:submit")}
             </button>
             <div method='dialog'>
               <button
@@ -123,7 +123,7 @@ function EditProfileForm({ userData, onUpdate }) {
                 className='btn btn-outline rounded-full normal-case tracking-wider font-light'
                 onClick={() => document.getElementById("my_modal_1").close()}
               >
-                {t("dashboard:userUpadteForm:cancel")}
+                {t("common:buttons:cancel")}
               </button>
             </div>
           </div>

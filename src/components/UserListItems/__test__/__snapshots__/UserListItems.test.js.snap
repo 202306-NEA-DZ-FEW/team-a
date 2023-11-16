@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <div
   className="flex flex-col w-full gap-4 flex-1"
+  dir="ltr"
 >
   <div
     className="flex w-full justify-between"
@@ -15,7 +16,7 @@ exports[`renders correctly 1`] = `
     </h2>
     <a
       className="btn btn-sm btn-circle text-primary-focus btn-active transition-all duration-500 ease-in-out hover:drop-shadow-md"
-      href="/products/create"
+      href="/items/create"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -76,7 +77,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="text-left text-md md:text-2xl tracking-wider hover:font-medium hover:underline font-light"
-            href="/products/1"
+            href="/items/1"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -149,7 +150,7 @@ exports[`renders correctly 1`] = `
               <h1
                 className="text-xl font-bold text-center"
               >
-                Update your personal profile
+                editItemForm.updateItem
               </h1>
               <div
                 className="flex justify-evenly gap-4 items-center"
@@ -818,7 +819,7 @@ exports[`renders correctly 1`] = `
                   className="btn rounded-full normal-case tracking-wider btn-active"
                   type="submit"
                 >
-                  userUpadteForm.submit
+                  buttons.submit
                 </button>
                 <div
                   method="dialog"
@@ -828,7 +829,7 @@ exports[`renders correctly 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    userUpadteForm.cancel
+                    buttons.cancel
                   </button>
                 </div>
               </div>
@@ -862,7 +863,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="text-left text-md md:text-2xl tracking-wider hover:font-medium hover:underline font-light"
-            href="/products/2"
+            href="/items/2"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -935,7 +936,7 @@ exports[`renders correctly 1`] = `
               <h1
                 className="text-xl font-bold text-center"
               >
-                Update your personal profile
+                editItemForm.updateItem
               </h1>
               <div
                 className="flex justify-evenly gap-4 items-center"
@@ -1604,7 +1605,7 @@ exports[`renders correctly 1`] = `
                   className="btn rounded-full normal-case tracking-wider btn-active"
                   type="submit"
                 >
-                  userUpadteForm.submit
+                  buttons.submit
                 </button>
                 <div
                   method="dialog"
@@ -1614,7 +1615,7 @@ exports[`renders correctly 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    userUpadteForm.cancel
+                    buttons.cancel
                   </button>
                 </div>
               </div>

@@ -49,7 +49,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
       description: Yup.string()
         .max(150, "description too long")
         .required(t("addItem:descriptionRequired")),
-      listingType: Yup.string().required(t("addItem:itemTagRequired")),
+      listingType: Yup.string().required(t("addItem:listingTypeRequired")),
     }),
     onSubmit: async (values, { resetForm }) => {
       const id = uuidv4();
@@ -85,7 +85,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
           position: toast.POSITION.TOP_CENTER,
           autoClose: 1500,
         });
-        router.push("/products");
+        router.push("/items");
       } catch (err) {
         alert(err.message);
       } finally {
@@ -176,7 +176,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
           <div className='form-control'>
             <div className='label'>
               <span className='label-text'>
-                <span className='text-error'>*</span> {t("addItem:itemTag")}
+                <span className='text-error'>*</span> {t("addItem:listingType")}
               </span>
               <span
                 className={`label-text-alt ${
@@ -209,8 +209,8 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             >
               {t("addItem:addItem")}
             </button>
-            <Link href='/products' className='btn flex-1 md:self-center'>
-              {t("addItem:cancel")}
+            <Link href='/items' className='btn flex-1 md:self-center'>
+              {t("common:buttons:cancel")}
             </Link>
           </div>
         </form>

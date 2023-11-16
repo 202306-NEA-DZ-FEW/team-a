@@ -102,7 +102,7 @@ function EditItemForm({ item, onEdit }) {
           className='flex w-full flex-col gap-4'
         >
           <h1 className='text-xl font-bold text-center'>
-            Update your personal profile
+            {t("dashboard:editItemForm:updateItem")}
           </h1>
           <div className='flex justify-evenly gap-4 items-center'>
             {item.images.map((image, index) => (
@@ -187,7 +187,7 @@ function EditItemForm({ item, onEdit }) {
               type='submit'
               className='btn rounded-full normal-case tracking-wider btn-active'
             >
-              {t("dashboard:userUpadteForm:submit")}
+              {t("common:buttons:submit")}
             </button>
             <div method='dialog'>
               <button
@@ -197,7 +197,7 @@ function EditItemForm({ item, onEdit }) {
                   document.getElementById(`my_modal_${item.id}`).close()
                 }
               >
-                {t("dashboard:userUpadteForm:cancel")}
+                {t("common:buttons:cancel")}
               </button>
             </div>
           </div>

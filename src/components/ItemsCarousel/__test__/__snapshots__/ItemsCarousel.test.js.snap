@@ -39,7 +39,7 @@ exports[`renders correctly 1`] = `
         <div>
           <a
             className="mx-3"
-            href="/products/1"
+            href="/items/1"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -154,7 +154,7 @@ exports[`renders correctly 1`] = `
         <div>
           <a
             className="mx-3"
-            href="/products/2"
+            href="/items/2"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -268,7 +268,7 @@ exports[`renders correctly 1`] = `
         <div>
           <a
             className="mx-3"
-            href="/products/1"
+            href="/items/1"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -382,7 +382,7 @@ exports[`renders correctly 1`] = `
         <div>
           <a
             className="mx-3"
-            href="/products/2"
+            href="/items/2"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}

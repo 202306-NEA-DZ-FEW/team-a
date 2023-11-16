@@ -1,5 +1,5 @@
 {
-  "addItem": "إضافة منتج",
+  "addItem": "إضافة عنصر",
   "titleLabel": "العنوان",
   "titlePlaceholder": "إضافة العنوان",
   "titleRequired": "العنوان مطلوب",
@@ -9,13 +9,12 @@
   "descriptionLength": "يجب أن يكون الوصف أطول",
   "descriptionPlaceHolder": "أضِف وصفًا",
   "descriptionRequired": "الوصف مطلوب",
-  "cancel": "إلغاء",
   "imageLabel": "إضافة صورة",
   "imageRequired": "يجب عليك تقديم صورة",
   "locationLabel": "الولاية",
   "locationRequired": "الولاية مطلوبة",
-  "itemTag": "تفضيل التبرع",
-  "itemTagRequired": "تفضيل التبرع مطلوب",
+  "listingType": "تصنيف العنصر",
+  "itemTagRequired": "تصنيف العنصر مطلوب",
   "donationButton": "للتبرع",
   "exchangeButton": "للتبادل",
   "requestButton": "للطلب"

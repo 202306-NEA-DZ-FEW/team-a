@@ -1,31 +1,31 @@
 {
   "navbar": {
-    "logo": "Unify.",
-    "home": "الرئيسية",
-    "about": "من نحن",
-    "products": "المنتجات",
-    "blogs": "المدونات",
     "dashboard": "لوحة التحكم"
   },
   "footer": {
-    "home": "الرئيسية",
-    "about": "من نحن",
-    "products": "المنتجات",
-    "listedItems": "العناصر المُدرجة",
-    "blogs": "المدونات",
-    "contactUs": "اتصل بنا",
     "address": "العنوان",
-    "street": "شارع 01, 17",
-    "city": "المدينة, الدولة"
+    "city": "المدينة, الجزائر",
+    "contactUs": "اتصل بنا",
+    "listedItems": "العناصر المُدرجة",
+    "street": "شارع 01, 17"
   },
   "buttons": {
-    "signIn": "تسجيل الدخول",
-    "signUp": "التسجيل",
-    "signOut": "تسجيل الخروج",
-    "donate": "تبرع الآن",
-    "readMore": "اقرأ المزيد",
-    "confirm": "تأكيد",
+    "about": "من نحن",
+    "addItem": "إضافة عنصر",
+    "blogs": "المدونات",
     "cancel": "إلغاء",
-    "addItem": "إضافة عنصر"
+    "submit": "إرسال",
+    "confirm": "تأكيد",
+    "donate": "تبرع الآن",
+    "home": "الرئيسية",
+    "logo": "Unify.",
+    "items": "العناصر",
+    "readMore": "اقرأ المزيد",
+    "signIn": "تسجيل الدخول",
+    "signOut": "تسجيل الخروج",
+    "signUp": "التسجيل",
+    "noItemsfound": "لم يتم العثور على عناصر...",
+    "prevButton": "الصفحة السابقة",
+    "nextButton": "الصفحة الموالية"
   }
 }

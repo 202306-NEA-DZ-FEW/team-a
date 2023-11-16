@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
     className="flex justify-center items-center flex-wrap gap-4"
   >
     <a
-      href="/products/1"
+      href="/items/1"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}

@@ -5,17 +5,17 @@
   },
   "causes": {
     "title": "Causes",
-    "warmth": {
-      "title": "Warmth",
-      "description": "we believe that refugees & homeless deserve having access to clean warm clothes in the cold winter & comfy clothes in the summer."
+    "education": {
+      "title": "Education",
+      "description": "We believe in empowering minds through education. We stand for providing equal access to knowledge, as we promote a brighter future for all."
     },
-    "comfort": {
-      "title": "Comfort",
-      "description": "we seek helping people in need to find affordable furnitures & appliances because everyone deserves to have a home, not just a house."
+    "solidarity": {
+      "title": "Solidarity",
+      "description": "We believe in fostering a sense of community by providing support to the less privileged. We promote solidarity and togetherness as we stand for a united and cohesive society"
     },
     "health": {
       "title": "Health",
-      "description": "Unify believes that every human being deserves a warm meal whenever it's difficult."
+      "description": "We believe in promoting a healthy society. We stand for providing essential healthcare support, ensuring the well-being of all as we strive for a healthier community."
     }
   },
   "statistics": {

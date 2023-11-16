@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex items-center justify-center md:justify-between flex-wrap gap-4"
+  className="flex items-center  justify-center md:justify-between flex-wrap gap-4"
 >
   <div
     className="flex gap-4"
@@ -30,14 +30,16 @@ exports[`renders correctly 1`] = `
           d="M18.464 2.114a.998.998 0 0 0-1.033.063l-13 9a1.003 1.003 0 0 0 0 1.645l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-.536-.886zM17 19.091 6.757 12 17 4.909v14.182z"
         />
       </svg>
-       Previous
+       
+      buttons.prevButton
     </button>
     <button
       className="btn btn-sm normal-case font-normal tracking-wide"
       disabled={true}
       onClick={[Function]}
     >
-      Next 
+      buttons.nextButton
+       
       <svg
         fill="currentColor"
         height="1em"
@@ -62,9 +64,12 @@ exports[`renders correctly 1`] = `
     <p
       className="font-normal opacity-50 text-sm tracking-wide"
     >
-      page: 
+      page
+      : 
       1
-       of 
+       
+      of
+       
       3
     </p>
   </div>

@@ -13,18 +13,20 @@ function Footer() {
       <div className='grid grid-cols-1 justify-items-center md:grid-cols-5 gap-4'>
         <div className='col-span-1'>
           <Link href='/'>
-            <h2 className='font-bold text-2xl text-white'>Unify.</h2>
+            <h2 className='font-bold text-2xl text-white'>
+              {t("common:buttons:logo")}
+            </h2>
           </Link>
         </div>
         <div className='col-span-1 '>
           <ul className='flex flex-col items-center md:items-start gap-4'>
             <Link href='/about'>
-              <li className='hover:underline'>{t("common:footer:about")}</li>
+              <li className='hover:underline'>{t("common:buttons:about")}</li>
             </Link>
             <Link href='/blogs'>
-              <li className='hover:underline'>{t("common:footer:blogs")}</li>
+              <li className='hover:underline'>{t("common:buttons:blogs")}</li>
             </Link>
-            <Link href='/products'>
+            <Link href='/items'>
               <li className='hover:underline'>
                 {t("common:footer:listedItems")}
               </li>
@@ -80,8 +82,13 @@ function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href='/' locale='tr' className='block px-4 py-2 '>
+                  <span className='fi fi-tr '></span> Türkçe
+                </Link>
+              </li>
+              <li>
                 <Link href='/' locale='ar' className='block px-4 py-2 '>
-                  <span className='fi fi-sa '></span> العربية
+                  <span className='fi fi-dz '></span> العربية
                 </Link>
               </li>
             </ul>

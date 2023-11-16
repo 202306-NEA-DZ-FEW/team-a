@@ -1,31 +1,31 @@
 {
   "navbar": {
-    "logo": "Unify.",
-    "home": "Accueil",
-    "about": "À propos de nous",
-    "products": "Produits",
-    "blogs": "Blogs",
     "dashboard": "Tableau de bord"
   },
   "footer": {
-    "home": "Accueil",
-    "about": "À propos de nous",
-    "products": "Produits",
-    "listedItems": "Articles répertoriés",
-    "blogs": "Blogs",
-    "contactUs": "Contactez-nous",
     "address": "Adresse",
-    "street": "Rue 01, 17",
-    "city": "Ville, Pays"
+    "city": "Ville, Algérie",
+    "contactUs": "Contactez-nous",
+    "listedItems": "Articles",
+    "street": "Rue 01, 17"
   },
   "buttons": {
-    "signIn": "Se connecter",
-    "signUp": "S'inscrire",
-    "signOut": "Se déconnecter",
-    "donate": "Donner maintenant",
-    "readMore": "Lire la suite",
-    "confirm": "Confirmer",
+    "about": "À propos de nous",
+    "addItem": "Ajouter un article",
+    "blogs": "Blogs",
     "cancel": "Annuler",
-    "addItem": "Ajouter un produit"
+    "submit": "Soumettre",
+    "confirm": "Confirmer",
+    "donate": "Donner maintenant",
+    "home": "Accueil",
+    "logo": "Unify.",
+    "items": "Articles",
+    "readMore": "Lire la suite",
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter",
+    "signUp": "S'inscrire",
+    "noItemsfound": "Aucun élément trouvé...",
+    "prevButton": "Précédent",
+    "nextButton": "Suivant"
   }
 }
