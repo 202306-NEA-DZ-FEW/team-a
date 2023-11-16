@@ -30,8 +30,9 @@ function Pagination({ page, pageSize, totalItems, queryParams, totalPages }) {
 
   return (
     <div
-      className='flex items-center justify-center md:justify-between flex-wrap gap-4'
-      dir={i18n?.language === "ar" ? "rtl" : "ltr"}
+      className={`flex items-center ${
+        i18n?.language === "ar" ? "flex-row-reverse" : ""
+      } justify-center md:justify-between flex-wrap gap-4`}
     >
       <div className='flex gap-4'>
         <button

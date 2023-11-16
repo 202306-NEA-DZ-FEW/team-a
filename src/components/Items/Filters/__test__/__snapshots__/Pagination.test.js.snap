@@ -2,8 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex items-center justify-center md:justify-between flex-wrap gap-4"
-  dir="ltr"
+  className="flex items-center  justify-center md:justify-between flex-wrap gap-4"
 >
   <div
     className="flex gap-4"
