@@ -98,7 +98,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
   return (
     <ProtectedLayout>
       <section className='relative md:max-w-lg mx-auto'>
-        <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
+        <form onSubmit={formik.handleSubmit} className='flex flex-col gap-3'>
           <h1 className='text-3xl font-black text-center'>
             {t("addItem:addItem")}
           </h1>
@@ -124,6 +124,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             handleBlur={formik.handleBlur}
             error={formik.errors.title}
             touched={formik.touched.title}
+            sm
           />
           <SelectInput
             name='category'
@@ -133,6 +134,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             value={formik.values.category}
             touched={formik.touched.category}
             error={formik.errors.category}
+            sm
           />
           <SelectInput
             name='location'
@@ -142,6 +144,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             value={formik.values.location}
             touched={formik.touched.location}
             error={formik.errors.location}
+            sm
           />
           <TextAreaInput
             name='description'
@@ -169,7 +172,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             onChange={(e) => {
               setImages(Array.from(e.target.files));
             }}
-            className='file-input bg-white'
+            className='file-input bg-base-300'
             id='file-upload'
             multiple
           />
@@ -205,11 +208,14 @@ function AddItemForm({ t, initialLocale, categories, states }) {
           <div className='flex flex-col md:flex-row gap-2 justify-center mt-2'>
             <button
               type='submit'
-              className='btn btn-primary flex-1 md:self-center text-white'
+              className='btn btn-md rounded-xl btn-primary bg-opacity-30 flex-1 md:self-center'
             >
               {t("addItem:addItem")}
             </button>
-            <Link href='/items' className='btn flex-1 md:self-center'>
+            <Link
+              href='/items'
+              className='btn btn-md rounded-xl btn-outline flex-1 md:self-center'
+            >
               {t("common:buttons:cancel")}
             </Link>
           </div>

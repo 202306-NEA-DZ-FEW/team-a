@@ -34,12 +34,12 @@ export default function BlogsCard({ index, blog }) {
         <div className='flex flex-col lg:flex-1 gap-4'>
           <div>
             <h2 className='font-bold text-2xl'>{blog.title}</h2>
-            <span className='my-1 text-sm text-gray-600 font-light hidden lg:block'>
+            <span className='my-1 text-sm text-gray-500 font-light hidden lg:block'>
               {date}
             </span>
           </div>
 
-          <p>
+          <p className='text-slate-500'>
             {blog.description.slice(0, 210)}
             {blog.description.length > 210 ? " ..." : ""}
           </p>

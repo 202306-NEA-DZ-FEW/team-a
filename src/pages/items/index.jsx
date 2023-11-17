@@ -19,7 +19,7 @@ function ItemsPage({
 }) {
   const categories = getAllCategories(t);
   return (
-    <main className='pb-10'>
+    <main>
       <div className='relative h-screen overflow-x-hidden w-full'>
         <Carousel t={t} items={categories} queryParams={queryParams} />
         <div className='absolute lg:bottom-10 lg:left-[5%] bottom-1 left-[50%] overflow-hidden z-50  flex items-center justify-center'>

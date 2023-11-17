@@ -18,7 +18,7 @@ function StatisticsSection() {
         <Image src={background} alt='background' className='opacity-10' />
       </div>
       <Container id='stats'>
-        <div className='flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-white  rounded-3xl shadow-xl transform md:-translate-y-40 -translate-y-24'>
+        <div className='flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100  rounded-3xl shadow-xl transform md:-translate-y-40 -translate-y-24'>
           <InfoCard
             icon={<TfiStatsUp className='text-6xl text-error' />}
             title={t("landingPage:statistics:meals:title")}

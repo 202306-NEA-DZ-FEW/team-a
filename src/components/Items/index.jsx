@@ -42,8 +42,11 @@ function Items({
     );
   };
   return (
-    <div className='flex flex-col lg:flex-row px-8 gap-8 mt-10 items-start min-h-[80vh]'>
-      <div className='lg:w-[30%] h-full w-full bg-white drop-shadow-lg p-4 rounded-xl flex gap-6 flex-col'>
+    <div
+      id='items'
+      className='flex bg-base-300 flex-col lg:flex-row py-24 px-8 gap-8 items-start min-h-screen'
+    >
+      <div className='lg:w-[30%] h-full w-full bg-base-100 drop-shadow-lg p-4 rounded-xl flex gap-6 flex-col'>
         <h3 className='flex gap-2 items-center text-2xl tracking-wide lg:mb-8'>
           <MdFilterList /> {t("itemsPage:filters")}
         </h3>
@@ -54,7 +57,7 @@ function Items({
         <ClearFilterButton t={t} handleClearFilters={handleClearFilters} />
       </div>
       <div className='flex flex-col gap-8 flex-1'>
-        <div className='bg-white drop-shadow-lg flex flex-wrap gap-2 rounded-xl p-4 justify-between'>
+        <div className='bg-base-100 drop-shadow-lg flex flex-wrap gap-2 rounded-xl p-4 justify-between'>
           <h1
             className='flex gap-2 items-center text-xl tracking-wide flex-1 min-w-fit '
             id='products'
@@ -72,13 +75,13 @@ function Items({
           <Link
             placeholder='dasda'
             href='/items/create'
-            className='btn btn-sm rounded-full normal-case font-normal'
+            className='btn btn-sm btn-primary bg-opacity-40 rounded-full normal-case font-normal'
           >
             <IoAddCircleOutline size={20} />
             {t("common:buttons:addItem")}
           </Link>
         </div>
-        <div className='bg-white drop-shadow-lg rounded-xl p-4 flex flex-col gap-4 lg:min-h-[300px] justify-between'>
+        <div className='bg-base-100 drop-shadow-lg rounded-xl p-4 flex flex-col gap-4 lg:min-h-[300px] justify-between'>
           <div className='flex flex-wrap gap-4 items-center justify-center md:justify-start w-full'>
             {items.map((item) => (
               <Link

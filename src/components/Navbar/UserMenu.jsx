@@ -28,12 +28,12 @@ function UserMenu({ user, logOut, t, userProfile }) {
         leaveFrom='transform opacity-100 scale-100'
         leaveTo='transform opacity-0 scale-95'
       >
-        <Menu.Items className='absolute right-0 translate-x-1/3 left-auto origin-center z-40 top-12 lg:mr-4 w-screen md:w-screen lg:w-56 rounded-3xl p-2 bg-white shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none font-light tracking-wider'>
+        <Menu.Items className='absolute right-0 translate-x-1/3 left-auto origin-center z-40 top-12 lg:mr-4 w-screen md:w-screen lg:w-56 rounded-xl p-2 bg-base-100 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none font-light tracking-wider'>
           <Menu.Item>
             {({ active }) => (
               <Link
                 className={classNames(
-                  active ? "bg-gray-200 text-gray-900" : "text-gray-700",
+                  active ? "bg-base-300" : "text-gray-700",
                   "px-4 py-2 text-sm mb-2 rounded-md w-full flex gap-1 items-center"
                 )}
                 href={{
@@ -50,7 +50,7 @@ function UserMenu({ user, logOut, t, userProfile }) {
             {({ active }) => (
               <button
                 className={classNames(
-                  active ? "bg-gray-200 text-gray-900" : "text-gray-700",
+                  active ? "bg-base-300" : "text-gray-700",
                   "px-4 py-2 text-sm mb-2 rounded-md w-full flex gap-1 items-center"
                 )}
                 onClick={logOut}

@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-white"
+  className="flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-base-100"
 >
   <div
     className="lg:hidden"
@@ -549,7 +549,7 @@ exports[`renders correctly 1`] = `
     </div>
   </figure>
   <div
-    className="card-body text-gray-950 flex-1"
+    className="card-body flex-1"
     id="CardContent"
   >
     <h1
@@ -736,7 +736,7 @@ exports[`renders correctly 1`] = `
         </svg>
         nameLabel
         <span
-          className="font-normal text-gray-950"
+          className="font-normal text-gray-500"
         >
           itemDetails username
         </span>
@@ -766,7 +766,7 @@ exports[`renders correctly 1`] = `
         </svg>
         phoneLabel
         <span
-          className="font-normal text-gray-950"
+          className="font-normal text-gray-500"
         >
           +1 1 1 1
         </span>
@@ -798,7 +798,7 @@ exports[`renders correctly 1`] = `
         </svg>
         emailLabel
         <span
-          className="font-normal text-gray-950"
+          className="font-normal text-gray-500"
         >
           itemDetails email
         </span>

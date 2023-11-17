@@ -54,12 +54,14 @@ exports[`renders correctly 1`] = `
         Sample Blog Title
       </h2>
       <span
-        className="my-1 text-sm text-gray-600 font-light hidden lg:block"
+        className="my-1 text-sm text-gray-500 font-light hidden lg:block"
       >
         Invalid date
       </span>
     </div>
-    <p>
+    <p
+      className="text-slate-500"
+    >
       Sample description for the blog...
     </p>
     <a

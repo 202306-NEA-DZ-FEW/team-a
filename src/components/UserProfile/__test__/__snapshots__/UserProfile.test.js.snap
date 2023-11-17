@@ -32,7 +32,7 @@ exports[`renders correctly 1`] = `
           width={150}
         />
         <div
-          className="absolute hidden w-full h-full bg-white rounded-full top-0 left-0 group-hover:flex cursor-pointer bg-opacity-50 "
+          className="absolute hidden w-full h-full bg-base-200 rounded-full top-0 left-0 group-hover:flex cursor-pointer bg-opacity-50 "
           type="file"
         >
           <input
@@ -112,7 +112,7 @@ exports[`renders correctly 1`] = `
     </div>
   </section>
   <section
-    className="flex md:justify-between md:items-center tracking-wider md:flex-row gap-2 bg-white drop-shadow-md md:gap-6 w-full rounded-2xl"
+    className="flex md:justify-between md:items-center tracking-wider md:flex-row gap-2 bg-base-200 drop-shadow-md md:gap-6 w-full rounded-2xl"
     dir="ltr"
   >
     <div
@@ -190,10 +190,10 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="self-start md:self-stretch md:bg-gray-100 md:rounded-tr-2xl md:rounded-br-2xl"
+      className="self-start md:self-stretch md:bg-base-200 md:rounded-tr-2xl md:rounded-br-2xl"
     >
       <button
-        className="btn transition-all duration-500 ease-in-out group btn-ghost hover:bg-opacity-10 rounded-2xl h-full
+        className="btn transition-all duration-500 ease-in-out group bg-base-300 btn-ghost hover:bg-opacity-10 rounded-2xl h-full
             md:rounded-tl-none md:rounded-bl-none
             "
         onClick={[Function]}
@@ -223,10 +223,10 @@ exports[`renders correctly 1`] = `
         id="my_modal_1"
       >
         <div
-          className="modal-box bg-white transition-all duration-500 ease-in-out"
+          className="modal-box bg-base-100 transition-all duration-500 ease-in-out"
         >
           <form
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-3"
             onSubmit={[Function]}
           >
             <h1
@@ -249,7 +249,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full rounded-full border-opacity-25"
+                className="input input-sm bg-base-300 input-primary w-full rounded-full border-opacity-25"
                 id="name"
                 name="name"
                 onBlur={[Function]}
@@ -274,7 +274,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full rounded-full border-opacity-25"
+                className="input input-sm bg-base-300 input-primary w-full rounded-full border-opacity-25"
                 id="email"
                 name="email"
                 onBlur={[Function]}
@@ -299,7 +299,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <input
-                className="input bg-white input-primary w-full rounded-full border-opacity-25"
+                className="input input-sm bg-base-300 input-primary w-full rounded-full border-opacity-25"
                 id="phone"
                 name="phone"
                 onBlur={[Function]}
@@ -324,7 +324,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <select
-                className="select select-primary bg-white w-full border-opacity-25 rounded-3xl"
+                className="select select-sm select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
                 defaultValue="1- Adrad"
                 id="location"
                 onChange={[Function]}
@@ -625,7 +625,7 @@ exports[`renders correctly 1`] = `
               className=" modal-action"
             >
               <button
-                className="btn rounded-full normal-case tracking-wider btn-active"
+                className="btn btn-sm rounded-xl btn-primary bg-opacity-40 normal-case tracking-wider btn-active"
                 type="submit"
               >
                 buttons.submit
@@ -634,7 +634,7 @@ exports[`renders correctly 1`] = `
                 method="dialog"
               >
                 <button
-                  className="btn btn-outline rounded-full normal-case tracking-wider font-light"
+                  className="btn btn-outline btn-sm rounded-xl normal-case tracking-wider font-light"
                   onClick={[Function]}
                   type="button"
                 >

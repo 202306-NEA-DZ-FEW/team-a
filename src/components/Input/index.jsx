@@ -8,6 +8,7 @@ function Input({
   handleBlur,
   touched,
   error,
+  sm,
 }) {
   return (
     <div>
@@ -22,7 +23,9 @@ function Input({
         </label>
       </div>
       <input
-        className='input bg-white input-primary w-full rounded-full border-opacity-25'
+        className={`input ${
+          sm ? "input-sm" : ""
+        } bg-base-300 input-primary w-full rounded-full border-opacity-25`}
         id={name}
         type={type}
         name={name}

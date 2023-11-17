@@ -22,7 +22,7 @@ function OurPartnersSection() {
           height={200}
           priority
           placeholder='blur'
-          className=' object-cover rounded-xl '
+          className='object-cover rounded-xl '
         />
         <Image
           src={flatironschool}
@@ -31,7 +31,7 @@ function OurPartnersSection() {
           height={200}
           priority
           placeholder='blur'
-          className=' object-cover rounded-xl'
+          className='object-cover rounded-xl'
         />
         <Image
           src={microsoft}
@@ -40,7 +40,7 @@ function OurPartnersSection() {
           height={200}
           priority
           placeholder='blur'
-          className=' object-cover rounded-xl'
+          className='object-cover rounded-xl'
         />
         <Image
           src={mepi}
@@ -49,7 +49,7 @@ function OurPartnersSection() {
           height={200}
           priority
           placeholder='blur'
-          className=' object-cover rounded-xl'
+          className='object-cover rounded-xl'
         />
       </div>
     </Container>

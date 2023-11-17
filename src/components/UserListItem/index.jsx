@@ -7,7 +7,7 @@ import EditItemForm from "./EditItemForm";
 
 function UserListItem({ item, onDelete, onEdit }) {
   return (
-    <div className='flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-white drop-shadow-md p-2'>
+    <div className='flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-200 drop-shadow-md p-2'>
       <Image
         src={item.images[0]}
         alt={item.title}

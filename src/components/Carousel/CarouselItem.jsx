@@ -19,12 +19,9 @@ export default function CarouselItem({
           {description ? description : ""}
         </p>
         <Link
-          className='btn btn-sm bg-white text-black hover:bg-slate-50'
+          className='btn btn-sm rounded-xl bg-transparent text-white hover:bg-slate-50 hover:text-black'
           scroll={false}
-          href={{
-            pathname: "/items",
-            query: { ...queryParams, category: dataKey },
-          }}
+          href='#items'
         >
           {t("itemsPage:seeMore")}
         </Link>

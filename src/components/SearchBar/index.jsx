@@ -42,14 +42,14 @@ function SearchBar({ t, queryParams, searchText, setSearchText }) {
   }, [query]);
 
   return (
-    <div className='relative rounded-full border'>
+    <div className='relative rounded-full border-base-300'>
       <RiSearch2Line className='absolute right-3 translate-y-1/2 transform text-gray-500' />
       <input
         value={searchText}
         onChange={handleSearch}
         type='text'
         placeholder={t("itemsPage:searchPlaceHolder")}
-        className='border-none input-sm rounded-full input-bordered input bg-gray-50 outline-none font-light normal-case w-full'
+        className='border-none input-sm rounded-full input-bordered input bg-base-300 outline-none font-light normal-case w-full'
       />
     </div>
   );

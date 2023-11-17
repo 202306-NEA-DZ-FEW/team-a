@@ -39,7 +39,7 @@ function UserProfile({ userData }) {
         <div className='avatar m-[6px]'>
           <div className='w-20 rounded-full relative ring ring-primary ring-offset-base-100 ring-offset-2 group'>
             {loading && (
-              <ImageSpinner classes='absolute w-full h-full p-5 rounded-full bg-white bg-opacity-30' />
+              <ImageSpinner classes='absolute w-full h-full p-5 rounded-full bg-base-200 bg-opacity-30' />
             )}
             <Image
               className='object-cover w-full h-full'
@@ -51,7 +51,7 @@ function UserProfile({ userData }) {
             />
             <div
               type='file'
-              className='absolute hidden w-full h-full bg-white rounded-full top-0 left-0 group-hover:flex cursor-pointer bg-opacity-50 '
+              className='absolute hidden w-full h-full bg-base-200 rounded-full top-0 left-0 group-hover:flex cursor-pointer bg-opacity-50 '
             >
               <input
                 type='file'
@@ -84,7 +84,7 @@ function UserProfile({ userData }) {
       </section>
       {/* user info............................... */}
       <section
-        className='flex md:justify-between md:items-center tracking-wider md:flex-row gap-2 bg-white drop-shadow-md md:gap-6 w-full rounded-2xl'
+        className='flex md:justify-between md:items-center tracking-wider md:flex-row gap-2 bg-base-200 drop-shadow-md md:gap-6 w-full rounded-2xl'
         dir={i18n?.language == "ar" ? "rtl" : "ltr"}
       >
         <div className='flex flex-col md:flex-row gap-2 p-6 md:gap-6 flex-1'>
@@ -124,7 +124,7 @@ function UserProfile({ userData }) {
           </p>
         </div>
         <div
-          className={`self-start md:self-stretch md:bg-gray-100 ${
+          className={`self-start md:self-stretch md:bg-base-200 ${
             i18n?.language == "ar"
               ? "md:rounded-tl-2xl md:rounded-bl-2xl"
               : "md:rounded-tr-2xl md:rounded-br-2xl"
@@ -132,7 +132,7 @@ function UserProfile({ userData }) {
         >
           <button
             onClick={() => document.getElementById("my_modal_1").showModal()}
-            className={`btn transition-all duration-500 ease-in-out group btn-ghost hover:bg-opacity-10 rounded-2xl h-full
+            className={`btn transition-all duration-500 ease-in-out group bg-base-300 btn-ghost hover:bg-opacity-10 rounded-2xl h-full
             ${
               i18n?.language == "ar"
                 ? "md:rounded-tr-none md:rounded-br-none"

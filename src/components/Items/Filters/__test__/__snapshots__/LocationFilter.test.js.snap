@@ -8,7 +8,7 @@ exports[`renders correctly 1`] = `
   <button
     aria-expanded={false}
     aria-haspopup="menu"
-    className="flex items-center gap-2 w-full justify-between border bg-white input-sm rounded-full tracking-wider"
+    className="flex items-center gap-2 w-full justify-between bg-base-300 input-sm rounded-full tracking-wider"
     data-headlessui-state=""
     id="headlessui-menu-button-:r0:"
     onClick={[Function]}

@@ -40,7 +40,7 @@ function LanguageMenu({ bottom }) {
         <Menu.Items
           className={`absolute ${
             bottom ? "bottom-12" : "top-12"
-          } z-40 right-0 translate-x-10 w-56 rounded-3xl p-2 bg-white shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none font-light tracking-wider`}
+          } z-40 right-0 translate-x-10 w-56 rounded-xl p-2 bg-base-100 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none font-light tracking-wider`}
         >
           <Menu.Item>
             {({ active }) => (
@@ -48,7 +48,7 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='en'
                 className={classNames(
-                  active ? "bg-gray-200 text-gray-900" : "text-gray-700",
+                  active ? "bg-base-300" : "text-gray-700",
                   "block px-4 py-2 text-sm my-2 rounded-md"
                 )}
               >
@@ -62,7 +62,7 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='fr'
                 className={classNames(
-                  active ? "bg-gray-200 text-gray-900" : "text-gray-700",
+                  active ? "bg-base-300" : "text-gray-700",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
               >
@@ -76,7 +76,7 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='tr'
                 className={classNames(
-                  active ? "bg-gray-200 text-gray-900" : "text-gray-700",
+                  active ? "bg-base-300" : "text-gray-700",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
               >
@@ -90,7 +90,7 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='ar'
                 className={classNames(
-                  active ? "bg-gray-200 text-gray-900" : "text-gray-700",
+                  active ? "bg-base-300" : "text-gray-700",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
               >

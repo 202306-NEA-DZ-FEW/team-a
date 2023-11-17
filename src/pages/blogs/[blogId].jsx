@@ -11,7 +11,7 @@ import Container from "@/components/container";
 import PageCover from "@/components/PageCover";
 
 function BlogDetails({ blog, user }) {
-  const date = formatDate(blog.createdAt);
+  const date = formatDate(blog?.createdAt);
   return (
     <>
       <PageCover
@@ -22,16 +22,18 @@ function BlogDetails({ blog, user }) {
       />
       <Container className='flex flex-col gap-4 my-12'>
         {/* Author */}
-        <div className='flex gap-4 items-center justify-start'>
-          <figure className='w-10 h-10'>
-            <Image
-              className='w-full h-full rounded-full'
-              width={100}
-              height={100}
-              src={user.photoURL}
-              alt={user.name}
-            />
-          </figure>
+        <div className='flex gap-2 items-center justify-start'>
+          <div className='avatar'>
+            <div className='w-8 rounded-full'>
+              <Image
+                className='w-full h-full rounded-full'
+                width={100}
+                height={100}
+                src={user.photoURL}
+                alt={user.name}
+              />
+            </div>
+          </div>
           <span className='text-slate-600 text-sm'>
             By: <span className='link'>{user.name}</span>
           </span>
@@ -43,7 +45,7 @@ function BlogDetails({ blog, user }) {
         {/* blog header */}
         <div className='flex flex-col gap-2 mb-4'>
           <h2 className='text-3xl font-bold '>{blog.title}</h2>
-          <p className='tracking-wider leading-6 text-slate-700'>
+          <p className='tracking-wider leading-6 text-slate-500'>
             {blog.description}
           </p>
         </div>
@@ -52,7 +54,7 @@ function BlogDetails({ blog, user }) {
           {blog.content?.map((section) => (
             <div key={section.id} className='flex flex-col gap-2'>
               <h3 className='text-xl font-bold'>• {section.subTitle}</h3>
-              <p className='tracking-wider leading-6 text-slate-700 mb-8'>
+              <p className='tracking-wider leading-6 text-slate-500 mb-8'>
                 {section.description}
               </p>
             </div>

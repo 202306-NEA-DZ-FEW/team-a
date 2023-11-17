@@ -61,8 +61,8 @@ function EditProfileForm({ userData, onUpdate }) {
 
   return (
     <dialog id='my_modal_1' className='modal bg-black bg-opacity-40'>
-      <div className='modal-box bg-white transition-all duration-500 ease-in-out'>
-        <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
+      <div className='modal-box bg-base-100 transition-all duration-500 ease-in-out'>
+        <form onSubmit={formik.handleSubmit} className='flex flex-col gap-3'>
           <h1 className='text-xl font-bold text-center'>
             {t("dashboard:userUpadteForm:updateProfile")}
           </h1>
@@ -76,6 +76,7 @@ function EditProfileForm({ userData, onUpdate }) {
             handleBlur={formik.handleBlur}
             error={formik.errors.name}
             touched={formik.touched.name}
+            sm
           />
           <Input
             name='email'
@@ -87,6 +88,7 @@ function EditProfileForm({ userData, onUpdate }) {
             handleBlur={formik.handleBlur}
             error={formik.errors.email}
             touched={formik.touched.email}
+            sm
           />
           <Input
             name='phone'
@@ -98,6 +100,7 @@ function EditProfileForm({ userData, onUpdate }) {
             handleBlur={formik.handleBlur}
             error={formik.errors.phone}
             touched={formik.touched.phone}
+            sm
           />
           <SelectInput
             name='location'
@@ -107,20 +110,21 @@ function EditProfileForm({ userData, onUpdate }) {
             value={formik.values.location}
             touched={formik.touched.location}
             error={formik.errors.location}
+            sm
           />
           <div
             className={`${i18n.language == "ar" ? "gap-2" : ""} modal-action`}
           >
             <button
               type='submit'
-              className='btn rounded-full normal-case tracking-wider btn-active'
+              className='btn btn-sm rounded-xl btn-primary bg-opacity-40 normal-case tracking-wider btn-active'
             >
               {t("common:buttons:submit")}
             </button>
             <div method='dialog'>
               <button
                 type='button'
-                className='btn btn-outline rounded-full normal-case tracking-wider font-light'
+                className='btn btn-outline btn-sm rounded-xl normal-case tracking-wider font-light'
                 onClick={() => document.getElementById("my_modal_1").close()}
               >
                 {t("common:buttons:cancel")}

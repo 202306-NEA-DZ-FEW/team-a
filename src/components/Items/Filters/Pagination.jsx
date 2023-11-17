@@ -36,14 +36,14 @@ function Pagination({ page, pageSize, totalItems, queryParams, totalPages }) {
     >
       <div className='flex gap-4'>
         <button
-          className='btn btn-sm normal-case font-normal tracking-wide'
+          className='btn btn-sm btn-primary bg-opacity-40 normal-case font-normal tracking-wide'
           disabled={!hasPrev}
           onClick={() => handleChangePage("prev")}
         >
           <BiLeftArrow /> {t("common:buttons:prevButton")}
         </button>
         <button
-          className='btn btn-sm normal-case font-normal tracking-wide'
+          className='btn btn-sm btn-primary bg-opacity-40 normal-case font-normal tracking-wide'
           disabled={!hasNext}
           onClick={() => handleChangePage("next")}
         >
