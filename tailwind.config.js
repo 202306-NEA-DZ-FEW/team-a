@@ -18,7 +18,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        light: {
+        myTheme: {
           ...require("daisyui/src/theming/themes")["light"],
           primary: "#02A85C",
           secondary: "#02A8A8",
@@ -33,7 +33,7 @@ module.exports = {
         },
       },
       {
-        dark: {
+        sunset: {
           ...require("daisyui/src/theming/themes")["sunset"],
           primary: "#02A85C",
           secondary: "#02A8A8",

@@ -10,7 +10,7 @@ function BlogCard({ id, title, imageUrl, createdAt, description }) {
   const truncatedDescription = truncateString(description, 60);
   const truncatedTitle = truncateString(title, 20);
   return (
-    <div className='card bg-white rounded-xl shadow-lg w-64'>
+    <div className='card bg-base-200 rounded-xl shadow-lg w-64'>
       <div className='relative'>
         <Image
           className='w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1'

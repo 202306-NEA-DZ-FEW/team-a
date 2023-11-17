@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="card bg-white rounded-xl shadow-lg w-64"
+  className="card bg-base-200 rounded-xl shadow-lg w-64"
 >
   <div
     className="relative"
