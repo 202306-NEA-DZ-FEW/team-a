@@ -15,7 +15,7 @@ function CategoryFilter({ t, queryParams }) {
   return (
     <>
       <Menu as='div' className='relative w-full flex justify-center text-left'>
-        <Menu.Button className='flex items-center gap-2 w-full justify-between border bg-white input-sm rounded-full tracking-wider'>
+        <Menu.Button className='flex items-center gap-2 w-full justify-between bg-base-300 input-sm rounded-full tracking-wider'>
           <div className='flex gap-2 items-center'>
             <BiCategory className='w-5 h-5' />
             <span>
@@ -36,7 +36,7 @@ function CategoryFilter({ t, queryParams }) {
           leaveFrom='transform opacity-100 scale-100'
           leaveTo='transform opacity-0 scale-95'
         >
-          <Menu.Items className='absolute max-h-52 overflow-y-scroll no-scrollbar bg-white z-10 rounded-lg top-10 w-full ring-1 ring-black ring-opacity-5 drop-shadow-xl'>
+          <Menu.Items className='absolute max-h-52 overflow-y-scroll no-scrollbar bg-base-100 z-10 rounded-lg p-2 top-10 w-full ring-1 ring-black ring-opacity-5 focus:outline-none drop-shadow-xl'>
             <div className='py-1'>
               {categories.map(({ name, dataKey }) => (
                 <Link
@@ -51,10 +51,8 @@ function CategoryFilter({ t, queryParams }) {
                     {({ active }) => (
                       <p
                         className={classNames(
-                          active
-                            ? "bg-gray-100 text-gray-900"
-                            : "text-gray-700",
-                          "block px-4 py-2 tracking-wider my-2"
+                          active ? "bg-base-300" : "text-gray-500",
+                          "block px-4 py-2 tracking-wider my-2 rounded-md"
                         )}
                       >
                         {name}

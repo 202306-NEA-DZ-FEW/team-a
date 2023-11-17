@@ -42,7 +42,10 @@ function Items({
     );
   };
   return (
-    <div className='flex bg-base-300 flex-col lg:flex-row py-24 px-8 gap-8 items-start min-h-screen'>
+    <div
+      id='items'
+      className='flex bg-base-300 flex-col lg:flex-row py-24 px-8 gap-8 items-start min-h-screen'
+    >
       <div className='lg:w-[30%] h-full w-full bg-base-100 drop-shadow-lg p-4 rounded-xl flex gap-6 flex-col'>
         <h3 className='flex gap-2 items-center text-2xl tracking-wide lg:mb-8'>
           <MdFilterList /> {t("itemsPage:filters")}

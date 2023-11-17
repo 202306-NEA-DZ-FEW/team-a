@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
        
     </h2>
     <a
-      className="btn btn-sm btn-circle text-primary-focus btn-active transition-all duration-500 ease-in-out hover:drop-shadow-md"
+      className="btn btn-sm btn-circle btn-primary bg-opacity-30 transition-all duration-500 ease-in-out hover:drop-shadow-md"
       href="/items/create"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
       className="flex relative flex-col flex-1 gap-2 items-center justify-center"
     >
       <div
-        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-white drop-shadow-md p-2"
+        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-200 drop-shadow-md p-2"
       >
         <img
           alt="Product One"
@@ -140,11 +140,11 @@ exports[`renders correctly 1`] = `
           id="my_modal_1"
         >
           <div
-            className="md:w-[85%] w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-white rounded-2xl p-8"
+            className="md:max-w-xl w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-base-100 rounded-2xl p-8"
             dir="ltr"
           >
             <form
-              className="flex w-full flex-col gap-4"
+              className="flex w-full flex-col gap-3"
               onSubmit={[Function]}
             >
               <h1
@@ -177,7 +177,7 @@ exports[`renders correctly 1`] = `
                     width={100}
                   />
                   <div
-                    className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+                    className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
                     type="file"
                   >
                     <input
@@ -234,7 +234,7 @@ exports[`renders correctly 1`] = `
                     width={100}
                   />
                   <div
-                    className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+                    className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
                     type="file"
                   >
                     <input
@@ -291,7 +291,7 @@ exports[`renders correctly 1`] = `
                     width={100}
                   />
                   <div
-                    className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+                    className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
                     type="file"
                   >
                     <input
@@ -342,7 +342,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <input
-                  className="input bg-white input-primary w-full rounded-full border-opacity-25"
+                  className="input input-sm bg-base-300 input-primary w-full rounded-full border-opacity-25"
                   id="title"
                   name="title"
                   onBlur={[Function]}
@@ -369,7 +369,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <textarea
-                  className="textarea textarea-primary textarea-bordered h-24 w-full bg-white"
+                  className="textarea no-scrollbar textarea-primary textarea-bordered h-24 w-full bg-base-300"
                   id="description"
                   name="description"
                   onBlur={[Function]}
@@ -409,7 +409,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-primary bg-white w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
                   id="category"
                   onChange={[Function]}
                 >
@@ -515,7 +515,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-primary bg-white w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
                   defaultValue="djelfa"
                   id="location"
                   onChange={[Function]}
@@ -816,7 +816,7 @@ exports[`renders correctly 1`] = `
                 className=" modal-action"
               >
                 <button
-                  className="btn rounded-full normal-case tracking-wider btn-active"
+                  className="btn rounded-xl btn-sm btn-primary bg-opacity-30 normal-case tracking-wider btn-active"
                   type="submit"
                 >
                   buttons.submit
@@ -825,7 +825,7 @@ exports[`renders correctly 1`] = `
                   method="dialog"
                 >
                   <button
-                    className="btn btn-outline rounded-full normal-case tracking-wider font-light"
+                    className="btn rounded-xl btn-outline btn-sm normal-case tracking-wider font-light"
                     onClick={[Function]}
                     type="button"
                   >
@@ -838,7 +838,7 @@ exports[`renders correctly 1`] = `
         </dialog>
       </div>
       <div
-        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-white drop-shadow-md p-2"
+        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-200 drop-shadow-md p-2"
       >
         <img
           alt="Product Two"
@@ -926,11 +926,11 @@ exports[`renders correctly 1`] = `
           id="my_modal_2"
         >
           <div
-            className="md:w-[85%] w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-white rounded-2xl p-8"
+            className="md:max-w-xl w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-base-100 rounded-2xl p-8"
             dir="ltr"
           >
             <form
-              className="flex w-full flex-col gap-4"
+              className="flex w-full flex-col gap-3"
               onSubmit={[Function]}
             >
               <h1
@@ -963,7 +963,7 @@ exports[`renders correctly 1`] = `
                     width={100}
                   />
                   <div
-                    className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+                    className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
                     type="file"
                   >
                     <input
@@ -1020,7 +1020,7 @@ exports[`renders correctly 1`] = `
                     width={100}
                   />
                   <div
-                    className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+                    className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
                     type="file"
                   >
                     <input
@@ -1077,7 +1077,7 @@ exports[`renders correctly 1`] = `
                     width={100}
                   />
                   <div
-                    className="absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+                    className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
                     type="file"
                   >
                     <input
@@ -1128,7 +1128,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <input
-                  className="input bg-white input-primary w-full rounded-full border-opacity-25"
+                  className="input input-sm bg-base-300 input-primary w-full rounded-full border-opacity-25"
                   id="title"
                   name="title"
                   onBlur={[Function]}
@@ -1155,7 +1155,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <textarea
-                  className="textarea textarea-primary textarea-bordered h-24 w-full bg-white"
+                  className="textarea no-scrollbar textarea-primary textarea-bordered h-24 w-full bg-base-300"
                   id="description"
                   name="description"
                   onBlur={[Function]}
@@ -1195,7 +1195,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-primary bg-white w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
                   id="category"
                   onChange={[Function]}
                 >
@@ -1301,7 +1301,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-primary bg-white w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
                   defaultValue="djelfa"
                   id="location"
                   onChange={[Function]}
@@ -1602,7 +1602,7 @@ exports[`renders correctly 1`] = `
                 className=" modal-action"
               >
                 <button
-                  className="btn rounded-full normal-case tracking-wider btn-active"
+                  className="btn rounded-xl btn-sm btn-primary bg-opacity-30 normal-case tracking-wider btn-active"
                   type="submit"
                 >
                   buttons.submit
@@ -1611,7 +1611,7 @@ exports[`renders correctly 1`] = `
                   method="dialog"
                 >
                   <button
-                    className="btn btn-outline rounded-full normal-case tracking-wider font-light"
+                    className="btn rounded-xl btn-outline btn-sm normal-case tracking-wider font-light"
                     onClick={[Function]}
                     type="button"
                   >

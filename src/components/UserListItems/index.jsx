@@ -43,7 +43,7 @@ function UserListItems({ userItems }) {
         </h2>
         <Link
           href='/items/create'
-          className='btn btn-sm btn-circle text-primary-focus btn-active transition-all duration-500 ease-in-out hover:drop-shadow-md'
+          className='btn btn-sm btn-circle btn-primary bg-opacity-30 transition-all duration-500 ease-in-out hover:drop-shadow-md'
         >
           <AiOutlinePlus className='text-xl' />
         </Link>

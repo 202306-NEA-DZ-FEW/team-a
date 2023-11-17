@@ -61,7 +61,7 @@ function ItemDetailsCard({
   }, [images]);
 
   return (
-    <div className='flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-white'>
+    <div className='flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-base-100'>
       <div className='lg:hidden'>
         <MobileCarousel images={images} />
       </div>
@@ -96,7 +96,7 @@ function ItemDetailsCard({
           ))}
         </div>
       </figure>
-      <div id='CardContent' className='card-body text-gray-950 flex-1'>
+      <div id='CardContent' className='card-body flex-1'>
         <h1 className='card-title text-3xl'>{title}</h1>
         <div className='flex gap-2 items-center'>
           <span className='flex gap-1 text-gray-400 text-sm font-light items-center'>
@@ -131,17 +131,17 @@ function ItemDetailsCard({
           <p className='flex items-center gap-2 text-primary font-semibold'>
             <IoMdContact />
             {t("signUp:nameLabel")}
-            <span className='font-normal text-gray-950'>{username}</span>
+            <span className='font-normal text-gray-500'>{username}</span>
           </p>
           <p className='flex items-center gap-2 text-primary font-semibold'>
             <LuPhone />
             {t("signUp:phoneLabel")}
-            <span className='font-normal text-gray-950'>{phone}</span>
+            <span className='font-normal text-gray-500'>{phone}</span>
           </p>
           <p className='flex items-center gap-2 text-primary font-semibold'>
             <MdAlternateEmail />
             {t("signUp:emailLabel")}
-            <span className='font-normal text-gray-950'>{email}</span>
+            <span className='font-normal text-gray-500'>{email}</span>
           </p>
         </div>
       </div>

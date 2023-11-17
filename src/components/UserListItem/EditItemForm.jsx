@@ -95,11 +95,11 @@ function EditItemForm({ item, onEdit }) {
     >
       <div
         dir={i18n.language == "ar" ? "rtl" : "ltr"}
-        className='md:w-[85%] w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-white rounded-2xl p-8'
+        className='md:max-w-xl w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-base-100 rounded-2xl p-8'
       >
         <form
           onSubmit={formik.handleSubmit}
-          className='flex w-full flex-col gap-4'
+          className='flex w-full flex-col gap-3'
         >
           <h1 className='text-xl font-bold text-center'>
             {t("dashboard:editItemForm:updateItem")}
@@ -108,7 +108,7 @@ function EditItemForm({ item, onEdit }) {
             {item.images.map((image, index) => (
               <figure key={index} className='relative group'>
                 {imageLoading[index] && (
-                  <ImageSpinner classes='absolute bg-white rounded-lg w-full h-full top-0 bg-opacity-30 flex items-center justify-center' />
+                  <ImageSpinner classes='absolute bg-base-100 rounded-lg w-full h-full top-0 bg-opacity-30 flex items-center justify-center' />
                 )}
                 <Image
                   alt={item.title}
@@ -119,7 +119,7 @@ function EditItemForm({ item, onEdit }) {
                 />
                 <div
                   type='file'
-                  className='absolute hidden text-center bg-white rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center'
+                  className='absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center'
                 >
                   <input
                     type='file'
@@ -148,6 +148,7 @@ function EditItemForm({ item, onEdit }) {
             handleBlur={formik.handleBlur}
             error={formik.errors.title}
             touched={formik.touched.title}
+            sm
           />
           <TextAreaInput
             name='description'
@@ -170,6 +171,7 @@ function EditItemForm({ item, onEdit }) {
             value={formik.values.category}
             touched={formik.touched.category}
             error={formik.errors.category}
+            sm
           />
           <SelectInput
             name='location'
@@ -179,20 +181,21 @@ function EditItemForm({ item, onEdit }) {
             value={formik.values.location}
             touched={formik.touched.location}
             error={formik.errors.location}
+            sm
           />
           <div
             className={`${i18n.language == "ar" ? "gap-2" : ""} modal-action`}
           >
             <button
               type='submit'
-              className='btn rounded-full normal-case tracking-wider btn-active'
+              className='btn rounded-xl btn-sm btn-primary bg-opacity-30 normal-case tracking-wider btn-active'
             >
               {t("common:buttons:submit")}
             </button>
             <div method='dialog'>
               <button
                 type='button'
-                className='btn btn-outline rounded-full normal-case tracking-wider font-light'
+                className='btn rounded-xl btn-outline btn-sm normal-case tracking-wider font-light'
                 onClick={() =>
                   document.getElementById(`my_modal_${item.id}`).close()
                 }

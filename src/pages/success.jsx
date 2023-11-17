@@ -12,7 +12,10 @@ export default function Success() {
   const [pieces, setPieces] = useState(200);
   const { i18n, t } = useTranslation();
   const router = useRouter();
+  const [LOADED, setLoaded] = useState(false);
+
   const stopConfetti = () => {
+    setLoaded(true);
     setTimeout(() => {
       setPieces(0);
     }, 3000);
@@ -26,10 +29,10 @@ export default function Success() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className='flex justify-center items-center m-9'
+      className='flex justify-center items-center h-screen'
     >
       <div
-        className='bg-white shadow-xl rounded-lg p-2 md:px-20 md:py-10 text-gray-700 flex flex-col justify-center items-center'
+        className='bg-base-100 shadow-xl rounded-lg p-2 md:px-20 md:py-10 text-gray-700 flex flex-col justify-center items-center'
         dir={i18n?.language === "ar" ? "rtl" : "ltr"}
       >
         <Image
@@ -52,7 +55,7 @@ export default function Success() {
           </Link>
         </div>
       </div>
-      <Confetti gravity={0.2} numberOfPieces={pieces} />
+      {LOADED && <Confetti gravity={0.2} numberOfPieces={pieces} />}
     </m.main>
   );
 }

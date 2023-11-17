@@ -14,7 +14,7 @@ exports[`rend correctement 1`] = `
   >
     <img
       alt="recoded"
-      className=" object-cover rounded-xl "
+      className="object-cover rounded-xl "
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
@@ -36,7 +36,7 @@ exports[`rend correctement 1`] = `
     />
     <img
       alt="flatironschool"
-      className=" object-cover rounded-xl"
+      className="object-cover rounded-xl"
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
@@ -58,7 +58,7 @@ exports[`rend correctement 1`] = `
     />
     <img
       alt="microsoft"
-      className=" object-cover rounded-xl"
+      className="object-cover rounded-xl"
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
@@ -80,7 +80,7 @@ exports[`rend correctement 1`] = `
     />
     <img
       alt="mepi"
-      className=" object-cover rounded-xl"
+      className="object-cover rounded-xl"
       data-nimg="1"
       decoding="async"
       fetchpriority="high"

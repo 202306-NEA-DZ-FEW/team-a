@@ -31,7 +31,7 @@ exports[`renders correctly 1`] = `
     className="max-w-6xl mx-auto px-8 xl:px-0 undefined"
   >
     <div
-      className="flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-white  rounded-3xl shadow-xl transform md:-translate-y-40 -translate-y-24"
+      className="flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100  rounded-3xl shadow-xl transform md:-translate-y-40 -translate-y-24"
     >
       <div
         className="lg:p-4 flex flex-col flex-1 items-center gap-4"
