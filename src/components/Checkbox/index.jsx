@@ -12,7 +12,7 @@ function Checkbox({
   const { i18n } = useTranslation();
   return (
     <div>
-      <div className='flex items-center gap-2'>
+      <div className='flex items-center gap-2 pl-3'>
         <input
           type='checkbox'
           id={name}
@@ -20,22 +20,14 @@ function Checkbox({
           value={value}
           onChange={handleChange}
           onBlur={handleBlur}
-          className={`checkbox checkbox-primary ${
-            i18n?.language == "ar" ? "scale-x-[-1]" : ""
-          }`}
+          className={`checkbox ${
+            touched && error ? "checkbox-error" : "checkbox-primary"
+          } ${i18n?.language == "ar" ? "scale-x-[-1]" : ""}`}
         />
         <label htmlFor={name} className='label label-text'>
           {label}
         </label>
       </div>
-      {/* <label className='label'>
-        <span className='label-text-alt'></span>
-        <span
-          className={`label-text-alt ${touched && error ? "text-error" : ""}`}
-        >
-          {touched && error ? error : ""}
-        </span>
-      </label> */}
     </div>
   );
 }
