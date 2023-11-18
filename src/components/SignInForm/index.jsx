@@ -34,8 +34,8 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex gap-4 flex-col w-full md:max-w-xl px-4 mx-auto'>
-      <h1 className='text-3xl font-bold text-center'>{t("signIn:signIn")}</h1>
+    <section className='flex gap-2 flex-col w-full mx-auto'>
+      <h1 className='text-3xl font-bold mb-8'>{t("signIn:signIn")}</h1>
       {/* Form Section */}
       <form className='flex flex-col gap-2' onSubmit={formik.handleSubmit}>
         <Input
@@ -61,7 +61,7 @@ function SignInForm({ t }) {
           touched={formik.touched.password}
         />
         {/* Checkbox & Password Forgotten Section */}
-        <div className='flex flex-col md:flex-row justify-around gap-4 md:gap-8 items-center my-2'>
+        <div className='flex flex-col md:flex-row justify-between md:items-center flex-wrap'>
           <Checkbox
             name='save'
             label={t("signIn:savedlogin")}
@@ -73,46 +73,45 @@ function SignInForm({ t }) {
           />
           <button
             onClick={() => document.getElementById("my_modal_3").showModal()}
-            className='btn btn-link btn-sm p-0 block capitalize md:mb-0 mb-4'
+            className='btn btn-link link-error font-normal hover:font-bold self-start btn-sm normal-case'
           >
             {t("signIn:passwordForgotten")}
           </button>
         </div>
         {/* Login Button */}
         <button
-          className='btn btn-primary w-full self-center rounded-3xl text-white md:mb-0 mb-8'
+          className='btn btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl'
           type='submit'
           disabled={formik.isSubmitting}
         >
           {formik.isSubmitting ? t("signIn:loading") : t("signIn:signInButton")}
         </button>
       </form>
-      <span className='mt-4 mb-0 divider'>{t("signIn:divider")}</span>
+      <span className='divider'>{t("signIn:divider")}</span>
       {/* Social Medias Section */}
-      <div>
-        <p className='text-center my-4'>{t("signIn:signUpMethod")}</p>
-        <div className='flex gap-4 justify-center items-center md:mb-0 mb-10'>
-          <button
-            className='btn btn-circle btn-sm bg-white'
-            onClick={signInWithFacebook}
-          >
-            <BsFacebook className='text-3xl text-blue-600' />
-          </button>
-          <button
-            onClick={signInWithGoogle}
-            className='btn btn-circle btn-sm bg-white'
-          >
-            <FcGoogle className='text-3xl' />
-          </button>
-          <button
-            onClick={signInWithGithub}
-            className='btn btn-circle btn-sm bg-white'
-          >
-            <BsGithub className='text-3xl text-gray-700' />
-          </button>
-        </div>
+
+      <p className='text-center my-4'>{t("signIn:signUpMethod")}</p>
+      <div className='flex gap-2 justify-center items-center mb-4'>
+        <button
+          className='btn btn-ghost rounded-xl hover:drop-shadow-xl transition-all duration-400 ease-in-out'
+          onClick={signInWithFacebook}
+        >
+          <BsFacebook className='text-3xl text-blue-600' />
+        </button>
+        <button
+          onClick={signInWithGoogle}
+          className='btn btn-ghost rounded-xl hover:drop-shadow-xl transition-all duration-400 ease-in-out'
+        >
+          <FcGoogle className='text-3xl' />
+        </button>
+        <button
+          onClick={signInWithGithub}
+          className='btn btn-ghost rounded-xl hover:drop-shadow-xl transition-all duration-400 ease-in-out'
+        >
+          <BsGithub className='text-3xl' />
+        </button>
       </div>
-      <div className='mt-4 flex flex-col md:flex-row justify-center items-center gap-2'>
+      <div className='flex flex-col md:flex-row justify-center items-center'>
         <p className='text-base'>{t("signIn:noAccount")}</p>
         <Link href='/auth/sign-up' className='btn btn-link'>
           {t("signIn:signUp")}
