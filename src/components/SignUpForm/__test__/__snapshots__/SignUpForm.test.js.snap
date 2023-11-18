@@ -134,7 +134,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <select
-        className="select  select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
+        className="select   select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
         defaultValue=""
         id="location"
         onChange={[Function]}

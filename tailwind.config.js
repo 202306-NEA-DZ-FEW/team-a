@@ -21,7 +21,7 @@ module.exports = {
         myTheme: {
           ...require("daisyui/src/theming/themes")["light"],
           primary: "#02A85C",
-          secondary: "#02A8A8",
+          secondary: "#A8FFAE",
           accent: "#D7B93F",
           neutral: "#222222",
           "base-100": "#FFF",
@@ -36,7 +36,7 @@ module.exports = {
         sunset: {
           ...require("daisyui/src/theming/themes")["sunset"],
           primary: "#02A85C",
-          secondary: "#02A8A8",
+          secondary: "#A8FFAE",
           accent: "#D7B93F",
           // neutral: "#222222",
           // "base-100": "#333",

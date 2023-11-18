@@ -319,7 +319,7 @@ exports[`renders correctly 1`] = `
             />
           </div>
           <textarea
-            className="textarea no-scrollbar textarea-primary textarea-bordered h-24 w-full bg-base-300"
+            className="textarea no-scrollbar textarea-primary  textarea-bordered h-24 w-full bg-base-300"
             id="description"
             name="description"
             onBlur={[Function]}
@@ -359,7 +359,7 @@ exports[`renders correctly 1`] = `
             />
           </div>
           <select
-            className="select select-sm select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
+            className="select select-sm  select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
             id="category"
             onChange={[Function]}
           >
@@ -465,7 +465,7 @@ exports[`renders correctly 1`] = `
             />
           </div>
           <select
-            className="select select-sm select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
+            className="select select-sm  select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
             defaultValue="djelfa"
             id="location"
             onChange={[Function]}
