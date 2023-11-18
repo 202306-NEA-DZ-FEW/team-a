@@ -80,7 +80,7 @@ function SignInForm({ t }) {
         </div>
         {/* Login Button */}
         <button
-          className='btn btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl '
+          className='btn btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl'
           type='submit'
           disabled={formik.isSubmitting}
         >

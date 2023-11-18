@@ -82,7 +82,7 @@ exports[`renders correctly 1`] = `
       />
     </div>
     <button
-      className="btn btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl "
+      className="btn btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl"
       disabled={false}
       type="submit"
     />

@@ -35,14 +35,15 @@ module.exports = {
       {
         sunset: {
           ...require("daisyui/src/theming/themes")["sunset"],
+          ".fill-current": {
+            color: "#fff",
+          },
+          ".text-current": {
+            color: "#fff",
+          },
           primary: "#02A85C",
           secondary: "#A8FFAE",
           accent: "#D7B93F",
-          // neutral: "#222222",
-          // "base-100": "#333",
-          // info: "#1953BF",
-          // success: "#106a3c",
-          // warning: "#FF8F1F",
           error: "#FF3337",
         },
       },

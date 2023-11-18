@@ -1,16 +1,14 @@
 import { useFormik } from "formik";
-import { BsFacebook, BsGithub } from "react-icons/bs";
-import { FcGoogle } from "react-icons/fc";
 import * as Yup from "yup";
 
 import { useAuth } from "@/context/AuthProvider";
 
 import Input from "../Input";
 import SelectInput from "../SelectInput";
+import SignupMethods from "../SignupMethods";
 
 function SignUpForm({ states, t }) {
-  const { signUp, signInWithFacebook, signInWithGoogle, signInWithGithub } =
-    useAuth();
+  const { signUp } = useAuth();
   const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
   const formik = useFormik({
     initialValues: {
@@ -49,9 +47,9 @@ function SignUpForm({ states, t }) {
   });
 
   return (
-    <section className='flex gap-4 flex-col w-full md:max-w-xl px-4'>
-      <h1 className='text-3xl font-bold text-center'>{t("signUp:signUp")}</h1>
-      <form onSubmit={formik.handleSubmit} className='flex flex-col gap-4'>
+    <section className='flex gap-2 flex-col w-full mx-auto'>
+      <h1 className='text-3xl font-bold'>{t("signUp:signUp")}</h1>
+      <form onSubmit={formik.handleSubmit} className='flex flex-col gap-2'>
         <Input
           name='name'
           type='text'
@@ -119,32 +117,15 @@ function SignUpForm({ states, t }) {
         />
         <button
           type='submit'
-          className='btn btn-primary w-full rounded-3xl md:self-center text-white mt-8'
+          className='btn mt-2 btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl'
         >
           {t("signUp:signUpButton")}
         </button>
       </form>
-      <span className='mt-8 divider'>{t("signUp:divider")}</span>
-      <p className='text-center mb-4'>{t("signUp:signUpMethod")}</p>
-      <div className='flex gap-4 justify-center items-center text-3xl text-primary'>
-        <button
-          className='btn btn-circle btn-sm bg-white'
-          onClick={signInWithFacebook}
-        >
-          <BsFacebook className='text-3xl text-blue-600' />
-        </button>
-        <button
-          onClick={signInWithGoogle}
-          className='btn btn-circle btn-sm bg-white'
-        >
-          <FcGoogle className='text-3xl text-primary' />
-        </button>
-        <button
-          onClick={signInWithGithub}
-          className='btn btn-circle btn-sm bg-white'
-        >
-          <BsGithub className='text-3xl text-gray-700' />
-        </button>
+      <div className='lg:hidden'>
+        <span className='divider'>{t("signUp:divider")}</span>
+        <p className='text-center'>{t("signUp:signUpMethod")}</p>
+        <SignupMethods />
       </div>
     </section>
   );
