@@ -11,18 +11,21 @@ function SignInPage({ t, _nextI18Next }) {
   return (
     <AuthPagesLayout>
       <main
-        className='flex justify-between py-16 lg:py-0 items-center min-h-screen'
+        className='flex justify-between items-center min-h-screen'
         dir={initialLocale === "ar" ? "rtl" : "ltr"}
       >
-        <SignInForm t={t} />
-        <figure className='hidden lg:block md:w-[50%] xl:w-[50%] relative flex-shrink-0'>
+        <div className='flex shadow-2xl flex-col min-h-screen mx-auto justify-center w-full p-4 md:px-20 lg:px-8'>
+          <div className='navbar'></div>
+          <SignInForm t={t} />
+        </div>
+        <figure className='hidden h-screen lg:block md:w-[60%] relative flex-shrink-0 saturate-0'>
           <Image
-            src='/images/signIn.svg'
+            src='/images/signin.jpg'
             priority
             alt='test'
             width={2000}
             height={2000}
-            className='object-cover w-full h-full'
+            className='object-cover w-full h-full overflow-hidden'
           />
         </figure>
       </main>

@@ -22,9 +22,9 @@ function SelectInput({
       </div>
       <select
         id={name}
-        className={`select ${
-          sm ? "select-sm" : ""
-        } select-primary bg-base-300 w-full border-opacity-25 rounded-3xl`}
+        className={`select ${sm ? "select-sm" : ""}  ${
+          touched && error ? "select-error" : "select-primary"
+        } bg-base-300 w-full border-opacity-25 rounded-3xl`}
         onChange={handleChange}
         defaultValue={value}
       >
