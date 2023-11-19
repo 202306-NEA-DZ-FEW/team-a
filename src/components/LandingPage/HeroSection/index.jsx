@@ -22,7 +22,7 @@ function HeroSection() {
           />
 
           <Triangles className='absolute top-[15%] left-[-10%] fill-current w-[16%] lg:block hidden opacity-75 z-0' />
-          <Xvertical className='absolute bottom-[5%] right-[3%] w-[2%] lg:block hidden z-0' />
+          <Xvertical className='absolute bottom-[6%] right-[5%] w-[2%] lg:block hidden z-0' />
         </figure>
         <div
           id='text'
