@@ -10,7 +10,7 @@ function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
   const date = formatDate(createdAt, "MMM YYYY");
   const truncatedDescription = truncateString(description, 200);
   return (
-    <div className='card lg:card-side bg-base-100 shadow-xl h-full'>
+    <div className='card lg:card-side bg-base-100 shadow-xl h-full lg:h-[26rem]'>
       <figure className=' lg:w-[45%]'>
         <Image
           height={400}
@@ -18,14 +18,17 @@ function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
           priority
           src={imageUrl}
           alt='Blog Image'
-          className='w-full'
+          className='w-full h-full'
         />
       </figure>
       <div className='card-body lg:w-[35%] p-6 lg:p-10 gap-4'>
         <h2 className='card-title text-2xl lg:text-3xl' title={title}>
           {title}
         </h2>
-        <p className=' text-md lg:text-lg font-light' title={description}>
+        <p
+          className=' text-md lg:text-xl tracking-wide font-light'
+          title={description}
+        >
           {truncatedDescription}
         </p>
         <div className='card-actions flex gap-2 justify-between'>

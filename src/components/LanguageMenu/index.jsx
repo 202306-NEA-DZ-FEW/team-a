@@ -51,6 +51,7 @@ function LanguageMenu({ bottom }) {
                   active ? "bg-neutral" : "text-gray-400",
                   "block px-4 py-2 text-sm my-2 rounded-md"
                 )}
+                scroll={false}
               >
                 <span className='fi fi-gb rounded mr-2'></span> English
               </Link>
@@ -65,6 +66,7 @@ function LanguageMenu({ bottom }) {
                   active ? "bg-neutral" : "text-gray-400",
                   "block px-4 py-2 text-sm my-2 rounded-md"
                 )}
+                scroll={false}
               >
                 <span className='fi fi-fr rounded mr-2'></span> Français
               </Link>
@@ -79,6 +81,7 @@ function LanguageMenu({ bottom }) {
                   active ? "bg-neutral" : "text-gray-400",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
+                scroll={false}
               >
                 <span className='fi fi-tr rounded mr-2'></span> Türkçe
               </Link>
@@ -93,6 +96,7 @@ function LanguageMenu({ bottom }) {
                   active ? "bg-neutral" : "text-gray-400",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
+                scroll={false}
               >
                 <span className='fi fi-dz rounded mr-2'></span> العربية
               </Link>

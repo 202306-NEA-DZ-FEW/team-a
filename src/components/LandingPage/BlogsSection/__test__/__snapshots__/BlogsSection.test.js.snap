@@ -4,7 +4,6 @@ exports[`renders correctly 1`] = `
 <div
   className="max-w-6xl mx-auto px-8 xl:px-0 lg:min-h-screen my-20 lg:my-0 flex flex-col justify-center"
 >
-  <div />
   <div
     className="flex flex-col lg:flex-row items-center justify-between mb-12 lg:mb-16 gap-y-8"
     style={
@@ -26,7 +25,7 @@ exports[`renders correctly 1`] = `
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     >
-      Read More 
+      buttons.readMore
       <svg
         className="text-xl"
         fill="currentColor"
@@ -52,32 +51,26 @@ exports[`renders correctly 1`] = `
     </a>
   </div>
   <div
-    className="grid grid-cols-3 gap-6 lg:gap-8 "
-    style={
-      Object {
-        "opacity": 1,
-        "transform": "scale(0) translateZ(0)",
-      }
-    }
+    className="grid grid-cols-3 gap-6 lg:gap-8"
   >
     <div
       className="col-span-3"
       style={
         Object {
           "opacity": 0,
-          "transform": "translateY(20px) translateZ(0)",
+          "transform": "translateY(30px) translateZ(0)",
         }
       }
     >
       <div
-        className="card lg:card-side bg-base-100 shadow-xl h-full"
+        className="card lg:card-side bg-base-100 shadow-xl h-full lg:h-[26rem]"
       >
         <figure
           className=" lg:w-[45%]"
         >
           <img
             alt="Blog Image"
-            className="w-full"
+            className="w-full h-full"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -104,7 +97,7 @@ exports[`renders correctly 1`] = `
             Hello
           </h2>
           <p
-            className=" text-md lg:text-lg font-light"
+            className=" text-md lg:text-xl tracking-wide font-light"
             title="Hello"
           >
             Hello
@@ -155,7 +148,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "opacity": 0,
-          "transform": "translateY(20px) translateZ(0)",
+          "transform": "translateY(30px) translateZ(0)",
         }
       }
     />
