@@ -51,10 +51,10 @@ function CausesSection() {
         <motion.div
           variants={item}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
+          className='flex-1 min-w-[300px] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
         >
           <InfoCard
-            className='w-full h-full'
+            className='w-full h-full bg-cover bg-no-repeat'
             icon={<RiGraduationCapFill className='text-6xl text-white' />}
             title={t("landingPage:causes:education:title")}
             description={t("landingPage:causes:education:description")}
@@ -64,10 +64,10 @@ function CausesSection() {
         <motion.div
           variants={item}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
+          className='flex-1 min-w-[300px] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
         >
           <InfoCard
-            className='w-full h-full '
+            className='w-full h-full bg-cover bg-no-repeat'
             icon={<LuHeartHandshake className='text-6xl text-white' />}
             title={t("landingPage:causes:solidarity:title")}
             description={t("landingPage:causes:solidarity:description")}
@@ -77,10 +77,10 @@ function CausesSection() {
         <motion.div
           variants={item}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
+          className='flex-1 min-w-[300px] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
         >
           <InfoCard
-            className='w-full h-full'
+            className='w-full h-full bg-cover bg-no-repeat'
             icon={<FaHandHoldingWater className='text-6xl text-white' />}
             title={t("landingPage:causes:health:title")}
             description={t("landingPage:causes:health:description")}
