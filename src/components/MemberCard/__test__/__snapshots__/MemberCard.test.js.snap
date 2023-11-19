@@ -2,72 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="card rounded-3xl group"
+  className="container"
 >
-  <figure
-    className="relative h-64 w-52 rounded-3xl"
-  >
-    <img
-      alt="name"
-      className="group-hover:scale-110 saturate-0 group-hover:saturate-100 object-cover w-full h-full duration-500"
-      data-nimg="fill"
-      decoding="async"
-      fetchpriority="high"
-      onError={[Function]}
-      onLoad={[Function]}
-      sizes="100vw"
-      src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-      srcSet="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-      style={
-        Object {
-          "bottom": 0,
-          "color": "transparent",
-          "height": "100%",
-          "left": 0,
-          "objectFit": undefined,
-          "objectPosition": undefined,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
-  </figure>
   <div
-    className="absolute bottom-[5%] flex flex-col gap-1 px-2"
-  >
-    <h3
-      className="text-white font-bold"
-    >
-      name
-    </h3>
-    <div
-      className="flex gap-2"
-    >
-      <a
-        className="text-white border border-white rounded-full text-sm px-2 h-6 hover:bg-black hover:bg-opacity-30  "
-        href="https://github.com/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        GitHub
-      </a>
-      <a
-        className="text-white border border-white rounded-full text-sm px-2 h-6 hover:bg-black hover:bg-opacity-30 "
-        href="https://www.linkedin.com/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        LinkedIn
-      </a>
-    </div>
-  </div>
+    className="icon"
+  />
+  <div
+    className="content"
+  />
 </div>
 `;
