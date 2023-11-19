@@ -1,4 +1,4 @@
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function CausesCard({ title, description, icon, img }) {
   return (
@@ -19,7 +19,6 @@ function CausesCard({ title, description, icon, img }) {
           {title}
         </h2>
         <p className='absolute text-xl w-full h-full bg-neutral flex justify-center items-center translate-x-72 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 text-white'>
-          {" "}
           {description}
         </p>
       </div>
