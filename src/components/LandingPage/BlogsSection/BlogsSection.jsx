@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import { IoIosArrowDropright } from "react-icons/io";
 
 import BlogCard from "@/components/BlogCard";
 import HorizontalCard from "@/components/BlogCard/HorizontalCard";
@@ -39,10 +40,10 @@ function BlogsSection({ blogs }) {
       >
         <h2 className='text-3xl md:text-5xl font-bold'>Our Latest Blogs</h2>
         <Link
-          className='btn btn-secondary rounded-full btn-md w-[45%] lg:w-[15%] text-current bg-opacity-50'
+          className='btn btn-secondary rounded-full btn-md w-[45%] lg:w-[15%] text-current bg-opacity-50 flex items-center gap-2'
           href='/blogs'
         >
-          Read More
+          Read More <IoIosArrowDropright className='text-xl' />
         </Link>
       </motion.div>
 
@@ -60,7 +61,7 @@ function BlogsSection({ blogs }) {
           {blogs.length && <HorizontalCard {...blogs[0]} />}
         </motion.div>
         <motion.div
-          className='col-span-3 flex flex-col lg:flex-row gap-x-8'
+          className='col-span-3 flex flex-col lg:flex-row gap-y-6 gap-x-8'
           variants={item}
           transition={{ duration: 0.7, ease: "easeInOut" }}
         >

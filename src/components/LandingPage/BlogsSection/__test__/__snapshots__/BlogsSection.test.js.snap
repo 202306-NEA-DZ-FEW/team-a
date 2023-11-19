@@ -20,13 +20,35 @@ exports[`renders correctly 1`] = `
       Our Latest Blogs
     </h2>
     <a
-      className="btn btn-secondary rounded-full btn-md w-[45%] lg:w-[15%] text-current bg-opacity-50"
+      className="btn btn-secondary rounded-full btn-md w-[45%] lg:w-[15%] text-current bg-opacity-50 flex items-center gap-2"
       href="/blogs"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
     >
-      Read More
+      Read More 
+      <svg
+        className="text-xl"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M210.7 147.6c7.5-7.5 19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81.1-81.9-81.1c-7.6-7.4-7.6-19.6 0-27.2z"
+        />
+        <path
+          d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm32 0c0-47 18.3-91.2 51.6-124.4C164.8 98.3 209 80 256 80s91.2 18.3 124.4 51.6C413.7 164.8 432 209 432 256s-18.3 91.2-51.6 124.4C347.2 413.7 303 432 256 432s-91.2-18.3-124.4-51.6C98.3 347.2 80 303 80 256z"
+        />
+      </svg>
     </a>
   </div>
   <div
@@ -76,13 +98,13 @@ exports[`renders correctly 1`] = `
           className="card-body lg:w-[35%] p-6 lg:p-10 gap-4"
         >
           <h2
-            className="card-title text-4xl"
+            className="card-title text-2xl lg:text-3xl"
             title="Hello"
           >
             Hello
           </h2>
           <p
-            className="text-lg font-light"
+            className=" text-md lg:text-lg font-light"
             title="Hello"
           >
             Hello
@@ -94,7 +116,7 @@ exports[`renders correctly 1`] = `
               Invalid date
             </span>
             <a
-              className="text-secondary/[.7] flex items-center gap-2"
+              className="text-secondary font-bold flex items-center gap-2"
               href="/blogs/1"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -129,7 +151,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="col-span-3 flex flex-col lg:flex-row gap-x-8"
+      className="col-span-3 flex flex-col lg:flex-row gap-y-6 gap-x-8"
       style={
         Object {
           "opacity": 0,

@@ -3,18 +3,16 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { IoIosArrowDropright } from "react-icons/io";
 
-import { formatDate, truncateString } from "@/lib/helpers";
+import { formatDate } from "@/lib/helpers";
 
-function BlogCard({ id, title, imageUrl, createdAt, description }) {
+function BlogCard({ id, title, imageUrl, createdAt }) {
   const { t } = useTranslation();
   const date = formatDate(createdAt, "MMM YYYY");
-  const truncatedDescription = truncateString(description, 95);
-  const truncatedTitle = truncateString(title, 23);
   return (
-    <div className='card rounded-xl shadow-lg w-full lg:w-[50%]'>
-      <figure className='relative h-[60%]'>
+    <div className='card rounded-xl bg-base-100 shadow-lg w-full lg:w-[50%]'>
+      <figure className='relative h-full overflow-hidden'>
         <Image
-          className='w-full object-cover rounded-t-xl'
+          className='w-full object-cover rounded-t-2xl'
           src={imageUrl}
           alt='Blog Image'
           height={400}
@@ -23,11 +21,8 @@ function BlogCard({ id, title, imageUrl, createdAt, description }) {
         />
       </figure>
 
-      <div className='gap-2 flex flex-col p-6'>
-        <h2 className='text-3xl lg:text-4xl font-bold mb-2'>{title}</h2>
-        <p className='text-md lg:text-lg font-light mb-4' title={description}>
-          {truncatedDescription}
-        </p>
+      <div className='gap-2 flex flex-col justify-center p-6'>
+        <h2 className='text-2xl lg:text-3xl font-bold mb-4'>{title}</h2>
         <div className='flex justify-between pb-4'>
           <span>{date} </span>
           <Link

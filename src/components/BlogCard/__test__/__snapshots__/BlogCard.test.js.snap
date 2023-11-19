@@ -2,14 +2,14 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="card rounded-xl shadow-lg w-full lg:w-[50%]"
+  className="card rounded-xl bg-base-100 shadow-lg w-full lg:w-[50%]"
 >
   <figure
-    className="relative h-[60%]"
+    className="relative h-full overflow-hidden"
   >
     <img
       alt="Blog Image"
-      className="w-full object-cover rounded-t-xl"
+      className="w-full object-cover rounded-t-2xl"
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
@@ -27,19 +27,13 @@ exports[`renders correctly 1`] = `
     />
   </figure>
   <div
-    className="gap-2 flex flex-col p-6"
+    className="gap-2 flex flex-col justify-center p-6"
   >
     <h2
-      className="text-3xl lg:text-4xl font-bold mb-2"
+      className="text-2xl lg:text-3xl font-bold mb-4"
     >
       title
     </h2>
-    <p
-      className="text-md lg:text-lg font-light mb-4"
-      title="description"
-    >
-      Mocked Truncate String
-    </p>
     <div
       className="flex justify-between pb-4"
     >

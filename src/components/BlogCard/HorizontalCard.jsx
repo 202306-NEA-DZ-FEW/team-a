@@ -9,7 +9,6 @@ function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
   const { t } = useTranslation();
   const date = formatDate(createdAt, "MMM YYYY");
   const truncatedDescription = truncateString(description, 200);
-  const truncatedTitle = truncateString(title, 23);
   return (
     <div className='card lg:card-side bg-base-100 shadow-xl h-full'>
       <figure className=' lg:w-[45%]'>
@@ -23,17 +22,17 @@ function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
         />
       </figure>
       <div className='card-body lg:w-[35%] p-6 lg:p-10 gap-4'>
-        <h2 className='card-title text-4xl' title={title}>
+        <h2 className='card-title text-2xl lg:text-3xl' title={title}>
           {title}
         </h2>
-        <p className='text-lg font-light' title={description}>
+        <p className=' text-md lg:text-lg font-light' title={description}>
           {truncatedDescription}
         </p>
         <div className='card-actions flex gap-2 justify-between'>
           <span>{date}</span>
           <Link
             href={`/blogs/${id}`}
-            className='text-secondary/[.7] flex items-center gap-2'
+            className='text-secondary font-bold flex items-center gap-2'
           >
             {t("common:buttons:readMore")}
 
