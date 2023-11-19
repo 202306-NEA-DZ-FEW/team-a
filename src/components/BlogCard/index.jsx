@@ -9,8 +9,8 @@ function BlogCard({ id, title, imageUrl, createdAt }) {
   const { t } = useTranslation();
   const date = formatDate(createdAt, "MMM YYYY");
   return (
-    <div className='card rounded-xl bg-base-100 shadow-lg w-full lg:w-[50%]'>
-      <figure className='relative w-full h-full overflow-hidden'>
+    <div className='card rounded-xl bg-base-100 shadow-lg h-full w-full'>
+      <figure className='relative overflow-hidden'>
         <Image
           className='w-full h-full object-cover rounded-t-2xl'
           src={imageUrl}
@@ -20,10 +20,11 @@ function BlogCard({ id, title, imageUrl, createdAt }) {
           priority
         />
       </figure>
-
-      <div className='gap-2 flex flex-col justify-center p-6'>
-        <h2 className='text-2xl lg:text-3xl font-bold mb-4'>{title}</h2>
-        <div className='flex justify-between pb-4'>
+      <div className='flex p-6 flex-1 gap-4 flex-col justify-between items-'>
+        <h2 className='text-2xl lg:text-3xl text-start font-bold w-full'>
+          {title}
+        </h2>
+        <div className='flex justify-between items-center py-4'>
           <span>{date} </span>
           <Link
             href={`/blogs/${id}`}

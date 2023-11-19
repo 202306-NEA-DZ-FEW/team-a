@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="card rounded-xl bg-base-100 shadow-lg w-full lg:w-[50%]"
+  className="card rounded-xl bg-base-100 shadow-lg h-full w-full"
 >
   <figure
-    className="relative w-full h-full overflow-hidden"
+    className="relative overflow-hidden"
   >
     <img
       alt="Blog Image"
@@ -27,15 +27,15 @@ exports[`renders correctly 1`] = `
     />
   </figure>
   <div
-    className="gap-2 flex flex-col justify-center p-6"
+    className="flex p-6 flex-1 gap-4 flex-col justify-between items-"
   >
     <h2
-      className="text-2xl lg:text-3xl font-bold mb-4"
+      className="text-2xl lg:text-3xl text-start font-bold w-full"
     >
       title
     </h2>
     <div
-      className="flex justify-between pb-4"
+      className="flex justify-between items-center py-4"
     >
       <span>
         2023-10-28
