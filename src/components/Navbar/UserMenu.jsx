@@ -11,7 +11,7 @@ function UserMenu({ user, logOut, t, userProfile }) {
   }
 
   return (
-    <Menu as='div' className='relative hidden lg:block'>
+    <Menu as='div' className='relative hidden lg:block mt-1'>
       <Menu.Button className='btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost'>
         <div className='avatar'>
           <div className='w-8 rounded-full ring ring-primary hover:ring-offset-1 transition-all duration-500 ring-offset-base-100 ring-offset-2'>

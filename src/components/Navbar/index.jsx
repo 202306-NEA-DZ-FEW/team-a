@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <>
       {/* Navbar Starts Here */}
-      <header className='no-scrollbar backdrop-blur-sm bg-white bg-opacity-40 fixed top-0 left-0 navbar gap-24 justify-between 2xl:px-32 xl:px-28 px-10 z-50'>
+      <header className='no-scrollbar fixed top-0 left-0 navbar gap-24 justify-between z-50'>
         <div className='lg:block navbar-start max-w-fit'>
           {/* Navbar Logo */}
           <Link
@@ -30,8 +30,8 @@ function Navbar() {
             {t("common:buttons:logo")}
           </Link>
         </div>
-        <nav className='hidden w-full flex-1 lg:flex lg:navbar-end gap-4 lg:items-center'>
-          <div className='w-1/6 h-[2.2px] bg-black' />
+        <nav className='hidden lg:w-[50%] min-w-fit lg:mr-8  lg:px-4 lg:flex lg:justify-between lg:navbar-center gap-4 lg:items-center backdrop-blur-md border-2 border-white  border-opacity-25 rounded-full bg-black bg-opacity-25 text-white'>
+          <div className='flex-1 h-[2.2px] bg-white' />
           {/* Navbar Navigation Links */}
           <div
             dir={i18n?.language == "ar" ? "rtl" : "ltr"}
@@ -78,7 +78,7 @@ function Navbar() {
           {!loading && user === null ? (
             <Link
               href='/auth/sign-in'
-              className='btn btn-primary btn-sm rounded-full hover:px-4 transition-all duration-500 normal-case font-normal tracking-wider'
+              className='btn btn-secondary btn-sm rounded-full hover:px-4 transition-all duration-500 normal-case font-normal tracking-wider'
             >
               {t("common:buttons:signIn")}
             </Link>
