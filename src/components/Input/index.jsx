@@ -23,7 +23,7 @@ function Input({
         </label>
       </div>
       <input
-        className={`input ${sm ? "input-sm" : ""} bg-base-300 ${
+        className={`input ${sm ? "input-sm" : ""} bg-base-200 ${
           touched && error ? "input-error" : "input-primary"
         } w-full rounded-full border-opacity-25`}
         id={name}
