@@ -24,7 +24,7 @@ function SelectInput({
         id={name}
         className={`select ${sm ? "select-sm" : ""}  ${
           touched && error ? "select-error" : "select-primary"
-        } bg-base-300 w-full border-opacity-25 rounded-3xl`}
+        } bg-base-200 w-full border-opacity-25 rounded-3xl`}
         onChange={handleChange}
         defaultValue={value}
       >

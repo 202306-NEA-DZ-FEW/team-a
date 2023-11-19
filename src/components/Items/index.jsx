@@ -75,7 +75,7 @@ function Items({
           <Link
             placeholder='dasda'
             href='/items/create'
-            className='btn btn-sm btn-primary bg-opacity-40 rounded-full normal-case font-normal'
+            className='btn btn-sm btn-secondary text-black bg-opacity-40 rounded-full normal-case font-normal'
           >
             <IoAddCircleOutline size={20} />
             {t("common:buttons:addItem")}
