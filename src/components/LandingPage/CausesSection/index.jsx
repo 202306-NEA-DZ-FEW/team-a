@@ -3,92 +3,47 @@ import { useTranslation } from "next-i18next";
 import edu from "public/images/edu.jpg";
 import health from "public/images/health.jpg";
 import solidarity from "public/images/solidarity.jpg";
-import { FaHandHoldingWater } from "react-icons/fa";
-import { LuHeartHandshake } from "react-icons/lu";
-import { RiGraduationCapFill } from "react-icons/ri";
 
-import Container from "@/components/container";
-
-import InfoCard from "../InfoCard";
+import CausesCard from "../CausesCard";
 
 function CausesSection() {
   const { t } = useTranslation();
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
+  const causes = [
+    {
+      id: 1,
+      title: t("landingPage:causes:education:title"),
+      description: t("landingPage:causes:education:description"),
+      img: edu.src,
     },
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
+    {
+      id: 2,
+      title: t("landingPage:causes:solidarity:title"),
+      description: t("landingPage:causes:solidarity:description"),
+      img: solidarity.src,
     },
-  };
+    {
+      id: 3,
+      title: t("landingPage:causes:health:title"),
+      description: t("landingPage:causes:health:description"),
+      img: health.src,
+    },
+  ];
   return (
-    <Container className='flex flex-col flex-wrap gap-8 justify-center lg:min-h-screen lg:my-0'>
-      <motion.h1
+    <div className='flex flex-col flex-wrap gap-8 justify-center items-center bg-base-100 w-full min-h-screen p-8'>
+      <motion.h2
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7, ease: "easeInOut" }}
-        className='text-3xl md:text-5xl gap-4 font-bold text-center'
+        transition={{ duration: 0.4 }}
+        className='text-3xl py-10 md:text-5xl gap-4 font-black text-center'
       >
         {t("landingPage:causes:title")}
-      </motion.h1>
-      <motion.div
-        variants={container}
-        initial='hidden'
-        whileInView='visible'
-        className='w-full flex flex-wrap justify-center items-center gap-6 text-center'
-      >
-        <motion.div
-          variants={item}
-          transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[300px] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
-        >
-          <InfoCard
-            className='w-full h-full bg-cover bg-no-repeat'
-            icon={<RiGraduationCapFill className='text-6xl text-white' />}
-            title={t("landingPage:causes:education:title")}
-            description={t("landingPage:causes:education:description")}
-            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64), rgba(80, 140, 98, 1)), url(${edu.src})`}
-          />
-        </motion.div>
-        <motion.div
-          variants={item}
-          transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[300px] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
-        >
-          <InfoCard
-            className='w-full h-full bg-cover bg-no-repeat'
-            icon={<LuHeartHandshake className='text-6xl text-white' />}
-            title={t("landingPage:causes:solidarity:title")}
-            description={t("landingPage:causes:solidarity:description")}
-            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(${solidarity.src})`}
-          />
-        </motion.div>
-        <motion.div
-          variants={item}
-          transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[300px] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
-        >
-          <InfoCard
-            className='w-full h-full bg-cover bg-no-repeat'
-            icon={<FaHandHoldingWater className='text-6xl text-white' />}
-            title={t("landingPage:causes:health:title")}
-            description={t("landingPage:causes:health:description")}
-            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(${health.src})`}
-          />
-        </motion.div>
-      </motion.div>
-    </Container>
+      </motion.h2>
+      <div className='w-full flex flex-wrap justify-center items-center gap-6 text-center'>
+        {causes.map((cause) => (
+          <CausesCard key={cause.id} {...cause} />
+        ))}
+      </div>
+    </div>
   );
 }
 

@@ -9,6 +9,7 @@ import { TfiStatsUp } from "react-icons/tfi";
 import Container from "@/components/container";
 
 import InfoCard from "../InfoCard";
+import StatisticsCard from "../StatisticsCard";
 
 function StatisticsSection() {
   const { t } = useTranslation();
@@ -19,22 +20,22 @@ function StatisticsSection() {
       </div>
       <Container id='stats'>
         <div className='flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100  rounded-3xl shadow-xl transform md:-translate-y-40 -translate-y-24'>
-          <InfoCard
+          <StatisticsCard
             icon={<TfiStatsUp className='text-6xl text-error' />}
             title={t("landingPage:statistics:meals:title")}
             description={t("landingPage:statistics:meals:description")}
           />
-          <InfoCard
+          <StatisticsCard
             icon={<MdOutlineQueryStats className='text-6xl text-error' />}
             title={t("landingPage:statistics:orphans:title")}
             description={t("landingPage:statistics:orphans:description")}
           />
-          <InfoCard
+          <StatisticsCard
             icon={<ImStatsBars className='text-6xl text-error' />}
             title={t("landingPage:statistics:refugees:title")}
             description={t("landingPage:statistics:refugees:description")}
           />
-          <InfoCard
+          <StatisticsCard
             icon={<BiStats className='text-6xl text-error' />}
             title={t("landingPage:statistics:fact:title")}
             description={t("landingPage:statistics:fact:description")}
