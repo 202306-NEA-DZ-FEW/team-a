@@ -13,7 +13,7 @@ function ListingTypeFilter({ t, queryParams }) {
   return (
     <>
       <Menu as='div' className='relative w-full flex justify-center text-left'>
-        <Menu.Button className='flex items-center gap-2 w-full justify-between bg-base-300 input-sm rounded-full tracking-wider'>
+        <Menu.Button className='flex items-center gap-2 w-full justify-between bg-base-200 input-sm rounded-full tracking-wider'>
           <div className='flex gap-2 items-center'>
             <TbSitemap className='w-5 h-5' />
             <span>
@@ -49,7 +49,7 @@ function ListingTypeFilter({ t, queryParams }) {
                     {({ active }) => (
                       <p
                         className={classNames(
-                          active ? "bg-base-300" : "text-gray-500",
+                          active ? "bg-base-200" : "text-gray-500",
                           "block px-4 py-2 tracking-wider my-2 rounded-md"
                         )}
                       >

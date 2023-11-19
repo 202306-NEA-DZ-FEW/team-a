@@ -84,7 +84,7 @@ function UserProfile({ userData }) {
       </section>
       {/* user info............................... */}
       <section
-        className='flex md:justify-between md:items-center tracking-wider md:flex-row gap-2 bg-base-200 drop-shadow-md md:gap-6 w-full rounded-2xl'
+        className='flex md:justify-between md:items-center tracking-wider md:flex-row gap-2 bg-base-100 drop-shadow-md md:gap-6 w-full rounded-2xl'
         dir={i18n?.language == "ar" ? "rtl" : "ltr"}
       >
         <div className='flex flex-col md:flex-row gap-2 p-6 md:gap-6 flex-1'>
@@ -132,7 +132,7 @@ function UserProfile({ userData }) {
         >
           <button
             onClick={() => document.getElementById("my_modal_1").showModal()}
-            className={`btn transition-all duration-500 ease-in-out group bg-base-300 btn-ghost hover:bg-opacity-10 rounded-2xl h-full
+            className={`btn transition-all duration-500 ease-in-out group bg-base-200 btn-ghost hover:bg-opacity-10 rounded-2xl h-full
             ${
               i18n?.language == "ar"
                 ? "md:rounded-tr-none md:rounded-br-none"
@@ -140,7 +140,7 @@ function UserProfile({ userData }) {
             }
             `}
           >
-            <BsFillPencilFill className='text-gray-400 text-xl md:mx-2 transition-all duration-500 ease-in-out group-hover:text-gray-800' />
+            <BsFillPencilFill className='text-xl md:mx-2 transition-all duration-500 ease-in-out' />
           </button>
           <EditProfileForm
             userData={profileData}

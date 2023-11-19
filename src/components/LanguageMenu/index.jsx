@@ -48,7 +48,7 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='en'
                 className={classNames(
-                  active ? "bg-base-300" : "text-gray-700",
+                  active ? "bg-neutral" : "text-gray-400",
                   "block px-4 py-2 text-sm my-2 rounded-md"
                 )}
               >
@@ -62,8 +62,8 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='fr'
                 className={classNames(
-                  active ? "bg-base-300" : "text-gray-700",
-                  "block px-4 py-2 text-sm mb-2 rounded-md"
+                  active ? "bg-neutral" : "text-gray-400",
+                  "block px-4 py-2 text-sm my-2 rounded-md"
                 )}
               >
                 <span className='fi fi-fr rounded mr-2'></span> Français
@@ -76,7 +76,7 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='tr'
                 className={classNames(
-                  active ? "bg-base-300" : "text-gray-700",
+                  active ? "bg-neutral" : "text-gray-400",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
               >
@@ -90,7 +90,7 @@ function LanguageMenu({ bottom }) {
                 href={currentPath}
                 locale='ar'
                 className={classNames(
-                  active ? "bg-base-300" : "text-gray-700",
+                  active ? "bg-neutral" : "text-gray-400",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
               >
