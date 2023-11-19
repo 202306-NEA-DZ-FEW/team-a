@@ -6,7 +6,6 @@ exports[`InfoCard Component renders correctly and match snapshot 1`] = `
   style={
     Object {
       "backgroundImage": undefined,
-      "backgroundSize": "cover",
     }
   }
 >
@@ -47,7 +46,6 @@ exports[`InfoCard Component renders correctly with props 1`] = `
   style={
     Object {
       "backgroundImage": undefined,
-      "backgroundSize": "cover",
     }
   }
 >

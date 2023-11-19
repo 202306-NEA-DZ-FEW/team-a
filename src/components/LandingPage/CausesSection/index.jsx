@@ -58,7 +58,7 @@ function CausesSection() {
             icon={<RiGraduationCapFill className='text-6xl text-white' />}
             title={t("landingPage:causes:education:title")}
             description={t("landingPage:causes:education:description")}
-            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64), #508c62, url(${edu.src})`}
+            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64), rgba(80, 140, 98, 1)), url(${edu.src})`}
           />
         </motion.div>
         <motion.div
@@ -71,7 +71,7 @@ function CausesSection() {
             icon={<LuHeartHandshake className='text-6xl text-white' />}
             title={t("landingPage:causes:solidarity:title")}
             description={t("landingPage:causes:solidarity:description")}
-            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),#508c62, url(${solidarity.src})`}
+            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(${solidarity.src})`}
           />
         </motion.div>
         <motion.div
@@ -84,7 +84,7 @@ function CausesSection() {
             icon={<FaHandHoldingWater className='text-6xl text-white' />}
             title={t("landingPage:causes:health:title")}
             description={t("landingPage:causes:health:description")}
-            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),#508c62, url(${health.src})`}
+            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(${health.src})`}
           />
         </motion.div>
       </motion.div>
