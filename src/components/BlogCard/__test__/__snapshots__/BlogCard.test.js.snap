@@ -5,11 +5,11 @@ exports[`renders correctly 1`] = `
   className="card rounded-xl bg-base-100 shadow-lg w-full lg:w-[50%]"
 >
   <figure
-    className="relative h-full overflow-hidden"
+    className="relative w-full h-full overflow-hidden"
   >
     <img
       alt="Blog Image"
-      className="w-full object-cover rounded-t-2xl"
+      className="w-full h-full object-cover rounded-t-2xl"
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
