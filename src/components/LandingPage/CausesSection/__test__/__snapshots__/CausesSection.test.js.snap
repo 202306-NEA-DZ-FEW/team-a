@@ -2,21 +2,39 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="lg:min-h-screen my-20 p-10 bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 rounded-lg shadow-2xl border border-slate-50/10"
+  className="max-w-6xl mx-auto px-8 xl:px-0 flex flex-col flex-wrap gap-8 justify-center lg:min-h-screen lg:my-0"
 >
-  <div
-    className="max-w-6xl mx-auto px-8 xl:px-0 flex flex-col flex-wrap justify-center lg:min-h-screen my-20 lg:my-0"
+  <h1
+    className="text-3xl md:text-5xl gap-4 font-bold text-center"
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateY(30px) translateZ(0)",
+      }
+    }
   >
-    <h1
-      className="text-3xl md:text-5xl pb-4 font-bold text-center"
-    >
-      causes.title
-    </h1>
+    causes.title
+  </h1>
+  <div
+    className="w-full flex flex-wrap justify-center items-center gap-6 text-center"
+    style={
+      Object {
+        "opacity": 1,
+        "transform": "scale(0) translateZ(0)",
+      }
+    }
+  >
     <div
-      className="flex flex-col justify-center items-start gap-4 text-center p-6 md:flex-row"
+      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl "
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(20px) translateZ(0)",
+        }
+      }
     >
       <div
-        className="w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white rounded-xl shadow-2xl border border-slate-50/10 w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white x"
+        className="w-full h-full p-4 flex flex-col flex-1 justify-center items-center gap-4"
       >
         <svg
           className="text-6xl text-error"
@@ -48,8 +66,18 @@ exports[`renders correctly 1`] = `
           causes.education.description
         </p>
       </div>
+    </div>
+    <div
+      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl "
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(20px) translateZ(0)",
+        }
+      }
+    >
       <div
-        className="w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white rounded-xl shadow-2xl border border-slate-50/10 w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white x"
+        className="w-full h-full p-4 flex flex-col flex-1 justify-center items-center gap-4"
       >
         <svg
           className="text-6xl text-error"
@@ -92,8 +120,18 @@ exports[`renders correctly 1`] = `
           causes.solidarity.description
         </p>
       </div>
+    </div>
+    <div
+      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl "
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(20px) translateZ(0)",
+        }
+      }
+    >
       <div
-        className="w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white rounded-xl shadow-2xl border border-slate-50/10 w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white x"
+        className="w-full h-full p-4 flex flex-col flex-1 justify-center items-center gap-4"
       >
         <svg
           className="text-6xl text-error"

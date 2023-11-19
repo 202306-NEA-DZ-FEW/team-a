@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import { FaHandHoldingWater } from "react-icons/fa";
 import { LuHeartHandshake } from "react-icons/lu";
@@ -9,36 +10,79 @@ import InfoCard from "../InfoCard";
 
 function CausesSection() {
   const { t } = useTranslation();
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
-    <div className='lg:min-h-screen my-20 p-10 bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 rounded-lg shadow-2xl border border-slate-50/10'>
-      <Container className='flex flex-col flex-wrap justify-center lg:min-h-screen my-20 lg:my-0'>
-        <h1 className='text-3xl md:text-5xl pb-4 font-bold text-center'>
-          {t("landingPage:causes:title")}
-        </h1>
-        <div className='flex flex-col justify-center items-start gap-4 text-center p-6 md:flex-row'>
+    <Container className='flex flex-col flex-wrap gap-8 justify-center lg:min-h-screen lg:my-0'>
+      <motion.h1
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+        className='text-3xl md:text-5xl gap-4 font-bold text-center'
+      >
+        {t("landingPage:causes:title")}
+      </motion.h1>
+      <motion.div
+        variants={container}
+        initial='hidden'
+        whileInView='visible'
+        className='w-full flex flex-wrap justify-center items-center gap-6 text-center'
+      >
+        <motion.div
+          variants={item}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl '
+        >
           <InfoCard
-            className='w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white rounded-xl shadow-2xl border border-slate-50/10'
+            className='w-full h-full'
             icon={<RiGraduationCapFill className='text-6xl text-error' />}
             title={t("landingPage:causes:education:title")}
             description={t("landingPage:causes:education:description")}
           />
-
+        </motion.div>
+        <motion.div
+          variants={item}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl '
+        >
           <InfoCard
-            className='w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white rounded-xl shadow-2xl border border-slate-50/10'
+            className='w-full h-full'
             icon={<LuHeartHandshake className='text-6xl text-error' />}
             title={t("landingPage:causes:solidarity:title")}
             description={t("landingPage:causes:solidarity:description")}
           />
+        </motion.div>
+        <motion.div
+          variants={item}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl '
+        >
           <InfoCard
-            className='w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white rounded-xl shadow-2xl border border-slate-50/10'
+            className='w-full h-full'
             icon={<FaHandHoldingWater className='text-6xl text-error' />}
             title={t("landingPage:causes:health:title")}
             description={t("landingPage:causes:health:description")}
           />
-        </div>
-      </Container>
-    </div>
+        </motion.div>
+      </motion.div>
+    </Container>
   );
 }
 

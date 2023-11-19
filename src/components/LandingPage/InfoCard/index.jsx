@@ -1,7 +1,7 @@
 function InfoCard({ title, description, icon, className }) {
   return (
     <div
-      className={`${className} w-[300px] h-[300px] pt-4 px-4 flex flex-col flex-1 items-center gap-4 bg-white x`}
+      className={`${className} p-4 flex flex-col flex-1 justify-center items-center gap-4`}
     >
       {icon}
       <h2 className='text-2xl md:text-3xl font-bold'>{title}</h2>
