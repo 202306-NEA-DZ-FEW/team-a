@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
+import edu from "public/images/edu.jpg";
+import health from "public/images/health.jpg";
+import solidarity from "public/images/solidarity.jpg";
 import { FaHandHoldingWater } from "react-icons/fa";
 import { LuHeartHandshake } from "react-icons/lu";
 import { RiGraduationCapFill } from "react-icons/ri";
@@ -48,37 +51,40 @@ function CausesSection() {
         <motion.div
           variants={item}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl '
+          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
         >
           <InfoCard
             className='w-full h-full'
-            icon={<RiGraduationCapFill className='text-6xl text-error' />}
+            icon={<RiGraduationCapFill className='text-6xl text-white' />}
             title={t("landingPage:causes:education:title")}
             description={t("landingPage:causes:education:description")}
+            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64), #508c62, url(${edu.src})`}
           />
         </motion.div>
         <motion.div
           variants={item}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl '
+          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
         >
           <InfoCard
-            className='w-full h-full'
-            icon={<LuHeartHandshake className='text-6xl text-error' />}
+            className='w-full h-full '
+            icon={<LuHeartHandshake className='text-6xl text-white' />}
             title={t("landingPage:causes:solidarity:title")}
             description={t("landingPage:causes:solidarity:description")}
+            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),#508c62, url(${solidarity.src})`}
           />
         </motion.div>
         <motion.div
           variants={item}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl '
+          className='flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden'
         >
           <InfoCard
             className='w-full h-full'
-            icon={<FaHandHoldingWater className='text-6xl text-error' />}
+            icon={<FaHandHoldingWater className='text-6xl text-white' />}
             title={t("landingPage:causes:health:title")}
             description={t("landingPage:causes:health:description")}
+            bgImage={`linear-gradient(rgba(114, 173, 132, 0.64),#508c62, url(${health.src})`}
           />
         </motion.div>
       </motion.div>

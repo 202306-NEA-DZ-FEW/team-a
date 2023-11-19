@@ -25,7 +25,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl "
+      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden"
       style={
         Object {
           "opacity": 0,
@@ -35,9 +35,15 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="w-full h-full p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(rgba(114, 173, 132, 0.64), #508c62, url(/img.jpg)",
+            "backgroundSize": "cover",
+          }
+        }
       >
         <svg
-          className="text-6xl text-error"
+          className="text-6xl text-white"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -68,7 +74,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl "
+      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden"
       style={
         Object {
           "opacity": 0,
@@ -77,10 +83,16 @@ exports[`renders correctly 1`] = `
       }
     >
       <div
-        className="w-full h-full p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        className="w-full h-full  p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(rgba(114, 173, 132, 0.64),#508c62, url(/img.jpg)",
+            "backgroundSize": "cover",
+          }
+        }
       >
         <svg
-          className="text-6xl text-error"
+          className="text-6xl text-white"
           fill="none"
           height="1em"
           stroke="currentColor"
@@ -122,7 +134,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-base-100 drop-shadow-lg rounded-xl "
+      className="flex-1 min-w-[31%] h-96 flex-grow flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-xl shadow-2xl overflow-hidden"
       style={
         Object {
           "opacity": 0,
@@ -132,9 +144,15 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="w-full h-full p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(rgba(114, 173, 132, 0.64),#508c62, url(/img.jpg)",
+            "backgroundSize": "cover",
+          }
+        }
       >
         <svg
-          className="text-6xl text-error"
+          className="text-6xl text-white"
           fill="currentColor"
           height="1em"
           stroke="currentColor"

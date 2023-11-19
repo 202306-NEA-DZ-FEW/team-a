@@ -35,6 +35,12 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="undefined p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": undefined,
+            "backgroundSize": "cover",
+          }
+        }
       >
         <svg
           className="text-6xl text-error"
@@ -70,6 +76,12 @@ exports[`renders correctly 1`] = `
       </div>
       <div
         className="undefined p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": undefined,
+            "backgroundSize": "cover",
+          }
+        }
       >
         <svg
           className="text-6xl text-error"
@@ -107,6 +119,12 @@ exports[`renders correctly 1`] = `
       </div>
       <div
         className="undefined p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": undefined,
+            "backgroundSize": "cover",
+          }
+        }
       >
         <svg
           className="text-6xl text-error"
@@ -141,6 +159,12 @@ exports[`renders correctly 1`] = `
       </div>
       <div
         className="undefined p-4 flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": undefined,
+            "backgroundSize": "cover",
+          }
+        }
       >
         <svg
           className="text-6xl text-error"

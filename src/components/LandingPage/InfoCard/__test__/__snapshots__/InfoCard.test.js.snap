@@ -3,6 +3,12 @@
 exports[`InfoCard Component renders correctly and match snapshot 1`] = `
 <div
   className="undefined p-4 flex flex-col flex-1 justify-center items-center gap-4"
+  style={
+    Object {
+      "backgroundImage": undefined,
+      "backgroundSize": "cover",
+    }
+  }
 >
   <svg
     fill="currentColor"
@@ -38,6 +44,12 @@ exports[`InfoCard Component renders correctly and match snapshot 1`] = `
 exports[`InfoCard Component renders correctly with props 1`] = `
 <div
   className="undefined p-4 flex flex-col flex-1 justify-center items-center gap-4"
+  style={
+    Object {
+      "backgroundImage": undefined,
+      "backgroundSize": "cover",
+    }
+  }
 >
   <svg
     fill="currentColor"
