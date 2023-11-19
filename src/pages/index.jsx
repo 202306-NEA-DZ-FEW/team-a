@@ -66,7 +66,7 @@ export async function getStaticProps({ locale }) {
         "signIn",
       ])),
       items: items.slice(0, 5),
-      blogs: blogs.slice(0, 4),
+      blogs: blogs.slice(0, 3),
     },
     revalidate: 30,
   };

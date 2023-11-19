@@ -1,43 +1,41 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import { IoIosArrowDropright } from "react-icons/io";
 
 import { formatDate, truncateString } from "@/lib/helpers";
 
 function BlogCard({ id, title, imageUrl, createdAt, description }) {
   const { t } = useTranslation();
   const date = formatDate(createdAt, "MMM YYYY");
-  const truncatedDescription = truncateString(description, 60);
-  const truncatedTitle = truncateString(title, 20);
+  const truncatedDescription = truncateString(description, 95);
+  const truncatedTitle = truncateString(title, 23);
   return (
-    <div className='card bg-base-200 rounded-xl shadow-lg w-64'>
-      <div className='relative'>
+    <div className='card rounded-xl shadow-lg w-full lg:w-[50%]'>
+      <figure className='relative h-[60%]'>
         <Image
-          className='w-full relative object-cover h-44 rounded-tr-2xl rounded-tl-2xl p-1'
+          className='w-full object-cover rounded-t-xl'
           src={imageUrl}
           alt='Blog Image'
           height={400}
           width={400}
           priority
         />
-        <span className='absolute left-1 bottom-1 text-white bg-primary px-2 py-1'>
-          {date}
-        </span>
-      </div>
+      </figure>
 
-      <div className='p-3 gap-1 flex flex-col'>
-        <h2 className='text-lg font-bold mb-2' title={title}>
-          {truncatedTitle}
-        </h2>
-        <p className='text-sm font-light mb-4' title={description}>
+      <div className='gap-2 flex flex-col p-6'>
+        <h2 className='text-3xl lg:text-4xl font-bold mb-2'>{title}</h2>
+        <p className='text-md lg:text-lg font-light mb-4' title={description}>
           {truncatedDescription}
         </p>
-        <div className='flex justify-end'>
+        <div className='flex justify-between pb-4'>
+          <span>{date} </span>
           <Link
             href={`/blogs/${id}`}
-            className='text-secondary/[.8] hover:text-secondary font-bold'
+            className='text-secondary hover:text-secondary font-bold flex items-center gap-2'
           >
             {t("common:buttons:readMore")}
+            <IoIosArrowDropright className='text-xl' />
           </Link>
         </div>
       </div>

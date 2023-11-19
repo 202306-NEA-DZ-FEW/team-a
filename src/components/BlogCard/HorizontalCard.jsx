@@ -1,0 +1,47 @@
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { IoIosArrowDropright } from "react-icons/io";
+
+import { formatDate, truncateString } from "@/lib/helpers";
+
+function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
+  const { t } = useTranslation();
+  const date = formatDate(createdAt, "MMM YYYY");
+  const truncatedDescription = truncateString(description, 200);
+  const truncatedTitle = truncateString(title, 23);
+  return (
+    <div className='card lg:card-side bg-base-100 shadow-xl h-full'>
+      <figure className=' lg:w-[45%]'>
+        <Image
+          height={400}
+          width={400}
+          priority
+          src={imageUrl}
+          alt='Blog Image'
+          className='w-full'
+        />
+      </figure>
+      <div className='card-body lg:w-[35%] p-6 lg:p-10 gap-4'>
+        <h2 className='card-title text-4xl' title={title}>
+          {title}
+        </h2>
+        <p className='text-lg font-light' title={description}>
+          {truncatedDescription}
+        </p>
+        <div className='card-actions flex gap-2 justify-between'>
+          <span>{date}</span>
+          <Link
+            href={`/blogs/${id}`}
+            className='text-secondary/[.7] flex items-center gap-2'
+          >
+            {t("common:buttons:readMore")}
+
+            <IoIosArrowDropright className='text-xl' />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+export default HorizontalCard;
