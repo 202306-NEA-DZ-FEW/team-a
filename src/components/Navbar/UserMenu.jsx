@@ -13,9 +13,15 @@ function UserMenu({ user, logOut, t, userProfile }) {
   return (
     <Menu as='div' className='relative hidden lg:block mt-1'>
       <Menu.Button className='btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost'>
-        <div className='avatar'>
-          <div className='w-8 rounded-full ring ring-primary hover:ring-offset-1 transition-all duration-500 ring-offset-base-100 ring-offset-2'>
-            <Image width={100} height={100} alt='user' src={userProfile} />
+        <div className='avatar '>
+          <div className='w-8 rounded-full bg-black ring ring-primary hover:ring-offset-2 transition-all duration-500 ring-offset-transparent ring-offset-1'>
+            <Image
+              width={100}
+              height={100}
+              alt='user'
+              src={userProfile}
+              className=''
+            />
           </div>
         </div>
       </Menu.Button>
@@ -33,7 +39,7 @@ function UserMenu({ user, logOut, t, userProfile }) {
             {({ active }) => (
               <Link
                 className={classNames(
-                  active ? "bg-base-300" : "text-gray-700",
+                  active ? "bg-base-200" : "text-gray-400",
                   "px-4 py-2 text-sm mb-2 rounded-md w-full flex gap-1 items-center"
                 )}
                 href={{
@@ -50,7 +56,7 @@ function UserMenu({ user, logOut, t, userProfile }) {
             {({ active }) => (
               <button
                 className={classNames(
-                  active ? "bg-base-300" : "text-gray-700",
+                  active ? "bg-base-200" : "text-gray-400",
                   "px-4 py-2 text-sm mb-2 rounded-md w-full flex gap-1 items-center"
                 )}
                 onClick={logOut}

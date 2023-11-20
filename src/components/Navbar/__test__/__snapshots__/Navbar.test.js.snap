@@ -18,7 +18,7 @@ exports[`Navbar snapshot test 1`] = `
     </a>
   </div>
   <nav
-    className="hidden lg:w-[50%] min-w-fit lg:mr-8  lg:px-4 lg:flex lg:justify-between lg:navbar-center gap-4 lg:items-center backdrop-blur-md border-2 border-white  border-opacity-25 rounded-full bg-black bg-opacity-25 text-white"
+    className="hidden lg:w-[50%] min-w-fit lg:mr-8  lg:px-4 lg:flex lg:justify-between lg:navbar-center gap-4 lg:items-center backdrop-blur-md border-2 border-white  border-opacity-25 rounded-full bg-black bg-opacity-25"
   >
     <div
       className="flex-1 h-[2.2px] bg-white"
@@ -28,7 +28,7 @@ exports[`Navbar snapshot test 1`] = `
       dir="ltr"
     >
       <a
-        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        className="text-white btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -37,7 +37,7 @@ exports[`Navbar snapshot test 1`] = `
         buttons.home
       </a>
       <a
-        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        className="text-white btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider"
         href="/about"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -46,7 +46,7 @@ exports[`Navbar snapshot test 1`] = `
         buttons.about
       </a>
       <a
-        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        className="text-white btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider"
         href="/items"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -55,7 +55,7 @@ exports[`Navbar snapshot test 1`] = `
         buttons.items
       </a>
       <a
-        className="btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider"
+        className="text-white btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider"
         href="/blogs"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -72,7 +72,7 @@ exports[`Navbar snapshot test 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup="menu"
-          className="btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
+          className="btn btn-sm text-white outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
           data-headlessui-state=""
           id="headlessui-menu-button-:r0:"
           onClick={[Function]}

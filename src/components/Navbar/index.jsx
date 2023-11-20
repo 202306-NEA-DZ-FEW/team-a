@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import profile from "public/images/profile.svg";
 import { useEffect, useState } from "react";
@@ -13,6 +14,8 @@ function Navbar() {
   const { user, logOut, loading } = useAuth();
   const { i18n, t } = useTranslation();
   const [userProfile, setUserProfile] = useState(profile);
+  const router = useRouter();
+  const currentPath = router.asPath;
 
   useEffect(() => {
     setUserProfile(user?.photoURL || profile);
@@ -30,7 +33,7 @@ function Navbar() {
             {t("common:buttons:logo")}
           </Link>
         </div>
-        <nav className='hidden lg:w-[50%] min-w-fit lg:mr-8  lg:px-4 lg:flex lg:justify-between lg:navbar-center gap-4 lg:items-center backdrop-blur-md border-2 border-white  border-opacity-25 rounded-full bg-black bg-opacity-25 text-white'>
+        <nav className='hidden lg:w-[50%] min-w-fit lg:mr-8  lg:px-4 lg:flex lg:justify-between lg:navbar-center gap-4 lg:items-center backdrop-blur-md border-2 border-white  border-opacity-25 rounded-full bg-black bg-opacity-25'>
           <div className='flex-1 h-[2.2px] bg-white' />
           {/* Navbar Navigation Links */}
           <div
@@ -38,28 +41,36 @@ function Navbar() {
             className='lg:flex gap-4'
           >
             <Link
-              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              className={`${
+                currentPath === "/" ? "text-secondary" : "text-white"
+              } btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider`}
               href='/'
             >
               {t("common:buttons:home")}
             </Link>
 
             <Link
-              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              className={`${
+                currentPath === "/about" ? "text-secondary" : "text-white"
+              } btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider`}
               href='/about'
             >
               {t("common:buttons:about")}
             </Link>
 
             <Link
-              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              className={`${
+                currentPath === "/items" ? "text-secondary" : "text-white"
+              } btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider`}
               href='/items'
             >
               {t("common:buttons:items")}
             </Link>
 
             <Link
-              className='btn hover:btn-link transition-all duration-500 hover:translate-y-1 btn-ghost normal-case font-light tracking-wider'
+              className={`${
+                currentPath === "/blogs" ? "text-secondary" : "text-white"
+              } btn hover:text-secondary hover:btn-link transition-all duration-300 btn-ghost normal-case font-light tracking-wider`}
               href='/blogs'
             >
               {t("common:buttons:blogs")}

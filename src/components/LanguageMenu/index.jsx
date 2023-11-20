@@ -23,7 +23,7 @@ function LanguageMenu({ bottom }) {
       className={`relative text-left ${bottom ? "block" : "hidden"} lg:block`}
     >
       <div>
-        <Menu.Button className='btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost'>
+        <Menu.Button className='btn btn-sm text-white outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost'>
           <TbLanguage className='w-6 h-6' />
         </Menu.Button>
       </div>
@@ -45,13 +45,13 @@ function LanguageMenu({ bottom }) {
           <Menu.Item>
             {({ active }) => (
               <Link
+                scroll={false}
                 href={currentPath}
                 locale='en'
                 className={classNames(
-                  active ? "bg-neutral" : "text-gray-400",
+                  active ? "bg-base-200" : "text-gray-400",
                   "block px-4 py-2 text-sm my-2 rounded-md"
                 )}
-                scroll={false}
               >
                 <span className='fi fi-gb rounded mr-2'></span> English
               </Link>
@@ -60,13 +60,13 @@ function LanguageMenu({ bottom }) {
           <Menu.Item>
             {({ active }) => (
               <Link
+                scroll={false}
                 href={currentPath}
                 locale='fr'
                 className={classNames(
-                  active ? "bg-neutral" : "text-gray-400",
+                  active ? "bg-base-200" : "text-gray-400",
                   "block px-4 py-2 text-sm my-2 rounded-md"
                 )}
-                scroll={false}
               >
                 <span className='fi fi-fr rounded mr-2'></span> Français
               </Link>
@@ -75,13 +75,13 @@ function LanguageMenu({ bottom }) {
           <Menu.Item>
             {({ active }) => (
               <Link
+                scroll={false}
                 href={currentPath}
                 locale='tr'
                 className={classNames(
-                  active ? "bg-neutral" : "text-gray-400",
+                  active ? "bg-base-200" : "text-gray-400",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
-                scroll={false}
               >
                 <span className='fi fi-tr rounded mr-2'></span> Türkçe
               </Link>
@@ -90,13 +90,13 @@ function LanguageMenu({ bottom }) {
           <Menu.Item>
             {({ active }) => (
               <Link
+                scroll={false}
                 href={currentPath}
                 locale='ar'
                 className={classNames(
-                  active ? "bg-neutral" : "text-gray-400",
+                  active ? "bg-base-200" : "text-gray-400",
                   "block px-4 py-2 text-sm mb-2 rounded-md"
                 )}
-                scroll={false}
               >
                 <span className='fi fi-dz rounded mr-2'></span> العربية
               </Link>
