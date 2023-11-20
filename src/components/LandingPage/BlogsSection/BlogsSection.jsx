@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import { IoIosArrowDropright } from "react-icons/io";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 import BlogCard from "@/components/BlogCard";
 import HorizontalCard from "@/components/BlogCard/HorizontalCard";
 import Container from "@/components/container";
 
 function BlogsSection({ blogs }) {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   return (
     <Container className='lg:min-h-screen my-20 lg:my-0 flex flex-col justify-center'>
@@ -19,13 +19,20 @@ function BlogsSection({ blogs }) {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
       >
-        <h2 className='text-3xl md:text-5xl font-bold'>Our Latest Blogs</h2>
+        <h2 className='text-3xl md:text-5xl font-bold'>
+          {t("landingPage:latestBlogs")}
+        </h2>
         <Link
           className='btn btn-secondary rounded-full btn-md w-[45%] lg:w-[15%] text-current bg-opacity-50 flex items-center gap-2'
           href='/blogs'
         >
           {t("common:buttons:readMore")}
-          <IoIosArrowDropright className='text-xl' />
+          {i18n.language !== "ar" ? (
+            <IoIosArrowDropright className='text-xl' />
+          ) : null}
+          {i18n.language === "ar" ? (
+            <IoIosArrowDropleft className='text-xl' />
+          ) : null}
         </Link>
       </motion.div>
       {/* Cards Section */}

@@ -97,11 +97,12 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      The power of collective
+      hero.title
       <span
         className="text-accent"
       >
-         Giving.
+         
+        hero.titleHighlight
       </span>
     </h2>
     <p
@@ -113,7 +114,7 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      You offer more than possessions when you give, true giving is an extension of yourself
+      hero.description
     </p>
     <button
       className="mb-10 btn lg:self-start lg:min-w-fit text-current bg-opacity-50  rounded-full flex items-center btn-secondary"
@@ -165,7 +166,7 @@ exports[`renders correctly 1`] = `
         >
           30k+
         </span>
-         Ramadan Meal Outreach
+        hero.stat1
       </p>
       <p
         className="flex items-center  gap-2 text-xs font-light"
@@ -175,7 +176,7 @@ exports[`renders correctly 1`] = `
         >
           200+
         </span>
-         In Orphan Education Support
+        hero.stat2
       </p>
       <p
         className="flex items-center gap-2 text-xs font-light"
@@ -185,7 +186,7 @@ exports[`renders correctly 1`] = `
         >
           25k+
         </span>
-         In Refugee Aid Program
+        hero.stat3
       </p>
       <svg
         className="absolute -top-2 left-7 fill-current w-36"

@@ -35,9 +35,11 @@ function HeroSection() {
             transition={{ duration: 0.4 }}
             viewport={{ once: true }}
           >
-            {/* {t("landingPage:hero:title")} */}
-            The power of collective
-            <span className='text-accent'> Giving.</span>
+            {t("landingPage:hero:title")}
+            <span className='text-accent'>
+              {" "}
+              {t("landingPage:hero:titleHighlight")}
+            </span>
           </motion.h2>
           <motion.p
             className='text-start font-light text-md md:text-xl'
@@ -45,8 +47,7 @@ function HeroSection() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.5 }}
           >
-            You offer more than possessions when you give, true giving is an
-            extension of yourself
+            {t("landingPage:hero:description")}
           </motion.p>
           <motion.button
             className='mb-10 btn lg:self-start lg:min-w-fit text-current bg-opacity-50  rounded-full flex items-center btn-secondary'
@@ -66,16 +67,16 @@ function HeroSection() {
             transition={{ duration: 0.4, delay: 1 }}
           >
             <p className='flex items-center  gap-2 text-xs font-light'>
-              <span className='text-lg font-black'>30k+</span> Ramadan Meal
-              Outreach
+              <span className='text-lg font-black'>30k+</span>
+              {t("landingPage:hero:stat1")}
             </p>
             <p className='flex items-center  gap-2 text-xs font-light'>
-              <span className='text-lg font-black'>200+</span> In Orphan
-              Education Support
+              <span className='text-lg font-black'>200+</span>
+              {t("landingPage:hero:stat2")}
             </p>
             <p className='flex items-center gap-2 text-xs font-light'>
-              <span className='text-lg font-black'>25k+</span> In Refugee Aid
-              Program
+              <span className='text-lg font-black'>25k+</span>
+              {t("landingPage:hero:stat3")}
             </p>
             <Xhorizontal className='absolute -top-2 left-7 fill-current w-36' />
           </motion.div>

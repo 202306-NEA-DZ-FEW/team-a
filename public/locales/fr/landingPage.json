@@ -1,7 +1,11 @@
 {
   "hero": {
-    "title": "Partageons ensemble.",
-    "description": "Bienvenue chez Unify! Là où tout ce dont vous pourriez ne pas avoir besoin est la nécessité de quelqu'un d'autre. Des vêtements aux meubles, nous sommes là pour faire le lien entre vous et les personnes dans le besoin. Ensemble, nous pouvons faire une différence significative dans la vie de ceux qui ont besoin d'un coup de main. Rejoignez-nous pour répandre la chaleur, la gentillesse et l'espoir. Créons une communauté unie par l'esprit du don et de la compassion, un article à la fois."
+    "title": "Le pouvoir du don ",
+    "titleHighlight": "collectif.",
+    "description": "le véritable don est un reflet de votre humanité",
+    "stat1": "Repas distribués durant le Ramadhan",
+    "stat2": "Orphelins pris en charge",
+    "stat3": "Recensés dans le programme d'aide aux réfugiés"
   },
   "causes": {
     "title": "Causes",
@@ -38,5 +42,6 @@
   },
   "items": "Articles populaires",
   "blogs": "Blogs",
+  "latestBlogs": "Nos plus récents blogs",
   "partners": "Nos partenaires"
 }

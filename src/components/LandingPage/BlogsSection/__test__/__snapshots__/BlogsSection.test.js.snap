@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
     <h2
       className="text-3xl md:text-5xl font-bold"
     >
-      Our Latest Blogs
+      latestBlogs
     </h2>
     <a
       className="btn btn-secondary rounded-full btn-md w-[45%] lg:w-[15%] text-current bg-opacity-50 flex items-center gap-2"
