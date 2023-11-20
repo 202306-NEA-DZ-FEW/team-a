@@ -2,7 +2,7 @@
 
 exports[`CausesCard Component renders correctly and match snapshot 1`] = `
 <div
-  className="flex-1 min-w-[400px] h-96 flex-grow bg-base-100 flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md group rounded-3xl shadow-2xl overflow-hidden cursor-pointer"
+  className="flex-1 min-w-[300px] h-96 flex-grow bg-base-100 flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md group rounded-3xl shadow-2xl overflow-hidden cursor-pointer"
   style={
     Object {
       "opacity": 0,
@@ -42,7 +42,7 @@ exports[`CausesCard Component renders correctly and match snapshot 1`] = `
       Test Title
     </h2>
     <p
-      className="absolute p-8 text-3xl font-light w-full h-full bg-neutral flex justify-center items-center translate-x-72 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 text-white/80"
+      className="absolute p-8 text-xl font-light w-full h-full bg-neutral flex justify-center items-center translate-x-72 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 text-white/80"
     >
       Test Description
     </p>

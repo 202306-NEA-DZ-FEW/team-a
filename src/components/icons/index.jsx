@@ -219,7 +219,7 @@ export const Xvertical = (props) => {
     </svg>
   );
 };
-export const Triangles = (props) => {
+export const Waves = (props) => {
   return (
     <svg
       id='Layer_1'
