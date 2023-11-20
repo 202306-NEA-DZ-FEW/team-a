@@ -30,9 +30,9 @@ function NewsletterForm({ onValidated }) {
   });
 
   return (
-    <section className='h-96 bg-gradient-to-l from-[#02A85C40] via-slate-400 to-[#02A85C40] flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0'>
+    <section>
       <div
-        className='p-8 md:p-14 flex flex-col md:flex-row justify-center items-center gap-6 bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-lg shadow-2xl '
+        className='mx-8 md:mx-36 p-8 md:p-14 flex flex-col md:flex-row justify-center items-center gap-6 bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-2xl shadow-2xl transform md:translate-y-48 translate-y-48'
         dir={i18n?.language === "ar" ? "rtl" : "ltr"}
       >
         <div id='content' className=''>
@@ -63,7 +63,7 @@ function NewsletterForm({ onValidated }) {
               <div className='label' />
             </div>
             <button
-              className='btn btn-info w-full md:w-fit self-center rounded-3xl'
+              className='btn btn-neutral w-full md:w-fit self-center rounded-3xl'
               type='submit'
               disabled={formik.isSubmitting}
             >
@@ -75,6 +75,10 @@ function NewsletterForm({ onValidated }) {
           <Image src={newsletterImage} alt='img' priority />
         </figure>
       </div>
+      <div
+        id='background'
+        className='h-48 bg-neutral flex flex-col items-center '
+      />
     </section>
   );
 }
