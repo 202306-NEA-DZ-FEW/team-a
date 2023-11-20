@@ -18,7 +18,7 @@ function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
           priority
           src={imageUrl}
           alt='Blog Image'
-          className='w-full h-full'
+          className='w-full h-full object-cover'
         />
       </figure>
       <div className='card-body lg:w-[35%] p-6 lg:p-10 gap-4'>
