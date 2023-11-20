@@ -32,16 +32,16 @@ function BlogsSection({ blogs }) {
       <div className='grid grid-cols-3 gap-6 lg:gap-8'>
         <motion.div
           className='col-span-3'
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 30, opacity: 0, scale: 0.7 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.2 }}
         >
           {blogs.length && <HorizontalCard {...blogs[0]} />}
         </motion.div>
         <motion.div
           className='col-span-3 flex flex-col lg:flex-row gap-y-6 gap-x-8'
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 30, opacity: 0, scale: 0.7 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.6 }}
         >
           {blogs.slice(1, 3).map((blog) => (

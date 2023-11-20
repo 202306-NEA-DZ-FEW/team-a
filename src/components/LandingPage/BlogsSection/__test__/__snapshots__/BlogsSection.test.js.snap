@@ -58,7 +58,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "opacity": 0,
-          "transform": "translateY(30px) translateZ(0)",
+          "transform": "translateY(30px) scale(0.7) translateZ(0)",
         }
       }
     >
@@ -70,7 +70,7 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Blog Image"
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -148,7 +148,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "opacity": 0,
-          "transform": "translateY(30px) translateZ(0)",
+          "transform": "translateY(30px) scale(0.7) translateZ(0)",
         }
       }
     />
