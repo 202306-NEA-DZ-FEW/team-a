@@ -17,7 +17,7 @@ function StatisticsSection() {
   const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2.5]);
   const translateY = useTransform(scrollYProgress, [0, 1], [-80, -300]);
   return (
-    <motion.section className='lg:h-screen'>
+    <motion.section className='lg:h-screen overflow-hidden'>
       <div
         id='background'
         className='bg-primary flex flex-col justify-center items-center pt-10'
