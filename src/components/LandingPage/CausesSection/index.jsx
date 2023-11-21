@@ -34,6 +34,7 @@ function CausesSection() {
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
+        viewport={{ once: true }}
         className='text-3xl py-10 md:text-5xl gap-4 font-black text-center'
       >
         {t("landingPage:causes:title")}

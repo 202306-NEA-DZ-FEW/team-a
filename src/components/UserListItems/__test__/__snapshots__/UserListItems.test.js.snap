@@ -390,7 +390,7 @@ exports[`renders correctly 1`] = `
                   >
                     39
                     /
-                    150
+                    250
                   </label>
                 </div>
               </div>
@@ -1176,7 +1176,7 @@ exports[`renders correctly 1`] = `
                   >
                     39
                     /
-                    150
+                    250
                   </label>
                 </div>
               </div>

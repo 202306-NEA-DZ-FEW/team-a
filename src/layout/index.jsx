@@ -1,6 +1,8 @@
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
+import { useEffect } from "react";
 import { BiMoon } from "react-icons/bi";
 import { MdOutlineLightMode } from "react-icons/md";
 import { TbCircleChevronsUp } from "react-icons/tb";
@@ -17,6 +19,16 @@ const poppins = Poppins({
 });
 
 export default function Layout({ children, initialLocale }) {
+  const { resolvedTheme, theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    document.querySelector("html")?.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <main
       className={`${poppins.variable} font-poppins relative`}
@@ -32,7 +44,12 @@ export default function Layout({ children, initialLocale }) {
         </Link>
         <label className='swap swap-rotate'>
           {/* this hidden checkbox controls the state */}
-          <input type='checkbox' className='theme-controller' value='sunset' />
+          <input
+            type='checkbox'
+            checked={resolvedTheme === "light" ? true : false}
+            onChange={toggleTheme}
+            // className='theme-controller'
+          />
 
           {/* sun icon */}
           <MdOutlineLightMode className='swap-on fill-accent w-8 h-8' />

@@ -2,7 +2,7 @@
 
 exports[`rend correctement 1`] = `
 <div
-  className="max-w-6xl mx-auto px-8 xl:px-0 lg:min-h-screen my-20 lg:my-0 flex flex-col justify-center items-center gap-8  "
+  className="max-w-6xl mx-auto px-8 xl:px-0 lg:h-1/2 py-20 flex flex-col justify-center items-center gap-8  "
 >
   <h1
     className="text-3xl font-poppins font-bold "

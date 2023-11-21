@@ -10,7 +10,7 @@ import Container from "@/components/container";
 function OurPartnersSection() {
   const { t } = useTranslation();
   return (
-    <Container className='lg:min-h-screen my-20 lg:my-0 flex flex-col justify-center items-center gap-8  '>
+    <Container className='lg:h-1/2 py-20 flex flex-col justify-center items-center gap-8  '>
       <h1 className='text-3xl font-poppins font-bold '>
         {t("landingPage:partners")}
       </h1>

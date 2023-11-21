@@ -1,3 +1,4 @@
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import background from "public/images/stats.svg";
@@ -12,8 +13,11 @@ import StatisticsCard from "../StatisticsCard";
 
 function StatisticsSection() {
   const { t } = useTranslation();
+  const { scrollYProgress } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2.5]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [-80, -300]);
   return (
-    <section className='lg:min-h-screen my-20 lg:my-0'>
+    <motion.section className='lg:h-screen'>
       <div
         id='background'
         className='bg-primary flex flex-col justify-center items-center pt-10'
@@ -21,7 +25,13 @@ function StatisticsSection() {
         <Image src={background} alt='background' className='opacity-70' />
       </div>
       <Container id='stats'>
-        <div className='flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100  rounded-3xl shadow-2xl border-slate-500/10 transform md:-translate-y-64 -translate-y-44'>
+        <motion.div
+          style={{
+            scale: scale,
+            translateY: translateY,
+          }}
+          className='flex flex-col mx-2 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100 rounded-3xl shadow-2xl border-slate-500/10'
+        >
           <StatisticsCard
             icon={<TfiStatsUp className='text-6xl text-error' />}
             title={t("landingPage:statistics:meals:title")}
@@ -42,9 +52,9 @@ function StatisticsSection() {
             title={t("landingPage:statistics:fact:title")}
             description={t("landingPage:statistics:fact:description")}
           />
-        </div>
+        </motion.div>
       </Container>
-    </section>
+    </motion.section>
   );
 }
 

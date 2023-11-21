@@ -38,7 +38,7 @@ function EditItemForm({ item, onEdit }) {
     validationSchema: Yup.object({
       title: Yup.string().required(t("addItem:titleRequired")),
       description: Yup.string()
-        .max(150, "description too long")
+        .max(250, "description too long")
         .required(t("addItem:descriptionRequired")),
       category: Yup.string().required(t("addItem:categoryRequired")),
       location: Yup.string().required(t("addItem:locationRequired")),
@@ -161,7 +161,7 @@ function EditItemForm({ item, onEdit }) {
             error={formik.errors.description}
             touched={formik.touched.description}
             textLength={formik.values.description.length}
-            maxLength={150}
+            maxLength={250}
           />
           <SelectInput
             name='category'

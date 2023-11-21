@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { BiDonateHeart } from "react-icons/bi";
 
 import { Waves, Xhorizontal, Xvertical } from "@/components/icons";
 function HeroSection() {
   const { t } = useTranslation();
+  const router = useRouter();
   return (
     <>
       <div className='flex flex-col items-center lg:flex-row-reverse lg:min-h-screen'>
@@ -55,6 +57,7 @@ function HeroSection() {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.7 }}
+              onClick={() => router.push("/items/create")}
             >
               {t("common:buttons:donate")}
               <span className='text-lg'>

@@ -18,6 +18,7 @@ function BlogsSection({ blogs }) {
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
+        viewport={{ once: true }}
       >
         <h2 className='text-3xl md:text-5xl font-bold'>
           {t("landingPage:latestBlogs")}
@@ -42,6 +43,7 @@ function BlogsSection({ blogs }) {
           initial={{ y: 30, opacity: 0, scale: 0.7 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           {blogs.length && <HorizontalCard {...blogs[0]} />}
         </motion.div>
@@ -50,6 +52,7 @@ function BlogsSection({ blogs }) {
           initial={{ y: 30, opacity: 0, scale: 0.7 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.6 }}
+          viewport={{ once: true }}
         >
           {blogs.slice(1, 3).map((blog) => (
             <BlogCard key={blog.id} {...blog} />

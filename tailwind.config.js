@@ -18,8 +18,14 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        myTheme: {
+        light: {
           ...require("daisyui/src/theming/themes")["light"],
+          ".fill-current": {
+            color: "#031D1A",
+          },
+          ".text-current": {
+            color: "#031D1A",
+          },
           primary: "#0A6947",
           secondary: "#A8FFAE",
           accent: "#D7B93F",
@@ -34,7 +40,7 @@ module.exports = {
         },
       },
       {
-        sunset: {
+        dark: {
           ...require("daisyui/src/theming/themes")["sunset"],
           ".fill-current": {
             color: "#fff",

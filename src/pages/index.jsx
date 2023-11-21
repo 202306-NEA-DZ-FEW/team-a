@@ -1,51 +1,26 @@
-import dynamic from "next/dynamic";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { fetchCollection } from "@/lib/fetchCollection";
 
-import BlogsSectionPlaceholder from "@/components/LandingPage/BlogsSection/BlogsSectionPlaceholder";
+import BlogsSection from "@/components/LandingPage/BlogsSection/BlogsSection";
 import CausesSection from "@/components/LandingPage/CausesSection";
-import HeroSectionPlaceholder from "@/components/LandingPage/HeroSection/HeroSectionPlaceholder";
-import PopularItemsSectionPlaceholder from "@/components/LandingPage/PopularItemsSection/PopularItemsSectionPlaceholder";
+import HeroSection from "@/components/LandingPage/HeroSection";
+import OurPartnersSection from "@/components/LandingPage/OurPartnersSection";
+import PopularItemsSection from "@/components/LandingPage/PopularItemsSection";
 import StatisticsSection from "@/components/LandingPage/StatisticsSection";
 import Newsletter from "@/components/Newsletter";
-
-const DynamicHeroSection = dynamic(
-  () => import("@/components/LandingPage/HeroSection"),
-  {
-    loading: () => <HeroSectionPlaceholder />,
-  }
-);
-const DynamicPopularItemsSection = dynamic(
-  () => import("@/components/LandingPage/PopularItemsSection"),
-  {
-    loading: () => <PopularItemsSectionPlaceholder />,
-  }
-);
-const DynamicBlogsSection = dynamic(
-  () => import("@/components/LandingPage/BlogsSection/BlogsSection"),
-  {
-    loading: () => <BlogsSectionPlaceholder />,
-  }
-);
-const DynamicOurPartnersSection = dynamic(
-  () => import("@/components/LandingPage/OurPartnersSection"),
-  {
-    loading: () => <BlogsSectionPlaceholder />,
-  }
-);
 
 export default function HomePage({ items, blogs, _nextI18Next }) {
   const { initialLocale } = _nextI18Next;
 
   return (
     <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
-      <DynamicHeroSection />
+      <HeroSection />
       <CausesSection />
       <StatisticsSection />
-      <DynamicPopularItemsSection items={items} />
-      <DynamicBlogsSection blogs={blogs} />
-      <DynamicOurPartnersSection />
+      <PopularItemsSection items={items} />
+      <BlogsSection blogs={blogs} />
+      <OurPartnersSection />
       <Newsletter />
     </main>
   );

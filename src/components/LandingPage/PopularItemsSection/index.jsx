@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
@@ -8,11 +9,23 @@ function PopularItemsSection({ items }) {
   const { t } = useTranslation();
 
   return (
-    <Container className='lg:min-h-screen my-20 flex flex-col justify-center'>
-      <h1 className='text-3xl md:text-5xl font-bold text-center mb-14'>
+    <Container className='lg:min-h-screen flex flex-col justify-center lg:py-0 py-20'>
+      <motion.h1
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+        viewport={{ once: true }}
+        className='text-3xl md:text-5xl font-bold text-center mb-20'
+      >
         {t("landingPage:items")}
-      </h1>
-      <div className='flex justify-center items-center flex-wrap gap-4'>
+      </motion.h1>
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.4 }}
+        viewport={{ once: true }}
+        className='flex justify-center items-center flex-wrap gap-4'
+      >
         {items.map((item) => (
           <Link
             key={item.id}
@@ -31,7 +44,7 @@ function PopularItemsSection({ items }) {
           </Link>
         ))}
         {!items.length && <p>{t("common:buttons:noItemsFound")}</p>}
-      </div>
+      </motion.div>
     </Container>
   );
 }

@@ -12,7 +12,7 @@ function CreateProductPage({ t, _nextI18Next }) {
   const states = getAllStates(t);
   const { initialLocale } = _nextI18Next;
   return (
-    <Container className='my-20'>
+    <Container className='py-20'>
       <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
         <AddItemForm
           t={t}

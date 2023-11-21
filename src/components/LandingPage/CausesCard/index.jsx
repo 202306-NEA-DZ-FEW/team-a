@@ -6,6 +6,7 @@ function CausesCard({ id, title, description, icon, img }) {
       initial={{ y: 30, opacity: 0, scale: 0 }}
       whileInView={{ y: 0, opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, delay: (id + 1) / 10 }}
+      viewport={{ once: true }}
       className='flex-1 min-w-[300px] h-96 flex-grow bg-base-100 flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md group rounded-3xl shadow-2xl overflow-hidden cursor-pointer'
     >
       <div

@@ -8,6 +8,7 @@ import { useAuth } from "@/context/AuthProvider";
 
 import MobileMenu from "./MobileMenu";
 import UserMenu from "./UserMenu";
+import { Logo } from "../icons";
 import LanguageMenu from "../LanguageMenu";
 
 function Navbar() {
@@ -26,11 +27,8 @@ function Navbar() {
       <header className='no-scrollbar fixed top-0 left-0 navbar gap-24 justify-between z-50'>
         <div className='lg:block navbar-start max-w-fit'>
           {/* Navbar Logo */}
-          <Link
-            href='/'
-            className='font-bold btn btn-ghost normal-case text-2xl'
-          >
-            {t("common:buttons:logo")}
+          <Link href='/'>
+            <Logo className='fill-current w-24 mx-8' />
           </Link>
         </div>
         <nav className='hidden lg:w-[50%] min-w-fit lg:mr-8  lg:px-4 lg:flex lg:justify-between lg:navbar-center gap-4 lg:items-center backdrop-blur-md border-2 border-white  border-opacity-25 rounded-full bg-black bg-opacity-25'>
