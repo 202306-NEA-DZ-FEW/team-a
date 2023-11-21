@@ -63,7 +63,7 @@ function NewsletterForm({ onValidated }) {
               <div className='label' />
             </div>
             <button
-              className='btn btn-neutral w-full md:w-fit self-center rounded-3xl'
+              className='btn btn-neutral w-full md:w-fit self-center rounded-3xl min-w-[100px]'
               type='submit'
               disabled={formik.isSubmitting}
             >

@@ -8,18 +8,20 @@ import { TfiStatsUp } from "react-icons/tfi";
 
 import Container from "@/components/container";
 
-import InfoCard from "../InfoCard";
 import StatisticsCard from "../StatisticsCard";
 
 function StatisticsSection() {
   const { t } = useTranslation();
   return (
     <section className='lg:min-h-screen my-20 lg:my-0'>
-      <div id='background' className='bg-primary flex flex-col items-center '>
-        <Image src={background} alt='background' className='opacity-10' />
+      <div
+        id='background'
+        className='bg-primary flex flex-col justify-center items-center pt-10'
+      >
+        <Image src={background} alt='background' className='opacity-70' />
       </div>
       <Container id='stats'>
-        <div className='flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100  rounded-3xl shadow-xl transform md:-translate-y-40 -translate-y-24'>
+        <div className='flex flex-col mx-4 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100  rounded-3xl shadow-2xl border-slate-500/10 transform md:-translate-y-64 -translate-y-44'>
           <StatisticsCard
             icon={<TfiStatsUp className='text-6xl text-error' />}
             title={t("landingPage:statistics:meals:title")}
