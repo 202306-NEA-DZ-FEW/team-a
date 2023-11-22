@@ -47,9 +47,9 @@ function SignUpForm({ states, t }) {
   });
 
   return (
-    <section className='flex gap-2 flex-col w-full mx-auto'>
+    <section className='flex flex-col w-full mx-auto'>
       <h1 className='text-3xl font-bold'>{t("signUp:signUp")}</h1>
-      <form onSubmit={formik.handleSubmit} className='flex flex-col gap-2'>
+      <form onSubmit={formik.handleSubmit} className='flex flex-col'>
         <Input
           name='name'
           type='text'
@@ -117,7 +117,7 @@ function SignUpForm({ states, t }) {
         />
         <button
           type='submit'
-          className='btn mt-2 btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl'
+          className='btn my-6 btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl'
         >
           {t("signUp:signUpButton")}
         </button>

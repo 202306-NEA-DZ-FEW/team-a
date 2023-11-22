@@ -34,10 +34,10 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex gap-2 flex-col w-full mx-auto'>
+    <section className='flex flex-col w-full mx-auto'>
       <h1 className='text-3xl font-bold mb-8'>{t("signIn:signIn")}</h1>
       {/* Form Section */}
-      <form className='flex flex-col gap-2' onSubmit={formik.handleSubmit}>
+      <form className='flex flex-col' onSubmit={formik.handleSubmit}>
         <Input
           name='email'
           type='email'
@@ -61,7 +61,7 @@ function SignInForm({ t }) {
           touched={formik.touched.password}
         />
         {/* Checkbox & Password Forgotten Section */}
-        <div className='flex flex-col md:flex-row justify-between md:items-center flex-wrap'>
+        <div className='flex my-2 flex-col md:flex-row justify-between md:items-center flex-wrap'>
           <Checkbox
             name='save'
             label={t("signIn:savedlogin")}
