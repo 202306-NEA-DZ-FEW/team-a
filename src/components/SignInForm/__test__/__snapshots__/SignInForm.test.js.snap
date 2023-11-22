@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="flex gap-2 flex-col w-full mx-auto"
+  className="flex flex-col gap-2 w-full mx-auto"
 >
   <h1
     className="text-3xl font-bold mb-8"
   />
   <form
-    className="flex flex-col gap-2"
+    className="flex flex-col gap-2 "
     onSubmit={[Function]}
   >
     <div>
@@ -56,7 +56,7 @@ exports[`renders correctly 1`] = `
       />
     </div>
     <div
-      className="flex flex-col md:flex-row justify-between md:items-center flex-wrap"
+      className="flex my-2 flex-col md:flex-row justify-between md:items-center flex-wrap"
     >
       <div>
         <div
@@ -82,7 +82,7 @@ exports[`renders correctly 1`] = `
       />
     </div>
     <button
-      className="btn btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl"
+      className="btn btn-secondary my-4 text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl"
       disabled={false}
       type="submit"
     />
