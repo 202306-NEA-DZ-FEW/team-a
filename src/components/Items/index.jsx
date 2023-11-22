@@ -99,7 +99,7 @@ function Items({
                 />
               </Link>
             ))}
-            {!items.length && <p>{t("common:buttons:noItemsfound")}</p>}
+            {!items.length && <p>{t("common:buttons:noItemsFound")}</p>}
           </div>
           <Pagination
             totalItems={totalItems}

@@ -1,7 +1,11 @@
 {
   "hero": {
-    "title": "Let's share.",
-    "description": "Welcome to Unify! Where everything you may not need is someone else's necessity. From clothing to furniture, we are here to be the link between you and people in need. Together, we can make a significant difference in the lives of those who require a helping hand. Join us in spreading warmth, kindness, and hope. Let's create a community bound by the spirit of giving and compassion, one item at a time."
+    "title": "The power of collective",
+    "titleHighlight": "Giving.",
+    "description": "You offer more than possessions when you give, true giving is an extension of yourself",
+    "stat1": "Ramadan Meal Outreach",
+    "stat2": "Orphan Received Support",
+    "stat3": "In Refugee Aid Program"
   },
   "causes": {
     "title": "Causes",
@@ -38,5 +42,6 @@
   },
   "items": "Popular items",
   "blogs": "Blogs",
+  "latestBlogs": "Our Latest Blogs",
   "partners": "Our Partners"
 }

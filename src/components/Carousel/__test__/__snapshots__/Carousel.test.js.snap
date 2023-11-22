@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
           description
         </p>
         <a
-          className="btn btn-sm rounded-xl bg-transparent text-white hover:bg-slate-50 hover:text-black"
+          className="px-4 py-2 rounded-xl ring-1 ring-white bg-transparent text-white hover:bg-white/50 hover:text-black transition-all duration-300 ease-in-out"
           href="#items"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -43,7 +43,7 @@ exports[`renders correctly 1`] = `
     className="absolute px-2 z-50 lg:translate-x-20 lg:top-[88%] top-[82%] justify-between w-full flex gap-4 lg:justify-center"
   >
     <button
-      className="btn btn-circle bg-white bg-opacity-50 hover:bg-slate-50 border-none items-center justify-center lg:hidden lg:group-hover:flex"
+      className="btn btn-circle bg-white text-black bg-opacity-50 hover:bg-slate-50 border-none items-center justify-center lg:hidden lg:group-hover:flex"
       onClick={[Function]}
     >
       <svg
@@ -70,7 +70,7 @@ exports[`renders correctly 1`] = `
       </svg>
     </button>
     <button
-      className="btn btn-circle bg-white bg-opacity-50 hover:bg-slate-50 border-none items-center justify-center lg:hidden lg:group-hover:flex"
+      className="btn btn-circle bg-white text-black bg-opacity-50 hover:bg-slate-50 border-none items-center justify-center lg:hidden lg:group-hover:flex"
       onClick={[Function]}
     >
       <svg

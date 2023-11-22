@@ -1,13 +1,6 @@
 import Link from "next/link";
 
-export default function CarouselItem({
-  t,
-  name,
-  dataKey,
-  imageURL,
-  description,
-  queryParams,
-}) {
+export default function CarouselItem({ t, name, imageURL, description }) {
   return (
     <div
       className='item w-20 h-20 rounded-2xl lg:rounded-3xl lg:w-[220px] lg:h-80 shadow-2xl absolute z-10 lg:top-[50%] top-[80%] lg:-translate-y-[22%] lg:translate-x-[0%] -translate-x-[170%] bg-blend-overlay bg-black bg-opacity-20'
@@ -19,7 +12,7 @@ export default function CarouselItem({
           {description ? description : ""}
         </p>
         <Link
-          className='btn btn-sm rounded-xl bg-transparent text-white hover:bg-slate-50 hover:text-black'
+          className='px-4 py-2 rounded-xl ring-1 ring-white bg-transparent text-white hover:bg-white/50 hover:text-black transition-all duration-300 ease-in-out'
           scroll={false}
           href='#items'
         >

@@ -47,7 +47,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
       category: Yup.string().required(t("addItem:categoryRequired")),
       location: Yup.string().required(t("addItem:locationRequired")),
       description: Yup.string()
-        .max(150, "description too long")
+        .max(250, "description too long")
         .required(t("addItem:descriptionRequired")),
       listingType: Yup.string().required(t("addItem:listingTypeRequired")),
     }),
@@ -157,7 +157,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             error={formik.errors.description}
             touched={formik.touched.description}
             textLength={formik.values.description.length}
-            maxLength={150}
+            maxLength={250}
           />
           <div className='label'>
             <span htmlFor='file-upload' className='label-text'>
@@ -208,7 +208,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
           <div className='flex flex-col md:flex-row gap-2 justify-center mt-2'>
             <button
               type='submit'
-              className='btn btn-md rounded-xl btn-primary bg-opacity-30 flex-1 md:self-center'
+              className='btn btn-md rounded-xl btn-secondary bg-opacity-50 text-black flex-1 md:self-center'
             >
               {t("addItem:addItem")}
             </button>
