@@ -9,7 +9,7 @@ import globalcare from "public/images/globalcare.png";
 import harmony from "public/images/harmony.png";
 import helpinghands from "public/images/helpinghands.png";
 import hopeharbor from "public/images/hopeharbor.png";
-import shareJoy from "public/images/shareJoy.png";
+import sharejoy from "public/images/sharejoy.png";
 import togethertech from "public/images/togethertech.png";
 import unitytechsolutions from "public/images/unitytechsolutions.png";
 
@@ -24,7 +24,7 @@ const partner = [
     { id: 7, name: "compassioncrafter", image: compassioncrafter },
   ],
   [
-    { id: 8, name: "shareJoy", image: shareJoy },
+    { id: 8, name: "sharejoy", image: sharejoy },
     { id: 9, name: "empowerus", image: empowerus },
     { id: 10, name: "allgood", image: allgood },
     { id: 11, name: "generosityhub", image: generosityhub },
