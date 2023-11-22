@@ -47,7 +47,7 @@ exports[`rend correctement 1`] = `
       </div>
       <div>
         <img
-          alt="ecoHarbor"
+          alt="ecoharbor"
           className="object-cover w-32 bg-black/5 px-1 rounded-md"
           data-nimg="1"
           decoding="async"

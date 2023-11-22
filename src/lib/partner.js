@@ -2,7 +2,7 @@ import allgood from "public/images/allgood.png";
 import brightglobe from "public/images/brightglobe.png";
 import compassioncrafter from "public/images/compassioncrafter.png";
 import dreamcatcher from "public/images/dreamcatcher.png";
-import ecoHarbor from "public/images/ecoHarbor.png";
+import ecoharbor from "public/images/ecoharbor.png";
 import empowerus from "public/images/empowerus.png";
 import generosityhub from "public/images/generosityhub.png";
 import globalcare from "public/images/globalcare.png";
@@ -16,7 +16,7 @@ import unitytechsolutions from "public/images/unitytechsolutions.png";
 const partner = [
   [
     { id: 1, name: "brightglobe", image: brightglobe },
-    { id: 2, name: "ecoHarbor", image: ecoHarbor },
+    { id: 2, name: "ecoharbor", image: ecoharbor },
     { id: 3, name: "harmony", image: harmony },
     { id: 4, name: "globalcare", image: globalcare },
     { id: 5, name: "helpinghands", image: helpinghands },
