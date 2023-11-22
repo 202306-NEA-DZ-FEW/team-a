@@ -47,9 +47,9 @@ function SignUpForm({ states, t }) {
   });
 
   return (
-    <section className='flex flex-col w-full mx-auto'>
+    <section className='flex gap-2 flex-col w-full mx-auto'>
       <h1 className='text-3xl font-bold'>{t("signUp:signUp")}</h1>
-      <form onSubmit={formik.handleSubmit} className='flex flex-col'>
+      <form onSubmit={formik.handleSubmit} className='flex gap-2 flex-col'>
         <Input
           name='name'
           type='text'
@@ -124,7 +124,7 @@ function SignUpForm({ states, t }) {
       </form>
       <div className='lg:hidden'>
         <span className='divider'>{t("signUp:divider")}</span>
-        <p className='text-center'>{t("signUp:signUpMethod")}</p>
+        <p className='text-center my-4'>{t("signUp:signUpMethod")}</p>
         <SignupMethods />
       </div>
     </section>

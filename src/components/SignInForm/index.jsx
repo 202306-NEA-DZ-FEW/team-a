@@ -34,10 +34,10 @@ function SignInForm({ t }) {
   });
 
   return (
-    <section className='flex flex-col w-full mx-auto'>
+    <section className='flex flex-col gap-2 w-full mx-auto'>
       <h1 className='text-3xl font-bold mb-8'>{t("signIn:signIn")}</h1>
       {/* Form Section */}
-      <form className='flex flex-col' onSubmit={formik.handleSubmit}>
+      <form className='flex flex-col gap-2 ' onSubmit={formik.handleSubmit}>
         <Input
           name='email'
           type='email'
@@ -80,7 +80,7 @@ function SignInForm({ t }) {
         </div>
         {/* Login Button */}
         <button
-          className='btn btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl'
+          className='btn btn-secondary my-4 text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl'
           type='submit'
           disabled={formik.isSubmitting}
         >

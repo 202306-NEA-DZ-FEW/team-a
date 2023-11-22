@@ -27,17 +27,17 @@ function SignUpPage({ _nextI18Next, t }) {
   return (
     <AuthPagesLayout>
       <main
-        className='flex justify-between items-center lg:h-screen lg:overflow-hidden'
+        className='flex justify-between min-h-screen'
         dir={initialLocale === "ar" ? "rtl" : "ltr"}
       >
-        <figure className='relative hidden lg:block md:w-[60%] h-screen flex-shrink-0'>
+        <figure className='relative hidden lg:block md:w-[60%] max-h-full flex-shrink-0'>
           <Image
             src='/images/signin.jpg'
             priority
             alt='test'
             width={2000}
             height={2000}
-            className='object-cover saturate-0 w-full h-full'
+            className='object-cover saturate-0 w-full min-h-screen max-h-[820px]'
           />
           <motion.div
             variants={signUpMethodsAnim}
@@ -51,8 +51,8 @@ function SignUpPage({ _nextI18Next, t }) {
             <SignupMethods />
           </motion.div>
         </figure>
-        <div className='flex shadow-2xl py-4 lg:py-4 flex-col h-full mx-auto lg:overflow-y-scroll justify-center w-full p-4 md:px-20 lg:px-8'>
-          <div className='navbar lg:mb-4'></div>
+        <div className='flex shadow-2xl py-4 flex-col min-h-screen mx-auto w-full p-4 md:px-20 lg:px-8'>
+          <div className='navbar'></div>
           <SignUpForm states={states} t={t} />
         </div>
       </main>
