@@ -9,7 +9,7 @@ function PopularItemsSection({ items }) {
   const { t } = useTranslation();
 
   return (
-    <Container className='lg:min-h-screen flex flex-col justify-center lg:py-0 py-20'>
+    <Container className='lg:min-h-screen flex flex-col justify-center'>
       <motion.h1
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

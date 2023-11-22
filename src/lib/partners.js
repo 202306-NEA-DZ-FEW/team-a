@@ -13,7 +13,7 @@ import sharejoy from "public/images/sharejoy.png";
 import togethertech from "public/images/togethertech.png";
 import unitytechsolutions from "public/images/unitytechsolutions.png";
 
-const partner = [
+const partners = [
   [
     { id: 1, name: "brightglobe", image: brightglobe },
     { id: 2, name: "ecoharbor", image: ecoharbor },
@@ -34,4 +34,4 @@ const partner = [
   ],
 ];
 
-export default partner;
+export default partners;

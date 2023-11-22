@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="lg:h-screen overflow-hidden"
+  className="lg:min-h-screen overflow-hidden"
   style={Object {}}
 >
   <div

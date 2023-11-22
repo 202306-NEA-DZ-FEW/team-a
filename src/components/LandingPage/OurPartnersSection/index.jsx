@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import partner from "@/lib/partner";
+import partners from "@/lib/partners";
 
 import Container from "@/components/container";
 
@@ -17,6 +17,8 @@ function OurPartnersSection() {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     speed: 4000,
     autoplaySpeed: 4000,
     cssEase: "linear",
@@ -77,7 +79,7 @@ function OurPartnersSection() {
         className='w-full justify-center items-center flex flex-col gap-2'
       >
         <Slider {...autoplaySettings} className='max-w-[95%] overflow-hidden'>
-          {partner[0].map((part) => (
+          {partners[0].map((part) => (
             <div key={part.name}>
               <Image
                 src={part.image}
@@ -94,7 +96,7 @@ function OurPartnersSection() {
           rtl={true}
           className='max-w-[95%] overflow-hidden'
         >
-          {partner[1].map((part2) => (
+          {partners[1].map((part2) => (
             <div key={part2.name}>
               <Image
                 src={part2.image}
