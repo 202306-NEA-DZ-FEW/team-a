@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
        
     </h2>
     <a
-      className="btn btn-sm btn-circle btn-primary bg-opacity-30 transition-all duration-500 ease-in-out hover:drop-shadow-md"
+      className="btn btn-sm btn-circle btn-secondary text-black bg-opacity-30 transition-all duration-500 ease-in-out hover:drop-shadow-md"
       href="/items/create"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
       className="flex relative flex-col flex-1 gap-2 items-center justify-center"
     >
       <div
-        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-200 drop-shadow-md p-2"
+        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-100 drop-shadow-md p-2"
       >
         <img
           alt="Product One"
@@ -91,7 +91,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
           >
             <svg
-              className="text-gray-400 text-xl transition-all duration-500 ease-in-out group-hover:text-gray-800"
+              className="text-gray-400 text-xl transition-all duration-500 ease-in-out group-hover:text-gray-600"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -342,7 +342,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <input
-                  className="input input-sm bg-base-300 input-primary w-full rounded-full border-opacity-25"
+                  className="input input-sm bg-base-200 input-primary w-full rounded-full border-opacity-25"
                   id="title"
                   name="title"
                   onBlur={[Function]}
@@ -369,7 +369,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <textarea
-                  className="textarea no-scrollbar textarea-primary  textarea-bordered h-24 w-full bg-base-300"
+                  className="textarea no-scrollbar textarea-primary  textarea-bordered h-24 w-full bg-base-200"
                   id="description"
                   name="description"
                   onBlur={[Function]}
@@ -390,7 +390,7 @@ exports[`renders correctly 1`] = `
                   >
                     39
                     /
-                    150
+                    250
                   </label>
                 </div>
               </div>
@@ -409,7 +409,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-sm  select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm  select-primary bg-base-200 w-full border-opacity-25 rounded-3xl"
                   id="category"
                   onChange={[Function]}
                 >
@@ -515,7 +515,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-sm  select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm  select-primary bg-base-200 w-full border-opacity-25 rounded-3xl"
                   defaultValue="djelfa"
                   id="location"
                   onChange={[Function]}
@@ -838,7 +838,7 @@ exports[`renders correctly 1`] = `
         </dialog>
       </div>
       <div
-        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-200 drop-shadow-md p-2"
+        className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-100 drop-shadow-md p-2"
       >
         <img
           alt="Product Two"
@@ -877,7 +877,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
           >
             <svg
-              className="text-gray-400 text-xl transition-all duration-500 ease-in-out group-hover:text-gray-800"
+              className="text-gray-400 text-xl transition-all duration-500 ease-in-out group-hover:text-gray-600"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -1128,7 +1128,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <input
-                  className="input input-sm bg-base-300 input-primary w-full rounded-full border-opacity-25"
+                  className="input input-sm bg-base-200 input-primary w-full rounded-full border-opacity-25"
                   id="title"
                   name="title"
                   onBlur={[Function]}
@@ -1155,7 +1155,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <textarea
-                  className="textarea no-scrollbar textarea-primary  textarea-bordered h-24 w-full bg-base-300"
+                  className="textarea no-scrollbar textarea-primary  textarea-bordered h-24 w-full bg-base-200"
                   id="description"
                   name="description"
                   onBlur={[Function]}
@@ -1176,7 +1176,7 @@ exports[`renders correctly 1`] = `
                   >
                     39
                     /
-                    150
+                    250
                   </label>
                 </div>
               </div>
@@ -1195,7 +1195,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-sm  select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm  select-primary bg-base-200 w-full border-opacity-25 rounded-3xl"
                   id="category"
                   onChange={[Function]}
                 >
@@ -1301,7 +1301,7 @@ exports[`renders correctly 1`] = `
                   />
                 </div>
                 <select
-                  className="select select-sm  select-primary bg-base-300 w-full border-opacity-25 rounded-3xl"
+                  className="select select-sm  select-primary bg-base-200 w-full border-opacity-25 rounded-3xl"
                   defaultValue="djelfa"
                   id="location"
                   onChange={[Function]}

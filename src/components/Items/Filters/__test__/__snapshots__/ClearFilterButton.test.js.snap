@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <button
-  className="btn btn-sm btn-primary bg-opacity-40 rounded-full normal-case font-light tracking-wider"
+  className="btn btn-sm btn-secondary text-black bg-opacity-40 rounded-full normal-case font-light tracking-wider"
 >
   <svg
     fill="currentColor"

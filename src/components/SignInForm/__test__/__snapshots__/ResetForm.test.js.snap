@@ -24,7 +24,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <input
-        className="input  bg-base-300 input-primary w-full rounded-full border-opacity-25"
+        className="input  bg-base-200 input-primary w-full rounded-full border-opacity-25"
         id="email"
         name="email"
         onBlur={[Function]}
@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <input
-        className="input  bg-base-300 input-primary w-full rounded-full border-opacity-25"
+        className="input  bg-base-200 input-primary w-full rounded-full border-opacity-25"
         id="password"
         name="password"
         onBlur={[Function]}
@@ -228,7 +228,7 @@ exports[`renders correctly 1`] = `
             />
           </div>
           <input
-            className="input  bg-base-300 input-primary w-full rounded-full border-opacity-25"
+            className="input  bg-base-200 input-primary w-full rounded-full border-opacity-25"
             id="resetEmail"
             name="resetEmail"
             onBlur={[Function]}

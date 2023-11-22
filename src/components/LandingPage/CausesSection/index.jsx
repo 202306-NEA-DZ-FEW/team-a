@@ -1,38 +1,50 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
-import { FaHandHoldingWater } from "react-icons/fa";
-import { LuHeartHandshake } from "react-icons/lu";
-import { RiGraduationCapFill } from "react-icons/ri";
+import edu from "public/images/edu.jpg";
+import health from "public/images/health.jpg";
+import solidarity from "public/images/solidarity.jpg";
 
-import Container from "@/components/container";
-
-import InfoCard from "../InfoCard";
+import CausesCard from "../CausesCard";
 
 function CausesSection() {
   const { t } = useTranslation();
+  const causes = [
+    {
+      id: 1,
+      title: t("landingPage:causes:education:title"),
+      description: t("landingPage:causes:education:description"),
+      img: edu.src,
+    },
+    {
+      id: 2,
+      title: t("landingPage:causes:solidarity:title"),
+      description: t("landingPage:causes:solidarity:description"),
+      img: solidarity.src,
+    },
+    {
+      id: 3,
+      title: t("landingPage:causes:health:title"),
+      description: t("landingPage:causes:health:description"),
+      img: health.src,
+    },
+  ];
   return (
-    <Container className='flex flex-col justify-center lg:min-h-screen my-20 lg:my-0'>
-      <h1 className='text-3xl md:text-5xl font-bold text-center'>
+    <div className='flex flex-col flex-wrap gap-8 justify-center items-center bg-base-100 w-full min-h-screen p-8'>
+      <motion.h2
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        viewport={{ once: true }}
+        className='text-3xl py-10 md:text-5xl gap-4 font-black text-center'
+      >
         {t("landingPage:causes:title")}
-      </h1>
-      <div className='flex flex-col justify-center items-start gap-4 text-center p-6 md:flex-row'>
-        <InfoCard
-          icon={<RiGraduationCapFill className='text-6xl text-error' />}
-          title={t("landingPage:causes:education:title")}
-          description={t("landingPage:causes:education:description")}
-        />
-
-        <InfoCard
-          icon={<LuHeartHandshake className='text-6xl text-error' />}
-          title={t("landingPage:causes:solidarity:title")}
-          description={t("landingPage:causes:solidarity:description")}
-        />
-        <InfoCard
-          icon={<FaHandHoldingWater className='text-6xl text-error' />}
-          title={t("landingPage:causes:health:title")}
-          description={t("landingPage:causes:health:description")}
-        />
+      </motion.h2>
+      <div className='w-full flex flex-wrap justify-center items-center gap-6 text-center'>
+        {causes.map((cause) => (
+          <CausesCard key={cause.id} {...cause} />
+        ))}
       </div>
-    </Container>
+    </div>
   );
 }
 

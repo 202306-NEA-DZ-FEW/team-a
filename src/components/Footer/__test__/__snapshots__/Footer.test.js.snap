@@ -226,7 +226,7 @@ exports[`renders correctly 1`] = `
           <button
             aria-expanded={false}
             aria-haspopup="menu"
-            className="btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
+            className="btn btn-sm text-white outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
             data-headlessui-state=""
             id="headlessui-menu-button-:r0:"
             onClick={[Function]}

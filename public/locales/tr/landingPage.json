@@ -1,7 +1,11 @@
 {
   "hero": {
-    "title": "Paylaşalım.",
-    "description": "Unify'e hoş geldiniz! Burada ihtiyacınız olmayan her şey, başkasının ihtiyacı olabilir. Giysiden mobilyaya, sizin ve ihtiyaç sahipleri arasındaki bağlantıyı sağlamak için buradayız. Birlikte, yardıma ihtiyaç duyanların hayatlarında önemli bir fark yaratabiliriz. Bize katılın, sıcaklık, iyilik ve umut yaymada bir araya gelelim. Bir eşya ile başlayarak, yardımseverlik ve şefkat ruhuyla bağlı bir topluluk oluşturalım."
+    "title": "Toplu Bağışın",
+    "titleHighlight": "gücü.",
+    "description": "Gerçek bağış, insanlığınızın bir yansımasıdır",
+    "stat1": "Ramazan'da dağıtılan yemek",
+    "stat2": "Yetim Eğitim Desteği",
+    "stat3": "Mülteci Yardım Programı"
   },
   "causes": {
     "title": "Nedenler",
@@ -38,5 +42,6 @@
   },
   "items": "Popüler Ürünler",
   "blogs": "Bloglar",
+  "latestBlogs": "En Son Bloglarımız",
   "partners": "İş Ortağımız"
 }

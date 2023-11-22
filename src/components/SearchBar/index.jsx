@@ -49,7 +49,7 @@ function SearchBar({ t, queryParams, searchText, setSearchText }) {
         onChange={handleSearch}
         type='text'
         placeholder={t("itemsPage:searchPlaceHolder")}
-        className='border-none input-sm rounded-full input-bordered input bg-base-300 outline-none font-light normal-case w-full'
+        className='border-none input-sm rounded-full input-bordered input bg-base-200 outline-none font-light normal-case w-full'
       />
     </div>
   );
