@@ -23,9 +23,17 @@ function AboutPage({ t, _nextI18Next }) {
         </h1>
         <section
           dir={initialLocale === "ar" ? "rtl" : "ltr"}
-          className='flex justify-center items-center bg-black h-[550px] lg:max-w-screen-md mx-auto'
+          className='flex flex-wrap gap-4 items-center justify-center w-full'
         >
-          <MemberCard teamMembers={team} />
+          {team.map((member) => (
+            <MemberCard
+              key={member.name}
+              name={member.name}
+              github={member.github}
+              linkedin={member.linkedin}
+              imageUrl={member.imageUrl}
+            />
+          ))}
         </section>
       </Container>
     </>

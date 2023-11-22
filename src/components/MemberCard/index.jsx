@@ -1,97 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { AiFillLinkedin } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
 
-import styles from "./styles.module.css";
-
-function MemberCard({ teamMembers = [] }) {
-  const [activeContent, setActiveContent] = useState(null);
-
-  useEffect(() => {
-    const imgBx = document.querySelectorAll(`.${styles.imgbx}`);
-
-    const handleMouseOrTouch = (index) => {
-      setActiveContent(index + 1);
-    };
-
-    imgBx.forEach((element, index) => {
-      element.addEventListener("mouseenter", () => handleMouseOrTouch(index));
-      element.addEventListener("click", () => handleMouseOrTouch(index));
-      element.addEventListener("touchstart", (event) => {
-        event.preventDefault();
-        handleMouseOrTouch(index);
-      });
-    });
-
-    return () => {
-      imgBx.forEach((element, index) => {
-        element.removeEventListener("mouseenter", () =>
-          handleMouseOrTouch(index)
-        );
-        element.removeEventListener("click", () => handleMouseOrTouch(index));
-        element.removeEventListener("touchstart", () =>
-          handleMouseOrTouch(index)
-        );
-      });
-    };
-  }, []);
-
+function MemberCard({ name, github, linkedin, imageUrl }) {
   return (
-    <div className={styles.container}>
-      <div className={styles.icon}>
-        {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className={`${styles.imgbx} ${
-              index + 1 === activeContent ? styles.active : ""
-            }`}
-            style={{ "--i": index + 1 }}
+    <div className='card rounded-3xl group'>
+      <figure className='relative h-64 w-52 rounded-3xl'>
+        <Image
+          src={imageUrl}
+          alt={name}
+          fill
+          priority
+          className='group-hover:scale-110 saturate-0 group-hover:saturate-100 object-cover w-full h-full duration-500'
+        />
+      </figure>
+      <div className='absolute bottom-[5%] flex flex-col gap-1 px-2'>
+        <h3 className='text-white font-bold'>{name}</h3>
+        <div className='flex gap-2'>
+          <Link
+            href={github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-white border border-white rounded-full text-sm px-2 h-6 hover:bg-black hover:bg-opacity-30  '
           >
-            <Image
-              src={member.imageUrl}
-              alt={`recoded${index + 1}`}
-              className={styles.Image}
-            />
-          </div>
-        ))}
-      </div>
-      <div className={styles.content}>
-        {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className={`${styles.contentBx} ${
-              index + 1 === activeContent ? styles.active : ""
-            }`}
-            id={`content${index + 1}`}
+            GitHub
+          </Link>
+          <Link
+            href={linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-white border border-white rounded-full text-sm px-2 h-6 hover:bg-black hover:bg-opacity-30 '
           >
-            <div className={styles.card}>
-              <div className={styles.imgBX}>
-                <Image
-                  src={member.imageUrl}
-                  alt={`recoded${index + 1}`}
-                  className={styles.Image}
-                />
-              </div>
-              <div className={styles.textBx}>
-                <h2>{member.name}</h2>
-                <ul className={styles.sci}>
-                  <li>
-                    <Link href={member.github}>
-                      <FaGithub />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={member.linkedin}>
-                      <AiFillLinkedin />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        ))}
+            LinkedIn
+          </Link>
+        </div>
       </div>
     </div>
   );
