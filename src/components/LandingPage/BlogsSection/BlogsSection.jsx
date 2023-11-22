@@ -24,7 +24,7 @@ function BlogsSection({ blogs }) {
           {t("landingPage:latestBlogs")}
         </h2>
         <Link
-          className='btn btn-secondary rounded-full btn-md w-[45%] lg:w-[15%] text-current bg-opacity-50 flex items-center gap-2'
+          className='btn btn-secondary rounded-full btn-md min-w-[150px] lg:w-[15%] text-current bg-opacity-50 flex items-center gap-2'
           href='/blogs'
         >
           {t("common:buttons:readMore")}

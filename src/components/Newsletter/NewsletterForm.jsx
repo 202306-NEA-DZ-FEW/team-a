@@ -30,9 +30,9 @@ function NewsletterForm({ onValidated }) {
   });
 
   return (
-    <section>
+    <>
       <div
-        className='mx-8 md:mx-36 p-8 md:p-14 flex flex-col md:flex-row justify-center items-center gap-6 bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-2xl shadow-2xl transform md:translate-y-48 translate-y-48'
+        className='mx-8 md:mx-36 p-8 md:p-14 flex flex-col md:flex-row justify-center items-center gap-6 bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-2xl shadow-2xl transform md:translate-y-36 translate-y-48'
         dir={i18n?.language === "ar" ? "rtl" : "ltr"}
       >
         <div id='content' className=''>
@@ -77,9 +77,9 @@ function NewsletterForm({ onValidated }) {
       </div>
       <div
         id='background'
-        className='h-48 bg-neutral flex flex-col items-center '
-      />
-    </section>
+        className='h-48 bg-neutral flex flex-col items-center'
+      ></div>
+    </>
   );
 }
 
