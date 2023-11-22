@@ -13,6 +13,7 @@ import Container from "@/components/container";
 function OurPartnersSection() {
   const autoplaySettings = {
     dots: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -46,6 +47,7 @@ function OurPartnersSection() {
 
   const rtlSettings = {
     dots: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,

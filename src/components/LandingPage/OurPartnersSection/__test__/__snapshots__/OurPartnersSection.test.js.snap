@@ -16,20 +16,6 @@ exports[`rend correctement 1`] = `
       className="slick-slider slick-initialized"
       dir="ltr"
     >
-      <button
-        className="slick-arrow slick-prev"
-        data-role="none"
-        onClick={[Function]}
-        style={
-          Object {
-            "display": "block",
-          }
-        }
-        type="button"
-      >
-         
-        Previous
-      </button>
       <div
         className="slick-list"
         onClick={[Function]}
@@ -3112,20 +3098,6 @@ exports[`rend correctement 1`] = `
           </div>
         </div>
       </div>
-      <button
-        className="slick-arrow slick-next"
-        data-role="none"
-        onClick={[Function]}
-        style={
-          Object {
-            "display": "block",
-          }
-        }
-        type="button"
-      >
-         
-        Next
-      </button>
     </div>
   </div>
   <div
@@ -3135,20 +3107,6 @@ exports[`rend correctement 1`] = `
       className="slick-slider slick-initialized"
       dir="ltr"
     >
-      <button
-        className="slick-arrow slick-prev"
-        data-role="none"
-        onClick={[Function]}
-        style={
-          Object {
-            "display": "block",
-          }
-        }
-        type="button"
-      >
-         
-        Previous
-      </button>
       <div
         className="slick-list"
         onClick={[Function]}
@@ -6231,20 +6189,6 @@ exports[`rend correctement 1`] = `
           </div>
         </div>
       </div>
-      <button
-        className="slick-arrow slick-next"
-        data-role="none"
-        onClick={[Function]}
-        style={
-          Object {
-            "display": "block",
-          }
-        }
-        type="button"
-      >
-         
-        Next
-      </button>
     </div>
   </div>
 </div>
