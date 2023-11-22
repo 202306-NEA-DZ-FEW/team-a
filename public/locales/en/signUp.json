@@ -21,7 +21,7 @@
   "phoneLabel": "Phone",
   "phonePlaceholder": "Enter your phone number",
   "phoneRequired": "Phone number is required",
-  "locationLabel": "Province",
+  "locationLabel": "Wilaya",
   "locationRequired": "Location is required",
   "signUpMethod": "Sign up using",
   "divider": "OR"
