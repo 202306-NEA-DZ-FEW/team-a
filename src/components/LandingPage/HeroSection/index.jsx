@@ -15,8 +15,8 @@ function HeroSection() {
           <Image
             src='/images/hero-image.png'
             alt='hero image'
-            width={4928}
-            height={3264}
+            width={1080}
+            height={1080}
             placeholder='blur'
             blurDataURL='blur.jpg'
             className='w-full h-full object-cover overflow-auto'

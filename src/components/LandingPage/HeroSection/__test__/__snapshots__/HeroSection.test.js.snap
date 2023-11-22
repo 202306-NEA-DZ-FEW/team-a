@@ -13,21 +13,21 @@ exports[`renders correctly 1`] = `
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
-      height={3264}
+      height={1080}
       onError={[Function]}
       onLoad={[Function]}
       src="/_next/image?url=%2Fimages%2Fhero-image.png&w=3840&q=75"
-      srcSet="/_next/image?url=%2Fimages%2Fhero-image.png&w=3840&q=75 1x"
+      srcSet="/_next/image?url=%2Fimages%2Fhero-image.png&w=1080&q=75 1x, /_next/image?url=%2Fimages%2Fhero-image.png&w=3840&q=75 2x"
       style={
         Object {
-          "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4928 3264'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blur.jpg'/%3E%3C/svg%3E\\")",
+          "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1080'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blur.jpg'/%3E%3C/svg%3E\\")",
           "backgroundPosition": "50% 50%",
           "backgroundRepeat": "no-repeat",
           "backgroundSize": "cover",
           "color": "transparent",
         }
       }
-      width={4928}
+      width={1080}
     />
     <svg
       className="absolute top-[10%] left-[-10%] fill-current w-[16%] lg:block hidden opacity-75 z-0"
