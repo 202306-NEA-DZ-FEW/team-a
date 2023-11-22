@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="min-h-screen flex flex-col justify-between items-center max-w-4xl mx-auto gap-4 p-4 lg:flex-row-reverse"
+>
+  <figure
+    className="w-[55%]"
+  >
+    <img
+      alt="map illustration"
+      className="w-full h-full "
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height={800}
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/images/dz.svg"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={800}
+    />
+  </figure>
+  <div
+    className="w-[45%] text-center flex flex-col gap-2"
+  >
+    <h1
+      className="text-4xl font-black"
+    >
+      Growth Estimation
+    </h1>
+    <h1
+      className="text-xl md:text-2xl text-accent font-bold"
+    >
+      By the end of
+    </h1>
+    <h1
+      className="text-3xl md:text-4xl font-bold pb-4"
+    >
+      2030
+    </h1>
+    <h1
+      className="text-xl md:text-2xl text-accent font-bold"
+    >
+      We aim to help
+    </h1>
+    <h1
+      className="text-3xl md:text-4xl font-bold pb-4"
+    >
+      20%
+    </h1>
+    <h1
+      className="text-xl md:text-2xl text-accent font-bold"
+    >
+      Of this society in over
+    </h1>
+    <h1
+      className="text-3xl md:text-4xl font-bold pb-4"
+    >
+      53 Wilayas
+    </h1>
+  </div>
+</div>
+`;

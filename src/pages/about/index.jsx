@@ -6,6 +6,7 @@ import teamMembers from "@/lib/teamMembers";
 import Container from "@/components/container";
 import MemberCard from "@/components/MemberCard";
 import PageCover from "@/components/PageCover";
+import Map from "@/components/Map";
 
 function AboutPage({ t, _nextI18Next }) {
   const { initialLocale } = _nextI18Next;
@@ -36,6 +37,7 @@ function AboutPage({ t, _nextI18Next }) {
           ))}
         </section>
       </Container>
+      <Map />
     </>
   );
 }
