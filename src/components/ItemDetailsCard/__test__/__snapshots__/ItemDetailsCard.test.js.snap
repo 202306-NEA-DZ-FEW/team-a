@@ -464,7 +464,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <figure
-    className="w-[600px] h-[520px] relative hidden lg:block flex-1"
+    className="w-[600px] min-h-[520px] relative hidden lg:block flex-1"
   >
     <img
       alt=""
@@ -703,7 +703,6 @@ exports[`renders correctly 1`] = `
     >
       Item Details description
     </p>
-    <p />
     <div
       className="user-details flex flex-col mt-10"
       dir="ltr"
