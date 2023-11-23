@@ -12,6 +12,7 @@ export default function BlogsCard({
   createdAt,
   description,
   id,
+  blogKey,
 }) {
   const { i18n, t } = useTranslation();
   const date = formatDate(createdAt, "MMM YYYY");
@@ -35,13 +36,13 @@ export default function BlogsCard({
         </figure>
         <div className='card-body lg:w-[35%] p-6 lg:p-8 gap-4'>
           <h2 className='card-title text-2xl lg:text-3xl' title={title}>
-            {title}
+            {t(`blogs:${blogKey}:title`)}
           </h2>
           <p
             className=' text-md lg:text-xl tracking-wide font-light'
             title={description}
           >
-            {description}
+            {t(`blogs:${blogKey}:description`)}
           </p>
           <div className='card-actions flex gap-2 justify-between'>
             <span>{date}</span>

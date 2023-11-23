@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useTranslation } from "next-i18next";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -8,9 +7,7 @@ import { fetchCollection } from "@/lib/fetchCollection";
 
 import BlogsCard from "@/components/BlogsCard";
 
-function BlogsPage({ blogs }) {
-  const { t } = useTranslation();
-
+function BlogsPage({ blogs, t }) {
   return (
     <>
       <header className='relative w-full lg:h-[80vh] h-[60vh] bg-primary overflow-hidden'>
@@ -67,7 +64,7 @@ function BlogsPage({ blogs }) {
   );
 }
 
-export default withTranslation("blogs")(BlogsPage);
+export default withTranslation(["blogs"])(BlogsPage);
 
 export async function getStaticProps({ locale }) {
   const blogs = await fetchCollection("blogs");
