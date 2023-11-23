@@ -57,7 +57,7 @@ function BlogsSection({ blogs }) {
           {blogs.slice(1, 3).map((blog) => (
             <BlogCard key={blog.id} {...blog} />
           ))}
-          {!blogs.length && <p>{t("common:buttons:noItemsfound")}</p>}
+          {!blogs.length && <p>{t("common:buttons:noItemsFound")}</p>}
         </motion.div>
       </div>
     </Container>

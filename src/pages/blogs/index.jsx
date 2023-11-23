@@ -21,7 +21,7 @@ function BlogsPage({ blogs }) {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.5 }}
           >
-            Latest Blogs
+            {t("common:latestBlogs")}
           </motion.p>
           <motion.h1
             className='text-4xl font-bold'
@@ -29,7 +29,7 @@ function BlogsPage({ blogs }) {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.6 }}
           >
-            Blogs & Resources
+            {t("blogs:blogsAndResources")}
           </motion.h1>
           <motion.p
             className='text-xl w-full lg:w-1/2'
@@ -37,9 +37,7 @@ function BlogsPage({ blogs }) {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.7 }}
           >
-            Check out our blogs for some cool reads! Dive into stories that
-            matter and join us in making a positive impact. Lets make a
-            difference together
+            {t("blogs:blogsHeader")}
           </motion.p>
         </div>
         <div className='absolute w-full h-full flex justify-center -bottom-[20%] z-0 ease-[cubic-bezier(.75,-0.5,0,1.75)]'>
