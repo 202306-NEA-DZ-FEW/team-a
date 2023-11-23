@@ -8,7 +8,7 @@ exports[`renders correctly 1`] = `
     className="text-3xl font-bold"
   />
   <form
-    className="flex flex-col gap-2"
+    className="flex gap-2 flex-col"
     onSubmit={[Function]}
   >
     <div>
@@ -145,7 +145,7 @@ exports[`renders correctly 1`] = `
       </select>
     </div>
     <button
-      className="btn mt-2 btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl"
+      className="btn my-6 btn-secondary text-black bg-opacity-40 w-full normal-case text-xl font-normal self-center rounded-xl"
       type="submit"
     />
   </form>
@@ -156,7 +156,7 @@ exports[`renders correctly 1`] = `
       className="divider"
     />
     <p
-      className="text-center"
+      className="text-center my-4"
     />
     <div
       className="flex gap-2 justify-center items-center text-3xl"
