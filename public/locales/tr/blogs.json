@@ -1,5 +1,83 @@
 {
   "allBlogs": "Tüm Bloglar",
   "blogsAndResources": "Bloglar & Kaynaklar",
-  "blogsHeader": "Harika okumalar için bloglarımıza göz atın! Önemli olan hikayelere dalın ve bize pozitif bir etki yaratmada katılın. Birlikte fark yaratalım."
+  "blogsHeader": "Harika okumalar için bloglarımıza göz atın! Önemli olan hikayelere dalın ve bize pozitif bir etki yaratmada katılın. Birlikte fark yaratalım.",
+  "eidElFitrBlog": {
+    "title": "Verme Ruhu: Ramazan Bayramı Bağışları",
+    "description": "Eid al-Fitr, oruç tutmanın, ibadetin ve özeleştirinin yapıldığı bir ay olan Ramazan'ın sonunu işaret eden, dünya çapında kutlanan önemli bir Müslüman bayramıdır. Bayram yemekleri ve sevinçli toplantıların ötesinde, Eid al-Fitr, özellikle verme ve sadaka etme eylemiyle derin manevi bir öneme sahiptir.",
+    "content": [
+      {
+        "id": 1,
+        "subTitle": "• Eid al-Fitr'in Sevinci",
+        "description": "Eid al-Fitr, Müslümanların aile ve arkadaşlarıyla bir araya gelerek orucu açtıkları ve aldıkları nimetler için şükranlarını ifade ettikleri bir kutlama ve minnet zamanıdır. Ancak, verme eylemi de önemli bir rol oynar. Müslümanlar, özellikle ihtiyaç sahiplerine sadaka vermeye teşvik edilir."
+      },
+      {
+        "id": 2,
+        "subTitle": "• Zakat al-Fitr: Özel Bir Sadaka Türü",
+        "description": "Eid al-Fitr'de vermenin temel yönlerinden biri 'Zakat al-Fitr'dir. Bu, kutlamadan yoksun olanları desteklemek için buna gücü yetenler tarafından verilen zorunlu bir sadaka türüdür. Zakat al-Fitr genellikle yiyecek olarak verilir, bu da ihtiyaç sahiplerinin kutlamalara katılmasını sağlar."
+      },
+      {
+        "id": 3,
+        "subTitle": "• İyilik ve Cömertlik Eylemleri",
+        "description": "Zakat al-Fitr'in ötesinde, birçok Müslüman Eid al-Fitr sırasında çeşitli iyilik ve cömertlik eylemlerinde bulunur. Onlar, hayır kurumlarına bağış yapar, yerel girişimleri destekler ve zorluklarla karşılaşanlara yardım eli uzatır. Bu sadaka ruhu, Müslümanlar arasındaki topluluk ve dayanışma duygusunu güçlendirir."
+      },
+      {
+        "id": 4,
+        "subTitle": "• Vermenin Bereketi",
+        "description": "Eid al-Fitr'de verme eylemi sadece dini bir görevi yerine getirmekle kalmaz, aynı zamanda merhamet, empati ve toplum dayanışmasının temel değerlerini içselleştirme anlamına gelir. Bu, hepimizin birbirimizin refahından sorumlu olduğumuzu hatırlatarak birlik duygusu oluşturur."
+      }
+    ]
+  },
+  "donationsInGaza": {
+    "title": "Gazze'deki Bağışlar: İhtiyaç Sahiplerine Destek",
+    "description": "Gazze halkı birçok zorlukla karşılaştı ve sizin desteğiniz, hayatlarında önemli bir fark yaratabilir. Gazze'ye yapılan bağışlar, ihtiyaç sahiplerine temel yardım, yardım ve umut sağlamaya yardımcı olur.",
+    "content": [
+      {
+        "id": 1,
+        "subTitle": "• Gazze'deki İnsani Kriz",
+        "description": "Gazze, siyasi çatışma ve ekonomik zorluklar da dahil olmak üzere sürekli zorluklar yaşadı. Gazze halkı sık sık temel ihtiyaçlar konusunda sıkıntılar yaşar ve bağışlar, acil ve uzun vadeli ihtiyaçlarını karşılama konusunda önemli bir rol oynar."
+      },
+      {
+        "id": 2,
+        "subTitle": "• İhtiyaç Duyulan Bağış Türleri",
+        "description": "Gazze'ye yapılan bağışlar, finansal katkılar, tıbbi malzemeler, gıda yardımı ve eğitim kaynakları dahil olmak üzere çeşitli şekillerde olabilir. Sizin desteğiniz, ailelere yardım, sağlık tesislerine destek ve eğitim ve güçlendirme fırsatları sağlayabilir."
+      },
+      {
+        "id": 3,
+        "subTitle": "• Dayanışma ve Şefkat Eylemleri",
+        "description": "Gazze'ye yapılan bağışlar, sadece maddi yardım sağlamakla kalmaz, aynı zamanda dayanışma ve şefkat eylemlerini temsil eder. Sizin katkınız, zorlukları aşmaya çalışan bireylerin ve ailelerin hayatlarında önemli bir fark yaratabilir."
+      },
+      {
+        "id": 4,
+        "subTitle": "• Daha İyi Bir Gelecek İnşa Etme",
+        "description": "Gazze'ye desteğinizi ve bağışlarınızı sunarak, bu bölgenin insanları için daha iyi bir gelecek inşa etmeye katkıda bulunursunuz. Cömertliğiniz, olumlu değişim yaratmaya, umutları restore etmeye ve ihtiyaç sahiplerinin yaşam kalitesini artırmaya yardımcı olabilir."
+      }
+    ]
+  },
+  "isolatedAreasDonations": {
+    "title": "İzole Alanlara Bağışlar: Dezavantajlılara Umut Getirme",
+    "description": "İzole ve uzak bölgeler genellikle sınırlı temel hizmetlere erişimden ekonomik zorluklara kadar benzersiz zorluklarla karşı karşıyadır. İzole alanlara yapılan bağışlar, ihtiyaç içinde olanların hayatlarında önemli bir fark yaratabilir.",
+    "content": [
+      {
+        "id": 1,
+        "subTitle": "• İzole Alanların Zorlukları",
+        "description": "İzole alanlar genellikle sağlık hizmetlerine, eğitime, temiz suya ve ekonomik fırsatlara erişimde sıkıntı yaşayabilirler. Bu alanlarda yaşayan insanlar genellikle temel ihtiyaçlarını karşılamakta zorluklarla karşılaşırlar ve bağışlar bir destek hattıdır."
+      },
+      {
+        "id": 2,
+        "subTitle": "• İhtiyaç Duyulan Bağış Türleri",
+        "description": "İzole alanlara yapılan bağışlar, finansal katkılar, tıbbi malzemeler, gıda yardımı ve altyapı geliştirme gibi çeşitli şekillerde olabilir. Sizin desteğiniz, dezavantajlı bölgelerde yaşayanların yaşam kalitesini artırabilir ve farkı kapatabilir."
+      },
+      {
+        "id": 3,
+        "subTitle": "• Merhamet ve İletişim Hareketleri",
+        "description": "İzole alanlara yapılan bağışlar, sadece malî yardım sağlamaktan öte, merhamet ve iletişim hareketlerini simgeler. Cömertliğiniz topluluklara umut getirebilir, dayanışma duygusu yaratabilir ve olumlu değişimlere ilham verebilir."
+      },
+      {
+        "id": 4,
+        "subTitle": "• Dezavantajlı Toplulukları Güçlendirme",
+        "description": "Destek ve bağışlarınızı izole alanlara sunarak, dezavantajlı toplulukları daha iyi bir gelecek inşa etmelerine güç verirsiniz. Katkılarınız, yoksulluk döngüsünü kırabilir, eğitim ve sağlık hizmetlerine erişimi iyileştirebilir ve öz-yeterliliği teşvik edebilir."
+      }
+    ]
+  }
 }

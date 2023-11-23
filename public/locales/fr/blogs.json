@@ -1,5 +1,83 @@
 {
   "allBlogs": "Tous les blogs",
   "blogsAndResources": "Blogs & Resources",
-  "blogsHeader": "Consultez nos blogs pour des lectures intéressantes ! Plongez-vous dans des histoires qui comptent et rejoignez-nous pour avoir un impact positif. Faisons la différence ensemble"
+  "blogsHeader": "Consultez nos blogs pour des lectures intéressantes ! Plongez-vous dans des histoires qui comptent et rejoignez-nous pour avoir un impact positif. Faisons la différence ensemble",
+  "eidElFitrBlog": {
+    "title": "L'Esprit du Don : Dons de l'Eid al-Fitr",
+    "description": "L'Eid al-Fitr, également connu sous le nom de 'Fête de la rupture du jeûne,' est une fête importante célébrée par les musulmans du monde entier. Elle marque la fin du Ramadan, un mois de jeûne, de prière et de réflexion personnelle. Au-delà des festins et des rassemblements joyeux, l'Eid al-Fitr revêt une signification spirituelle profonde, notamment en ce qui concerne l'acte de donner et la charité.",
+    "content": [
+      {
+        "id": 1,
+        "subTitle": "• La Joie de l'Eid al-Fitr",
+        "description": "L'Eid al-Fitr est un moment de célébration et de gratitude, un moment pour les musulmans de se retrouver avec leurs amis et leur famille pour rompre leur jeûne et exprimer leur reconnaissance pour les bénédictions reçues. Cependant, c'est aussi un moment où l'acte de donner joue un rôle crucial. Les musulmans sont encouragés à être charitables, en particulier envers les personnes dans le besoin."
+      },
+      {
+        "id": 2,
+        "subTitle": "• Zakat al-Fitr : Une Forme Spéciale de Charité",
+        "description": "L'un des aspects essentiels de la donation pendant l'Eid al-Fitr est le 'Zakat al-Fitr.' Il s'agit d'une forme obligatoire de charité, donnée par ceux qui le peuvent pour aider les moins fortunés à profiter de la célébration. Le Zakat al-Fitr est généralement donné sous forme de nourriture, permettant aux nécessiteux de participer aux festivités."
+      },
+      {
+        "id": 3,
+        "subTitle": "• Gestes de Gentillesse et de Générosité",
+        "description": "Au-delà du Zakat al-Fitr, de nombreux musulmans s'engagent également dans divers gestes de gentillesse et de générosité pendant l'Eid al-Fitr. Ils font des dons à des œuvres de charité, soutiennent des initiatives locales et tendent la main à ceux qui traversent des difficultés. Cet esprit de charité renforce le sentiment de communauté et de solidarité parmi les musulmans."
+      },
+      {
+        "id": 4,
+        "subTitle": "• Les Bienfaits du Don",
+        "description": "L'acte de donner pendant l'Eid al-Fitr ne consiste pas seulement à accomplir une obligation religieuse ; il s'agit d'incarner les valeurs fondamentales de compassion, d'empathie et de solidarité communautaire. Il favorise un sentiment d'unité, nous rappelant que nous sommes tous responsables du bien-être les uns des autres."
+      }
+    ]
+  },
+  "donationsInGaza": {
+    "title": "Dons à Gaza : Soutien aux personnes dans le besoin",
+    "description": "Le peuple de Gaza a fait face à de nombreux défis, et votre soutien peut faire une différence significative dans leurs vies. Les dons à Gaza aident à fournir une aide essentielle, un soulagement et de l'espoir à ceux qui en ont besoin.",
+    "content": [
+      {
+        "id": 1,
+        "subTitle": "• La crise humanitaire à Gaza",
+        "description": "Gaza a connu des défis persistants, notamment des conflits politiques et des difficultés économiques. Les habitants de Gaza font souvent face à des pénuries de biens de première nécessité, et les dons jouent un rôle vital pour répondre à leurs besoins immédiats et à long terme."
+      },
+      {
+        "id": 2,
+        "subTitle": "• Types de dons nécessaires",
+        "description": "Les dons à Gaza peuvent prendre différentes formes, notamment des contributions financières, des fournitures médicales, de l'aide alimentaire et des ressources éducatives. Votre soutien peut fournir un soulagement aux familles, soutenir les établissements de santé et offrir des opportunités d'éducation et d'autonomisation."
+      },
+      {
+        "id": 3,
+        "subTitle": "• Gestes de solidarité et de compassion",
+        "description": "Les dons à Gaza ne concernent pas seulement la fourniture d'une aide matérielle ; ils représentent également des gestes de solidarité et de compassion. Votre contribution peut faire une différence significative dans la vie des individus et des familles qui s'efforcent de surmonter l'adversité."
+      },
+      {
+        "id": 4,
+        "subTitle": "• Construire un avenir meilleur",
+        "description": "En offrant votre soutien et vos dons à Gaza, vous contribuez à construire un avenir meilleur pour les habitants de cette région. Votre générosité peut aider à créer un changement positif, à restaurer l'espoir et à améliorer la qualité de vie de ceux dans le besoin."
+      }
+    ]
+  },
+  "isolatedAreasDonations": {
+    "title": "Dons dans les Zones Isolées : Apporter de l'Espoir aux Défavorisés",
+    "description": "Les zones isolées et reculées sont souvent confrontées à des défis uniques, allant de l'accès limité aux services essentiels aux difficultés économiques. Les dons aux zones isolées peuvent faire une différence significative dans la vie de ceux qui sont défavorisés et ont besoin de soutien.",
+    "content": [
+      {
+        "id": 1,
+        "subTitle": "• Défis des Zones Isolées",
+        "description": "Les zones isolées peuvent manquer d'accès aux soins de santé, à l'éducation, à l'eau potable et aux opportunités économiques. Les personnes vivant dans de telles zones rencontrent souvent des difficultés à satisfaire leurs besoins de base, et les dons sont une bouée de sauvetage pour les soutenir."
+      },
+      {
+        "id": 2,
+        "subTitle": "• Types de Dons Nécessaires",
+        "description": "Les dons aux zones isolées peuvent prendre diverses formes, notamment des contributions financières, des fournitures médicales, de l'aide alimentaire et le développement d'infrastructures. Votre soutien peut aider à combler le fossé et à améliorer la qualité de vie de ceux qui vivent dans des régions défavorisées."
+      },
+      {
+        "id": 3,
+        "subTitle": "• Actes de Compassion et d'Engagement",
+        "description": "Les dons aux zones isolées vont au-delà de la fourniture d'une assistance matérielle ; ils symbolisent des actes de compassion et d'engagement. Votre générosité peut apporter de l'espoir aux communautés, créer un sentiment de solidarité et inspirer des changements positifs."
+      },
+      {
+        "id": 4,
+        "subTitle": "• Autonomisation des Communautés Défavorisées",
+        "description": "En offrant votre soutien et vos dons aux zones isolées, vous permettez aux communautés défavorisées de construire un avenir meilleur. Vos contributions peuvent aider à briser le cycle de la pauvreté, améliorer l'accès à l'éducation et aux soins de santé, et promouvoir l'autosuffisance."
+      }
+    ]
+  }
 }
