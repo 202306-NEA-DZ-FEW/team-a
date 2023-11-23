@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -5,17 +7,65 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { fetchCollection } from "@/lib/fetchCollection";
 
 import BlogsCard from "@/components/BlogsCard";
-import Container from "@/components/container";
 
 function BlogsPage({ blogs }) {
   const { t } = useTranslation();
+
   return (
-    <Container className='flex flex-col gap-10 min-h-screen justify-center py-24'>
-      <h1 className='text-4xl font-bold text-center'>{t("blogs:allBlogs")} </h1>
-      {blogs.map((blog, index) => (
-        <BlogsCard key={blog.id} blog={blog} index={index} />
-      ))}
-    </Container>
+    <>
+      <header className='relative w-full lg:h-[80vh] h-[60vh] bg-primary overflow-hidden'>
+        <div className='absolute h-full w-full flex flex-col items-center justify-center gap-6 px-4 text-center text-white z-30'>
+          <motion.p
+            className='text-xl uppercase font-semibold'
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+          >
+            Latest Blogs
+          </motion.p>
+          <motion.h1
+            className='text-4xl font-bold'
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+          >
+            Blogs & Resources
+          </motion.h1>
+          <motion.p
+            className='text-xl w-full lg:w-1/2'
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.7 }}
+          >
+            Check out our blogs for some cool reads! Dive into stories that
+            matter and join us in making a positive impact. Lets make a
+            difference together
+          </motion.p>
+        </div>
+        <div className='absolute w-full h-full flex justify-center -bottom-[20%] z-0 ease-[cubic-bezier(.75,-0.5,0,1.75)]'>
+          <Image
+            src='/images/blogsillustration.svg'
+            alt='Header'
+            height={600}
+            width={600}
+            priority
+            className='w-full h-full object-cover opacity-[80%] z-0'
+          />
+        </div>
+      </header>
+      <div className='flex flex-col gap-10 px-4 md:px-28 py-20'>
+        {blogs.map((blog, index) => (
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+            key={blog.id}
+          >
+            <BlogsCard blog={blog} index={index} {...blog} />
+          </motion.div>
+        ))}
+      </div>
+    </>
   );
 }
 

@@ -2,82 +2,77 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex flex-col gap-10 justify-center items-center  lg:flex-row "
+  className="card bg-base-100 gap-4 shadow-xl h-full lg:h-[26rem]  lg:flex-row "
   dir="ltr"
 >
-  <div
-    className="relative lg:flex-1"
+  <figure
+    className=" lg:w-[45%] lg:h-full h-96 rounded-xl p-4"
   >
-    <figure
-      className="relative w-80 h-60 lg:w-[100%] lg:h-80"
-    >
-      <img
-        alt="Sample Blog Title"
-        className="object-cover w-full h-full rounded-2xl"
-        data-nimg="fill"
-        decoding="async"
-        fetchpriority="high"
-        onError={[Function]}
-        onLoad={[Function]}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        src="/_next/image?url=%2Fsample-image.jpg&w=3840&q=75"
-        srcSet="/_next/image?url=%2Fsample-image.jpg&w=256&q=75 256w, /_next/image?url=%2Fsample-image.jpg&w=384&q=75 384w, /_next/image?url=%2Fsample-image.jpg&w=640&q=75 640w, /_next/image?url=%2Fsample-image.jpg&w=750&q=75 750w, /_next/image?url=%2Fsample-image.jpg&w=828&q=75 828w, /_next/image?url=%2Fsample-image.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fsample-image.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fsample-image.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fsample-image.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fsample-image.jpg&w=3840&q=75 3840w"
-        style={
-          Object {
-            "bottom": 0,
-            "color": "transparent",
-            "height": "100%",
-            "left": 0,
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": "100%",
-          }
+    <img
+      alt="Blog Image"
+      className="w-full h-full object-cover rounded-xl"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height={400}
+      onError={[Function]}
+      onLoad={[Function]}
+      src=""
+      style={
+        Object {
+          "color": "transparent",
         }
-      />
-    </figure>
-    <span
-      className="absolute bottom-0 left-0 bg-primary text-white p-2 text-sm lg:hidden"
-    >
-      Invalid date
-    </span>
-  </div>
+      }
+      width={400}
+    />
+  </figure>
   <div
-    className="flex flex-col lg:flex-1 gap-4"
+    className="card-body lg:w-[35%] p-6 lg:p-8 gap-4"
   >
-    <div>
-      <h2
-        className="font-bold text-2xl"
-      >
-        Sample Blog Title
-      </h2>
-      <span
-        className="my-1 text-sm text-gray-500 font-light hidden lg:block"
-      >
+    <h2
+      className="card-title text-2xl lg:text-3xl"
+    />
+    <p
+      className=" text-md lg:text-xl tracking-wide font-light"
+    />
+    <div
+      className="card-actions flex gap-2 justify-between"
+    >
+      <span>
         Invalid date
       </span>
-    </div>
-    <p
-      className="text-slate-500"
-    >
-      Sample description for the blog...
-    </p>
-    <a
-      href="/blogs/1"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
-    >
-      <div>
-        <button
-          className="btn bg-black text-white btn-sm"
+      <a
+        className="text-secondary font-bold flex items-center gap-2"
+        href="/blogs/undefined"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        buttons.readMore
+        <svg
+          className="text-xl"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          buttons.readMore
-        </button>
-      </div>
-    </a>
+          <path
+            d="M210.7 147.6c7.5-7.5 19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81.1-81.9-81.1c-7.6-7.4-7.6-19.6 0-27.2z"
+          />
+          <path
+            d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm32 0c0-47 18.3-91.2 51.6-124.4C164.8 98.3 209 80 256 80s91.2 18.3 124.4 51.6C413.7 164.8 432 209 432 256s-18.3 91.2-51.6 124.4C347.2 413.7 303 432 256 432s-91.2-18.3-124.4-51.6C98.3 347.2 80 303 80 256z"
+          />
+        </svg>
+      </a>
+    </div>
   </div>
 </div>
 `;

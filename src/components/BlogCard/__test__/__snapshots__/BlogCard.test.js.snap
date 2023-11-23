@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="card rounded-xl bg-base-100 shadow-lg h-full w-full"
 >
   <figure
-    className="relative overflow-hidden"
+    className="relative overflow-hidden h-96"
   >
     <img
       alt="Blog Image"

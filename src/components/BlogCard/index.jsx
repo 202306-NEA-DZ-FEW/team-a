@@ -10,7 +10,7 @@ function BlogCard({ id, title, imageUrl, createdAt }) {
   const date = formatDate(createdAt, "MMM YYYY");
   return (
     <div className='card rounded-xl bg-base-100 shadow-lg h-full w-full'>
-      <figure className='relative overflow-hidden'>
+      <figure className='relative overflow-hidden h-96'>
         <Image
           className='w-full h-full object-cover rounded-t-2xl'
           src={imageUrl}
