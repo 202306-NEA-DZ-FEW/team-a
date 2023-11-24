@@ -36,11 +36,11 @@ export default function Layout({ children, initialLocale }) {
     >
       <Navbar />
       {children}
-      <NextTopLoader color='#6658F8' showSpinner={false} />
+      <NextTopLoader color='#0A6947' showSpinner={false} />
       <Footer />
-      <div className='fixed z-50 right-2 bottom-2'>
+      <div className='fixed flex flex-col gap-1 z-50 right-2 bottom-2'>
         <Link href='#'>
-          <TbCircleChevronsUp className='swap-on w-8 h-8' />
+          <TbCircleChevronsUp className='w-9 h-9 text-secondary' />
         </Link>
         <label className='swap swap-rotate'>
           {/* this hidden checkbox controls the state */}
@@ -52,10 +52,10 @@ export default function Layout({ children, initialLocale }) {
           />
 
           {/* sun icon */}
-          <MdOutlineLightMode className='swap-on fill-accent w-8 h-8' />
+          <MdOutlineLightMode className='swap-on fill-accent w-9 h-9' />
 
           {/* moon icon */}
-          <BiMoon className='swap-off fill-current w-8 h-8' />
+          <BiMoon className='swap-off fill-current w-9 h-9' />
         </label>
       </div>
     </main>

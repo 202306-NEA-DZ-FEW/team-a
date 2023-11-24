@@ -553,7 +553,7 @@ exports[`renders correctly 1`] = `
     id="CardContent"
   >
     <h1
-      className="card-title text-3xl"
+      className="card-title text-3xl capitalize"
     >
       Item Details title
     </h1>

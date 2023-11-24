@@ -1,20 +1,25 @@
+import dynamic from "next/dynamic";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import getAllCategories from "@/lib/getAllCategories";
 import getAllStates from "@/lib/getAllStates";
 
-import AddItemForm from "@/components/AddItemForm";
+import AddItemFormPlaceholder from "@/components/AddItemForm/AddItemFormPlaceholder";
 import Container from "@/components/container";
+
+const DynamicAddItemForm = dynamic(() => import("@/components/AddItemForm"), {
+  loading: () => <AddItemFormPlaceholder />,
+});
 
 function CreateProductPage({ t, _nextI18Next }) {
   const categories = getAllCategories(t);
   const states = getAllStates(t);
   const { initialLocale } = _nextI18Next;
   return (
-    <Container className='py-20'>
+    <Container className='min-h-screen w-full items-center justify-center py-24'>
       <main dir={initialLocale === "ar" ? "rtl" : "ltr"}>
-        <AddItemForm
+        <DynamicAddItemForm
           t={t}
           initialLocale={initialLocale}
           states={states}

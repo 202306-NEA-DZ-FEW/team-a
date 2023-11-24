@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <textarea
-    className="textarea no-scrollbar textarea-primary  textarea-bordered h-24 w-full bg-base-200"
+    className="textarea no-scrollbar textarea-primary  textarea-bordered border-opacity-25 h-24 w-full bg-base-200"
   />
   <div
     className="label"

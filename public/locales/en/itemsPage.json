@@ -9,5 +9,6 @@
   "page": "Page",
   "of": "of",
   "relatedItems": "Related Items",
-  "contactCredentials": "Contact Credentials"
+  "contactCredentials": "Contact Credentials",
+  "noRelatedItems": "No related items found"
 }
