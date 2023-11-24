@@ -1,0 +1,20 @@
+{
+  "signIn": "Login to Your Account",
+  "signInButton": "Login",
+  "emailLabel": "Email",
+  "emailPlaceholder": "Enter your email",
+  "emailRequired": "Email is required",
+  "emailValid": "Invalid email address",
+  "passwordLabel": "Password",
+  "PasswordPlaceholder": "Enter your password",
+  "passwordRequired": "Password is required",
+  "savedlogin": "keep me logged in",
+  "Loading": "Loading",
+  "noAccount": "Don't have an account?",
+  "signUp": "Sign up",
+  "passwordForgotten": "Forgot password?",
+  "signUpMethod": "Login using",
+  "sendMeResetLink": "Send a password reset link",
+  "EnterYourEmail": "Enter your email",
+  "divider": "OR"
+}

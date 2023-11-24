@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "The power of collective",
+    "titleHighlight": "Giving.",
+    "description": "You offer more than possessions when you give, true giving is an extension of yourself",
+    "stat1": "Ramadan Meal Outreach",
+    "stat2": "Orphan Received Support",
+    "stat3": "In Refugee Aid Program"
+  },
+  "causes": {
+    "title": "Causes",
+    "education": {
+      "title": "Education",
+      "description": "We believe in empowering minds through education. We stand for providing equal access to knowledge, as we promote a brighter future for all."
+    },
+    "solidarity": {
+      "title": "Solidarity",
+      "description": "We believe in fostering a sense of community by providing support to the less privileged. We promote solidarity and togetherness as we stand for a united and cohesive society"
+    },
+    "health": {
+      "title": "Health",
+      "description": "We believe in promoting a healthy society. We stand for providing essential healthcare support, ensuring the well-being of all as we strive for a healthier community."
+    }
+  },
+  "statistics": {
+    "meals": {
+      "title": "30k",
+      "description": "In the course of 3 years, charities in algeria managed to provide up to 1200 meal per day in ramadan; an average of 30.000 meals served in one month."
+    },
+    "orphans": {
+      "title": "200",
+      "description": "50 to 200 orphans per state had been equipped with essential school supplies this school year, ensuring they have the tools they need to thrive in their education."
+    },
+    "refugees": {
+      "title": "25k",
+      "description": "Over 25.000 refugees had been hosted in Algeria for the last 5 years, which many needed clothing, as well as a shelter."
+    },
+    "fact": {
+      "title": "Fact",
+      "description": "The acute malnutrition rate among children aged 0 to 5 years worldwide was 10.7%."
+    }
+  },
+  "items": "Popular items",
+  "blogs": "Blogs",
+  "partners": "Our Partners"
+}

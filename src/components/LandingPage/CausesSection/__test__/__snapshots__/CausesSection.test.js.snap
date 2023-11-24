@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex flex-col flex-wrap gap-8 justify-center items-center bg-base-100 w-full min-h-screen p-8"
+>
+  <h2
+    className="text-3xl py-10 md:text-5xl gap-4 font-black text-center"
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateY(30px) translateZ(0)",
+      }
+    }
+  >
+    causes.title
+  </h2>
+  <div
+    className="w-full flex flex-wrap justify-center items-center gap-6 text-center"
+  >
+    <div
+      className="flex-1 min-w-[300px] h-96 flex-grow bg-base-100 flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md group rounded-3xl shadow-2xl overflow-hidden cursor-pointer"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(30px) scale(0) translateZ(0)",
+        }
+      }
+    >
+      <div
+        className="relative  w-full h-full bg-cover bg-no-repeat flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(/img.jpg)",
+          }
+        }
+      >
+        <h2
+          className="absolute bottom-8 left-24 origin-bottom-left -rotate-90 font-black text-white tracking-wider text-5xl"
+        >
+          causes.education.title
+        </h2>
+        <p
+          className="absolute p-8 text-xl font-light w-full h-full bg-neutral flex justify-center items-center translate-x-72 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 text-white/80"
+        >
+          causes.education.description
+        </p>
+      </div>
+    </div>
+    <div
+      className="flex-1 min-w-[300px] h-96 flex-grow bg-base-100 flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md group rounded-3xl shadow-2xl overflow-hidden cursor-pointer"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(30px) scale(0) translateZ(0)",
+        }
+      }
+    >
+      <div
+        className="relative  w-full h-full bg-cover bg-no-repeat flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(/img.jpg)",
+          }
+        }
+      >
+        <h2
+          className="absolute bottom-8 left-24 origin-bottom-left -rotate-90 font-black text-white tracking-wider text-5xl"
+        >
+          causes.solidarity.title
+        </h2>
+        <p
+          className="absolute p-8 text-xl font-light w-full h-full bg-neutral flex justify-center items-center translate-x-72 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 text-white/80"
+        >
+          causes.solidarity.description
+        </p>
+      </div>
+    </div>
+    <div
+      className="flex-1 min-w-[300px] h-96 flex-grow bg-base-100 flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md group rounded-3xl shadow-2xl overflow-hidden cursor-pointer"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(30px) scale(0) translateZ(0)",
+        }
+      }
+    >
+      <div
+        className="relative  w-full h-full bg-cover bg-no-repeat flex flex-col flex-1 justify-center items-center gap-4"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(/img.jpg)",
+          }
+        }
+      >
+        <h2
+          className="absolute bottom-8 left-24 origin-bottom-left -rotate-90 font-black text-white tracking-wider text-5xl"
+        >
+          causes.health.title
+        </h2>
+        <p
+          className="absolute p-8 text-xl font-light w-full h-full bg-neutral flex justify-center items-center translate-x-72 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 text-white/80"
+        >
+          causes.health.description
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

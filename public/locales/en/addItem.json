@@ -1,0 +1,21 @@
+{
+  "addItem": "Add Item",
+  "titleLabel": "Title",
+  "titlePlaceholder": "Add Title",
+  "titleRequired": "Title is required",
+  "categoryLabel": "Category",
+  "categoryRequired": "Category is required",
+  "descriptionLabel": "Description",
+  "descriptionLength": "Description must be longer",
+  "descriptionRequired": "Description is required",
+  "descriptionPlaceHolder": "Add a description",
+  "imageLabel": "Image",
+  "imageRequired": "You need to provide an image",
+  "locationLabel": "Province",
+  "locationRequired": "Location is required",
+  "listingType": "Listing type",
+  "itemTagRequired": "Item type is required",
+  "donationButton": "Donate",
+  "exchangeButton": "Exchange",
+  "requestButton": "Request"
+}

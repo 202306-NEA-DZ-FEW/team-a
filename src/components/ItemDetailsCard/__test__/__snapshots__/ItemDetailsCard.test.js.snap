@@ -1,0 +1,808 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-base-100"
+>
+  <div
+    className="lg:hidden"
+  >
+    <div
+      className="slick-slider slick-initialized"
+      dir="ltr"
+    >
+      <button
+        className="btn btn-circle bg-white bg-opacity-25 text-2xl z-30 absolute right-2 top-1/2"
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 256 256"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"
+          />
+        </svg>
+      </button>
+      <div
+        className="slick-list"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={null}
+        onMouseMove={null}
+        onMouseUp={[Function]}
+        onTouchCancel={null}
+        onTouchEnd={[Function]}
+        onTouchMove={null}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "padding": "0px 0",
+          }
+        }
+      >
+        <div
+          className="slick-track"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "WebkitTransform": "translate3d(0px, 0px, 0px)",
+              "WebkitTransition": "",
+              "msTransform": "translateX(0px)",
+              "opacity": 1,
+              "transform": "translate3d(0px, 0px, 0px)",
+              "transition": "",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-center slick-cloned"
+            data-index={-2}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <figure
+                className="w-full h-[400px] relative"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="product"
+                  className="object-cover w-full h-full"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": 0,
+                      "color": "transparent",
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={-1}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <figure
+                className="w-full h-[400px] relative"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="product"
+                  className="object-cover w-full h-full"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": 0,
+                      "color": "transparent",
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            aria-hidden={false}
+            className="slick-slide slick-active slick-center slick-current"
+            data-index={0}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <figure
+                className="w-full h-[400px] relative"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="product"
+                  className="object-cover w-full h-full"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": 0,
+                      "color": "transparent",
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide"
+            data-index={1}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <figure
+                className="w-full h-[400px] relative"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="product"
+                  className="object-cover w-full h-full"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": 0,
+                      "color": "transparent",
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-center slick-cloned"
+            data-index={2}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <figure
+                className="w-full h-[400px] relative"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="product"
+                  className="object-cover w-full h-full"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=3840&q=75 3840w"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": 0,
+                      "color": "transparent",
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={3}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <figure
+                className="w-full h-[400px] relative"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <img
+                  alt="product"
+                  className="object-cover w-full h-full"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=3840&q=75 3840w"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+                      "backgroundPosition": "50% 50%",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": 0,
+                      "color": "transparent",
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="btn btn-circle bg-white bg-opacity-25 text-2xl z-30 absolute left-2 top-1/2"
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 256 256"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z"
+          />
+        </svg>
+      </button>
+      <ul
+        className="slick-dots"
+        onMouseEnter={null}
+        onMouseLeave={null}
+        onMouseOver={null}
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      >
+        <li
+          className="slick-active"
+        >
+          <button
+            onClick={[Function]}
+          >
+            1
+          </button>
+        </li>
+        <li
+          className=""
+        >
+          <button
+            onClick={[Function]}
+          >
+            2
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <figure
+    className="w-[600px] min-h-[520px] relative hidden lg:block flex-1"
+  >
+    <img
+      alt=""
+      className="w-full h-full object-cover lg:rounded-tl-3xl lg:lg:rounded-bl-3xl"
+      data-nimg="1"
+      decoding="async"
+      height={500}
+      id="productImg"
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75"
+      srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=1080&q=75 2x"
+      style={
+        Object {
+          "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+          "backgroundPosition": "50% 50%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+          "color": "transparent",
+        }
+      }
+      width={500}
+    />
+    <div
+      className="w-full absolute bottom-[5%] px-4 h-fit flex flex-row gap-4 items-end justify-center"
+    >
+      <figure
+        className="gap-4 w-16 h-16"
+      >
+        <img
+          alt="img"
+          className="ring-4 hover:cursor-pointer h-full w-full rounded-xl object-cover"
+          data-nimg="1"
+          decoding="async"
+          height={100}
+          loading="lazy"
+          onClick={[Function]}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F600x400&w=256&q=75 2x"
+          style={
+            Object {
+              "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
+              "color": "transparent",
+            }
+          }
+          width={100}
+        />
+      </figure>
+      <figure
+        className="gap-4 w-16 h-16"
+      >
+        <img
+          alt="img"
+          className="opacity-50 hover:cursor-pointer h-full w-full rounded-xl object-cover"
+          data-nimg="1"
+          decoding="async"
+          height={100}
+          loading="lazy"
+          onClick={[Function]}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fplacehold.co%2F400x400&w=256&q=75 2x"
+          style={
+            Object {
+              "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
+              "color": "transparent",
+            }
+          }
+          width={100}
+        />
+      </figure>
+    </div>
+  </figure>
+  <div
+    className="card-body flex-1"
+    id="CardContent"
+  >
+    <h1
+      className="card-title text-3xl capitalize"
+    >
+      Item Details title
+    </h1>
+    <div
+      className="flex gap-2 items-center"
+    >
+      <span
+        className="flex gap-1 text-gray-400 text-sm font-light items-center"
+      >
+        <svg
+          className="text-xl"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M13.02 19.93v2.02c2.01-.2 3.84-1 5.32-2.21l-1.42-1.43a7.941 7.941 0 01-3.9 1.62zM4.03 12c0-4.05 3.03-7.41 6.95-7.93V2.05C5.95 2.58 2.03 6.84 2.03 12c0 5.16 3.92 9.42 8.95 9.95v-2.02c-3.92-.52-6.95-3.88-6.95-7.93zM19.95 11h2.02c-.2-2.01-1-3.84-2.21-5.32l-1.43 1.43c.86 1.1 1.44 2.43 1.62 3.89zM18.34 4.26a9.981 9.981 0 00-5.32-2.21v2.02c1.46.18 2.79.76 3.9 1.62l1.42-1.43zM18.33 16.9l1.43 1.42A9.949 9.949 0 0021.97 13h-2.02a7.941 7.941 0 01-1.62 3.9z"
+          />
+          <path
+            d="M16 11.1C16 8.61 14.1 7 12 7s-4 1.61-4 4.1c0 1.66 1.33 3.63 4 5.9 2.67-2.27 4-4.24 4-5.9zm-4 .9a1.071 1.071 0 010-2.14A1.071 1.071 0 0112 12z"
+          />
+        </svg>
+         
+        Item Details location
+      </span>
+      <span
+        className="flex gap-1 text-gray-400 text-sm font-light items-center"
+      >
+        <svg
+          className="text-lg"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="384"
+            rx="48"
+            strokeLinejoin="round"
+            strokeWidth="32"
+            width="416"
+            x="48"
+            y="80"
+          />
+          <circle
+            cx="296"
+            cy="232"
+            r="24"
+          />
+          <circle
+            cx="376"
+            cy="232"
+            r="24"
+          />
+          <circle
+            cx="296"
+            cy="312"
+            r="24"
+          />
+          <circle
+            cx="376"
+            cy="312"
+            r="24"
+          />
+          <circle
+            cx="136"
+            cy="312"
+            r="24"
+          />
+          <circle
+            cx="216"
+            cy="312"
+            r="24"
+          />
+          <circle
+            cx="136"
+            cy="392"
+            r="24"
+          />
+          <circle
+            cx="216"
+            cy="392"
+            r="24"
+          />
+          <circle
+            cx="296"
+            cy="392"
+            r="24"
+          />
+          <path
+            d="M128 48v32m256-32v32"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="32"
+          />
+          <path
+            d="M464 160H48"
+            fill="none"
+            strokeLinejoin="round"
+            strokeWidth="32"
+          />
+        </svg>
+        <span>
+          Invalid date
+        </span>
+      </span>
+    </div>
+    <div
+      className="flex gap-2 items-center"
+    >
+      <span
+        className="badge badge-outline text-primary/80 "
+      >
+        Item Details category
+      </span>
+      <span
+        className="badge badge-outline "
+      >
+        Item Details listing
+      </span>
+    </div>
+    <p
+      className="text-lg font-light mt-8"
+    >
+      Item Details description
+    </p>
+    <div
+      className="user-details flex flex-col mt-10"
+      dir="ltr"
+    >
+      <h2
+        className="text-xl font-semibold mb-4 border-b-4 border-b-primary self-start"
+      >
+        contactCredentials
+      </h2>
+      <p
+        className="flex items-center gap-2 text-primary font-semibold"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 48C141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208S370.4 48 256 48zm0 62.4c34.3 0 62.4 28.1 62.4 62.4s-28.1 62.4-62.4 62.4-62.4-28.1-62.4-62.4 28.1-62.4 62.4-62.4zm0 300.4c-52 0-97.8-27-124.8-66.6 1-41.6 83.2-64.5 124.8-64.5s123.8 22.9 124.8 64.5c-27 39.5-72.8 66.6-124.8 66.6z"
+          />
+        </svg>
+        nameLabel
+        <span
+          className="font-normal text-gray-500"
+        >
+          itemDetails username
+        </span>
+      </p>
+      <p
+        className="flex items-center gap-2 text-primary font-semibold"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          />
+        </svg>
+        phoneLabel
+        <span
+          className="font-normal text-gray-500"
+        >
+          +1 1 1 1
+        </span>
+      </p>
+      <p
+        className="flex items-center gap-2 text-primary font-semibold"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+          />
+        </svg>
+        emailLabel
+        <span
+          className="font-normal text-gray-500"
+        >
+          itemDetails email
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

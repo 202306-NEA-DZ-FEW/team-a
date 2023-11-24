@@ -1,0 +1,20 @@
+{
+  "signIn": "Hesabınıza Giriş Yapın",
+  "signInButton": "Giriş",
+  "emailLabel": "E-posta",
+  "emailPlaceholder": "E-postanızı girin",
+  "emailRequired": "E-posta zorunlu",
+  "emailValid": "Geçersiz e-posta adresi",
+  "passwordLabel": "Şifre",
+  "PasswordPlaceholder": "Şifrenizi girin",
+  "passwordRequired": "Şifre zorunlu",
+  "savedlogin": "Beni hatırla",
+  "Loading": "Yükleniyor",
+  "noAccount": "Hesabınız yok mu?",
+  "signUp": "Kayıt ol",
+  "passwordForgotten": "Şifrenizi mi unuttunuz?",
+  "signUpMethod": "Şu yöntemle giriş yapın",
+  "sendMeResetLink": "Şifre sıfırlama bağlantısı gönder",
+  "EnterYourEmail": "E-postanızı girin",
+  "divider": "VEYA"
+}

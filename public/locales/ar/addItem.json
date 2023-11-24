@@ -1,0 +1,21 @@
+{
+  "addItem": "إضافة عنصر",
+  "titleLabel": "العنوان",
+  "titlePlaceholder": "إضافة العنوان",
+  "titleRequired": "العنوان مطلوب",
+  "categoryLabel": "الفئة",
+  "categoryRequired": "الفئة مطلوبة",
+  "descriptionLabel": "الوصف",
+  "descriptionLength": "يجب أن يكون الوصف أطول",
+  "descriptionPlaceHolder": "أضِف وصفًا",
+  "descriptionRequired": "الوصف مطلوب",
+  "imageLabel": "إضافة صورة",
+  "imageRequired": "يجب عليك تقديم صورة",
+  "locationLabel": "الولاية",
+  "locationRequired": "الولاية مطلوبة",
+  "listingType": "تصنيف العنصر",
+  "itemTagRequired": "تصنيف العنصر مطلوب",
+  "donationButton": "للتبرع",
+  "exchangeButton": "للتبادل",
+  "requestButton": "للطلب"
+}

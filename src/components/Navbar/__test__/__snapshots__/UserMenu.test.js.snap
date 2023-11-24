@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders correctly 1`] = `
+<div
+  className="relative hidden lg:block mt-1"
+  data-headlessui-state=""
+>
+  <button
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="btn btn-sm outline-dashed transition-all duration-500 ease-in-out hover:outline-double outline-[2px] btn-circle btn-ghost"
+    data-headlessui-state=""
+    id="headlessui-menu-button-:r0:"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    type="button"
+  >
+    <div
+      className="avatar "
+    >
+      <div
+        className="w-8 rounded-full bg-black ring ring-primary hover:ring-offset-2 transition-all duration-500 ring-offset-transparent ring-offset-1"
+      >
+        <img
+          alt="user"
+          className=""
+          data-nimg="1"
+          decoding="async"
+          height={100}
+          onError={[Function]}
+          onLoad={[Function]}
+          src=""
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={100}
+        />
+      </div>
+    </div>
+  </button>
+</div>
+`;

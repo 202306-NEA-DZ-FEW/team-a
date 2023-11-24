@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="card rounded-3xl group"
+>
+  <figure
+    className="relative h-64 w-52 rounded-3xl"
+  >
+    <img
+      alt="title"
+      className="group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover w-full h-full duration-500"
+      data-nimg="1"
+      decoding="async"
+      height={200}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+      style={
+        Object {
+          "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='public/images/blur.jpg'/%3E%3C/svg%3E\\")",
+          "backgroundPosition": "50% 50%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+          "color": "transparent",
+        }
+      }
+      width={200}
+    />
+  </figure>
+  <div
+    className="absolute bottom-[5%] flex flex-col px-3 w-52"
+  >
+    <h3
+      className="text-white text-lg font-bold capitalize"
+    >
+      title
+    </h3>
+    <span
+      className="text-sm text-white pl-1 font-light mb-1"
+    >
+      category
+    </span>
+    <div
+      className="flex items-center gap-1 p-0 w-full"
+    >
+      <span
+        className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25"
+      >
+        locati...
+        <span>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M13.02 19.93v2.02c2.01-.2 3.84-1 5.32-2.21l-1.42-1.43a7.941 7.941 0 01-3.9 1.62zM4.03 12c0-4.05 3.03-7.41 6.95-7.93V2.05C5.95 2.58 2.03 6.84 2.03 12c0 5.16 3.92 9.42 8.95 9.95v-2.02c-3.92-.52-6.95-3.88-6.95-7.93zM19.95 11h2.02c-.2-2.01-1-3.84-2.21-5.32l-1.43 1.43c.86 1.1 1.44 2.43 1.62 3.89zM18.34 4.26a9.981 9.981 0 00-5.32-2.21v2.02c1.46.18 2.79.76 3.9 1.62l1.42-1.43zM18.33 16.9l1.43 1.42A9.949 9.949 0 0021.97 13h-2.02a7.941 7.941 0 01-1.62 3.9z"
+            />
+            <path
+              d="M16 11.1C16 8.61 14.1 7 12 7s-4 1.61-4 4.1c0 1.66 1.33 3.63 4 5.9 2.67-2.27 4-4.24 4-5.9zm-4 .9a1.071 1.071 0 010-2.14A1.071 1.071 0 0112 12z"
+            />
+          </svg>
+        </span>
+      </span>
+      <span
+        className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25"
+      >
+        listingType
+      </span>
+    </div>
+  </div>
+</div>
+`;

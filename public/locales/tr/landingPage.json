@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "Toplu Bağışın",
+    "titleHighlight": "gücü.",
+    "description": "Gerçek bağış, insanlığınızın bir yansımasıdır",
+    "stat1": "Ramazan'da dağıtılan yemek",
+    "stat2": "Yetim Eğitim Desteği",
+    "stat3": "Mülteci Yardım Programı"
+  },
+  "causes": {
+    "title": "Nedenler",
+    "education": {
+      "title": "Eğitim",
+      "description": "Eğitim aracılığıyla zihinleri güçlendirmeye inanıyoruz. Bilgiye eşit erişimi sağlamak için duruyoruz, tüm için daha parlak bir gelecek için çalışıyoruz."
+    },
+    "solidarity": {
+      "title": "Dayanışma",
+      "description": "Daha az ayrıcalıklı bireylere destek sağlayarak, topluluk duygusunu geliştirmeyi, dayanışma ve birlik içinde durmayı amaçlıyoruz."
+    },
+    "health": {
+      "title": "Sağlık",
+      "description": "Biz, sağlıklı bir toplumu teşvik etmeye inanıyoruz. Temel sağlık desteği sağlamak için duruyoruz, herkesin iyi olmasını sağlamak için çabalarken daha sağlıklı bir toplum için çaba harcıyoruz."
+    }
+  },
+  "statistics": {
+    "meals": {
+      "title": "30 bin",
+      "description": "3 yıl boyunca Cezayir'deki hayır kurumları, ramazan ayında günde 1200 öğün sağlamayı başardı; bir ayda ortalama 30.000 öğün servis edildi."
+    },
+    "orphans": {
+      "title": "200",
+      "description": "Her ilde 50 ila 200 yetim, bu okul yılında temel okul malzemeleri ile donatıldı, böylece eğitimlerinde başarılı olmaları için ihtiyaçları olan araçlara sahip oldular."
+    },
+    "refugees": {
+      "title": "25 bin",
+      "description": "Son 5 yılda Cezayir'de 25.000'den fazla mülteci ağırlanmıştır, bunlardan birçoğu giyim ve barınma ihtiyacı duymaktaydı."
+    },
+    "fact": {
+      "title": "Gerçek",
+      "description": "Dünya genelinde 0 ila 5 yaş arasındaki çocuklarda akut malnutrisyon oranı %10,7'dir."
+    }
+  },
+  "items": "Popüler Ürünler",
+  "blogs": "Bloglar",
+  "partners": "İş Ortağımız"
+}

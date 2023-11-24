@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="relative w-full flex justify-center text-left"
+  data-headlessui-state=""
+>
+  <button
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="flex items-center gap-2 w-full justify-between bg-base-200 input-sm rounded-full tracking-wider"
+    data-headlessui-state=""
+    id="headlessui-menu-button-:r0:"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    type="button"
+  >
+    <div
+      className="flex gap-2 items-center"
+    >
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+          stroke="none"
+        />
+        <path
+          d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+        />
+        <path
+          d="M15 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+        />
+        <path
+          d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+        />
+        <path
+          d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1"
+        />
+        <path
+          d="M12 9l0 3"
+        />
+      </svg>
+      <span />
+    </div>
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 512 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M128 192l128 128 128-128z"
+      />
+    </svg>
+  </button>
+</div>
+`;

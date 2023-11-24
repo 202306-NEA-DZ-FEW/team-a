@@ -1,0 +1,40 @@
+{
+  "dashboard": "dashboard",
+  "userinfo": {
+    "name": "Name",
+    "email": "Email",
+    "language": "Language",
+    "currentLanguage": "English",
+    "location": "Location",
+    "phoneNumber": "Phone number"
+  },
+  "userUpadteForm": {
+    "updateProfile": "Edit profile",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your full name",
+    "nameRequired": "Name is required",
+    "nameLength": "Name must be less than 30 characters",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "emailRequired": "Email is required",
+    "emailValid": "Invalid email address",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter your phone number",
+    "phoneRequired": "Phone number is required",
+    "locationLabel": "Wilaya",
+    "locationRequired": "Wilaya is required"
+  },
+  "myItems": "My Items",
+  "editItemForm": {
+    "updateItem": "Edit Item",
+    "titleLabel": "Title",
+    "titlePlaceholder": "Please add a title",
+    "titleRequired": "Title is required",
+    "descriptionLabel": "Description",
+    "descriptionLength": "Description must be longer",
+    "descriptionPlaceHolder": "Add a description",
+    "descriptionRequired": "Description is required",
+    "categoryLabel": "Category",
+    "locationLabel": "Wilaya"
+  }
+}

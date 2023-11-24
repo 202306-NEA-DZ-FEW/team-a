@@ -1,0 +1,40 @@
+{
+  "dashboard": "لوحة التحكم",
+  "userinfo": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "language": "اللغة",
+    "currentLanguage": "العربية",
+    "location": "الولاية",
+    "phoneNumber": "رقم الهاتف"
+  },
+  "userUpadteForm": {
+    "updateProfile": "تعديل الحساب",
+    "nameLabel": "الاسم",
+    "namePlaceholder": "أدخل اسمك الكامل",
+    "nameRequired": "الاسم مطلوب",
+    "nameLength": "يجب أن يحتوي الاسم على أقل من 30 حرفًا",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailValid": "عنوان البريد الإلكتروني غير صالح",
+    "phoneLabel": "الهاتف",
+    "phonePlaceholder": "أدخل رقم هاتفك",
+    "phoneRequired": "رقم الهاتف مطلوب",
+    "locationLabel": "الولاية",
+    "locationRequired": "الولاية مطلوبة"
+  },
+  "myItems": "عناصري",
+  "editItemForm": {
+    "updateItem": "تعديل العنصر",
+    "titleLabel": "العنوان",
+    "titlePlaceholder": "يرجى إضافة عنوان",
+    "titleRequired": "العنوان مطلوب",
+    "descriptionLabel": "الوصف",
+    "descriptionLength": "يجب أن يكون الوصف أطول",
+    "descriptionPlaceHolder": "أضف وصفا",
+    "descriptionRequired": "الوصف مطلوب",
+    "categoryLabel": "الفئة",
+    "locationLabel": "الولاية"
+  }
+}

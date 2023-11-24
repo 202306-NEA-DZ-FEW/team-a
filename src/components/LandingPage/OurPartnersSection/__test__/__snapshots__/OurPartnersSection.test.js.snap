@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rend correctement 1`] = `
+<div
+  className="max-w-6xl mx-auto px-8 xl:px-0 text-center mt-24 flex flex-col items-center justify-center gap-10"
+>
+  <h1
+    className="text-3xl md:text-5xl font-bold"
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateY(30px) translateZ(0)",
+      }
+    }
+  >
+    partners
+  </h1>
+  <div
+    className="w-full justify-center items-center flex flex-col gap-2"
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateY(30px) translateZ(0)",
+      }
+    }
+  >
+    <div>
+      <div>
+        <img
+          alt="brightglobe"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="ecoharbor"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="harmony"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="globalcare"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="helpinghands"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="togethertech"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="compassioncrafter"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+    </div>
+    <div>
+      <div>
+        <img
+          alt="sharejoy"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="empowerus"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="allgood"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="generosityhub"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="unitytechsolutions"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="hopeharbor"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+      <div>
+        <img
+          alt="dreamcatcher"
+          className="object-cover w-32 bg-black/5 px-1 rounded-md"
+          data-nimg="1"
+          decoding="async"
+          height={120}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={120}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

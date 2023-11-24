@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="flex items-center gap-2 pl-3"
+  >
+    <input
+      className="checkbox checkbox-primary "
+      type="checkbox"
+    />
+    <label
+      className="label label-text"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CausesCard Component renders correctly and match snapshot 1`] = `
+<div
+  className="flex-1 min-w-[300px] h-96 flex-grow bg-base-100 flex justify-center intems-center bg-opacity-20 backdrop-filter backdrop-blur-md group rounded-3xl shadow-2xl overflow-hidden cursor-pointer"
+  style={
+    Object {
+      "opacity": 0,
+      "transform": "translateY(30px) scale(0) translateZ(0)",
+    }
+  }
+>
+  <div
+    className="relative  w-full h-full bg-cover bg-no-repeat flex flex-col flex-1 justify-center items-center gap-4"
+    style={
+      Object {
+        "backgroundImage": "linear-gradient(rgba(114, 173, 132, 0.64),rgba(80, 140, 98, 1)), url(undefined)",
+      }
+    }
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 512 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 50c-21.6 0-39 17.35-39 39 0 21.6 17.4 39 39 39s39-17.4 39-39c0-21.65-17.4-39-39-39zm-48 89c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-144 90c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm-240 89.4c-21.65 0-39 17.4-39 39s17.35 39 39 39c21.6 0 39-17.4 39-39s-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zM64 409c-21.65 0-39 17.4-39 39s17.35 39 39 39 39-17.4 39-39-17.35-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39zm96 0c-21.6 0-39 17.4-39 39s17.4 39 39 39 39-17.4 39-39-17.4-39-39-39z"
+      />
+    </svg>
+    <h2
+      className="absolute bottom-8 left-24 origin-bottom-left -rotate-90 font-black text-white tracking-wider text-5xl"
+    >
+      Test Title
+    </h2>
+    <p
+      className="absolute p-8 text-xl font-light w-full h-full bg-neutral flex justify-center items-center translate-x-72 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 text-white/80"
+    >
+      Test Description
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex flex-col items-center lg:flex-row-reverse lg:min-h-screen"
+>
+  <figure
+    className="relative w-full lg:w-[55%] h-1/2 lg:h-screen"
+  >
+    <img
+      alt="hero image"
+      className="w-full h-full object-cover overflow-auto"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height={1080}
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimages%2Fhero-image.png&w=3840&q=75"
+      srcSet="/_next/image?url=%2Fimages%2Fhero-image.png&w=1080&q=75 1x, /_next/image?url=%2Fimages%2Fhero-image.png&w=3840&q=75 2x"
+      style={
+        Object {
+          "backgroundImage": "url(\\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1080'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blur.jpg'/%3E%3C/svg%3E\\")",
+          "backgroundPosition": "50% 50%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+          "color": "transparent",
+        }
+      }
+      width={1080}
+    />
+    <svg
+      className="absolute top-[10%] left-[-10%] fill-current w-[16%] lg:block hidden opacity-75 z-0"
+      data-name="Layer 1"
+      id="Layer_1"
+      viewBox="0 0 549 283.61"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+        points="207.24 80.84 140.07 22.93 72.87 80.84 0 18.05 11.34 4.89 72.87 57.91 140.07 0 207.24 57.91 274.43 0 341.65 57.91 408.85 0 476.09 57.91 537.66 4.88 549 18.05 476.09 80.84 408.85 22.93 341.65 80.84 274.43 22.93 207.24 80.84"
+      />
+      <polygon
+        points="207.24 182.23 140.07 124.31 72.87 182.22 0 119.43 11.34 106.27 72.87 159.29 140.07 101.38 207.24 159.29 274.43 101.38 341.65 159.29 408.85 101.38 476.09 159.29 537.66 106.26 549 119.43 476.09 182.22 408.85 124.31 341.65 182.22 274.43 124.31 207.24 182.23"
+      />
+      <polygon
+        points="207.24 283.61 140.07 225.7 72.87 283.6 0 220.81 11.34 207.65 72.87 260.67 140.07 202.76 207.24 260.67 274.43 202.76 341.65 260.67 408.85 202.76 476.09 260.67 537.66 207.65 549 220.81 476.09 283.6 408.85 225.69 341.65 283.6 274.43 225.69 207.24 283.61"
+      />
+    </svg>
+    <svg
+      className="absolute bottom-[8%] right-[6%] w-[2%] lg:block hidden z-0"
+      data-name="Layer 1"
+      fill="#fff"
+      id="Layer_1"
+      viewBox="0 0 8.01 77.26"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+        className="cls-1"
+        points="8.01 6.6 5.42 4.01 8.01 1.41 6.6 0 4.01 2.59 1.41 0 0 1.41 2.59 4.01 0 6.6 1.41 8.01 4.01 5.42 6.6 8.01 8.01 6.6"
+      />
+      <polygon
+        className="cls-1"
+        points="8.01 18.14 5.42 15.55 8.01 12.96 6.6 11.54 4.01 14.13 1.41 11.54 0 12.96 2.59 15.55 0 18.14 1.41 19.56 4.01 16.96 6.6 19.56 8.01 18.14"
+      />
+      <polygon
+        className="cls-1"
+        points="8.01 29.68 5.42 27.09 8.01 24.5 6.6 23.08 4.01 25.68 1.41 23.08 0 24.5 2.59 27.09 0 29.68 1.41 31.1 4.01 28.5 6.6 31.1 8.01 29.68"
+      />
+      <polygon
+        className="cls-1"
+        points="8.01 41.23 5.42 38.63 8.01 36.04 6.6 34.63 4.01 37.22 1.41 34.63 0 36.04 2.59 38.63 0 41.23 1.41 42.64 4.01 40.05 6.6 42.64 8.01 41.23"
+      />
+      <polygon
+        className="cls-1"
+        points="8.01 52.77 5.42 50.17 8.01 47.58 6.6 46.17 4.01 48.76 1.41 46.17 0 47.58 2.59 50.17 0 52.77 1.41 54.18 4.01 51.59 6.6 54.18 8.01 52.77"
+      />
+      <polygon
+        className="cls-1"
+        points="8.01 64.31 5.42 61.72 8.01 59.12 6.6 57.71 4.01 60.3 1.41 57.71 0 59.12 2.59 61.72 0 64.31 1.41 65.72 4.01 63.13 6.6 65.72 8.01 64.31"
+      />
+      <polygon
+        className="cls-1"
+        points="6.6 77.26 8.01 75.85 5.42 73.26 8.01 70.66 6.6 69.25 4.01 71.84 1.41 69.25 0 70.66 2.59 73.26 0 75.85 1.41 77.26 4.01 74.67 6.6 77.26"
+      />
+    </svg>
+  </figure>
+  <div
+    className="flex flex-col py-10 w-full lg:w-[45%] gap-2 px-6 lg:h-screen z-10"
+    id="text"
+  >
+    <div
+      className="flex h-full justify-center flex-col gap-6"
+    >
+      <h2
+        className="text-4xl lg:text-5xl font-black capitalize"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateY(30px) translateZ(0)",
+          }
+        }
+      >
+        hero.title
+        <span
+          className="text-accent"
+        >
+           
+          hero.titleHighlight
+        </span>
+      </h2>
+      <p
+        className="text-start font-light text-md md:text-xl"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateY(30px) translateZ(0)",
+          }
+        }
+      >
+        hero.description
+      </p>
+      <button
+        className="btn lg:self-start lg:min-w-fit text-current bg-opacity-50  rounded-full flex items-center btn-secondary"
+        onClick={[Function]}
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateY(30px) translateZ(0)",
+          }
+        }
+      >
+        buttons.donate
+        <span
+          className="text-lg"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001.01 0 .002-.001.002-.001h.001l.002-.001.003-.001.002-.001.002-.001.003-.001.002-.001c.003 0 .001-.001.002-.001l.003-.002.002-.001.002-.001.003-.001.002-.001h.001l.002-.001h.001l.002-.001.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485.081.065.163.139.247.222l.707.707.707-.707c.084-.083.166-.157.247-.222.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      className="relative w-full justify-start xl:justify-evenly self-end rounded-2xl bg-opacity-50 ring-4 ring-white ring-opacity-20 bg-secondary flex flex-wrap items-center my-4 py-8 gap-4 px-4 z-10"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(30px) translateZ(0)",
+        }
+      }
+    >
+      <p
+        className="flex lg:w-40 items-center  gap-2 text-xs font-light"
+      >
+        <span
+          className="text-xl font-black"
+        >
+          30k+
+        </span>
+        hero.stat1
+      </p>
+      <p
+        className="flex lg:w-40 items-center  gap-2 text-xs font-light"
+      >
+        <span
+          className="text-xl font-black"
+        >
+          200+
+        </span>
+        hero.stat2
+      </p>
+      <p
+        className="flex lg:w-40 items-center gap-2 text-xs font-light"
+      >
+        <span
+          className="text-xl font-black"
+        >
+          25k+
+        </span>
+        hero.stat3
+      </p>
+      <svg
+        className="absolute -top-3 left-7 fill-current w-40"
+        data-name="Layer 1"
+        id="Layer_1"
+        viewBox="0 0 77.26 8.01"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          className="cls-1"
+          points="6.6 0 4.01 2.59 1.41 0 0 1.41 2.59 4.01 0 6.6 1.41 8.01 4.01 5.42 6.6 8.01 8.01 6.6 5.42 4.01 8.01 1.41 6.6 0"
+        />
+        <polygon
+          className="cls-1"
+          points="18.14 0 15.55 2.59 12.96 0 11.54 1.41 14.13 4.01 11.54 6.6 12.96 8.01 15.55 5.42 18.14 8.01 19.56 6.6 16.96 4.01 19.56 1.41 18.14 0"
+        />
+        <polygon
+          className="cls-1"
+          points="29.68 0 27.09 2.59 24.5 0 23.08 1.41 25.68 4.01 23.08 6.6 24.5 8.01 27.09 5.42 29.68 8.01 31.1 6.6 28.5 4.01 31.1 1.41 29.68 0"
+        />
+        <polygon
+          className="cls-1"
+          points="41.23 0 38.63 2.59 36.04 0 34.63 1.41 37.22 4.01 34.63 6.6 36.04 8.01 38.63 5.42 41.23 8.01 42.64 6.6 40.05 4.01 42.64 1.41 41.23 0"
+        />
+        <polygon
+          className="cls-1"
+          points="52.77 0 50.17 2.59 47.58 0 46.17 1.41 48.76 4.01 46.17 6.6 47.58 8.01 50.17 5.42 52.77 8.01 54.18 6.6 51.59 4.01 54.18 1.41 52.77 0"
+        />
+        <polygon
+          className="cls-1"
+          points="64.31 0 61.72 2.59 59.12 0 57.71 1.41 60.3 4.01 57.71 6.6 59.12 8.01 61.72 5.42 64.31 8.01 65.72 6.6 63.13 4.01 65.72 1.41 64.31 0"
+        />
+        <polygon
+          className="cls-1"
+          points="77.26 1.41 75.85 0 73.26 2.59 70.66 0 69.25 1.41 71.84 4.01 69.25 6.6 70.66 8.01 73.26 5.42 75.85 8.01 77.26 6.6 74.67 4.01 77.26 1.41"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

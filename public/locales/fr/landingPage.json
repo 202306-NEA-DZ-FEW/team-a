@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "Le pouvoir du don ",
+    "titleHighlight": "collectif.",
+    "description": "le véritable don est un reflet de votre humanité",
+    "stat1": "Repas distribués durant le Ramadhan",
+    "stat2": "Orphelins pris en charge",
+    "stat3": "Recensés dans le programme d'aide aux réfugiés"
+  },
+  "causes": {
+    "title": "Causes",
+    "education": {
+      "title": "Education",
+      "description": "Nous nous engageons à cultiver la force intellectuelle à travers l’éducation.Nous défendons l'accès égal à la connaissance, tout en promouvant un avenir plus radieux pour tous."
+    },
+    "solidarity": {
+      "title": "Solidarité",
+      "description": "Nous favorisons un sentiment de communauté en apportant un soutien aux personnes défavorisées. Nous promouvons la solidarité pour une société unie"
+    },
+    "health": {
+      "title": "Santé",
+      "description": "Nous croyons en la promotion d'une société en bonne santé. Notre objectif est de favoriser l'émergence d'une communauté plus saine."
+    }
+  },
+  "statistics": {
+    "meals": {
+      "title": "30K",
+      "description": "Au cours de 3 ans, les associations en Algérie ont réussi à fournir jusqu'à 1 200 repas par jour pendant le Ramadan ; en moyenne, 30 000 repas servis en un mois."
+    },
+    "orphans": {
+      "title": "200",
+      "description": "De 50 à 200 orphelins par État ont été équipés de fournitures scolaires essentielles cette année scolaire, veillant à ce qu'ils aient les outils dont ils ont besoin pour réussir dans leur éducation."
+    },
+    "refugees": {
+      "title": "25K",
+      "description": "Plus de 25 000 réfugiés ont été accueillis en Algérie au cours des 5 dernières années, dont beaucoup avaient besoin de vêtements ainsi qu'un abri."
+    },
+    "fact": {
+      "title": "Fait",
+      "description": "Le taux de malnutrition aiguë chez les enfants de 0 à 5 ans dans le monde était de 10,7 %."
+    }
+  },
+  "items": "Articles populaires",
+  "blogs": "Blogs",
+  "partners": "Nos partenaires"
+}

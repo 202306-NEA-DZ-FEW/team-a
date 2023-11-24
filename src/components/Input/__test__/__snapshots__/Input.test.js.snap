@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="label ml-2"
+  >
+    <label
+      className="label-text"
+    />
+    <label
+      className="label-text-alt "
+    />
+  </div>
+  <input
+    className="input  bg-base-200 input-primary w-full rounded-full border-opacity-25"
+  />
+</div>
+`;

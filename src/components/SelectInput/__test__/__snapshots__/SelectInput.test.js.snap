@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="label"
+  >
+    <label
+      className="label-text"
+    />
+    <label
+      className="label-text-alt "
+    />
+  </div>
+  <select
+    className="select   select-primary bg-base-200 w-full border-opacity-25 rounded-3xl"
+  >
+    <option>
+      foo
+    </option>
+    <option>
+      bar
+    </option>
+  </select>
+</div>
+`;

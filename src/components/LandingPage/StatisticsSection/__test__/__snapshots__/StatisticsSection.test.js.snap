@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="lg:min-h-screen overflow-hidden"
+  style={Object {}}
+>
+  <div
+    className="bg-primary flex flex-col justify-center items-center pt-10"
+    id="background"
+  >
+    <img
+      alt="background"
+      className="opacity-70"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={40}
+    />
+  </div>
+  <div
+    className="max-w-6xl mx-auto px-8 xl:px-0 undefined"
+    id="stats"
+  >
+    <div
+      className="flex flex-col mx-2 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100 rounded-3xl shadow-2xl border-slate-500/10"
+      style={
+        Object {
+          "transform": "translateY(-80px) scale(0.2) translateZ(0)",
+        }
+      }
+    >
+      <div
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          version="1.1"
+          viewBox="0 0 17 17"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g />
+          <path
+            d="M17 16v1h-17v-1h17zM5.203 7.976l4.204 3.026 5.593-6.251v2.284h1v-4.035h-4.036v1h2.366l-5.070 5.665-4.129-2.974-4.372 3.956 0.671 0.741 3.773-3.412z"
+          />
+        </svg>
+        <h2
+          className="text-2xl md:text-3xl font-bold"
+        >
+          statistics.meals.title
+        </h2>
+        <p
+          className="text-md font-light"
+        >
+          statistics.meals.description
+        </p>
+      </div>
+      <div
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19.88 18.47c.44-.7.7-1.51.7-2.39 0-2.49-2.01-4.5-4.5-4.5s-4.5 2.01-4.5 4.5 2.01 4.5 4.49 4.5c.88 0 1.7-.26 2.39-.7L21.58 23 23 21.58l-3.12-3.11zm-3.8.11a2.5 2.5 0 010-5 2.5 2.5 0 010 5zm-.36-8.5c-.74.02-1.45.18-2.1.45l-.55-.83-3.8 6.18-3.01-3.52-3.63 5.81L1 17l5-8 3 3.5L13 6l2.72 4.08zm2.59.5c-.64-.28-1.33-.45-2.05-.49L21.38 2 23 3.18l-4.69 7.4z"
+          />
+        </svg>
+        <h2
+          className="text-2xl md:text-3xl font-bold"
+        >
+          statistics.orphans.title
+        </h2>
+        <p
+          className="text-md font-light"
+        >
+          statistics.orphans.description
+        </p>
+      </div>
+      <div
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 13h16v2h-16zM2 9h2v3h-2zM5 5h2v7h-2zM8 8h2v4h-2zM11 2h2v10h-2z"
+          />
+        </svg>
+        <h2
+          className="text-2xl md:text-3xl font-bold"
+        >
+          statistics.refugees.title
+        </h2>
+        <p
+          className="text-md font-light"
+        >
+          statistics.refugees.description
+        </p>
+      </div>
+      <div
+        className="lg:p-4 flex flex-col flex-1 items-center gap-4"
+      >
+        <svg
+          className="text-6xl text-error"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 12a2 2 0 0 0-.703.133l-2.398-1.963c.059-.214.101-.436.101-.67C17 8.114 15.886 7 14.5 7S12 8.114 12 9.5c0 .396.1.765.262 1.097l-2.909 3.438A2.06 2.06 0 0 0 9 14c-.179 0-.348.03-.512.074l-2.563-2.563C5.97 11.348 6 11.179 6 11c0-1.108-.892-2-2-2s-2 .892-2 2 .892 2 2 2c.179 0 .348-.03.512-.074l2.563 2.563A1.906 1.906 0 0 0 7 16c0 1.108.892 2 2 2s2-.892 2-2c0-.237-.048-.46-.123-.671l2.913-3.442c.227.066.462.113.71.113a2.48 2.48 0 0 0 1.133-.281l2.399 1.963A2.077 2.077 0 0 0 18 14c0 1.108.892 2 2 2s2-.892 2-2-.892-2-2-2z"
+          />
+        </svg>
+        <h2
+          className="text-2xl md:text-3xl font-bold"
+        >
+          statistics.fact.title
+        </h2>
+        <p
+          className="text-md font-light"
+        >
+          statistics.fact.description
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;

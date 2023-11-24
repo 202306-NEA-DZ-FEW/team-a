@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="mx-8 md:mx-36 p-8 md:p-14 flex flex-col md:flex-row justify-center items-center gap-6 bg-opacity-20 backdrop-filter backdrop-blur-md bg-slate-300 border border-slate-500/10 rounded-2xl shadow-2xl transform md:translate-y-36 translate-y-48"
+    dir="ltr"
+  >
+    <div
+      className=""
+      id="content"
+    >
+      <h2
+        className="text-2xl md:text-3xl tracking-wider font-extrabold "
+      >
+        newsletterTitle
+      </h2>
+      <p
+        className="my-4 max-w-xl font-light text-xl text-gray-800"
+      >
+        newsletterDescription
+        <br />
+        newsletterJoin
+      </p>
+      <form
+        className="flex flex-col md:flex-row gap-2"
+        onSubmit={[Function]}
+      >
+        <div>
+          <div>
+            <div
+              className="label ml-2"
+            >
+              <label
+                className="label-text"
+                htmlFor="email"
+              />
+              <label
+                className="label-text-alt "
+              />
+            </div>
+            <input
+              className="input  bg-base-200 input-primary w-full rounded-full border-opacity-25"
+              id="email"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="emailPlaceholder"
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            className="label"
+          />
+        </div>
+        <button
+          className="btn btn-neutral w-full md:w-fit self-center rounded-3xl min-w-[100px]"
+          disabled={false}
+          type="submit"
+        >
+          subscribe
+        </button>
+      </form>
+    </div>
+    <figure
+      className="hidden lg:block md:h-[200px] md:w-[200px]"
+    >
+      <img
+        alt="img"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height={40}
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={40}
+      />
+    </figure>
+  </div>,
+  <div
+    className="h-48 bg-neutral flex flex-col items-center"
+    id="background"
+  />,
+]
+`;

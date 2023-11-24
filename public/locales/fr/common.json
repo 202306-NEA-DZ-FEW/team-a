@@ -1,0 +1,32 @@
+{
+  "navbar": {
+    "dashboard": "Tableau de bord"
+  },
+  "footer": {
+    "address": "Adresse",
+    "city": "Ville, Algérie",
+    "contactUs": "Contactez-nous",
+    "listedItems": "Articles",
+    "street": "Rue 01, 17"
+  },
+  "buttons": {
+    "about": "À propos de nous",
+    "addItem": "Ajouter un article",
+    "blogs": "Blogs",
+    "cancel": "Annuler",
+    "submit": "Soumettre",
+    "confirm": "Confirmer",
+    "donate": "Donner maintenant",
+    "home": "Accueil",
+    "logo": "Unify.",
+    "items": "Articles",
+    "readMore": "Lire la suite",
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter",
+    "signUp": "S'inscrire",
+    "noItemsFound": "Aucun élément trouvé...",
+    "prevButton": "Précédent",
+    "nextButton": "Suivant"
+  },
+  "latestBlogs": "Nos plus récents blogs"
+}

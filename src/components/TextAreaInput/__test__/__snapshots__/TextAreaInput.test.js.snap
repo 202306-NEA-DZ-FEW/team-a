@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="form-control"
+>
+  <div
+    className="label"
+  >
+    <label
+      className="label-text"
+    />
+    <label
+      className="label-text-alt "
+    />
+  </div>
+  <textarea
+    className="textarea no-scrollbar textarea-primary  textarea-bordered border-opacity-25 h-24 w-full bg-base-200"
+  />
+  <div
+    className="label"
+  >
+    <label
+      className="label-text"
+    />
+    <label
+      className="label-text-alt "
+    >
+      /
+    </label>
+  </div>
+</div>
+`;

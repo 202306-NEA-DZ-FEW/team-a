@@ -1,3 +1,32 @@
 {
-    "test": "Hello"
+  "navbar": {
+    "dashboard": "Dashboard"
+  },
+  "footer": {
+    "address": "Adress",
+    "city": "City, Algeria",
+    "contactUs": "Contact us",
+    "listedItems": "Listed items",
+    "street": "Street 01,17"
+  },
+  "buttons": {
+    "about": "About us",
+    "addItem": "Add item",
+    "blogs": "Blogs",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "donate": "Donate now",
+    "home": "Home",
+    "logo": "Unify.",
+    "items": "Items",
+    "readMore": "Read more",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signUp": "Sign up",
+    "noItemsFound": "No Items Found...",
+    "prevButton": "Previous",
+    "nextButton": "Next"
+  },
+  "latestBlogs": "Latest Blogs"
 }

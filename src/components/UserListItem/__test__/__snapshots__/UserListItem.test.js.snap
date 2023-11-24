@@ -1,0 +1,790 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex w-full flex-row gap-2 transition-all duration-500 ease-in-out cursor-pointer  hover:drop-shadow-xl hover:translate-x-1 items-center justify-between rounded-2xl bg-base-100 drop-shadow-md p-2"
+>
+  <img
+    alt="Product One"
+    className="object-cover rounded-xl w-20 h-20"
+    data-nimg="1"
+    decoding="async"
+    fetchpriority="high"
+    height={500}
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75"
+    srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=1080&q=75 2x"
+    style={
+      Object {
+        "color": "transparent",
+      }
+    }
+    width={500}
+  />
+  <div
+    className="flex-1"
+  >
+    <a
+      className="text-left text-md md:text-2xl tracking-wider hover:font-medium hover:underline font-light"
+      href="/items/1"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Product One
+    </a>
+  </div>
+  <div>
+    <button
+      className="btn group btn-square btn-ghost btn-sm"
+      onClick={[Function]}
+    >
+      <svg
+        className="text-gray-400 text-xl transition-all duration-500 ease-in-out group-hover:text-gray-600"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+        />
+      </svg>
+    </button>
+    <button
+      className="btn group btn-square btn-ghost btn-sm"
+    >
+      <svg
+        className="text-red-400 text-xl transition-all duration-500 ease-in-out group-hover:text-red-600"
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 4V2H17V4H22V6H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V6H2V4H7ZM6 6V20H18V6H6ZM9 9H11V17H9V9ZM13 9H15V17H13V9Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <dialog
+    className="modal cursor-default bg-black bg-opacity-40"
+    id="my_modal_1"
+  >
+    <div
+      className="md:max-w-xl w-[90%] z-50 h-[90%]  transition-all duration-500 ease-in-out overflow-y-scroll no-scrollbar bg-base-100 rounded-2xl p-8"
+      dir="ltr"
+    >
+      <form
+        className="flex w-full flex-col gap-3"
+        onSubmit={[Function]}
+      >
+        <h1
+          className="text-xl font-bold text-center"
+        >
+          editItemForm.updateItem
+        </h1>
+        <div
+          className="flex justify-evenly gap-4 items-center"
+        >
+          <figure
+            className="relative group"
+          >
+            <img
+              alt="Product One"
+              className="w-32 h-20 object-cover rounded-lg"
+              data-nimg="1"
+              decoding="async"
+              height={100}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1591047139829-d91aecb6caea%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75 2x"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={100}
+            />
+            <div
+              className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+              type="file"
+            >
+              <input
+                accept="image/*"
+                className="absolute hidden text-xs"
+                id={1}
+                onChange={[Function]}
+                type="file"
+              />
+              <label
+                className="text-4xl cursor-pointer"
+                htmlFor={1}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+                  />
+                </svg>
+              </label>
+            </div>
+          </figure>
+          <figure
+            className="relative group"
+          >
+            <img
+              alt="Product One"
+              className="w-32 h-20 object-cover rounded-lg"
+              data-nimg="1"
+              decoding="async"
+              height={100}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%253D%253D&w=256&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1434389677669-e08b4cac3105%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 2x"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={100}
+            />
+            <div
+              className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+              type="file"
+            >
+              <input
+                accept="image/*"
+                className="absolute hidden text-xs"
+                id={2}
+                onChange={[Function]}
+                type="file"
+              />
+              <label
+                className="text-4xl cursor-pointer"
+                htmlFor={2}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+                  />
+                </svg>
+              </label>
+            </div>
+          </figure>
+          <figure
+            className="relative group"
+          >
+            <img
+              alt="Product One"
+              className="w-32 h-20 object-cover rounded-lg"
+              data-nimg="1"
+              decoding="async"
+              height={100}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1467043237213-65f2da53396f%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1467043237213-65f2da53396f%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1467043237213-65f2da53396f%3Fauto%3Dformat%26fit%3Dcrop%26q%3D60%26w%3D500%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHx8MHx8fDA%253D&w=256&q=75 2x"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={100}
+            />
+            <div
+              className="absolute hidden text-center bg-base-100 rounded-lg w-full h-full top-0 group-hover:flex cursor-pointer bg-opacity-40 items-center justify-center"
+              type="file"
+            >
+              <input
+                accept="image/*"
+                className="absolute hidden text-xs"
+                id={3}
+                onChange={[Function]}
+                type="file"
+              />
+              <label
+                className="text-4xl cursor-pointer"
+                htmlFor={3}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
+                  />
+                </svg>
+              </label>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <div
+            className="label ml-2"
+          >
+            <label
+              className="label-text"
+              htmlFor="title"
+            >
+              titleLabel
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <input
+            className="input input-sm bg-base-200 input-primary w-full rounded-full border-opacity-25"
+            id="title"
+            name="title"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="titlePlaceholder"
+            type="text"
+            value="Product One"
+          />
+        </div>
+        <div
+          className="form-control"
+        >
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="description"
+            >
+              descriptionLabel
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <textarea
+            className="textarea no-scrollbar textarea-primary  textarea-bordered border-opacity-25 h-24 w-full bg-base-200"
+            id="description"
+            name="description"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="descriptionPlaceHolder"
+            type="text"
+            value="Lorem ipsum description for Product One"
+          />
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="description"
+            />
+            <label
+              className="label-text-alt "
+            >
+              39
+              /
+              250
+            </label>
+          </div>
+        </div>
+        <div>
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="category"
+            >
+              categoryLabel
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <select
+            className="select select-sm  select-primary bg-base-200 w-full border-opacity-25 rounded-3xl"
+            id="category"
+            onChange={[Function]}
+          >
+            <option
+              value="babyItems"
+            >
+              babyItems
+            </option>
+            <option
+              value="blanketsAndBedding"
+            >
+              blanketsAndBedding
+            </option>
+            <option
+              value="books"
+            >
+              books
+            </option>
+            <option
+              value="clothes"
+            >
+              clothes
+            </option>
+            <option
+              value="accessories"
+            >
+              accessories
+            </option>
+            <option
+              value="craftSupplies"
+            >
+              craftSupplies
+            </option>
+            <option
+              value="decorAndArtwork"
+            >
+              decorAndArtwork
+            </option>
+            <option
+              value="electronics"
+            >
+              electronics
+            </option>
+            <option
+              value="foodAndNonPerishables"
+            >
+              foodAndNonPerishables
+            </option>
+            <option
+              value="householdItems"
+            >
+              householdItems
+            </option>
+            <option
+              value="hygieneProducts"
+            >
+              hygieneProducts
+            </option>
+            <option
+              value="medicalSupplies"
+            >
+              medicalSupplies
+            </option>
+            <option
+              value="petSupplies"
+            >
+              petSupplies
+            </option>
+            <option
+              value="schoolAndEducationalSupplies"
+            >
+              schoolAndEducationalSupplies
+            </option>
+            <option
+              value="shoes"
+            >
+              shoes
+            </option>
+            <option
+              value="sportsEquipment"
+            >
+              sportsEquipment
+            </option>
+            <option
+              value="toysAndGames"
+            >
+              toysAndGames
+            </option>
+          </select>
+        </div>
+        <div>
+          <div
+            className="label"
+          >
+            <label
+              className="label-text"
+              htmlFor="location"
+            >
+              locationLabel
+            </label>
+            <label
+              className="label-text-alt "
+            />
+          </div>
+          <select
+            className="select select-sm  select-primary bg-base-200 w-full border-opacity-25 rounded-3xl"
+            defaultValue="djelfa"
+            id="location"
+            onChange={[Function]}
+          >
+            <option
+              value="adrar"
+            >
+              adrar
+            </option>
+            <option
+              value="chlef"
+            >
+              chlef
+            </option>
+            <option
+              value="laghouat"
+            >
+              laghouat
+            </option>
+            <option
+              value="oumElBouaghi"
+            >
+              oumElBouaghi
+            </option>
+            <option
+              value="batna"
+            >
+              batna
+            </option>
+            <option
+              value="bejaia"
+            >
+              bejaia
+            </option>
+            <option
+              value="biskra"
+            >
+              biskra
+            </option>
+            <option
+              value="bechar"
+            >
+              bechar
+            </option>
+            <option
+              value="blida"
+            >
+              blida
+            </option>
+            <option
+              value="bouira"
+            >
+              bouira
+            </option>
+            <option
+              value="tamanrasset"
+            >
+              tamanrasset
+            </option>
+            <option
+              value="tebessa"
+            >
+              tebessa
+            </option>
+            <option
+              value="tlemcen"
+            >
+              tlemcen
+            </option>
+            <option
+              value="tiaret"
+            >
+              tiaret
+            </option>
+            <option
+              value="tiziOuzou"
+            >
+              tiziOuzou
+            </option>
+            <option
+              value="algiers"
+            >
+              algiers
+            </option>
+            <option
+              value="djelfa"
+            >
+              djelfa
+            </option>
+            <option
+              value="jijel"
+            >
+              jijel
+            </option>
+            <option
+              value="setif"
+            >
+              setif
+            </option>
+            <option
+              value="saida"
+            >
+              saida
+            </option>
+            <option
+              value="skikda"
+            >
+              skikda
+            </option>
+            <option
+              value="sidiBelAbbes"
+            >
+              sidiBelAbbes
+            </option>
+            <option
+              value="annaba"
+            >
+              annaba
+            </option>
+            <option
+              value="guelma"
+            >
+              guelma
+            </option>
+            <option
+              value="constantine"
+            >
+              constantine
+            </option>
+            <option
+              value="medea"
+            >
+              medea
+            </option>
+            <option
+              value="mostaganem"
+            >
+              mostaganem
+            </option>
+            <option
+              value="mSila"
+            >
+              mSila
+            </option>
+            <option
+              value="mascara"
+            >
+              mascara
+            </option>
+            <option
+              value="ouargla"
+            >
+              ouargla
+            </option>
+            <option
+              value="oran"
+            >
+              oran
+            </option>
+            <option
+              value="elBayadh"
+            >
+              elBayadh
+            </option>
+            <option
+              value="illizi"
+            >
+              illizi
+            </option>
+            <option
+              value="bordjBouArreridj"
+            >
+              bordjBouArreridj
+            </option>
+            <option
+              value="boumerdes"
+            >
+              boumerdes
+            </option>
+            <option
+              value="elTarf"
+            >
+              elTarf
+            </option>
+            <option
+              value="tindouf"
+            >
+              tindouf
+            </option>
+            <option
+              value="tissemsilt"
+            >
+              tissemsilt
+            </option>
+            <option
+              value="elOued"
+            >
+              elOued
+            </option>
+            <option
+              value="khenchela"
+            >
+              khenchela
+            </option>
+            <option
+              value="soukAhras"
+            >
+              soukAhras
+            </option>
+            <option
+              value="tipaza"
+            >
+              tipaza
+            </option>
+            <option
+              value="mila"
+            >
+              mila
+            </option>
+            <option
+              value="ainDefla"
+            >
+              ainDefla
+            </option>
+            <option
+              value="naama"
+            >
+              naama
+            </option>
+            <option
+              value="ainTemouchent"
+            >
+              ainTemouchent
+            </option>
+            <option
+              value="ghardaia"
+            >
+              ghardaia
+            </option>
+            <option
+              value="relizane"
+            >
+              relizane
+            </option>
+            <option
+              value="timimoun"
+            >
+              timimoun
+            </option>
+            <option
+              value="bordjBadjiMokhtar"
+            >
+              bordjBadjiMokhtar
+            </option>
+            <option
+              value="ouledDjellal"
+            >
+              ouledDjellal
+            </option>
+            <option
+              value="beniAbbes"
+            >
+              beniAbbes
+            </option>
+            <option
+              value="ainSalah"
+            >
+              ainSalah
+            </option>
+            <option
+              value="ainGuezzam"
+            >
+              ainGuezzam
+            </option>
+            <option
+              value="touggourt"
+            >
+              touggourt
+            </option>
+            <option
+              value="djanet"
+            >
+              djanet
+            </option>
+            <option
+              value="elMGhair"
+            >
+              elMGhair
+            </option>
+            <option
+              value="elMenia"
+            >
+              elMenia
+            </option>
+          </select>
+        </div>
+        <div
+          className=" modal-action"
+        >
+          <button
+            className="btn rounded-xl btn-sm btn-primary bg-opacity-30 normal-case tracking-wider btn-active"
+            type="submit"
+          >
+            buttons.submit
+          </button>
+          <div
+            method="dialog"
+          >
+            <button
+              className="btn rounded-xl btn-outline btn-sm normal-case tracking-wider font-light"
+              onClick={[Function]}
+              type="button"
+            >
+              buttons.cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </dialog>
+</div>
+`;
