@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="min-h-screen flex flex-col justify-between items-center max-w-5xl mx-auto mb-10 gap-4 p-4 lg:flex-row-reverse"
+>
+  <figure
+    className="w-[55%]"
+  >
+    <img
+      alt="map illustration"
+      className="w-full h-full "
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height={800}
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/images/dz.svg"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={800}
+    />
+  </figure>
+  <div
+    className="w-[45%] text-center flex flex-col gap-4"
+  >
+    <h1
+      className="text-4xl font-black"
+    >
+      growthEstimation
+    </h1>
+    <div
+      className="flex flex-col gap-2"
+    >
+      <p
+        className="text-xl md:text-2xl text-accent font-bold"
+      >
+        bytheEndOf
+      </p>
+      <p
+        className="text-3xl md:text-4xl font-bold"
+      >
+        <span>
+          2,000
+        </span>
+      </p>
+    </div>
+    <div
+      className="flex flex-col gap-2"
+    >
+      <p
+        className="text-xl md:text-2xl text-accent font-bold"
+      >
+        helpAim
+      </p>
+      <p
+        className="text-3xl md:text-4xl font-bold"
+      >
+        <span />
+         %
+      </p>
+    </div>
+    <div
+      className="flex flex-col gap-2"
+    >
+      <p
+        className="text-xl md:text-2xl text-accent font-bold"
+      >
+        ofSociety
+      </p>
+      <p
+        className="text-3xl md:text-4xl font-bold"
+        dir="ltr"
+      >
+        <span />
+         
+        states
+      </p>
+    </div>
+  </div>
+</div>
+`;
