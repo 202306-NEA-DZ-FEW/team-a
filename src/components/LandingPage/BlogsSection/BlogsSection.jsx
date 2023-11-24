@@ -21,7 +21,7 @@ function BlogsSection({ blogs }) {
         viewport={{ once: true }}
       >
         <h2 className='text-3xl md:text-5xl font-bold'>
-          {t("landingPage:latestBlogs")}
+          {t("common:latestBlogs")}
         </h2>
         <Link
           className='btn btn-secondary rounded-full btn-md min-w-[150px] lg:w-[15%] text-current bg-opacity-50 flex items-center gap-2'
