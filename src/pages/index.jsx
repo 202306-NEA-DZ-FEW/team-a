@@ -77,6 +77,7 @@ export async function getStaticProps({ locale }) {
         "addItem",
         "newsletter",
         "signIn",
+        "blogs",
       ])),
       items: items.slice(0, 5),
       blogs: blogs.slice(0, 3),

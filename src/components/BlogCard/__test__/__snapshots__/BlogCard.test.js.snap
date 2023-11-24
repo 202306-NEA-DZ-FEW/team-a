@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="card rounded-xl bg-base-100 shadow-lg h-full w-full"
 >
   <figure
-    className="relative overflow-hidden"
+    className="relative overflow-hidden h-96"
   >
     <img
       alt="Blog Image"
@@ -31,15 +31,15 @@ exports[`renders correctly 1`] = `
   >
     <h2
       className="text-2xl lg:text-3xl text-start font-bold w-full"
+      title="undefined.title"
     >
-      title
+      undefined.title
     </h2>
     <div
       className="flex justify-between items-center py-4"
     >
       <span>
-        2023-10-28
-         
+        undefined.shortDate
       </span>
       <a
         className="text-secondary hover:text-secondary font-bold flex items-center gap-2"
