@@ -38,8 +38,7 @@ exports[`renders correctly 1`] = `
       className="flex justify-between items-center py-4"
     >
       <span>
-        2023-10-28
-         
+        undefined.shortDate
       </span>
       <a
         className="text-secondary hover:text-secondary font-bold flex items-center gap-2"

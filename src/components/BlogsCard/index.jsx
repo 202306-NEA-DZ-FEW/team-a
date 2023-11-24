@@ -3,19 +3,15 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { IoIosArrowDropright } from "react-icons/io";
 
-import { formatDate } from "@/lib/helpers";
-
 export default function BlogsCard({
   title,
   index,
   imageUrl,
-  createdAt,
   description,
   id,
   blogKey,
 }) {
   const { i18n, t } = useTranslation();
-  const date = formatDate(createdAt, "MMM YYYY");
   return (
     <>
       <div
@@ -45,7 +41,7 @@ export default function BlogsCard({
             {t(`blogs:${blogKey}:description`)}
           </p>
           <div className='card-actions flex gap-2 justify-between'>
-            <span>{date}</span>
+            <span> {t(`blogs:${blogKey}:shortDate`)}</span>
             <Link
               href={`/blogs/${id}`}
               className='text-secondary font-bold flex items-center gap-2'

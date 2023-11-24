@@ -3,11 +3,10 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { IoIosArrowDropright } from "react-icons/io";
 
-import { formatDate, truncateString } from "@/lib/helpers";
+import { truncateString } from "@/lib/helpers";
 
-function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
+function HorizontalCard({ title, description, imageUrl, id, blogKey }) {
   const { t } = useTranslation();
-  const date = formatDate(createdAt, "MMM YYYY");
   const truncatedDescription = truncateString(description, 200);
   return (
     <div className='card lg:card-side bg-base-100 shadow-xl h-full lg:h-[26rem]'>
@@ -32,7 +31,7 @@ function HorizontalCard({ title, description, imageUrl, createdAt, id }) {
           {truncatedDescription}
         </p>
         <div className='card-actions flex gap-2 justify-between'>
-          <span>{date}</span>
+          <span>{t(`blogs:${blogKey}:shortDate`)}</span>
           <Link
             href={`/blogs/${id}`}
             className='text-secondary font-bold flex items-center gap-2'

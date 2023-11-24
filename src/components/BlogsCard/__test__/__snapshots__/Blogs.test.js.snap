@@ -43,7 +43,8 @@ exports[`renders correctly 1`] = `
       className="card-actions flex gap-2 justify-between"
     >
       <span>
-        Invalid date
+         
+        undefined.shortDate
       </span>
       <a
         className="text-secondary font-bold flex items-center gap-2"

@@ -6,19 +6,17 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { fetchCollection } from "@/lib/fetchCollection";
 import fetchFirebaseDoc from "@/lib/fetchFirebaseDoc";
 import fetchUserInfo from "@/lib/fetchUserInfo";
-import { formatDate } from "@/lib/helpers";
 
 import Container from "@/components/container";
 import PageCover from "@/components/PageCover";
 
 function BlogDetails({ blog, user, t, locale }) {
-  const date = formatDate(blog?.createdAt);
   return (
     <>
       <PageCover
         title={t(`blogs:${blog.blogKey}:title`)}
         description={t(`blogs:${blog.blogKey}:description`)}
-        date={date}
+        date={t(`blogs:${blog.blogKey}:fullDate`)}
         imageURL={blog.imageUrl}
       />
       <Container
@@ -43,7 +41,7 @@ function BlogDetails({ blog, user, t, locale }) {
           </span>
           <span className='text-slate-600 text-sm flex gap-2 items-center'>
             <IoCalendarOutline className='text-lg' />
-            <span>{date}</span>
+            <span>{t(`blogs:${blog.blogKey}:fullDate`)}</span>
           </span>
         </div>
         {/* blog header */}

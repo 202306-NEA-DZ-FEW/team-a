@@ -5,6 +5,8 @@
   "eidElFitrBlog": {
     "title": "The Spirit of Giving: Eid al-Fitr Donations",
     "description": "Eid al-Fitr, also known as the 'Festival of Breaking the Fast,' is a significant holiday celebrated by Muslims worldwide. It marks the end of Ramadan, a month of fasting, prayer, and self-reflection. Beyond the festive feasts and joyous gatherings, Eid al-Fitr holds a deep spiritual significance, particularly when it comes to the act of giving and charity.",
+    "fullDate": "September 14, 2023",
+    "shortDate": "Sep 2023",
     "content": {
       "1": {
         "subTitle": "The Joy of Eid al-Fitr",
@@ -27,6 +29,8 @@
   "donationsInGaza": {
     "title": "Donations in Gaza: Supporting Those in Need",
     "description": "The people of Gaza have faced numerous challenges, and your support can make a significant difference in their lives. Donations to Gaza help provide essential aid, relief, and hope to those who are in need.",
+    "fullDate": "October 19, 2023",
+    "shortDate": "Oct 2023",
     "content": {
       "1": {
         "id": 1,
@@ -53,6 +57,8 @@
   "isolatedAreasDonations": {
     "title": "Donations in Isolated Areas: Bringing Hope to the Underserved",
     "description": "Isolated and remote areas often face unique challenges, from limited access to essential services to economic hardships. Donations to isolated areas can make a significant difference in the lives of those who are underserved and in need of support.",
+    "fullDate": "November 5, 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -79,6 +85,8 @@
   "donationsInEidalAdha": {
     "title": "Donations of Eid al-Adha: Festival of Sacrifice and Aid",
     "description": "Eid al-Adha, also known as the 'Festival of Sacrifice and Aid,' is one of the most significant Islamic celebrations observed by Muslims worldwide. This festival commemorates the willingness of the Prophet Ibrahim to sacrifice his son in obedience to God. Beyond symbolic rituals and feasts, Eid al-Adha emphasizes the values of sacrifice and benevolence.",
+    "fullDate": "November 17, 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -105,6 +113,8 @@
   "donationInRamadan": {
     "title": "Donations in Ramadan: Time for Giving and Compassion",
     "description": "Ramadan is a month of fasting, prayer, and reflection for Muslims worldwide. It is also a time of increased generosity and giving back to the community.",
+    "fullDate": "November 23, 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -131,6 +141,8 @@
   "donationsToFoodBanks": {
     "title": "Donations to Food Banks: Combating Hunger",
     "description": "Hunger is an urgent problem faced by many individuals and families. Donations to food banks serve as a vital resource for nutrition and support, aiming to alleviate hunger and improve the lives of those in need.",
+    "fullDate": "November 24, 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -157,6 +169,8 @@
   "donationsOfSchoolTools": {
     "title": "Donation of School Supplies for Orphaned Children: Strengthening Young Minds",
     "description": "Education is a gateway to a brighter future, and donations of school supplies for orphaned children play a crucial role in empowering these young minds with the necessary resources to access quality education. Your contributions provide tools of knowledge and open doors to a better tomorrow.",
+    "fullDate": "November 24, 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -183,6 +197,8 @@
   "donationsOfMedicalEquipments": {
     "title": "Donations of Medical Equipment: Saving Lives",
     "description": "Access to quality healthcare is a fundamental right. Donations of medical equipment play a crucial role as a lifeline for healthcare facilities, ensuring critical care and saving lives.",
+    "fullDate": "November 27, 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -209,6 +225,8 @@
   "donationsForEarthQuakeRelief": {
     "title": "Donations for Earthquake Relief: Rebuilding Lives",
     "description": "Earthquakes can have devastating effects on communities, leaving many people homeless and in need of emergency assistance. Donations for earthquake relief serve as a lifeline for those affected, helping to rebuild lives and communities after a disaster.",
+    "fullDate": "November 24, 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,

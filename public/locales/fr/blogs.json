@@ -5,6 +5,8 @@
   "eidElFitrBlog": {
     "title": "L'Esprit du Don : Dons de l'Eid al-Fitr",
     "description": "L'Eid al-Fitr, également connu sous le nom de 'Fête de la rupture du jeûne,' est une fête importante célébrée par les musulmans du monde entier. Elle marque la fin du Ramadan, un mois de jeûne, de prière et de réflexion personnelle. Au-delà des festins et des rassemblements joyeux, l'Eid al-Fitr revêt une signification spirituelle profonde, notamment en ce qui concerne l'acte de donner et la charité.",
+    "fullDate": "14 Septembre 2023",
+    "shortDate": "Sep 2023",
     "content": {
       "1": {
         "id": 1,
@@ -31,6 +33,8 @@
   "donationsInGaza": {
     "title": "Dons à Gaza : Soutien aux personnes dans le besoin",
     "description": "Le peuple de Gaza a fait face à de nombreux défis, et votre soutien peut faire une différence significative dans leurs vies. Les dons à Gaza aident à fournir une aide essentielle, un soulagement et de l'espoir à ceux qui en ont besoin.",
+    "fullDate": "19 Octobre 2023",
+    "shortDate": "Oct 2023",
     "content": {
       "1": {
         "id": 1,
@@ -57,6 +61,8 @@
   "isolatedAreasDonations": {
     "title": "Dons dans les Zones Isolées : Apporter de l'Espoir aux Défavorisés",
     "description": "Les zones isolées et reculées sont souvent confrontées à des défis uniques, allant de l'accès limité aux services essentiels aux difficultés économiques. Les dons aux zones isolées peuvent faire une différence significative dans la vie de ceux qui sont défavorisés et ont besoin de soutien.",
+    "fullDate": "05 Novembre 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -83,6 +89,8 @@
   "donationsInEidalAdha": {
     "title": "Dons de l'Aïd al-Adha : Festival du Sacrifice et de l'Aide",
     "description": "L'Aïd al-Adha, également connu sous le nom de 'Festival du Sacrifice et de l'Aide', est l'une des fêtes islamiques les plus importantes célébrées par les musulmans du monde entier. Cette fête commémore la disposition du prophète Ibrahim à sacrifier son fils en obéissance à Dieu. Au-delà des rituels symboliques et des festins, l'Aïd al-Adha met en avant les valeurs de sacrifice et de bienfaisance.",
+    "fullDate": "17 Novembre 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -109,6 +117,8 @@
   "donationInRamadan": {
     "title": "Dons pendant le Ramadan : Temps de Don et de Compassion",
     "description": "Le Ramadan est le mois du jeûne, de la prière et de la réflexion pour les musulmans du monde entier. C'est également un moment de générosité croissante et de don à la communauté.",
+    "fullDate": "23 Novembre 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -135,6 +145,8 @@
   "donationsToFoodBanks": {
     "title": "Dons aux banques alimentaires : Lutte contre la faim",
     "description": "La faim est un problème urgent auquel de nombreux individus et familles sont confrontés. Les dons aux banques alimentaires constituent une ressource vitale pour la nutrition et le soutien, visant à soulager la faim et à améliorer la vie des personnes dans le besoin.",
+    "fullDate": "24 Novembre 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -161,6 +173,8 @@
   "donationsOfSchoolTools": {
     "title": "Don de fournitures scolaires pour les enfants orphelins : Renforcer les jeunes esprits",
     "description": "L'éducation est une porte vers un avenir plus lumineux, et les dons de fournitures scolaires pour les enfants orphelins jouent un rôle crucial en renforçant ces jeunes esprits avec les ressources nécessaires pour accéder à une éducation de qualité. Vos contributions fournissent des outils de connaissance et ouvrent les portes à un lendemain meilleur.",
+    "fullDate": "24 Novembre 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -187,6 +201,8 @@
   "donationsOfMedicalEquipments": {
     "title": "Dons d'équipements médicaux : Sauver des vies",
     "description": "L'accès à des services de santé de qualité est un droit fondamental. Les dons d'équipements médicaux jouent un rôle essentiel en tant que bouée de sauvetage pour les établissements de santé, assurant des soins critiques et garantissant le sauvetage de vies.",
+    "fullDate": "27 Novembre 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
@@ -213,6 +229,8 @@
   "donationsForEarthQuakeRelief": {
     "title": "Dons pour le Secours après les Tremblements de Terre : Reconstruire des Vies",
     "description": "Les tremblements de terre peuvent avoir des effets dévastateurs sur les communautés, laissant de nombreuses personnes sans abri et ayant besoin d'une aide d'urgence. Les dons pour le secours après les tremblements de terre sont une bouée de sauvetage pour les personnes touchées, aidant à reconstruire des vies et des communautés après une catastrophe.",
+    "fullDate": "24 Novembre 2023",
+    "shortDate": "Nov 2023",
     "content": {
       "1": {
         "id": 1,
