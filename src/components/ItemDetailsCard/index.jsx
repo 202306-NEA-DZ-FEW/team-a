@@ -97,7 +97,7 @@ function ItemDetailsCard({
         </div>
       </figure>
       <div id='CardContent' className='card-body flex-1'>
-        <h1 className='card-title text-3xl'>{title}</h1>
+        <h1 className='card-title text-3xl capitalize'>{title}</h1>
         <div className='flex gap-2 items-center'>
           <span className='flex gap-1 text-gray-400 text-sm font-light items-center'>
             <MdShareLocation className='text-xl' /> {location}

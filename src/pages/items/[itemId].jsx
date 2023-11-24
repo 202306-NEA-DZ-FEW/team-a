@@ -25,7 +25,7 @@ const DynamicItemsCarousel = dynamic(
   }
 );
 
-function ItemDetails({ t, item, userInfo, relatedItems }) {
+function ItemDetails({ t, item, userInfo, relatedItems, locale }) {
   const translatedLocation = t(`states:${item.location}`);
   const loctionName = getLocationName(translatedLocation);
   return (
@@ -51,7 +51,9 @@ function ItemDetails({ t, item, userInfo, relatedItems }) {
         {relatedItems.length ? (
           <DynamicItemsCarousel t={t} items={relatedItems} />
         ) : (
-          <p>No related items found...</p>
+          <p dir={locale === "ar" ? "rtl" : "ltr"}>
+            {t(`itemsPage:noRelatedItems`)}...
+          </p>
         )}
       </Container>
     </>
@@ -102,6 +104,7 @@ export async function getStaticProps({ params, locale }) {
       item,
       userInfo,
       relatedItems: filteredItems,
+      locale,
     },
     revalidate: 10,
   };

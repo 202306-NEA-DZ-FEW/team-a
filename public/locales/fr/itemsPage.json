@@ -9,5 +9,6 @@
   "page": "Page",
   "of": "sur",
   "relatedItems": "Articles similaires",
-  "contactCredentials": "Informations du contact"
+  "contactCredentials": "Informations du contact",
+  "noRelatedItems": "Aucun élément similaire trouvé"
 }

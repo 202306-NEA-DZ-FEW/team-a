@@ -47,6 +47,7 @@ function EditItemForm({ item, onEdit }) {
       const itemDocRef = doc(db, "items", item.id);
       const updatedItem = {
         ...values,
+        title: values.title.toLowerCase(),
         images: selectedImages,
         updated: serverTimestamp(),
       };

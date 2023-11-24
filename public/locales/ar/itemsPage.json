@@ -9,5 +9,6 @@
   "page": "صفحة",
   "of": "من",
   "relatedItems": "العناصر المماثلة",
-  "contactCredentials": "بيانات الاتصال"
+  "contactCredentials": "بيانات الاتصال",
+  "noRelatedItems": "لم يتم العثور على عناصر ذات صلة"
 }

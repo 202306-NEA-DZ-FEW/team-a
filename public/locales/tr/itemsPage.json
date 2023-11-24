@@ -9,5 +9,6 @@
   "page": "Sayfa ",
   "of": "/",
   "relatedItems": "Benzer Ürünler",
-  "contactCredentials": "İletişim Kimlik Bilgileri"
+  "contactCredentials": "İletişim Kimlik Bilgileri",
+  "noRelatedItems": "İlgili öğe bulunamadı"
 }

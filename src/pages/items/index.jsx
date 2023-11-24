@@ -52,11 +52,11 @@ export default withTranslation("itemsPage")(ItemsPage);
 export async function getServerSideProps({ locale, query }) {
   const queryParams = query;
   const page = Number(query.page) || 1;
-  const pageSize = 4;
+  const pageSize = 8;
   const { items, totalPages, totalItems } = await fetchCollectionWithQuery(
     "items",
     queryParams,
-    4,
+    pageSize,
     page
   );
   return {
