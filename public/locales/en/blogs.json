@@ -76,7 +76,7 @@
       }
     }
   },
-  "donationsinEidalAdha": {
+  "donationsInEidalAdha": {
     "title": "Donations of Eid al-Adha: Festival of Sacrifice and Aid",
     "description": "Eid al-Adha, also known as the 'Festival of Sacrifice and Aid,' is one of the most significant Islamic celebrations observed by Muslims worldwide. This festival commemorates the willingness of the Prophet Ibrahim to sacrifice his son in obedience to God. Beyond symbolic rituals and feasts, Eid al-Adha emphasizes the values of sacrifice and benevolence.",
     "content": {
@@ -102,7 +102,7 @@
       }
     }
   },
-  "donationsinRamadan": {
+  "donationInRamadan": {
     "title": "Donations in Ramadan: Time for Giving and Compassion",
     "description": "Ramadan is a month of fasting, prayer, and reflection for Muslims worldwide. It is also a time of increased generosity and giving back to the community.",
     "content": {
@@ -128,7 +128,7 @@
       }
     }
   },
-  "donationstoFoodBanks": {
+  "donationsToFoodBanks": {
     "title": "Donations to Food Banks: Combating Hunger",
     "description": "Hunger is an urgent problem faced by many individuals and families. Donations to food banks serve as a vital resource for nutrition and support, aiming to alleviate hunger and improve the lives of those in need.",
     "content": {
@@ -154,7 +154,7 @@
       }
     }
   },
-  "donationofSchoolTools": {
+  "donationsOfSchoolTools": {
     "title": "Donation of School Supplies for Orphaned Children: Strengthening Young Minds",
     "description": "Education is a gateway to a brighter future, and donations of school supplies for orphaned children play a crucial role in empowering these young minds with the necessary resources to access quality education. Your contributions provide tools of knowledge and open doors to a better tomorrow.",
     "content": {
@@ -180,7 +180,7 @@
       }
     }
   },
-  "donationsofMedicalEquipment": {
+  "donationsOfMedicalEquipments": {
     "title": "Donations of Medical Equipment: Saving Lives",
     "description": "Access to quality healthcare is a fundamental right. Donations of medical equipment play a crucial role as a lifeline for healthcare facilities, ensuring critical care and saving lives.",
     "content": {
@@ -206,7 +206,7 @@
       }
     }
   },
-  "donationsforEarthquakeRelief": {
+  "donationsForEarthQuakeRelief": {
     "title": "Donations for Earthquake Relief: Rebuilding Lives",
     "description": "Earthquakes can have devastating effects on communities, leaving many people homeless and in need of emergency assistance. Donations for earthquake relief serve as a lifeline for those affected, helping to rebuild lives and communities after a disaster.",
     "content": {
