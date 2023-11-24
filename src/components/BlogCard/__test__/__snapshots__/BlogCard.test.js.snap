@@ -31,8 +31,9 @@ exports[`renders correctly 1`] = `
   >
     <h2
       className="text-2xl lg:text-3xl text-start font-bold w-full"
+      title="undefined.title"
     >
-      title
+      undefined.title
     </h2>
     <div
       className="flex justify-between items-center py-4"

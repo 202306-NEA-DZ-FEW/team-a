@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import { IoIosArrowDropright } from "react-icons/io";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 import { truncateString } from "@/lib/helpers";
 
-function HorizontalCard({ title, description, imageUrl, id, blogKey }) {
-  const { t } = useTranslation();
-  const truncatedDescription = truncateString(description, 200);
+function HorizontalCard({ description, imageUrl, id, blogKey }) {
+  const { i18n, t } = useTranslation();
+  const truncatedDescription = truncateString(
+    t(`blogs:${blogKey}:description`),
+    200
+  );
   return (
     <div className='card lg:card-side bg-base-100 shadow-xl h-full lg:h-[26rem]'>
       <figure className=' lg:w-[45%]'>
@@ -21,8 +24,11 @@ function HorizontalCard({ title, description, imageUrl, id, blogKey }) {
         />
       </figure>
       <div className='card-body lg:w-[35%] p-6 lg:p-10 gap-4'>
-        <h2 className='card-title text-2xl lg:text-3xl' title={title}>
-          {title}
+        <h2
+          className='card-title text-2xl lg:text-3xl'
+          title={t(`blogs:${blogKey}:title`)}
+        >
+          {t(`blogs:${blogKey}:title`)}
         </h2>
         <p
           className=' text-md lg:text-xl tracking-wide font-light'
@@ -38,7 +44,12 @@ function HorizontalCard({ title, description, imageUrl, id, blogKey }) {
           >
             {t("common:buttons:readMore")}
 
-            <IoIosArrowDropright className='text-xl' />
+            {i18n.language !== "ar" ? (
+              <IoIosArrowDropright className='text-xl' />
+            ) : null}
+            {i18n.language === "ar" ? (
+              <IoIosArrowDropleft className='text-xl' />
+            ) : null}
           </Link>
         </div>
       </div>
