@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="min-h-screen flex flex-col justify-between items-center max-w-4xl mx-auto gap-4 p-4 lg:flex-row-reverse"
+  className="min-h-screen flex flex-col justify-between items-center max-w-5xl mx-auto mb-10 gap-4 p-4 lg:flex-row-reverse"
 >
   <figure
     className="w-[55%]"
@@ -26,43 +26,61 @@ exports[`renders correctly 1`] = `
     />
   </figure>
   <div
-    className="w-[45%] text-center flex flex-col gap-2"
+    className="w-[45%] text-center flex flex-col gap-4"
   >
     <h1
       className="text-4xl font-black"
     >
-      Growth Estimation
+      growthEstimation
     </h1>
-    <h1
-      className="text-xl md:text-2xl text-accent font-bold"
+    <div
+      className="flex flex-col gap-2"
     >
-      By the end of
-    </h1>
-    <h1
-      className="text-3xl md:text-4xl font-bold pb-4"
+      <p
+        className="text-xl md:text-2xl text-accent font-bold"
+      >
+        bytheEndOf
+      </p>
+      <p
+        className="text-3xl md:text-4xl font-bold"
+      >
+        <span>
+          2,000
+        </span>
+      </p>
+    </div>
+    <div
+      className="flex flex-col gap-2"
     >
-      2030
-    </h1>
-    <h1
-      className="text-xl md:text-2xl text-accent font-bold"
+      <p
+        className="text-xl md:text-2xl text-accent font-bold"
+      >
+        helpAim
+      </p>
+      <p
+        className="text-3xl md:text-4xl font-bold"
+      >
+        <span />
+         %
+      </p>
+    </div>
+    <div
+      className="flex flex-col gap-2"
     >
-      We aim to help
-    </h1>
-    <h1
-      className="text-3xl md:text-4xl font-bold pb-4"
-    >
-      20%
-    </h1>
-    <h1
-      className="text-xl md:text-2xl text-accent font-bold"
-    >
-      Of this society in over
-    </h1>
-    <h1
-      className="text-3xl md:text-4xl font-bold pb-4"
-    >
-      53 Wilayas
-    </h1>
+      <p
+        className="text-xl md:text-2xl text-accent font-bold"
+      >
+        ofSociety
+      </p>
+      <p
+        className="text-3xl md:text-4xl font-bold"
+        dir="ltr"
+      >
+        <span />
+         
+        states
+      </p>
+    </div>
   </div>
 </div>
 `;

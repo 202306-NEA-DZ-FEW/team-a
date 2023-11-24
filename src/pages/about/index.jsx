@@ -49,7 +49,7 @@ function AboutPage({ t, _nextI18Next }) {
           ))}
         </motion.section>
       </Container>
-      <Map />
+      <Map t={t} />
     </>
   );
 }
