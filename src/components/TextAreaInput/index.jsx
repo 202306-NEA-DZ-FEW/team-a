@@ -26,7 +26,7 @@ export default function TextAreaInput({
       <textarea
         className={`textarea no-scrollbar ${
           touched && error ? "textarea-error" : "textarea-primary"
-        }  textarea-bordered h-24 w-full bg-base-200`}
+        }  textarea-bordered border-opacity-25 h-24 w-full bg-base-200`}
         id={name}
         type={type}
         name={name}

@@ -1,12 +1,20 @@
+import dynamic from "next/dynamic";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { fetchCollectionWithQuery } from "@/lib/fetchCollectionWithQuery";
 import getAllCategories from "@/lib/getAllCategories";
 
-import Carousel from "@/components/Carousel";
-import Items from "@/components/Items";
+import CarouselPlaceholder from "@/components/Carousel/CarouselPlaceholder";
+import ItemsPlaceholder from "@/components/Items/ItemsPlaceholder";
 import Wheel from "@/components/Wheel";
+
+const DynamicCarousel = dynamic(() => import("@/components/Carousel"), {
+  loading: () => <CarouselPlaceholder />,
+});
+const DynamicItems = dynamic(() => import("@/components/Items"), {
+  loading: () => <ItemsPlaceholder />,
+});
 
 function ItemsPage({
   t,
@@ -21,12 +29,12 @@ function ItemsPage({
   return (
     <main>
       <div className='relative h-screen overflow-x-hidden w-full'>
-        <Carousel t={t} items={categories} queryParams={queryParams} />
+        <DynamicCarousel t={t} items={categories} queryParams={queryParams} />
         <div className='absolute lg:bottom-10 lg:left-[5%] bottom-1 left-[50%] overflow-hidden z-50  flex items-center justify-center'>
           <Wheel />
         </div>
       </div>
-      <Items
+      <DynamicItems
         t={t}
         queryParams={queryParams}
         items={items}

@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -8,9 +9,21 @@ import fetchUserInfo from "@/lib/fetchUserInfo";
 import { getLocationName } from "@/lib/helpers";
 
 import Container from "@/components/container";
-import ItemDetailsCard from "@/components/ItemDetailsCard";
+import ItemDetailsCardPlaceholder from "@/components/ItemDetailsCard/ItemDetailsCardPlaceholder";
+import ItemsCarouselPlaceholder from "@/components/ItemsCarousel/ItemsCarouselPlaceholder";
 
-import ItemsCarousel from "../../components/ItemsCarousel";
+const DynamicItemDetailsCard = dynamic(
+  () => import("@/components/ItemDetailsCard"),
+  {
+    loading: () => <ItemDetailsCardPlaceholder />,
+  }
+);
+const DynamicItemsCarousel = dynamic(
+  () => import("@/components/ItemsCarousel"),
+  {
+    loading: () => <ItemsCarouselPlaceholder />,
+  }
+);
 
 function ItemDetails({ t, item, userInfo, relatedItems }) {
   const translatedLocation = t(`states:${item.location}`);
@@ -18,7 +31,7 @@ function ItemDetails({ t, item, userInfo, relatedItems }) {
   return (
     <>
       <section className='lg:flex lg:min-h-screen lg:justify-center lg:items-center'>
-        <ItemDetailsCard
+        <DynamicItemDetailsCard
           title={item.title}
           description={item.description}
           location={loctionName}
@@ -34,8 +47,12 @@ function ItemDetails({ t, item, userInfo, relatedItems }) {
       <h1 className='font-bold text-3xl m-4 text-center'>
         {t("itemsPage:relatedItems")}
       </h1>
-      <Container className='flex justify-center items-center gap-4 m-4'>
-        <ItemsCarousel t={t} items={relatedItems} />
+      <Container className='flex justify-center items-center gap-4 py-8'>
+        {relatedItems.length ? (
+          <DynamicItemsCarousel t={t} items={relatedItems} />
+        ) : (
+          <p>No related items found...</p>
+        )}
       </Container>
     </>
   );
@@ -56,15 +73,22 @@ export async function getStaticPaths({ locales }) {
   });
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 }
 
 export async function getStaticProps({ params, locale }) {
   const { itemId } = params;
   const item = await fetchFirebaseDoc("items", itemId);
+  if (!item) {
+    return {
+      notFound: true,
+    };
+  }
   const relatedItems = await fetchItemsByCategory("items", item.category);
+  const filteredItems = relatedItems.filter((item) => item.id !== itemId);
   const userInfo = await fetchUserInfo(item.uid);
+
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -77,7 +101,7 @@ export async function getStaticProps({ params, locale }) {
       ])),
       item,
       userInfo,
-      relatedItems,
+      relatedItems: filteredItems,
     },
     revalidate: 10,
   };

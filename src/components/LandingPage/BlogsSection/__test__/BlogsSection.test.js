@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer";
 
-import BlogsSection from "../BlogsSection";
+import BlogsSection from "..";
 
 it("renders correctly", () => {
   const mockBlogs = [

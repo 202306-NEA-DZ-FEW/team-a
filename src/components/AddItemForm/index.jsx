@@ -98,7 +98,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
   return (
     <ProtectedLayout>
       <section className='relative md:max-w-lg mx-auto'>
-        <form onSubmit={formik.handleSubmit} className='flex flex-col gap-3'>
+        <form onSubmit={formik.handleSubmit} className='flex flex-col gap-1'>
           <h1 className='text-3xl font-black text-center'>
             {t("addItem:addItem")}
           </h1>
@@ -124,7 +124,6 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             handleBlur={formik.handleBlur}
             error={formik.errors.title}
             touched={formik.touched.title}
-            sm
           />
           <SelectInput
             name='category'
@@ -134,7 +133,6 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             value={formik.values.category}
             touched={formik.touched.category}
             error={formik.errors.category}
-            sm
           />
           <SelectInput
             name='location'
@@ -144,7 +142,6 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             value={formik.values.location}
             touched={formik.touched.location}
             error={formik.errors.location}
-            sm
           />
           <TextAreaInput
             name='description'
@@ -172,11 +169,11 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             onChange={(e) => {
               setImages(Array.from(e.target.files));
             }}
-            className='file-input bg-base-300'
+            className='file-input bg-base-200'
             id='file-upload'
             multiple
           />
-          <div className='form-control'>
+          <div className='form-control my-2'>
             <div className='label'>
               <span className='label-text'>
                 <span className='text-error'>*</span> {t("addItem:listingType")}
@@ -193,7 +190,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
                   : ""}
               </span>
             </div>
-            <div className='flex flex-col md:flex-row gap-2 md:justify-between md:items-center'>
+            <div className='flex flex-col md:flex-row gap-2 md:justify-between md:items-center my-2'>
               {listingTypes.map((listingKey, i) => (
                 <ListingTypeButton
                   key={i}
@@ -205,7 +202,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
               ))}
             </div>
           </div>
-          <div className='flex flex-col md:flex-row gap-2 justify-center mt-2'>
+          <div className='flex flex-col md:flex-row gap-2 justify-center my-4'>
             <button
               type='submit'
               className='btn btn-md rounded-xl btn-secondary bg-opacity-50 text-black flex-1 md:self-center'
@@ -214,7 +211,7 @@ function AddItemForm({ t, initialLocale, categories, states }) {
             </button>
             <Link
               href='/items'
-              className='btn btn-md rounded-xl btn-outline flex-1 md:self-center'
+              className='btn btn-md rounded-xl btn-ghost border-gray-200 flex-1 md:self-center'
             >
               {t("common:buttons:cancel")}
             </Link>
