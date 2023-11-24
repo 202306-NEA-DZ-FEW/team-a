@@ -61,11 +61,11 @@ function ItemDetailsCard({
   }, [images]);
 
   return (
-    <div className='flex flex-col lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-base-100'>
+    <div className='flex flex-col lg:h-[520px] lg:flex-row lg:shadow-2xl lg:max-w-5xl lg:mx-auto xl:px-0 lg:rounded-3xl bg-base-100'>
       <div className='lg:hidden'>
         <MobileCarousel images={images} />
       </div>
-      <figure className='w-[600px] min-h-[520px] relative hidden lg:block flex-1'>
+      <figure className='w-[600px] h-full relative hidden lg:block flex-1'>
         <Image
           width={500}
           height={500}

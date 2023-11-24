@@ -39,7 +39,7 @@ function UserListItems({ userItems }) {
     >
       <div className='flex w-full justify-between'>
         <h2 className='text-3xl font-bold text-center'>
-          {t("dashboard:myItems")}{" "}
+          {t("dashboard:myItems")}
         </h2>
         <Link
           href='/items/create'
@@ -74,7 +74,7 @@ function UserListItems({ userItems }) {
       </div>
       {!items.length && (
         <p className='text-xl flex-1 flex items-center justify-center font-light tracking-wide'>
-          You don&apos;t have listed items...
+          {t("common:noItemsFound")}
         </p>
       )}
     </div>
