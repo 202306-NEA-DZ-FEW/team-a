@@ -12,7 +12,6 @@ exports[`renders correctly 1`] = `
       className="text-3xl font-bold text-center"
     >
       myItems
-       
     </h2>
     <a
       className="btn btn-sm btn-circle btn-secondary text-black bg-opacity-30 transition-all duration-500 ease-in-out hover:drop-shadow-md"
