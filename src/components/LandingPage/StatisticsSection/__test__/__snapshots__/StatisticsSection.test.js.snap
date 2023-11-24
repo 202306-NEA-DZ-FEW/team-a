@@ -30,6 +30,7 @@ exports[`renders correctly 1`] = `
   </div>
   <div
     className="max-w-6xl mx-auto px-8 xl:px-0 undefined"
+    id="stats"
   >
     <div
       className="flex flex-col mx-2 md:mx-8 justify-center items-start text-center md:p-6 p-4 md:flex-row bg-base-100 rounded-3xl shadow-2xl border-slate-500/10"

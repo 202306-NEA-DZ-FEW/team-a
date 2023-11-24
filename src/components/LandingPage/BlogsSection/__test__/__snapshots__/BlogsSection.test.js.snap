@@ -92,21 +92,21 @@ exports[`renders correctly 1`] = `
         >
           <h2
             className="card-title text-2xl lg:text-3xl"
-            title="Hello"
+            title="undefined.title"
           >
-            Hello
+            undefined.title
           </h2>
           <p
             className=" text-md lg:text-xl tracking-wide font-light"
             title="Hello"
           >
-            Hello
+            undefined.description
           </p>
           <div
             className="card-actions flex gap-2 justify-between"
           >
             <span>
-              Invalid date
+              undefined.shortDate
             </span>
             <a
               className="text-secondary font-bold flex items-center gap-2"

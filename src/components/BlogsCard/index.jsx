@@ -1,55 +1,56 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import { IoIosArrowDropright } from "react-icons/io";
 
-import { formatDate } from "@/lib/helpers";
-
-export default function BlogsCard({ index, blog }) {
+export default function BlogsCard({
+  title,
+  index,
+  imageUrl,
+  description,
+  id,
+  blogKey,
+}) {
   const { i18n, t } = useTranslation();
-  const date = formatDate(blog.createdAt);
   return (
     <>
       <div
-        className={`flex flex-col gap-10 justify-center items-center  ${
+        className={`card bg-base-100 gap-4 shadow-xl h-full lg:h-[26rem]  ${
           index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
         } `}
         dir={i18n?.language === "ar" ? "rtl" : "ltr"}
       >
-        <div className='relative lg:flex-1'>
-          <figure className='relative w-80 h-60 lg:w-[100%] lg:h-80'>
-            <Image
-              src={blog.imageUrl}
-              alt={blog.title}
-              fill
-              priority
-              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-              className='object-cover w-full h-full rounded-2xl'
-            />
-          </figure>
-
-          <span className='absolute bottom-0 left-0 bg-primary text-white p-2 text-sm lg:hidden'>
-            {date}
-          </span>
-        </div>
-        <div className='flex flex-col lg:flex-1 gap-4'>
-          <div>
-            <h2 className='font-bold text-2xl'>{blog.title}</h2>
-            <span className='my-1 text-sm text-gray-500 font-light hidden lg:block'>
-              {date}
-            </span>
-          </div>
-
-          <p className='text-slate-500'>
-            {blog.description.slice(0, 210)}
-            {blog.description.length > 210 ? " ..." : ""}
+        <figure className=' lg:w-[45%] lg:h-full h-96 rounded-xl p-4'>
+          <Image
+            height={400}
+            width={400}
+            priority
+            src={imageUrl}
+            alt='Blog Image'
+            className='w-full h-full object-cover rounded-xl'
+          />
+        </figure>
+        <div className='card-body lg:w-[35%] p-6 lg:p-8 gap-4'>
+          <h2 className='card-title text-2xl lg:text-3xl' title={title}>
+            {t(`blogs:${blogKey}:title`)}
+          </h2>
+          <p
+            className=' text-md lg:text-xl tracking-wide font-light'
+            title={description}
+          >
+            {t(`blogs:${blogKey}:description`)}
           </p>
-          <Link href={`/blogs/${blog.id}`}>
-            <div>
-              <button className='btn bg-black text-white btn-sm'>
-                {t("common:buttons:readMore")}
-              </button>
-            </div>
-          </Link>
+          <div className='card-actions flex gap-2 justify-between'>
+            <span> {t(`blogs:${blogKey}:shortDate`)}</span>
+            <Link
+              href={`/blogs/${id}`}
+              className='text-secondary font-bold flex items-center gap-2'
+            >
+              {t("common:buttons:readMore")}
+
+              <IoIosArrowDropright className='text-xl' />
+            </Link>
+          </div>
         </div>
       </div>
     </>

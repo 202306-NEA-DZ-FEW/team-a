@@ -65,7 +65,7 @@ function ItemDetailsCard({
       <div className='lg:hidden'>
         <MobileCarousel images={images} />
       </div>
-      <figure className='w-[600px] h-[520px] relative hidden lg:block flex-1'>
+      <figure className='w-[600px] min-h-[520px] relative hidden lg:block flex-1'>
         <Image
           width={500}
           height={500}
@@ -120,7 +120,6 @@ function ItemDetailsCard({
           </span>
         </div>
         <p className='text-lg font-light mt-8'>{description}</p>
-        <p></p>
         <div
           className='user-details flex flex-col mt-10'
           dir={i18n?.language == "ar" ? "rtl" : "ltr"}
