@@ -39,7 +39,7 @@ function NewsletterForm({ onValidated }) {
           <h2 className='text-2xl md:text-3xl tracking-wider font-extrabold '>
             {t("newsletter:newsletterTitle")}
           </h2>
-          <p className='my-4 max-w-xl font-light text-xl text-gray-800'>
+          <p className='my-4 max-w-xl font-light text-xl'>
             {t("newsletter:newsletterDescription")}
             <br />
             {t("newsletter:newsletterJoin")}

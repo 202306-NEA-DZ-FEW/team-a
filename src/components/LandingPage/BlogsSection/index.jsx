@@ -30,10 +30,9 @@ function BlogsSection({ blogs }) {
           {t("common:buttons:readMore")}
           {i18n.language !== "ar" ? (
             <IoIosArrowDropright className='text-xl' />
-          ) : null}
-          {i18n.language === "ar" ? (
+          ) : (
             <IoIosArrowDropleft className='text-xl' />
-          ) : null}
+          )}
         </Link>
       </motion.div>
       {/* Cards Section */}

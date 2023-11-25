@@ -76,7 +76,7 @@ export function AuthContextProvider({ children }) {
         date: serverTimestamp(),
       });
       setUser(user.user);
-      toast.success(`Hi ${userInfo.name}, Thank you for joing in us! 😍`, {
+      toast.success(`Hi ${userInfo.name}, Thank you for joining us! 😍`, {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 1500,
       });
@@ -144,7 +144,7 @@ export function AuthContextProvider({ children }) {
         });
         setUser(user);
         toast.success(
-          `Hi ${user.user.displayName}, Thank you for joing in us! 😍`,
+          `Hi ${user.user.displayName}, Thank you for joining us! 😍`,
           {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 1500,
@@ -208,7 +208,7 @@ export function AuthContextProvider({ children }) {
         });
         setUser(user);
         toast.success(
-          `Hi ${user.user.displayName}, Thank you for joing in us! 😍`,
+          `Hi ${user.user.displayName}, Thank you for joining us! 😍`,
           {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 1500,
@@ -273,7 +273,7 @@ export function AuthContextProvider({ children }) {
         });
         setUser(user);
         toast.success(
-          `Hi ${user.user.displayName}, Thank you for joing in us! 😍`,
+          `Hi ${user.user.displayName}, Thank you for joining us! 😍`,
           {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 1500,
