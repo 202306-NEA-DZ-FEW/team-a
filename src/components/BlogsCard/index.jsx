@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import { IoIosArrowDropright } from "react-icons/io";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 export default function BlogsCard({
   title,
@@ -47,8 +47,11 @@ export default function BlogsCard({
               className='text-secondary font-bold flex items-center gap-2'
             >
               {t("common:buttons:readMore")}
-
-              <IoIosArrowDropright className='text-xl' />
+              {i18n.language !== "ar" ? (
+                <IoIosArrowDropright className='text-xl' />
+              ) : (
+                <IoIosArrowDropleft className='text-xl' />
+              )}
             </Link>
           </div>
         </div>

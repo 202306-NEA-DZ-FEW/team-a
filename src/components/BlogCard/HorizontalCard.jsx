@@ -43,13 +43,11 @@ function HorizontalCard({ description, imageUrl, id, blogKey }) {
             className='text-secondary font-bold flex items-center gap-2'
           >
             {t("common:buttons:readMore")}
-
             {i18n.language !== "ar" ? (
               <IoIosArrowDropright className='text-xl' />
-            ) : null}
-            {i18n.language === "ar" ? (
+            ) : (
               <IoIosArrowDropleft className='text-xl' />
-            ) : null}
+            )}
           </Link>
         </div>
       </div>
