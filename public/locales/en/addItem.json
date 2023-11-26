@@ -11,7 +11,7 @@
   "descriptionPlaceHolder": "Add a description",
   "imageLabel": "Image",
   "imageRequired": "You need to provide an image",
-  "locationLabel": "Province",
+  "locationLabel": "Wilaya",
   "locationRequired": "Location is required",
   "listingType": "Listing type",
   "itemTagRequired": "Item type is required",

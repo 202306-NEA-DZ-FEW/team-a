@@ -25,6 +25,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="col-span-1 "
+      dir="ltr"
     >
       <ul
         className="flex flex-col items-center md:items-start gap-4"
@@ -194,6 +195,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="col-span-1"
+      dir="ltr"
     >
       <ul
         className="flex flex-col items-center md:items-start"

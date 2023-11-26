@@ -10,7 +10,7 @@ import { FaInstagram } from "react-icons/fa";
 import LanguageMenu from "../LanguageMenu";
 
 function Footer() {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
   const router = useRouter();
   const [currentPath, setCurrentPath] = useState("/");
   useEffect(() => {
@@ -29,7 +29,10 @@ function Footer() {
             </h2>
           </Link>
         </div>
-        <div className='col-span-1 '>
+        <div
+          dir={i18n?.language === "ar" ? "rtl" : "ltr"}
+          className='col-span-1 '
+        >
           <ul className='flex flex-col items-center md:items-start gap-4'>
             <Link href='/about'>
               <li className='hover:underline'>{t("common:buttons:about")}</li>
@@ -63,7 +66,10 @@ function Footer() {
             </div>
           </ul>
         </div>
-        <div className='col-span-1'>
+        <div
+          dir={i18n?.language === "ar" ? "rtl" : "ltr"}
+          className='col-span-1'
+        >
           <ul className='flex flex-col items-center md:items-start'>
             <li className=''>{t("common:footer:address")}</li>
             <li className=''>{t("common:footer:street")}</li>
